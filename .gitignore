@@ -20,3 +20,12 @@ __pycache__/
 *.key
 *.bin
 *.dump
+
+# Third-party decoder repository
+/tools/ooz/
+
+# Extracted game content
+/extracted/
+
+# Large generated validation output
+/reports/type3-validation.tsv
