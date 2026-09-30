@@ -1,0 +1,24 @@
+DATASHEET EXTRACTION DIAGNOSTIC
+========================================================================
+
+unzip_rc_81: 2052
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16097.datasheet :: 
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/npcdata_npc_16138.datasheet :: 
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/objectives_quest_02801.datasheet :: 
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/objectives_quest_18000.datasheet :: 
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/objectivetasks_quest_02798.datasheet :: 
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/objectivetasks_quest_02799.datasheet :: 
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/objectivetasks_quest_16007.datasheet :: 
+  SharedDataStrm-part10.pak :: sharedassets/springboardentitites/datatables/questdata/conversationstatedata_npc_16029.datasheet :: 
+
+valid_v18: 198
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16004.datasheet :: 0x0 :: 141 bytes
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16007.datasheet :: 0x0 :: 141 bytes
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16013.datasheet :: 0x0 :: 141 bytes
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16023.datasheet :: 0x0 :: 141 bytes
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16028.datasheet :: 0x0 :: 141 bytes
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16037.datasheet :: 0x0 :: 141 bytes
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16041.datasheet :: 0x0 :: 141 bytes
+  SharedDataStrm-part1.pak :: sharedassets/springboardentitites/datatables/questdata/conversationtopicdata_npc_16043.datasheet :: 0x0 :: 141 bytes
+
+TOTAL: 2250

@@ -1,0 +1,21 @@
+
+DATASHEET TYPE CENSUS
+========================================================================
+Files encountered: 2250
+Format-18 files parsed: 197
+
+TYPE 1: 31 column occurrences
+  column=0   shape=3x2 sharedassets/springboardentitites/datatables/musicalactions/javelindata_inputscoring.datasheet
+  column=0   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_04667.datasheet
+  column=1   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_04667.datasheet
+  column=2   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_04667.datasheet
+  column=0   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_08012.datasheet
+  column=1   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_08012.datasheet
+  column=2   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_08012.datasheet
+  column=0   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_08013.datasheet
+  column=1   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_08013.datasheet
+  column=2   shape=1x3 sharedassets/springboardentitites/datatables/questdata/npcdata_npc_08013.datasheet
+
+TYPE 2: 2 column occurrences
+  column=1   shape=3x2 sharedassets/springboardentitites/datatables/musicalactions/javelindata_inputscoring.datasheet
+  column=2   shape=1x3 sharedassets/springboardentitites/datatables/javelindata_socketables.datasheet

@@ -1,0 +1,32 @@
+DataSheetAsset
+sharedassets/springboardentitites/datatables/javelindata_difficulty_darkness
+ItemConversionDataManager
+sharedassets/springboardentitites/datatables/contribution/javelindata_contribution_default
+GameModeParticipantComponentServerFacet_DebugReloadProceduralDatasheets
+CharacterAttributeDataManager::GetAttributeData(...) failed - Invalid attribute table row reference
+CraftingCategoryDataManager::GetCraftingCategoryData(...) failed - Invalid CraftingCategoryData table row reference %d
+EncumbranceDataManager::GetEncumbranceData(...) failed - Invalid Encumbrance table row reference %d
+HunterSightDataManager::GetHunterSightData([%s]) failed - Invalid damage table row reference
+ThrowableItemDataManager
+LoreDataManager::GetLoreDataById(...) failed - Invalid lore table row reference %d
+Javelin::ThrowableItemDataManager
+Javelin::ItemConversionDataManager
+.\test_compiled.datasheet
+DataSheetAssetHandler
+DataSheetCellAddress
+DataSheetAssetReference
+javelin.disable-datasheet-asset-releasing
+AzFramework::SimpleAssetReference<MB::DataSheetAsset>
+For CellValue, when you wrap the value with '---' indicator, you must specify it at the beginning and the end. There must be an even number of the indicator. 'DataTableFileName, DataTableType, RowName, ColumnName:---CellValue1, CellValue2---, etc'. CellValue will be 'CellValue1, CellValue2'. 'Skipping this line from being parsed. %s
+For each config line, there must be at least 4 entries separated by comma. 'DataTableFileName, DataTableType, RowName, ColumnName:CellValue, ColumnName:CellValue, etc'. Skipping this line from being parsed. %s
+First three entries must not have colon (:). 'DataTableFileName, DataTableType, RowName, ColumnName:CellValue, ColumnName:CellValue, etc'. Skipping this line from being parsed. FileName: %s, DataTableType: %s, RowName: %s
+Fourth and later entries are 'Column:CellValue' format. Column name and cell value must be separated by colon (:). 'DataTableFileName, DataTableType, RowName, ColumnName:CellValue, ColumnName:CellValue, etc'. Skipping this line from being parsed. %s
+LocalPlayerDebugComponentServerFacet_ReloadDataTables
+.?AVItemConversionDataManager@Javelin@@
+.?AV<lambda_1>@?1???$InstallRegistrationHook@VGameModeParticipantComponentServerFacet_DebugReloadProceduralDatasheets@ClientMessages@Javelin@@@Hub@Amazon@@YA_NXZ@
+.?AVThrowableItemDataManager@Javelin@@
+.?AV<lambda_1>@?1??CacheWhisperDataTable@WhisperDataManager@Javelin@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@AZStd@@Vallocator@2@@AZStd@@AEBVDataSheetSBConversion@3@@Z@
+.?AV<lambda_1>@?5??CacheAllDataTables@?$GameSystemDataManager@VThrowableItemDataManager@Javelin@@UStaticThrowableItemData@2@VCrc32@AZ@@$0A@@Javelin@@MEAAXXZ@
+.?AV<lambda_1>@?5??CacheAllDataTables@?$GameSystemDataManager@VItemConversionDataManager@Javelin@@UStaticItemConversionData@2@VCrc32@AZ@@$0A@@Javelin@@MEAAXXZ@
+.?AV<lambda_1>@?1???$AddAssetHandler@V?$SimpleAssetReference@VDataSheetAsset@MB@@@AzFramework@@@ReflectHelper@ManifoldGameComponents@@YAXXZ@
+.?AV<lambda_1>@?1???$InstallRegistrationHook@VLocalPlayerDebugComponentServerFacet_ReloadDataTables@ClientMessages@Javelin@@@Hub@Amazon@@YA_NXZ@

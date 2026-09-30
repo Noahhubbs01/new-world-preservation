@@ -1,0 +1,125 @@
+
+================================================================
+extracted/datasheets/comparison/211_javelindata_randomencounters.datasheet
+================================================================
+COLUMNS
+  AreaID: type=1 crc=0x4A751D7A
+  VitalsLevelRange: type=1 crc=0x7A3350EF
+
+ROWS
+[0]
+  AreaID: '16BS04'
+  VitalsLevelRange: '60-61'
+
+================================================================
+extracted/datasheets/comparison/218_javelindata_socketables.datasheet
+================================================================
+COLUMNS
+  SocketableID: type=1 crc=0x6EB1C175
+  DisplayName: type=1 crc=0xC71DCCA6
+  Health: type=2 crc=0xCEDA2313
+
+ROWS
+[0]
+  SocketableID: 'Door'
+  DisplayName: 'Door'
+  Health: 5.0
+
+================================================================
+extracted/datasheets/comparison/219_javelindata_housingsystemmessaging.datasheet
+================================================================
+COLUMNS
+  HousingTags: type=1 crc=0x70AD0EFE
+  CapMessage: type=1 crc=0x15C33C73
+  ItemMessage: type=1 crc=0xC977A233
+  Notes: type=1 crc=0x011BA68C
+
+ROWS
+
+================================================================
+extracted/datasheets/comparison/224_javelindata_storyprogress.datasheet
+================================================================
+COLUMNS
+  AchievementIds: type=1 crc=0xA577FB56
+  ActivityTaskName: type=1 crc=0x08D008E6
+
+ROWS
+[0]
+  AchievementIds: '09A_M15'
+  ActivityTaskName: 'msq_complete'
+
+================================================================
+extracted/datasheets/comparison/236_javelindata_seasonsrewardsstats_activitycard.datasheet
+================================================================
+COLUMNS
+  TrackedStatID: type=1 crc=0x80607C05
+  StatType: type=1 crc=0x3DBAAFE7
+
+ROWS
+[0]
+  TrackedStatID: 'CompleteActivityCard'
+  StatType: 'CompleteActivityCard'
+
+================================================================
+extracted/datasheets/comparison/238_javelindata_objectivesglobalreleasedata.datasheet
+================================================================
+COLUMNS
+  ObjectiveType: type=1 crc=0x15C20F1F
+  GlobalReleaseVersion: type=1 crc=0x35292BD2
+  GlobalEventTags: type=1 crc=0xCABE5B41
+
+ROWS
+
+================================================================
+extracted/datasheets/comparison/246_javelindata_generictimelines.datasheet
+================================================================
+COLUMNS
+  TimelineEntryName: type=1 crc=0x9E0407F1
+  TimelineAssetPath: type=1 crc=0x52C54F12
+  AssetDependencyPath: type=1 crc=0xE36BE42C
+
+ROWS
+
+================================================================
+extracted/datasheets/comparison/251_javelindata_inputscoring.datasheet
+================================================================
+COLUMNS
+  InputType: type=1 crc=0xC5E713BB
+  Points: type=2 crc=0x27BA8E29
+
+ROWS
+[0]
+  InputType: 'Perfect'
+  Points: 10.0
+[1]
+  InputType: 'Great'
+  Points: 7.0
+[2]
+  InputType: 'Missed'
+  Points: 0.0
+
+================================================================
+extracted/datasheets/comparison/254_javelindata_loottagpresets.datasheet
+================================================================
+COLUMNS
+  LootTagPresetID: type=1 crc=0xDC4E25FB
+  LootTags: type=1 crc=0x2490E62B
+
+ROWS
+[0]
+  LootTagPresetID: 'GardenOfGenesisTags'
+  LootTags: 'Level:59+Elite+Genesis+EnemyLevel:65'
+
+================================================================
+extracted/datasheets/comparison/254_npcdata_npc_04667.datasheet
+================================================================
+COLUMNS
+  NPCId: type=1 crc=0x3F6E9E7B
+  GenericName: type=1 crc=0xDCF53A9D
+  Title: type=1 crc=0x2B36786B
+
+ROWS
+[0]
+  NPCId: 'NPC_04667'
+  GenericName: '@NPC_04667_name'
+  Title: '@NPC_04667_title'

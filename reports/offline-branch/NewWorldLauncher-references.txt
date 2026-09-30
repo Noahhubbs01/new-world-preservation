@@ -1,0 +1,111 @@
+AuthenticAMD
+03000000491900001904000000007700,Amazon Luna Controller,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b8,leftshoulder:b4,leftstick:b10,lefttrigger:a3,leftx:a0,lefty:a1,misc1:b9,rightshoulder:b5,rightstick:b11,righttrigger:a4,rightx:a2,righty:a5,start:b7,x:b2,y:b3,
+03000000de280000ff11000000007701,Steam Virtual Gamepad,a:b0,b:b1,back:b6,dpdown:b12,dpleft:b13,dpright:b11,dpup:b10,leftshoulder:b4,leftstick:b8,lefttrigger:a4,leftx:a1,lefty:a0~,rightshoulder:b5,rightstick:b9,righttrigger:a5,rightx:a3,righty:a2~,start:b7,x:b2,y:b3,
+03000000491900001904000000000000,Amazon Luna Controller,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b8,leftshoulder:b4,leftstick:b10,lefttrigger:a3,leftx:a0,lefty:a1,misc1:b9,rightshoulder:b5,rightstick:b11,righttrigger:a4,rightx:a2,righty:a5,start:b7,x:b2,y:b3,
+03000000de280000ff11000000000000,Steam Virtual Gamepad,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,leftshoulder:b4,leftstick:b8,lefttrigger:+a2,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b9,righttrigger:-a2,rightx:a3,righty:a4,start:b7,x:b2,y:b3,
+SDL_GAMECONTROLLER_ALLOW_STEAM_VIRTUAL_GAMEPAD
+Amazon Luna Controller
+Texture not created with SDL_TEXTUREACCESS_TARGET
+TaskDialogIndirect
+WASAPI can't find requested audio endpoint
+WASAPI can't activate audio endpoint
+SDL_BlendPoint(): Unsupported surface format
+SDL_BlendPoints(): Unsupported surface format
+Timeout was reached
+Login denied
+The max connection limit is reached
+An authentication function returned an error
+Network unreachable
+Host unreachable
+Process limit reached
+SEC_E_NO_AUTHENTICATING_AUTHORITY
+SEC_E_UNSUPPORTED_PREAUTH
+# https://curl.haxx.se/docs/http-cookies.html
+NTLM picked AND auth done set, clear picked!
+NTLM-proxy picked AND auth done set, clear picked!
+%sAuthorization: Digest %s
+%sAuthorization: Basic %s
+Authorization: Bearer %s
+Proxy-authorization
+Authorization
+Authorization:
+%s auth using %s with user '%s'
+Authentication problem. Ignoring this.
+Ignoring duplicate digest auth header.
+Connection closure while negotiating auth (HTTP 1.0?)
+WWW-Authenticate:
+Proxy-authenticate:
+Persistent-Auth
+Negotiate: noauthpersist -> %d, header part: %s
+warning: unsupported value passed to CURLOPT_SOCKS5_AUTH: %lu
+SOCKS5 GSSAPI per-message authentication is not supported.
+No authentication method was acceptable.
+Excessive user name length for proxy auth
+Excessive password length for proxy auth
+Negotiate auth restarted
+Curl_output_negotiate, no persistent authentication: cleanup existing context
+%sAuthorization: Negotiate %s
+NTLM auth restarted
+%sAuthorization: NTLM %s
+CompleteAuthToken failed: %s
+Failed to send SSPI authentication request.
+Failed to send SSPI authentication token.
+Failed to receive SSPI authentication response.
+Invalid SSPI authentication response type (%u %u).
+Failed to receive SSPI authentication token.
+SOCKS5 server authencticated user %s with GSS-API.
+host unreachable
+network unreachable
+Eacutesmall
+https://
+EasyAntiCheatLauncherSemaphore
+{0} contains an invalid EOS identifier: ({1})
+http://www.brownfox.org
+" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 6.0-c006 79.164753, 2021/02/15-11:52:13        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http:/
+EasyAntiCheat
+/tmp/eac_wine_pid_%X
+EOS_USE_ANTICHEATCLIENTNULL
+easyanticheat_
+[EAC Callback] Code: {0}. Message: '{1}'.
+https://modules-cdn.eac-prod.on.epicgames.com/modules/{{productid}}/{{deploymentid}}/{{system}}
+https://modules-cdn.eac-gamedev.on.epicgames.com/modules/{{productid}}/{{deploymentid}}/{{system}}
+User-Agent: EasyAntiCheat-Client/1.0
+https://modules-cdn.eac-prod.on.epicgames.com/
+https://modules-cdn.eac-gamedev.on.epicgames.com/
+Could not reach the Easy Anti-Cheat CDN, launching with null client, result code: %u.
+Could not reach the Easy Anti-Cheat CDN!
+launcher.error_invalid_eos_identifier
+Easy Anti-Cheat {{buildtime}}","}","BuildTime":"systemversion}}"er.ol.epicgames.a?AppVersion=1.0Bootstrapper/1.6events&AppID=EOSstemname}}","OSVcom/datarouter/ahttps://api.epicoductid}}","Sandentid}}","OSNamegames.dev/telemexid}}","Deployme{{operatingsysteer":"{{operatingter/api/v1/publin&UploadType
+.?AV<lambda_1>@?1??LogEventsAsync@AnalyticsEOS@@SAXAEAVcBackgroundWorker@easyanticheat@@W4Destinations@2@AEBV?$vector@UEventDescriptor@Analytics@@V?$allocator@UEventDescriptor@Analytics@@@std@@@std@@@Z@
+.?AV<lambda_1>@?1??StartModuleDownload@cGameLauncher@launcher@easyanticheat@@QEAAXPEBDAEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@0V?$function@$$A6A?AW4EAC_ModuleDownloadProgressResult@
+.?AV<lambda_1>@?1??Start@AntiCheatLauncher@launcher@easyanticheat@@QEAA_NXZ@
+.?AV<lambda_1>@?1??OnGameLauncherFinished@AntiCheatLauncher@launcher@easyanticheat@@AEAAXW4EAC_ProtectedGameLaunchResult@@PEBD@Z@
+.?AV<lambda_1>@?1??BeginExitPolling@AntiCheatLauncher@launcher@easyanticheat@@AEAAXXZ@
+.?AV<lambda_2>@?1??Start@AntiCheatLauncher@launcher@easyanticheat@@QEAA_NXZ@
+.?AV<lambda_2>@?1??CreateUserInterfaceElements@AntiCheatLauncher@launcher@easyanticheat@@AEAA_NXZ@
+.?AV<lambda_1>@?1??CreateUserInterfaceElements@AntiCheatLauncher@launcher@easyanticheat@@AEAA_NXZ@
+.?AV<lambda_1>@?7??OnModuleDownloadProgress@AntiCheatLauncher@launcher@easyanticheat@@AEAA?AW4EAC_ModuleDownloadProgressResult@@II@Z@
+http://ocsp.digicert.com0I
+=http://cacerts.digicert.com/DigiCertHighAssuranceEVRootCA.crt0K
+:http://crl3.digicert.com/DigiCertHighAssuranceEVRootCA.crl0
+http://ocsp.digicert.com0A
+5http://cacerts.digicert.com/DigiCertTrustedRootG4.crt0C
+2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0
+Amazon.com Services LLC1 0
+Amazon.com Services LLC0
+http://www.digicert.com/CPS0
+Mhttp://crl3.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0S
+Mhttp://crl4.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crl0
+http://ocsp.digicert.com0\
+Phttp://cacerts.digicert.com/DigiCertTrustedG4CodeSigningRSA4096SHA3842021CA1.crt0
+http://ocsp.digicert.com0]
+Qhttp://cacerts.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crt0_
+Nhttp://crl3.digicert.com/DigiCertTrustedG4TimeStampingRSA4096SHA2562025CA1.crl0 
+2http://crl3.digicert.com/DigiCertTrustedRootG4.crl0 
+http://ocsp.digicert.com0C
+7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0E
+4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0
+EasyAntiCheat\Localization\
+EasyAntiCheat Oy
+SteamNoOverlayUIDrawing
+Easy Anti-Cheat Bootstrapper (EOS)

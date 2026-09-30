@@ -1,0 +1,92 @@
+Indexed datasheets: 2250
+100/2250  OK=100  ERR=0
+200/2250  OK=200  ERR=0
+300/2250  OK=300  ERR=0
+400/2250  OK=400  ERR=0
+500/2250  OK=500  ERR=0
+600/2250  OK=600  ERR=0
+700/2250  OK=700  ERR=0
+800/2250  OK=800  ERR=0
+900/2250  OK=900  ERR=0
+1000/2250  OK=1000  ERR=0
+1100/2250  OK=1100  ERR=0
+1200/2250  OK=1200  ERR=0
+1300/2250  OK=1300  ERR=0
+1400/2250  OK=1400  ERR=0
+1500/2250  OK=1500  ERR=0
+1600/2250  OK=1600  ERR=0
+1700/2250  OK=1700  ERR=0
+1800/2250  OK=1800  ERR=0
+1900/2250  OK=1900  ERR=0
+2000/2250  OK=2000  ERR=0
+2100/2250  OK=2100  ERR=0
+2200/2250  OK=2200  ERR=0
+2250/2250  OK=2250  ERR=0
+
+========================================================================
+FULL DATASHEET CENSUS
+========================================================================
+Files:              2250
+OK:                 2250
+Errors:             0
+CRC verified:       2250
+Pool layout match:  2250
+Pool mismatches:    0
+
+COMPRESSION METHODS
+     0: 198
+    15: 2052
+
+VERSIONS
+    18: 2250
+
+COLUMN TYPE CENSUS
+  TYPE 1: 54450 column occurrences, 2062 files
+  TYPE 2: 19841 column occurrences, 1022 files
+  TYPE 3: 3457 column occurrences, 755 files
+
+LARGEST BY ROW COUNT
+     22341 rows     3 cols  sharedassets/springboardentitites/datatables/timelines/javelindata_npc_votimelines.datasheet
+     17005 rows     5 cols  sharedassets/springboardentitites/datatables/javelindata_achievements.datasheet
+     13248 rows    42 cols  sharedassets/springboardentitites/datatables/javelindata_territoryprogression_missions.datasheet
+      9339 rows     5 cols  sharedassets/springboardentitites/datatables/javelindata_itemperkswaps.datasheet
+      8928 rows    56 cols  sharedassets/springboardentitites/datatables/javelindata_itemappearancedefinitions.datasheet
+      8283 rows    13 cols  sharedassets/springboardentitites/datatables/javelindata_vitalscategories.datasheet
+      7591 rows   127 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_master_crafting.datasheet
+      6673 rows     5 cols  sharedassets/springboardentitites/datatables/vitalstables/javelindata_levelvariantvitals_common.datasheet
+      6603 rows   127 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_master_loot.datasheet
+      5816 rows   167 cols  sharedassets/springboardentitites/datatables/vitalstables/javelindata_basevitals_common.datasheet
+      5237 rows   113 cols  sharedassets/springboardentitites/datatables/javelindata_loottables.datasheet
+      4884 rows   127 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_master_quest.datasheet
+      4241 rows   127 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_master_named.datasheet
+      4121 rows   127 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_master_faction.datasheet
+      3760 rows    44 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_weaponappearances.datasheet
+      3342 rows    15 cols  sharedassets/springboardentitites/datatables/javelindata_entitlements.datasheet
+      3317 rows    33 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_tooltiplayout.datasheet
+      3070 rows   127 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_master_named_depricated.datasheet
+      3046 rows    49 cols  sharedassets/springboardentitites/datatables/javelindata_owg_mission.datasheet
+      2824 rows   127 cols  sharedassets/springboardentitites/datatables/javelindata_itemdefinitions_master_omega.datasheet
+
+LARGEST BY COLUMN COUNT
+  2678 cols      2162 rows  sharedassets/springboardentitites/datatables/javelindata_lootbuckets.datasheet
+   335 cols        60 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_conquerersitems.datasheet
+   335 cols        15 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_rapier.datasheet
+   335 cols        42 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_voidgauntlet.datasheet
+   335 cols        30 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_warhammer.datasheet
+   335 cols        20 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_bow.datasheet
+   335 cols        45 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_flail.datasheet
+   335 cols        42 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_icemagic.datasheet
+   335 cols        30 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_musket.datasheet
+   335 cols       428 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_perks.datasheet
+   335 cols        47 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_runes.datasheet
+   335 cols        32 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_sword.datasheet
+   335 cols        93 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_artifacts.datasheet
+   335 cols        38 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_dagger.datasheet
+   335 cols        39 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_firestaff.datasheet
+   335 cols        18 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_greataxe.datasheet
+   335 cols        37 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_greatsword.datasheet
+   335 cols        40 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_hatchet.datasheet
+   335 cols       540 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_item.datasheet
+   335 cols        67 rows  sharedassets/springboardentitites/datatables/javelindata_statuseffects_lifestaff.datasheet
+
+REPORT: /srv/projects/new-world-forensics/reports/datasheet-full-census.tsv

@@ -1,0 +1,375 @@
+{
+  "root": "client",
+  "total_files": 51,
+  "extension_counts": {
+    ".json": 3,
+    ".cfg": 20,
+    ".exe": 4,
+    ".dll": 23,
+    ".xml": 1
+  },
+  "files": [
+    {
+      "path": "assets/Config/Game.xml",
+      "extension": ".xml",
+      "size_bytes": 7046,
+      "categories": []
+    },
+    {
+      "path": "Bin64/bink2w64.dll",
+      "extension": ".dll",
+      "size_bytes": 421768,
+      "categories": []
+    },
+    {
+      "path": "Bin64/dbghelp.dll",
+      "extension": ".dll",
+      "size_bytes": 2202008,
+      "categories": []
+    },
+    {
+      "path": "Bin64/dstorage.dll",
+      "extension": ".dll",
+      "size_bytes": 198544,
+      "categories": []
+    },
+    {
+      "path": "Bin64/dstoragecore.dll",
+      "extension": ".dll",
+      "size_bytes": 1451424,
+      "categories": []
+    },
+    {
+      "path": "Bin64/dxcompiler.dll",
+      "extension": ".dll",
+      "size_bytes": 20307496,
+      "categories": []
+    },
+    {
+      "path": "Bin64/dxil.dll",
+      "extension": ".dll",
+      "size_bytes": 1434600,
+      "categories": []
+    },
+    {
+      "path": "Bin64/GameCrashUploader.exe",
+      "extension": ".exe",
+      "size_bytes": 3259024,
+      "categories": []
+    },
+    {
+      "path": "Bin64/libcds-amd64-vcv141.dll",
+      "extension": ".dll",
+      "size_bytes": 54568,
+      "categories": []
+    },
+    {
+      "path": "Bin64/NewWorld.exe",
+      "extension": ".exe",
+      "size_bytes": 179204176,
+      "categories": [
+        "launcher"
+      ]
+    },
+    {
+      "path": "Bin64/nvngx_dlss.dll",
+      "extension": ".dll",
+      "size_bytes": 48971808,
+      "categories": []
+    },
+    {
+      "path": "Bin64/nvngx_dlssg.dll",
+      "extension": ".dll",
+      "size_bytes": 7596088,
+      "categories": []
+    },
+    {
+      "path": "Bin64/sl.common.dll",
+      "extension": ".dll",
+      "size_bytes": 650720,
+      "categories": []
+    },
+    {
+      "path": "Bin64/sl.dlss.dll",
+      "extension": ".dll",
+      "size_bytes": 237016,
+      "categories": []
+    },
+    {
+      "path": "Bin64/sl.dlss_g.dll",
+      "extension": ".dll",
+      "size_bytes": 458720,
+      "categories": []
+    },
+    {
+      "path": "Bin64/sl.interposer.dll",
+      "extension": ".dll",
+      "size_bytes": 541144,
+      "categories": []
+    },
+    {
+      "path": "Bin64/sl.nis.dll",
+      "extension": ".dll",
+      "size_bytes": 966104,
+      "categories": []
+    },
+    {
+      "path": "Bin64/sl.pcl.dll",
+      "extension": ".dll",
+      "size_bytes": 175064,
+      "categories": []
+    },
+    {
+      "path": "Bin64/sl.reflex.dll",
+      "extension": ".dll",
+      "size_bytes": 198112,
+      "categories": []
+    },
+    {
+      "path": "Bin64/steam_api64.dll",
+      "extension": ".dll",
+      "size_bytes": 302016,
+      "categories": [
+        "steam"
+      ]
+    },
+    {
+      "path": "Bin64/vivoxsdk.dll",
+      "extension": ".dll",
+      "size_bytes": 12379832,
+      "categories": []
+    },
+    {
+      "path": "Bin64/WinPixEventRuntime.dll",
+      "extension": ".dll",
+      "size_bytes": 55032,
+      "categories": []
+    },
+    {
+      "path": "bootstrap.cfg",
+      "extension": ".cfg",
+      "size_bytes": 980,
+      "categories": [
+        "launcher"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/EasyAntiCheat_EOS_Setup.exe",
+      "extension": ".exe",
+      "size_bytes": 960752,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/EOSSDK-Win32-Shipping.dll",
+      "extension": ".dll",
+      "size_bytes": 13923816,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/EOSSDK-Win64-Shipping.dll",
+      "extension": ".dll",
+      "size_bytes": 18107368,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/ar_sa.cfg",
+      "extension": ".cfg",
+      "size_bytes": 12667,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/cs_cz.cfg",
+      "extension": ".cfg",
+      "size_bytes": 10872,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/de_de.cfg",
+      "extension": ".cfg",
+      "size_bytes": 11058,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/en_us.cfg",
+      "extension": ".cfg",
+      "size_bytes": 9420,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/es_ar.cfg",
+      "extension": ".cfg",
+      "size_bytes": 11127,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/es_es.cfg",
+      "extension": ".cfg",
+      "size_bytes": 11299,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/fr_fr.cfg",
+      "extension": ".cfg",
+      "size_bytes": 11302,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/it_it.cfg",
+      "extension": ".cfg",
+      "size_bytes": 10589,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/ja_ja.cfg",
+      "extension": ".cfg",
+      "size_bytes": 12999,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/ko_kr.cfg",
+      "extension": ".cfg",
+      "size_bytes": 11181,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/nl_nl.cfg",
+      "extension": ".cfg",
+      "size_bytes": 10583,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/pl_pl.cfg",
+      "extension": ".cfg",
+      "size_bytes": 11160,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/pt_br.cfg",
+      "extension": ".cfg",
+      "size_bytes": 11043,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/ru_ru.cfg",
+      "extension": ".cfg",
+      "size_bytes": 14858,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/th_th.cfg",
+      "extension": ".cfg",
+      "size_bytes": 18481,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/tr_tr.cfg",
+      "extension": ".cfg",
+      "size_bytes": 10442,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/zh_cn.cfg",
+      "extension": ".cfg",
+      "size_bytes": 9513,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Localization/zh_tw.cfg",
+      "extension": ".cfg",
+      "size_bytes": 9492,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/Settings.json",
+      "extension": ".json",
+      "size_bytes": 702,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/x64/xaudio2_9redist.dll",
+      "extension": ".dll",
+      "size_bytes": 847440,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "EasyAntiCheat/x86/xaudio2_9redist.dll",
+      "extension": ".dll",
+      "size_bytes": 735616,
+      "categories": [
+        "anticheat"
+      ]
+    },
+    {
+      "path": "engine.json",
+      "extension": ".json",
+      "size_bytes": 66,
+      "categories": []
+    },
+    {
+      "path": "NewWorldLauncher.exe",
+      "extension": ".exe",
+      "size_bytes": 3923144,
+      "categories": [
+        "launcher"
+      ]
+    },
+    {
+      "path": "system_windows_pc.cfg",
+      "extension": ".cfg",
+      "size_bytes": 87,
+      "categories": []
+    },
+    {
+      "path": "typeindex.json",
+      "extension": ".json",
+      "size_bytes": 246875,
+      "categories": []
+    }
+  ]
+}

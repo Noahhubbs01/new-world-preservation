@@ -1,0 +1,27 @@
+50/755 files_ok=50 cells=325886 mismatches=320418
+100/755 files_ok=100 cells=327498 mismatches=321222
+150/755 files_ok=150 cells=343242 mismatches=331005
+200/755 files_ok=200 cells=454543 mismatches=381523
+250/755 files_ok=250 cells=616289 mismatches=445656
+300/755 files_ok=300 cells=618081 mismatches=446472
+350/755 files_ok=350 cells=635838 mismatches=456285
+400/755 files_ok=400 cells=737847 mismatches=520852
+450/755 files_ok=450 cells=775944 mismatches=549491
+500/755 files_ok=500 cells=777443 mismatches=550185
+550/755 files_ok=550 cells=778946 mismatches=550829
+600/755 files_ok=600 cells=804866 mismatches=570401
+650/755 files_ok=650 cells=833200 mismatches=584014
+700/755 files_ok=700 cells=916197 mismatches=642263
+750/755 files_ok=750 cells=968682 mismatches=662552
+755/755 files_ok=755 cells=971283 mismatches=662856
+
+TYPE 3 VALIDATION RESULTS
+Files checked: 755
+Files OK: 755
+File errors: 0
+Cells checked: 971283
+Text/binary matches: 308427
+Mismatches: 662856
+Negative integers: 0
+Non-boolean integers: 0
+Report: /srv/projects/new-world-forensics/reports/type3-validation.tsv
