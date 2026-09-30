@@ -82,3 +82,24 @@ Our updater should distribute our own tooling/configuration, not package or redi
 When chat memory conflicts with repository documentation and current evidence, investigate the discrepancy.
 
 Do not assume chat memory is authoritative.
+
+## Cold-start recovery procedure
+
+When continuing this project from a fresh or stale chat:
+
+1. Read this file completely.
+2. Read `docs/PROJECT_STATUS.md` completely.
+3. Confirm the current Git checkpoint with `git log -1 --oneline`.
+4. Confirm the working tree with `git status --short`.
+5. Summarize before performing new reverse-engineering work:
+   - current primary milestone,
+   - latest major verified result,
+   - current evidence boundary,
+   - primary blocker,
+   - immediate next experiment.
+6. Treat `docs/PROJECT_STATUS.md` as the authoritative current handoff. Do not reconstruct project state from chat memory when the repository contains newer evidence.
+7. If repository documentation appears stale relative to committed reports/tools, stop and reconcile the status document before continuing.
+
+A fresh chat should not require the previous chat transcript to resume the project.
+
+Repository access is required for cold-start recovery. A local Foundry path mentioned in chat is not itself accessible to a new ChatGPT conversation; use the current repository contents supplied or made accessible in that conversation.
