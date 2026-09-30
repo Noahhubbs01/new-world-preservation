@@ -3,25 +3,23 @@
 Last updated: 2026-09-30
 Repository: new-world-preservation
 Branch: main
-Last checkpoint before this document: 1934022
 
 ## Current objective
 
-Recover enough of the client/server protocol to construct a minimal server capable of progressing the real client through login and world initialization.
+Recover enough of the client/server protocol to construct a minimal private offline/LAN server capable of progressing the legitimate New World client through:
 
-Primary milestone:
+`connect -> authenticate -> enter world -> player spawn`
 
-Client connects -> authenticates -> enters world -> player spawns.
+Asset/datasheet extraction is mature. Network transport and receive/dispatch paths are substantially mapped. Current leverage comes from independently reconstructing the reflected serialization/type registry so community protocol research can be accepted, rejected, or corrected in bulk before world-initialization work continues.
 
-## Current overall state
+## Evidence discipline
 
-Asset and datasheet extraction is mature.
+- **VERIFIED**: directly supported by this executable, captures, experiments, or reproducible analysis.
+- **INFERRED**: strongly supported by verified structure but not directly demonstrated.
+- **COMMUNITY-REPORTED**: derived from external research and not yet independently verified.
+- **CONFLICTING**: a community claim conflicts with stronger executable/runtime evidence or with another source and must not be used as established fact.
 
-Network architecture and receive/dispatch paths are partially mapped.
-
-Community implementations provide useful protocol hypotheses but do not yet produce a playable real-client session.
-
-Current reverse-engineering focus is serialization and replication, particularly the outer ReplicatedStateBundle format and its inner replication records.
+Repository/executable evidence supersedes older status text and community claims when they conflict.
 
 ## VERIFIED
 
@@ -39,9 +37,9 @@ PE image base:
 
 `0x140000000`
 
-### Receive path
+### Receive / transport path
 
-Important recovered functions include:
+Important recovered functions:
 
 - queue pump `0x146A9FE30`
 - coordinator `0x146ABAE10`
@@ -53,12 +51,11 @@ Important recovered functions include:
   - `0x1461455F0`
 - dispatch `0x146AFA350`
 - RTTI TrackerMap `0x146ADFF60`
-
-Winsock-related functions include:
-
-- receive `0x147BB9640`
-- send `0x147BB9960`
+- Winsock receive `0x147BB9640`
+- Winsock send `0x147BB9960`
 - WSAConnect `0x147BBAA80`
+
+The previously observed in-memory `0xB8` queue stride is an internal queue/object layout and must not be treated as a wire packet size.
 
 ### Prefix-varuint32 codec
 
@@ -70,7 +67,7 @@ Decoder:
 
 `0x14087B5C0`
 
-Encoding widths:
+Widths:
 
 | Value range | Bytes |
 | --- | ---: |
@@ -80,191 +77,352 @@ Encoding widths:
 | `< 0x10000000` | 4 |
 | otherwise uint32 | 5 |
 
-Encoding:
+This is a prefix-width uint32 encoding, not LEB128.
 
-1 byte:
+Decoder structure:
 
-`b0 = value & 0x7F`
+- 1 byte: `value = b0 & 0x7F`
+- 2 bytes: `(b1 << 6) | (b0 & 0x3F)`
+- 3 bytes: `(BE16(b1,b2) << 5) | (b0 & 0x1F)`
+- 4 bytes: `(BE24(b1,b2,b3) << 4) | (b0 & 0x0F)`
+- 5 bytes: `(BE32(b1,b2,b3,b4) << 3) | (b0 & 0x07)`, modulo uint32
 
-2 bytes:
+The encoder independently matches the corresponding thresholds and representation.
 
-`b0 = 0x80 | (value & 0x3F)`
-`b1 = value >> 6`
+### Generic typed-object deserialization
 
-3 bytes:
+Function:
 
-`b0 = 0xC0 | (value & 0x1F)`
-`b1 = value >> 5`
-`b2 = value >> 13`
+`0x1417B2430`
 
-4 bytes:
+independently performs generic typed-object deserialization.
 
-`b0 = 0xE0 | (value & 0x0F)`
-`b1 = value >> 4`
-`b2 = value >> 12`
-`b3 = value >> 20`
+Recovered behavior:
 
-5 bytes:
+1. resolve a serialized type object,
+2. obtain its descriptor/helper through object `+0x48`,
+3. descriptor virtual `+0x10` creates an instance,
+4. descriptor virtual `+0x28` unmarshals into it,
+5. descriptor virtual `+0x18` destroys the instance on failure.
 
-`b0 = 0xF0 | (value & 0x07)`
-`b1 = value >> 3`
-`b2 = value >> 11`
-`b3 = value >> 19`
-`b4 = value >> 27`
+Verified descriptor roles:
 
-### Candidate ReplicatedStateBundle handlers
+- `+0x10` CreateInstance
+- `+0x18` Destroy
+- `+0x28` Unmarshal
 
-Community catalog reports:
+Accessor `0x1406D97D0` is structurally:
 
-Marshal:
+`return *(void **)(object + 0x48);`
+
+It is not itself a registry resolver.
+
+### Serialized type identity decoding
+
+Function:
+
+`0x1461ACFE0`
+
+implements:
+
+```text
+prefix-varuint32 type_idx
+
+if type_idx != 0:
+    identifier16 = registry[type_idx]
+else:
+    identifier16 = read_exact(16)
+```
+
+`0x1461AD130` consumes the resulting identifier and reaches lookup function:
+
+`0x1461650E0`
+
+`0x1461650E0` performs a hash-map lookup using a 128-bit identifier and returns the registered value at node `+0x20`.
+
+Combined verified chain:
+
+`serialized type_idx -> registry/inline 16-byte identity -> lookup -> registered object -> descriptor +0x48 -> CreateInstance / Unmarshal / Destroy`
+
+### UUID/GUID identity semantics
+
+Generated type providers independently demonstrate that textual UUID/GUID-style identifiers are parsed into exactly 16 bytes before construction/registration of reflected type objects.
+
+Therefore the 128-bit identities used by this registration system are independently verified as UUID/GUID-style identities.
+
+The exact byte ordering used by the inline `type_idx == 0` wire representation remains unresolved and should not be assumed to be RFC/network ordering without direct validation.
+
+### Type registry construction
+
+Registry accessor:
+
+`0x146162150() = global_object + 0x30`
+
+Global pointer:
+
+`0x14A435930`
+
+Registration function:
+
+`0x1461A9740`
+
+Verified registration behavior:
+
+1. checks/inserts an entry keyed by the candidate object's 128-bit identifier,
+2. assigns an index from the current 16-byte identifier-vector length,
+3. writes the assigned index to candidate object `+0x50`,
+4. appends the 16-byte identifier to the registry vector.
+
+Hash-map helper:
+
+`0x1461489B0`
+
+Recovered node structure:
+
+```text
++0x00/+0x08 linkage
++0x10 identifier low64
++0x18 identifier high64
++0x20 registered object/value
++0x28 associated ownership/value (unresolved)
+```
+
+Do not conflate registered-object `+0x50` with community-reported descriptor `type_idx` offsets.
+
+### Mass type-registry verification
+
+Community catalog used for correlation:
+
+`external/community/aeternum-world/Catalog/uuid_to_class.json`
+
+Catalog entries:
+
+`3,486`
+
+Independent executable census and registration analysis now establishes:
+
+- catalog UUID identities present in executable: `3,486 / 3,486`
+- UUID identity coverage: `100%`
+- direct call sites to `0x1461A9740`: `3,487`
+- distinct registration-containing functions: `3,487`
+- registrations correlated to a single UUID-bearing provider: `3,486`
+- correlated UUID providers represented in the catalog: `3,486 / 3,486`
+- catalog entries supplying `getter_va`: `218`
+- independently recovered getter/UUID matches: `218 / 218`
+
+Thus the catalog's complete 3,486-identity population corresponds one-for-one with 3,486 UUID-bearing registration paths in this executable.
+
+This does **not** independently verify the catalog's numerical `type_idx` values. Runtime registration order remains to be reconstructed.
+
+Reports:
+
+- `reports/type-registry-verification/type-registry.tsv`
+- `reports/type-registry-verification/registration-sites.tsv`
+- `reports/type-registry-verification/provider-uuid-map.tsv`
+- `reports/type-registry-verification/getter-comparison.tsv`
+- `reports/type-registry-verification/registration-anomalies.tsv`
+- `reports/type-registry-verification/registration-graph-summary.txt`
+
+Tools:
+
+- `tools/verify_type_registry.py`
+- `tools/analyze_type_registration.py`
+
+### Exceptional 3,487th registration
+
+The sole registration not correlated with a UUID-bearing provider occurs at:
+
+- registration call `0x146154F9A`
+- containing function `0x146154ED0`
+- immediately preceding object/provider routine `0x14614BE30`
+
+`0x146154ED0` is already independently associated with registry initialization.
+
+`0x14614BE30` has a structurally different construction pattern from the 3,486 generated UUID providers:
+
+- allocates a `0x68`-byte object,
+- installs vtable `0x147F48BA8`,
+- constructs/copies string-like state,
+- calls `0x146152B10`,
+- contains reference-count/ownership machinery,
+- does not exhibit the UUID-text parsing/provider fingerprint,
+- does not correlate to a catalog identity.
+
+**INFERRED:** this registration is registry-internal/special/bootstrap machinery rather than a missing ordinary reflected network type.
+
+The precise semantic identity of this special registration remains unresolved.
+
+### ReplicatedStateBundle identity and handler family
+
+StateBundle UUID:
+
+`8A40AEC2-AE07-4F92-9BF3-78FC0CC94FDF`
+
+The exact UUID text exists in this executable and is referenced by provider function:
+
+`0x146437070`
+
+That provider parses the textual UUID into a 16-byte identity, constructs the reflected type object, and installs helper/interface state connected to the static handler family around:
+
+`0x148502A48`
+
+The related static table contains:
+
+- `0x148502A68 -> 0x14644B260`
+- `0x148502A70 -> 0x14646C2B0`
+
+The executable therefore independently connects the StateBundle UUID identity to the handler family containing candidate Marshal `0x14644B260` and Unmarshal `0x14646C2B0`.
+
+The community class name `Amazon::Hub::ReplicatedStateBundle` remains useful terminology, but the UUID-to-handler-family relationship no longer depends solely on community reporting.
+
+The numerical StateBundle `type_idx = 8` remains COMMUNITY-REPORTED pending independent type-index reconstruction.
+
+### ReplicatedStateBundle outer serialization
+
+Candidate Marshal:
 
 `0x14644B260`
 
-Unmarshal:
+Candidate Unmarshal:
 
 `0x14646C2B0`
 
-Our executable independently confirms these addresses are paired in a static `.rdata` function table:
+Marshal `0x14644B260` thunks into:
 
-`0x148502A68 -> 0x14644B260`
+`0x146AE6DB0`
 
-`0x148502A70 -> 0x14646C2B0`
+The recovered outer serializer/deserializer pair handles:
 
-Marshal `0x14644B260` is a thunk:
+- preceding fields,
+- two boolean values,
+- optional structure controlled by the second boolean,
+- prefix-varuint32 payload length,
+- payload bytes.
 
-`add rcx, 0x8`
-`jmp 0x146AE6DB0`
+Unmarshal calls:
 
-The implementation at `0x146AE6DB0` strongly mirrors the independently inspected Unmarshal path.
+`0x146B07870`
 
-The outer serializer writes:
+for the outer structure and transfers payload through:
 
-- several preceding fields
-- two boolean values
-- optional structure controlled by the second boolean
-- prefix-varuint32 payload length
-- payload bytes
+`0x146470DF0`
 
-Unmarshal performs the corresponding reads and bounded payload transfer.
+Current evidence indicates `0x146470DF0` is buffer/payload transfer machinery, not the inner replication-record parser.
 
-This independently verifies substantial outer serialization behavior, although the human-readable class identity remains community-derived.
+### Candidate StateBundle object destruction
 
-### Candidate object destruction
-
-The object initialized by candidate Unmarshal uses vtable:
+The object initialized by candidate StateBundle Unmarshal uses vtable:
 
 `0x1484FF1D8`
 
-Vtable +0x38:
+Vtable `+0x38`:
 
 `0x14641FAE0`
 
-This function is deleting-destructor machinery and shows an object allocation size of:
+This is deleting-destructor machinery and demonstrates object allocation size:
 
 `0x990`
 
-Do not treat this destructor as a wire parser.
+It is not a wire parser.
 
-## COMMUNITY-REPORTED
+## COMMUNITY-REPORTED / SOURCE AUDIT
 
-Aeternum-World identifies:
-
-Type `0x08`
-UUID `8A40AEC2-AE07-4F92-9BF3-78FC0CC94FDF`
-Class `Amazon::Hub::ReplicatedStateBundle`
-
-Marshal `0x14644B260`
-Unmarshal `0x14646C2B0`
-
-Aeternum-World documents inner StateBundle records consisting broadly of interest/member replication data.
-
-First Light and Aeternum-World disagree on some message type/class mappings, particularly PlayerManagerSelfIdentificationMsg.
-
-Do not merge those mappings without independent validation.
-
-## Important unresolved questions
-
-1. Where is the inner ReplicatedStateBundle payload parsed?
-2. What is the exact inner record format in this client build?
-3. Which replication records are required to advance world initialization?
-4. What exact message/state transition causes the real client to progress beyond its current login state?
-5. Resolve First Light vs Aeternum-World type mapping discrepancies.
-6. Determine the minimum valid world-state sequence needed to spawn a player.
-
-## Current next step
-
-Trace consumption of the decoded StateBundle payload beyond the outer container/buffer layer.
-
-Do not continue following destructor families.
-
-Look for code that iterates or interprets the payload as replication records, using independently recovered behavior and community documentation only as a search guide.
-
-## Community references
-
-Local clones are stored under:
-
-`external/community/`
-
-They are intentionally excluded from this repository.
-
-Important research sources currently include:
-
-- First Light
-- Aeternum-World
-- new-world-tools
-
-Community findings must remain labeled COMMUNITY-REPORTED until independently validated.
-
-## Recent milestone
-
-Checkpoint `1934022` added network reverse-engineering tooling, transport/interface reports, dispatch evidence, datasheet census output, and string research.
-
-Immediately afterward, encoder `0x140877970` was independently confirmed as the matching prefix-varuint32 encoder for decoder `0x14087B5C0`.
-
-The next commit should include this status document and any protocol documentation produced from that finding.
-
-## 2026-09-30 community correlation update
-
-### Community research corpus
-
-The three local community repositories have been normalized into a searchable local research corpus:
+Local community repositories:
 
 - `external/community/first-light`
 - `external/community/aeternum-world`
 - `external/community/new-world-tools`
 
-Indexer:
+They are intentionally excluded from the preservation repository.
 
-`tools/index_community_research.py`
+Community findings must be classified against executable/runtime evidence rather than copied as truth.
 
-SQLite builder:
+### Aeternum-World
 
-`tools/build_community_research_db.py`
+Current executable evidence strongly supports Aeternum-World's 3,486-entry UUID identity population:
 
-Query tool:
+- `3,486 / 3,486` identities occur in this executable,
+- all 3,486 independently recovered UUID-bearing registration paths map into that population,
+- all `218 / 218` catalog-supplied getters independently agree with recovered provider/UUID relationships.
 
-`tools/query_community_research.py`
+This validates the identity population and the tested getter mappings, not every field in the catalog.
 
-Generated analysis location:
+Still COMMUNITY-REPORTED pending independent verification:
+
+- numerical `type_idx` assignments,
+- untested handler semantics,
+- class/name labels where not independently tied to executable RTTI,
+- detailed StateBundle inner-record layout,
+- claimed runtime registration ordering.
+
+Aeternum documentation describes generic `varint` fields as LEB128. At least the independently recovered serialized `type_idx` path in this executable instead uses the verified prefix-varuint32 codec. Do not copy its generic codec description into our implementation without per-field validation.
+
+### First Light
+
+First Light contains valuable real-client experimentation, captures, registration-response work, Carrier handling, StateBundle replay research, and GCW/world-initialization observations.
+
+Those empirical results should not be discarded merely because some static mappings are wrong or stale.
+
+However, its type/class mappings must now be treated cautiously.
+
+Important conflict:
+
+First Light associates:
+
+- UUID `60A51DFC-8745-4276-976D-8808EF52CD77`
+- type index `0x5D1`
+
+with `PlayerManagerSelfIdentificationMsg`.
+
+Aeternum-World instead associates that UUID/index with:
+
+`Javelin::CharacterServiceProxyActor`
+
+and reports `PlayerManagerSelfIdentificationMsg` as:
+
+- type index `0x65C`
+- UUID `169443E0-A508-4653-B437-49B7A195F69C`
+
+Because the Aeternum identity population now has comprehensive executable correlation while First Light's conflicting label has not been independently demonstrated, the First Light `0x5D1 = PlayerManagerSelfIdentificationMsg` mapping is classified **CONFLICTING** and must not be used as established protocol truth.
+
+The Aeternum numerical indices `0x5D1` and `0x65C` remain COMMUNITY-REPORTED until registration-order reconstruction verifies them.
+
+First Light's reported GCW stage transitions also remain COMMUNITY-REPORTED unless independently reproduced against this executable.
+
+### new-world-tools
+
+Useful primarily for asset, datasheet, AZ serialization/container formats, and supporting tooling.
+
+Protocol-relevant claims should be correlated against the executable before promotion to VERIFIED.
+
+## Community research corpus
+
+Research tooling:
+
+- `tools/index_community_research.py`
+- `tools/build_community_research_db.py`
+- `tools/query_community_research.py`
+
+Generated local analysis:
 
 `reports/community-index/`
 
-Current corpus statistics:
+Current recorded corpus statistics:
 
 - 500 manifest entries
 - 34,264,366 bytes normalized text
-- 51,447 unique executable-style addresses in the flat index
-- 6,279 unique UUIDs in the flat index
+- 51,447 unique executable-style addresses in flat index
+- 6,279 unique UUIDs in flat index
 - 960 unique short hex IDs
 - 4,382 unique namespace-qualified symbols
 - 37,820 protocol-related lines
 - 725 TODO/FIXME/HACK/XXX lines
 
-SQLite correlation database:
+SQLite database:
 
 `reports/community-index/community-research.sqlite`
 
-Database statistics:
+Recorded database statistics:
 
 - 500 files
 - 485 text aliases
@@ -274,136 +432,131 @@ Database statistics:
 - 6,276 UUID values
 - 4,382 symbols
 
-The small address/UUID count discrepancy between the flat index and SQLite database is unresolved and should not currently be interpreted as evidence of missing protocol data.
+The small flat-index/SQLite count discrepancy remains unresolved and should not be interpreted as protocol evidence.
 
-54 duplicate-content groups were identified, representing approximately 7.1 MB of duplicate material. The largest duplicate is the 6.8 MB First Light `messages-redacted.txt`, present through two path aliases.
+Generated copied community text and the SQLite database are local analysis caches and should not be committed without explicit licensing/provenance review.
 
-Generated copied community text and the SQLite database are local analysis caches and should not be committed without an explicit licensing/provenance review.
+## Known community/runtime observations not yet promoted
 
-### VERIFIED generic typed-object deserialization
+First Light reports that a real client accepts its replacement V3 registration response but repeatedly requests registration, remains around reported GCW state 10, and eventually disconnects.
 
-Aeternum-World reported generic serialization machinery around:
+First Light proposes later GCW transitions involving self-identification, level information, proxy creation, and spawn/world state.
 
-`0x1417B2430`
+These observations are useful search hypotheses but remain COMMUNITY-REPORTED until independently reproduced and mapped against this exact executable.
 
-Independent inspection of this executable confirms the following structural behavior.
+Aeternum-World proposes the broad network stack:
 
-`0x1417B2430`:
+`DTLS -> GridMate Carrier -> direction-specific framing -> AZ-Reflect -> typed class / StateBundle`
 
-1. obtains/resolves a serialized type object,
-2. accesses that object's descriptor through its `+0x48` field,
-3. invokes descriptor virtual `+0x10` to create an instance,
-4. invokes descriptor virtual `+0x28` to unmarshal into that instance,
-5. invokes descriptor virtual `+0x18` to destroy the instance when unmarshalling fails.
+Substantial portions are compatible with current executable research, but the complete stack and every field/layout have not been independently verified end-to-end.
 
-Therefore the descriptor interface roles:
+## Important unresolved questions
 
-- `+0x10` CreateInstance
-- `+0x18` Destroy
-- `+0x28` Unmarshal
+1. What is the runtime registration order that produces serialized numerical `type_idx` values?
+2. Do independently reconstructed indices match all 3,486 Aeternum catalog `type_idx` claims?
+3. What is the precise semantic role of the special registry-internal registration through `0x14614BE30`?
+4. Where is the inner ReplicatedStateBundle payload parsed?
+5. What is the exact inner replication-record format in this client build?
+6. Which replication records are required for world initialization?
+7. Which UUID/type actually represents PlayerManagerSelfIdentificationMsg in this executable?
+8. What exact message/state transition advances the real client beyond its current login/world-init state?
+9. What is the minimum valid world-state sequence required to create the local player/proxy and spawn?
+10. Which First Light claims survive direct correlation with the executable/runtime?
 
-are independently structurally verified for this executable.
+## Current work plan
 
-Accessor:
+### Phase 1 - Registry consolidation
 
-`0x1406D97D0`
+Complete.
 
-is simply:
+The reflected type population has been mass-correlated:
 
-`return *(void **)(object + 0x48);`
+- 3,486 catalog identities,
+- 3,486 UUID-bearing registration paths,
+- 218/218 supplied getters matched,
+- one structurally distinct registry-internal registration isolated.
 
-It is not itself a registry resolver.
+### Phase 2 - Community evidence audit
 
-### VERIFIED serialized type identity decoding
+Next.
 
-Function:
+Systematically mine:
 
-`0x1461ACFE0`
+1. Aeternum-World,
+2. First Light,
+3. new-world-tools
 
-independently confirms a type-index / inline-identifier mechanism.
+for claims relevant to:
 
-It first decodes a uint32 using the independently verified prefix-varuint32 decoder:
+- registration ordering and `type_idx`,
+- reflected handlers,
+- StateBundle parsing,
+- replication,
+- PlayerManagerSelfIdentification,
+- proxy creation,
+- level/world initialization,
+- player spawning,
+- useful runtime/Ghidra/Frida instrumentation.
 
-`0x14087B5C0`
+Each useful claim should be marked VERIFIED, INFERRED, COMMUNITY-REPORTED, CONFLICTING, or OBSOLETE.
 
-For a nonzero decoded index:
+### Phase 3 - Independent type_idx reconstruction
 
-- a registry/container is obtained,
-- its entries are 16 bytes each,
-- the decoded index selects one 16-byte entry,
-- that 16-byte value becomes the type identifier.
+Reconstruct the runtime initialization/registration order feeding `0x1461A9740`.
 
-For decoded index zero:
+Do not infer indices from static code-address order.
 
-- exactly 16 bytes are read directly from the serialized input,
-- those bytes become the type identifier.
+Compare independently derived indices against the entire 3,486-entry community catalog, with special attention to:
 
-Structural form:
+- StateBundle reported index `0x08`,
+- `0x5D1`,
+- `0x65C`.
 
-`prefix-varuint32 type_idx`
+### Phase 4 - World initialization
 
-If `type_idx != 0`:
+Return to StateBundle/replication parsing using the verified type dictionary.
 
-`identifier = registry[type_idx]`
+Trace:
 
-If `type_idx == 0`:
+- inner StateBundle payload parser,
+- member/type dispatch,
+- self-identification,
+- level information,
+- proxy creation,
+- local-player creation,
+- spawn transition.
 
-`identifier = read_16_bytes_inline()`
+### Phase 5 - Tester/debug launcher
 
-The 16-byte identifier is strongly corroborated as a UUID by community catalogs, but its UUID interpretation and exact byte ordering remain to be independently verified.
+Deferred until the real client is at or near GCW stage 14.
 
-This also independently establishes that this AZ-Reflect type-index field uses the recovered prefix-varuint32 codec. Aeternum-World documentation describes generic `varint` fields as LEB128, so its `type_idx` codec description is not correct for this executable build.
+The future standalone Windows tester/debug launcher should operate against a legitimate locally installed New World client and keep proprietary game binaries/assets separate from preservation tooling.
 
-Function:
+It may manage our launcher/configuration, instrumentation, protocol logging, server selection, capture/export, rollback, and preservation-tool updates.
 
-`0x1461AD130`
+## Repository hygiene
 
-uses the parsed 16-byte identifier in a lookup path ending at:
+Do not commit:
 
-`0x1461650E0`
+- client binaries,
+- PAKs or proprietary game assets,
+- encryption/private keys or auth tokens,
+- sensitive raw captures,
+- third-party repository clones,
+- generated copied community corpus,
+- generated community SQLite databases.
 
-and returns the resolved object or failure.
+Before every project commit:
 
-Combined recovered chain:
+1. update this document,
+2. inspect `git status`,
+3. inspect the intended diff,
+4. include this document in the commit.
 
-`serialized type_idx -> registry/inline 16-byte identifier -> type lookup -> resolved object -> descriptor +0x48 -> CreateInstance / Unmarshal / Destroy`
+## Immediate next step
 
-### Community correlation findings
+Audit the three community repositories against the newly verified reflected-type registry.
 
-Aeternum-World documents the network stack as:
+Prioritize information capable of accelerating independent `type_idx` reconstruction and world initialization.
 
-`DTLS -> GridMate Carrier -> direction-specific framing -> AZ-Reflect -> class body / StateBundle`
-
-Its StateBundle documentation proposes type index `8` and an inner stream containing interest records and per-member replication type indexes.
-
-First Light independently contains substantial StateBundle capture/replay research and world-initialization state-transition analysis.
-
-A significant mapping conflict remains:
-
-- Aeternum-World maps UUID `60A51DFC-8745-4276-976D-8808EF52CD77`, type index `0x5D1`, to `Javelin::CharacterServiceProxyActor`.
-- First Light identifies the same UUID/type index as `PlayerManagerSelfIdentificationMsg`.
-- Aeternum-World instead identifies `PlayerManagerSelfIdentificationMsg` as type index `0x65C`, UUID `169443E0-A508-4653-B437-49B7A195F69C`.
-
-Do not resolve this conflict without executable or runtime evidence.
-
-### Tester/debug client decision
-
-The planned standalone Windows tester/debug launcher is intentionally deferred until the client is at or near GCW stage 14.
-
-The future tester should keep the legitimate locally installed New World client separate from preservation tooling. It may manage our launcher, configuration, instrumentation, protocol logging, server selection, capture/export, rollback, and tooling updates, but should not package or redistribute proprietary game binaries/assets.
-
-GCW stage meanings currently derived from First Light remain COMMUNITY-REPORTED until independently verified.
-
-## Updated next step
-
-Use the independently recovered typed-object dispatch mechanism as a fingerprint while tracing the inner ReplicatedStateBundle payload.
-
-Specifically, correlate candidate inner-record parsing with:
-
-- prefix-varuint32 replication/type indexes,
-- 16-byte type identifiers,
-- descriptor lookup,
-- CreateInstance at descriptor `+0x10`,
-- Unmarshal at descriptor `+0x28`.
-
-Community StateBundle layouts should be used as search hypotheses, not treated as verified wire structure until matched against this executable or runtime captures.
+Do not return to one-at-a-time manual type verification except to investigate anomalies that bulk tooling cannot resolve.

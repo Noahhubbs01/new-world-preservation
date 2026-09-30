@@ -1,0 +1,250 @@
+
+##############################################################################
+QUERY: type_idx
+##############################################################################
+
+=== TEXT SEARCH: type_idx ===
+
+[aeternum-world] Catalog/uuid_to_class.json
+  ... false, "[type_idx]": 194, "ida": { "vtable_va": "0x147f42768", "caller_ra_va": "0x1407f3d30", "getter_va": "0x1407F3B80", "uuid_va": "0x147F45F88", "name_va": "0x147F45F68" }, "handler": { "CopyValue": "0x1407C1410", "CreateInstance": "0x1407C1400", "Destructor": "0x1407C2DE0", "GetEmptyValue": "0x1407C7DF0 ...
+
+[aeternum-world] Catalog/README.md
+  ... false, "[type_idx]": 13, "ida": { "vtable_va": "0x14846ae48", "caller_ra_va": "0x145c4e54a", "getter_va": null, "uuid_va": null, "name_va": null }, "handler": { "Marshal": "0x1407F8B00", "Unmarshal": "0x145CE5F90", "CreateInstance": "0x1443988E0", "Destructor": "0x145BE3750 ...
+
+[aeternum-world] docs/Network/packet_system.md
+  ... varint [type_idx] ? (kind == 1) uuid inline_uuid ? (kind == 1 AND [type_idx] == 0) // class looked up by UUID // kind == 0 -> no class id; envelope ends } ExtEnvelope { // rare; flags & 0x04 ...
+
+##############################################################################
+QUERY: type index
+##############################################################################
+
+No matches.
+
+##############################################################################
+QUERY: registration
+##############################################################################
+
+=== TEXT SEARCH: registration ===
+
+[first-light] CONTRIBUTING.md
+  ... The third is the runtime-dependent open question (see [`state_machine_summary.md`](analysis/state_machine_summary.md)). `server/rep_responder.py` already handles V3 [registration] + captured-replay pumping; the ...
+
+[first-light] README.md
+  ... See [`analysis/state_13_14_writer_investigation.md`](analysis/state_13_14_writer_investigation.md) for the full wake-241 → 247 → 249 → 252 arc. | | 3 | World streaming (post-[registration] server ...
+
+[first-light] site/data.json
+  ... 5, "name": "V3 [registration]", "desc": "Client sends its identity (Steam ID, persona, sdk version)." }, { "n": 6, "name": "[Registration] response", "desc": "Server returns a session token; client validates." }, { "n": 7, "name ...
+
+[first-light] docs/aznetworking-reference.md
+  ... Expect: - A packet type beyond `PacketType::MAX` of the Multiplayer group (i.e. `packetType >= 15`) that handles actor-level game logic [registration]. - A second "handshake-like" exchange *inside* the Connected ...
+
+[first-light] docs/next-session.md
+  ... The wake-252 indirect-vtable wall stops static-RE on this question. ## The exact open question (updated) **What server message satisfies the post-V3 "[registration] complete" predicate that stops the ...
+
+[first-light] docs/handoff_state10_question.md
+  ... Client now takes BRANCH B and emits `RegistrationRequestV3Msg` (which would be the *first* time we see [registration] bytes from it — we never have) 4. We respond with `RegistrationResponseMsg` (0x60 bytes ...
+
+[first-light] docs/connection-flow.md
+  ... State: `StartREPConnection → WaitingForREPConnection` 3. "REP socket connection established, now waiting to register" 4. "received [registration] response from REP" 5. Server version: `[RETAIL].Javelin.1.365.6030.5950962` 6. "start actor ...
+
+[first-light] docs/gridmate-reference.md
+  ... New [registration] ignored."` — `ReplicaChunkDescriptor.h:169` - `"Cannot find replica chunk descriptor for %s. Did you remember to register the chunk type?"` — `ReplicaFunctions.h:32`, `ReplicaFunctions.inl:62` - `"GridMate-Carrier"` — the ...
+
+[first-light] docs/non-eac-capture-plan.md
+  ... We have decrypted bytes for the full REP [registration] window via our own DTLS termination in `server/rep_responder.py`, so the original "obtain session secrets" goal is no longer ...
+
+[first-light] docs/capture-routes.md
+  ... we already have real AWS-side DTLS captures and can isolate the stable encrypted REP [registration] window without touching the live client. - Limits: no session secrets yet, so this yields ...
+
+[first-light] docs/progress.md
+  ... Used to identify which encrypted records are the highest-value decryption target first. | | `compare_[registration]_windows.py` | Compares the [registration] window across both real captures and surfaces which encrypted record ...
+
+[first-light] docs/capture-guide.md
+  ... What to redact (replace bytes with `XX` in hex dumps): - Steam auth ticket (a large binary blob, typically 512–1024 bytes in the V3 [registration] request) - Session token (32 bytes ...
+
+[first-light] tools/build_site.py
+  ... 5, "name": "V3 [registration]", "desc": "Client sends its identity (Steam ID, persona, sdk version)."}, {"n": 6, "name": "[Registration] response", "desc": "Server returns a session token; client validates."}, {"n": 7, "name ...
+
+[first-light] tools/correlate_rep_timeline.py
+  ... start REP connection", "rep_established": "REP socket connection established", "[registration]_response": "received [registration] response from REP", "start_actor_connection": "start actor game connection", "actor_connection_succeeds": "actor game connection succeeds ...
+
+[first-light] tools/compare_registration_windows.py
+  """ Compare REP [registration] windows across multiple real captures. Usage: python tools/compare_[registration]_windows.py """ from __future__ import annotations import json from pathlib import Path try: from extract_[registration]_window ...
+
+[first-light] tools/assess_capture_routes.py
+  ... DIR / 'analyze_pcapng_dtls.py'}, {TOOLS_DIR / 'extract_[registration]_window.py'}", "Existing real captures already isolate the stable encrypted REP [registration] window.", ] if existing: evidence.append( "Useful captures: " + ", ".join(str ...
+
+[first-light] tools/extract_registration_window.py
+  """ Extract the earliest DTLS application-data window around REP [registration]. This uses: - the PCAPNG DTLS timeline - the matching Game.log milestones Goal: - identify the first server-side epoch-1 application ...
+
+[first-light] server/rep_responder.py
+  ... See project_22_phase_post_[registration].md. self.ack_form = ack_form # V3 RegistrationResponse wrap parameters. Settable via CLI for # rapid iteration without code changes. self.v3_resp_flag = v3 ...
+
+[first-light] server/test_captures.py
+  ... Automatically discovers all messages-redacted.txt files so any new capture submitted via PR is tested without any manual test-[registration] step. Run with: pytest server/test_captures.py """ from ...
+
+[first-light] analysis/autonomous_worklog.md
+  ... the "[registration] watchdog" they hypothesized exists, but it's behind the vtable wall. Hooking the vtable slot dispatch (or `FUN_146aaa130` directly) at runtime would identify the calling state-machine ...
+
+[first-light] analysis/ghidra_findings.md
+  ... Creates multiple nested allocator-tracked containers for datasets, chunks, etc. **Does not register chunks inline** — chunk [registration] happens via global/static constructors that run at module load (each `ReplicaChunkDescriptor::Register ...
+
+[first-light] analysis/ghidra_hunt_list.md
+  ... 4. **Jump to `TransformReplicaChunk` VA `0x1484ee539`.** Xref → the chunk [registration] call site. Walk callers back to see where ALL chunks are registered during module init. Each [registration] call's first ...
+
+[first-light] analysis/state_machine_summary.md
+  ... which one of the 5 catalogued ClientMessagesTrait classes is handled here? `PlayerManagerSelfIdentificationMsg` (10→11), `LevelInfoChangedMsg` (12→13 force) and the assumed two post-[registration] messages (`RemoteConfigChangedMsg`, `DebugCommandResponseMsg`) are known by ...
+
+[first-light] analysis/connection_lifecycle_decompiles.md
+  ... This is the function that fires once the V3 [registration] is accepted; the state-machine writes at `+0xa0` (see `state_advance_predicate.txt`) happen later in the post-V3 sequence ...
+
+[first-light] analysis/community_archives_survey.md
+  ... not in datatables) - ❌ Does NOT help with **35 unclaimed captured wire-types** (need runtime [registration] data, not content tables) - ❌ Does NOT contain a `MessageId`/`TypeIndex` lookup table ### Where they DO ...
+
+[first-light] analysis/replay_message_inventory.md
+  ... this UUID is probably the **session UUID** the server assigns at [registration]. It gets echoed in: - `0xa4` (Phase 5 SESSION) as a "session-id confirmation" beacon - `0x1b88` (periodic identity) every ...
+
+[first-light] analysis/autonomous_worklog_through_253.md
+  ... The trait has exactly two outcomes for player [registration]: - `PlayerManagerSelfIdentificationMsg` → success → state advances to 11 - `PlayerManagerRejectedMsg` → failure → likely fires the destroy loop This **also probably resolves task A3** (find what ...
+
+[first-light] analysis/wrapper_setter_decompiles.md
+  ... build stripped the source string). ## Response handlers (server → client) ### `response_typeinfo` The AzCore RTTI [registration] for the V3 RegistrationResponse message type. Sibling to `clientconnectionmsg_typeinfo` from `connection_lifecycle_decompiles.md ...
+
+[first-light] analysis/typename_unblock_spec.md
+  ... The [registration] call is invoked thousands of times at startup; ~2-3 seconds of capture covers all types. **Frida sketch**: ```javascript // Find the Register function (export or pattern) const az ...
+
+[first-light] analysis/v3_request/HEADER_DECODE.md
+  ... 9 | `20` | inner-record / msg-class flag (unknown) | | 10 | `06` | msgID = 6 (likely `SM_[REGISTRATION]_REQUEST_V3`; matches msgID family 6/7 in `FUN_140f80770`) | | 11+ | ... | 832 B AzCore-serialized ...
+
+[first-light] analysis/proposed_patches/parallels_setup.md
+  ... t install Parallels itself — it's a Mac GUI app with a licensed trial [registration] that needs an Apple ID confirmation loop and a one-time install permission grant. That ...
+
+[first-light] server/javelin/v3_response.py
+  ... session_clock — slow-incrementing counter the # server sets at [registration]. Type 0x14f's # payload bytes 0..3 carry the SAME value; # across the 4 captured 0x14f messages it # transitions 0x0b888d68 ...
+
+[first-light] server/javelin/handshake_blob_76.py
+  ... Sequence position (seq 0x4 + seq 0x5 — the two messages **right after** the V3 [registration] response and before any session beacons) strongly suggests this is a **two-step handshake / key-exchange ...
+
+[first-light] server/javelin/session_state.py
+  ... bytes = b"" # 16 bytes, assigned at [registration] persona_id: int = 0 # u32 from V3 request build_version: int = 0 # u32, from server-side config # ---- session clock + nonce baseline ---- # # Embedded in ...
+
+[first-light] server/javelin/v3_request.py
+  ... Decodes the 832-byte AzCore-serialized body of a captured V3 [registration] request (see ``analysis/v3_request/all_v3_request_retries.hex`` and ``analysis/v3_request/BODY_DECODE.md``). The ...
+
+[first-light] tools/client-hooks/frida_dtls_hook.js
+  ... received [registration] // response from REP". var INTERNAL_RVA_RESPONSE_UNMARSHAL = 0x007cd040; // FUN_1407cd040 var INTERNAL_RVA_RESPONSE_RECEIVE = 0x064755e0; // FUN_1464755e0 // 2026-05-05 late: GlobalGameApp singleton at DAT_14a7ba0e0 ...
+
+[first-light] docs/community/nw-login-safe/handoff-notes.md
+[first-light] info/nw-login-safe-20260502-153840/handoff-notes.md
+  ... Check that the same player identity/session/actor continuity survives across [registration], the early `0x65c` response, the large StateBundle init burst, and the `interest=91` StateBundle records. The practical diff ...
+
+##############################################################################
+QUERY: registry
+##############################################################################
+
+=== TEXT SEARCH: registry ===
+
+[first-light] DASHBOARD.md
+  ... Of all 3487 [registry] entries, 297 are direct matches and 9 are hi-confidence interpolations — none of the 9 happen to be in the captured replay's type-id range ...
+
+[first-light] site/data.json
+  ... State machine reverse-engineered from binary decompiles; state-10 blocker identified." }, { "label": "Type [registry] + 5 confirmed names", "wake": "wake 90-97", "desc": "3487-entry runtime type [registry] mapped against MSVC ...
+
+[first-light] site/index.html
+  ... conf === "[registry]-direct" ? "badge-[registry]" : conf === "hi" ? "badge-hi" : conf === "med" ? "badge-med" : conf === "lo" || conf === "[registry]-only" ? "badge-lo" : "badge-other"; // Pick a direction the type actually uses; if ...
+
+[first-light] docs/next-session.md
+  ... The transition is gated by `*(int*)(wrapper + 0xa0) == 2` (corrected from the earlier `+0x130` hypothesis), and the value 2 is written only on receipt of `PlayerManagerSelfIdentificationMsg` (wire-type `0x5d1`, [registry] ...
+
+[first-light] docs/handoff_state10_question.md
+  ... Carrier datagram envelope → Carrier system-message channel (msgId 1/2/4/6/etc) → GridMate [registry]-keyed payloads? Or are there other tiers we haven't seen? 4. **Channel 3 sysmsg ...
+
+[first-light] docs/gridmate-reference.md
+  ... That's your chunk-name [registry]. ### 5.3 Top-level replica command byte The replica stream sits inside a reliable message on a user channel. Every replica record starts with ...
+
+[first-light] docs/progress.md
+  ... CLI parser at `FUN_14645b520` reads bare keys (no `--` prefix) via a generic args [registry]; the actual CLI syntax for that [registry] is unknown. - `@assets@/ClientOverride.json` is checked at ...
+
+[first-light] docs/post-v3-flow.md
+  ... is the binding constraint, not Carrier's u16 record-size cap For a full [registry]-vs-capture diff: [analysis/typeregistry_vs_replay.md](../analysis/typeregistry_vs_replay.md). --- ## 6. Heartbeat ...
+
+[first-light] docs/protocol-overview.md
+  ... V3 22-phase RE notes - [`info/typeregistry.json`](../info/typeregistry.json) — runtime- extracted type [registry] (3,487 named types with handler vtable addresses + Marshal/Unmarshal opcode prefixes) ## What "good progress ...
+
+[first-light] docs/capture-guide.md
+  ... A hex dump of the first 64 bytes (redacted if needed) Cross-referencing against the type [registry] in `info/typeregistry.json` is a good first step.
+
+[first-light] tools/build_site.py
+  ... d = captured_by_id[tid] reg = [registry].get(tid, {}) name_info = typename_map.get(tid) [registry]_name = reg.get("name", "") confidence = "[registry]-direct" if [registry]_name else "no-name" if ...
+
+[first-light] tools/typeregistry_diff.py
+  ... print(f"[registry] not found: {reg_path}", file=sys.stderr) return 2 ti_to_name = load_[registry](reg_path) records = parse_capture(cap_path) by_type = collections.defaultdict(lambda: {"R ...
+
+[first-light] tools/extract_typenames.py
+  """Bulk-extract type names from InstallRegistrationHook<T> typeinfo strings, anchored by named [registry] entries. Wake 95 v1: 297/312 named entries matched. Interpolation was too aggressive — produced duplicates. Wake 96 ...
+
+[first-light] tools/build_message_inventory.py
+  ... Defaults to ``/tmp/all_install_hooks.txt``. - ``info/typeregistry.json`` — runtime-extracted type [registry]. Output: ``analysis/message_inventory.md`` — a comprehensive catalog of every ``InstallRegistrationHook<T>`` template instantiation in the ...
+
+[first-light] analysis/message_inventory.md
+  ... 174 namespaces. > > Cross-referenced where possible with `info/typeregistry.json` (a > runtime-extracted type [registry]; 312 named types with handler > data). Types marked **(R)** appear in typeregistry — useful when > looking ...
+
+[first-light] analysis/ghidra_findings.md
+  ... serialize, unmarshal, spawn) // Each vtable is 3 function pointers (0x10 bytes apart) desc.class_id = class_id; } } ``` ### Helper functions identified | VA | Renamed | Role | |----|---------|------| | `0x140ad2870` | `Javelin_ReplicaChunkDescriptor_Register` | Creates a [registry] ...
+
+[first-light] analysis/sub_system_id_hash_search.md
+  ... Only 312 of 3,487 [registry] entries have a populated `name` field. The other 91% are unnamed in the [registry] — so even a working hash would miss any sub_system ...
+
+[first-light] analysis/session_retrospective_150.md
+  ... typename + identity-bundle work (wakes 60-90) - Static-RE on the EAC-wrapped binary using Ghidra (analysis succeeded 2026-05-06) - Type [registry] mapping: 3487 entries in `info/typeregistry.json ...
+
+[first-light] analysis/typename_mapping.csv
+  typeIndex,name,confidence 0,NullType,[registry]-only 1,REPClient::RegistrationRequestMsg,direct 2,REPClient::RegistrationRequestV2Msg,direct 3,REPClient::RegistrationResponseMsg,direct 4,MessageLayerTrait::IdentifierMsg,direct 5,MessageLayerTrait::IdentifierAckMsg,direct 6,MessageLayerTrait::IdentifierCompleteMsg ...
+
+[first-light] analysis/autonomous_worklog_through_253.md
+  ... [registry] xref-scan empty; loop stops again **Did (briefly):** - (a) `FindLEAToRange` on `[0x14abcb000, 0x14abcd000]` (the AZ typed [registry] containing SelfIdent's entry from wake 6) returned **0 hits** — no instructions ...
+
+[first-light] analysis/identity_bundle_correlation.md
+  ... Even the canonical session_uuid_lower (`bf85314bbc4a951a`) — constant for this whole session — is not present in the [registry]. **Implication**: the `sub_system_id` namespace is a different identifier system from ...
+
+[first-light] analysis/typename_unblock_spec.md
+  ... The strategies below (Frida hook, > [registry] dump, static-RE) are kept for historical context — they > are no longer required to make the capture useful. The remaining > type-name work is ...
+
+[first-light] analysis/typeregistry_vs_replay.md
+  ... A real client session that *did* go in-world wrote zero `SpawnActorsMsg=0x23e` packets at the top level. - 307/312 named [registry] types are unobserved. That includes every `MoveAnActorMsg`, `CommitMovementMsg ...
+
+[first-light] analysis/sub_system_id_hash_search_v2.py
+  ... produce a definitive yes/no on whether any of the named [registry] entries hashes to any of the 11 captured sub_system_ids under any of the standard 64-bit ...
+
+[first-light] tools/ghidra_scripts/UuidAtAddress.py
+  ... print(" name: <not in [registry]>")
+
+[new-world-tools] hash/registry.go
+  package hash import ( "sort" "sync" ) type Hash struct { FileName string Hash []byte } type [Registry] struct { hashes []*Hash mu sync.Mutex } func NewRegistry() *[Registry] { return &[Registry]{ hashes: []*Hash{}, } } func ([registry] *[Registry] ...
+
+[new-world-tools] azcs/hash.go
+  ... map[uint32]string{}, } } type HashRegistry struct { mu sync.Mutex hashes map[uint32]string } func ([registry] *HashRegistry) Add(value string) error { if value == "" { return nil } lowerValue := strings.ToLower(value) hash := crc32 ...
+
+[new-world-tools] azcs/type.go
+  ... map[string]string{}, } } type TypeRegistry struct { mu sync.Mutex types map[string]string } func ([registry] *TypeRegistry) Add(id string, value string) error { [registry].mu.Lock() defer [registry].mu.Unlock() [registry] ...
+
+[new-world-tools] cmd/pak-extracter/main.go
+  ... outputDir string hashSumFile string decompressAzcs bool convertDdsTo string extractWem bool fixLuac bool hashRegistry *hash.[Registry] pr *profiler.Profiler ) var ( excludeRe *regexp.Regexp includeRe *regexp.Regexp includePriority bool ) var supportedFormatsForDdsConverting = map ...
+
+##############################################################################
+QUERY: TypeDescriptor
+##############################################################################
+
+=== TEXT SEARCH: TypeDescriptor ===
+
+[aeternum-world] Catalog/uuid_to_class.json
+  ... 4, "source": "Frida nw_[typedescriptor]_ctor probe (typedesc_ctor_02) -- captured (UUID, AZStd::string name) pairs at NW_AZ_[TypeDescriptor]_Ctor @ 0x1407DE270.", "comment": "Clean UUID -> class catalog. Names come ONLY ...
+
+[aeternum-world] docs/Network/packet_system.md
+  ... section 7) | | `NW_ReplicaCarrier_Subscriber_OnReceive` | `0x146B288F0` | bundle delivery entry on the replica side | [TypeDescriptor] helper vtable (per class): `+0x10` CreateInstance, `+0x28` Unmarshal, `+0x18` Destroy; `type_idx` lives at `descriptor ...
+
+##############################################################################
+QUERY: 0x1461A9740
+##############################################################################
+
+No matches.

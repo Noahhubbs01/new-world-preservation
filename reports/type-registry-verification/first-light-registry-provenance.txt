@@ -1,0 +1,159 @@
+external/community/first-light/.venv/lib64/python3.12/site-packages/pygments/lexers/_php_builtins.py:2355: 'Scoutapm': ('scoutapm_get_calls', 'scoutapm_list_instrumented_functions'),
+external/community/first-light/.venv/lib64/python3.12/site-packages/pygments/lexers/algebra.py:231:                DOM_INT|DOM_INTERVAL|DOM_LIST|DOM_NIL|DOM_NULL|DOM_POLY|DOM_PROC|
+external/community/first-light/.venv/lib64/python3.12/site-packages/pygments/lexers/_vim_builtins.py:981:        ('term_list','term_list'),
+external/community/first-light/.venv/lib64/python3.12/site-packages/cffi/recompiler.py:349:        typeindex2type = dict([(i, tp) for (tp, i) in self._typesdict.items()])
+external/community/first-light/.venv/lib64/python3.12/site-packages/cffi/recompiler.py:352:            if i in typeindex2type:
+external/community/first-light/.venv/lib64/python3.12/site-packages/cffi/recompiler.py:353:                comment = ' // ' + typeindex2type[i]._get_c_name()
+external/community/first-light/.venv/lib64/python3.12/site-packages/cffi/recompiler.py:505:        typeindex2type = dict([(i, tp) for (tp, i) in self._typesdict.items()])
+external/community/first-light/.venv/lib64/python3.12/site-packages/pycparser/c_parser.py:1199:        enum_list = c_ast.EnumeratorList([enum], enum.coord)
+external/community/first-light/.venv/lib64/python3.12/site-packages/pycparser/c_parser.py:1204:            enum_list.enumerators.append(enum)
+external/community/first-light/.venv/lib64/python3.12/site-packages/pycparser/c_parser.py:1205:        return enum_list
+external/community/first-light/.venv/lib64/python3.12/site-packages/pycparser/c_parser.py:1585:    # BNF: block_item_list : block_item+
+external/community/first-light/.venv/lib64/python3.12/site-packages/pycparser/c_parser.py:1586:    def _parse_block_item_list(self) -> List[c_ast.Node]:
+external/community/first-light/.venv/lib64/python3.12/site-packages/pycparser/c_parser.py:1598:    # BNF: compound_statement : '{' block_item_list? '}'
+external/community/first-light/.venv/lib64/python3.12/site-packages/pycparser/c_parser.py:1603:        block_items = self._parse_block_item_list()
+external/community/first-light/.venv/lib/python3.12/site-packages/pygments/lexers/_php_builtins.py:2355: 'Scoutapm': ('scoutapm_get_calls', 'scoutapm_list_instrumented_functions'),
+external/community/first-light/.venv/lib/python3.12/site-packages/pygments/lexers/algebra.py:231:                DOM_INT|DOM_INTERVAL|DOM_LIST|DOM_NIL|DOM_NULL|DOM_POLY|DOM_PROC|
+external/community/first-light/.venv/lib/python3.12/site-packages/pygments/lexers/_vim_builtins.py:981:        ('term_list','term_list'),
+external/community/first-light/.venv/lib/python3.12/site-packages/cffi/recompiler.py:349:        typeindex2type = dict([(i, tp) for (tp, i) in self._typesdict.items()])
+external/community/first-light/.venv/lib/python3.12/site-packages/cffi/recompiler.py:352:            if i in typeindex2type:
+external/community/first-light/.venv/lib/python3.12/site-packages/cffi/recompiler.py:353:                comment = ' // ' + typeindex2type[i]._get_c_name()
+external/community/first-light/.venv/lib/python3.12/site-packages/cffi/recompiler.py:505:        typeindex2type = dict([(i, tp) for (tp, i) in self._typesdict.items()])
+external/community/first-light/.venv/lib/python3.12/site-packages/pycparser/c_parser.py:1199:        enum_list = c_ast.EnumeratorList([enum], enum.coord)
+external/community/first-light/.venv/lib/python3.12/site-packages/pycparser/c_parser.py:1204:            enum_list.enumerators.append(enum)
+external/community/first-light/.venv/lib/python3.12/site-packages/pycparser/c_parser.py:1205:        return enum_list
+external/community/first-light/.venv/lib/python3.12/site-packages/pycparser/c_parser.py:1585:    # BNF: block_item_list : block_item+
+external/community/first-light/.venv/lib/python3.12/site-packages/pycparser/c_parser.py:1586:    def _parse_block_item_list(self) -> List[c_ast.Node]:
+external/community/first-light/.venv/lib/python3.12/site-packages/pycparser/c_parser.py:1598:    # BNF: compound_statement : '{' block_item_list? '}'
+external/community/first-light/.venv/lib/python3.12/site-packages/pycparser/c_parser.py:1603:        block_items = self._parse_block_item_list()
+external/community/first-light/site/data.json:1656:      "title": "Wire-type-id == typeIndex from runtime registry",
+external/community/first-light/site/data.json:1659:      "summary": "info/typeregistry.json (3487 entries) maps each registered type's typeIndex to (uuid, handler, baseVtable). Verified: typeIndex == wire-format type-id. 6 captured types now have authoritative names."
+external/community/first-light/site/data.json:29834:      "summary": "in `info/typeregistry.json` (3487 entries) maps `typeIndex` to `(uuid, handler_fingerprint, ...)` but only 312 entries have a populated `name` field \u2014 the remaining 3175 have `name=\"\"`.",
+external/community/first-light/site/README.md:52:- `info/typeregistry.json` (3487 type entries)
+external/community/first-light/docs/post-v3-flow.md:79:(typeIndex 0x13, body 0x470 bytes). It lands as a single Carrier record
+external/community/first-light/docs/post-v3-flow.md:99:We reply with a `RegistrationResponseMsg` (typeIndex 0x3, body 88 B) on
+external/community/first-light/docs/post-v3-flow.md:128:- Most are typeIndex 0x0008 (anonymous StateBundle channel; sub-types
+external/community/first-light/docs/post-v3-flow.md:148:PingMsg (typeIndex 0x15d, 12 B body) every 500 ms. Without it, the client
+external/community/first-light/docs/protocol-overview.md:326:- [`info/typeregistry.json`](../info/typeregistry.json) — runtime-
+external/community/first-light/docs/capture-guide.md:240:Cross-referencing against the type registry in `info/typeregistry.json` is a good first step.
+external/community/first-light/DASHBOARD.md:28:- **Two major findings (wake 90)**: W-direction CRC32 confirmed; wire-type-id == typeIndex from `info/typeregistry.json` (3487 entries; 6 captured types now authoritatively named).
+external/community/first-light/DASHBOARD.md:30:- **State 10 → 11 transition**: handler is `FUN_146454c00` (`PlayerManagerSelfIdentificationMsg`, typeIndex 0x5d1). Predicate `*(int *)(wrapper + 0xa0) == 2`. **Captured replay lacks Phase 9b** — needs runtime trace or static-RE on the deserializer.
+external/community/first-light/DASHBOARD.md:91:**Bold** = full namespace name recovered from `info/typeregistry.json` + `InstallRegistrationHook<T>` typeinfo strings in the binary (wake 90 + wake 96). The 6 above are confirmed by **direct 1:1 match**. The other 34 captured types are marked `unclaimed` in [`analysis/typename_mapping.csv`](analysis/typename_mapping.csv) — the strict interpolation algorithm in `tools/extract_typenames.py` (wake 96) only assigns names when both anchors are in the same translation unit AND the index count matches the string count exactly. Of all 3487 registry entries, 297 are direct matches and 9 are hi-confidence interpolations — none of the 9 happen to be in the captured replay's type-id range.
+external/community/first-light/DASHBOARD.md:99:| Wire trigger type-ID | `0x5d1` (= 1489 = typeIndex from registry) |
+external/community/first-light/DASHBOARD.md:121:`info/typeregistry.json` (a runtime memory dump of the AZ type registry, 3487 entries) provides:
+external/community/first-light/DASHBOARD.md:125:- **typeIndex == wire-format type-id**
+external/community/first-light/DASHBOARD.md:130:- `RegistrationRequestMsg` typeIndex=1
+external/community/first-light/DASHBOARD.md:131:- `RegistrationRequestV2Msg` typeIndex=2
+external/community/first-light/DASHBOARD.md:132:- `REPConnectionListener::State` typeIndex=368 (= 0x170)
+external/community/first-light/DASHBOARD.md:133:- `RegistryClient::State` typeIndex=328 (= 0x148)
+external/community/first-light/DASHBOARD.md:134:- `PlayerManagerSelfIdentificationMsg` typeIndex=1489 (= 0x5d1)
+external/community/first-light/tools/build_site.py:4:  - info/typeregistry.json
+external/community/first-light/tools/build_site.py:30:    with open(REPO / "info" / "typeregistry.json") as f:
+external/community/first-light/tools/build_site.py:32:    by_typeindex = {}
+external/community/first-light/tools/build_site.py:33:    for entry in data["data"]["m_list"]:
+external/community/first-light/tools/build_site.py:36:            ti = d.get("typeIndex")
+external/community/first-light/tools/build_site.py:39:            by_typeindex[ti] = {
+external/community/first-light/tools/build_site.py:43:                "baseVtable": d.get("baseVtable"),
+external/community/first-light/tools/build_site.py:45:    return by_typeindex
+external/community/first-light/tools/build_site.py:57:            ti = int(row["typeIndex"])
+external/community/first-light/tools/build_site.py:1045:            "title": "Wire-type-id == typeIndex from runtime registry",
+external/community/first-light/tools/build_site.py:1048:            "summary": "info/typeregistry.json (3487 entries) maps each "
+external/community/first-light/tools/build_site.py:1049:                       "registered type's typeIndex to (uuid, handler, "
+external/community/first-light/tools/build_site.py:1050:                       "baseVtable). Verified: typeIndex == wire-format "
+external/community/first-light/tools/typeregistry_diff.py:1:"""Diff observed wire types in a capture against info/typeregistry.json.
+external/community/first-light/tools/typeregistry_diff.py:40:    for _uuid, body in data["data"]["m_list"]:
+external/community/first-light/tools/typeregistry_diff.py:41:        ti = body.get("typeIndex")
+external/community/first-light/tools/typeregistry_diff.py:91:    p.add_argument("--registry", default="info/typeregistry.json")
+external/community/first-light/tools/extract_typenames.py:20:  - info/typeregistry.json
+external/community/first-light/tools/extract_typenames.py:24:  - analysis/typename_mapping.csv (typeIndex, name, confidence)
+external/community/first-light/tools/extract_typenames.py:44:    with open(REPO / "info" / "typeregistry.json") as f:
+external/community/first-light/tools/extract_typenames.py:47:    for entry in data["data"]["m_list"]:
+external/community/first-light/tools/extract_typenames.py:51:            ti = d.get("typeIndex")
+external/community/first-light/tools/extract_typenames.py:214:    # 8. Build typeIndex → (name, conf)
+external/community/first-light/tools/extract_typenames.py:228:        f.write("typeIndex,name,confidence\n")
+external/community/first-light/tools/extract_typenames.py:236:    print(f"# wrote {out_path} with {len(seen)} unique typeIndex rows")
+external/community/first-light/tools/ghidra_scripts/UuidAtAddress.py:5:# in /tmp/uuid_to_name.json (built from info/typeregistry.json).
+external/community/first-light/tools/build_message_inventory.py:8:  - ``info/typeregistry.json`` — runtime-extracted type registry.
+external/community/first-light/tools/build_message_inventory.py:94:    """Return the set of named types from info/typeregistry.json."""
+external/community/first-light/tools/build_message_inventory.py:130:            "> Cross-referenced where possible with `info/typeregistry.json` (a\n"
+external/community/first-light/tools/build_message_inventory.py:131:            "> runtime-extracted type registry; 312 named types with handler\n"
+external/community/first-light/tools/build_message_inventory.py:160:            "`info/typeregistry.json`.\n\n"
+external/community/first-light/tools/build_message_inventory.py:202:        default=here / "info" / "typeregistry.json",
+external/community/first-light/.github/workflows/pages.yml:11:      - "info/typeregistry.json"
+external/community/first-light/analysis/message_inventory.md:10:> Cross-referenced where possible with `info/typeregistry.json` (a
+external/community/first-light/analysis/message_inventory.md:11:> runtime-extracted type registry; 312 named types with handler
+external/community/first-light/analysis/message_inventory.md:98:`info/typeregistry.json`.
+external/community/first-light/analysis/community_archives_survey.md:58:`TimeSynch`, `PingMsg`, `TypeIndex`, `SerializeContext`,
+external/community/first-light/analysis/community_archives_survey.md:72:- ❌ Does NOT contain a `MessageId`/`TypeIndex` lookup table
+external/community/first-light/analysis/session_retrospective_150.md:61:- Type registry mapping: 3487 entries in `info/typeregistry.json`,
+external/community/first-light/analysis/typename_mapping.csv:1:typeIndex,name,confidence
+external/community/first-light/analysis/autonomous_worklog_through_253.md:1771:`info/typeregistry.json` is a **runtime-extracted type registry**
+external/community/first-light/analysis/autonomous_worklog_through_253.md:1780:earlier — this registry IS the runtime-equivalent dump of the
+external/community/first-light/analysis/autonomous_worklog_through_253.md:1806:- C1.1: Build a script that maps `typeregistry.json` Marshal/Unmarshal
+external/community/first-light/analysis/autonomous_worklog_through_253.md:1819:- Discovery of `typeregistry.json` as a static-analysis-unblocking
+external/community/first-light/analysis/autonomous_worklog_through_253.md:1832:### 2026-05-07 — wake 21: typeregistry mapping fails BUT community dump is a goldmine
+external/community/first-light/analysis/autonomous_worklog_through_253.md:1837:  `info/typeregistry.json` (312 named UUIDs after deduplication).
+external/community/first-light/analysis/autonomous_worklog_through_253.md:2059:- Cross-referenced with the `info/typeregistry.json` named types.
+external/community/first-light/analysis/autonomous_worklog_through_253.md:2089:handler data in `info/typeregistry.json` cover `Amazon::Hub`,
+external/community/first-light/analysis/autonomous_worklog_through_253.md:2631:  repo (typeregistry.json, 22-phase dump) that significantly
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8871:## Finding 2: Wire type-id == typeIndex from runtime registry
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8873:`info/typeregistry.json` (already present from May 6 — not in
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8878:- baseVtable (image-relative)
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8881:- typeIndex (integer)
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8883:**Realization**: the `typeIndex` field IS the wire-format
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8885:typeIndex=19 (= 0x13) for `RegistrationRequestV3Msg`. Verified
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8899:Plus REP-related types: typeIndex=362 = 0x16a is
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8900:`REPConnectionListener`, typeIndex=368 = 0x170 is
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8901:`REPConnectionListener::State`, typeIndex=328 = 0x148 is
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8941:`info/typeregistry.json` (above).
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8962:**State-10 thorough check** with new typeregistry.json data:
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8964:- `PlayerManagerSelfIdentificationMsg`: typeIndex=1489 (0x5d1),
+external/community/first-light/analysis/autonomous_worklog_through_253.md:8975:  explicitly mapped to typeIndex by surrounding bytes
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9168:- The link between typeIndex/UUID → class-name: **not
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9180:- A different runtime registry dump with `name` populated for
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9181:  all 3487 entries (the captured `info/typeregistry.json` has
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9185:  instantiations to recover (name, typeIndex) pairs
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9236:queue. **Major progress** — the path from typeIndex to type
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9248:   `typeIndex` (which is the wire-format type-id). All 3487
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9324:3. Output the final (typeIndex → name) CSV that maps all 40
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9338:`analysis/typename_mapping.csv` (3487 rows, typeIndex → name).
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9398:structure" we've added "captured wire-type-id → typeIndex →
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9559:    — gives all 3487 (typeIndex, name) pairs in seconds. Needs
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9561:  - Option B: better runtime registry dump (re-run the dumper
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9592:- Wire-type-id == typeIndex relationship verified (wake 90)
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9616:  `info/typeregistry.json`, the captured replay (via
+external/community/first-light/analysis/autonomous_worklog_through_253.md:9677:  `RegistrationRequest`, `TimeSynch`, `PingMsg`, `TypeIndex`,
+external/community/first-light/analysis/autonomous_worklog_through_253.md:10843:`info/typeregistry.json`. If they did, we'd get protocol-level
+external/community/first-light/analysis/autonomous_worklog_through_253.md:12228:  reusable script that loads `info/typeregistry.json`
+external/community/first-light/analysis/autonomous_worklog_through_253.md:12753:      90), wire-type-id == typeIndex (wake 90), cross-codec
+external/community/first-light/analysis/autonomous_worklog_through_253.md:13845:- Wire-level finding: **5** (CRC32, typeIndex==type-id,
+external/community/first-light/analysis/identity_bundle_correlation.md:12:runtime type-registry's typeIndex UUIDs.
+external/community/first-light/analysis/identity_bundle_correlation.md:22:   `info/typeregistry.json`**. None of the captured sub_system_ids
+external/community/first-light/analysis/identity_bundle_correlation.md:74:LOWER 8 bytes of some entry in `info/typeregistry.json`,
+external/community/first-light/analysis/identity_bundle_correlation.md:85:identifier system from the runtime type-registry typeIndex UUIDs.
+external/community/first-light/analysis/typename_unblock_spec.md:11:> registry dump, static-RE) are kept for historical context — they
+external/community/first-light/analysis/typename_unblock_spec.md:30:  in `info/typeregistry.json` (3487 entries) maps `typeIndex` to
+external/community/first-light/analysis/typename_unblock_spec.md:37:- **The link from typeIndex → class-name in static binary is missing**:
+external/community/first-light/analysis/typename_unblock_spec.md:39:  - but the binding (which lambda registers which typeIndex) is only
+external/community/first-light/analysis/typename_unblock_spec.md:46:    string-address to typeIndex is non-trivial
+external/community/first-light/analysis/typename_unblock_spec.md:58:When the game registers a type, log `(typeIndex, type_name)`. The
+external/community/first-light/analysis/typename_unblock_spec.md:72:    // typeIndex is typically a class member; type name is rcx vtable -> typeid
+external/community/first-light/analysis/typename_unblock_spec.md:74:    const type_id = args[1];       // u32 typeIndex
+external/community/first-light/analysis/typename_unblock_spec.md:77:      typeIndex: type_id.toInt32(),
+external/community/first-light/analysis/typename_unblock_spec.md:84:Output: a JSON file with all `(typeIndex, name)` pairs. Cross-
+external/community/first-light/analysis/typename_unblock_spec.md:85:joined with `info/typeregistry.json` and our wake-95 partial
+external/community/first-light/analysis/typename_unblock_spec.md:94:### Option B: Better captured runtime registry dump
+external/community/first-light/analysis/typename_unblock_spec.md:96:The current `info/typeregistry.json` is a partial dump. A more
+external/community/first-light/analysis/typename_unblock_spec.md:112:3. Reads back the assigned typeIndex
+external/community/first-light/analysis/typename_unblock_spec.md:116:typeIndex). Then pattern-match across all 2025+ instantiations
+external/community/first-light/analysis/typename_unblock_spec.md:117:to extract `(name_addr, typeIndex_storage_addr)` pairs.
+external/community/first-light/analysis/typename_unblock_spec.md:157:All have UUID + handler fingerprint in `info/typeregistry.json`.
+external/community/first-light/analysis/wire_type_0x1033.md:84:   typeIndex 0x1033 corresponds to a registered AZ::TypeInfo
+external/community/first-light/analysis/wire_type_0x1033.md:90:   `info/typeregistry.json`. Wakes 93-97 attempted this
+external/community/first-light/analysis/typeregistry_vs_replay.md:1:# typeregistry.json vs. captured replay — gap analysis
+external/community/first-light/analysis/typeregistry_vs_replay.md:3:Generated 2026-05-06 from `info/typeregistry.json` (3487 entries, 312 named)
+external/community/first-light/analysis/typeregistry_vs_replay.md:107:  registry on different typeIndexes.
+external/community/first-light/analysis/typeregistry_vs_replay.md:123:  always disambiguate by typeIndex.
+external/community/first-light/analysis/sub_system_id_hash_search_v2.py:126:    reg_path = REPO / "info" / "typeregistry.json"
+external/community/first-light/analysis/sub_system_id_hash_search_v2.py:133:    for pair in data.get("m_list", []):
+external/community/first-light/analysis/sub_system_id_hash_search_v2.py:142:    # broader than m_list which holds the populated entries).

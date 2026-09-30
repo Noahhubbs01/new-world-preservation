@@ -1,0 +1,160 @@
+va	status	function_start	function_end	mention_count	first_source	first_line	first_text
+0x140294850	NOT_IN_UNWIND_FUNCTION			1	analysis/vtable_dump_14858b2b0.txt	10	[ 7] 14858b2e8 -> 0x140294850  in Bytes @ 140294850
+0x1402a1750	NOT_IN_UNWIND_FUNCTION			1	tools/ghidra_scripts/FindWrapperSubstateWriters.py	22	"ACCESSOR_ADDR_HEX = ""0x1402a1750"""
+0x1402a1a70	NOT_IN_UNWIND_FUNCTION			1	analysis/ghidra_findings.md	58	| `0x1402a1a70`| `FUN_...`      | `Javelin_SSL_verify_callback`        |
+0x1402a633a	INSIDE_FUNCTION	0x1402a6310	0x1402a71f4	2	analysis/decomp_FUN_1402a6310_lowrange.txt	55	uStack_30 = 0x1402a633a;
+0x1402b8100	EXACT_FUNCTION_START	0x1402b8100	0x1402b8155	2	analysis/find_memcmp_36.txt	19	## hit 17: MOV at 1416b836c in FUN_1416b7a90 -> CALL 0x1402b8100 at 1416b837e
+0x1402c43b0	EXACT_FUNCTION_START	0x1402c43b0	0x1402c440b	3	analysis/find_memcmp_36.txt	55	## hit 53: MOV at 146aec756 in FUN_146aec630 -> CALL 0x1402c43b0 at 146aec768
+0x14046c760	EXACT_FUNCTION_START	0x14046c760	0x14046c848	18	analysis/find_memcmp_36.txt	6	## hit 4: MOV at 140d0ff2e in FUN_140d0fbf0 -> CALL 0x14046c760 at 140d0ff43
+0x14046c940	EXACT_FUNCTION_START	0x14046c940	0x14046ca28	3	analysis/find_memcmp_36.txt	22	## hit 20: MOV at 142de2ac7 in FUN_142de26d0 -> CALL 0x14046c940 at 142de2adc
+0x14046ca30	EXACT_FUNCTION_START	0x14046ca30	0x14046cb41	1	analysis/find_memcmp_36.txt	3	## hit 1: MOV at 14074ce7a in FUN_14074c040 -> CALL 0x14046ca30 at 14074ce8a
+0x14046cc60	EXACT_FUNCTION_START	0x14046cc60	0x14046cd48	1	analysis/find_memcmp_36.txt	9	## hit 7: MOV at 140d23d5f in FUN_140d237b0 -> CALL 0x14046cc60 at 140d23d6f
+0x14046d160	EXACT_FUNCTION_START	0x14046d160	0x14046d248	2	analysis/find_memcmp_36.txt	20	## hit 18: MOV at 14176a585 in FUN_141769ef0 -> CALL 0x14046d160 at 14176a597
+0x14046dc90	NOT_IN_UNWIND_FUNCTION			3	analysis/vtable_dump_14858b2b0.txt	6	[ 3] 14858b2c8 -> 0x14046dc90  in FUN_14046dc90 @ 14046dc90
+0x1405012f0	EXACT_FUNCTION_START	0x1405012f0	0x140501527	1	docs/progress.md	1748	- `NewWorld.exe+0x5012f0` / `0x1405012f0` is now the strongest new target above that getter path.
+0x14067d7e0	EXACT_FUNCTION_START	0x14067d7e0	0x14067d7f5	1	analysis/find_memcmp_36.txt	5	## hit 3: MOV at 14075a04e in FUN_140759cf0 -> CALL 0x14067d7e0 at 14075a060
+0x14067db40	EXACT_FUNCTION_START	0x14067db40	0x14067db5e	1	analysis/find_memcmp_36.txt	4	## hit 2: MOV at 140759fab in FUN_140759cf0 -> CALL 0x14067db40 at 140759fbd
+0x14078e9f0	EXACT_FUNCTION_START	0x14078e9f0	0x14078ea7a	1	analysis/find_memcmp_36.txt	57	## hit 55: MOV at 146cf6d2a in FUN_146cf6c10 -> CALL 0x14078e9f0 at 146cf6d41
+0x1407940b0	EXACT_FUNCTION_START	0x1407940b0	0x140794124	2	analysis/find_memcmp_36.txt	53	## hit 51: MOV at 14691db8e in FUN_14691d090 -> CALL 0x1407940b0 at 14691dba0
+0x1407c7df0	EXACT_FUNCTION_START	0x1407c7df0	0x1407c7e05	1	analysis/vtable_dump_14858b2b0.txt	12	[ 9] 14858b2f8 -> 0x1407c7df0  in FUN_1407c7df0 @ 1407c7df0
+0x1407cbe90	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	8922	`0x1407cbe90` in the binary; surrounding structure shows class
+0x140a23590	EXACT_FUNCTION_START	0x140a23590	0x140a23953	1	analysis/ghidra_findings.md	512	| `Javelin_TriggerAreaChunk_descriptor_init`      | `0x140a23590` | `TriggerAreaChunk`       | (nearby)   |
+0x140ad2870	EXACT_FUNCTION_START	0x140ad2870	0x140ad29f8	1	analysis/ghidra_findings.md	537	| `0x140ad2870` | `Javelin_ReplicaChunkDescriptor_Register` | Creates a registry entry |
+0x140f4bfe0	EXACT_FUNCTION_START	0x140f4bfe0	0x140f4c59a	1	analysis/ghidra_findings.md	167	### `Javelin_CarrierImpl_ctor` @ `0x140f4bfe0`
+0x140f4c5a0	EXACT_FUNCTION_START	0x140f4c5a0	0x140f4d28a	3	analysis/ghidra_findings.md	80	### `Javelin_Carrier_ctor` @ `0x140f4c5a0`
+0x140f51620	EXACT_FUNCTION_START	0x140f51620	0x140f51e2a	1	analysis/ghidra_findings.md	193	### `Javelin_ReplicaManager_ctor` @ `0x140f51620`
+0x140f65b20	EXACT_FUNCTION_START	0x140f65b20	0x140f661af	5	docs/progress.md	214	- [x] **`Javelin_Carrier_WriteMessages` @ `0x140f65b20` — WriteMessageHeader fully decoded**
+0x140f69c00	EXACT_FUNCTION_START	0x140f69c00	0x140f6a3ca	1	analysis/ghidra_findings.md	352	"| `0x140f69c00`| `Javelin_CarrierThread_Spawn`  | Where `""GridMate-Carrier Packet Send Thread""` is used as thread name at CreateThread site |"
+0x140f72d30	EXACT_FUNCTION_START	0x140f72d30	0x140f733b5	1	analysis/ghidra_findings.md	139	### `Javelin_Session_Init_and_Event` @ `0x140f72d30`
+0x140f76d60	EXACT_FUNCTION_START	0x140f76d60	0x140f777ea	1	analysis/ghidra_findings.md	353	| `0x140f76d60`| `Javelin_ConnectionStats_Dump` | Prints `conn.dataSend =`, `conn.packetLost =`, etc. |
+0x140f777f0	EXACT_FUNCTION_START	0x140f777f0	0x140f77cfc	1	analysis/ghidra_findings.md	364	├─ CheckConnectionTimeouts       (0x140f777f0)  - per-tick watchdog
+0x140f77eb0	EXACT_FUNCTION_START	0x140f77eb0	0x140f78b33	5	analysis/ghidra_findings.md	413	## 3G. ReadMessageHeader & message parsing (`Javelin_Carrier_ParseMessages` @ `0x140f77eb0`)
+0x140f7bdd0	EXACT_FUNCTION_START	0x140f7bdd0	0x140f7c413	1	analysis/ghidra_findings.md	496	| 6  | `SM_CT_ACKS`   | handled by `Javelin_Carrier_HandleAckVector` @ `0x140f7bdd0` |
+0x140f7c420	EXACT_FUNCTION_START	0x140f7c420	0x140f7c535	7	analysis/ghidra_findings.md	477	### BitStream (`Javelin_BitStream_ReadBits` @ `0x140f7c420`)
+0x140f82340	EXACT_FUNCTION_START	0x140f82340	0x140f83190	5	analysis/ghidra_findings.md	85	- Thread function pointer stored: `0x140f82340` (label, not yet decompiled)
+0x140f898e0	EXACT_FUNCTION_START	0x140f898e0	0x140f8a59f	3	analysis/ghidra_findings.md	369	├─ ReceiveLoop                   (0x140f898e0)  ← see 3E
+0x140f8ab70	EXACT_FUNCTION_START	0x140f8ab70	0x140f8b5cb	3	analysis/ghidra_findings.md	371	├─ SendLoop                      (0x140f8ab70)  ← see 3F
+0x140fb3560	EXACT_FUNCTION_START	0x140fb3560	0x140fb3f2f	1	analysis/xrefs_FUN_140fb3560_destroy_writer.txt	1	# xrefs to FUN_140fb3560 @ 0x140fb3560
+0x1410d1120	EXACT_FUNCTION_START	0x1410d1120	0x1410d12cc	1	analysis/autonomous_worklog_through_253.md	4041	function `FUN_1410d1120` (Ghidra address `0x1410d1120`).
+0x1410d11b5	INSIDE_FUNCTION	0x1410d1120	0x1410d12cc	1	analysis/autonomous_worklog_through_253.md	4183	correct Ghidra address is `0x1470D11B5`, not `0x1410D11B5`. Wake
+0x1412f4730	EXACT_FUNCTION_START	0x1412f4730	0x1412f475a	1	analysis/ghidra_findings.md	538	| `0x1412f4730` | `Javelin_ReplicaChunkClassId_FromName` | CRC-hashes the chunk name to a class ID |
+0x14143b250	EXACT_FUNCTION_START	0x14143b250	0x14143b3c8	3	analysis/find_memcmp_36.txt	16	## hit 14: MOV at 14145fb0c in FUN_14145f910 -> CALL 0x14143b250 at 14145fb16
+0x141480b10	EXACT_FUNCTION_START	0x141480b10	0x141480b2e	2	analysis/ghidra_findings.md	213	Transitions are performed by `Javelin_StateMachine_Transition(ctx, new_state_id)` @ `0x141480b10`.
+0x1414e9ad0	NOT_IN_UNWIND_FUNCTION			2	DASHBOARD.md	101	| In-binary CreateInstance stub | `0x1414e9ad0` |
+0x14154161c	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	4640	`0x14154161c`** (Ghidra has no function defined there;
+0x141721c20	EXACT_FUNCTION_START	0x141721c20	0x141721ce8	1	analysis/xrefs_FUN_141721c20_trace_logger.txt	1	# xrefs to FUN_141721c20 @ 0x141721c20
+0x142fdf450	EXACT_FUNCTION_START	0x142fdf450	0x142fdf68f	1	analysis/state_13_14_writer_investigation.md	339	- **`FUN_142fdf450`** @ `0x142fdf450` — writes `CL`. Similar.
+0x142ffbc50	EXACT_FUNCTION_START	0x142ffbc50	0x142ffbc66	1	analysis/state_13_14_writer_investigation.md	320	- **`FUN_142ffbc50`** @ `0x142ffbc50` — CMP + MOV `R15B` + LEA
+0x143007ec3	INSIDE_FUNCTION	0x1430079a0	0x14300813c	3	analysis/ctd_investigation.md	33	All four crashes share the **same WER bucket** (1843783487914520197) and **same Fault Offset 0x3007ec3** => deterministic same code site. NewWorld.exe ImageBase = 0x140000000, so absolute crash address = **0x143007EC3** (in NewWorld.exe `.text`, not in any third-party DLL).
+0x1436b4780	EXACT_FUNCTION_START	0x1436b4780	0x1436b49bf	1	analysis/find_memcmp_36.txt	23	## hit 21: MOV at 1436e0535 in FUN_1436dfb00 -> CALL 0x1436b4780 at 1436e0548
+0x14371ee50	EXACT_FUNCTION_START	0x14371ee50	0x14371ef38	3	analysis/find_memcmp_36.txt	27	## hit 25: MOV at 143aa5fe6 in FUN_143aa5390 -> CALL 0x14371ee50 at 143aa5ffe
+0x1438912d0	EXACT_FUNCTION_START	0x1438912d0	0x14389150b	1	analysis/find_memcmp_36.txt	24	## hit 22: MOV at 1438b409d in FUN_1438b3910 -> CALL 0x1438912d0 at 1438b40af
+0x143e065e0	NOT_IN_UNWIND_FUNCTION			1	analysis/vtable_dump_14858b2b0.txt	13	[10] 14858b300 -> 0x143e065e0
+0x143e065f0	NOT_IN_UNWIND_FUNCTION			1	analysis/vtable_dump_14858b2b0.txt	14	[11] 14858b308 -> 0x143e065f0
+0x143f83ed0	EXACT_FUNCTION_START	0x143f83ed0	0x143f8410b	1	analysis/find_memcmp_36.txt	29	## hit 27: MOV at 143f90c67 in FUN_143f905f0 -> CALL 0x143f83ed0 at 143f90c77
+0x143f84110	EXACT_FUNCTION_START	0x143f84110	0x143f8434b	1	analysis/find_memcmp_36.txt	30	## hit 28: MOV at 143f9149b in FUN_143f90e20 -> CALL 0x143f84110 at 143f914ab
+0x144867c50	NOT_IN_UNWIND_FUNCTION			2	analysis/autonomous_worklog_through_253.md	9505	(low xref count, e.g. 0x635's 1-xref stub at 0x144867c50) might
+0x145a85940	INSIDE_FUNCTION	0x145a85760	0x145a85951	2	analysis/autonomous_worklog_through_253.md	1926	binary's wrapper-class neighborhood** (0x145a85940 — between
+0x145a87010	EXACT_FUNCTION_START	0x145a87010	0x145a8719c	2	analysis/xrefs_FUN_145a87010_ConnectionSuccess.txt	1	# xrefs to FUN_145a87010 @ 0x145a87010
+0x145a87170	INSIDE_FUNCTION	0x145a87010	0x145a8719c	1	analysis/autonomous_worklog_through_253.md	367	**One** hit in that region: `FUN_145a87010` at `0x145a87170`,
+0x145a8d150	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	366	known wrapper methods cluster from `0x145a8d150` to `0x145a923c0`).
+0x145a92370	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	264	- Decompiled task **A1**: `ghidra decompile 0x145a92370 --out analysis/decomp_state_advance_predicate.txt`.
+0x145a923c0	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	366	known wrapper methods cluster from `0x145a8d150` to `0x145a923c0`).
+0x145a9fa00	NOT_IN_UNWIND_FUNCTION			2	analysis/state_13_14_writer_investigation.md	294	state-12 gate (whose writer `FUN_145a9fa00` lives at 0x145a9fa00,
+0x145b5afa0	EXACT_FUNCTION_START	0x145b5afa0	0x145b5b1de	1	analysis/find_memcmp_36.txt	41	## hit 39: MOV at 145cb4b1b in FUN_145cb4770 -> CALL 0x145b5afa0 at 145cb4b24
+0x145b5c1a0	EXACT_FUNCTION_START	0x145b5c1a0	0x145b5c3db	1	analysis/find_memcmp_36.txt	37	## hit 35: MOV at 145cab843 in FUN_145cab250 -> CALL 0x145b5c1a0 at 145cab853
+0x145b5c3e0	EXACT_FUNCTION_START	0x145b5c3e0	0x145b5c61b	1	analysis/find_memcmp_36.txt	38	## hit 36: MOV at 145cabe92 in FUN_145cab250 -> CALL 0x145b5c3e0 at 145cabea2
+0x145dbae90	EXACT_FUNCTION_START	0x145dbae90	0x145dbbb7a	3	analysis/ghidra_findings.md	88	### `Javelin_Carrier_ctor_GMAlloc` @ `0x145dbae90`
+0x145dc99b0	EXACT_FUNCTION_START	0x145dc99b0	0x145dc9aa9	1	analysis/ghidra_findings.md	243	| `0x145dc99b0` | `Javelin_SecureSocketDriver_CreateSSL` | Allocate new SSL from context |
+0x145dce4c0	EXACT_FUNCTION_START	0x145dce4c0	0x145dce743	2	analysis/ghidra_findings.md	313	`Javelin_SecureSocketDriver_StateDispatch` @ `0x145dce4c0` registers
+0x145dce750	EXACT_FUNCTION_START	0x145dce750	0x145dcea21	2	analysis/ghidra_findings.md	31	### `Javelin_SecureSocketDriver_Initialize` @ `0x145dce750`
+0x145dce8b5	INSIDE_FUNCTION	0x145dce750	0x145dcea21	9	docs/dtls-trust-bypass.md	70	- `0x145dce8b5`
+0x145dce9d4	INSIDE_FUNCTION	0x145dce750	0x145dcea21	1	docs/dtls-trust-bypass.md	76	145dce8b5: JZ  0x145dce9d4
+0x145dd2180	EXACT_FUNCTION_START	0x145dd2180	0x145dd22cd	1	analysis/ghidra_findings.md	253	| CS_ACCEPT | 2 | @`0x145dd2180` | **Entry**: `SSL_set_accept_state`. **Tick**: `SSL_accept`, then drain post-handshake queued packets. Success → CS_ESTABLISHED (9); error → CS_SSL_ERROR (11) |
+0x145dd22d0	EXACT_FUNCTION_START	0x145dd22d0	0x145dd2370	1	analysis/ghidra_findings.md	252	| CS_ACTIVE | 1 | @`0x145dd22d0` | **Entry**: capture timestamp + call CreateSSL. **Tick**: if handshake timeout exceeded → transition to CS_DISCONNECTED (10) |
+0x145dd2440	EXACT_FUNCTION_START	0x145dd2440	0x145dd25b9	1	analysis/ghidra_findings.md	256	| CS_CONNECT | 5 | @`0x145dd2440` | **Entry**: `SSL_set_connect_state`. **Tick**: `SSL_connect`, handle result. Success → CS_ESTABLISHED (9); error → CS_SSL_ERROR (11); timeout → CS_HANDSHAKE_RETRY (8) |
+0x145dd25c0	EXACT_FUNCTION_START	0x145dd25c0	0x145dd25eb	1	analysis/ghidra_findings.md	257	| CS_COOKIE_EXCHANGE | 6 | @`0x145dd25c0` | **Entry**: set handshake deadline = now + `[+0x18]*1000`. **Event 3** → CS_SSL_HANDSHAKE_CONNECT (7) |
+0x145dd2e00	EXACT_FUNCTION_START	0x145dd2e00	0x145dd2e7d	1	analysis/ghidra_findings.md	259	| CS_HANDSHAKE_RETRY | 8 | @`0x145dd2e00` | **Entry**: rebuild SSL + set connect state. **Tick**: → CS_COOKIE_EXCHANGE (6) |
+0x145dd3220	EXACT_FUNCTION_START	0x145dd3220	0x145dd3274	1	analysis/ghidra_findings.md	258	| CS_SSL_HANDSHAKE_CONNECT | 7 | @`0x145dd3220` | **Entry**: `SSL_free` old SSL, `CreateSSL`, `SSL_set_connect_state`. Drives same loop as CS_CONNECT. |
+0x145dd3280	EXACT_FUNCTION_START	0x145dd3280	0x145dd3657	1	analysis/ghidra_findings.md	254	| CS_WAIT_FOR_STATEFUL_HANDSHAKE | 3 | @`0x145dd3280` | **Entry**: retransmit interval = 1000ms. **Tick**: if past deadline, manually build + send HelloVerifyRequest (25 bytes, DTLS 1.0 legacy wire format), double backoff. **Event 2** (cookie received) → CS_SSL_HANDSHAKE_ACCEPT (4) |
+0x145dda0d0	EXACT_FUNCTION_START	0x145dda0d0	0x145dda173	1	analysis/ghidra_findings.md	244	| `0x145dda0d0` | `Javelin_SecureSocketDriver_SendRawPacket` | Bypass-SSL raw UDP send |
+0x145ddab20	EXACT_FUNCTION_START	0x145ddab20	0x145ddb970	3	analysis/ghidra_findings.md	92	- Thread function pointer: `0x145ddab20` (label, not yet decompiled)
+0x145e70910	EXACT_FUNCTION_START	0x145e70910	0x145e709aa	1	analysis/find_memcmp_36.txt	46	## hit 44: MOV at 145f93d29 in FUN_145f93cb0 -> CALL 0x145e70910 at 145f93d32
+0x14602af10	EXACT_FUNCTION_START	0x14602af10	0x14602b0c1	1	analysis/find_memcmp_36.txt	47	## hit 45: MOV at 14600a9f4 in FUN_14600a790 -> CALL 0x14602af10 at 14600a9fd
+0x146240d8b	INSIDE_FUNCTION	0x146240d70	0x146241374	2	analysis/decomp_FUN_146240d70.txt	43	uStack_48 = 0x146240d8b;
+0x1462abe00	EXACT_FUNCTION_START	0x1462abe00	0x1462ac1c3	1	analysis/ghidra_findings.md	511	| `Javelin_TransformReplicaChunk_descriptor_init` | `0x1462abe00` | `TransformReplicaChunk` | `0x1484ee530` |
+0x146420ca0	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	9527	- 0x8 stub at 0x146420ca0 (xref source 0x148502a58)
+0x146425000	EXACT_FUNCTION_START	0x146425000	0x146425ca7	1	docs/progress.md	2434	**Function**: `FUN_146425000` (ConfigureLogin) at 0x146425000. Reads `client-connection.client-gateway.mode` config and three-way branches:
+0x1464467e8	NOT_IN_UNWIND_FUNCTION			2	analysis/autonomous_worklog_through_253.md	4637	- Slot [11] = `0x1464467e8` (another handler)
+0x146446800	EXACT_FUNCTION_START	0x146446800	0x146446c8f	1	analysis/state_13_14_writer_investigation.md	312	= LevelInfoChanged handler at 0x146446800, `FUN_146454c00`
+0x14644a070	EXACT_FUNCTION_START	0x14644a070	0x14644aae4	2	tools/ghidra_scripts/README.md	63	ghidra decompile 0x14644a070
+0x14645499c	NOT_IN_UNWIND_FUNCTION			3	analysis/autonomous_worklog_through_253.md	4635	- Slot [10] = `0x14645499c` (another handler — probably a
+0x146454bec	NOT_IN_UNWIND_FUNCTION			2	analysis/autonomous_worklog_through_253.md	103	thunk at `0x146454bec..0x146454bf3` is a MSVC virtual-base `this`
+0x146454bf3	NOT_IN_UNWIND_FUNCTION			6	analysis/autonomous_worklog_through_253.md	103	thunk at `0x146454bec..0x146454bf3` is a MSVC virtual-base `this`
+0x146454c00	EXACT_FUNCTION_START	0x146454c00	0x146455673	10	analysis/autonomous_worklog_through_253.md	221	The Frida hook on `FUN_146454c00 (0x146454c00)` resolves it
+0x14645563f	INSIDE_FUNCTION	0x146454c00	0x146455673	1	analysis/autonomous_worklog_through_253.md	439	`0x14ab72930` and one direct call from `FUN_146454c00` at `0x14645563f`.
+0x14645c65b	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	1110	- Thunk JMP at `0x14645c65b`, same MSVC virtual-base
+0x14645c660	EXACT_FUNCTION_START	0x14645c660	0x14645c6a7	2	analysis/autonomous_worklog_through_253.md	17466	- **Caller bridge**: `FUN_14645c660 @ 0x14645c660`
+0x14645fd70	EXACT_FUNCTION_START	0x14645fd70	0x146460233	1	analysis/xrefs_FUN_14645fd70_state_setter.txt	1	# xrefs to FUN_14645fd70 @ 0x14645fd70
+0x146466650	EXACT_FUNCTION_START	0x146466650	0x1464666ed	1	analysis/xrefs_FUN_146466650_state_setter_wrapper.txt	1	# xrefs to FUN_146466650 @ 0x146466650
+0x146502e00	EXACT_FUNCTION_START	0x146502e00	0x1465031c2	1	analysis/find_memcmp_36.txt	49	## hit 47: MOV at 1464cc80a in FUN_1464cbfb0 -> CALL 0x146502e00 at 1464cc815
+0x14659b0b0	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	9529	- 0x12f6 stub at 0x14659b0b0 (xref source 0x1485264d0)
+0x146662690	EXACT_FUNCTION_START	0x146662690	0x146662797	1	analysis/find_memcmp_36.txt	50	## hit 48: MOV at 1468de2b0 in FUN_1468ddda0 -> CALL 0x146662690 at 1468de2c8
+0x146a41bf0	EXACT_FUNCTION_START	0x146a41bf0	0x146a41d46	1	analysis/vtable_dump_14858b2b0.txt	8	[ 5] 14858b2d8 -> 0x146a41bf0  in FUN_146a41bf0 @ 146a41bf0
+0x146aab820	EXACT_FUNCTION_START	0x146aab820	0x146aab85e	2	analysis/vtable_dump_14858b2b0.txt	11	[ 8] 14858b2f0 -> 0x146aab820  in FUN_146aab820 @ 146aab820
+0x146aac820	EXACT_FUNCTION_START	0x146aac820	0x146aac84b	1	analysis/vtable_dump_14858b2b0.txt	9	[ 6] 14858b2e0 -> 0x146aac820  in FUN_146aac820 @ 146aac820
+0x146ab5be0	EXACT_FUNCTION_START	0x146ab5be0	0x146ab5c75	1	analysis/vtable_dump_14858b2b0.txt	18	[15] 14858b328 -> 0x146ab5be0  in FUN_146ab5be0 @ 146ab5be0
+0x146ae61a0	EXACT_FUNCTION_START	0x146ae61a0	0x146ae6200	1	analysis/vtable_dump_14858b2b0.txt	15	[12] 14858b310 -> 0x146ae61a0  in FUN_146ae61a0 @ 146ae61a0
+0x146aef990	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	1540	"name-getters. `0x146aef990` returns ""ActorInitializedMessage"";"
+0x146aef9f0	NOT_IN_UNWIND_FUNCTION			1	analysis/autonomous_worklog_through_253.md	1541	"`0x146aef9f0` returns ""ActorStatusNotificationMessage""."
+0x146b054c0	EXACT_FUNCTION_START	0x146b054c0	0x146b05594	1	analysis/vtable_dump_14858b2b0.txt	16	[13] 14858b318 -> 0x146b054c0  in FUN_146b054c0 @ 146b054c0
+0x146b10110	NOT_IN_UNWIND_FUNCTION			1	analysis/vtable_dump_14858b2b0.txt	5	[ 2] 14858b2c0 -> 0x146b10110  in FUN_146b10110 @ 146b10110
+0x146b10750	EXACT_FUNCTION_START	0x146b10750	0x146b1077b	1	analysis/vtable_dump_14858b2b0.txt	7	[ 4] 14858b2d0 -> 0x146b10750  in FUN_146b10750 @ 146b10750
+0x146b11020	EXACT_FUNCTION_START	0x146b11020	0x146b1105a	1	analysis/vtable_dump_14858b2b0.txt	3	[ 0] 14858b2b0 -> 0x146b11020  in FUN_146b11020 @ 146b11020
+0x146b13380	NOT_IN_UNWIND_FUNCTION			1	analysis/vtable_dump_14858b2b0.txt	4	[ 1] 14858b2b8 -> 0x146b13380
+0x146b66820	EXACT_FUNCTION_START	0x146b66820	0x146b66a57	1	docs/progress.md	2718	| `0x146b66820` | `FUN_146b66820` | (unrenamed) | RegistrationRequestV3Msg constructor — 0x470 bytes. |
+0x146b66a60	EXACT_FUNCTION_START	0x146b66a60	0x146b66bdc	1	docs/progress.md	2719	| `0x146b66a60` | `FUN_146b66a60` | (unrenamed) | RegistrationRequestMsg (V2) constructor — 0x360 bytes. |
+0x146b6c500	EXACT_FUNCTION_START	0x146b6c500	0x146b6c8f3	1	docs/progress.md	2720	| `0x146b6c500` | `FUN_146b6c500` | (unrenamed) | SystemMessage sender — SRW-locked queue append at `wrapper[0xc4]`. Wraps `FUN_146b69e80` for serialization. |
+0x146b6e190	EXACT_FUNCTION_START	0x146b6e190	0x146b6e7b4	5	docs/handoff_state10_question.md	33	This week we got Ghidra to define-as-function the previously-unanalyzed `0x146b6e190` — sole vtable entry for the wrapper's per-tick dispatcher. Decompiled:
+0x146b6e2ab	INSIDE_FUNCTION	0x146b6e190	0x146b6e7b4	1	docs/progress.md	2662	Both flags reverted to false → back to MODE_GATEWAY baseline. Next session should focus on the **unanalyzed code at `0x146b6e190–0x146b6e7c0`** — specifically the call to `FUN_146b6df50` at `0x146b6e2ab` and what gates the wrapper's state-10 → state-11 transition. Per memory `project_gridmate_carrier_breakthrough.md`, this region is what actually validates the REP handshake, and Ghidra MCP can't see it without manual define-as-function in the UI.
+0x146b6e7c0	EXACT_FUNCTION_START	0x146b6e7c0	0x146b6eb70	1	docs/progress.md	2662	Both flags reverted to false → back to MODE_GATEWAY baseline. Next session should focus on the **unanalyzed code at `0x146b6e190–0x146b6e7c0`** — specifically the call to `FUN_146b6df50` at `0x146b6e2ab` and what gates the wrapper's state-10 → state-11 transition. Per memory `project_gridmate_carrier_breakthrough.md`, this region is what actually validates the REP handshake, and Ghidra MCP can't see it without manual define-as-function in the UI.
+0x146b6ed39	INSIDE_FUNCTION	0x146b6eb70	0x146b6f02e	2	docs/progress.md	2403	2. **Trace the inbound dispatch chain**: 0x146b6ed39 (sole in-code caller of FUN_146b6f190) is the dispatcher. Its containing function is the message-routing layer that converts wire bytes → typed message → dispatcher call. Find it to learn the wire format.
+0x146c60830	EXACT_FUNCTION_START	0x146c60830	0x146c61413	1	analysis/state_13_14_writer_investigation.md	308	- **`FUN_146c60830`** @ `0x146c60830` — writes `DIL` (a function
+0x1470d11b5	INSIDE_FUNCTION	0x1470d11a0	0x1470d11ba	2	analysis/autonomous_worklog_through_253.md	4183	correct Ghidra address is `0x1470D11B5`, not `0x1410D11B5`. Wake
+0x147143d2b	INSIDE_FUNCTION	0x147143960	0x147144034	1	analysis/autonomous_worklog_through_253.md	3905	Single xref, from `0x147143d2b` inside FUN_147143960.
+0x1472030e0	EXACT_FUNCTION_START	0x1472030e0	0x147203146	2	analysis/find_memcmp_36.txt	45	## hit 43: MOV at 145e0cac2 in FUN_145e0c9e0 -> CALL 0x1472030e0 at 145e0cad6
+0x1472d3e90	EXACT_FUNCTION_START	0x1472d3e90	0x1472d3ec8	1	analysis/find_memcmp_36.txt	61	## hit 59: MOV at 1472d4739 in FUN_1472d46a0 -> CALL 0x1472d3e90 at 1472d473f
+0x147780cd0	EXACT_FUNCTION_START	0x147780cd0	0x147780d05	2	analysis/find_memcmp_36.txt	65	## hit 63: MOV at 1477d7e15 in FUN_1477d7d80 -> CALL 0x147780cd0 at 1477d7e25
+0x1478ef900	EXACT_FUNCTION_START	0x1478ef900	0x1478ef964	1	analysis/ghidra_findings.md	52	| `0x1478ef900`| `FUN_...`      | `openssl_SSL_CTX_new`                |
+0x1478efe40	EXACT_FUNCTION_START	0x1478efe40	0x1478efe82	1	analysis/ghidra_findings.md	53	| `0x1478efe40`| `FUN_...`      | `openssl_SSL_CTX_set_cipher_list`    |
+0x1478eff40	NOT_IN_UNWIND_FUNCTION			1	analysis/ghidra_findings.md	54	| `0x1478eff40`| `FUN_...`      | `openssl_SSL_CTX_set_options`        |
+0x1478eff50	NOT_IN_UNWIND_FUNCTION			1	analysis/ghidra_findings.md	57	| `0x1478eff50`| `FUN_...`      | `openssl_SSL_CTX_set_verify`         |
+0x1478effb0	EXACT_FUNCTION_START	0x1478effb0	0x1478efffd	1	analysis/ghidra_findings.md	240	| `0x1478effb0` | `openssl_SSL_accept` | Drive server handshake |
+0x1478f0210	EXACT_FUNCTION_START	0x1478f0210	0x1478f0257	1	analysis/ghidra_findings.md	239	| `0x1478f0210` | `openssl_SSL_connect` | Drive client handshake |
+0x1478f0710	EXACT_FUNCTION_START	0x1478f0710	0x1478f0a86	1	analysis/ghidra_findings.md	242	| `0x1478f0710` | `openssl_SSL_free` | Destroy SSL object |
+0x1478f0e10	EXACT_FUNCTION_START	0x1478f0e10	0x1478f0e2e	1	analysis/ghidra_findings.md	241	| `0x1478f0e10` | `openssl_SSL_get_error` | Translate handshake error |
+0x1478f1a00	EXACT_FUNCTION_START	0x1478f1a00	0x1478f1a3e	1	analysis/ghidra_findings.md	238	| `0x1478f1a00` | `openssl_SSL_set_accept_state` | Put SSL into accept mode |
+0x1478f1c80	EXACT_FUNCTION_START	0x1478f1c80	0x1478f1cb8	1	analysis/ghidra_findings.md	237	| `0x1478f1c80` | `openssl_SSL_set_connect_state` | Put SSL into connect mode |
+0x1478f4e00	EXACT_FUNCTION_START	0x1478f4e00	0x1478f4e47	1	analysis/ghidra_findings.md	56	| `0x1478f4e00`| `FUN_...`      | `openssl_SSL_CTX_use_certificate`    |
+0x1478f4f80	EXACT_FUNCTION_START	0x1478f4f80	0x1478f502d	1	analysis/ghidra_findings.md	55	| `0x1478f4f80`| `FUN_...`      | `openssl_SSL_CTX_use_PrivateKey`     |
+0x1478f6110	NOT_IN_UNWIND_FUNCTION			1	analysis/ghidra_findings.md	51	| `0x1478f6110`| `FUN_...`      | `openssl_DTLSv1_2_method`            |
+0x147910b40	EXACT_FUNCTION_START	0x147910b40	0x147910c31	1	analysis/find_memcmp_36.txt	68	## hit 66: MOV at 14792c5f4 in FUN_14792c560 -> CALL 0x147910b40 at 14792c601
+0x1479b741f	INSIDE_FUNCTION	0x1479b6d00	0x1479b82e5	1	docs/omnisdk-research.md	18	- Disassembly in this function shows several immediate `0xCB` assignments (`0x1479b741f`, `0x1479b7883`, `0x1479b7a11`, `0x1479b7d82`, `0x1479b7f31`).
+0x1479b7883	INSIDE_FUNCTION	0x1479b6d00	0x1479b82e5	1	docs/omnisdk-research.md	18	- Disassembly in this function shows several immediate `0xCB` assignments (`0x1479b741f`, `0x1479b7883`, `0x1479b7a11`, `0x1479b7d82`, `0x1479b7f31`).
+0x1479b7a11	INSIDE_FUNCTION	0x1479b6d00	0x1479b82e5	1	docs/omnisdk-research.md	18	- Disassembly in this function shows several immediate `0xCB` assignments (`0x1479b741f`, `0x1479b7883`, `0x1479b7a11`, `0x1479b7d82`, `0x1479b7f31`).
+0x1479b7d82	INSIDE_FUNCTION	0x1479b6d00	0x1479b82e5	1	docs/omnisdk-research.md	18	- Disassembly in this function shows several immediate `0xCB` assignments (`0x1479b741f`, `0x1479b7883`, `0x1479b7a11`, `0x1479b7d82`, `0x1479b7f31`).
+0x1479b7f31	INSIDE_FUNCTION	0x1479b6d00	0x1479b82e5	1	docs/omnisdk-research.md	18	- Disassembly in this function shows several immediate `0xCB` assignments (`0x1479b741f`, `0x1479b7883`, `0x1479b7a11`, `0x1479b7d82`, `0x1479b7f31`).
+0x1479c4a80	EXACT_FUNCTION_START	0x1479c4a80	0x1479c4fa1	1	docs/omnisdk-research.md	19	- Nearby Omni functions in the same family also set `0xCB` (`0x1479c4a80`, `0x1479c6720`, `0x1479c7900`, `0x1479ca3e0`, `0x1479cb880`, `0x1479cc820`, `0x1479d22a0`).
+0x1479c6720	EXACT_FUNCTION_START	0x1479c6720	0x1479c78ff	1	docs/omnisdk-research.md	19	- Nearby Omni functions in the same family also set `0xCB` (`0x1479c4a80`, `0x1479c6720`, `0x1479c7900`, `0x1479ca3e0`, `0x1479cb880`, `0x1479cc820`, `0x1479d22a0`).
+0x1479c7900	EXACT_FUNCTION_START	0x1479c7900	0x1479c7e32	1	docs/omnisdk-research.md	19	- Nearby Omni functions in the same family also set `0xCB` (`0x1479c4a80`, `0x1479c6720`, `0x1479c7900`, `0x1479ca3e0`, `0x1479cb880`, `0x1479cc820`, `0x1479d22a0`).
+0x1479c9f00	EXACT_FUNCTION_START	0x1479c9f00	0x1479ca3d3	2	docs/omnisdk-notes.md	87	1. **Binary patch the 203 check** — find `FUN_1479c9f00` @ `0x1479c9f00` (in
+0x1479ca21d	INSIDE_FUNCTION	0x1479c9f00	0x1479ca3d3	1	docs/omnisdk-research.md	93	- `0x1479ca21d`: call `FUN_1426a8f10`
+0x1479ca222	INSIDE_FUNCTION	0x1479c9f00	0x1479ca3d3	1	docs/omnisdk-research.md	94	- `0x1479ca222`: `TEST AL,AL`
+0x1479ca224	INSIDE_FUNCTION	0x1479c9f00	0x1479ca3d3	1	docs/omnisdk-research.md	95	- `0x1479ca224`: conditional jump to success path
+0x1479ca3e0	EXACT_FUNCTION_START	0x1479ca3e0	0x1479ca987	1	docs/omnisdk-research.md	19	- Nearby Omni functions in the same family also set `0xCB` (`0x1479c4a80`, `0x1479c6720`, `0x1479c7900`, `0x1479ca3e0`, `0x1479cb880`, `0x1479cc820`, `0x1479d22a0`).
+0x1479cb880	EXACT_FUNCTION_START	0x1479cb880	0x1479cbe11	1	docs/omnisdk-research.md	19	- Nearby Omni functions in the same family also set `0xCB` (`0x1479c4a80`, `0x1479c6720`, `0x1479c7900`, `0x1479ca3e0`, `0x1479cb880`, `0x1479cc820`, `0x1479d22a0`).
+0x1479cc820	EXACT_FUNCTION_START	0x1479cc820	0x1479ce186	1	docs/omnisdk-research.md	19	- Nearby Omni functions in the same family also set `0xCB` (`0x1479c4a80`, `0x1479c6720`, `0x1479c7900`, `0x1479ca3e0`, `0x1479cb880`, `0x1479cc820`, `0x1479d22a0`).
+0x1479d22a0	EXACT_FUNCTION_START	0x1479d22a0	0x1479d2bcc	1	docs/omnisdk-research.md	19	- Nearby Omni functions in the same family also set `0xCB` (`0x1479c4a80`, `0x1479c6720`, `0x1479c7900`, `0x1479ca3e0`, `0x1479cb880`, `0x1479cc820`, `0x1479d22a0`).
+0x1479d58d0	EXACT_FUNCTION_START	0x1479d58d0	0x1479d5a67	1	docs/omnisdk-research.md	30	### `FUN_1479d58d0` (`0x1479d58d0`)
+0x1479d5a70	EXACT_FUNCTION_START	0x1479d5a70	0x1479d5b28	1	docs/omnisdk-research.md	26	### `FUN_1479d5a70` (`0x1479d5a70`)
+0x147aad055	NOT_IN_UNWIND_FUNCTION			4	analysis/find_memcmp_36.txt	15	## hit 13: MOV at 141003f98 in FUN_141003d40 -> CALL 0x147aad055 at 141003fac

@@ -1,0 +1,945 @@
+
+##############################################################################
+QUERY: PlayerManagerSelfIdentificationMsg
+##############################################################################
+
+=== TEXT SEARCH: PlayerManagerSelfIdentificationMsg ===
+
+[aeternum-world] Catalog/uuid_to_class.json
+  ... null, "name_va": "0x148014AF0" }, "handler": { "Marshal": "0x1414FD380", "Unmarshal": "0x1414FD530", "CreateInstance": "0x1414FB0E0", "Destructor": "0x1414FD7F0" }, "name_source": "javelin_rtti_static", "javelin_rtti": { "verdict": "MATCHED", "class": "[PlayerManagerSelfIdentificationMsg]", "namespace": "Javelin::ClientMessagesTrait", "full": "Javelin::ClientMessagesTrait ...
+
+[first-light] DASHBOARD.md
+  ... handler is `FUN_146454c00` (`[PlayerManagerSelfIdentificationMsg]`, typeIndex 0x5d1). Predicate `*(int *)(wrapper + 0xa0) == 2`. **Captured replay lacks Phase 9b** — needs runtime trace or static-RE on the deserializer. ## Library status | Layer | Components ...
+
+[first-light] CONTRIBUTING.md
+  ... Trigger is `[PlayerManagerSelfIdentificationMsg]` (wire type `0x5d1`); predicate is `*(int*)(wrapper + 0xa0) == 2`. Codec wire-bound in `server/javelin/self_ident.py`; awaiting runtime test. - **State-11→12**: auto-fires once ...
+
+[first-light] README.md
+  ... State-10→11 ([PlayerManagerSelfIdentificationMsg], wake 112), 11→12 auto-fires once 10→11 lands, 12→13 (LevelInfoChangedMsg primary path, wake 232/234), and **13→14 (wakes 247/249)**: writer `FUN ...
+
+[first-light] site/data.json
+  ... 287, "description": "[PlayerManagerSelfIdentificationMsg] encoder." }, { "module": "session_clock_beacon.py", "lines": 116, "description": "Session-clock beacon \u2014 type 0x14f." }, { "module": "session_identity_beacon.py", "lines": 119, "description": "Session identity beacon \u2014 ...
+
+[first-light] site/index.html
+  ... 8)", renderV(v2Bytes)], ["trailer (5 bytes)", trailer + (trailer === "0000000000" ? " (✓)" : " (unexpected)")], ]; }, }, "5d1": { // Wire type 0x5d1 — [PlayerManagerSelfIdentificationMsg], the state-10 // → 11 unblock trigger (wake 112 RE finding). Two on-wire forms: // (a ...
+
+[first-light] docs/next-session.md
+  ... The transition is gated by `*(int*)(wrapper + 0xa0) == 2` (corrected from the earlier `+0x130` hypothesis), and the value 2 is written only on receipt of `[PlayerManagerSelfIdentificationMsg]` (wire-type `0x5d1`, registry ...
+
+[first-light] docs/progress.md
+  ... State-10→11 (the "exact open question" at the start of the session) is gated by `*(int*)(wrapper + 0xa0) == 2`, set on `[PlayerManagerSelfIdentificationMsg]` (`0x5d1`) delivery. Codec wire- bound in `server ...
+
+[first-light] tools/build_site.py
+  ... The trigger is wire " "type 0x5d1 ([PlayerManagerSelfIdentificationMsg]) — " "not in the captured replay, so the server must " "synthesize it. Codec is wire-bound; ready for " "runtime testing.", }, { "title": "State-12 → 13 ...
+
+[first-light] analysis/message_inventory.md
+  ... NamePrefixSearchResponse` - `PatchCharacterResponse` - `PrecheckWorldTransferResponse` - `PublishCharacterMetadataResponse` ### `Javelin::ClientMessagesTrait` — 6 messages (0 in typeregistry) - `DebugCommandResponseMsg` - `LevelInfoChangedMsg` - `PlayerManagerRejectedMsg` - `[PlayerManagerSelfIdentificationMsg]` - `RemoteConfigChangedMsg` - `State` ### `Javelin::GovernanceBroker` — 6 messages (0 in typeregistry) - `AddEarningsToPoolMsg` - `Debug_RequestGovernanceBrokerDataMsg` - `DistributeEarningsMsg` - `EmitUndeliveredEarningsMsg` - `OnTerritoryReceivedEarningsMsg ...
+
+[first-light] analysis/autonomous_worklog.md
+  ... wake 112 ([PlayerManagerSelfIdentificationMsg]) - 11 → 12: auto-fires - 12 → 13: wake 232 (LevelInfoChangedMsg or second writer FUN_14645c660) - 13 → 14: wake 247 writer + wake 249 trigger chain + wake 252 wall. - **40 ...
+
+[first-light] analysis/clientmessagestrait_wire_formats.md
+  ... outer + 0x1DC`. ## [PlayerManagerSelfIdentificationMsg] Handler: `FUN_146454c00` (with thunk at `FUN_146454bec`). Dispatch entry: `0x14abcc150..0x14abcc15c` (4-RVA-tuple format). RTTI: `Javelin::ClientMessagesTrait::[PlayerManagerSelfIdentificationMsg]`. ### Body layout | Offset | Size | Field (proposed) | Notes ...
+
+[first-light] analysis/state_machine_summary.md
+  ... RTTI string at `0x14a153fd0` confirms the C++ class: ``` .?AV<lambda_1>@?1???$InstallRegistrationHook @VPlayerManagerSelfIdentificationMsg @ClientMessagesTrait@Javelin@@@Hub@Amazon@@YA_NXZ@ ``` So the type is `Javelin::ClientMessagesTrait::[PlayerManagerSelfIdentificationMsg]`, registered via `Javelin ...
+
+[first-light] analysis/state_10_unblock_synthesis.md
+  ... The message that writes `2` there is `[PlayerManagerSelfIdentificationMsg]` (wire type `0x5d1`). 0x5d1 is NOT in the captured replay, which is why the pure-replay server can't drive the client ...
+
+[first-light] analysis/session_retrospective_150.md
+  ... two `Explore` agents in parallel converged the gate predicate (`*(int*)(wrapper+0xa0) == 2`, NOT `+0x130` as project memory had recorded — corrected) and the trigger message ([PlayerManagerSelfIdentificationMsg], wire type **`0x5d1`**, encoded ...
+
+[first-light] analysis/session_retrospective_196.md
+  ... Idempotent — re-run after any `__init__.py` change. | | 165 | `f429c1d` | 4 class docstrings patched; `[PlayerManagerSelfIdentificationMsg]` entry now leads with "Wire type 0x5d1 — the state-10 → 11 unblock trigger" instead of ...
+
+[first-light] analysis/queued_work.md
+  ... Major individual closures relevant to this doc's open items: - **State-10 → 11 gate** found at wake 112 (`*(int*)(wrapper+0xa0) == 2`, trigger 0x5d1 [PlayerManagerSelfIdentificationMsg]). - **State-12 → 13 second writer ...
+
+[first-light] analysis/autonomous_worklog_through_253.md
+  ... RTTI string at `0x14a153fd0` gives us the C++ type: `Javelin::ClientMessagesTrait::[PlayerManagerSelfIdentificationMsg]`. - [x] **A2.7.** Cross-reference the literal `"ConnectionSuccess"` string in the binary. **DONE 2026-05-07** — the wrapper ...
+
+[first-light] analysis/public_api.md
+  ... signals a level / map transition. - **`[PlayerManagerSelfIdentificationMsg]`** (`class`) ⟨`self_ident`⟩ — Wire type 0x5d1 — the state-10 → 11 unblock trigger. ## Session-state scaffolding - **`SessionState`** (`class`) ⟨`session_state`⟩ — Runtime state for a single ...
+
+[first-light] analysis/selfident_wire_format.md
+  # [PlayerManagerSelfIdentificationMsg] — wire/struct layout (partial) > Static-RE finding from wake 51 (2026-05-08). Decoded by reading the > handler `FUN_146454c00`'s parameter accesses, since each message > field is read ...
+
+[first-light] analysis/session_retrospective_253.md
+  ... State-machine RE arc closed at static-RE level**: - 10 → 11: `wrapper[+0xa0] == 2`, `[PlayerManagerSelfIdentificationMsg]` (wake 112). - 11 → 12: auto-fires once 10 → 11 lands (inverted check on same field ...
+
+[first-light] server/javelin/dispatch.py
+  ... direction_agnostic(session_subkey_1a59.decode), 0x1b88: _direction_agnostic(session_identity_beacon.decode), # 0x5d1 — [PlayerManagerSelfIdentificationMsg]. Not in the captured replay # but wire-bound here so dispatch can route synthetic ones ...
+
+[first-light] server/javelin/self_ident.py
+  ... [PlayerManagerSelfIdentificationMsg]) -> bytes: """Build the on-wire [PlayerManagerSelfIdentificationMsg] body. Returns the body only (no Carrier framing, no envelope, no preamble). Caller wraps as appropriate. """ out = bytearray() out += struct.pack("<I", msg ...
+
+[first-light] server/javelin/test_codecs.py
+  ... blob = encode_self_ident([PlayerManagerSelfIdentificationMsg]()) assert len(blob) == SI_MIN_WIRE_SIZE == 21 def test_self_ident_field_0_position(): msg = [PlayerManagerSelfIdentificationMsg](field_0=0xDEADBEEF) blob = encode_self_ident(msg ...
+
+[first-light] server/javelin/__init__.py
+  ... AzCore-style typed codecs from .level_info_changed import LevelInfoChangedMsg from .self_ident import [PlayerManagerSelfIdentificationMsg] # Session-state scaffolding (sketch — not consumed by runtime today) from .session_state import SessionState __all ...
+
+##############################################################################
+QUERY: CharacterServiceProxyActor
+##############################################################################
+
+=== TEXT SEARCH: CharacterServiceProxyActor ===
+
+[aeternum-world] Catalog/uuid_to_class.json
+  ... null, "name_va": "0x14800DFC8" }, "handler": { "Marshal": "0x1414e9b90", "Unmarshal": "0x1414e9e70", "CreateInstance": "0x1414E9AF0", "Destructor": "0x1414EA100" }, "name_source": "javelin_rtti_static", "javelin_rtti": { "verdict": "MATCHED", "class": "[CharacterServiceProxyActor]", "namespace": "Javelin", "full": "Javelin::[CharacterServiceProxyActor]", "install ...
+
+[first-light] analysis/message_inventory.md
+  ... BotTaskWaitForAttackFinish` - `BotTaskWaitForGridLayer` - `BotTaskWaitForGroup` - `BotTaskWarAction` - `BotTaskWarSignUp` - `BotTaskWhile` - `BotTaskWhisperReset` - `BuyContract` - `CameraPositionListener` - `CapturePointReplicatedState` - `CapturePointReplicatedState_ColdData` - `CapturePointReplicatedState_HotData` - `[CharacterServiceProxyActor]` - `CharacterServiceProxyTrait` - `ClientMessagesTrait` - `ClientViewListenerTrait` - `ConsecutiveTaskContainer` - `Consumable` - `Contract` - `ContractActionParams` - `ContractActionParamsBuyCompletion` - `ContractActionParamsMakeGoodCompletion` - `ContractActionParamsSellCompletion` - `ContractActionParamsWithDuration` - `ContractActionParamsWithReason` - `ContractBase` - `ContractItemFilter` - `ContractItemSimpleData ...
+
+[first-light] analysis/installhook_typeinfo_strings.txt
+  ... RequestEnableCollision@ClientMessages@Javeli' 0 references ## string at 14a156b30: '.?AV<lambda_1>@?1???$InstallRegistrationHook@VInitMsg@[CharacterServiceProxyActor]@Javelin@@@Hub@Amazon@@YA_NXZ@' 0 references ## string at 14a156bb0: '.?AV<lambda_1>@?1???$InstallRegistrationHook ...
+
+[first-light] analysis/installhook_strings_by_addr.txt
+  ... 14a1568e0 (unparseable) 14a156980 GlobalRemoveActorMsg@GlobalEntityListenerTrait@Aoi 14a156a10 InitMsg@GridManagerActor@Aoi 14a156a90 (unparseable) 14a156b30 InitMsg@[CharacterServiceProxyActor]@Javelin 14a156bb0 TestFacetedComponentServerFacet_PushUserString@ClientMessages 14a156c50 GlobalAddActorMsg@GlobalEntityListenerTrait@Aoi 14a156dd0 BaseGridActorClient@Aoi 14a156e40 TestFacetedComponentServerFacet_SetUserString ...
+
+##############################################################################
+QUERY: 169443E0-A508-4653-B437-49B7A195F69C
+##############################################################################
+
+=== EXACT UUID: 169443E0-A508-4653-B437-49B7A195F69C ===
+
+[aeternum-world] Catalog/uuid_to_class.json:61851
+  "169443E0-A508-4653-B437-49B7A195F69C": {
+
+[first-light] info/typeregistry.json:4777
+  "169443E0-A508-4653-B437-49B7A195F69C",
+
+[first-light] info/typeregistry.json:4784
+  "uuid": "169443E0-A508-4653-B437-49B7A195F69C",
+
+[first-light] info/typeregistry.json:76855
+  "169443E0-A508-4653-B437-49B7A195F69C",
+
+[first-light] site/data.json:227
+  "uuid": "169443E0-A508-4653-B437-49B7A195F69C",
+
+=== TEXT SEARCH: 169443E0-A508-4653-B437-49B7A195F69C ===
+
+[aeternum-world] Catalog/uuid_to_class.json
+  ... stub": "0x1414CE9E0", "vftable_base": "0x148006A78", "lambda_invoke": "0x1414CE860", "get_type_descriptor": "0x14170CF20" } }, "[169443E0-A508-4653-B437-49B7A195F69C]": { "name": "Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg", "is_empty_name": false, "type_idx": 1628, "ida": { "vtable ...
+
+[first-light] info/typeregistry.json
+  ... 5702 } ], [ "[169443E0-A508-4653-B437-49B7A195F69C]", { "$id": 1091, "__addr": "0x1b2f364f5c0", "baseVtable": "NewWorld+0x84cb580", "vtable": "0x1b2f364f5b0", "name": "", "uuid": "[169443E0-A508-4653-B437-49B7A195F69C]", "handler": { "$id": 1093, "Destructor": "0x83485708245c8948", "GetEmptyValue": "0x8948c03318ec8348", "CreateInstance ...
+
+[first-light] site/data.json
+  ... 1, "directions": "R", "sizes": [ 12706 ], "name": "(unclaimed)", "uuid": "[169443E0-A508-4653-B437-49B7A195F69C]", "registry_index": 137, "confidence": "unclaimed", "codec": "world_data_blob_65c.py" }, { "type_id": 1635, "type_id_hex ...
+
+##############################################################################
+QUERY: 60A51DFC-8745-4276-976D-8808EF52CD77
+##############################################################################
+
+=== EXACT UUID: 60A51DFC-8745-4276-976D-8808EF52CD77 ===
+
+[aeternum-world] Catalog/uuid_to_class.json:61355
+  "60A51DFC-8745-4276-976D-8808EF52CD77": {
+
+[first-light] DASHBOARD.md:100
+  | Registry UUID | `60A51DFC-8745-4276-976D-8808EF52CD77` |
+
+[first-light] info/typeregistry.json:10299
+  "60A51DFC-8745-4276-976D-8808EF52CD77",
+
+[first-light] info/typeregistry.json:10306
+  "uuid": "60A51DFC-8745-4276-976D-8808EF52CD77",
+
+[first-light] info/typeregistry.json:76839
+  "60A51DFC-8745-4276-976D-8808EF52CD77",
+
+[first-light] docs/next-session.md:29
+  (wire-type `0x5d1`, registry UUID `60A51DFC-8745-4276-976D-8808EF52CD77`).
+
+[first-light] analysis/autonomous_worklog_through_253.md:8965
+  UUID `60A51DFC-8745-4276-976D-8808EF52CD77`
+
+=== TEXT SEARCH: 60A51DFC-8745-4276-976D-8808EF52CD77 ===
+
+[aeternum-world] Catalog/uuid_to_class.json
+  ... stub": "0x1414FEA90", "vftable_base": "0x148014E48", "lambda_invoke": "0x1414FEA00", "get_type_descriptor": "0x1416C8320" } }, "[60A51DFC-8745-4276-976D-8808EF52CD77]": { "name": "Javelin::CharacterServiceProxyActor", "is_empty_name": false, "type_idx": 1489, "ida": { "vtable_va ...
+
+[first-light] DASHBOARD.md
+  ... 2` | | Wire trigger type-ID | `0x5d1` (= 1489 = typeIndex from registry) | | Registry UUID | `[60A51DFC-8745-4276-976D-8808EF52CD77]` | | In-binary CreateInstance stub | `0x1414e9ad0` | | Captured replay | **Phase 9b missing** (no `0x91(0x17 ...
+
+[first-light] info/typeregistry.json
+  ... 1490 } ], [ "[60A51DFC-8745-4276-976D-8808EF52CD77]", { "$id": 2346, "__addr": "0x1b2f3629e20", "baseVtable": "NewWorld+0x84cb580", "vtable": "0x1b2f3629e10", "name": "", "uuid": "[60A51DFC-8745-4276-976D-8808EF52CD77]", "handler": { "$id": 2348, "Destructor": "0x83485708245c8948", "GetEmptyValue": "0x74894808245c8948", "CreateInstance ...
+
+[first-light] docs/next-session.md
+  ... is written only on receipt of `PlayerManagerSelfIdentificationMsg` (wire-type `0x5d1`, registry UUID `[60A51DFC-8745-4276-976D-8808EF52CD77]`). Captured replay doesn't contain `0x5d1` so pure replay can't drive the ...
+
+[first-light] analysis/autonomous_worklog_through_253.md
+  ... typeIndex=1489 (0x5d1), UUID `[60A51DFC-8745-4276-976D-8808EF52CD77]` - Found its CreateInstance stub at `0x1414e9ad0` via fingerprint search (`b9 00 19 00 00 e9 36 cb` — size 0x1900 = 6400-byte ...
+
+##############################################################################
+QUERY: 0x65c
+##############################################################################
+
+=== EXACT HEX_ID: 0x65c ===
+
+[first-light] DASHBOARD.md:61
+  | `0x065c` | 1 | R | 12706 | _(unnamed)_ | 169443E0... | `world_data_blob_65c.py` |
+
+[first-light] DASHBOARD.md:142
+  | 75 | 0x65c carries the same 36-byte signing trailer as 0x40a/0x1be (same handshake-family) |
+
+[first-light] DASHBOARD.md:154
+  | 36-byte signing trailer shared | 0x40a, 0x1be, 0x65c | — | `test_hsb_round_trip_both_singletons` |
+
+[first-light] README.md:30
+  - [Why the live decoder stops at 90.0% (wake 221)](analysis/decision_0x065c_live_decoder.md) — 0x065c (12706-byte world-data-blob) deferred by explicit decision rather than reflexive shipping. Criteria + reversal conditions documented.
+
+[first-light] site/data.json:220
+  "type_id_hex": "0x065c",
+
+[first-light] site/data.json:805
+  "description": "World-data blob \u2014 type 0x065c (R direction, singleton)."
+
+[first-light] site/data.json:1701
+  "summary": "Static-RE has natural termination points where further progress requires runtime data. The state-13 \u2192 14 RE arc (closed wakes 247 + 249) traced the writer + 5-caller trigger chain, but the **upstream** of the trigger chain hits a wall: the most-informative caller (`FUN_142ff8940`) has 0 unconditional call xrefs and 4 data references, all to a single vtable entry at `0x14816cec0`. The function is invoked indirectly through that vtable, so static-RE can't trace the caller chain further without finding what dispatches through the vtable \u2014 and that dispatcher is itself indirect, recursively. Identifying the specific server message that triggers the gate-set (likely GridMate `NewProxy` per `ghidra_hunt_list.md` \u00a7 2C) is now genuinely **runtime-dependent**. A Frida hook on any of the 5 callers catches the stack frame at call-time and resolves the question immediately. This is documented as the **4th RE artifact genre \u2014 \"wall\"** \u2014 distinct from finding (
+
+[first-light] site/data.json:1731
+  "summary": "Live-decoder coverage at 36/40 (90.0%) \u2014 the remaining 4 captured wire-types are uncovered for cause, not for lack of effort. **Three are structurally unable to add**: 0x0003 (REPClient registration response \u2014 server-emitted only, no captured-side decode path), 0x0008 (chunked_stream \u2014 meta-codec for framing, not a single message), 0x0013 (V3 request \u2014 encoder-only path; we don't reply-decode our own V3 sends). **The fourth is a deliberate decision**: 0x065c (world_data_blob \u2014 12706 bytes / 42 variable-size records with ff_padding trailers) was deferred at wake 221 \u2014 the 12-kbyte blob shape fails the \"single-screen JS rendering useful to a visitor\" bar the other 36 covered types meet. See `analysis/decision_0x065c_live_decoder.md` for criteria, reversal conditions, and the 120-150-line cost estimate behind the call. For complexity reference: wake 213's 0x0635 shipped at ~70 lines, wake 217's 0x12f6 at ~85 lines \u2014 those mark the upper-end
+
+[first-light] site/data.json:1731
+  "summary": "Live-decoder coverage at 36/40 (90.0%) \u2014 the remaining 4 captured wire-types are uncovered for cause, not for lack of effort. **Three are structurally unable to add**: 0x0003 (REPClient registration response \u2014 server-emitted only, no captured-side decode path), 0x0008 (chunked_stream \u2014 meta-codec for framing, not a single message), 0x0013 (V3 request \u2014 encoder-only path; we don't reply-decode our own V3 sends). **The fourth is a deliberate decision**: 0x065c (world_data_blob \u2014 12706 bytes / 42 variable-size records with ff_padding trailers) was deferred at wake 221 \u2014 the 12-kbyte blob shape fails the \"single-screen JS rendering useful to a visitor\" bar the other 36 covered types meet. See `analysis/decision_0x065c_live_decoder.md` for criteria, reversal conditions, and the 120-150-line cost estimate behind the call. For complexity reference: wake 213's 0x0635 shipped at ~70 lines, wake 217's 0x12f6 at ~85 lines \u2014 those mark the upper-end
+
+[first-light] site/data.json:1749
+  "summary": "The autonomous-session work is now narrated across four frozen retrospective documents, each covering a coherent multi-wake arc: wakes 1-150 (`analysis/session_retrospective_150.md`) \u2014 codec library + dispatcher + initial dashboard, ending at 40/40 captured-codec coverage and the wake-112 state-10 RE breakthrough; wakes 151-196 (`analysis/session_retrospective_196.md`) \u2014 navigable dashboard, live decoder at 80%, rep_responder \u2194 dispatcher integration foundation; wakes 197-227 (`analysis/session_retrospective_227.md`) \u2014 live decoder push to 90.0% (with the wake-221 floor decision), phase-2 emission swap + counter-advance realism extension, and the cross-check graph (see the wake-210 meta-pattern card for current count, with five self-referential pins on the meta-card itself); **wakes 228-253 (`analysis/session_retrospective_253.md`) \u2014 state-machine RE closure arc, all 4 post-V3 state-spawn transitions now have writers + trigger chains identified at s
+
+[first-light] site/data.json:2054
+  "type_id_hex": "0x065c",
+
+[first-light] site/data.json:3533
+  "type_id_hex": "0x065c",
+
+[first-light] site/data.json:28604
+  "subject": "docs(analysis): decision document \u2014 0x065c stays out of live decoder"
+
+[first-light] site/data.json:29321
+  "note": "Decision: 0x065c stays out \u2014 90.0% is the floor by design"
+
+[first-light] site/data.json:29672
+  "title": "Decision: 0x065c stays out of the live decoder",
+
+[first-light] site/data.json:29673
+  "summary": "The live decoder stops at **36/40 (90.0%)** after wake 217's 0x12f6 ship. 0x065c (`world_data_blob`) is the last captured wire-type with a full Python codec but no JS live decoder. This document records the explicit d\u2026",
+
+[first-light] site/data.json:29919
+  "0x065c"
+
+[first-light] site/index.html:1461
+  ping, <code>0x65c</code> is bulk world data, <code>0x18a6</code>
+
+[first-light] docs/post-v3-sequence.md:109
+  | 4 | 140ms | WORLD DATA `0x9c` | 0 | 12.7KB | chunked, 12 segs ~1115B each; type 0x65c is in the **same handshake-family** as 0x40a/0x1be — carries the byte-identical 36-byte signing trailer at offset +0x39 and `sub_id=58 61 78 14` at +0x15. See `analysis/static_re_handshake_signing.md` for the open question on the trailer's signing scheme. | [`world_data_blob_65c.py`](../server/javelin/world_data_blob_65c.py) (structural) |
+
+[first-light] tools/build_site.py:497
+  "note": "Decision: 0x065c stays out — 90.0% is the floor by design"},
+
+[first-light] tools/build_site.py:1259
+  "(question closed with criteria, e.g. 0x065c "
+
+[first-light] tools/build_site.py:1414
+  "is a deliberate decision**: 0x065c "
+
+[first-light] tools/build_site.py:1427
+  "complexity points already covered; 0x065c "
+
+[first-light] tools/build_site.py:1527
+  "reversal criteria — wake 221's 0x065c, cited "
+
+[first-light] tools/build_site.py:1656
+  0x65c: "world_data_blob_65c.py",
+
+[first-light] tools/decode_message.py:13
+  tools/decode_message.py --type 0x65c --direction R --file /tmp/body.bin
+
+[first-light] tools/extract_typenames.py:246
+  0x5b2, 0x635, 0x651, 0x65c, 0x663, 0x66b, 0x8e6,
+
+[first-light] analysis/autonomous_worklog.md:490
+  - **Decision docs**: "wake 221's 0x065c, cited
+
+[first-light] analysis/autonomous_worklog.md:621
+  1. **0x065c decision** (closed at wake 221) —
+
+[first-light] analysis/autonomous_worklog.md:1032
+  deliberate decision**" (0x065c + decision-
+
+[first-light] analysis/autonomous_worklog.md:1068
+  221's decision doc fixed the 0x065c question
+
+[first-light] analysis/autonomous_worklog.md:1595
+  | decision docs | "wake 221's 0x065c, cited from the wake-200 Findings card" | ✓ |
+
+[first-light] analysis/static_re_handshake_signing.md:25
+  | `0x65c` | 12706 B | +0x39 | +0x15 | seq 0x6 — Phase 4 WORLD DATA blob |
+
+[first-light] analysis/static_re_handshake_signing.md:37
+  - **0x65c**: 32-byte ephemeral block + 16 zero bytes + the
+
+[first-light] analysis/static_re_handshake_signing.md:107
+  0x1be / 0x65c message. The deserializer almost certainly:
+
+[first-light] analysis/static_re_handshake_signing.md:178
+  + [0x65c structural skeleton](replay_message_inventory.md#0x065c--127-kb-r-blob-224-byte-fixed-record-table-singleton)
+
+[first-light] analysis/static_re_handshake_signing.md:178
+  + [0x65c structural skeleton](replay_message_inventory.md#0x065c--127-kb-r-blob-224-byte-fixed-record-table-singleton)
+
+[first-light] analysis/static_re_handshake_signing.md:180
+  wake 81 (0x65c structural codec)
+
+[first-light] analysis/find_dispatcher_intersection.txt:1
+  # searching for intersection of: 0x40a, 0x1be, 0x65c
+
+[first-light] analysis/find_dispatcher_intersection.txt:6
+  # 0x65c: 65 total hits, 35 unique enclosing funcs
+
+[first-light] analysis/typename_extraction.txt:36
+  ## type 0x65c  fingerprint=b940010000e916b6
+
+[first-light] analysis/codec_library_overview.md:97
+  | `world_data_blob_65c.py` | `0x65c` | R | structural |
+
+[first-light] analysis/codec_library_overview.md:165
+  .venv/bin/python3 tools/decode_message.py --type 0x65c --direction R --file /tmp/body.bin
+
+[first-light] analysis/codec_library_overview.md:204
+  tools/decode_message.py --type 0x65c --direction R --file /tmp/body.bin
+
+[first-light] analysis/session_retrospective_227.md:42
+  (`0x065c`, 12706-byte world-data-blob) deferred by
+
+[first-light] analysis/session_retrospective_227.md:175
+  - **0x065c codec** in the live decoder — decision
+
+[first-light] analysis/session_retrospective_227.md:198
+  wakes hedged on 0x065c with phrases like "future-
+
+[first-light] analysis/session_retrospective_196.md:226
+  0x0008, 0x0013, 0x0635, 0x065c, 0x0ca4, 0x12f6, 0x16a0).
+
+[first-light] analysis/replay_message_inventory.md:586
+  ## `0x065c` — ~12.7 KB R blob: 224-byte fixed-record table (singleton)
+
+[first-light] analysis/replay_message_inventory.md:601
+  So 0x65c is from the **same family as the 0x40a/0x1be two-step
+
+[first-light] analysis/replay_message_inventory.md:612
+  +0x000  u8x4    type_header        [00 01 9c 19] = type 0x65c
+
+[first-light] analysis/codec_coverage.md:24
+  | `0x65c` | R | 1 | 12706 | [`world_data_blob_65c.py`](../server/javelin/world_data_blob_65c.py) | Phase-4 WORLD DATA blob; structural codec walks 224-byte-ish records as (data, ff_padding) |
+
+[first-light] analysis/queued_work.md:37
+  - **0x065c live-decoder** explicitly deferred at wake 221 with
+
+[first-light] analysis/queued_work.md:79
+  - **`0x65c` 224-byte fixed-record content** — structural codec
+
+[first-light] analysis/queued_work.md:91
+  - ~~`0x65c` WORLD-DATA: a second capture would validate the
+
+[first-light] analysis/queued_work.md:94
+  decision doc declared 0x065c stays out of the live decoder
+
+[first-light] analysis/queued_work.md:130
+  findings (0x65c handshake-trailer link, Phase 16 codec link)~~
+
+[first-light] analysis/queued_work.md:135
+  - **0x65c handshake-family signing scheme** — three R messages
+
+[first-light] analysis/queued_work.md:136
+  carry the same 36-byte signing trailer (0x40a, 0x1be, 0x65c).
+
+[first-light] analysis/aligned_65c.txt:1
+  # searching for 0x65c in DATA sections at 4-byte alignment
+
+[first-light] analysis/autonomous_worklog_through_253.md:2193
+  seq=0x6 type=0x65c  R
+
+[first-light] analysis/autonomous_worklog_through_253.md:7118
+  `0x065c`, `0x0ca4`, `0x1096`, `0x1097`, `0x136a`. The
+
+[first-light] analysis/autonomous_worklog_through_253.md:7135
+  ### 2026-05-09 — wake 75: 0xca4 + 0x136a codecs + post-v3 cross-links + 0x65c link
+
+[first-light] analysis/autonomous_worklog_through_253.md:7164
+  4. **`0x065c` cross-codec finding (no codec yet).** This is a
+
+[first-light] analysis/autonomous_worklog_through_253.md:7169
+  So 0x65c is from the **same family as the 0x40a/0x1be
+
+[first-light] analysis/autonomous_worklog_through_253.md:7194
+  - 0x65c R, 12706 bytes (Phase 4 WORLD DATA — newly-found)
+
+[first-light] analysis/autonomous_worklog_through_253.md:7208
+  0x0651, 0x065c, 0x0ca4, 0x136a)
+
+[first-light] analysis/autonomous_worklog_through_253.md:7225
+  1. Look at the 0x65c WORLD DATA blob more carefully — given the
+
+[first-light] analysis/autonomous_worklog_through_253.md:7242
+  ### 2026-05-09 — wake 76: 0x65c structural skeleton + 0x1097 codec + W singleton survey
+
+[first-light] analysis/autonomous_worklog_through_253.md:7251
+  1. **0x065c structural skeleton (the major finding).** With
+
+[first-light] analysis/autonomous_worklog_through_253.md:7252
+  careful FF-vs-data span analysis, the 12706-byte 0x65c blob
+
+[first-light] analysis/autonomous_worklog_through_253.md:7282
+  inventory for future passes (e.g. when a second 0x65c
+
+[first-light] analysis/autonomous_worklog_through_253.md:7323
+  - `analysis/replay_message_inventory.md` (0x65c skeleton +
+
+[first-light] analysis/autonomous_worklog_through_253.md:7338
+  3. The 0x65c follow-up needs additional captures or static-RE;
+
+[first-light] analysis/autonomous_worklog_through_253.md:7538
+  2. The 0x65c WORLD-DATA blob still has the 224-byte
+
+[first-light] analysis/autonomous_worklog_through_253.md:7609
+  0x65c-style fixed-record table (224-byte slots), the 0x9fc
+
+[first-light] analysis/autonomous_worklog_through_253.md:7666
+  type-header-only signal, no payload), 0x65c (12.7 KB
+
+[first-light] analysis/autonomous_worklog_through_253.md:7695
+  **0x65c codec deferred** — the (a) + (b) work consumed most
+
+[first-light] analysis/autonomous_worklog_through_253.md:7710
+  | 36-byte signing trailer shared | 0x40a, 0x1be, 0x65c | — | implicit (handshake-76 codec) |
+
+[first-light] analysis/autonomous_worklog_through_253.md:7718
+  1. **0x65c structural codec** (deferred from this wake) —
+
+[first-light] analysis/autonomous_worklog_through_253.md:7741
+  12706-byte 0x65c R singleton (Phase 4 WORLD DATA). Cleanly
+
+[first-light] analysis/autonomous_worklog_through_253.md:7752
+  — confirming 0x65c is in the handshake/signing family along
+
+[first-light] analysis/autonomous_worklog_through_253.md:7763
+  `codec_coverage.md` flipped 0x65c from uncodec'd to
+
+[first-light] analysis/autonomous_worklog_through_253.md:7813
+  - `analysis/replay_message_inventory.md` (0x65c codec link)
+
+[first-light] analysis/autonomous_worklog_through_253.md:7814
+  - `analysis/codec_coverage.md` (0x65c moved to codec'd)
+
+[first-light] analysis/autonomous_worklog_through_253.md:8075
+  the trailer at offset +0x39 in 0x65c**, despite all three
+
+[first-light] analysis/autonomous_worklog_through_253.md:8144
+  hypotheses (0x12f6 keybindings, 0x65c records, 0x1033
+
+[first-light] analysis/autonomous_worklog_through_253.md:8262
+  | 0x65c semantic interpretation | More captures or static-RE |
+
+[first-light] analysis/autonomous_worklog_through_253.md:8309
+  the 36-byte trailer shared by 0x40a / 0x1be / 0x65c (two
+
+[first-light] analysis/autonomous_worklog_through_253.md:8323
+  - 0x40a + 0x1be + 0x65c handshake-family signing trailer
+
+[first-light] analysis/autonomous_worklog_through_253.md:8343
+  1. **A second 0x12f6 / 0x65c / 0x1033 capture from a different
+
+[first-light] analysis/autonomous_worklog_through_253.md:8466
+  type-id 0x40a / 0x1be / 0x65c each return >50 hits as
+
+[first-light] analysis/autonomous_worklog_through_253.md:8518
+  - 0x65c: 65 total hits, 35 unique functions
+
+[first-light] analysis/autonomous_worklog_through_253.md:8532
+  captured type-IDs 0x40a, 0x1be, 0x65c, 0x18a6, 0x1b88 all have
+
+[first-light] analysis/autonomous_worklog_through_253.md:8563
+  This table doesn't include 0x65c — the 0x65c hits are all in
+
+[first-light] analysis/autonomous_worklog_through_253.md:8563
+  This table doesn't include 0x65c — the 0x65c hits are all in
+
+[first-light] analysis/autonomous_worklog_through_253.md:8712
+  - Constants 0x40a, 0x1be, 0x65c are sufficiently common as
+
+[first-light] analysis/autonomous_worklog_through_253.md:10542
+  big 0x65c bulk-data spike at seq 6, the regular 0x15d ping/ack
+
+[first-light] analysis/autonomous_worklog_through_253.md:10682
+  <code>0x65c</code> is bulk world data …" Mentions the copy-
+
+[first-light] analysis/autonomous_worklog_through_253.md:13504
+  0x00a4, 0x01be, 0x040a, 0x05b2, 0x0635, 0x065c, 0x0663,
+
+=== TEXT SEARCH: 0x65c ===
+
+[first-light] DASHBOARD.md
+  ... 0x1a59's subkey is byte-identical to 0x18a6's first 16 payload bytes | | 75 | [0x65c] carries the same 36-byte signing trailer as 0x40a/0x1be (same handshake-family) | | 77 | 0x09fc ...
+
+[first-light] site/index.html
+  ... Different IDs mean different message kinds — <code>0x15d</code> is a heartbeat ping, <code>[0x65c]</code> is bulk world data, <code>0x18a6</code> is a session init beacon. The table ...
+
+[first-light] docs/post-v3-sequence.md
+  ... 4 | 140ms | WORLD DATA `0x9c` | 0 | 12.7KB | chunked, 12 segs ~1115B each; type [0x65c] is in the **same handshake-family** as 0x40a/0x1be — carries the byte-identical 36-byte ...
+
+[first-light] tools/build_site.py
+  ... handshake_blob_76.py", 0x5b2: "identity_fingerprint_5b2.py", 0x635: "action_history_635.py", [0x65c]: "world_data_blob_65c.py", 0x663: "level_descriptor_663.py", 0x8e6: "identity_blob_8e6.py ...
+
+[first-light] tools/decode_message.py
+  ... Usage: # Hex on the command line tools/decode_message.py --type 0x15d --direction R --hex '00019d050003af9100000001' # Body in a file (raw bytes) tools/decode_message.py --type [0x65c] --direction R ...
+
+[first-light] tools/extract_typenames.py
+  ... Captured wire-types result captured_ids = [0x3, 0x8, 0x13, 0xa4, 0x14f, 0x15d, 0x1be, 0x40a, 0x5b2, 0x635, 0x651, [0x65c], 0x663, 0x66b, 0x8e6, 0x9d3, 0x9fc, 0xa95, 0xca4, 0xf7f, 0x101a, 0x101d, 0x102e, 0x102f ...
+
+[first-light] analysis/static_re_handshake_signing.md
+  ... 32-byte ephemeral block (different random-looking bytes) - **[0x65c]**: 32-byte ephemeral block + 16 zero bytes + the large records section (which doesn't participate in signing if our hypothesis is ...
+
+[first-light] analysis/find_dispatcher_intersection.txt
+  ... 0x40a, 0x1be, [0x65c] # (per-constant hit cap: 1000) # 0x40a: 149 total hits, 79 unique enclosing funcs # 0x1be: 1000 total hits, 977 unique enclosing funcs # [0x65c]: 65 total hits, 35 unique ...
+
+[first-light] analysis/typename_extraction.txt
+  ... 147f42b80 ## type [0x65c] fingerprint=b940010000e916b6 stub at: 1414faff0 xref sources: 7 xref source: 148013d80 ## type 0x663 fingerprint=b9b8000000e91636 stub at: 1414d2ff0 xref sources: 14 xref source: 1480081e8 candidate [uuid @ 0x148008188 ...
+
+[first-light] analysis/codec_library_overview.md
+  ... server-emit) | | `vivox_config_1067.py` | `0x1067` | R | structural | | `world_data_blob_65c.py` | `[0x65c]` | R | structural | **Coverage depth glossary**: - **structural** — every byte mapped to a typed field. Round-trip ...
+
+[first-light] analysis/replay_message_inventory.md
+  ... So [0x65c] is from the **same family as the 0x40a/0x1be two-step handshake** — possibly a third handshake-class message carrying a much larger payload (cert chain, manifest, permission table ...
+
+[first-light] analysis/codec_coverage.md
+  ... Wake 100. | | `[0x65c]` | R | 1 | 12706 | [`world_data_blob_65c.py`](../server/javelin/world_data_blob_65c.py) | Phase-4 WORLD DATA blob; structural codec walks 224-byte-ish records ...
+
+[first-light] analysis/queued_work.md
+  ... a different user's bindings would pin down the per-binding-slot vs free-list semantics in the 26-byte state region. - ~~`[0x65c]` WORLD-DATA: a second capture would validate ...
+
+[first-light] analysis/uuid_search_patterns.tsv
+  ... a9368429d006da4b8dd90708b36e7374 0x635_canonical 01346ccd785e448da4294b281972b1d7 0x635_msft cd6c34015e788d44a4294b281972b1d7 0x651_canonical 21207525b4484193aaca83d4f847929f 0x651_msft 2575202148b49341aaca83d4f847929f [0x65c]_canonical 169443e0a5084653b43749b7a195f69c [0x65c]_msft e043941608a55346b43749b7a195f69c 0x663_canonical 45918d0302e742a48a301b205f8c37fe 0x663_msft 038d9145e702a4428a301b205f8c37fe 0x66b_canonical 1505d3b1754a45e88865b3daa4b4b7b2 0x66b_msft ...
+
+[first-light] analysis/aligned_65c.txt
+  # searching for [0x65c] in DATA sections at 4-byte alignment found 7 aligned hits 148d23dc8 block=.rdata ctx=(ctx fail) 1495eb808 block=.rdata ctx=(ctx fail) 149833338 block=.rdata ctx ...
+
+[first-light] analysis/autonomous_worklog_through_253.md
+  ... 0xca4 + 0x136a codecs + post-v3 cross-links + [0x65c] link **Did:** Two new codecs, two interesting structural findings, and a docs pass cross-linking the codec library from the post-v3 ...
+
+[first-light] analysis/typename_input.tsv
+  0x8 b990090000e96659 0x1be b950000000e9965d 0x40a b950000000e9965d 0x5b2 b9a8000000e94675 0x635 b9d02f0000e9b6e9 0x651 b908000000e94634 [0x65c] b940010000e916b6 0x663 b9b8000000e91636 0x66b b928000000e976e2 0x8e6 b9a0000000e92646 0x9d3 b928000000e976e2 0x9fc b910020000e9964f 0xa95 b950000000e9965d 0xca4 b9b8000000e91636 0xf7f b928000000e976e2 ...
+
+[first-light] analysis/typename_unblock_spec.md
+  ... matched by shared `sub_id = 58 61 78 14` and 36-byte signing trailer) - `[0x65c]` is in the same handshake family (carries the same trailer at offset +0x39) - `0x8e6 ↔ 0x9fc ...
+
+[first-light] server/javelin/dispatch.py
+  ... empty_marker_651.encode, [0x65c]: world_data_blob_65c.encode, 0x663: level_descriptor_663.encode, 0x8e6: identity_blob_8e6.encode, 0x9fc: receipt_handshake_9fc.encode, 0xa95: permission_bitmap_a95.encode ...
+
+[first-light] server/javelin/README.md
+  ... 1067.py) | `0x1067` | R | | [`world_data_blob_65c.py`](world_data_blob_65c.py) | `[0x65c]` | R | ### Family / generic codecs | Module | Coverage | |---|---| | [`subkey_beacon.py`](subkey_beacon.py) | 13 type-ids ...
+
+[first-light] server/javelin/test_codecs.py
+  ... WorldDataRecord(data=b"\x01\xff\x02", ff_padding_size=0) def test_65c_round_trip_synthetic(): """Round-trip a synthetic [0x65c] with a few small records.""" msg = WorldDataBlob65C( count=2 ...
+
+[first-light] server/javelin/world_data_blob_65c.py
+  ... In the captured [0x65c] the 42 records sum to 12613 bytes and split roughly: - record 0: 42 data + 80 FF (122 bytes total) — leading section that's mostly zeros with ...
+
+[first-light] tools/ghidra_scripts/FindConstantIntersection.py
+  ... immediate within the dispatcher). # # args[0] = comma-separated hex constants (e.g. "0x40a,0x1be,[0x65c]") # args[1] = optional output path # args[2] = optional per-constant hit cap (default 1000) # # @category ...
+
+[first-light] docs/community/nw-login-safe/capture-index.tsv
+[first-light] info/nw-login-safe-20260502-153840/capture-index.tsv
+  ... bin 0x5 5 R 0x1be 446 76 0x5_T0x1be_R.bin 0x6 6 R [0x65c] 1628 12706 0x6_T0x65c_R.bin 0x7 7 R 0x651 1617 4 0x7_T0x651_R ...
+
+[first-light] docs/community/nw-login-safe/handoff-notes.md
+[first-light] info/nw-login-safe-20260502-153840/handoff-notes.md
+  ... Check that the same player identity/session/actor continuity survives across registration, the early `[0x65c]` response, the large StateBundle init burst, and the `interest=91` StateBundle records. The practical diff ...
+
+[first-light] docs/community/nw-login-safe/messages-redacted.txt
+[first-light] info/nw-login-safe-20260502-153840/messages-redacted.txt
+  ... 45 |..Ko.......E | ================================================================================================ file: 0x6_T0x65c_R.bin seq: 0x6 (6) direction: R type: [0x65c] (1628) size: 12706 bytes raw: 00000000 00 01 9c 19 05 XX XX XX XX ...
+
+[first-light] docs/community/nw-login-safe/cap-list.txt
+[first-light] info/nw-login-safe-20260502-153840/cap-list.txt
+  ... R.bin 0x5 msg R 0x1be 76 0x5_T0x1be_R.bin 0x6 msg R [0x65c] 12706 0x6_T0x65c_R.bin 0x7 msg R 0x651 4 0x7_T0x651_R.bin 0x8 ...
+
+##############################################################################
+QUERY: 0x5d1
+##############################################################################
+
+=== EXACT HEX_ID: 0x5d1 ===
+
+[first-light] DASHBOARD.md:30
+  - **State 10 → 11 transition**: handler is `FUN_146454c00` (`PlayerManagerSelfIdentificationMsg`, typeIndex 0x5d1). Predicate `*(int *)(wrapper + 0xa0) == 2`. **Captured replay lacks Phase 9b** — needs runtime trace or static-RE on the deserializer.
+
+[first-light] DASHBOARD.md:99
+  | Wire trigger type-ID | `0x5d1` (= 1489 = typeIndex from registry) |
+
+[first-light] DASHBOARD.md:134
+  - `PlayerManagerSelfIdentificationMsg` typeIndex=1489 (= 0x5d1)
+
+[first-light] CONTRIBUTING.md:80
+  - **State-10→11**: wake 111-112 closed it. Trigger is `PlayerManagerSelfIdentificationMsg` (wire type `0x5d1`); predicate is `*(int*)(wrapper + 0xa0) == 2`. Codec wire-bound in `server/javelin/self_ident.py`; awaiting runtime test.
+
+[first-light] CONTRIBUTING.md:97
+  The post-V3 message sequence is substantially identified — the wake-252 analysis estimates the MVP server-side set as SelfIdent (`0x5d1`, codec wired at wake 112) + LevelInfoChanged + a replica-creation message (likely GridMate `NewProxy`). The third is the runtime-dependent open question (see [`state_machine_summary.md`](analysis/state_machine_summary.md)). `server/rep_responder.py` already handles V3 registration + captured-replay pumping; the next implementation step is sending whatever the runtime trace reveals.
+
+[first-light] site/data.json:1635
+  "summary": "The state-10 \u2192 11 transition is gated by *(int*)(wrapper+0xa0) == 2 (corrected from the earlier +0x130 hypothesis). The trigger is wire type 0x5d1 (PlayerManagerSelfIdentificationMsg) \u2014 not in the captured replay, so the server must synthesize it. Codec is wire-bound; ready for runtime testing."
+
+[first-light] site/data.json:1647
+  "summary": "Static-RE has mapped the post-V3 state-spawn ladder end-to-end. States 10 \u2192 14 form the spawn sequence (10=WaitingForREPConnection, 11=WaitingForActorGameConnection, 12=WaitingForSpawnPoint, 13=WaitingForPlayerSpawn, 14=InGame \u2014 names recovered from the table at 0x1484f9ff0). Each transition reads a different field on the `GameConnectionWrapper` sub-object at `gc + 0x130`: **10\u219211** `*(int)(wrapper+0xa0) == 2`, written by `FUN_145a87010` (onConnectionSuccess) called from `FUN_146454c00` (PlayerManagerSelfIdentification handler); wire trigger 0x5d1 (wake 112). **11\u219212** `*(int)(wrapper+0xa0) != 0` \u2014 inverted check on the same field, auto-fires once 10\u219211 lands. **12\u219213** `*(u8)(wrapper+0xbc8) != 0` \u2014 primary path: LevelInfoChangedMsg's handler (`FUN_146446800`) directly forces state to 13; secondary path: `FUN_14645c660` (another ClientMessagesTrait dispatch entry, message TBD) sets the gate byte via `FUN_145a9fa00` (wake 232/234). **1
+
+[first-light] site/data.json:27992
+  "subject": "analysis(wake 112): wire-bind SelfIdent codec at type 0x5d1"
+
+[first-light] site/data.json:28334
+  "subject": "feat(site): live decoder gains 0x5d1 PlayerManagerSelfIdent"
+
+[first-light] site/data.json:29792
+  "summary": "The message that writes `2` there is `PlayerManagerSelfIdentificationMsg` (wire type `0x5d1`). 0x5d1 is NOT in the captured replay, which is why the pure-replay server can't drive the client past state 10. Unblocking \u2026",
+
+[first-light] site/data.json:29792
+  "summary": "The message that writes `2` there is `PlayerManagerSelfIdentificationMsg` (wire type `0x5d1`). 0x5d1 is NOT in the captured replay, which is why the pure-replay server can't drive the client past state 10. Unblocking \u2026",
+
+[first-light] site/index.html:1581
+  <code>0x5d1</code> for the state-10 unblock).
+
+[first-light] site/index.html:1858
+  <option value="5d1">0x5d1 — PlayerManagerSelfIdent (state-10 trigger, 4 or 25+ bytes)</option>
+
+[first-light] site/index.html:1878
+  <button class="preset-btn" data-ldtype="5d1" data-ldhex="00019117">0x5d1 trigger (4 bytes)</button>
+
+[first-light] site/index.html:1879
+  <button class="preset-btn" data-ldtype="5d1" data-ldhex="00019117 42000000 02000000 11010000 22020000 00 3412fecaefbeadde 99000000">0x5d1 structured (vec=2)</button>
+
+[first-light] site/index.html:1956
+  "0x136a": "136a", "0x1096": "1096", "0x5d1": "5d1",
+
+[first-light] site/index.html:3267
+  // Wire type 0x5d1 — PlayerManagerSelfIdentificationMsg, the state-10
+
+[first-light] site/index.html:3275
+  label: "PlayerManagerSelfIdent (type 0x5d1) — state-10 → 11 unblock trigger",
+
+[first-light] site/index.html:3282
+  ["TYPE_HEADER", "0x" + hexBytes(buf, 0, 4) + "  (type 0x5d1)"],
+
+[first-light] site/index.html:3318
+  ["TYPE_HEADER", "0x" + hexBytes(buf, 0, 4) + "  (type 0x5d1)"],
+
+[first-light] docs/next-session.md:29
+  (wire-type `0x5d1`, registry UUID `60A51DFC-8745-4276-976D-8808EF52CD77`).
+
+[first-light] docs/next-session.md:30
+  Captured replay doesn't contain `0x5d1` so pure replay can't drive
+
+[first-light] docs/next-session.md:39
+  | 10 → 11 | `(int)(wrapper+0xa0) == 2` | `FUN_145a87010` | `PlayerManagerSelfIdentificationMsg` (`0x5d1`) |
+
+[first-light] docs/next-session.md:303
+  `PlayerManagerSelfIdentificationMsg` (`0x5d1`) delivery.
+
+[first-light] docs/progress.md:2963
+  `PlayerManagerSelfIdentificationMsg` (`0x5d1`) delivery. Codec wire-
+
+[first-light] tools/build_site.py:332
+  # 0x5d1 is NOT in the captured replay (server synthesizes it for
+
+[first-light] tools/build_site.py:335
+  "5d1":   {0x5d1},
+
+[first-light] tools/build_site.py:916
+  "type 0x5d1 (PlayerManagerSelfIdentificationMsg) — "
+
+[first-light] tools/build_site.py:983
+  "wire trigger 0x5d1 (wake 112). "
+
+[first-light] tools/build_api_reference.py:102
+  "plus 0x5d1 (state-10 trigger). It's the canonical entry point "
+
+[first-light] analysis/ghidra_hunt_list.md:31
+  Wire-type trigger: 0x5d1 (server synthesizes; not in captured
+
+[first-light] analysis/state_10_unblock_synthesis.md:7
+  (wire type `0x5d1`). 0x5d1 is NOT in the captured replay, which is why
+
+[first-light] analysis/state_10_unblock_synthesis.md:7
+  (wire type `0x5d1`). 0x5d1 is NOT in the captured replay, which is why
+
+[first-light] analysis/state_10_unblock_synthesis.md:9
+  requires the server to construct and emit a synthetic 0x5d1 message.**
+
+[first-light] analysis/state_10_unblock_synthesis.md:54
+  type_id = (0x91 & 0x7f) | (0x17 << 6) = 0x11 | 0x5c0 = 0x5d1
+
+[first-light] analysis/state_10_unblock_synthesis.md:57
+  So **the SelfIdent wire type is `0x5d1`**. Full type header on the
+
+[first-light] analysis/state_10_unblock_synthesis.md:63
+  and the dashboard. **`0x5d1` is not among them.** A grep over the
+
+[first-light] analysis/state_10_unblock_synthesis.md:85
+  TYPE_ID = 0x5d1
+
+[first-light] analysis/state_10_unblock_synthesis.md:122
+  - The trigger message is wire-type `0x5d1`. The codec name is
+
+[first-light] analysis/state_10_unblock_synthesis.md:126
+  - The captured replay does not contain a `0x5d1` message — zero
+
+[first-light] analysis/state_10_unblock_synthesis.md:162
+  emit scaffolding needed for the 0x5d1 SelfIdent synthesis once
+
+[first-light] analysis/codec_library_overview.md:229
+  The dispatcher knows every captured wire-type plus `0x5d1`
+
+[first-light] analysis/session_retrospective_150.md:107
+  wire type **`0x5d1`**, encoded `0x91(0x17)`). Critical
+
+[first-light] analysis/session_retrospective_150.md:108
+  finding: `0x5d1` is NOT in the captured replay, so pure
+
+[first-light] analysis/session_retrospective_150.md:190
+  `dispatch.encode_replay_message(0x5d1, msg)` (21-byte
+
+[first-light] analysis/session_retrospective_196.md:33
+  (80%)**, plus the synthesized 0x5d1 state-10 trigger.
+
+[first-light] analysis/session_retrospective_196.md:112
+  | 165 | `f429c1d` | 4 class docstrings patched; `PlayerManagerSelfIdentificationMsg` entry now leads with "Wire type 0x5d1 — the state-10 → 11 unblock trigger" instead of a field dump. |
+
+[first-light] analysis/session_retrospective_196.md:131
+  | 176 | 0x5d1 PlayerManagerSelfIdent (synthesized, not captured) | 22/40 |
+
+[first-light] analysis/session_retrospective_196.md:233
+  0x5d1, codec wire-bound wake 112); the wake-176
+
+[first-light] analysis/integration_status.md:137
+  | AzCore-style (`level_info_changed`, `self_ident`) | ~~Already deferred per worklog wakes 51-63; needs static-RE~~ — **partly resolved at wake 112**: state-10 gate found (`wrapper[+0xa0] == 2`), 0x5d1 trigger identified. Runtime emission still gated on real-GPU validation per phase-2D arc. | now ready for runtime |
+
+[first-light] analysis/queued_work.md:31
+  (`*(int*)(wrapper+0xa0) == 2`, trigger 0x5d1
+
+[first-light] analysis/queued_work.md:55
+  (`wrapper[+0xa0] == 2`) and the wire-type trigger (0x5d1, not in
+
+[first-light] analysis/autonomous_worklog_through_253.md:2205
+  | 0x80, (type_id >> 6) & 0xFF]` would either decode to type 0x5d1
+
+[first-light] analysis/autonomous_worklog_through_253.md:2207
+  **Neither 0x5d1 nor 0x91 appears in the captured replay's seq
+
+[first-light] analysis/autonomous_worklog_through_253.md:2418
+  - `0x91(0x17)` → low6=0x11 + (0x17<<6)=0x5C0 → type 0x5d1
+
+[first-light] analysis/autonomous_worklog_through_253.md:8964
+  - `PlayerManagerSelfIdentificationMsg`: typeIndex=1489 (0x5d1),
+
+[first-light] analysis/autonomous_worklog_through_253.md:10397
+  `docs/post-v3-sequence.md` decodes to type-id **0x5d1**
+
+[first-light] analysis/autonomous_worklog_through_253.md:10398
+  (verified: `(0x91 & 0x7f) | (0x17 << 6) = 0x5d1`).
+
+[first-light] analysis/autonomous_worklog_through_253.md:10400
+  4. **0x5d1 is NOT in the captured replay**. The 40 captured
+
+[first-light] analysis/autonomous_worklog_through_253.md:10405
+  state-10→11. The captured login session never carried a 0x5d1
+
+[first-light] analysis/autonomous_worklog_through_253.md:10408
+  to construct + emit a synthetic 0x5d1 message at the right point
+
+[first-light] analysis/autonomous_worklog_through_253.md:10430
+  with the corrected `+0xa0` offset and the 0x5d1 wire-type
+
+[first-light] analysis/autonomous_worklog_through_253.md:10445
+  ## Wake 112 — wire-bind SelfIdent codec at type 0x5d1
+
+[first-light] analysis/autonomous_worklog_through_253.md:10449
+  emit a synthetic 0x5d1 SelfIdentification message; the existing
+
+[first-light] analysis/autonomous_worklog_through_253.md:10457
+  - `TYPE_ID = 0x5d1`, `TYPE_HEADER = bytes((0x00, 0x01, 0x91, 0x17))`.
+
+[first-light] analysis/autonomous_worklog_through_253.md:10466
+  - `DECODERS[0x5d1] = decode_typed` (so synthetic 0x5d1 messages
+
+[first-light] analysis/autonomous_worklog_through_253.md:10466
+  - `DECODERS[0x5d1] = decode_typed` (so synthetic 0x5d1 messages
+
+[first-light] analysis/autonomous_worklog_through_253.md:10468
+  - `ENCODERS[0x5d1] = encode_typed` (the structured form is the
+
+[first-light] analysis/autonomous_worklog_through_253.md:10473
+  `0x91(0x17)` ↔ `0x5d1` derivation explicitly.
+
+[first-light] analysis/autonomous_worklog_through_253.md:10502
+  wire = dispatch.encode_replay_message(0x5d1, msg)
+
+[first-light] analysis/autonomous_worklog_through_253.md:10506
+  The dispatcher now knows about 0x5d1 even though the captured
+
+[first-light] analysis/autonomous_worklog_through_253.md:10539
+  monospace `0x05d1`-style hex.
+
+[first-light] analysis/autonomous_worklog_through_253.md:11807
+  about `0x5d1` being known to the dispatcher even though
+
+[first-light] analysis/autonomous_worklog_through_253.md:12303
+  type 0x5d1 (PlayerManagerSelfIdentificationMsg) —
+
+[first-light] analysis/autonomous_worklog_through_253.md:12647
+  — 41 entries — the +1 is `0x5d1`/SelfIdent which has an
+
+[first-light] analysis/autonomous_worklog_through_253.md:12890
+  type **0x5d1**, the state-10 → 11 unblock trigger, the
+
+[first-light] analysis/autonomous_worklog_through_253.md:12901
+  searching for "state 10" or "0x5d1" now hit a clear
+
+[first-light] analysis/autonomous_worklog_through_253.md:13521
+  ## Wake 176 — live decoder gains 0x5d1 PlayerManagerSelfIdent
+
+[first-light] analysis/autonomous_worklog_through_253.md:13523
+  **Goal**: 0x5d1 is the state-10 → 11 unblock trigger codec
+
+[first-light] analysis/autonomous_worklog_through_253.md:13555
+  the `5d1 → {0x5d1}` mapping. Note that 0x5d1 isn't in
+
+[first-light] analysis/autonomous_worklog_through_253.md:13555
+  the `5d1 → {0x5d1}` mapping. Note that 0x5d1 isn't in
+
+[first-light] analysis/autonomous_worklog_through_253.md:13575
+  24 (22 captured + 0x5d1 synthesized + the trigger form of
+
+[first-light] analysis/autonomous_worklog_through_253.md:13576
+  0x5d1 as a degenerate case).
+
+[first-light] analysis/autonomous_worklog_through_253.md:13587
+  coupled pair" or wake-112's "trigger is wire type 0x5d1")
+
+[first-light] analysis/autonomous_worklog_through_253.md:13599
+  the 9 simple decoders + 0x5d1 + all 14 subkey family
+
+[first-light] analysis/autonomous_worklog_through_253.md:13627
+  `0x5d1` (1 link, leads directly to the wake-176
+
+[first-light] analysis/autonomous_worklog_through_253.md:13636
+  10 trigger is 0x5d1" can now *do something* about that
+
+[first-light] analysis/autonomous_worklog_through_253.md:13690
+  (23 JS entries — 9 simple + 0x5d1 + 13 subkey family members
+
+[first-light] analysis/autonomous_worklog_through_253.md:13692
+  0x5d1 + 0x15d shared count). Tests: 418 → **419 passing
+
+[first-light] analysis/autonomous_worklog_through_253.md:13774
+  - Variable size (subkey, 0x5d1).
+
+[first-light] analysis/autonomous_worklog_through_253.md:13776
+  - u64 via BigInt halves (136a, 0x5d1 field_2c).
+
+[first-light] analysis/autonomous_worklog_through_253.md:13957
+  - **wake 176** (live decoder gains 0x5d1 PlayerManagerSelfIdent):
+
+[first-light] analysis/autonomous_worklog_through_253.md:13958
+  `0x5d1` becomes a typelink straight to the wake-176
+
+[first-light] analysis/autonomous_worklog_through_253.md:14215
+  `0x5d1` (twice). State-10 unblock trigger now clickable
+
+[first-light] analysis/autonomous_worklog_through_253.md:14544
+  - Variable size (subkey, 0x5d1, 0x1033, **new 0x5b2**,
+
+[first-light] analysis/autonomous_worklog_through_253.md:14546
+  - Mixed BE/LE field decoders (1096, 136a, 0x5d1).
+
+[first-light] analysis/autonomous_worklog_through_253.md:14547
+  - u64 via BigInt halves (136a, 0x5d1).
+
+[first-light] analysis/autonomous_worklog_through_253.md:18603
+  as the runtime-emit scaffolding for the 0x5d1
+
+[first-light] analysis/public_api.md:11
+  The dispatcher in `server.javelin.dispatch` provides type-id-indexed encode/decode routing for all 40 captured wire-types plus 0x5d1 (state-10 trigger). It's the canonical entry point for any code that wants a single call instead of importing each per-type module.
+
+[first-light] analysis/public_api.md:90
+  - **`PlayerManagerSelfIdentificationMsg`** (`class`)  ⟨`self_ident`⟩ — Wire type 0x5d1 — the state-10 → 11 unblock trigger.
+
+=== TEXT SEARCH: 0x5d1 ===
+
+[first-light] DASHBOARD.md
+  ... handler is `FUN_146454c00` (`PlayerManagerSelfIdentificationMsg`, typeIndex [0x5d1]). Predicate `*(int *)(wrapper + 0xa0) == 2`. **Captured replay lacks Phase 9b** — needs runtime trace or static-RE on the deserializer. ## Library status | Layer | Components ...
+
+[first-light] CONTRIBUTING.md
+  ... Trigger is `PlayerManagerSelfIdentificationMsg` (wire type `[0x5d1]`); predicate is `*(int*)(wrapper + 0xa0) == 2`. Codec wire-bound in `server/javelin/self_ident.py`; awaiting runtime test. - **State-11→12**: auto-fires once ...
+
+[first-light] site/data.json
+  ... The trigger is wire type [0x5d1] (PlayerManagerSelfIdentificationMsg) \u2014 not in the captured replay, so the server must synthesize it. Codec is wire-bound; ready for runtime testing." }, { "title": "State-12 ...
+
+[first-light] site/index.html
+  ... The dispatcher knows all 40 captured wire-types in the replay (plus <code>[0x5d1]</code> for the state-10 unblock). </p> </div> </div> <div class="step"> <div class="step-n ...
+
+[first-light] docs/next-session.md
+  ... The transition is gated by `*(int*)(wrapper + 0xa0) == 2` (corrected from the earlier `+0x130` hypothesis), and the value 2 is written only on receipt of `PlayerManagerSelfIdentificationMsg` (wire-type `[0x5d1]`, registry ...
+
+[first-light] docs/progress.md
+  ... State-10→11 (the "exact open question" at the start of the session) is gated by `*(int*)(wrapper + 0xa0) == 2`, set on `PlayerManagerSelfIdentificationMsg` (`[0x5d1]`) delivery. Codec wire- bound in `server ...
+
+[first-light] tools/build_site.py
+  ... Included here for completeness # — the coverage join against captured_types naturally drops it. "5d1": {[0x5d1]}, # The subkey family decoder covers 14 wire-types — mirrors # KNOWN_FAMILY in server/javelin/subkey ...
+
+[first-light] tools/build_api_reference.py
+  ... provides type-id-" "indexed encode/decode routing for all 40 captured wire-types " "plus [0x5d1] (state-10 trigger). It's the canonical entry point " "for any code that wants a ...
+
+[first-light] analysis/ghidra_hunt_list.md
+  ... written by `FUN_145a87010` (`onConnectionSuccess`), called from `FUN_146454c00` (`PlayerManagerSelfIdentification` handler). Wire-type trigger: [0x5d1] (server synthesizes; not in captured replay). - **State 11 → 12** (`WaitingForActorGameConnection` → `WaitingForSpawnPoint`): inverted check on the ...
+
+[first-light] analysis/state_10_unblock_synthesis.md
+  ... The message that writes `2` there is `PlayerManagerSelfIdentificationMsg` (wire type `[0x5d1]`). [0x5d1] is NOT in the captured replay, which is why the pure-replay server can't drive the client ...
+
+[first-light] analysis/codec_library_overview.md
+  ... frozenset of encoder-side type-ids ``` The dispatcher knows every captured wire-type plus `[0x5d1]` (the SelfIdentification trigger for the state-10→11 unblock — see [state_10_unblock_synthesis.md ...
+
+[first-light] analysis/session_retrospective_150.md
+  ... two `Explore` agents in parallel converged the gate predicate (`*(int*)(wrapper+0xa0) == 2`, NOT `+0x130` as project memory had recorded — corrected) and the trigger message (PlayerManagerSelfIdentificationMsg, wire type **`[0x5d1]`**, encoded ...
+
+[first-light] analysis/session_retrospective_196.md
+  ... Idempotent — re-run after any `__init__.py` change. | | 165 | `f429c1d` | 4 class docstrings patched; `PlayerManagerSelfIdentificationMsg` entry now leads with "Wire type [0x5d1] — the state-10 → 11 unblock trigger" instead of ...
+
+[first-light] analysis/integration_status.md
+  ... state-10 gate found (`wrapper[+0xa0] == 2`), [0x5d1] trigger identified. Runtime emission still gated on real-GPU validation per phase-2D arc. | now ready for runtime | ## What integration would look ...
+
+[first-light] analysis/queued_work.md
+  ... Major individual closures relevant to this doc's open items: - **State-10 → 11 gate** found at wake 112 (`*(int*)(wrapper+0xa0) == 2`, trigger [0x5d1] PlayerManagerSelfIdentificationMsg). - **State-12 → 13 second writer ...
+
+[first-light] analysis/autonomous_worklog_through_253.md
+  ... 3. **Wire-type encoding**: `0x91(0x17)` per `docs/post-v3-sequence.md` decodes to type-id **[0x5d1]** (verified: `(0x91 & 0x7f) | (0x17 << 6) = [0x5d1]`). 4. **[0x5d1] is NOT in the captured ...
+
+[first-light] analysis/public_api.md
+  ... signals a level / map transition. - **`PlayerManagerSelfIdentificationMsg`** (`class`) ⟨`self_ident`⟩ — Wire type [0x5d1] — the state-10 → 11 unblock trigger. ## Session-state scaffolding - **`SessionState`** (`class`) ⟨`session_state`⟩ — Runtime state for a single ...
+
+[first-light] analysis/typename_unblock_spec.md
+  ... the final decode failure > with `AssetBlob16A0Large`; wake 112 wire-bound the state-10 > trigger `[0x5d1]`). The full 177-message replay round-trips with > **0 decode failures, 0 wire mismatches** through ...
+
+[first-light] analysis/selfident_wire_format.md
+  ... The wake-111/112 RE breakthrough confirmed the state-10 → 11 gate predicate (`wrapper[+0xa0] == 2`) and the wire-type trigger (`[0x5d1]`). Both findings are now canonical: - [`state_machine_summary ...
+
+[first-light] server/javelin/dispatch.py
+  ... session_identity_beacon.encode, [0x5d1]: self_ident.encode_typed, } # Subkey-beacon family: every type-id in KNOWN_FAMILY shares the same # encoder; the type_id is carried inside the SubkeyBeacon ...
+
+[first-light] server/javelin/self_ident.py
+  ... type_id = (0x91 & 0x7f) | (0x17 << 6) = 0x11 | 0x5c0 = [0x5d1] # Typed envelope header bytes: marker [0x00, 0x01], then 0x91, then 0x17. TYPE_ID = [0x5d1] TYPE_HEADER = bytes((0x00, 0x01, 0x91, 0x17 ...
+
+[first-light] server/javelin/README.md
+  ... encode_replay_message(type_id, msg) ``` `dispatch.py` knows every captured wire-type plus `[0x5d1]` (the SelfIdentification trigger that's not in the captured replay but which the server will ...
+
+[first-light] server/javelin/test_codecs.py
+  ... dispatcher wire = dispatch.encode_replay_message([0x5d1], msg) assert wire[:4] == SELFIDENT_HEADER # Decode through the dispatcher decoded = dispatch.decode_replay_message([0x5d1], "R", wire) assert decoded == msg def test ...

@@ -1,0 +1,29 @@
+New World reflected type UUID census
+Date: 2026-09-30
+
+Executable:
+client/Bin64/NewWorld.exe
+SHA256:
+8654f01d324636d9f74f1c793b0cc4a417c3c5fa9847d9913c358ca29e0fdc8e
+
+Community catalog:
+external/community/aeternum-world/Catalog/uuid_to_class.json
+
+Catalog entries: 3486
+ASCII UUIDs found: 3483
+Coverage: 99.91%
+
+Case:
+exact: 1650
+lowercase variant: 1833
+missing: 3
+
+Missing:
+D5DA55C2-116E-4530-A0A8-04420F1F84FA | type_idx 4004 | Javelin::Spawner::ClientMessages::SpawnerComponentServerFacet_SetGridSpawnLevel
+0192067C-C33E-7FAC-9EBA-4BF6AD3073A8 | type_idx 6791 | Javelin::ClientMessages::AbilityComponentServerFacet_Debug_IgnorePvpCooldownBalance
+4FA7DC8B-EC09-4ECC-AE88-CEE161E824A6 | type_idx 4229 | Javelin::StatusEffectSource
+
+Evidence status:
+VERIFIED: 3483 catalog UUID identities occur as ASCII UUID strings in this executable.
+NOT YET VERIFIED: catalog type_idx values, provider/getter mappings, handler mappings,
+vtable addresses, Marshal/Unmarshal associations, or registration ordering globally.

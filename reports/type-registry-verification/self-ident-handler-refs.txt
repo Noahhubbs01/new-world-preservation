@@ -1,0 +1,24 @@
+=== ABSOLUTE POINTER REFERENCES ===
+ABS target=0x1414e9af0 section=.rdata reference=0x14800de60
+ABS target=0x1414e9af0 section=.rdata reference=0x14800dfb0
+ABS target=0x1414e9b90 section=.rdata reference=0x14800de68
+ABS target=0x1414e9b90 section=.rdata reference=0x14800dfb8
+ABS target=0x1414e9e70 section=.rdata reference=0x14800de70
+ABS target=0x1414e9e70 section=.rdata reference=0x14800dfc0
+ABS target=0x1414ea100 section=.rdata reference=0x14800de48
+ABS target=0x1414ea100 section=.rdata reference=0x14800df98
+ABS target=0x1414fb0e0 section=.rdata reference=0x148013d88
+ABS target=0x1414fb0e0 section=.rdata reference=0x148014898
+ABS target=0x1414fb0e0 section=.rdata reference=0x14801d220
+ABS target=0x1414fb0e0 section=.rdata reference=0x1480b37d0
+ABS target=0x1414fb0e0 section=.rdata reference=0x14819bfd8
+ABS target=0x1414fb0e0 section=.rdata reference=0x1481d68a0
+ABS target=0x1414fb0e0 section=.rdata reference=0x1482dffd8
+ABS target=0x1414fd380 section=.rdata reference=0x1480148a0
+ABS target=0x1414fd530 section=.rdata reference=0x1480148a8
+ABS target=0x1414fd7f0 section=.rdata reference=0x148014880
+
+=== RIP-RELATIVE REFERENCES ===
+Disassembling .text once. This may take a little while.
+
+Scan complete.

@@ -1,0 +1,35 @@
+New World reflected type registry static verification
+====================================================
+
+Executable: client/Bin64/NewWorld.exe
+SHA256: 8654f01d324636d9f74f1c793b0cc4a417c3c5fa9847d9913c358ca29e0fdc8e
+Image base: 0x140000000
+Catalog: external/community/aeternum-world/Catalog/uuid_to_class.json
+Catalog schema: 4
+Catalog entries: 3486
+Unique UUID strings indexed in EXE: 8734
+
+UUID presence
+  PRESENT_MULTIPLE: 1
+  PRESENT_UNIQUE: 3485
+
+Correlation status
+  UUID_REFERENCED_GETTER_UNPROVEN: 3268
+  UUID_GETTER_CORRELATED: 217
+  UUID_PRESENT_VA_MISMATCH: 1
+
+Getter/UUID relation
+  NO_CATALOG_GETTER: 3268
+  EXACT_FUNCTION_WINDOW: 218
+
+Totals
+  catalog UUID VA exact matches: 217/3486
+  UUIDs with indexed RIP references: 3486/3486
+  handler sets inside mapped image: 3486/3486
+  rows needing review: 3269
+
+Evidence discipline
+  VERIFIED by this pass: UUID presence, executable UUID location, RIP references, address-in-image checks.
+  HEURISTIC: getter/UUID proximity labels. These do not prove exact function boundaries.
+  COMMUNITY-REPORTED ONLY: type_idx values. This pass does not reconstruct registration order.
+  Catalog handler addresses are checked for image membership only; semantic handler identity requires later structural verification.

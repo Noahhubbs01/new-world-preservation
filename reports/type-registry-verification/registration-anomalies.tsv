@@ -1,0 +1,2 @@
+registration_call	registration_function	registration_function_end	provider_candidate	provider_status	uuid	catalog_name	catalog_type_idx	type_idx_evidence	catalog_getter_va	catalog_relation	pre_registration_call_count	pre_registration_calls
+0x146154F9A	0x146154ED0	0x146155019	0x14614BE30	PROVIDER_UUID_UNRESOLVED						UNRESOLVED	4	0x146154EFD->0x147AA6610;0x146154F3B->0x140F21890;0x146154F60->0x1407F7D80;0x146154F74->0x14614BE30

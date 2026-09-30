@@ -1,0 +1,32 @@
+New World reflected type registration graph - Pass 2
+=====================================================
+
+Executable: client/Bin64/NewWorld.exe
+SHA256: 8654f01d324636d9f74f1c793b0cc4a417c3c5fa9847d9913c358ca29e0fdc8e
+Catalog: external/community/aeternum-world/Catalog/uuid_to_class.json
+Catalog entries: 3486
+Executable unique UUID strings: 8734
+Unwind-defined functions: 423579
+Direct registration sites: 3487
+Registration-containing functions: 3487
+Single-UUID provider functions recovered: 18882
+Multi-UUID functions: 153
+
+Registration provider status
+  PROVIDER_UUID_CORRELATED: 3486
+  PROVIDER_UUID_UNRESOLVED: 1
+
+Catalog relation
+  CATALOG_NO_GETTER: 3268
+  CATALOG_GETTER_MATCH: 218
+  UNRESOLVED: 1
+
+Catalog getter comparison
+  MATCH: 218
+
+Evidence notes
+  VERIFIED: direct calls to registration target and UUID RIP references.
+  INFERRED: provider_candidate is the last non-infrastructure direct call
+            before registration inside the unwind-defined function.
+  COMMUNITY-REPORTED: catalog type_idx values remain unverified here.
+  IMPORTANT: code-address order is NOT treated as runtime registration order.
