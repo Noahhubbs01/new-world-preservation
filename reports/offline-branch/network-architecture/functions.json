@@ -1,0 +1,1098 @@
+[
+  {
+    "start": "0x14794637c",
+    "end": "0x147946574",
+    "size": 504,
+    "sites": [
+      {
+        "address": "0x147946422",
+        "api": "WSARecv"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x1479463a1",
+        "operation": "call",
+        "operand": "QWORD PTR [rbx+0x70]",
+        "target": "0x70"
+      },
+      {
+        "site": "0x1479463dd",
+        "operation": "call",
+        "operand": "QWORD PTR [rbx+0x68]",
+        "target": "0x68"
+      },
+      {
+        "site": "0x147946422",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x584580]        # 0x147eca9a8",
+        "target": "0x584580"
+      },
+      {
+        "site": "0x14794644a",
+        "operation": "call",
+        "operand": "QWORD PTR [rbx+0x70]",
+        "target": "0x70"
+      },
+      {
+        "site": "0x14794646b",
+        "operation": "jmp",
+        "operand": "0x147946560",
+        "target": "0x147946560"
+      },
+      {
+        "site": "0x1479464bd",
+        "operation": "jmp",
+        "operand": "0x14794655a",
+        "target": "0x14794655a"
+      },
+      {
+        "site": "0x1479464f5",
+        "operation": "jmp",
+        "operand": "0x147946555",
+        "target": "0x147946555"
+      },
+      {
+        "site": "0x1479464f7",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5844f3]        # 0x147eca9f0",
+        "target": "0x5844f3"
+      },
+      {
+        "site": "0x147946508",
+        "operation": "jmp",
+        "operand": "0x147946555",
+        "target": "0x147946555"
+      },
+      {
+        "site": "0x147946544",
+        "operation": "call",
+        "operand": "0x147951ab0",
+        "target": "0x147951ab0"
+      },
+      {
+        "site": "0x14794654c",
+        "operation": "jmp",
+        "operand": "0x147946555",
+        "target": "0x147946555"
+      },
+      {
+        "site": "0x14794655d",
+        "operation": "call",
+        "operand": "QWORD PTR [rbx+0x70]",
+        "target": "0x70"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/0014794637c.asm"
+  },
+  {
+    "start": "0x147947660",
+    "end": "0x147947852",
+    "size": 498,
+    "sites": [
+      {
+        "address": "0x147947703",
+        "api": "WSARecv"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147947703",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x58329f]        # 0x147eca9a8",
+        "target": "0x58329f"
+      },
+      {
+        "site": "0x14794774d",
+        "operation": "jmp",
+        "operand": "0x14794783d",
+        "target": "0x14794783d"
+      },
+      {
+        "site": "0x14794775a",
+        "operation": "jmp",
+        "operand": "0x14794783d",
+        "target": "0x14794783d"
+      },
+      {
+        "site": "0x14794775f",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x581ca3]        # 0x147ec9408",
+        "target": "0x581ca3"
+      },
+      {
+        "site": "0x14794776c",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x58327e]        # 0x147eca9f0",
+        "target": "0x58327e"
+      },
+      {
+        "site": "0x147947776",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x583274]        # 0x147eca9f0",
+        "target": "0x583274"
+      },
+      {
+        "site": "0x14794777c",
+        "operation": "jmp",
+        "operand": "0x14794778c",
+        "target": "0x14794778c"
+      },
+      {
+        "site": "0x14794777e",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x58326c]        # 0x147eca9f0",
+        "target": "0x58326c"
+      },
+      {
+        "site": "0x1479477b5",
+        "operation": "jmp",
+        "operand": "0x14794783d",
+        "target": "0x14794783d"
+      },
+      {
+        "site": "0x1479477c5",
+        "operation": "jmp",
+        "operand": "0x14794783d",
+        "target": "0x14794783d"
+      },
+      {
+        "site": "0x147947803",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x582287]        # 0x147ec9a90",
+        "target": "0x582287"
+      },
+      {
+        "site": "0x14794780d",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x581bf5]        # 0x147ec9408",
+        "target": "0x581bf5"
+      },
+      {
+        "site": "0x147947817",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x581beb]        # 0x147ec9408",
+        "target": "0x581beb"
+      },
+      {
+        "site": "0x14794781d",
+        "operation": "jmp",
+        "operand": "0x14794782d",
+        "target": "0x14794782d"
+      },
+      {
+        "site": "0x14794781f",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x581be3]        # 0x147ec9408",
+        "target": "0x581be3"
+      },
+      {
+        "site": "0x147947838",
+        "operation": "call",
+        "operand": "0x147946020",
+        "target": "0x147946020"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147947660.asm"
+  },
+  {
+    "start": "0x147947e70",
+    "end": "0x14794814a",
+    "size": 730,
+    "sites": [
+      {
+        "address": "0x147947f2d",
+        "api": "WSASend"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147947edb",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5814ff]        # 0x147ec93e0",
+        "target": "0x5814ff"
+      },
+      {
+        "site": "0x147947f2d",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x582a6d]        # 0x147eca9a0",
+        "target": "0x582a6d"
+      },
+      {
+        "site": "0x147947fb1",
+        "operation": "jmp",
+        "operand": "0x147948115",
+        "target": "0x147948115"
+      },
+      {
+        "site": "0x147947fb6",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x58144c]        # 0x147ec9408",
+        "target": "0x58144c"
+      },
+      {
+        "site": "0x14794800f",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5829db]        # 0x147eca9f0",
+        "target": "0x5829db"
+      },
+      {
+        "site": "0x147948019",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5829d1]        # 0x147eca9f0",
+        "target": "0x5829d1"
+      },
+      {
+        "site": "0x147948024",
+        "operation": "jmp",
+        "operand": "0x147947f90",
+        "target": "0x147947f90"
+      },
+      {
+        "site": "0x147948029",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5829c1]        # 0x147eca9f0",
+        "target": "0x5829c1"
+      },
+      {
+        "site": "0x14794803c",
+        "operation": "jmp",
+        "operand": "0x147947f90",
+        "target": "0x147947f90"
+      },
+      {
+        "site": "0x14794804b",
+        "operation": "call",
+        "operand": "0x147944e60",
+        "target": "0x147944e60"
+      },
+      {
+        "site": "0x1479480d5",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5819b5]        # 0x147ec9a90",
+        "target": "0x5819b5"
+      },
+      {
+        "site": "0x1479480df",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x581323]        # 0x147ec9408",
+        "target": "0x581323"
+      },
+      {
+        "site": "0x1479480e9",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x581319]        # 0x147ec9408",
+        "target": "0x581319"
+      },
+      {
+        "site": "0x1479480f4",
+        "operation": "jmp",
+        "operand": "0x147947f90",
+        "target": "0x147947f90"
+      },
+      {
+        "site": "0x1479480f9",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x581309]        # 0x147ec9408",
+        "target": "0x581309"
+      },
+      {
+        "site": "0x14794810c",
+        "operation": "jmp",
+        "operand": "0x147947f90",
+        "target": "0x147947f90"
+      },
+      {
+        "site": "0x147948135",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5812cd]        # 0x147ec9408",
+        "target": "0x5812cd"
+      },
+      {
+        "site": "0x147948144",
+        "operation": "call",
+        "operand": "0x1479519f0",
+        "target": "0x1479519f0"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147947e70.asm"
+  },
+  {
+    "start": "0x14794a581",
+    "end": "0x14794a753",
+    "size": 466,
+    "sites": [
+      {
+        "address": "0x14794a6bf",
+        "api": "WSARecvFrom"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x14794a590",
+        "operation": "call",
+        "operand": "0x147952220",
+        "target": "0x147952220"
+      },
+      {
+        "site": "0x14794a5bc",
+        "operation": "call",
+        "operand": "0x147945a20",
+        "target": "0x147945a20"
+      },
+      {
+        "site": "0x14794a5d4",
+        "operation": "call",
+        "operand": "0x147944f90",
+        "target": "0x147944f90"
+      },
+      {
+        "site": "0x14794a5d9",
+        "operation": "jmp",
+        "operand": "0x14794a5e2",
+        "target": "0x14794a5e2"
+      },
+      {
+        "site": "0x14794a5ec",
+        "operation": "call",
+        "operand": "0x147951ab0",
+        "target": "0x147951ab0"
+      },
+      {
+        "site": "0x14794a5f6",
+        "operation": "jmp",
+        "operand": "0x14794a71f",
+        "target": "0x14794a71f"
+      },
+      {
+        "site": "0x14794a630",
+        "operation": "jmp",
+        "operand": "0x14794a72b",
+        "target": "0x14794a72b"
+      },
+      {
+        "site": "0x14794a64c",
+        "operation": "call",
+        "operand": "QWORD PTR [rbx+0x190]",
+        "target": "0x190"
+      },
+      {
+        "site": "0x14794a662",
+        "operation": "jmp",
+        "operand": "0x14794a71f",
+        "target": "0x14794a71f"
+      },
+      {
+        "site": "0x14794a673",
+        "operation": "call",
+        "operand": "0x147aad067",
+        "target": "0x147aad067"
+      },
+      {
+        "site": "0x14794a6bf",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x5802c3]        # 0x147eca988",
+        "target": "0x5802c3"
+      },
+      {
+        "site": "0x14794a6d2",
+        "operation": "jmp",
+        "operand": "0x14794a722",
+        "target": "0x14794a722"
+      },
+      {
+        "site": "0x14794a6d4",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x580316]        # 0x147eca9f0",
+        "target": "0x580316"
+      },
+      {
+        "site": "0x14794a6f3",
+        "operation": "jmp",
+        "operand": "0x14794a726",
+        "target": "0x14794a726"
+      },
+      {
+        "site": "0x14794a70c",
+        "operation": "call",
+        "operand": "0x147945a20",
+        "target": "0x147945a20"
+      },
+      {
+        "site": "0x14794a713",
+        "operation": "call",
+        "operand": "0x147951ab0",
+        "target": "0x147951ab0"
+      },
+      {
+        "site": "0x14794a71b",
+        "operation": "jmp",
+        "operand": "0x14794a71f",
+        "target": "0x14794a71f"
+      },
+      {
+        "site": "0x14794a72e",
+        "operation": "call",
+        "operand": "QWORD PTR [rbx+0x188]",
+        "target": "0x188"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/0014794a581.asm"
+  },
+  {
+    "start": "0x147bb9640",
+    "end": "0x147bb9955",
+    "size": 789,
+    "sites": [
+      {
+        "address": "0x147bb9863",
+        "api": "WSARecv"
+      },
+      {
+        "address": "0x147bb98e2",
+        "api": "WSARecv"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147bb96a3",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bb96bd",
+        "operation": "call",
+        "operand": "0x147abd6f0",
+        "target": "0x147abd6f0"
+      },
+      {
+        "site": "0x147bb96f7",
+        "operation": "call",
+        "operand": "0x147adab40",
+        "target": "0x147adab40"
+      },
+      {
+        "site": "0x147bb9707",
+        "operation": "call",
+        "operand": "0x147ac3e80",
+        "target": "0x147ac3e80"
+      },
+      {
+        "site": "0x147bb970c",
+        "operation": "jmp",
+        "operand": "0x147bb9937",
+        "target": "0x147bb9937"
+      },
+      {
+        "site": "0x147bb971f",
+        "operation": "call",
+        "operand": "0x147ac8960",
+        "target": "0x147ac8960"
+      },
+      {
+        "site": "0x147bb972b",
+        "operation": "call",
+        "operand": "0x147ac8fd0",
+        "target": "0x147ac8fd0"
+      },
+      {
+        "site": "0x147bb9758",
+        "operation": "call",
+        "operand": "0x147abd7b0",
+        "target": "0x147abd7b0"
+      },
+      {
+        "site": "0x147bb977d",
+        "operation": "call",
+        "operand": "0x147ac8b30",
+        "target": "0x147ac8b30"
+      },
+      {
+        "site": "0x147bb97bb",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bb97c0",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x311692]        # 0x147ecae58",
+        "target": "0x311692"
+      },
+      {
+        "site": "0x147bb97ef",
+        "operation": "jmp",
+        "operand": "0x147bb97f7",
+        "target": "0x147bb97f7"
+      },
+      {
+        "site": "0x147bb980a",
+        "operation": "jmp",
+        "operand": "0x147bb9813",
+        "target": "0x147bb9813"
+      },
+      {
+        "site": "0x147bb982b",
+        "operation": "call",
+        "operand": "0x147c112e0",
+        "target": "0x147c112e0"
+      },
+      {
+        "site": "0x147bb9863",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x31113f]        # 0x147eca9a8",
+        "target": "0x31113f"
+      },
+      {
+        "site": "0x147bb9871",
+        "operation": "jmp",
+        "operand": "0x147bb9883",
+        "target": "0x147bb9883"
+      },
+      {
+        "site": "0x147bb9873",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x311177]        # 0x147eca9f0",
+        "target": "0x311177"
+      },
+      {
+        "site": "0x147bb9896",
+        "operation": "call",
+        "operand": "0x147ac3e80",
+        "target": "0x147ac3e80"
+      },
+      {
+        "site": "0x147bb989b",
+        "operation": "jmp",
+        "operand": "0x147bb9937",
+        "target": "0x147bb9937"
+      },
+      {
+        "site": "0x147bb98e2",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x3110c0]        # 0x147eca9a8",
+        "target": "0x3110c0"
+      },
+      {
+        "site": "0x147bb98ec",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x3110fe]        # 0x147eca9f0",
+        "target": "0x3110fe"
+      },
+      {
+        "site": "0x147bb9912",
+        "operation": "call",
+        "operand": "0x147adb680",
+        "target": "0x147adb680"
+      },
+      {
+        "site": "0x147bb9923",
+        "operation": "call",
+        "operand": "0x147ac3e80",
+        "target": "0x147ac3e80"
+      },
+      {
+        "site": "0x147bb9928",
+        "operation": "jmp",
+        "operand": "0x147bb9937",
+        "target": "0x147bb9937"
+      },
+      {
+        "site": "0x147bb9932",
+        "operation": "call",
+        "operand": "0x147ba8700",
+        "target": "0x147ba8700"
+      },
+      {
+        "site": "0x147bb9942",
+        "operation": "call",
+        "operand": "0x147aa73b0",
+        "target": "0x147aa73b0"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147bb9640.asm"
+  },
+  {
+    "start": "0x147bb9960",
+    "end": "0x147bb9d2b",
+    "size": 971,
+    "sites": [
+      {
+        "address": "0x147bb9bc6",
+        "api": "WSASend"
+      },
+      {
+        "address": "0x147bb9c97",
+        "api": "WSASend"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147bb99dc",
+        "operation": "call",
+        "operand": "0x147adfc90",
+        "target": "0x147adfc90"
+      },
+      {
+        "site": "0x147bb9a24",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bb9a2c",
+        "operation": "call",
+        "operand": "0x140fa4650",
+        "target": "0x140fa4650"
+      },
+      {
+        "site": "0x147bb9a4b",
+        "operation": "jmp",
+        "operand": "0x147bb9a51",
+        "target": "0x147bb9a51"
+      },
+      {
+        "site": "0x147bb9a65",
+        "operation": "call",
+        "operand": "0x147abd6f0",
+        "target": "0x147abd6f0"
+      },
+      {
+        "site": "0x147bb9aa5",
+        "operation": "call",
+        "operand": "0x147adab40",
+        "target": "0x147adab40"
+      },
+      {
+        "site": "0x147bb9ab5",
+        "operation": "call",
+        "operand": "0x147ac3e80",
+        "target": "0x147ac3e80"
+      },
+      {
+        "site": "0x147bb9aba",
+        "operation": "jmp",
+        "operand": "0x147bb9d00",
+        "target": "0x147bb9d00"
+      },
+      {
+        "site": "0x147bb9afe",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bb9b03",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x31134f]        # 0x147ecae58",
+        "target": "0x31134f"
+      },
+      {
+        "site": "0x147bb9b14",
+        "operation": "call",
+        "operand": "0x14773aa80",
+        "target": "0x14773aa80"
+      },
+      {
+        "site": "0x147bb9b56",
+        "operation": "jmp",
+        "operand": "0x147bb9b5e",
+        "target": "0x147bb9b5e"
+      },
+      {
+        "site": "0x147bb9b88",
+        "operation": "jmp",
+        "operand": "0x147bb9b91",
+        "target": "0x147bb9b91"
+      },
+      {
+        "site": "0x147bb9bc6",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x310dd4]        # 0x147eca9a0",
+        "target": "0x310dd4"
+      },
+      {
+        "site": "0x147bb9bd4",
+        "operation": "jmp",
+        "operand": "0x147bb9c36",
+        "target": "0x147bb9c36"
+      },
+      {
+        "site": "0x147bb9bfb",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bb9c00",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x311252]        # 0x147ecae58",
+        "target": "0x311252"
+      },
+      {
+        "site": "0x147bb9c07",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x310de3]        # 0x147eca9f0",
+        "target": "0x310de3"
+      },
+      {
+        "site": "0x147bb9c2e",
+        "operation": "call",
+        "operand": "0x147adb680",
+        "target": "0x147adb680"
+      },
+      {
+        "site": "0x147bb9c41",
+        "operation": "call",
+        "operand": "0x147ac3e80",
+        "target": "0x147ac3e80"
+      },
+      {
+        "site": "0x147bb9c52",
+        "operation": "call",
+        "operand": "0x140fa4650",
+        "target": "0x140fa4650"
+      },
+      {
+        "site": "0x147bb9c57",
+        "operation": "jmp",
+        "operand": "0x147bb9d00",
+        "target": "0x147bb9d00"
+      },
+      {
+        "site": "0x147bb9c60",
+        "operation": "call",
+        "operand": "0x147c112e0",
+        "target": "0x147c112e0"
+      },
+      {
+        "site": "0x147bb9c97",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x310d03]        # 0x147eca9a0",
+        "target": "0x310d03"
+      },
+      {
+        "site": "0x147bb9ca7",
+        "operation": "call",
+        "operand": "0x140fa4650",
+        "target": "0x140fa4650"
+      },
+      {
+        "site": "0x147bb9cb0",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x310d3a]        # 0x147eca9f0",
+        "target": "0x310d3a"
+      },
+      {
+        "site": "0x147bb9cc2",
+        "operation": "call",
+        "operand": "0x147bba770",
+        "target": "0x147bba770"
+      },
+      {
+        "site": "0x147bb9cdd",
+        "operation": "call",
+        "operand": "0x147adb680",
+        "target": "0x147adb680"
+      },
+      {
+        "site": "0x147bb9ced",
+        "operation": "call",
+        "operand": "0x147ac3e80",
+        "target": "0x147ac3e80"
+      },
+      {
+        "site": "0x147bb9cf2",
+        "operation": "jmp",
+        "operand": "0x147bb9d00",
+        "target": "0x147bb9d00"
+      },
+      {
+        "site": "0x147bb9cfb",
+        "operation": "call",
+        "operand": "0x147ba8710",
+        "target": "0x147ba8710"
+      },
+      {
+        "site": "0x147bb9d0b",
+        "operation": "call",
+        "operand": "0x147aa73b0",
+        "target": "0x147aa73b0"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147bb9960.asm"
+  },
+  {
+    "start": "0x147bbaa80",
+    "end": "0x147bbac86",
+    "size": 518,
+    "sites": [
+      {
+        "address": "0x147bbabd5",
+        "api": "WSAConnect"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147bbaab6",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x31039c]        # 0x147ecae58",
+        "target": "0x31039c"
+      },
+      {
+        "site": "0x147bbaae9",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bbaaee",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x310364]        # 0x147ecae58",
+        "target": "0x310364"
+      },
+      {
+        "site": "0x147bbab15",
+        "operation": "call",
+        "operand": "0x147bbbd90",
+        "target": "0x147bbbd90"
+      },
+      {
+        "site": "0x147bbab35",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bbab68",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bbab6d",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x3102e5]        # 0x147ecae58",
+        "target": "0x3102e5"
+      },
+      {
+        "site": "0x147bbaba2",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bbaba7",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x3102ab]        # 0x147ecae58",
+        "target": "0x3102ab"
+      },
+      {
+        "site": "0x147bbabb5",
+        "operation": "call",
+        "operand": "0x1402f2d90",
+        "target": "0x1402f2d90"
+      },
+      {
+        "site": "0x147bbabd5",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30fd55]        # 0x147eca930",
+        "target": "0x30fd55"
+      },
+      {
+        "site": "0x147bbabdd",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30fe0d]        # 0x147eca9f0",
+        "target": "0x30fe0d"
+      },
+      {
+        "site": "0x147bbabf4",
+        "operation": "call",
+        "operand": "0x14773c820",
+        "target": "0x14773c820"
+      },
+      {
+        "site": "0x147bbac08",
+        "operation": "call",
+        "operand": "0x147bbbd90",
+        "target": "0x147bbbd90"
+      },
+      {
+        "site": "0x147bbac37",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      },
+      {
+        "site": "0x147bbac3f",
+        "operation": "call",
+        "operand": "0x140fa4650",
+        "target": "0x140fa4650"
+      },
+      {
+        "site": "0x147bbac48",
+        "operation": "jmp",
+        "operand": "0x147bbac63",
+        "target": "0x147bbac63"
+      },
+      {
+        "site": "0x147bbac58",
+        "operation": "call",
+        "operand": "0x147bbb4e0",
+        "target": "0x147bbb4e0"
+      },
+      {
+        "site": "0x147bbac69",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30fd51]        # 0x147eca9c0",
+        "target": "0x30fd51"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147bbaa80.asm"
+  },
+  {
+    "start": "0x147bbb887",
+    "end": "0x147bbb943",
+    "size": 188,
+    "sites": [
+      {
+        "address": "0x147bbb930",
+        "api": "WSARecvFrom"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147bbb8a5",
+        "operation": "jmp",
+        "operand": "0x147bbb8ba",
+        "target": "0x147bbb8ba"
+      },
+      {
+        "site": "0x147bbb8f7",
+        "operation": "call",
+        "operand": "0x1402f2d90",
+        "target": "0x1402f2d90"
+      },
+      {
+        "site": "0x147bbb930",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30f052]        # 0x147eca988",
+        "target": "0x30f052"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147bbb887.asm"
+  },
+  {
+    "start": "0x147bbcf0b",
+    "end": "0x147bbd034",
+    "size": 297,
+    "sites": [
+      {
+        "address": "0x147bbcfca",
+        "api": "WSASend"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147bbcf36",
+        "operation": "call",
+        "operand": "QWORD PTR [rdx+0x18]",
+        "target": "0x18"
+      },
+      {
+        "site": "0x147bbcf4a",
+        "operation": "call",
+        "operand": "0x147bbbbd0",
+        "target": "0x147bbbbd0"
+      },
+      {
+        "site": "0x147bbcf84",
+        "operation": "jmp",
+        "operand": "0x147bbcf98",
+        "target": "0x147bbcf98"
+      },
+      {
+        "site": "0x147bbcfa4",
+        "operation": "call",
+        "operand": "0x1402f2d90",
+        "target": "0x1402f2d90"
+      },
+      {
+        "site": "0x147bbcfca",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30d9d0]        # 0x147eca9a0",
+        "target": "0x30d9d0"
+      },
+      {
+        "site": "0x147bbcfd2",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30da18]        # 0x147eca9f0",
+        "target": "0x30da18"
+      },
+      {
+        "site": "0x147bbcfe6",
+        "operation": "call",
+        "operand": "0x147bbbd90",
+        "target": "0x147bbbd90"
+      },
+      {
+        "site": "0x147bbd023",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147bbcf0b.asm"
+  },
+  {
+    "start": "0x147bbd110",
+    "end": "0x147bbd220",
+    "size": 272,
+    "sites": [
+      {
+        "address": "0x147bbd199",
+        "api": "WSASend"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x147bbd155",
+        "operation": "jmp",
+        "operand": "0x147bbd169",
+        "target": "0x147bbd169"
+      },
+      {
+        "site": "0x147bbd175",
+        "operation": "call",
+        "operand": "0x1402f2d90",
+        "target": "0x1402f2d90"
+      },
+      {
+        "site": "0x147bbd199",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30d801]        # 0x147eca9a0",
+        "target": "0x30d801"
+      },
+      {
+        "site": "0x147bbd1a1",
+        "operation": "call",
+        "operand": "QWORD PTR [rip+0x30d849]        # 0x147eca9f0",
+        "target": "0x30d849"
+      },
+      {
+        "site": "0x147bbd1c0",
+        "operation": "call",
+        "operand": "0x147bbbd90",
+        "target": "0x147bbbd90"
+      },
+      {
+        "site": "0x147bbd1fa",
+        "operation": "call",
+        "operand": "0x14773a940",
+        "target": "0x14773a940"
+      }
+    ],
+    "asm": "reports/offline-branch/network-architecture/00147bbd110.asm"
+  }
+]

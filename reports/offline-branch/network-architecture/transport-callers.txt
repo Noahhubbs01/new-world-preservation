@@ -1,0 +1,34 @@
+
+Target function: 0x14794637C
+Candidate direct callers: 0
+
+Target function: 0x147947660
+Candidate direct callers: 2
+  CALL at 0x14794657A
+  CALL at 0x1479478DE
+
+Target function: 0x147947E70
+Candidate direct callers: 1
+  CALL at 0x147945EFB
+
+Target function: 0x14794A581
+Candidate direct callers: 0
+
+Target function: 0x147BB9640
+Candidate direct callers: 0
+
+Target function: 0x147BB9960
+Candidate direct callers: 0
+
+Target function: 0x147BBAA80
+Candidate direct callers: 0
+
+Target function: 0x147BBB887
+Candidate direct callers: 0
+
+Target function: 0x147BBCF0B
+Candidate direct callers: 0
+
+Target function: 0x147BBD110
+Candidate direct callers: 1
+  CALL at 0x147BBBB59
