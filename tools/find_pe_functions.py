@@ -16,13 +16,11 @@ pdata = memoryview(data)[
 ]
 
 targets = [
+    int(value, 0) for value in sys.argv[1:]
+] if len(sys.argv) > 1 else [
     0x146B08840,
-    0x14008EEA4,
-    0x14008EED4,
-    0x14008F724,
-    0x14008F754,
-    0x14026FD84,
-    0x14026FDB4,
+    0x146ABA63D,
+    0x1461AC8D0,
 ]
 
 entries = []
