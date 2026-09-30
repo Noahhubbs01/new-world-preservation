@@ -222,3 +222,188 @@ Checkpoint `1934022` added network reverse-engineering tooling, transport/interf
 Immediately afterward, encoder `0x140877970` was independently confirmed as the matching prefix-varuint32 encoder for decoder `0x14087B5C0`.
 
 The next commit should include this status document and any protocol documentation produced from that finding.
+
+## 2026-09-30 community correlation update
+
+### Community research corpus
+
+The three local community repositories have been normalized into a searchable local research corpus:
+
+- `external/community/first-light`
+- `external/community/aeternum-world`
+- `external/community/new-world-tools`
+
+Indexer:
+
+`tools/index_community_research.py`
+
+SQLite builder:
+
+`tools/build_community_research_db.py`
+
+Query tool:
+
+`tools/query_community_research.py`
+
+Generated analysis location:
+
+`reports/community-index/`
+
+Current corpus statistics:
+
+- 500 manifest entries
+- 34,264,366 bytes normalized text
+- 51,447 unique executable-style addresses in the flat index
+- 6,279 unique UUIDs in the flat index
+- 960 unique short hex IDs
+- 4,382 unique namespace-qualified symbols
+- 37,820 protocol-related lines
+- 725 TODO/FIXME/HACK/XXX lines
+
+SQLite correlation database:
+
+`reports/community-index/community-research.sqlite`
+
+Database statistics:
+
+- 500 files
+- 485 text aliases
+- 431 unique text documents after SHA256 deduplication
+- 148,541 extracted occurrences
+- 51,362 address values
+- 6,276 UUID values
+- 4,382 symbols
+
+The small address/UUID count discrepancy between the flat index and SQLite database is unresolved and should not currently be interpreted as evidence of missing protocol data.
+
+54 duplicate-content groups were identified, representing approximately 7.1 MB of duplicate material. The largest duplicate is the 6.8 MB First Light `messages-redacted.txt`, present through two path aliases.
+
+Generated copied community text and the SQLite database are local analysis caches and should not be committed without an explicit licensing/provenance review.
+
+### VERIFIED generic typed-object deserialization
+
+Aeternum-World reported generic serialization machinery around:
+
+`0x1417B2430`
+
+Independent inspection of this executable confirms the following structural behavior.
+
+`0x1417B2430`:
+
+1. obtains/resolves a serialized type object,
+2. accesses that object's descriptor through its `+0x48` field,
+3. invokes descriptor virtual `+0x10` to create an instance,
+4. invokes descriptor virtual `+0x28` to unmarshal into that instance,
+5. invokes descriptor virtual `+0x18` to destroy the instance when unmarshalling fails.
+
+Therefore the descriptor interface roles:
+
+- `+0x10` CreateInstance
+- `+0x18` Destroy
+- `+0x28` Unmarshal
+
+are independently structurally verified for this executable.
+
+Accessor:
+
+`0x1406D97D0`
+
+is simply:
+
+`return *(void **)(object + 0x48);`
+
+It is not itself a registry resolver.
+
+### VERIFIED serialized type identity decoding
+
+Function:
+
+`0x1461ACFE0`
+
+independently confirms a type-index / inline-identifier mechanism.
+
+It first decodes a uint32 using the independently verified prefix-varuint32 decoder:
+
+`0x14087B5C0`
+
+For a nonzero decoded index:
+
+- a registry/container is obtained,
+- its entries are 16 bytes each,
+- the decoded index selects one 16-byte entry,
+- that 16-byte value becomes the type identifier.
+
+For decoded index zero:
+
+- exactly 16 bytes are read directly from the serialized input,
+- those bytes become the type identifier.
+
+Structural form:
+
+`prefix-varuint32 type_idx`
+
+If `type_idx != 0`:
+
+`identifier = registry[type_idx]`
+
+If `type_idx == 0`:
+
+`identifier = read_16_bytes_inline()`
+
+The 16-byte identifier is strongly corroborated as a UUID by community catalogs, but its UUID interpretation and exact byte ordering remain to be independently verified.
+
+This also independently establishes that this AZ-Reflect type-index field uses the recovered prefix-varuint32 codec. Aeternum-World documentation describes generic `varint` fields as LEB128, so its `type_idx` codec description is not correct for this executable build.
+
+Function:
+
+`0x1461AD130`
+
+uses the parsed 16-byte identifier in a lookup path ending at:
+
+`0x1461650E0`
+
+and returns the resolved object or failure.
+
+Combined recovered chain:
+
+`serialized type_idx -> registry/inline 16-byte identifier -> type lookup -> resolved object -> descriptor +0x48 -> CreateInstance / Unmarshal / Destroy`
+
+### Community correlation findings
+
+Aeternum-World documents the network stack as:
+
+`DTLS -> GridMate Carrier -> direction-specific framing -> AZ-Reflect -> class body / StateBundle`
+
+Its StateBundle documentation proposes type index `8` and an inner stream containing interest records and per-member replication type indexes.
+
+First Light independently contains substantial StateBundle capture/replay research and world-initialization state-transition analysis.
+
+A significant mapping conflict remains:
+
+- Aeternum-World maps UUID `60A51DFC-8745-4276-976D-8808EF52CD77`, type index `0x5D1`, to `Javelin::CharacterServiceProxyActor`.
+- First Light identifies the same UUID/type index as `PlayerManagerSelfIdentificationMsg`.
+- Aeternum-World instead identifies `PlayerManagerSelfIdentificationMsg` as type index `0x65C`, UUID `169443E0-A508-4653-B437-49B7A195F69C`.
+
+Do not resolve this conflict without executable or runtime evidence.
+
+### Tester/debug client decision
+
+The planned standalone Windows tester/debug launcher is intentionally deferred until the client is at or near GCW stage 14.
+
+The future tester should keep the legitimate locally installed New World client separate from preservation tooling. It may manage our launcher, configuration, instrumentation, protocol logging, server selection, capture/export, rollback, and tooling updates, but should not package or redistribute proprietary game binaries/assets.
+
+GCW stage meanings currently derived from First Light remain COMMUNITY-REPORTED until independently verified.
+
+## Updated next step
+
+Use the independently recovered typed-object dispatch mechanism as a fingerprint while tracing the inner ReplicatedStateBundle payload.
+
+Specifically, correlate candidate inner-record parsing with:
+
+- prefix-varuint32 replication/type indexes,
+- 16-byte type identifiers,
+- descriptor lookup,
+- CreateInstance at descriptor `+0x10`,
+- Unmarshal at descriptor `+0x28`.
+
+Community StateBundle layouts should be used as search hypotheses, not treated as verified wire structure until matched against this executable or runtime captures.

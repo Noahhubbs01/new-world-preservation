@@ -32,3 +32,6 @@ __pycache__/
 
 # Third-party research repositories
 /external/community/
+
+# Generated community research corpus/index
+/reports/community-index/
