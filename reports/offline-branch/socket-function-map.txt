@@ -1,0 +1,73 @@
+Loaded 423,579 candidate function entries
+
+Target: 0x147946422
+  Function start: 0x14794637C
+  Function end:   0x147946574
+  Function size:  504 bytes
+  Unwind info:    0x149E34C8C
+
+Target: 0x147947703
+  Function start: 0x147947660
+  Function end:   0x147947852
+  Function size:  498 bytes
+  Unwind info:    0x14985468C
+
+Target: 0x147947F2D
+  Function start: 0x147947E70
+  Function end:   0x14794814A
+  Function size:  730 bytes
+  Unwind info:    0x149E34C60
+
+Target: 0x14794A6BF
+  Function start: 0x14794A581
+  Function end:   0x14794A753
+  Function size:  466 bytes
+  Unwind info:    0x149E35024
+
+Target: 0x147BB9863
+  Function start: 0x147BB9640
+  Function end:   0x147BB9955
+  Function size:  789 bytes
+  Unwind info:    0x149E5D198
+
+Target: 0x147BB98E2
+  Function start: 0x147BB9640
+  Function end:   0x147BB9955
+  Function size:  789 bytes
+  Unwind info:    0x149E5D198
+
+Target: 0x147BB9BC6
+  Function start: 0x147BB9960
+  Function end:   0x147BB9D2B
+  Function size:  971 bytes
+  Unwind info:    0x149E5D1C8
+
+Target: 0x147BB9C97
+  Function start: 0x147BB9960
+  Function end:   0x147BB9D2B
+  Function size:  971 bytes
+  Unwind info:    0x149E5D1C8
+
+Target: 0x147BBABD5
+  Function start: 0x147BBAA80
+  Function end:   0x147BBAC86
+  Function size:  518 bytes
+  Unwind info:    0x149E5D3E4
+
+Target: 0x147BBB930
+  Function start: 0x147BBB887
+  Function end:   0x147BBB943
+  Function size:  188 bytes
+  Unwind info:    0x149E5D26C
+
+Target: 0x147BBCFCA
+  Function start: 0x147BBCF0B
+  Function end:   0x147BBD034
+  Function size:  297 bytes
+  Unwind info:    0x149E5D2C8
+
+Target: 0x147BBD199
+  Function start: 0x147BBD110
+  Function end:   0x147BBD220
+  Function size:  272 bytes
+  Unwind info:    0x149933514

@@ -1,0 +1,24 @@
+
+SECTION .rdata
+  recv_A1        no absolute pointer found
+  recv_A2        no absolute pointer found
+  send_A         no absolute pointer found
+  recvfrom_A     no absolute pointer found
+  recv_B         no absolute pointer found
+  send_B         no absolute pointer found
+  connect_B      target=0x147bbaa80 reference=0x149642e20
+  recvfrom_B     no absolute pointer found
+  send_B2        no absolute pointer found
+  send_B3        no absolute pointer found
+
+SECTION .data
+  recv_A1        no absolute pointer found
+  recv_A2        no absolute pointer found
+  send_A         no absolute pointer found
+  recvfrom_A     no absolute pointer found
+  recv_B         target=0x147bb9640 reference=0x14a12d140
+  send_B         target=0x147bb9960 reference=0x14a12d148
+  connect_B      no absolute pointer found
+  recvfrom_B     no absolute pointer found
+  send_B2        no absolute pointer found
+  send_B3        no absolute pointer found

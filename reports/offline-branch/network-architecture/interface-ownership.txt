@@ -1,0 +1,36 @@
+	07eca940  <none>  00b6  inet_ntop
+	07eca948      2  <none> <none>
+	07eca950  <none>  0046  WSAPoll
+	07eca958      9  <none> <none>
+	07eca960      8  <none> <none>
+	07eca968      7  <none> <none>
+	07eca970     10  <none> <none>
+	07eca978      3  <none> <none>
+	07eca980      6  <none> <none>
+	07eca988  <none>  004b  WSARecvFrom
+	07eca990  <none>  0002  FreeAddrInfoW
+	07eca998  <none>  0007  GetAddrInfoW
+	07eca9a0  <none>  004e  WSASend
+	07eca9a8  <none>  0049  WSARecv
+	07eca9b0  <none>  0027  WSADuplicateSocketW
+	07eca9b8      5  <none> <none>
+	07eca9c0    112  <none> <none>
+Loaded 423,579 candidate function entries
+
+Target: 0x147BB9F38
+  Function start: 0x147BB9E65
+  Function end:   0x147BB9FBE
+  Function size:  345 bytes
+  Unwind info:    0x149E5D130
+
+Target: 0x147BBB4C0
+  No containing function entry found
+
+Target: 0x147C0A800
+  No containing function entry found
+
+Target function: 0x147BBB4C0
+Candidate direct callers: 0
+
+Target function: 0x147C0A800
+Candidate direct callers: 0

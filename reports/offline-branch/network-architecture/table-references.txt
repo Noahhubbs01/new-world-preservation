@@ -1,0 +1,8 @@
+=== ABSOLUTE POINTER REFERENCES ===
+
+=== RIP-RELATIVE REFERENCES ===
+Disassembling .text once. This may take a little while.
+RIP target=0x14a12d140 instruction=0x147bb9f38 147bb9f38:	48 8d 05 01 32 57 02 	lea    rax,[rip+0x2573201]        # 0x14a12d140
+RIP target=0x149642e10 instruction=0x147bbb4ca 147bbb4ca:	48 8d 15 3f 79 a8 01 	lea    rdx,[rip+0x1a8793f]        # 0x149642e10
+
+Scan complete.

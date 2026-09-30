@@ -1,0 +1,76 @@
+	DLL Name: ADVAPI32.dll
+	DLL Name: dbghelp.dll
+	DLL Name: bcrypt.dll
+	DLL Name: bink2w64.dll
+	DLL Name: CRYPT32.dll
+	DLL Name: d3d12.dll
+	DLL Name: D3DCOMPILER_47.dll
+	DLL Name: dxcompiler.dll
+	DLL Name: dxgi.dll
+	DLL Name: GDI32.dll
+	DLL Name: HID.DLL
+	DLL Name: IPHLPAPI.DLL
+	07ec92f8  <none>  009d  IcmpSendEcho
+	DLL Name: KERNEL32.dll
+	07ec9a80  <none>  00ab  ConnectNamedPipe
+	DLL Name: libcds-amd64-vcv141.dll
+	DLL Name: ole32.dll
+	DLL Name: PSAPI.DLL
+	DLL Name: Secur32.dll
+	DLL Name: SETUPAPI.dll
+	DLL Name: SHELL32.dll
+	DLL Name: steam_api64.dll
+	DLL Name: USERENV.dll
+	DLL Name: VERSION.dll
+	DLL Name: AVIFIL32.dll
+	DLL Name: vivoxsdk.dll
+	07ecb718  <none>  012d  vx_req_connector_create_create
+	07ecb750  <none>  0130  vx_req_connector_mute_local_mic_create
+	07ecb788  <none>  0131  vx_req_connector_mute_local_speaker_create
+	07ecb7a8  <none>  012f  vx_req_connector_initiate_shutdown_create
+	DLL Name: WINHTTP.dll
+	07eca7c8  <none>  0009  WinHttpConnect
+	07eca7d0  <none>  0008  WinHttpCloseHandle
+	07eca7d8  <none>  0050  WinHttpWriteData
+	07eca7e0  <none>  0045  WinHttpSetStatusCallback
+	07eca7e8  <none>  0042  WinHttpSetOption
+	07eca7f0  <none>  0046  WinHttpSetTimeouts
+	07eca7f8  <none>  002e  WinHttpOpenRequest
+	07eca800  <none>  0034  WinHttpQueryHeaders
+	07eca808  <none>  0037  WinHttpReadData
+	07eca810  <none>  0004  WinHttpAddRequestHeaders
+	07eca818  <none>  003f  WinHttpSendRequest
+	07eca820  <none>  002d  WinHttpOpen
+	07eca828  <none>  003b  WinHttpReceiveResponse
+	DLL Name: WININET.dll
+	07eca840  <none>  009b  InternetConnectA
+	07eca858  <none>  0080  HttpSendRequestExA
+	DLL Name: WINMM.dll
+	DLL Name: WS2_32.dll
+	07eca8f8  <none>  0057  WSASocketA
+	07eca930  <none>  0021  WSAConnect
+	07eca988  <none>  004b  WSARecvFrom
+	07eca9a0  <none>  004e  WSASend
+	07eca9a8  <none>  0049  WSARecv
+	07eca9b0  <none>  0027  WSADuplicateSocketW
+	07ecaa18  <none>  0058  WSASocketW
+	DLL Name: USER32.dll
+	07eca528  <none>  0316  SendMessageA
+	DLL Name: OLEAUT32.dll
+	DLL Name: MSVCP140.dll
+	DLL Name: VCRUNTIME140.dll
+	DLL Name: VCRUNTIME140_1.dll
+	DLL Name: api-ms-win-crt-utility-l1-1-0.dll
+	DLL Name: api-ms-win-crt-stdio-l1-1-0.dll
+	DLL Name: api-ms-win-crt-runtime-l1-1-0.dll
+	DLL Name: api-ms-win-crt-string-l1-1-0.dll
+	DLL Name: api-ms-win-crt-math-l1-1-0.dll
+	DLL Name: api-ms-win-crt-heap-l1-1-0.dll
+	DLL Name: api-ms-win-crt-convert-l1-1-0.dll
+	DLL Name: api-ms-win-crt-time-l1-1-0.dll
+	DLL Name: api-ms-win-crt-filesystem-l1-1-0.dll
+	DLL Name: api-ms-win-crt-environment-l1-1-0.dll
+	DLL Name: api-ms-win-crt-locale-l1-1-0.dll
+	[ 141] +base[ 142]  008d ?GetGameObjectAuxSendValues@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEAUAkAuxSendValue@@AEAI@Z
+	[ 334] +base[ 335]  014e ?SendPluginCustomGameData@SoundEngine@AK@@YA?AW4AKRESULT@@I_KW4AkPluginType@@IIPEBXI@Z
+	[ 360] +base[ 361]  0168 ?SetGameObjectAuxSendValues@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEAUAkAuxSendValue@@I@Z

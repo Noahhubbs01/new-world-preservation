@@ -29,3 +29,6 @@ __pycache__/
 
 # Large generated validation output
 /reports/type3-validation.tsv
+
+# Third-party research repositories
+/external/community/
