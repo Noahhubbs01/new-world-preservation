@@ -282,6 +282,160 @@ def main():
     print(f"      direct calls={len(direct_calls):,}", flush=True)
     print(f"      UUID RIP refs={len(uuid_refs):,}", flush=True)
 
+    # Persist the expensive executable-analysis products so future investigations
+    # do not need to disassemble the entire executable again.
+    import sqlite3
+
+    cache_path = args.outdir / "newworld-re.sqlite"
+    print(f"      writing reusable RE cache: {cache_path}", flush=True)
+
+    if cache_path.exists():
+        cache_path.unlink()
+
+    db = sqlite3.connect(cache_path)
+    cur = db.cursor()
+
+    cur.executescript("""
+        PRAGMA journal_mode=OFF;
+        PRAGMA synchronous=OFF;
+        PRAGMA temp_store=MEMORY;
+
+        CREATE TABLE functions (
+            start INTEGER PRIMARY KEY,
+            end INTEGER NOT NULL
+        );
+
+        CREATE TABLE calls (
+            address INTEGER PRIMARY KEY,
+            function_start INTEGER,
+            target INTEGER NOT NULL
+        );
+
+        CREATE TABLE rip_refs (
+            address INTEGER PRIMARY KEY,
+            function_start INTEGER,
+            target INTEGER NOT NULL,
+            text TEXT
+        );
+
+        CREATE TABLE structural_instructions (
+            address INTEGER PRIMARY KEY,
+            function_start INTEGER,
+            call_target INTEGER,
+            rip_target INTEGER,
+            text TEXT NOT NULL
+        );
+
+        CREATE INDEX calls_target_idx ON calls(target);
+        CREATE INDEX calls_function_idx ON calls(function_start);
+        CREATE INDEX rip_target_idx ON rip_refs(target);
+        CREATE INDEX rip_function_idx ON rip_refs(function_start);
+        CREATE INDEX structural_function_idx
+            ON structural_instructions(function_start);
+    """)
+
+    cur.executemany(
+        "INSERT INTO functions(start,end) VALUES (?,?)",
+        ((start, end) for start, end, *_ in ranges)
+    )
+
+    function_cache = {}
+
+    def cached_containing_function(addr):
+        fs = function_cache.get(addr)
+        if fs is not None:
+            return fs
+        result = containing_function(addr, ranges, range_starts)
+        fs = result[0] if result[0] is not None else -1
+        function_cache[addr] = fs
+        return fs
+
+    call_rows = []
+    rip_rows = []
+    structural_rows = []
+
+    for addr, call_target, rip_target, text in instructions:
+        if call_target is None and rip_target is None:
+            continue
+
+        fs = cached_containing_function(addr)
+        if fs == -1:
+            fs = None
+
+        structural_rows.append(
+            (addr, fs, call_target, rip_target, text)
+        )
+
+        if call_target is not None:
+            call_rows.append((addr, fs, call_target))
+
+        if rip_target is not None:
+            rip_rows.append((addr, fs, rip_target, text))
+
+        if len(structural_rows) >= 100000:
+            cur.executemany(
+                """INSERT INTO structural_instructions
+                   (address,function_start,call_target,rip_target,text)
+                   VALUES (?,?,?,?,?)""",
+                structural_rows
+            )
+            structural_rows.clear()
+
+        if len(call_rows) >= 100000:
+            cur.executemany(
+                "INSERT INTO calls(address,function_start,target) VALUES (?,?,?)",
+                call_rows
+            )
+            call_rows.clear()
+
+        if len(rip_rows) >= 100000:
+            cur.executemany(
+                """INSERT INTO rip_refs
+                   (address,function_start,target,text)
+                   VALUES (?,?,?,?)""",
+                rip_rows
+            )
+            rip_rows.clear()
+
+    if structural_rows:
+        cur.executemany(
+            """INSERT INTO structural_instructions
+               (address,function_start,call_target,rip_target,text)
+               VALUES (?,?,?,?,?)""",
+            structural_rows
+        )
+
+    if call_rows:
+        cur.executemany(
+            "INSERT INTO calls(address,function_start,target) VALUES (?,?,?)",
+            call_rows
+        )
+
+    if rip_rows:
+        cur.executemany(
+            """INSERT INTO rip_refs
+               (address,function_start,target,text)
+               VALUES (?,?,?,?)""",
+            rip_rows
+        )
+
+    db.commit()
+
+    counts = {}
+    for table in ("functions", "calls", "rip_refs", "structural_instructions"):
+        counts[table] = cur.execute(
+            f"SELECT COUNT(*) FROM {table}"
+        ).fetchone()[0]
+
+    db.close()
+
+    print(
+        "      RE cache rows: "
+        + ", ".join(f"{k}={v:,}" for k, v in counts.items()),
+        flush=True,
+    )
+
+
     calls_by_function = defaultdict(list)
     uuid_refs_by_function = defaultdict(list)
 
@@ -330,6 +484,116 @@ def main():
 
     print(f"      registration sites={len(reg_sites):,}", flush=True)
     print(f"      containing functions={len(reg_functions):,}", flush=True)
+
+    # Mass-classify instruction sequences between the UUID-provider candidate
+    # and the call to REGISTER_TARGET.
+    insns_by_function = defaultdict(list)
+    for addr, call_target, rip_target, text in instructions:
+        fs, _, _ = containing_function(addr, ranges, range_starts)
+        if fs in reg_functions:
+            insns_by_function[fs].append((addr, text))
+
+    pattern_counts = Counter()
+    pattern_examples = defaultdict(list)
+
+    for site in reg_sites:
+        provider_call = site["last_pre_registration_call"]
+        reg_call = site["registration_call"]
+        fs = site["function_start"]
+
+        if provider_call is None:
+            key = ("NO_PROVIDER",)
+        else:
+            body = [
+                text.split(":", 1)[-1].strip()
+                for addr, text in insns_by_function.get(fs, [])
+                if provider_call < addr < reg_call
+            ]
+
+            # Normalize absolute addresses while preserving structure offsets.
+            norm = []
+            for text in body:
+                text = re.sub(r"0x[0-9a-fA-F]{8,16}", "<ADDR>", text)
+                norm.append(text)
+
+            key = tuple(norm)
+
+        pattern_counts[key] += 1
+        if len(pattern_examples[key]) < 3:
+            pattern_examples[key].append(hx(site["registration_call"]))
+
+
+    # Precision-first census of accesses through the value returned by
+    # REGISTRY_GETTER. Only recognize direct [rax+offset] memory operands
+    # shortly after the call. This intentionally avoids false positives from
+    # stack offsets, gs:0x58, immediates, unrelated registers, etc.
+    registry_getter_calls = [
+        (addr, fs)
+        for addr, target in direct_calls
+        if target == REGISTRY_GETTER
+        for fs, _, _ in [containing_function(addr, ranges, range_starts)]
+        if fs is not None
+    ]
+
+    registry_consumer_functions = {fs for _, fs in registry_getter_calls}
+    registry_consumer_insns = defaultdict(list)
+
+    for addr, call_target, rip_target, text in instructions:
+        fs, _, _ = containing_function(addr, ranges, range_starts)
+        if fs in registry_consumer_functions:
+            registry_consumer_insns[fs].append((addr, text))
+
+    registry_consumer_counts = Counter()
+    registry_consumer_examples = defaultdict(list)
+
+    direct_rax_patterns = {
+        "0x40": ("[rax+0x40]",),
+        "0x48": ("[rax+0x48]",),
+        "0x50": ("[rax+0x50]",),
+        "0x58": ("[rax+0x58]",),
+        "0x60": ("[rax+0x60]",),
+        "0x68": ("[rax+0x68]",),
+    }
+
+    for call_addr, fs in registry_getter_calls:
+        following = [
+            text.lower()
+            for addr, text in registry_consumer_insns.get(fs, [])
+            if call_addr < addr <= call_addr + 0x80
+        ]
+
+        offsets = set()
+        for text in following:
+            for off, pats in direct_rax_patterns.items():
+                if any(pat in text for pat in pats):
+                    offsets.add(off)
+
+        key = tuple(sorted(offsets))
+        registry_consumer_counts[key] += 1
+
+        if len(registry_consumer_examples[key]) < 8:
+            registry_consumer_examples[key].append(hx(call_addr))
+
+    print("      direct-RAX registry accessor patterns:", flush=True)
+    for key, count in registry_consumer_counts.most_common():
+        if key:
+            print(
+                f"      {key}: count={count:,} "
+                f"examples={','.join(registry_consumer_examples[key])}",
+                flush=True,
+            )
+
+    print("      provider->registration patterns:", len(pattern_counts), flush=True)
+    for i, (pattern, count) in enumerate(pattern_counts.most_common(10), 1):
+        example = ",".join(pattern_examples[pattern])
+        print(
+            f"      pattern {i}: count={count:,} example={example}",
+            flush=True,
+        )
+        for text in pattern[:12]:
+            print(f"          {text}", flush=True)
+        if len(pattern) > 12:
+            print(f"          ... ({len(pattern)} instructions total)", flush=True)
 
     print("[6/8] Correlating provider candidates with UUID providers...", flush=True)
 

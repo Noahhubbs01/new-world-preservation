@@ -656,34 +656,476 @@ Notable chronological anchors:
 
 ### Current frontier
 
-Generic serialization expansion is no longer the primary task.
+The primary frontier has narrowed from generic post-registration analysis to the
+specific REP connection input required to advance GameConnection from GCW state
+`0xA` (`WaitingForREPConnection`) to state `0xB`
+(`WaitingForActorGameConnection`).
 
-The current primary blocker is reconstruction of the post-registration state progression required to move the real client beyond the known GCW/state-coordinator stall and into world initialization.
+The client-side A -> B mechanism is now substantially reconstructed.
 
-Next mass-analysis target:
+VERIFIED causal path:
 
-1. correlate all 15 pre-active-client initialization types against known GCW/post-registration transition machinery;
-2. identify executable call-graph/state-writer relationships at population scale;
-3. separate repeated/background traffic from transition-critical traffic;
-4. reconstruct minimum server behavior after accepted V3 registration;
-5. demonstrate advancement beyond the historical GCW state-10 wall;
-6. continue into world initialization, proxy creation, and player spawn.
+    serialized/reflected REP input
+      -> 0x146B6EB70
+      -> reflected materialization through 0x1461AC8D0
+      -> 0x146B6F190
+      -> REP object byte +0x601 = 1
+      -> virtual gate 0x146B6DF30
+      -> GameConnection state driver
+      -> 0xA WaitingForREPConnection
+      -> 0xB WaitingForActorGameConnection
 
-Do not resume broad byte-by-byte serializer reconstruction unless the mass analysis identifies a specific codec as a blocker.
+The remaining A -> B blocker is not the state predicate or writer. It is the
+exact successful-login REP input/event that reaches `0x146B6EB70`.
+
+Static descent through the generic transport implementation is no longer the
+default strategy. The next phase is capture-driven identification of the
+minimum REP input required to trigger the verified writer path.
+
+### Pre-active-client mass transition analysis
+
+The 15 unique inbound reflected types before the first non-Ping client write
+were correlated against the known GCW/post-registration transition machinery.
+
+A bounded direct-call graph search found no direct path from any of the 15
+pre-active reflected Unmarshal roots to the known REP/GCW transition anchors
+within the tested closure.
+
+This is VERIFIED negative direct-graph evidence. It does not prove that those
+messages are irrelevant. It establishes that the missing transition edge is
+indirect, virtual, callback-driven, nested, or carried through a separate
+transport path rather than an ordinary direct call from the outer reflected
+message Unmarshal routines.
+
+Provider, helper-consumer, metadata, and simple static dispatch-table branches
+were investigated at population scale and did not expose the missing
+application transition edge. Those broad branches are closed unless new
+evidence specifically points back to them.
+
+### Successful-login UUID payload correlation
+
+The consolidated redacted First Light artifact
+`messages-redacted.txt` preserves all 177 captured message byte dumps, with
+sensitive bytes represented as `XX`.
+
+A mass correlation was performed over the 52 inbound messages before sequence
+`0x39`.
+
+Results:
+
+- pre-active inbound messages tested: `52`
+- unique pre-active types: `15`
+- exact own-type UUID matches in RFC byte order: `0`
+- exact own-type UUID matches in Windows mixed-endian GUID byte order: `0`
+- partially visible redaction-compatible UUID candidates: `0`
+- missing payloads: `0`
+
+Therefore no tested pre-active outer payload contains its own known reflected
+type UUID literally in either tested byte ordering in preserved bytes.
+
+This strongly supports use of compact/indexed reflected identity on the
+relevant serialized paths, but does not prove that every message uses that
+encoding because fully redacted identity bytes cannot be excluded.
+
+Report:
+
+- `reports/post-registration/preactive-uuid-correlation.tsv`
+
+### Receive and reflected materialization path
+
+The network receive/materialization spine is now substantially reconstructed:
+
+    0x146A9FE30
+      -> 0x146ABAE10
+      -> 0x146AECDF0
+      -> 0x146ABA5D0
+      -> 0x146B085D0
+      -> 0x1461AC8D0
+      -> reflected CreateInstance / Unmarshal
+
+`0x146B085D0` allocates a runtime outer object and passes its payload storage to
+`0x1461AC8D0`.
+
+`0x1417B2430` performs generic typed materialization and creates the concrete
+reflected object.
+
+VERIFIED runtime outer layout on this path:
+
+    outer +0x60 = concrete reflected payload
+    outer +0x68 = associated ownership/control object
+
+The previously investigated `0x146C9F410` is a trivial accessor for
+`[rcx+0x60]`; it is not itself the reflected application handler.
+
+### Serialized reflected type identity
+
+The generic typed-object materializer reaches:
+
+    0x1461AD130
+      -> 0x1461ACFE0
+
+`0x1461ACFE0` first calls the verified prefix/index decoder `0x14087B5C0`.
+
+VERIFIED behavior:
+
+    decoded value == 0
+        -> read 16-byte reflected identity inline
+
+    decoded value > 0
+        -> obtain registry
+        -> index registry vector at +0x40
+        -> copy 16-byte reflected identity
+        -> resolve factory
+        -> CreateInstance
+        -> Unmarshal
+
+The nonzero decoded value is used directly as the vector index in the observed
+decoder path.
+
+What remains unverified is the exact relationship between this runtime `+0x40`
+identity dictionary and the independently reconstructed registration vector at
+`+0x58`.
+
+Do not assume that the compact wire value is identical to the descriptor dense
+index until that relationship is independently established.
+
+### Type registry construction and mass verification
+
+The registry singleton returned through `0x146162150` is initialized through
+`0x146154ED0`.
+
+Registration through `0x1461A9740`:
+
+- computes a dense local index from the current vector length;
+- writes that index to descriptor `+0x50`;
+- copies exactly 16 bytes from descriptor `+0x18`;
+- appends those 16 bytes to the registry vector beginning at `+0x58`.
+
+Provider analysis independently established that descriptor `+0x18` contains
+the parsed 16-byte reflected UUID.
+
+Mass registration analysis:
+
+- registration sites: `3,487`
+- UUID-correlated ordinary registrations: `3,486`
+- dominant registration pattern: `3,482`
+- secondary ordinary pattern: `4`
+- bootstrap/special registration: `1`
+- provider/getter subset matches: `218 / 218`
+
+This provides executable-scale verification that ordinary reflected
+registration appends the provider-derived UUID identity into the registry.
+
+A reusable local SQLite RE cache was added to avoid repeatedly disassembling
+the complete executable.
+
+Generated cache:
+
+    reports/type-registry-verification/newworld-re.sqlite
+
+The cache is intentionally ignored by Git.
+
+Cached populations include:
+
+- functions: `423,579`
+- direct calls: `1,837,757`
+- RIP-relative references: `1,557,467`
+- retained structural instructions: `3,395,224`
+
+Full-executable analyzer runs are now checkpoint/final-verification operations,
+not routine exploratory steps.
+
+### Application callback/interface recovery
+
+The PlayerManagerSelfIdentification application handler at `0x146454C00` is
+reached through an adjustor thunk at `0x146454BEC`.
+
+The thunk is stored in a secondary interface table at `0x1484FC748`.
+
+The same multi-interface object also contains an executable-verified
+LevelInfoChanged handler thunk targeting `0x146446800`.
+
+A 42-slot census across the recovered interface address points found 35
+adjustor thunks and 7 other entries.
+
+No recovered handler in this application interface family directly reaches the
+known REP/GCW transition anchors.
+
+Therefore this application callback family does not expose the missing direct
+REP transition edge. Expansion of the full 42-slot family is closed unless new
+evidence requires it.
+
+### GameConnection state machine
+
+The complete executable state-name table was recovered.
+
+VERIFIED states:
+
+    0x0  Disconnected
+    0x1  QueryGameUpdateCheck
+    0x2  WaitingForGameUpdateCheck
+    0x3  QueueGameLogin
+    0x4  WaitingForQueuedLogin
+    0x5  QueryForRemoteConfigClass
+    0x6  WaitingForRemoteConfigClass
+    0x7  ObtainREPRequirements
+    0x8  WaitingForREPRequirements
+    0x9  StartREPConnection
+    0xA  WaitingForREPConnection
+    0xB  WaitingForActorGameConnection
+    0xC  WaitingForSpawnPoint
+    0xD  WaitingForPlayerSpawn
+    0xE  InGame
+
+The state field is at GameConnection `+0x1530`.
+
+The state-driving function is `0x14644A070`.
+
+VERIFIED tail predicates:
+
+    A -> B
+        object at GameConnection +0x1000
+        virtual +0xA8 returns true
+
+    B -> C
+        0x145A92370(GameConnection +0x130) returns true
+
+    C -> D
+        0x145A905C0(GameConnection +0x130) returns true
+
+    D -> E
+        0x145A923C0(GameConnection +0x130) returns true
+        AND 0x141026080() returns non-null
+        AND returned object's virtual +0x30 returns non-null
+
+This converts the historical First Light state-10 stall into an
+executable-defined progression from `WaitingForREPConnection` through
+`InGame`.
+
+Historical trigger attribution from First Light remains community-derived where
+not independently reproduced.
+
+### REP A -> B gate
+
+GameConnection `+0x1000` ultimately references a REP object constructed through
+the `0x146B6C490` / `0x146B69AD0` chain.
+
+Its primary vtable begins at `0x148590AB8`.
+
+The GCW A -> B predicate calls virtual slot `+0xA8`, slot 21:
+
+    0x146B6DF30:
+        movzx eax, BYTE PTR [rcx+0x601]
+        ret
+
+VERIFIED:
+
+    REP object +0x601 == 1
+
+is the concrete predicate required for the A -> B transition.
+
+The constructor initializes this byte false.
+
+The only recovered writer setting it true is in `0x146B6F190`.
+
+That writer consumes structured input and sets `+0x601 = 1` after applying the
+input state.
+
+Its sole direct caller is inside `0x146B6EB70`.
+
+Therefore the first GCW transition has a concrete writer-to-predicate causal
+chain rather than a heuristic association.
+
+### REP callback and framed-stream path
+
+Static analysis reconstructed the indirect path feeding `0x146B6EB70`.
+
+A callback bound to the REP owner ultimately dispatches through:
+
+    0x146B714B0
+      -> callable virtual +0x10
+      -> 0x146B71590
+      -> 0x146B6EB70
+
+`0x146B71590` is a small adjustor/tail thunk:
+
+    mov rcx, [rcx+8]
+    jmp 0x146B6EB70
+
+The callback is reached through a stateful framed parser at `0x146AE44F0`.
+
+That parser:
+
+- maintains parser states 0, 1, and 2;
+- consumes a prefix/index value through `0x14087B5C0`;
+- constructs a bounded input view;
+- invokes the registered callback through virtual slot `+0x10` when a complete
+  unit is available;
+- resets and continues parsing.
+
+Use of the same prefix primitive here does not prove that this value is a
+reflected type index. In this parser it may represent framing/length metadata.
+
+The downstream callback/parser route to `0x146B6EB70` is sufficiently
+reconstructed for the current objective. Do not expand it broadly unless
+capture correlation requires a specific missing field.
+
+### REP stream attachment and GridMate transport
+
+The callback path is attached through a provider/interface stored in the
+object constructed by `0x146B6A270`.
+
+The provider receives multiple callbacks bound to the same REP-side owner.
+
+One recovered setup callback reaches `0x146B713E0`, which:
+
+- receives a concrete source object;
+- reads metadata through source virtual `+0x20`;
+- checks source virtual `+0x08`;
+- when accepted, installs another callback through source virtual `+0x48`.
+
+That installed callback reaches `0x146B714D0`, then:
+
+    0x146B714D0
+      -> 0x146B6BA90
+      -> 0x146AF20C0
+      -> tail jump 0x146AF1D90
+      -> 0x146AE44F0
+      -> callback dispatch
+      -> 0x146B714B0
+      -> 0x146B71590
+      -> 0x146B6EB70
+
+Transport configuration strings recovered on this construction path include:
+
+    gridmate-udp
+    gridmate-udp-bsd
+
+The GridMate-backed implementation constructed by `0x146B34780` installs
+primary interface vptr `0x14858D150`.
+
+The `0x146B6A270` object calls virtual slot `+0x08` on that interface, resolving
+to `0x146B393D0`.
+
+`0x146B393D0` is VERIFIED as a small factory:
+
+- allocates `0x350` bytes;
+- installs root vtable `0x1482055A8`;
+- constructs the interior object at allocation `+0x10` through `0x146B27180`;
+- returns an ownership pair:
+
+      out[0] = allocation +0x10
+      out[1] = allocation
+
+The returned pair is stored in the `0x146B6A270` object at `+0x60/+0x68`.
+
+No event identity or serialized payload is exposed by `0x146B393D0`.
+
+Further descent through generic GridMate object construction is therefore
+deferred. It does not currently answer the project blocker.
+
+### Current evidence boundary
+
+VERIFIED:
+
+1. GCW state `0xA` is `WaitingForREPConnection`.
+2. GCW state `0xB` is `WaitingForActorGameConnection`.
+3. A -> B depends on REP object byte `+0x601`.
+4. `0x146B6F190` sets that byte to `1`.
+5. `0x146B6EB70` is the direct specialized caller feeding that writer.
+6. `0x146B6EB70` receives serialized/reflected input through an indirect
+   callback and framed-stream path.
+7. That callback path is connected to the selected GridMate UDP transport.
+
+NOT YET VERIFIED:
+
+1. the exact successful-login REP event/input that reaches `0x146B6EB70`;
+2. its exact wire/framing representation;
+3. which preserved successful-login bytes correspond to that REP unit;
+4. whether one of the 15 outer pre-active reflected message types directly
+   carries it, indirectly causes it, or whether it is transported as a
+   distinct nested/REP stream;
+5. the minimum server output required to reproduce the A -> B transition.
+
+Do not describe any of those unresolved items as established.
+
+### Current primary blocker
+
+Identify the exact successful-login REP input that reaches `0x146B6EB70` and
+causes `0x146B6F190` to set REP object byte `+0x601 = 1`.
+
+This is now the narrow blocker for advancing the real client from
+`WaitingForREPConnection` to `WaitingForActorGameConnection`.
+
+### Immediate next step
+
+Stop broad static transport archaeology.
+
+Use the successful-login capture as the primary evidence source and correlate
+its preserved bytes, chronology, framing, and known reflected identities
+against the reconstructed REP parser path.
+
+Target outcome:
+
+    successful-login evidence
+      -> identify candidate REP unit
+      -> reconstruct minimum required input
+      -> feed real client
+      -> observe REP +0x601 become true indirectly through normal processing
+      -> observe GCW 0xA -> 0xB
+
+Once A -> B is reproduced, freeze that stage and move immediately to the
+already-known B -> C predicate rather than continuing to reverse unrelated REP
+internals.
+
+### Updated work plan
+
+1. Identify the successful-login REP unit that feeds `0x146B6EB70`.
+2. Reconstruct only the framing/identity fields required to reproduce it.
+3. Test the minimum input against the real client.
+4. Confirm advancement from state `0xA` to `0xB`.
+5. Determine the minimum input satisfying `0x145A92370` for B -> C.
+6. Determine the minimum input satisfying `0x145A905C0` for C -> D.
+7. Reconstruct player/replica creation required by the D -> E predicates.
+8. Demonstrate visible local world entry/player spawn.
+9. Build the standalone tester/updater only when stage 14 / `InGame` is reached
+   or sufficiently close that the remaining protocol is stable.
 
 ### New tools and reports
 
-Tools:
+New mass-analysis tools include:
 
-- `tools/build_primitive_reader_census.py`
-- `tools/join_unmarshal_primitive_census.py`
-- `tools/analyze_unmarshal_graph.py`
-- `tools/find_unresolved_leaf_candidates.py`
-- `tools/build_login_sequence_matrix.py`
+- `tools/analyze_login_transition_graph.py`
+- `tools/analyze_login_dispatch_structures.py`
+- `tools/analyze_login_helper_consumers.py`
+- `tools/classify_login_helper_consumers.py`
+- `tools/analyze_login_provider_calls.py`
+- `tools/analyze_login_provider_operands.py`
+- `tools/classify_login_provider_operands.py`
+- `tools/classify_login_provider_code_targets.py`
+- `tools/analyze_login_provider_leaf_stubs.py`
+- `tools/analyze_login_provider_accessors.py`
+- `tools/analyze_login_provider_b1.py`
+- `tools/analyze_preactive_createinstance_fields.py`
+- `tools/correlate_login_uuid_bytes.py`
 
-Reports:
+Important new reports are under:
 
-- `reports/serialization-census/`
-- `reports/post-registration/successful-login-sequence.tsv`
-- `reports/post-registration/successful-login-sequence-summary.txt`
-- `reports/post-registration/successful-login-types.tsv`
+    reports/post-registration/
+
+including the pre-active transition, provider/helper, CreateInstance, dispatch,
+UUID-correlation, and bounded disassembly evidence used to close the branches
+described above.
+
+### Performance rules for the next phase
+
+- Do not rerun the full executable analyzer for exploratory questions.
+- Use `newworld-re.sqlite` for mass call/reference queries.
+- Use bounded `objdump` only for identified functions or very small windows.
+- Do not perform whole-executable textual `objdump` scans.
+- Do not increase direct-call BFS depth blindly.
+- Do not reopen provider, metadata, 42-slot application-interface, generic
+  GridMate-constructor, or broad coordinator branches without new evidence.
+- Prefer mass capture correlation over one-function-at-a-time exploration.
+- Keep terminal output bounded; write bulk evidence to reports.
+- Treat successful real-client state advancement as the decisive validation.

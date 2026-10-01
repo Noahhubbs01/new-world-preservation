@@ -1,0 +1,53 @@
+Leaf stubs: 15
+Normalized instruction patterns: 1
+
+PATTERNS:
+count=15
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+<ADDR>]        # <ADDR> ; test   rbx,rbx ; je     <ADDR>
+
+PER-TYPE STUBS:
+0x3 0x147E1E8E0 RegistrationResponseMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24c9903]        # 0x14a2e81f0 ; test   rbx,rbx ; je     0x147e1e928
+  resolved=0x14A2E81F0
+0x8 0x147EACF60 Amazon::Hub::ReplicatedStateBundle
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x26a7e83]        # 0x14a554df0 ; test   rbx,rbx ; je     0x147eacfa8
+  resolved=0x14A554DF0
+0xA4 0x147E1D8F0 ClientAddEntryMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24ca20b]        # 0x14a2e7b08 ; test   rbx,rbx ; je     0x147e1d938
+  resolved=0x14A2E7B08
+0x14F 0x147E1F150 TimeSynchMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24c907b]        # 0x14a2e81d8 ; test   rbx,rbx ; je     0x147e1f198
+  resolved=0x14A2E81D8
+0x15D 0x147E1E390 PingMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24c9ed3]        # 0x14a2e8270 ; test   rbx,rbx ; je     0x147e1e3d8
+  resolved=0x14A2E8270
+0x1BE 0x147EACE20 CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x26a7c2b]        # 0x14a554a58 ; test   rbx,rbx ; je     0x147eace68
+  resolved=0x14A554A58
+0x40A 0x147EACD80 CoatlicueClientMessages::CalendarConnectedMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x26a7cb3]        # 0x14a554a40 ; test   rbx,rbx ; je     0x147eacdc8
+  resolved=0x14A554A40
+0x651 0x147E33610 Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24eca33]        # 0x14a320050 ; test   rbx,rbx ; je     0x147e33658
+  resolved=0x14A320050
+0x65C 0x147E323A0 Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24e7d4b]        # 0x14a31a0f8 ; test   rbx,rbx ; je     0x147e323e8
+  resolved=0x14A31A0F8
+0x663 0x147E30410 Javelin::ClientMessagesTrait::LevelInfoChangedMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24e9dab]        # 0x14a31a1c8 ; test   rbx,rbx ; je     0x147e30458
+  resolved=0x14A31A1C8
+0xCA4 0x147E60910 Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x2507953]        # 0x14a368270 ; test   rbx,rbx ; je     0x147e60958
+  resolved=0x14A368270
+0x136A 0x147E62A50 Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x250a4c3]        # 0x14a36cf20 ; test   rbx,rbx ; je     0x147e62a98
+  resolved=0x14A36CF20
+0x16A0 0x147E6E620 Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x250d70b]        # 0x14a37bd38 ; test   rbx,rbx ; je     0x147e6e668
+  resolved=0x14A37BD38
+0x18A6 0x147E2E930 Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24f161b]        # 0x14a31ff58 ; test   rbx,rbx ; je     0x147e2e978
+  resolved=0x14A31FF58
+0x1B88 0x147E54790 Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+0x24fcf93]        # 0x14a351730 ; test   rbx,rbx ; je     0x147e547d8
+  resolved=0x14A351730

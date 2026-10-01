@@ -1,0 +1,57 @@
+Accessor entries: 15
+Decode window: 0x90
+Normalized patterns: 1
+
+PATTERN COUNTS:
+count=15
+  rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+<ADDR>]        # <ADDR> ; test   rbx,rbx ; je     <ADDR> ; mov    QWORD PTR [rsp+0x30],rdi ; mov    edi,<ADDR> ; mov    eax,edi ; lock xadd DWORD PTR [rbx+0x8],eax ; cmp    eax,0x1 ; jne    <ADDR> ; mov    rax,QWORD PTR [rbx] ; mov    rcx,rbx ; call   QWORD PTR [rax] ; lock xadd DWORD PTR [rbx+0xc],edi ; cmp    edi,0x1 ; jne    <ADDR> ; mov    rax,QWORD PTR [rbx] ; mov    rcx,rbx ; call   QWORD PTR [rax+0x8] ; mov    rdi,QWORD PTR [rsp+0x30] ; add    rsp,0x20 ; pop    rbx ; ret ; int3 ; int3 ; rex push rbx ; sub    rsp,0x20 ; mov    rbx,QWORD PTR [rip+<ADDR>]        # <ADDR> ; test   rbx,rbx ; je     <ADDR> ; mov    QWORD PTR [rsp+0x30],rdi ; mov    edi,<ADDR> ; mov    eax,edi ; lock xadd DWORD PTR [rbx+0x8],eax ; cmp    eax,0x1 ; jne    <ADDR> ; mov    rax,QWORD PTR [rbx] ; mov    rcx,rbx ; call   QWORD PTR [rax] ; lock xadd DWORD PTR [rbx+0xc],edi ; cmp    edi,0x1 ; jne    <ADDR> ; mov    rax,QWORD PTR [rbx] ; mov    rcx,rbx
+
+SHARED DIRECT CALLEES:
+(none)
+
+PER-TYPE:
+0x3 0x147E1E8E0 RegistrationResponseMsg
+  resolved=0x14A2E81F0,0x14A2E8318
+  calls=
+0x8 0x147EACF60 Amazon::Hub::ReplicatedStateBundle
+  resolved=0x14A554DF0,0x14A554DD8
+  calls=
+0xA4 0x147E1D8F0 ClientAddEntryMsg
+  resolved=0x14A2E7B08,0x14A2E7A88
+  calls=
+0x14F 0x147E1F150 TimeSynchMsg
+  resolved=0x14A2E81D8,0x14A2E7830
+  calls=
+0x15D 0x147E1E390 PingMsg
+  resolved=0x14A2E8270,0x14A2E80A0
+  calls=
+0x1BE 0x147EACE20 CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg
+  resolved=0x14A554A58,0x14A554A70
+  calls=
+0x40A 0x147EACD80 CoatlicueClientMessages::CalendarConnectedMsg
+  resolved=0x14A554A40,0x14A5549F0
+  calls=
+0x651 0x147E33610 Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg
+  resolved=0x14A320050,0x14A31E3C8
+  calls=
+0x65C 0x147E323A0 Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg
+  resolved=0x14A31A0F8,0x14A31F4C0
+  calls=
+0x663 0x147E30410 Javelin::ClientMessagesTrait::LevelInfoChangedMsg
+  resolved=0x14A31A1C8,0x14A31A328
+  calls=
+0xCA4 0x147E60910 Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications
+  resolved=0x14A368270,0x14A3682D8
+  calls=
+0x136A 0x147E62A50 Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg
+  resolved=0x14A36CF20,0x14A36CD18
+  calls=
+0x16A0 0x147E6E620 Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories
+  resolved=0x14A37BD38,0x14A37BE70
+  calls=
+0x18A6 0x147E2E930 Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing
+  resolved=0x14A31FF58,0x14A31DE70
+  calls=
+0x1B88 0x147E54790 Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems
+  resolved=0x14A351730,0x14A351CE0
+  calls=

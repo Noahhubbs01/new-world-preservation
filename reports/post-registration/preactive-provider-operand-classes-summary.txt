@@ -1,0 +1,55 @@
+Selected operand records: 37
+Unique targets: 37
+
+OPERAND_54: records=15
+  sections: .text=15
+  code_refs: 1=15
+  pointer_like_qwords: 0=15
+  0x3 0x147E1E8E0 sec=.text refs=1 ptrq=0
+  0x8 0x147EACF60 sec=.text refs=1 ptrq=0
+  0xA4 0x147E1D8F0 sec=.text refs=1 ptrq=0
+  0x14F 0x147E1F150 sec=.text refs=1 ptrq=0
+  0x15D 0x147E1E390 sec=.text refs=1 ptrq=0
+  0x1BE 0x147EACE20 sec=.text refs=1 ptrq=0
+  0x40A 0x147EACD80 sec=.text refs=1 ptrq=0
+  0x651 0x147E33610 sec=.text refs=1 ptrq=0
+  0x65C 0x147E323A0 sec=.text refs=1 ptrq=0
+  0x663 0x147E30410 sec=.text refs=1 ptrq=0
+  0xCA4 0x147E60910 sec=.text refs=1 ptrq=0
+  0x136A 0x147E62A50 sec=.text refs=1 ptrq=0
+  0x16A0 0x147E6E620 sec=.text refs=1 ptrq=0
+  0x18A6 0x147E2E930 sec=.text refs=1 ptrq=0
+  0x1B88 0x147E54790 sec=.text refs=1 ptrq=0
+
+OPERAND_B1: records=11
+  sections: .rdata=11
+  code_refs: 1=6, 2=5
+  pointer_like_qwords: 0=11
+  0x8 0x1484C7DE8 sec=.rdata refs=1 ptrq=0
+  0x1BE 0x1484FC590 sec=.rdata refs=1 ptrq=0
+  0x40A 0x1484FC568 sec=.rdata refs=1 ptrq=0
+  0x651 0x148029DB0 sec=.rdata refs=1 ptrq=0
+  0x65C 0x148002C60 sec=.rdata refs=1 ptrq=0
+  0x663 0x148003688 sec=.rdata refs=1 ptrq=0
+  0xCA4 0x14819C948 sec=.rdata refs=2 ptrq=0
+  0x136A 0x1481B3A38 sec=.rdata refs=2 ptrq=0
+  0x16A0 0x1481FF540 sec=.rdata refs=2 ptrq=0
+  0x18A6 0x1480283F0 sec=.rdata refs=2 ptrq=0
+  0x1B88 0x148137518 sec=.rdata refs=2 ptrq=0
+
+HELPER_186: records=11
+  sections: .rdata=11
+  code_refs: 2=11
+  pointer_like_qwords: 4=11
+  0x8 0x148502A48 sec=.rdata refs=2 ptrq=4
+  0x1BE 0x1485023A8 sec=.rdata refs=2 ptrq=4
+  0x40A 0x148502378 sec=.rdata refs=2 ptrq=4
+  0x651 0x14800C6A8 sec=.rdata refs=2 ptrq=4
+  0x65C 0x148014880 sec=.rdata refs=2 ptrq=4
+  0x663 0x148015B10 sec=.rdata refs=2 ptrq=4
+  0xCA4 0x14819C0C0 sec=.rdata refs=2 ptrq=4
+  0x136A 0x1481B4308 sec=.rdata refs=2 ptrq=4
+  0x16A0 0x1481FF038 sec=.rdata refs=2 ptrq=4
+  0x18A6 0x14802D580 sec=.rdata refs=2 ptrq=4
+  0x1B88 0x148138AB0 sec=.rdata refs=2 ptrq=4
+
