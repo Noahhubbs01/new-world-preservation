@@ -1619,3 +1619,79 @@ Next sequence:
 12. move to retail-client testing
 
 REP remains downstream of successful live registration.
+
+## Checkpoint — 2026-10-01 — DTLS-02 UDP transport
+
+### VERIFIED IMPLEMENTATION
+
+Added real UDP integration around the DTLS-01 memory-BIO transport:
+
+`server/newworld_server/transport/udp_dtls.py`
+
+The UDP transport provides:
+
+- IPv4 UDP binding
+- ephemeral-port support for testing
+- per-peer DTLS session state
+- encrypted UDP datagram input
+- DTLS handshake advancement
+- encrypted DTLS output transmission
+- decrypted application-data delivery
+- server plaintext transmission through DTLS
+- idle peer-state cleanup
+
+### Real socket verification
+
+A local DTLS client and preservation server communicated through actual
+kernel UDP sockets on loopback.
+
+Verified:
+
+- client DTLS handshake completes
+- server DTLS handshake completes
+- negotiated protocol remains DTLSv1.2
+- negotiated cipher remains ECDHE-RSA-AES256-GCM-SHA384
+- client -> UDP -> DTLS -> server plaintext roundtrip succeeds
+- server plaintext -> DTLS -> UDP -> client roundtrip succeeds
+- per-peer DTLS state is created correctly
+- ephemeral UDP binding works
+
+Carrier-shaped system-message bytes were used for transport verification,
+but DTLS-02 does not yet interpret Carrier semantics.
+
+Full server suite:
+
+`35 passed`
+
+### Current verified stack
+
+UDP transport
+→ DTLS 1.2
+→ plaintext application datagrams
+
+Separately verified:
+
+CARRIER-01
+REG-01
+
+### Evidence boundary
+
+UDP and DTLS transport are locally VERIFIED.
+
+The next experiment is no longer transport archaeology.
+
+### Immediate milestone
+
+JAVELIN-01: connect the verified UDP/DTLS transport to CARRIER-01.
+
+First required live protocol behavior:
+
+SM_CONNECT_REQUEST (0x01)
+→ canonical SM_CONNECT_ACK (0x02)
+
+After that:
+
+RegistrationRequest 0x13
+→ REG-01 RegistrationResponse 0x03
+
+REP remains locked until registration succeeds against the real client.
