@@ -103,3 +103,86 @@ def test_non_system_channel_is_ignored():
 
     assert responses == []
     assert session.connected is False
+
+
+def test_registration_request_generates_reg01_response(monkeypatch):
+    from newworld_server.protocol.registration import (
+        REGISTRATION_REQUEST_TYPE,
+        REGISTRATION_RESPONSE_TYPE,
+    )
+
+    # Make the otherwise-random session token deterministic.
+    monkeypatch.setattr(
+        "newworld_server.login.registration.create_session_token",
+        lambda: bytes(range(32)),
+    )
+
+    session = JavelinSession()
+    session.connected = True
+
+    request_record = CarrierRecord(
+        flags=MF_RELIABLE | MF_DATA_CHANNEL,
+        channel=0,
+        sequence=0,
+        reliable_sequence=0,
+        payload=bytes([REGISTRATION_REQUEST_TYPE]) + b"synthetic-request",
+    )
+
+    request = encode_envelope(
+        1,
+        encode_standard_record(request_record),
+    )
+
+    responses = handle_datagram(session, request)
+
+    assert len(responses) == 1
+
+    envelope = decode_envelope(responses[0])
+    records = decode_standard_records(envelope.body)
+
+    assert len(records) == 1
+
+    registration = records[0]
+
+    assert registration.channel == 0
+    assert registration.flags == (
+        MF_RELIABLE | MF_DATA_CHANNEL
+    )
+
+    # Carrier application framing:
+    # one-byte VLQ length (0x58 == 88)
+    # followed by the 88-byte REG-01 body.
+    assert len(registration.payload) == 89
+    assert registration.payload[0] == 0x58
+
+    body = registration.payload[1:]
+
+    assert len(body) == 88
+    assert body[:3] == bytes.fromhex("00 01 03")
+    assert body[3:7] == bytes(4)
+    assert body[15] == 0x20
+    assert body[16:48] == bytes(range(32))
+    assert body[48] == 0x23
+
+    # Response message type is encoded inside the known REG-01 body.
+    assert body[2] == REGISTRATION_RESPONSE_TYPE
+
+
+def test_non_registration_channel_zero_message_is_ignored():
+    session = JavelinSession()
+    session.connected = True
+
+    record = CarrierRecord(
+        flags=MF_RELIABLE | MF_DATA_CHANNEL,
+        channel=0,
+        sequence=0,
+        reliable_sequence=0,
+        payload=b"\x99not-registration",
+    )
+
+    request = encode_envelope(
+        1,
+        encode_standard_record(record),
+    )
+
+    assert handle_datagram(session, request) == []

@@ -18,10 +18,16 @@ from .carrier import (
     CarrierState,
     SM_CONNECT_REQUEST,
     build_connect_ack,
+    build_registration_datagram,
     decode_envelope,
     decode_standard_records,
     encode_envelope,
     encode_standard_record,
+)
+from newworld_server.login.registration import build_success_response
+from newworld_server.protocol.registration import (
+    REGISTRATION_REQUEST_TYPE,
+    classify_registration_request,
 )
 
 
@@ -74,19 +80,42 @@ def handle_datagram(
     for record in records:
         message_id = _system_message_id(record)
 
-        if message_id != SM_CONNECT_REQUEST:
+        if message_id == SM_CONNECT_REQUEST:
+            ack = build_connect_ack()
+
+            body = encode_standard_record(ack)
+
+            response = encode_envelope(
+                session.carrier.next_envelope_sequence(),
+                body,
+            )
+
+            session.connected = True
+            responses.append(response)
             continue
 
-        ack = build_connect_ack()
+        # Application messages are carried on channel 0.
+        if record.channel != 0 or not record.payload:
+            continue
 
-        body = encode_standard_record(ack)
+        message_type = record.payload[0]
+        message_body = record.payload[1:]
 
-        response = encode_envelope(
-            session.carrier.next_envelope_sequence(),
-            body,
+        request = classify_registration_request(
+            message_type,
+            message_body,
         )
 
-        session.connected = True
-        responses.append(response)
+        if request is None:
+            continue
+
+        registration_response = build_success_response(request)
+
+        responses.append(
+            build_registration_datagram(
+                session.carrier,
+                registration_response,
+            )
+        )
 
     return responses

@@ -376,3 +376,156 @@ def test_udp_dtls_javelin_connect_exchange():
     finally:
         client_sock.close()
         server.close()
+
+
+def test_udp_dtls_registration_exchange(monkeypatch):
+    """Connect, then perform RegistrationRequest -> REG-01 over real UDP/DTLS."""
+
+    from newworld_server.protocol.registration import (
+        REGISTRATION_REQUEST_TYPE,
+    )
+    from newworld_server.transport.carrier import (
+        CarrierRecord,
+        MF_DATA_CHANNEL,
+        MF_RELIABLE,
+        decode_envelope,
+        decode_standard_records,
+        encode_envelope,
+        encode_standard_record,
+    )
+    from newworld_server.transport.javelin import (
+        JavelinSession,
+        handle_datagram,
+    )
+
+    monkeypatch.setattr(
+        "newworld_server.login.registration.create_session_token",
+        lambda: bytes(range(32)),
+    )
+
+    protocol_sessions = {}
+    server_ref = {}
+
+    def on_plaintext(peer, plaintext):
+        protocol = protocol_sessions.setdefault(
+            peer,
+            JavelinSession(),
+        )
+
+        for response in handle_datagram(protocol, plaintext):
+            server_ref["server"].send_plaintext(peer, response)
+
+    server = UDPDTLSServer(
+        "127.0.0.1",
+        0,
+        make_server_session,
+        on_plaintext,
+        timeout=0.01,
+    )
+
+    server_ref["server"] = server
+    server.bind()
+
+    client_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    client_sock.bind(("127.0.0.1", 0))
+    client_sock.settimeout(0.01)
+
+    client = make_client()
+    client_done = False
+
+    try:
+        # DTLS handshake over real UDP.
+        for _ in range(100):
+            if not client_done:
+                try:
+                    client.do_handshake()
+                    client_done = True
+                except (SSL.WantReadError, SSL.WantWriteError):
+                    pass
+
+            drain_client_udp(
+                client,
+                client_sock,
+                server.local_address,
+            )
+
+            for _ in range(10):
+                if not server.poll_once():
+                    break
+
+            feed_client_from_socket(client, client_sock)
+
+            if client_done:
+                states = list(server.peers.values())
+                if states and states[0].session.handshake_complete:
+                    break
+
+        assert client_done
+
+        # This test starts at the post-connect registration state.
+        peer = next(iter(server.peers))
+        protocol_sessions[peer] = JavelinSession()
+        protocol_sessions[peer].connected = True
+
+        request_record = CarrierRecord(
+            flags=MF_RELIABLE | MF_DATA_CHANNEL,
+            channel=0,
+            sequence=0,
+            reliable_sequence=0,
+            payload=(
+                bytes([REGISTRATION_REQUEST_TYPE])
+                + b"synthetic-request"
+            ),
+        )
+
+        request = encode_envelope(
+            1,
+            encode_standard_record(request_record),
+        )
+
+        assert client.send(request) == len(request)
+
+        drain_client_udp(
+            client,
+            client_sock,
+            server.local_address,
+        )
+
+        response = None
+
+        for _ in range(20):
+            server.poll_once()
+            feed_client_from_socket(client, client_sock)
+
+            try:
+                response = client.recv(65535)
+                break
+            except (SSL.WantReadError, SSL.WantWriteError):
+                continue
+
+        assert response is not None
+
+        envelope = decode_envelope(response)
+        records = decode_standard_records(envelope.body)
+
+        assert len(records) == 1
+
+        registration = records[0]
+
+        assert registration.channel == 0
+        assert len(registration.payload) == 89
+        assert registration.payload[0] == 0x58
+
+        body = registration.payload[1:]
+
+        assert len(body) == 88
+        assert body[:3] == bytes.fromhex("00 01 03")
+        assert body[3:7] == bytes(4)
+        assert body[15] == 0x20
+        assert body[16:48] == bytes(range(32))
+        assert body[48] == 0x23
+        assert body[-4:] == bytes.fromhex("01 00 00 01")
+
+    finally:
+        client_sock.close()
+        server.close()

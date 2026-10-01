@@ -1783,3 +1783,121 @@ Success criterion is an end-to-end synthetic-client registration exchange.
 After REGISTRATION-02 is locally green, move to retail-client testing.
 
 REP remains locked until registration succeeds against the retail client.
+
+## Checkpoint — 2026-10-01 — REGISTRATION-02 network exchange
+
+### VERIFIED IMPLEMENTATION
+
+JAVELIN-01 was extended with application-message registration handling.
+
+The server now recognizes:
+
+RegistrationRequest type `0x13`
+
+on Carrier channel 0 and routes the opaque request body through the
+clean-room registration implementation.
+
+The response path is:
+
+RegistrationRequest 0x13
+→ classify_registration_request()
+→ build_success_response()
+→ REG-01 88-byte response body
+→ CARRIER-01 registration record
+→ Carrier envelope
+→ DTLS
+→ UDP
+
+The request body remains intentionally opaque. No unverified request-field
+semantics have been introduced.
+
+### End-to-end verification
+
+Registration was tested using an independent DTLS client over actual kernel
+UDP sockets.
+
+Verified path:
+
+client RegistrationRequest
+→ DTLS encryption
+→ UDP
+→ preservation server DTLS
+→ Carrier decode
+→ RegistrationRequest classification
+→ registration handler
+→ deterministic REG-01 response
+→ Carrier encoding
+→ DTLS encryption
+→ UDP
+→ client DTLS decryption
+→ Carrier decode
+→ RegistrationResponse verification
+
+Verified returned registration shape:
+
+- Carrier channel 0
+- Carrier application payload length: 89 bytes
+- VLQ application-body length: `0x58`
+- REG-01 body length: 88 bytes
+- response prefix: `00 01 03`
+- error code: zero
+- token length: `0x20`
+- deterministic 32-byte test token recovered exactly
+- server-version length: `0x23`
+- trailer: `01 00 00 01`
+
+The production path continues to generate session tokens securely rather
+than using the deterministic test token.
+
+Full server suite:
+
+`42 passed`
+
+### Current locally verified pre-REP stack
+
+UDP
+→ DTLS 1.2
+→ Carrier
+→ SM_CONNECT_REQUEST
+→ SM_CONNECT_ACK
+→ RegistrationRequest 0x13
+→ RegistrationResponse 0x03
+
+All of the above has now been exercised through actual local UDP and DTLS
+rather than only through isolated codec tests.
+
+### Evidence boundary
+
+REGISTRATION-02 is locally VERIFIED end-to-end.
+
+Synthetic testing has now reached diminishing returns.
+
+The next useful evidence must come from the legitimate retail client.
+
+Known expected compatibility issue:
+
+The retail client's embedded REP trust material is expected to reject the
+preservation project's certificate. A narrowly scoped preservation
+compatibility layer may therefore be required to trust the preservation
+identity.
+
+Do not weaken certificate verification globally.
+
+### Immediate milestone
+
+LIVE-01: retail-client connection attempt.
+
+Objectives:
+
+1. run the preservation endpoint locally
+2. direct the legitimate retail client toward the preservation endpoint
+3. observe actual UDP/DTLS behavior
+4. determine whether certificate trust is the first live blocker
+5. if required, implement the minimum preservation trust compatibility change
+6. obtain decrypted Carrier traffic from the real client
+7. verify real SM_CONNECT_REQUEST handling
+8. verify real RegistrationRequest 0x13 handling
+9. determine whether registration retries stop after REG-01
+10. observe the next client state transition
+
+REP remains locked until the retail client successfully accepts registration.
