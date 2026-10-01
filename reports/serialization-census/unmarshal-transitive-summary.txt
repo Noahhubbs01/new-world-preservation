@@ -1,0 +1,13 @@
+Catalog entries: 3486
+Maximum traversal depth: 4
+
+Shortest verified-primitive depth:
+  depth 0: exact= 345  cumulative= 345/3486 (  9.90%)
+  depth 1: exact=1195  cumulative=1540/3486 ( 44.18%)
+  depth 2: exact= 493  cumulative=2033/3486 ( 58.32%)
+  depth 3: exact= 112  cumulative=2145/3486 ( 61.53%)
+  depth 4: exact=  16  cumulative=2161/3486 ( 61.99%)
+
+No verified primitive within depth 4: 1325
+Unique functions reached globally: 7017
+Unique primitive-bearing functions reached: 1412

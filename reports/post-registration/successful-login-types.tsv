@@ -1,0 +1,41 @@
+type_hex	type_dec	uuid	class	directions	occurrences	first_seq	last_seq	total_bytes	min_size	max_size	unmarshal	primitive_depth	reachable_functions	primitive_functions
+0x13	19	0B826B33-89F5-49E0-B8CB-FE4433427778	RegistrationRequestV3Msg	W	1	0x0	0x0	2750	2750	2750	0x1407CE8E0	1	15	5
+0x3	3	104145A7-FF95-44F1-9468-21FB41C8AC2B	RegistrationResponseMsg	R	1	0x1	0x1	88	88	88	0x1407CD040	0	6	3
+0x15D	349	6A379FB8-0BDD-43A1-AB3E-9843D7BE8CD3	PingMsg	R,W	20	0x2	0x8f	480	12	36	0x1407CDA70		3	0
+0x40A	1034	979E13FB-7A0A-4DDC-922B-D042E16E0BE4	CoatlicueClientMessages::CalendarConnectedMsg	R	1	0x4	0x4	76	76	76	0x14646BF10	3	7	1
+0x1BE	446	1E718638-0A57-4C40-A31D-E2A3B44245E7	CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg	R	1	0x5	0x5	76	76	76	0x14646C070	3	7	1
+0x65C	1628	169443E0-A508-4653-B437-49B7A195F69C	Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg	R	1	0x6	0x6	12706	12706	12706	0x1414FD530	1	14	4
+0x651	1617	21207525-B448-4193-AACA-83D4F847929F	Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg	R	1	0x7	0x7	4	4	4	0x1414E3930		1	0
+0xA4	164	E3578B38-69AD-4C13-A7DD-3FFF752D98AA	ClientAddEntryMsg	R	2	0x8	0xf	40	20	20	0x1407C8A70	0	5	1
+0xCA4	3236	F725B229-7E4B-4446-8BC2-FD6A54E92A9C	Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications	R	1	0x9	0x9	102	102	102	0x143197FE0	1	15	2
+0x14F	335	038CD847-0653-4243-9A26-936E3BD7F312	TimeSynchMsg	R	4	0xa	0x54	48	12	12	0x1407CC8F0		4	0
+0x18A6	6310	D33230C8-9B7C-4B25-AFAA-254F8875A606	Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing	R	4	0xb	0x68	160	40	40	0x141549930	2	12	1
+0x1B88	7048	AA0A0B64-475A-4828-A050-7B1A3F045493	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	R	23	0xc	0x24	966	42	42	0x142CD62D0	2	12	2
+0x663	1635	45918D03-02E7-42A4-8A30-1B205F8C37FE	Javelin::ClientMessagesTrait::LevelInfoChangedMsg	R	2	0x10	0x4d	220	110	110	0x1415009E0	1	12	3
+0x8	8	8A40AEC2-AE07-4F92-9BF3-78FC0CC94FDF	Amazon::Hub::ReplicatedStateBundle	R	79	0x25	0xb0	1253542	78	46423	0x14646C2B0	1	7	3
+0x136A	4970	F8B391FF-9D75-4BD3-8BC1-3CBE1B0850FA	Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg	R	1	0x26	0x26	28	28	28	0x14327C880	1	5	1
+0x16A0	5792	0E1245B4-B51A-47CB-8907-B6203F0759A2	Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories	R	2	0x28	0x29	99972	153	99819	0x1435EF1C0	2	24	2
+0x1098	4248	5AFEA411-9BF6-4DBE-AF48-B8CB7EE0F6A3	Javelin::ClientMessages::TimeComponentServerFacet_SyncToClient	W	1	0x39	0x39	44	44	44	0x144071AE0		5	0
+0x9D3	2515	C3AB71F9-3530-41A2-8EDC-A417400F5532	Javelin::ClientMessages::PlayerSettingsComponentServerFacet_ReceiveSettingsFromClient	W	1	0x3a	0x3a	48	48	48	0x142A564B0	1	5	1
+0x9FC	2556	D61428C7-6D83-4DCC-B28C-705C6CE16C8A	Javelin::ClientMessages::ContractsComponentServerFacet_LookupContractsByParticipant	W	1	0x3b	0x3b	102	102	102	0x142DA2E70		5	0
+0xA95	2709	CB4BA5E5-1D70-4B33-81AA-A045BEBA4706	Javelin::ClientMessages::ObjectivesComponentServerFacet_SetObjectiveAutoPinning	W	1	0x3d	0x3d	81	81	81	0x1439EDE20		5	0
+0x10B0	4272	6E9C33D1-48F0-45FF-977E-0DF99D687B84	Javelin::ClientMessages::TraversalComponentServerFacet_SyncIsAutoTraversalEnabled	W	1	0x3e	0x3e	45	45	45	0x144146B30	1	5	1
+0x101A	4122	702F8589-BC11-47C9-8425-47A78B09E0B5	Javelin::ClientMessages::SpectatedPlayerComponentServerFacet_SetIsPublic	W	1	0x3f	0x3f	45	45	45	0x143F9AFD0	1	5	1
+0x187C	6268	CC6E0819-6FE0-4036-8F56-E8A47468331C	Javelin::ClientMessages::MountComponentServerFacet_OnMountDashToggleChanged	W	1	0x40	0x40	45	45	45	0x1438BB0B0	1	5	1
+0x187F	6271	F56E3380-24B5-4676-80F1-91FE2DA66B2D	Javelin::ClientMessages::MountComponentServerFacet_OnMountSlowWalkChanged	W	1	0x41	0x41	45	45	45	0x1438BB5D0	1	5	1
+0x8E6	2278	8C39E814-EBFF-48DC-9CFC-CDB0080A300F	Javelin::ClientMessages::ContractsComponentClientFacet_OnLookupContractsByParticipant	R	1	0x43	0x43	42	42	42	0x142D9BFB0	1	19	4
+0x102E	4142	5D87AA99-1815-4D49-845B-BB29D1607887	Javelin::ClientMessages::SocialComponentServerFacet_RequestStreamerModeDataSync	W	1	0x5e	0x5e	46	46	46	0x143EB4CF0	1	5	1
+0x102F	4143	81EAD9F2-4838-490C-BD12-E9D78B98075F	Javelin::ClientMessages::SocialComponentServerFacet_SendAvailableTitlesToClient	W	1	0x5f	0x5f	44	44	44	0x143EB8180		5	0
+0x192C	6444	9FF57F0B-9AE9-4A69-9EBF-1BAB649EE271	Javelin::ClientMessages::SocialComponentServerFacet_RequestCrossplayPermissionsDataSync	W	1	0x60	0x60	54	54	54	0x143EB5F50	2	9	1
+0x101D	4125	E3262DD9-73FA-4895-A567-1C1637574323	Javelin::ClientMessages::ChatComponentServerFacet_SetProfanityFilterEnabled	W	1	0x61	0x61	45	45	45	0x143E61B10	1	5	1
+0x1033	4147	8FA38DAE-941A-4FA2-99D8-40820F27871E	Javelin::ClientMessages::SocialComponentClientFacet_ReceiveAvailableTitles	R	1	0x62	0x62	498	498	498	0x143EA1A20	2	11	1
+0xF7F	3967	8950B8C3-339D-4B05-92BC-7C4CF54FB872	Javelin::ClientMessages::PlayerComponentServerFacet_OnCullLimitPctChangeRequest	W	1	0x63	0x63	45	45	45	0x146564B30		14	0
+0x66B	1643	1505D3B1-754A-45E8-8865-B3DAA4B4B7B2	Javelin::ClientMessages::VoiceChatComponentServerFacet_RegisterVoiceChatService	W	1	0x64	0x64	44	44	44	0x143F22C90		5	0
+0x1067	4199	09FF1758-EBFD-4EFC-B133-DB18F814C973	Javelin::ClientMessages::VoiceChatComponentClientFacet_OnVoiceChatServiceRegistered	R	1	0x65	0x65	86	86	86	0x143F21380	2	12	2
+0x143D	5181	971DDBB2-67DB-4BEB-9632-85851D0EE00E	Javelin::ClientMessages::PlayerComponentServerFacet_OnAckLevelInfoChanged	W	1	0x67	0x67	45	45	45	0x14658A6A0		5	0
+0x1A59	6745	B42B3E49-B674-405C-A6AD-0CC5A8E368BA	Javelin::ClientMessages::GridTrackingComponentServerFacet_ClientAckPhasingUpdate	W	3	0x69	0x6d	135	45	45	0x14152EBB0		4	0
+0x12F6	4854	6E2A29B1-AF9E-441C-8A71-67C409FDEEBC	Javelin::ClientMessages::PlayerComponentServerFacet_OnTelemetryOptionsDataChanged	W	1	0x6b	0x6b	299	299	299	0x14659B1F0	2	17	1
+0x635	1589	01346CCD-785E-448D-A429-4B281972B1D7	Javelin::ClientMessages::ActionListComponentServerFacet_ReceiveInputFromClient	W	5	0x6e	0x72	615	93	153	0x144867C70		14	0
+0x1096	4246	49A52E21-1EFC-4501-B58D-3D14E6B04236	Javelin::ClientMessages::TimeComponentClientFacet_SyncTimeChange	R	1	0x75	0x75	80	80	80	0x1440713A0	2	7	2
+0x1097	4247	DEEBDC36-DEA0-4852-84F6-A63ABEA5E8BA	Javelin::ClientMessages::TimeComponentClientFacet_SyncDayPhase	R	1	0x76	0x76	24	24	24	0x1440716C0	1	5	1
+0x5B2	1458	298436A9-06D0-4BDA-8DD9-0708B36E7374	Javelin::ClientMessages::ObjectivesComponentServerFacet_UpdateTrackedObjectives	W	4	0x92	0x9f	228	45	93	0x1439E9880	1	6	1

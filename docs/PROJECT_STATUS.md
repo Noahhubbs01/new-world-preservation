@@ -522,3 +522,168 @@ This is deleting-destructor machinery and demonstrates object allocation size:
 
 It is not a wire parser.
 
+
+
+## Serialization census and successful-login mass correlation
+
+### Verified primitive-reader census
+
+Six independently characterized primitive reader families were mass-audited across the executable.
+
+Mass executable census:
+
+- primitive call sites: `4,772`
+- call sites mapped to PE runtime-function ranges: `4,772 / 4,772`
+- unmapped call sites: `0`
+- runtime functions containing verified primitive calls: `2,364`
+
+Primitive call-site totals:
+
+- uint16 big-endian: `205`
+- uint32 big-endian: `1,757`
+- float32 big-endian: `578`
+- float64 big-endian: `21`
+- raw bytes: `1,358`
+- prefix-width uint32: `853`
+
+### Reflected Unmarshal transitive coverage
+
+Catalog population:
+
+- entries: `3,486`
+- entries with Unmarshal address: `3,486`
+- unique Unmarshal functions: `3,363`
+
+Shortest path to a verified primitive reader through the direct-call graph:
+
+- depth 0: `345`
+- depth <= 1: `1,540`
+- depth <= 2: `2,033`
+- depth <= 3: `2,145`
+- depth <= 4: `2,161`
+
+Thus `2,161 / 3,486` entries (`61.99%`) reach a verified primitive within four direct-call edges.
+
+This is a conservative lower bound because virtual, indirect, and tail-dispatch paths are not completely represented.
+
+### Verified virtual-dispatch blind spot
+
+`Javelin::CharacterServiceProxyActor` provides an executable-proven example of serialization hidden from the direct-call graph.
+
+Recovered chain:
+
+    CharacterServiceProxyActor
+      -> subobject +0x58
+      -> concrete vtable 0x148015330
+      -> dispatcher 0x146160AE0
+      -> vtable +0xA0 = 0x1461ACDE0
+      -> raw-byte reader 0x140878610
+
+`0x1461ACDE0` structurally decodes a one-byte discriminant accepting 0 or 1 and, when the value is 1, an additional 8-byte payload.
+
+Therefore absence of a primitive path in the direct-call graph does not prove absence of executable serialization behavior.
+
+### Successful-login mass correlation
+
+Canonical capture:
+
+`external/community/first-light/info/nw-login-safe-20260502-153840/capture-index.tsv`
+
+Population:
+
+- captured messages: `177`
+- server-to-client: `138`
+- client-to-server: `39`
+- unique wire type indices: `40`
+- captured messages mapped through catalog: `177 / 177`
+- unique captured types mapped: `40 / 40`
+- unmapped captured types: `0`
+- captured messages represented in serialization census: `177 / 177`
+
+Primitive-depth distribution:
+
+- depth 0: `3`
+- depth 1: `98`
+- depth 2: `34`
+- depth 3: `2`
+- unresolved by direct-call traversal: `40`
+
+Capture sequence/type/size are preserved First Light capture facts.
+
+Numerical `type_idx -> UUID` remains COMMUNITY-CORROBORATED rather than independently executable-derived.
+
+### Corrected early post-registration chronology
+
+Successful capture begins:
+
+    seq 0x0  W  0x13   RegistrationRequestV3Msg
+    seq 0x1  R  0x3    RegistrationResponseMsg
+    seq 0x2  R  0x15d  PingMsg
+    seq 0x3  W  0x15d  PingMsg
+    seq 0x4  R  0x40a  CalendarConnectedMsg
+    seq 0x5  R  0x1be  CoatlicueTimingConfigurationConnectedMsg
+    seq 0x6  R  0x65c  PlayerManagerSelfIdentificationMsg
+    seq 0x7  R  0x651  ReceivePlayerSpawnPointMsg
+
+The corrected `0x65c` identity supersedes First Light's later attribution of SelfIdentification to `0x5d1`.
+
+Executable evidence independently identifies `0x146454C00` as PlayerManagerSelfIdentification application-handler code through embedded diagnostic strings.
+
+That function directly calls `0x145A87010` at `0x14645563F`.
+
+### Pre-active-client initialization population
+
+The first non-Ping post-registration client write occurs at:
+
+    seq 0x39
+    type 0x1098
+    Javelin::ClientMessages::TimeComponentServerFacet_SyncToClient
+
+Before that boundary:
+
+- inbound server messages: `52`
+- unique inbound server types: `15`
+- GlobalStorage ReceiveStorageSearchItems: `23`
+- ReplicatedStateBundle: `9`
+- Ping: `4`
+
+Notable chronological anchors:
+
+    0x65c  PlayerManagerSelfIdentificationMsg
+    0x651  ReceivePlayerSpawnPointMsg
+    0x663  LevelInfoChangedMsg
+    0x8    Amazon::Hub::ReplicatedStateBundle
+
+### Current frontier
+
+Generic serialization expansion is no longer the primary task.
+
+The current primary blocker is reconstruction of the post-registration state progression required to move the real client beyond the known GCW/state-coordinator stall and into world initialization.
+
+Next mass-analysis target:
+
+1. correlate all 15 pre-active-client initialization types against known GCW/post-registration transition machinery;
+2. identify executable call-graph/state-writer relationships at population scale;
+3. separate repeated/background traffic from transition-critical traffic;
+4. reconstruct minimum server behavior after accepted V3 registration;
+5. demonstrate advancement beyond the historical GCW state-10 wall;
+6. continue into world initialization, proxy creation, and player spawn.
+
+Do not resume broad byte-by-byte serializer reconstruction unless the mass analysis identifies a specific codec as a blocker.
+
+### New tools and reports
+
+Tools:
+
+- `tools/build_primitive_reader_census.py`
+- `tools/join_unmarshal_primitive_census.py`
+- `tools/analyze_unmarshal_graph.py`
+- `tools/find_unresolved_leaf_candidates.py`
+- `tools/build_login_sequence_matrix.py`
+
+Reports:
+
+- `reports/serialization-census/`
+- `reports/post-registration/successful-login-sequence.tsv`
+- `reports/post-registration/successful-login-sequence-summary.txt`
+- `reports/post-registration/successful-login-types.tsv`

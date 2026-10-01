@@ -1,0 +1,18 @@
+Catalog entries: 3486
+Entries with Unmarshal: 3486
+Entries without Unmarshal: 0
+Unique Unmarshal functions: 3363
+
+Direct primitive coverage:
+  Entries with direct primitive calls: 345
+  Entries without direct primitive calls: 3141
+  Unique direct primitive Unmarshal functions: 345
+  Entry coverage: 9.90%
+
+Primitive calls inside direct Unmarshal functions:
+  uint16_be             9
+  uint32_be           268
+  float32_be           57
+  float64_be            3
+  raw_bytes           161
+  prefix_uint32        34

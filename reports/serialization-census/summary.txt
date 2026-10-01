@@ -1,0 +1,13 @@
+PE runtime functions: 423579
+Primitive call sites parsed: 4772
+Mapped call sites: 4772
+Unmapped call sites: 0
+Functions containing primitive calls: 2364
+
+Primitive totals:
+  uint16_be           205 (0x14087A1C0)
+  uint32_be          1757 (0x14087A220)
+  float32_be          578 (0x14087A270)
+  float64_be           21 (0x14087A2D0)
+  raw_bytes          1358 (0x140878610)
+  prefix_uint32       853 (0x14087B5C0)
