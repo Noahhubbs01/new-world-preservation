@@ -7,7 +7,7 @@ name = "newworld-preservation-server"
 version = "0.1.0"
 description = "Clean-room New World preservation server"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["pyOpenSSL>=26.4,<27"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]

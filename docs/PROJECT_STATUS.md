@@ -1468,3 +1468,154 @@ Next implementation sequence:
 10. observe whether the real client stops retransmitting RegistrationRequest
 
 REP implementation remains downstream of successful live registration.
+
+## Checkpoint — 2026-10-01 — DTLS-01 transport engine
+
+### VERIFIED IMPLEMENTATION
+
+The clean-room preservation server now has a working DTLS 1.2
+memory-BIO transport implementation under:
+
+`server/newworld_server/transport/dtls.py`
+
+The implementation is independent of Carrier/Javelin semantics and provides:
+
+- preservation-owned certificate/private-key loading
+- DTLS server context creation
+- cipher restriction
+- one DTLS state machine per session
+- encrypted datagram BIO input
+- DTLS handshake advancement
+- encrypted datagram BIO output
+- decrypted application-data reads
+- plaintext application-data writes
+- explicit handshake/cipher/protocol state
+
+Configured cipher:
+
+`ECDHE-RSA-AES256-GCM-SHA384`
+
+### Preservation server identity
+
+Development identity is generated locally under:
+
+`server/secrets/dtls/`
+
+The preservation project uses its own trust hierarchy:
+
+New World Preservation CA
+→ New World Preservation REP
+
+The CA is self-signed.
+
+The REP certificate is signed by the preservation CA and uses:
+
+- RSA 3072-bit public key
+- TLS Web Server Authentication EKU
+
+The private keys, certificates, CSR, serial state, and local certificate
+configuration remain under the ignored `server/secrets/` tree and are not
+committed.
+
+No original New World/Amazon private key or server identity is used.
+
+### DTLS capability verification
+
+Local environment successfully provides:
+
+- Python 3.14.4
+- pyOpenSSL 26.4.0
+- pyOpenSSL DTLS_SERVER_METHOD
+- DTLS context creation
+- ECDHE-RSA-AES256-GCM-SHA384 configuration
+
+The pyOpenSSL/cryptography backend and system OpenSSL command may report
+different OpenSSL versions because they are separate runtime/library
+installations.
+
+### Full DTLS loopback verification
+
+A test client and the preservation server DTLS engine were driven through
+independent OpenSSL memory BIO state machines.
+
+Observed:
+
+- handshake completed in 3 test-loop iterations
+- negotiated protocol: DTLSv1.2
+- negotiated cipher: ECDHE-RSA-AES256-GCM-SHA384
+- plaintext application datagram: 115 bytes
+- encrypted output: 1 chunk / 152 bytes
+- plaintext was not present verbatim in encrypted output
+- decrypted result: 115 bytes
+- decrypted result exactly matched original plaintext
+
+The plaintext used for this test was not dummy transport data.
+
+It was the complete deterministic:
+
+REG-01 RegistrationResponse
+→ VLQ32
+→ CARRIER-01 reliable record
+→ SM_CT_ACKS
+→ Carrier envelope
+
+Therefore the currently implemented outbound stack has been verified through:
+
+RegistrationResponse
+→ Carrier
+→ DTLS encryption
+→ DTLS decryption
+→ byte-identical Carrier plaintext
+
+Full server test suite:
+
+`33 passed`
+
+### Certificate compatibility boundary
+
+Community evidence indicates the retail client contains embedded REP trust
+material and rejects an arbitrary preservation certificate in its strict
+verification path.
+
+Therefore:
+
+- preservation infrastructure will use preservation-owned certificates
+- original service private keys are neither required nor desired
+- retail compatibility may require a narrowly scoped compatibility layer
+- compatibility work should trust the preservation identity rather than
+  globally disabling certificate validation
+- retail compatibility remains a live-client milestone and is not considered
+  verified by the local DTLS loopback test
+
+### Generated packaging metadata
+
+`server/newworld_preservation_server.egg-info/` was removed from version
+control and is now treated as generated packaging metadata.
+
+### Evidence boundary
+
+DTLS cryptographic transport is now locally VERIFIED.
+
+Remaining DTLS/network questions require actual UDP or retail-client evidence.
+Broad DTLS reverse engineering is frozen unless a named incompatibility appears.
+
+### Immediate milestone
+
+DTLS-02: UDP transport integration.
+
+Next sequence:
+
+1. bind preservation server UDP socket
+2. create/manage per-peer DTLSSession state
+3. feed received UDP datagrams into DTLS
+4. drain encrypted DTLS output back to the peer
+5. surface decrypted application datagrams
+6. feed decrypted datagrams into CARRIER-01
+7. recognize Carrier connection traffic
+8. emit canonical SM_CONNECT_ACK
+9. recognize RegistrationRequest 0x13
+10. emit REG-01 through CARRIER-01 and DTLS
+11. test with a local UDP DTLS client
+12. move to retail-client testing
+
+REP remains downstream of successful live registration.

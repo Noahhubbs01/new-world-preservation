@@ -1,2 +1,0 @@
-[console_scripts]
-newworld-server = newworld_server.__main__:main
