@@ -1361,3 +1361,110 @@ DTLS/socket integration follows the pure Carrier codec tests.
 
 Replay machinery and post-registration message replay are explicitly excluded
 from this implementation path.
+
+## Checkpoint — 2026-10-01 — CARRIER-01 plaintext transport codec
+
+### VERIFIED IMPLEMENTATION
+
+The clean-room preservation server now implements the deterministic plaintext
+stack required to transport the frozen REG-01 RegistrationResponse.
+
+Implemented under `server/newworld_server/transport/carrier.py`:
+
+- uncompressed Carrier envelope encoder/decoder
+- Carrier protocol marker `0x80 0x01`
+- big-endian u16 envelope sequence
+- standard byte-aligned Carrier record encoder/decoder
+- explicit per-channel record sequence state
+- explicit per-channel reliable-sequence state
+- SM_CONNECT_ACK builder
+- SM_CT_ACKS continuous-ACK builder
+- application-message VLQ32 framing
+- RegistrationResponse Carrier record builder
+- complete plaintext RegistrationResponse datagram builder
+
+Unsupported Carrier features deliberately remain rejected rather than guessed:
+
+- compression
+- MF_NO_LENGTH encoding
+- MF_CHUNKS
+- MF_SEQUENTIAL_ID encoding
+- MF_SEQUENTIAL_REL_ID encoding
+- replay-specific compatibility behavior
+
+### Golden vectors
+
+Canonical Connect ACK record:
+
+`21 00 05 03 00 00 00 00 00 00 00 05 02`
+
+Canonical registration Carrier prefix for an 88-byte REG-01 body:
+
+`21 00 59 00 00 00 00 00 58`
+
+Canonical continuous ACK test vector:
+
+`20 00 06 03 00 42 00 00 40 12 34 12 34 06`
+
+### REG-01 + CARRIER-01 integration
+
+The actual REG-01 encoder is integrated into Carrier tests.
+
+For deterministic test state:
+
+- Carrier envelope sequence: 0
+- registration channel: 0
+- registration record sequence: 0
+- registration reliable sequence: 0
+- application body: 88 bytes
+- application VLQ32 length: `58`
+- Carrier registration payload: 89 bytes
+- appended SM_CT_ACKS record: 14 bytes
+- complete plaintext Carrier datagram: 115 bytes
+
+Known deterministic first 16 bytes:
+
+`80 01 00 00 21 00 59 00 00 00 00 00 58 00 01 03`
+
+Full-stack validation passes from structured RegistrationResponse state through:
+
+RegistrationResponse
+→ VLQ32
+→ Carrier application record
+→ optional SM_CT_ACKS
+→ Carrier envelope
+
+Validation:
+
+- full server test suite: 26 passed
+- complete plaintext registration datagram assertion: PASS
+
+### Evidence status
+
+Carrier structure and golden vectors are based on the bounded First Light /
+community capture corpus collected for CARRIER-01.
+
+The clean-room server implementation is independently written and does not
+depend on First Light runtime code.
+
+Carrier evidence collection is now frozen. New Carrier reverse engineering
+requires a specific incompatibility observed during real-client testing.
+
+### Immediate implementation milestone
+
+DTLS is now the active transport blocker.
+
+Next implementation sequence:
+
+1. determine minimum DTLS server requirements from the existing bounded evidence
+2. implement DTLS transport independently of First Light's replay architecture
+3. feed decrypted client Carrier plaintext into the CARRIER-01 decoder
+4. recognize the client Carrier connection request
+5. emit SM_CONNECT_ACK
+6. recognize RegistrationRequest `0x13`
+7. generate REG-01 RegistrationResponse
+8. wrap it through CARRIER-01
+9. deliver it through DTLS
+10. observe whether the real client stops retransmitting RegistrationRequest
+
+REP implementation remains downstream of successful live registration.
