@@ -1,0 +1,85 @@
+LIVE-04C CONTROL-PLANE CANDIDATES
+=================================
+
+HTTPS FLOWS NEAR FIRST WORLD DTLS PACKET
+   +0.555s  135.234.174.40:443                 2 pkts        1 bytes  <unidentified>
+   -0.927s  16.15.238.204:443                 49 pkts    14410 bytes  ags-javelin-remote-config.s3.amazonaws.com
+   +2.361s  13.249.205.30:443                 22 pkts     9933 bytes  <unidentified>
+   -2.557s  3.91.171.237:443                 104 pkts    66525 bytes  kinesis.us-east-1.amazonaws.com
+   +2.736s  44.250.24.81:443                  22 pkts     6719 bytes  <unidentified>
+   +2.953s  20.161.205.129:443                 3 pkts        0 bytes  <unidentified>
+   +2.955s  20.161.205.129:443                 3 pkts        0 bytes  <unidentified>
+   -3.011s  2606:4700:4408::ac40:9bd1:443      2 pkts        1 bytes  <unidentified>
+   -3.151s  2603:1061:10:2::13:443             2 pkts        1 bytes  <unidentified>
+   +3.469s  34.214.47.185:443                211 pkts    65146 bytes  <unidentified>
+   +5.204s  104.18.124.108:443                26 pkts     6535 bytes  <unidentified>
+   +5.846s  52.22.224.129:443                 22 pkts     6362 bytes  <unidentified>
+   -8.365s  2600:9000:250d:3200:1a:3a07:db00:21:443    51 pkts    34447 bytes  <unidentified>
+   -8.877s  3.161.242.46:443                1236 pkts  1597588 bytes  client.content-service.amazongames.com
+   -9.163s  2600:9000:2020:a00:19:2f60:4a00:21:443   127 pkts   118944 bytes  <unidentified>
+   -9.225s  23.221.22.87:443                   5 pkts       24 bytes  <unidentified>
+   -9.442s  2606:4700:4408::ac40:9bd1:443      2 pkts        1 bytes  <unidentified>
+  -13.947s  2606:4700:4403::ac40:94eb:443      9 pkts      156 bytes  <unidentified>
+  -17.005s  2607:f740:100::cad:443             4 pkts       28 bytes  <unidentified>
+  -17.358s  104.18.125.108:443                27 pkts     6623 bytes  <unidentified>
+  -19.127s  2606:b740:1:20::103:443           16 pkts     2251 bytes  <unidentified>
+  -19.867s  2603:1063:2001:926::365:ff1:443     4 pkts        2 bytes  <unidentified>
+  -20.594s  2606:4700:440b::6812:2715:443      9 pkts      156 bytes  <unidentified>
+  -20.706s  3.91.171.237:443                  48 pkts    19426 bytes  kinesis.us-east-1.amazonaws.com
+  -23.027s  100.63.56.151:443                 52 pkts    50079 bytes  <unidentified>
+  -23.027s  100.63.56.151:443                 48 pkts    41545 bytes  <unidentified>
+  -23.101s  13.217.78.25:443                  26 pkts     8542 bytes  <unidentified>
+  -23.939s  104.18.125.108:443                12 pkts     2926 bytes  <unidentified>
+  -25.119s  16.15.238.204:443                109 pkts    42594 bytes  ags-javelin-remote-config.s3.amazonaws.com
+  -25.278s  23.53.127.234:443                 33 pkts    13043 bytes  <unidentified>
+  -25.727s  108.156.211.92:443                41 pkts    18667 bytes  <unidentified>
+  -25.782s  2600:9000:250d:3200:1a:3a07:db00:21:443    20 pkts     9134 bytes  <unidentified>
+  -26.468s  18.161.170.16:443                 26 pkts    14039 bytes  <unidentified>
+  -26.545s  23.53.127.234:443                 33 pkts    13044 bytes  <unidentified>
+  -26.895s  162.254.195.75:443                32 pkts     2040 bytes  <unidentified>
+  -27.644s  23.53.127.234:443                 37 pkts    13044 bytes  <unidentified>
+  -28.230s  2600:1901:0:47fc:::443             4 pkts        2 bytes  <unidentified>
+  -28.349s  104.18.125.108:443                83 pkts    58833 bytes  <unidentified>
+  -28.745s  23.53.127.234:443                 34 pkts    13042 bytes  <unidentified>
+  -28.923s  2606:4700:440b::6812:2715:443      9 pkts      156 bytes  <unidentified>
+  -29.967s  23.53.127.234:443                 32 pkts    13043 bytes  <unidentified>
+
+DNS ACTIVITY NEAR WORLD DTLS
+   0.928s before qtype=28  ags-javelin-remote-config.s3.amazonaws.com
+   0.928s before qtype=1   ags-javelin-remote-config.s3.amazonaws.com
+   2.221s after  qtype=1   client.agsprivacysettingsservice.amazongames.com
+   2.221s after  qtype=28  client.agsprivacysettingsservice.amazongames.com
+   2.435s after  qtype=1   nwxp.www.vivox.com
+   2.436s after  qtype=28  nwxp.www.vivox.com
+   3.252s after  qtype=1   nwxp-mim.vivox.com
+   3.253s after  qtype=28  nwxp-mim.vivox.com
+   5.145s after  qtype=1   api.epicgames.dev
+   5.782s after  qtype=1   datarouter.ol.epicgames.com
+   8.879s before qtype=1   client.content-service.amazongames.com
+   8.945s before qtype=28  client.content-service.amazongames.com
+   9.164s before qtype=1   d1hkbwzm1bktgo.cloudfront.net
+   9.184s before qtype=28  d1hkbwzm1bktgo.cloudfront.net
+  17.360s before qtype=28  api.epicgames.dev
+  20.708s before qtype=28  kinesis.us-east-1.amazonaws.com
+  20.708s before qtype=1   kinesis.us-east-1.amazonaws.com
+  23.028s before qtype=1   client.entitlementservice.amazongames.com
+  23.102s before qtype=28  sts.us-east-1.amazonaws.com
+  23.102s before qtype=1   sts.us-east-1.amazonaws.com
+  23.147s before qtype=28  client.entitlementservice.amazongames.com
+  25.282s before qtype=28  ngx.download.nvidia.com
+  25.730s before qtype=1   prod.identity-service.amazongames.com
+  25.784s before qtype=28  d2oeuvxi3kfsrw.cloudfront.net
+  25.819s before qtype=1   d2oeuvxi3kfsrw.cloudfront.net
+  25.868s before qtype=28  prod.identity-service.amazongames.com
+  26.469s before qtype=1   tokenservice.amazongames.com
+  26.554s before qtype=28  tokenservice.amazongames.com
+  28.313s before qtype=1   dynamodb.eu-central-1.amazonaws.com
+  28.384s before qtype=28  dynamodb.eu-central-1.amazonaws.com
+  28.544s before qtype=1   dynamodb.us-east-1.amazonaws.com
+  28.620s before qtype=28  dynamodb.us-east-1.amazonaws.com
+  28.831s before qtype=1   dynamodb.us-west-2.amazonaws.com
+  28.883s before qtype=28  dynamodb.us-west-2.amazonaws.com
+  29.304s before qtype=1   dynamodb.sa-east-1.amazonaws.com
+  29.347s before qtype=28  dynamodb.sa-east-1.amazonaws.com
+  29.817s before qtype=1   dynamodb.ap-southeast-2.amazonaws.com
+  29.896s before qtype=28  dynamodb.ap-southeast-2.amazonaws.com

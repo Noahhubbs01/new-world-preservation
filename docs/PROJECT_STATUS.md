@@ -2016,3 +2016,59 @@ Determine how the retail client receives/selects the world-entry DTLS endpoint.
 Correlate endpoint assignment with login/world-entry traffic and existing executable evidence. Endpoint-selection evidence should determine the minimum preservation redirection mechanism.
 
 Do not reopen broad transport archaeology unless LIVE-04 evidence requires a specific static question.
+
+## LIVE-04 — World endpoint assignment
+
+Status: PASSIVE CAPTURE ANALYSIS CLOSED
+
+Source evidence:
+- LIVE-03 retail world-entry PCAP
+- SHA-256: `5adf04c3534876a0b79456f80cde3ecc2448e017210076fcb5c813ab14dc199d`
+
+### VERIFIED
+
+- First packet of the captured world-entry DTLS flow occurs at capture-relative `73.180422 s`.
+- Captured flow uses client `192.168.1.188:27000` and server `35.71.190.194:29383`.
+- No obvious DNS lookup for the captured DTLS destination or an identifiable world-server hostname immediately precedes DTLS establishment.
+- HTTPS traffic immediately surrounding world entry includes:
+  - `ags-javelin-remote-config.s3.amazonaws.com`
+  - `client.content-service.amazongames.com`
+  - `kinesis.us-east-1.amazonaws.com`
+- The HTTPS flow to `ags-javelin-remote-config.s3.amazonaws.com` begins approximately 0.927 seconds before DTLS.
+- The HTTPS flow to `client.content-service.amazongames.com` begins approximately 8.877 seconds before DTLS and carries approximately 1.6 MB during the analyzed interval.
+- Simple occurrences of the two-byte encoded port value inside TLS ciphertext are not endpoint-assignment evidence.
+
+### INFERRED
+
+The world endpoint is likely supplied through encrypted control-plane/application traffic or constructed from information already available inside the client.
+
+Passive packet capture alone does not identify the application-level message or field that supplies the endpoint.
+
+### NOT VERIFIED
+
+- Which HTTPS service or application message supplies the world endpoint.
+- Whether `35.71.190.194:29383` is reusable across sessions.
+- Whether the captured world-entry DTLS flow is internally named REP.
+
+### Evidence boundary
+
+Passive endpoint-assignment analysis is CLOSED unless a later experiment creates a specific network question.
+
+Do not continue broad classification of unrelated HTTPS/CDN traffic.
+
+### Next gate — endpoint consumer
+
+Identify where `NewWorld.exe` consumes the selected world-server endpoint and converts it into the UDP destination used by the world-entry DTLS connection.
+
+Static/runtime investigation should be bounded to:
+
+1. UDP/local-port `27000` references and socket setup.
+2. Socket bind/connect/send paths.
+3. `sockaddr` construction or equivalent address writers.
+4. DTLS/GridMate/Javelin initialization callers.
+5. Upstream reads of endpoint IP/port fields.
+6. The object/message supplying those fields.
+
+Every new reverse-engineering branch must close one of these endpoint-consumer requirements.
+
+Do not reopen broad transport archaeology without evidence from this gate.

@@ -1,0 +1,8 @@
+PRE-DTLS HTTPS CONNECTION IDENTIFICATION
+========================================
+   +0.555s  135.234.174.40:443        <not recovered>
+   -0.837s  16.15.238.204:443         ags-javelin-remote-config.s3.amazonaws.com
+   -2.476s  3.91.171.237:443          kinesis.us-east-1.amazonaws.com
+   -8.841s  3.161.242.46:443          client.content-service.amazongames.com
+  -10.201s  3.91.171.237:443          <not recovered>
+  -14.251s  108.156.211.92:443        <not recovered>
