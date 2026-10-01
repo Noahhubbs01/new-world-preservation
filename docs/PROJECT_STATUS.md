@@ -1972,3 +1972,47 @@ Do not globally disable certificate verification.
 
 REP reconstruction remains locked until the retail client accepts
 RegistrationResponse.
+
+## LIVE-03 — Retail world-entry network baseline
+
+Status: CAPTURED / VERIFIED
+
+Raw evidence is stored outside Git:
+
+- File: `nw-live03-retail-world-entry.pcapng`
+- Size: 11,986,136 bytes
+- SHA-256: `5adf04c3534876a0b79456f80cde3ecc2448e017210076fcb5c813ab14dc199d`
+- External location: `/srv/projects/new-world-evidence/live/LIVE-03/`
+
+### VERIFIED RETAIL
+
+A successful retail world-entry capture established:
+
+- Persistent UDP transport is created during world entry.
+- Captured client endpoint: `192.168.1.188:27000`.
+- Captured server endpoint: `35.71.190.194:29383`.
+- Transport performs a DTLS 1.2 handshake.
+- ServerHello selected cipher suite `0xC030`.
+- `0xC030` corresponds to `ECDHE-RSA-AES256-GCM-SHA384`.
+- The handshake proceeds through certificate/key exchange and Finished.
+- Encrypted DTLS ApplicationData follows the completed handshake.
+
+This independently confirms the transport version and exact cipher already implemented by DTLS-01.
+
+### Evidence boundary
+
+The endpoint `35.71.190.194:29383` is VERIFIED only for this captured retail session.
+
+It is NOT VERIFIED as a fixed or universal endpoint.
+
+The captured DTLS flow is strongly correlated with retail world entry, but its exact internal role/name as REP remains NOT YET VERIFIED.
+
+Do not hard-code the captured IP address or port.
+
+### LIVE-04 primary gate
+
+Determine how the retail client receives/selects the world-entry DTLS endpoint.
+
+Correlate endpoint assignment with login/world-entry traffic and existing executable evidence. Endpoint-selection evidence should determine the minimum preservation redirection mechanism.
+
+Do not reopen broad transport archaeology unless LIVE-04 evidence requires a specific static question.
