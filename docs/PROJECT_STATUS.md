@@ -1901,3 +1901,74 @@ Objectives:
 10. observe the next client state transition
 
 REP remains locked until the retail client successfully accepts registration.
+
+## Checkpoint — 2026-10-01 — LIVE-01A REP runtime
+
+### VERIFIED IMPLEMENTATION
+
+Added the long-running preservation REP endpoint:
+
+`server/newworld_server/rep_server.py`
+
+The runtime composes the previously verified layers:
+
+UDP
+→ DTLS
+→ Carrier/Javelin
+→ Registration
+
+Runtime responsibilities:
+
+- loads the preservation REP certificate/private key
+- creates the verified DTLS server context
+- binds a real UDP socket
+- creates DTLS state per peer
+- maintains Javelin protocol state per peer
+- routes decrypted Carrier traffic through Javelin
+- sends generated Carrier responses through DTLS/UDP
+- logs peer traffic and connection transitions
+- supports clean SIGINT/SIGTERM shutdown
+
+No new protocol semantics were introduced.
+
+### Verification
+
+REP runtime bind test: PASS
+
+REP CLI test: PASS
+
+Complete server suite: GREEN
+
+The local preservation stack can now run as a persistent network endpoint
+rather than only through test harnesses.
+
+### Current boundary
+
+Synthetic pre-REP implementation is complete enough for live-client testing.
+
+Do not begin REP application reconstruction yet.
+
+### Immediate milestone
+
+LIVE-01B: first legitimate retail-client connection attempt.
+
+Before launching the client:
+
+1. determine the retail REP destination address and UDP port
+2. establish the minimum local endpoint redirection
+3. start the preservation REP endpoint with DEBUG logging
+4. launch the legitimate retail client
+5. record the first actual network/protocol failure
+
+The retail client is now authoritative for identifying the next blocker.
+
+Expected possible first blocker:
+
+retail certificate trust rejecting the preservation REP certificate.
+
+If certificate trust blocks DTLS, implement only the minimum preservation
+compatibility change required to trust the preservation project's identity.
+Do not globally disable certificate verification.
+
+REP reconstruction remains locked until the retail client accepts
+RegistrationResponse.
