@@ -1695,3 +1695,91 @@ RegistrationRequest 0x13
 → REG-01 RegistrationResponse 0x03
 
 REP remains locked until registration succeeds against the real client.
+
+## Checkpoint — 2026-10-01 — JAVELIN-01 connection exchange
+
+### VERIFIED IMPLEMENTATION
+
+Added:
+
+`server/newworld_server/transport/javelin.py`
+
+JAVELIN-01 implements the first autonomous Javelin protocol transition:
+
+SM_CONNECT_REQUEST (0x01)
+→ canonical SM_CONNECT_ACK (0x02)
+
+The handler:
+
+- decodes the Carrier envelope
+- decodes standard Carrier records
+- recognizes channel-3 system messages
+- identifies SM_CONNECT_REQUEST by the trailing system-message ID
+- generates the already-frozen canonical SM_CONNECT_ACK
+- allocates an outbound Carrier envelope sequence
+- records connected state
+- ignores unrelated system messages
+- ignores non-system-channel records
+
+### End-to-end network verification
+
+The Javelin connection exchange was verified through the complete local
+network stack using an independent DTLS client.
+
+Path tested:
+
+client plaintext
+→ DTLS encryption
+→ kernel UDP
+→ UDPDTLSServer
+→ DTLS decryption
+→ Carrier envelope decode
+→ Carrier record decode
+→ SM_CONNECT_REQUEST
+→ Javelin handler
+→ canonical SM_CONNECT_ACK
+→ Carrier encoding
+→ DTLS encryption
+→ kernel UDP
+→ client DTLS decryption
+→ Carrier decode
+
+The returned record was verified as:
+
+- reliable + data-channel flags
+- channel 3
+- sequence 0
+- reliable sequence 0
+- payload `00 00 00 05 02`
+
+Protocol session state transitioned to connected.
+
+Full server test suite:
+
+`39 passed`
+
+### Evidence boundary
+
+SM_CONNECT_REQUEST → SM_CONNECT_ACK is locally VERIFIED end-to-end.
+
+No additional reverse engineering is required for this transition unless
+retail-client evidence contradicts the current model.
+
+### Immediate milestone
+
+REGISTRATION-02:
+
+After connection establishment, recognize application RegistrationRequest
+type 0x13 and emit the already-verified REG-01 RegistrationResponse type
+0x03 through:
+
+REG-01
+→ CARRIER-01
+→ DTLS
+→ UDP
+
+Success criterion is an end-to-end synthetic-client registration exchange.
+
+After REGISTRATION-02 is locally green, move to retail-client testing.
+
+REP remains locked until registration succeeds against the retail client.

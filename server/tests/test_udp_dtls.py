@@ -193,3 +193,186 @@ def test_udp_server_uses_ephemeral_port():
 
     finally:
         server.close()
+
+
+def test_udp_dtls_javelin_connect_exchange():
+    """Real UDP + DTLS + Carrier SM_CONNECT_REQUEST -> SM_CONNECT_ACK."""
+
+    from newworld_server.transport.carrier import (
+        CarrierRecord,
+        MF_DATA_CHANNEL,
+        MF_RELIABLE,
+        SM_CONNECT_ACK,
+        SM_CONNECT_REQUEST,
+        decode_envelope,
+        decode_standard_records,
+        encode_envelope,
+        encode_standard_record,
+    )
+    from newworld_server.transport.javelin import (
+        JavelinSession,
+        handle_datagram,
+    )
+
+    protocol_sessions = {}
+
+    server_ref = {}
+
+    def on_plaintext(peer, plaintext):
+        protocol = protocol_sessions.setdefault(
+            peer,
+            JavelinSession(),
+        )
+
+        responses = handle_datagram(
+            protocol,
+            plaintext,
+        )
+
+        for response in responses:
+            server_ref["server"].send_plaintext(
+                peer,
+                response,
+            )
+
+    server = UDPDTLSServer(
+        "127.0.0.1",
+        0,
+        make_server_session,
+        on_plaintext,
+        timeout=0.01,
+    )
+
+    server_ref["server"] = server
+    server.bind()
+
+    client_sock = socket.socket(
+        socket.AF_INET,
+        socket.SOCK_DGRAM,
+    )
+    client_sock.bind(("127.0.0.1", 0))
+    client_sock.settimeout(0.01)
+
+    client = make_client()
+    client_done = False
+
+    try:
+        # Complete DTLS over actual UDP.
+        for _ in range(100):
+            if not client_done:
+                try:
+                    client.do_handshake()
+                    client_done = True
+                except (
+                    SSL.WantReadError,
+                    SSL.WantWriteError,
+                ):
+                    pass
+
+            drain_client_udp(
+                client,
+                client_sock,
+                server.local_address,
+            )
+
+            for _ in range(10):
+                if not server.poll_once():
+                    break
+
+            feed_client_from_socket(
+                client,
+                client_sock,
+            )
+
+            if client_done:
+                states = list(server.peers.values())
+
+                if (
+                    states
+                    and states[0].session.handshake_complete
+                ):
+                    break
+
+        assert client_done is True
+        assert len(server.peers) == 1
+
+        # Construct canonical Carrier connection request.
+        connect_record = CarrierRecord(
+            flags=MF_RELIABLE | MF_DATA_CHANNEL,
+            channel=3,
+            sequence=0,
+            reliable_sequence=0,
+            payload=(
+                b"\x00\x00\x00\x05"
+                + bytes([SM_CONNECT_REQUEST])
+            ),
+        )
+
+        request = encode_envelope(
+            0,
+            encode_standard_record(connect_record),
+        )
+
+        # Client plaintext -> DTLS -> UDP.
+        assert client.send(request) == len(request)
+
+        drain_client_udp(
+            client,
+            client_sock,
+            server.local_address,
+        )
+
+        # UDP -> DTLS -> Javelin -> ACK -> DTLS -> UDP.
+        for _ in range(20):
+            server.poll_once()
+
+            feed_client_from_socket(
+                client,
+                client_sock,
+            )
+
+            try:
+                response = client.recv(65535)
+                break
+            except (
+                SSL.WantReadError,
+                SSL.WantWriteError,
+            ):
+                continue
+        else:
+            pytest.fail(
+                "no Javelin connect response received"
+            )
+
+        # Client sees decrypted Carrier response.
+        envelope = decode_envelope(response)
+
+        assert envelope.sequence == 0
+
+        records = decode_standard_records(
+            envelope.body
+        )
+
+        assert len(records) == 1
+
+        ack = records[0]
+
+        assert ack.flags == (
+            MF_RELIABLE | MF_DATA_CHANNEL
+        )
+        assert ack.channel == 3
+        assert ack.sequence == 0
+        assert ack.reliable_sequence == 0
+
+        assert ack.payload == (
+            b"\x00\x00\x00\x05"
+            + bytes([SM_CONNECT_ACK])
+        )
+
+        peer = next(iter(protocol_sessions))
+
+        assert protocol_sessions[peer].connected is True
+
+    finally:
+        client_sock.close()
+        server.close()
