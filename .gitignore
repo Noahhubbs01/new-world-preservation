@@ -46,6 +46,10 @@ __pycache__/
 /server/runtime/
 /server/logs/
 /server/secrets/
-*.pem
-*.key
-.env
+/reports/server-registration-evidence/
+
+# Preservation server local/generated state
+/server/config/server.toml
+/server/*.egg-info/
+/server/**/__pycache__/
+/server/.pytest_cache/

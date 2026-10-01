@@ -1293,3 +1293,71 @@ Implement the minimum deterministic login path incrementally:
 Community implementations remain forensic references and are not source dependencies.
 
 Static GCW archaeology remains frozen. New reverse engineering must close a named implementation blocker.
+
+## Checkpoint — 2026-10-01 — REG-01 pure registration codec
+
+### VERIFIED
+
+The clean-room server now contains the first implemented New World protocol behavior.
+
+Implemented:
+- canonical-shortest-form VLQ32 encode/decode
+- minimal opaque RegistrationRequest representation
+- RegistrationRequest type classifier for `0x13`
+- independent RegistrationResponse encoder for type `0x03`
+- login-layer successful-registration response builder
+- protocol unit tests independent of First Light runtime code
+
+The successful RegistrationResponse encoder reproduces the known structure of
+the successful-login capture:
+
+- total body length: 88 bytes
+- offset 0x00: `00 01 03`
+- offset 0x03: `00 00 00 00`
+- offset 0x07: captured opaque bytes `0b 88 8d 68 70 6c 41 5b`
+- offset 0x0f: token length `20`
+- offset 0x10: 32-byte session-token span
+- offset 0x30: server-version length `23`
+- offset 0x31: `[RETAIL].Javelin.1.365.6031.6006993`
+- offset 0x54: `01 00 00 01`
+
+VLQ32 encoding of the 88-byte body length is `58`.
+
+The original successful-login session-token bytes were redacted, so the server
+currently generates its own opaque 32-byte token. No dependency on request UUID
+echo behavior is assumed.
+
+The eight bytes at offset 0x07 remain named `opaque8`. Their captured bytes are
+known; later semantic interpretations are not treated as independently verified.
+
+The captured `0x13` request body remains intentionally opaque. The successful
+capture contains a 2750-byte request and therefore the older community 832-byte
+strict parser is not treated as authoritative.
+
+Validation:
+- 15 tests pass
+- explicit capture-shape assertion passes
+- no replay data is required by the implemented codec
+
+### REG-01 evidence boundary
+
+REG-01 evidence collection is frozen.
+
+New registration reverse engineering is permitted only if live-client testing
+reveals a specific registration blocker.
+
+### Immediate implementation milestone
+
+Implement the minimum Carrier transport layer required to deliver the verified
+88-byte RegistrationResponse:
+
+1. Carrier envelope/data framing
+2. Carrier connection/control handling required before application data
+3. integrate RegistrationRequest classification
+4. emit RegistrationResponse through Carrier
+5. verify whether the real client stops retransmitting `0x13`
+
+DTLS/socket integration follows the pure Carrier codec tests.
+
+Replay machinery and post-registration message replay are explicitly excluded
+from this implementation path.
