@@ -154,7 +154,12 @@ for cap in captures:
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
 with OUT.open("w", newline="") as f:
-    w = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t")
+    w = csv.DictWriter(
+        f,
+        fieldnames=fieldnames,
+        delimiter="\t",
+        lineterminator="\n",
+    )
     w.writeheader()
     w.writerows(rows)
 
