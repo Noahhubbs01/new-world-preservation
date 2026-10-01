@@ -1,0 +1,54 @@
+Initialization types: 15
+Candidate helper tables: 15
+Tables readable: 15
+Unmarshal at helper +0x28: 15/15
+Helper-base code references: 30
+
+HELPER CONSUMER CENSUS:
+0x3 helper=0x147F46910 +28=YES code_refs=2 RegistrationResponseMsg
+0x8 helper=0x148502A48 +28=YES code_refs=2 Amazon::Hub::ReplicatedStateBundle
+0xA4 helper=0x147F44CE8 +28=YES code_refs=2 ClientAddEntryMsg
+0x14F helper=0x147F46648 +28=YES code_refs=2 TimeSynchMsg
+0x15D helper=0x147F46D38 +28=YES code_refs=2 PingMsg
+0x1BE helper=0x1485023A8 +28=YES code_refs=2 CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg
+0x40A helper=0x148502378 +28=YES code_refs=2 CoatlicueClientMessages::CalendarConnectedMsg
+0x651 helper=0x14800C6A8 +28=YES code_refs=2 Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg
+0x65C helper=0x148014880 +28=YES code_refs=2 Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg
+0x663 helper=0x148015B10 +28=YES code_refs=2 Javelin::ClientMessagesTrait::LevelInfoChangedMsg
+0xCA4 helper=0x14819C0C0 +28=YES code_refs=2 Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications
+0x136A helper=0x1481B4308 +28=YES code_refs=2 Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg
+0x16A0 helper=0x1481FF038 +28=YES code_refs=2 Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories
+0x18A6 helper=0x14802D580 +28=YES code_refs=2 Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing
+0x1B88 helper=0x148138AB0 +28=YES code_refs=2 Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems
+
+REFERENCE SITES:
+0xA4 0x147F44CE8 <- 0x1407C8BBA
+0x14F 0x147F46648 <- 0x1407CC99A
+0x3 0x147F46910 <- 0x1407CD20A
+0x15D 0x147F46D38 <- 0x1407CDBDA
+0xA4 0x147F44CE8 <- 0x1407EC07C
+0x15D 0x147F46D38 <- 0x1407F0AE6
+0x3 0x147F46910 <- 0x1407F304C
+0x14F 0x147F46648 <- 0x1407F6BD6
+0x651 0x14800C6A8 <- 0x1414E3E9A
+0x65C 0x148014880 <- 0x1414FD7FA
+0x663 0x148015B10 <- 0x141500D8A
+0x18A6 0x14802D580 <- 0x141549D6A
+0x18A6 0x14802D580 <- 0x1416D48A6
+0x663 0x148015B10 <- 0x1416DF4A6
+0x65C 0x148014880 <- 0x1416EBEA6
+0x651 0x14800C6A8 <- 0x1416F34A6
+0x1B88 0x148138AB0 <- 0x142CD641A
+0x1B88 0x148138AB0 <- 0x142D05256
+0xCA4 0x14819C0C0 <- 0x14319815A
+0xCA4 0x14819C0C0 <- 0x1431C0B26
+0x136A 0x1481B4308 <- 0x14327C9CA
+0x136A 0x1481B4308 <- 0x1432ADC56
+0x16A0 0x1481FF038 <- 0x1435EF2EA
+0x16A0 0x1481FF038 <- 0x143616046
+0x40A 0x148502378 <- 0x14641D6EA
+0x1BE 0x1485023A8 <- 0x14641D76A
+0x8 0x148502A48 <- 0x14641D82A
+0x40A 0x148502378 <- 0x1464365F6
+0x1BE 0x1485023A8 <- 0x1464369F6
+0x8 0x148502A48 <- 0x1464371F6

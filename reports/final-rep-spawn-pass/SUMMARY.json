@@ -1,0 +1,12 @@
+{
+  "rep_anchors": 10,
+  "rep_callgraph_rows": 200,
+  "rep_structural_rows": 50,
+  "spawn_anchors": 5,
+  "spawn_callgraph_rows": 647,
+  "player_global_refs": 61,
+  "player_global_functions": 30,
+  "player_vfunc30_rows": 0,
+  "capture_window_rows": 0,
+  "unresolved_manifest_rows": 10
+}

@@ -1,0 +1,6 @@
+=== ABSOLUTE POINTER REFERENCES ===
+
+=== RIP-RELATIVE REFERENCES ===
+Disassembling .text once. This may take a little while.
+
+Scan complete.

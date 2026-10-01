@@ -1,0 +1,19 @@
+Capture messages: 177
+Unique wire type_idx values: 40
+Messages mapped through catalog: 177
+Messages without catalog type_idx: 0
+Unique mapped type_idx values: 40
+Unique unmapped type_idx values: 0
+Mapped messages with serialization census row: 177
+Mapped messages without serialization census row: 0
+
+Directions:
+  R: 138
+  W: 39
+
+Primitive-depth distribution by captured message:
+  0: 3
+  1: 98
+  2: 34
+  3: 2
+  unresolved: 40

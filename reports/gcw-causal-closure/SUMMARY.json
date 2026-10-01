@@ -1,0 +1,191 @@
+{
+  "replica_writer_callers": 5,
+  "replica_predicate_callgraph_rows": 23,
+  "player_provider_reference_rows": 673,
+  "player_global_reference_functions": 30,
+  "a0_immediate_2_write_sites": 552,
+  "a0_ranked_functions": 257,
+  "a0_actor_neighborhood_write_sites": 41,
+  "top_a0_candidates": [
+    {
+      "score": 165,
+      "address": "0x145A87170",
+      "offset": "0xA0",
+      "function": "0x145A87010",
+      "instruction": "   145a87170:\t41 c7 86 a0 00 00 00 \tmov    DWORD PTR [r14+0xa0],0x2",
+      "distance_to_anchor": "0x95B0",
+      "reasons": "IMMEDIATE_2|CALLED_BY_SELFIDENT_HANDLER|GCW_LOCAL_64K"
+    },
+    {
+      "score": 100,
+      "address": "0x1414222FF",
+      "offset": "0xA0",
+      "function": "0x141421B90",
+      "instruction": "   1414222ff:\tc6 85 a0 00 00 00 02 \tmov    BYTE PTR [rbp+0xa0],0x2",
+      "distance_to_anchor": "0x466EA30",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141979E01",
+      "offset": "0xA0",
+      "function": "0x141979C60",
+      "instruction": "   141979e01:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x4116960",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141989F00",
+      "offset": "0xA0",
+      "function": "0x141989C6A",
+      "instruction": "   141989f00:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x4106956",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x14198A196",
+      "offset": "0xA0",
+      "function": "0x14198A0E9",
+      "instruction": "   14198a196:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x41064D7",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x14198D267",
+      "offset": "0xA0",
+      "function": "0x14198D0A0",
+      "instruction": "   14198d267:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x4103520",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141993CE8",
+      "offset": "0xA0",
+      "function": "0x141993C40",
+      "instruction": "   141993ce8:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FC980",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141993F74",
+      "offset": "0xA0",
+      "function": "0x141993C40",
+      "instruction": "   141993f74:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FC980",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141997847",
+      "offset": "0xA0",
+      "function": "0x141994773",
+      "instruction": "   141997847:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FBE4D",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141997985",
+      "offset": "0xA0",
+      "function": "0x141994773",
+      "instruction": "   141997985:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FBE4D",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141997AC5",
+      "offset": "0xA0",
+      "function": "0x141994773",
+      "instruction": "   141997ac5:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FBE4D",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141997C18",
+      "offset": "0xA0",
+      "function": "0x141994773",
+      "instruction": "   141997c18:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FBE4D",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141997D53",
+      "offset": "0xA0",
+      "function": "0x141994773",
+      "instruction": "   141997d53:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FBE4D",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141997E9A",
+      "offset": "0xA0",
+      "function": "0x141994773",
+      "instruction": "   141997e9a:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FBE4D",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x141997FCF",
+      "offset": "0xA0",
+      "function": "0x141994773",
+      "instruction": "   141997fcf:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40FBE4D",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x1419AEF24",
+      "offset": "0xA0",
+      "function": "0x1419A853F",
+      "instruction": "   1419aef24:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40E8081",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x1419AF0ED",
+      "offset": "0xA0",
+      "function": "0x1419A853F",
+      "instruction": "   1419af0ed:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40E8081",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x1419AF2BC",
+      "offset": "0xA0",
+      "function": "0x1419A853F",
+      "instruction": "   1419af2bc:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40E8081",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x1419AF481",
+      "offset": "0xA0",
+      "function": "0x1419A853F",
+      "instruction": "   1419af481:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40E8081",
+      "reasons": "IMMEDIATE_2"
+    },
+    {
+      "score": 100,
+      "address": "0x1419AF64B",
+      "offset": "0xA0",
+      "function": "0x1419A853F",
+      "instruction": "   1419af64b:\tc7 83 a0 00 00 00 02 \tmov    DWORD PTR [rbx+0xa0],0x2",
+      "distance_to_anchor": "0x40E8081",
+      "reasons": "IMMEDIATE_2"
+    }
+  ]
+}

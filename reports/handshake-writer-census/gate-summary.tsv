@@ -1,0 +1,5 @@
+gate	offset	required	object	predicate	known_writer
+A_TO_B	0x601	1	REP object	0x146B6DF30	0x146B6F190
+B_TO_C	0xA0	2	GameConnection+0x130 object	0x145A92370	
+C_TO_D	0xBC8	nonzero	GameConnection+0x130 object	0x145A905C0	
+D_TO_E	0x252	nonzero	GameConnection+0x130 object	0x145A923C0	

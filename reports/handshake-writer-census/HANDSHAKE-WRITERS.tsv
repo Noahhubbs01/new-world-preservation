@@ -1,0 +1,5 @@
+gate	object	offset	required	predicate	known_writer	candidate_writer_functions	candidate_write_sites	login_correlated_writers
+A_TO_B	REP object	0x601	1	0x146B6DF30	0x146B6F190	0	0	0
+B_TO_C	GameConnection+0x130 object	0xA0	2	0x145A92370		0	0	0
+C_TO_D	GameConnection+0x130 object	0xBC8	nonzero	0x145A905C0		0	0	0
+D_TO_E	GameConnection+0x130 object	0x252	nonzero	0x145A923C0		0	0	0

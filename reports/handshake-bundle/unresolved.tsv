@@ -1,0 +1,10 @@
+id	stage	required	known	missing
+REP-A01	A->B	YES	consumer=0x146B6EB70	exact successful-login REP input/unit
+REP-A02	A->B	YES	writer=0x146B6F190; gate=REP+0x601	minimum serialized fields required to set +0x601
+REP-A03	A->B	YES	parser=0x146AE44F0	exact REP frame boundary/prefix semantics
+WIRE-01	A->B	CONDITIONAL	N>0 -> registry+0x40[N]	compact-ID dictionary population/mapping if required
+GCW-B01	B->C	YES	predicate=0x145A92370	causal writer/input
+GCW-C01	C->D	YES	predicate=0x145A905C0	causal writer/input
+GCW-D01	D->E	YES	predicate=0x145A923C0	causal writer/input
+SPAWN-01	D->E	YES	0x141026080() must return non-null	object origin / producing server input
+SPAWN-02	D->E	YES	returned object vfunc+0x30 must return non-null	player/replica creation prerequisite

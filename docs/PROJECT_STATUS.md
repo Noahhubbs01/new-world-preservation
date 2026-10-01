@@ -1129,3 +1129,127 @@ described above.
 - Prefer mass capture correlation over one-function-at-a-time exploration.
 - Keep terminal output bounded; write bulk evidence to reports.
 - Treat successful real-client state advancement as the decisive validation.
+
+---
+
+## Checkpoint — 2026-10-01 — GCW causal gates and REP/spawn boundary
+
+### Milestone result
+
+Static analysis has reconstructed the causal GameConnectionWait progression far enough to stop broad binary archaeology and pivot to deterministic implementation/capture correlation.
+
+### VERIFIED — GCW transitions
+
+#### A -> B: WaitingForREPConnection -> WaitingForActorGameConnection
+
+- Gate predicate ultimately depends on REP object byte `+0x601`.
+- `0x146B6EB70` materializes the incoming reflected object through `0x1461AC8D0`.
+- Successful materialization and non-null object are required before `0x146B6F190`.
+- `0x146B6F190` writes:
+  - incoming object `+0x58` -> connection `+0x6F0`
+  - incoming object `+0x59` -> connection `+0x6F1`
+  - incoming object `+0x5A` -> connection `+0x6F2`
+  - connection `+0x601 = 1`
+- Additional incoming-object fields consumed on the successful path include `+0x10`, `+0x18`, `+0x38`, and `+0x5B`.
+- Exact REP reflected class, minimum legal field values, and exact successful wire unit remain unresolved.
+
+#### B -> C: WaitingForActorGameConnection -> WaitingForSpawnPoint
+
+CLOSED.
+
+Verified causal chain:
+
+`SelfIdentification`
+-> handler `0x146454C00`
+-> `0x145A87010`
+-> `ActorGameConnection+0xA0 = 2`
+-> predicate `0x145A92370`
+-> B -> C.
+
+Successful-login type is `0x65C` through the community-correlated wire type mapping.
+
+#### C -> D: WaitingForSpawnPoint -> WaitingForPlayerSpawn
+
+CLOSED.
+
+Verified causal chain:
+
+`LevelInfoChanged`
+-> LevelInfo processing
+-> `0x145A9FA00`
+-> `ActorGameConnection+0xBC8 = 1`
+-> predicate `0x145A905C0`
+-> C -> D.
+
+#### D -> E: WaitingForPlayerSpawn -> InGame
+
+Flag component CLOSED STRUCTURALLY.
+
+- Predicate flag is `ActorGameConnection+0x252`.
+- `0x142FFBC50` scans a collection.
+- Candidate entries are accepted through `0x1434B0940`.
+- Matching uses `0x1434985C0`.
+- A successful acceptable-entry match sets the computed flag to 1.
+- The result is written to `+0x252`.
+
+Additional D -> E requirements remain:
+
+- `0x141026080()` must return non-null.
+- `0x141026080` is a lazy accessor around global `0x14A2FB9F0`.
+- Initialization uses `0x141676530`.
+- The returned value is the inner pointer stored at `[global_object]`.
+- The required player/local-object functionality beyond this pointer is not yet semantically resolved.
+
+### VERIFIED — reflected identity decoding
+
+`0x1461ACFE0` calls prefix decoder `0x14087B5C0`.
+
+- decoded prefix/index `0` -> read a literal 16-byte identity.
+- decoded prefix/index `N > 0` -> use registry `+0x40[N]` as the 16-byte identity.
+- no decrement occurs before indexing.
+
+Relationship between registry `+0x40` compact identity table and registration `+0x58` metadata remains to be proven if required for generated traffic.
+
+### Successful-login spawn evidence
+
+Community capture artifact shows:
+
+- seq `0x25`: first mandatory large StateBundle, about 46 KB.
+- seq `0x29`: large initialization payload, about 99 KB.
+- seq `0x2A..0x6C`: repeated large StateBundle initialization burst.
+- seq `0x73..0x7F`: smaller StateBundle records.
+- seq `0x80`: StateBundle summary state 13.
+- seq `0x8C`: state 25, interest 91, 13 fragments.
+- seq `0x91`: state 28, interest 92.
+- seq `0xAE`: interest 91 fragment set repeats.
+- seq `0xB0`: state 53, beyond the historical WaitingForPlayerSpawn stall.
+
+The artifact's interpretation of interest 91 as local/master-player relevant is COMMUNITY-ARTIFACT evidence, not independently proven executable semantics.
+
+### Current finite blockers
+
+1. REP-01 — identify the exact reflected REP object/class that reaches `0x146B6F190`.
+2. REP-02 — determine minimum legal values for the consumed REP object fields.
+3. REP-03 — establish the exact successful framed REP wire unit.
+4. SPAWN-01 — establish the minimum StateBundle/replica sequence that creates the local-player object required by D -> E.
+5. SPAWN-02 — establish the remaining local/master-player requirement associated with the object returned through `0x141026080`.
+6. SB-INIT — minimize the successful StateBundle initialization burst.
+7. SB-MASTER — identify the minimum ownership/master-player StateBundle record.
+8. WIRE-01 — prove compact wire identity dictionary relationship only if packet generation requires it.
+
+### Evidence boundary / next strategy
+
+Do NOT resume broad constructor, vtable, transport, or GCW-field archaeology.
+
+The static GCW transition investigation is frozen.
+
+Next milestone is implementation/capture correlation:
+
+1. reproduce accepted registration,
+2. deliver the minimum REP candidate and observe A -> B,
+3. deliver SelfIdentification and verify B -> C,
+4. deliver LevelInfoChanged and verify C -> D,
+5. replay/minimize the successful StateBundle initialization window until D -> E,
+6. reduce each successful stage to its minimum deterministic transcript.
+
+Every new reverse-engineering experiment must close one of the finite blockers above.

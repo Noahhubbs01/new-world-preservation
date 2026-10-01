@@ -1,0 +1,11 @@
+id	status	question
+REP-01	OPEN	Exact server-originating serialized REP object that causes +0x601=1
+REP-02	OPEN	Minimum fields/values B6EB70 requires before B6F190
+REP-03	OPEN	Exact framing/type identity required to deliver REP object
+GCW-B01	CLOSED: SelfIdentification -> 145A87010 -> +A0=2	B->C causal writer
+GCW-C01	CLOSED: LevelInfoChanged -> 145A9FA00 -> +BC8=1	C->D causal writer
+GCW-D01	CLOSED STRUCTURALLY: 142FFBC50 collection match -> +252=1	D->E +252 flag writer
+SPAWN-01	OPEN	Identity/source of object returned through 141026080
+SPAWN-02	OPEN	Meaning/prerequisite of returned object's vfunc +0x30
+SB-INIT	OPEN	Minimum StateBundle records needed for player initialization
+SB-MASTER	OPEN	Minimum ownership/master-player record

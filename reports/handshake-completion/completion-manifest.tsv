@@ -1,0 +1,13 @@
+id	stage	required	requirement
+RAW-01	ALL	YES	Recover original .bin successful-login messages or prove unavailable.
+REP-A01	A->B	YES	Identify exact REP unit reaching 0x146B6EB70.
+REP-A02	A->B	YES	Determine minimum fields consumed by 0x146B6F190 to set +0x601.
+REP-A03	A->B	YES	Determine exact 0x146AE44F0 framing/prefix semantics.
+GCW-B01	B->C	YES	Identify state written/read by 0x145A92370 and its causal server input.
+GCW-C01	C->D	YES	Identify state written/read by 0x145A905C0 and its causal server input.
+GCW-D01	D->E	YES	Identify state written/read by 0x145A923C0 and its causal server input.
+SPAWN-01	D->E	YES	Identify object returned by 0x141026080 and creation path.
+SPAWN-02	D->E	YES	Identify object vfunc+0x30 requirement and local-player ownership path.
+SB-INIT	SPAWN	YES	Determine minimum required StateBundle subset from large init burst.
+SB-MASTER	SPAWN	YES	Determine local-player/master ownership StateBundle record requirements.
+WIRE-01	ALL	CONDITIONAL	Resolve compact identity dictionary mapping if generated payloads require it.

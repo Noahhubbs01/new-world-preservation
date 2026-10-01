@@ -1,0 +1,31 @@
+{
+  "total_hits": 67577,
+  "write_hits": 25838,
+  "writer_functions": 14087,
+  "callgraph_rows": 219143,
+  "by_offset_kind": {
+    "0xA0:READ_OR_ADDRESS": 35762,
+    "0xA0:READ_TEST": 1824,
+    "0xA0:WRITE_MOV": 24183,
+    "0xA0:WRITE_RMW": 117,
+    "0x1D0:READ_OR_ADDRESS": 3602,
+    "0x1D0:READ_TEST": 274,
+    "0x1D0:WRITE_MOV": 1390,
+    "0x1D0:WRITE_RMW": 18,
+    "0x252:READ_OR_ADDRESS": 11,
+    "0x252:READ_TEST": 6,
+    "0x252:WRITE_MOV": 19,
+    "0x382:READ_OR_ADDRESS": 7,
+    "0x382:READ_TEST": 1,
+    "0x382:WRITE_MOV": 9,
+    "0x601:READ_OR_ADDRESS": 6,
+    "0x601:READ_TEST": 3,
+    "0x601:WRITE_MOV": 3,
+    "0xBC8:READ_OR_ADDRESS": 130,
+    "0xBC8:READ_TEST": 4,
+    "0xBC8:WRITE_MOV": 41,
+    "0xCF8:READ_OR_ADDRESS": 108,
+    "0xCF8:READ_TEST": 1,
+    "0xCF8:WRITE_MOV": 58
+  }
+}

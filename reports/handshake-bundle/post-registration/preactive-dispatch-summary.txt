@@ -1,0 +1,32 @@
+Initialization Unmarshal targets: 15
+Transition anchors: 5
+Sections scanned: .rdata, .data
+Pointer references found: 15
+8-byte aligned references: 15
+Unaligned references: 0
+
+REFERENCE CENSUS:
+0x1407C8A70 refs=1 UNMARSHAL 0xA4 ClientAddEntryMsg
+0x1407CC8F0 refs=1 UNMARSHAL 0x14F TimeSynchMsg
+0x1407CD040 refs=1 UNMARSHAL 0x3 RegistrationResponseMsg
+0x1407CDA70 refs=1 UNMARSHAL 0x15D PingMsg
+0x1414E3930 refs=1 UNMARSHAL 0x651 Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg
+0x1414FD530 refs=1 UNMARSHAL 0x65C Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg
+0x1415009E0 refs=1 UNMARSHAL 0x663 Javelin::ClientMessagesTrait::LevelInfoChangedMsg
+0x141549930 refs=1 UNMARSHAL 0x18A6 Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing
+0x142CD62D0 refs=1 UNMARSHAL 0x1B88 Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems
+0x142FFBC50 refs=0 TRANSITION_ANCHOR  ReplicaProxyCandidateWriter
+0x143197FE0 refs=1 UNMARSHAL 0xCA4 Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications
+0x14327C880 refs=1 UNMARSHAL 0x136A Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg
+0x1435EF1C0 refs=1 UNMARSHAL 0x16A0 Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories
+0x145A87010 refs=0 TRANSITION_ANCHOR  SelfIdentificationStateWriter
+0x146446800 refs=0 TRANSITION_ANCHOR  LevelInfoChangedCandidateHandler
+0x146454C00 refs=0 TRANSITION_ANCHOR  SelfIdentificationHandler
+0x14645C660 refs=0 TRANSITION_ANCHOR  AlternateLevelInfoCandidate
+0x14646BF10 refs=1 UNMARSHAL 0x40A CoatlicueClientMessages::CalendarConnectedMsg
+0x14646C070 refs=1 UNMARSHAL 0x1BE CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg
+0x14646C2B0 refs=1 UNMARSHAL 0x8 Amazon::Hub::ReplicatedStateBundle
+
+Neighborhoods containing multiple tracked targets: 2
+0x1485023A0 tracked_targets=2 0x14646BF10,0x14646C070
+0x1485023D0 tracked_targets=2 0x14646BF10,0x14646C070

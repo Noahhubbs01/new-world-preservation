@@ -1,0 +1,36 @@
+Family-B provider candidates: 15
+Direct calls found: 92
+Unique direct-call targets: 6
+
+PER-PROVIDER CALL CENSUS:
+0x3 provider=0x1407F2E80 size=574 direct=7 unique=6 indirect=0 RegistrationResponseMsg
+0x8 provider=0x146437070 size=504 direct=6 unique=6 indirect=0 Amazon::Hub::ReplicatedStateBundle
+0xA4 provider=0x1407EBEC0 size=558 direct=7 unique=6 indirect=0 ClientAddEntryMsg
+0x14F provider=0x1407F6A30 size=536 direct=6 unique=6 indirect=0 TimeSynchMsg
+0x15D provider=0x1407F0940 size=536 direct=6 unique=6 indirect=0 PingMsg
+0x1BE provider=0x146436870 size=504 direct=6 unique=6 indirect=0 CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg
+0x40A provider=0x146436470 size=504 direct=6 unique=6 indirect=0 CoatlicueClientMessages::CalendarConnectedMsg
+0x651 provider=0x1416F3320 size=504 direct=6 unique=6 indirect=0 Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg
+0x65C provider=0x1416EBD20 size=504 direct=6 unique=6 indirect=0 Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg
+0x663 provider=0x1416DF320 size=504 direct=6 unique=6 indirect=0 Javelin::ClientMessagesTrait::LevelInfoChangedMsg
+0xCA4 provider=0x1431C09A0 size=504 direct=6 unique=6 indirect=0 Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications
+0x136A provider=0x1432ADAD0 size=504 direct=6 unique=6 indirect=0 Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg
+0x16A0 provider=0x143615EC0 size=504 direct=6 unique=6 indirect=0 Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories
+0x18A6 provider=0x1416D4720 size=504 direct=6 unique=6 indirect=0 Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing
+0x1B88 provider=0x142D050D0 size=504 direct=6 unique=6 indirect=0 Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems
+
+SHARED DIRECT-CALL TARGETS:
+0x1407DE270 coverage=15/15 (100.00%) calls=15 types=0x3,0x8,0xA4,0x14F,0x15D,0x1BE,0x40A,0x651,0x65C,0x663,0xCA4,0x136A,0x16A0,0x18A6,0x1B88
+0x147AA652C coverage=15/15 (100.00%) calls=15 types=0x3,0x8,0xA4,0x14F,0x15D,0x1BE,0x40A,0x651,0x65C,0x663,0xCA4,0x136A,0x16A0,0x18A6,0x1B88
+0x147AA6598 coverage=15/15 (100.00%) calls=15 types=0x3,0x8,0xA4,0x14F,0x15D,0x1BE,0x40A,0x651,0x65C,0x663,0xCA4,0x136A,0x16A0,0x18A6,0x1B88
+0x147AA6610 coverage=15/15 (100.00%) calls=17 types=0x3,0x8,0xA4,0x14F,0x15D,0x1BE,0x40A,0x651,0x65C,0x663,0xCA4,0x136A,0x16A0,0x18A6,0x1B88
+0x147AA664C coverage=15/15 (100.00%) calls=15 types=0x3,0x8,0xA4,0x14F,0x15D,0x1BE,0x40A,0x651,0x65C,0x663,0xCA4,0x136A,0x16A0,0x18A6,0x1B88
+0x147AA687C coverage=15/15 (100.00%) calls=15 types=0x3,0x8,0xA4,0x14F,0x15D,0x1BE,0x40A,0x651,0x65C,0x663,0xCA4,0x136A,0x16A0,0x18A6,0x1B88
+
+HIGH-COVERAGE TARGETS (>= 80%):
+0x1407DE270 coverage=15/15 (100.00%) calls=15
+0x147AA652C coverage=15/15 (100.00%) calls=15
+0x147AA6598 coverage=15/15 (100.00%) calls=15
+0x147AA6610 coverage=15/15 (100.00%) calls=17
+0x147AA664C coverage=15/15 (100.00%) calls=15
+0x147AA687C coverage=15/15 (100.00%) calls=15

@@ -1,0 +1,34 @@
+Pre-active helper tables: 15
+CreateInstance rows analyzed: 15
+Types with direct +0x60 access: 0
+Types without direct +0x60 access: 15
+Total +0x60 access sites: 0
+Normalized CreateInstance patterns: 11
+
+Pattern populations:
+  pattern 1: 2 type(s)
+    RegistrationResponseMsg
+    Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing
+  pattern 2: 2 type(s)
+    TimeSynchMsg
+    PingMsg
+  pattern 3: 2 type(s)
+    CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg
+    CoatlicueClientMessages::CalendarConnectedMsg
+  pattern 4: 2 type(s)
+    Javelin::ClientMessagesTrait::LevelInfoChangedMsg
+    Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications
+  pattern 5: 1 type(s)
+    Amazon::Hub::ReplicatedStateBundle
+  pattern 6: 1 type(s)
+    ClientAddEntryMsg
+  pattern 7: 1 type(s)
+    Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg
+  pattern 8: 1 type(s)
+    Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg
+  pattern 9: 1 type(s)
+    Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg
+  pattern 10: 1 type(s)
+    Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories
+  pattern 11: 1 type(s)
+    Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems

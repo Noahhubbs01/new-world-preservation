@@ -1,0 +1,188 @@
+{
+  "rare_write_sites": 130,
+  "rare_writer_functions": 87,
+  "functions_extracted": 87,
+  "callgraph_rows": 8998,
+  "top_ranked": [
+    {
+      "function": "0x146B6F190",
+      "score": 165,
+      "offsets": "0x601",
+      "write_sites": 1,
+      "callers": 1,
+      "callees": 42,
+      "reasons": "IS_REP_WRITER|CALLED_BY_REP_INPUT|REP_FIELD"
+    },
+    {
+      "function": "0x145A905D0",
+      "score": 60,
+      "offsets": "0xBC8",
+      "write_sites": 1,
+      "callers": 1,
+      "callees": 18,
+      "reasons": "CALLED_BY_GCW_DRIVER|C_TO_D_DIRECT"
+    },
+    {
+      "function": "0x1418CAA90",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 1,
+      "callees": 7626,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x1419A853F",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 0,
+      "callees": 71,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x141A8E27F",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 0,
+      "callees": 9,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x143236C90",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 1,
+      "callees": 45,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x14323BE00",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 2,
+      "callees": 3,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x1433D9380",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 2,
+      "callees": 6,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x143A8DD00",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 2,
+      "callees": 12,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x143AA8060",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 1,
+      "callees": 40,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x144594BD0",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 3,
+      "callers": 0,
+      "callees": 73,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x1445BD7B0",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 0,
+      "callees": 56,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x14616C670",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 0,
+      "callees": 20,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x147683723",
+      "score": 45,
+      "offsets": "0xBC8,0xCF8",
+      "write_sites": 2,
+      "callers": 0,
+      "callees": 28,
+      "reasons": "C_TO_D_DIRECT|C_TO_D_ADJUSTED|MULTI_TARGET"
+    },
+    {
+      "function": "0x1441D6940",
+      "score": 25,
+      "offsets": "0x601",
+      "write_sites": 1,
+      "callers": 2,
+      "callees": 11,
+      "reasons": "REP_FIELD"
+    },
+    {
+      "function": "0x1441D6DF0",
+      "score": 25,
+      "offsets": "0x601",
+      "write_sites": 1,
+      "callers": 1,
+      "callees": 18,
+      "reasons": "REP_FIELD"
+    },
+    {
+      "function": "0x1402D5B50",
+      "score": 20,
+      "offsets": "0xBC8",
+      "write_sites": 1,
+      "callers": 1,
+      "callees": 3,
+      "reasons": "C_TO_D_DIRECT"
+    },
+    {
+      "function": "0x140F4C5A0",
+      "score": 20,
+      "offsets": "0x252",
+      "write_sites": 1,
+      "callers": 1,
+      "callees": 19,
+      "reasons": "D_TO_E_DIRECT"
+    },
+    {
+      "function": "0x140F953B0",
+      "score": 20,
+      "offsets": "0xBC8",
+      "write_sites": 1,
+      "callers": 1,
+      "callees": 3,
+      "reasons": "C_TO_D_DIRECT"
+    },
+    {
+      "function": "0x140FAC5A0",
+      "score": 20,
+      "offsets": "0xBC8",
+      "write_sites": 1,
+      "callers": 1,
+      "callees": 3,
+      "reasons": "C_TO_D_DIRECT"
+    }
+  ]
+}

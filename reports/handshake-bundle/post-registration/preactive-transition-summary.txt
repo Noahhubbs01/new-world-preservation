@@ -1,0 +1,11 @@
+Pre-active inbound unique types: 15
+Boundary sequence: 0x39
+Boundary class: Javelin::ClientMessages::TimeComponentServerFacet_SyncToClient
+Forward search depth: 8
+Reverse search depth: 8
+Types reaching a transition target forward: 0
+Types reachable from a transition target in reverse search: 0
+
+FORWARD HITS:
+
+REVERSE HITS:

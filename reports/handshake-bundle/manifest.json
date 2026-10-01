@@ -1,0 +1,230 @@
+{
+  "generated_utc": "2026-10-01T18:46:32.268937+00:00",
+  "root": "/srv/projects/new-world-forensics",
+  "anchors": {
+    "receive_pump": "0x146a9fe30",
+    "coordinator": "0x146abae10",
+    "receive_materializer": "0x146aecdf0",
+    "deserialize_wrapper": "0x146aba5d0",
+    "outer_materializer": "0x146b085d0",
+    "typed_materializer": "0x1461ac8d0",
+    "typed_object_core": "0x1417b2430",
+    "identity_wrapper": "0x1461ad130",
+    "identity_decoder": "0x1461acfe0",
+    "prefix_decoder": "0x14087b5c0",
+    "registry_accessor": "0x146162150",
+    "gcw_driver": "0x14644a070",
+    "rep_input": "0x146b6eb70",
+    "rep_writer": "0x146b6f190",
+    "rep_gate": "0x146b6df30",
+    "rep_callback_dispatch": "0x146b714b0",
+    "rep_callback_thunk": "0x146b71590",
+    "rep_parser": "0x146ae44f0",
+    "rep_parser_forward": "0x146af1d90",
+    "rep_stream_attach": "0x146b713e0",
+    "rep_stream_callback": "0x146b714d0",
+    "rep_stream_bridge": "0x146b6ba90",
+    "rep_provider_ctor": "0x146b6a270",
+    "gridmate_ctor": "0x146b34780",
+    "gridmate_factory": "0x146b393d0",
+    "bc_predicate": "0x145a92370",
+    "cd_predicate": "0x145a905c0",
+    "de_predicate": "0x145a923c0",
+    "de_global_provider": "0x141026080",
+    "selfident_handler": "0x146454c00",
+    "levelinfo_handler": "0x146446800"
+  },
+  "preactive_types": [
+    "0x3",
+    "0x15d",
+    "0x40a",
+    "0x1be",
+    "0x65c",
+    "0x651",
+    "0xa4",
+    "0xca4",
+    "0x14f",
+    "0x18a6",
+    "0x1b88",
+    "0x663",
+    "0x8",
+    "0x136a",
+    "0x16a0"
+  ],
+  "files": {
+    "external/community/first-light/info/nw-login-safe-20260502-153840/README.md": {
+      "size": 938,
+      "sha256": "ede8fcbb3bcd51975451fd85527e91ac46d2dc7dc58f1a2493d29c60e002900a"
+    },
+    "external/community/first-light/info/nw-login-safe-20260502-153840/capture-index.tsv": {
+      "size": 7195,
+      "sha256": "9d7fc9934223923c4e3bdc9930174a4fbfc1e3a458ec2019ba211d29743ce368"
+    },
+    "external/community/first-light/info/nw-login-safe-20260502-153840/handoff-notes.md": {
+      "size": 3030,
+      "sha256": "a92cd903dbf35f83cb0b816629ec227133fbb6aebcf9b0f57a61d238c3411cad"
+    },
+    "external/community/first-light/info/nw-login-safe-20260502-153840/messages-redacted.txt": {
+      "size": 6823240,
+      "sha256": "8ce2e5164985f4288ea0c4f83002d1bfd8dcecaa1bb091033900cd6f8ffc7e2e"
+    },
+    "external/community/first-light/info/nw-login-safe-20260502-153840/redaction-report.txt": {
+      "size": 228,
+      "sha256": "9df2cdffa7134466058c22d1cc781a429eeafb756ed7acecf69463d1bec10c56"
+    },
+    "external/community/first-light/info/nw-login-safe-20260502-153840/state-bundles-0x80-0xb0.txt": {
+      "size": 27648,
+      "sha256": "b973caedb084cd00689c0d090f4068293fc0837f261f2e97e3653adc11980fe7"
+    },
+    "reports/post-registration/successful-login-sequence.tsv": {
+      "size": 29477,
+      "sha256": "03e1bbed53e69db4e373287a6ce1e164a63060735a66e4ed10609092532eae7e"
+    },
+    "reports/post-registration/successful-login-types.tsv": {
+      "size": 6451,
+      "sha256": "5a8f586095c43e18ace764c74f15be2d5840428f0621d047b47921e20ce124c6"
+    },
+    "reports/post-registration/successful-login-sequence-summary.txt": {
+      "size": 428,
+      "sha256": "cba287601b62432e49e26edab031c4aee95f4601f185f9da8cc11a93c0252f85"
+    },
+    "reports/post-registration/preactive-provider-code-target-callees.tsv": {
+      "size": 71,
+      "sha256": "29cf77d93a1f7d03783980d3f533e2add4279086c00000631fcbafb169673327"
+    },
+    "reports/post-registration/preactive-provider-operand-census.tsv": {
+      "size": 3372,
+      "sha256": "d1defaad8ec679db00b98be91033d7b06ac7d724bc87c30dca9c162858676a54"
+    },
+    "reports/post-registration/preactive-transition-graph.tsv": {
+      "size": 2587,
+      "sha256": "02ee3926fb99d2928e40f26614ab573171be92a1e1a3e0d22df742ead08fc765"
+    },
+    "reports/post-registration/preactive-createinstance-fields.tsv": {
+      "size": 2130,
+      "sha256": "46a06e60d302c3bd5352ec511ccb31d5b0bb8f9e1f13a8f91cf1e18a2a396e54"
+    },
+    "reports/post-registration/preactive-uuid-correlation.tsv": {
+      "size": 6618,
+      "sha256": "6b71b15859bd539c805bf7955e314fcaca819b6bf16349e06498634e1b7d4ebb"
+    },
+    "reports/post-registration/preactive-provider-operands.tsv": {
+      "size": 32779,
+      "sha256": "0c950db176ba1f118ea373a2ff2c38dbfb78f5a17772c031364c22ba8b9c094e"
+    },
+    "reports/post-registration/preactive-helper-tables.tsv": {
+      "size": 2846,
+      "sha256": "48e68f726bec265c498b6640c15d40dd0f2fe35c40543ebb6d054bd00c07da9d"
+    },
+    "reports/post-registration/preactive-provider-operand-classes.tsv": {
+      "size": 7995,
+      "sha256": "ad36cfaa342ec5a524b332d2e32e8846106c5892cc6859d393990b662d19eab9"
+    },
+    "reports/post-registration/preactive-provider-code-targets.tsv": {
+      "size": 1885,
+      "sha256": "40df1de94def60d77290deb5f81ad103e36f31c636bc76fc702c772fb5425c58"
+    },
+    "reports/post-registration/preactive-provider-leaf-stubs.tsv": {
+      "size": 5030,
+      "sha256": "20a7d721d7ac422538d2e742270a44156304f00ac067dcb8862b5fb3bd40bd2b"
+    },
+    "reports/post-registration/preactive-helper-consumers.tsv": {
+      "size": 5054,
+      "sha256": "71db0a5d1e28c96e257f708846c0910886891850c2d99ddfb39c2af8a0a066b7"
+    },
+    "reports/post-registration/preactive-dispatch-neighborhoods.tsv": {
+      "size": 54355,
+      "sha256": "462592e82f5c407e7d72c6d3c350675bc5059b58dd6c74617d99503f440a7979"
+    },
+    "reports/post-registration/preactive-provider-call-targets.tsv": {
+      "size": 737,
+      "sha256": "5d7fe7849363733a7c724e89456d039c5cb87c5f0d268056889e8f8ad2bec82e"
+    },
+    "reports/post-registration/preactive-provider-b1.tsv": {
+      "size": 7494,
+      "sha256": "98ff30f5d12fdf2bc86a716457e3a25e5fff0522f34d777461de1bdd17ec264a"
+    },
+    "reports/post-registration/preactive-provider-accessors.tsv": {
+      "size": 32320,
+      "sha256": "214fcd701009f10d132871750b5debf5c4c90a17fd98cad6b8159276aa8ad046"
+    },
+    "reports/post-registration/preactive-helper-consumer-functions.tsv": {
+      "size": 6455,
+      "sha256": "b5a7f003ecf104cf0076a93ee6a2c10a3d49e446c112b8221335f73b1d3ae734"
+    },
+    "reports/post-registration/preactive-provider-calls.tsv": {
+      "size": 9589,
+      "sha256": "93b2e30177fadf759dd7e5c123477a6db89d699e5c12f27d439a755cc66bbffb"
+    },
+    "reports/post-registration/preactive-dispatch-pointer-refs.tsv": {
+      "size": 2722,
+      "sha256": "9a21f7302af06dea8111bf93679c439207ab0c10a7373eb2707816b71656a4c1"
+    },
+    "reports/post-registration/preactive-helper-consumer-functions-summary.txt": {
+      "size": 3312,
+      "sha256": "fcfb0e76121b3f987738436de8510299535c90b3eba7db9b834987190232eb2e"
+    },
+    "reports/post-registration/preactive-provider-accessors-summary.txt": {
+      "size": 2854,
+      "sha256": "de8b7b7d6f6ab711cf56d1778723dc91d2c10efa90228965b2bac0c3df30c5e9"
+    },
+    "reports/post-registration/preactive-helper-consumers-summary.txt": {
+      "size": 2634,
+      "sha256": "c89ee630ad4620932415bcc766f5a1653fde880db45ba3ca41eaf97cec551f0f"
+    },
+    "reports/post-registration/preactive-provider-leaf-stubs-summary.txt": {
+      "size": 3575,
+      "sha256": "f0b2ca137c984444be54addcdf4e6c82af8f8d910e7f8c70bdffa0cbe0e5c3bd"
+    },
+    "reports/post-registration/preactive-provider-calls-summary.txt": {
+      "size": 3062,
+      "sha256": "77d6be02da2a5f51add780c12be61db5ab9b9399916a7ed31326d6b7d42ef2eb"
+    },
+    "reports/post-registration/preactive-provider-operands-summary.txt": {
+      "size": 3897,
+      "sha256": "16fda7192ae0e1b8b545a87f613641a7ec4d7764d97e40f7f62dcd459a9b677d"
+    },
+    "reports/post-registration/preactive-createinstance-fields-summary.txt": {
+      "size": 1329,
+      "sha256": "b9273cb919734b138639b4063353c771a22149daf675658eac8446b80979c726"
+    },
+    "reports/post-registration/preactive-transition-summary.txt": {
+      "size": 325,
+      "sha256": "3a699e7dd792e202fe4eb499cf0137f04797b0117c35e3ae6a92cfa74302fad3"
+    },
+    "reports/post-registration/preactive-provider-code-targets-summary.txt": {
+      "size": 2287,
+      "sha256": "7d0526141212ed3b16c9d390ecc43431614f7feded22d3d1061406cbe4385bac"
+    },
+    "reports/post-registration/preactive-provider-operand-classes-summary.txt": {
+      "size": 1981,
+      "sha256": "bf2679850035b06795fdbfbd0fbe13eda654ca53f4bfbcbcffc1b02b88334686"
+    },
+    "reports/post-registration/preactive-dispatch-summary.txt": {
+      "size": 2005,
+      "sha256": "5e6c6036f139a2f5a2b0288e91d8375feff977b24849c7feeb6b4fc37bf77b6f"
+    },
+    "reports/post-registration/preactive-provider-b1-summary.txt": {
+      "size": 5790,
+      "sha256": "40714a84813647066d187ad3168100ed359d3f64cf81084d6fdf55feb197ad96"
+    }
+  },
+  "database": {
+    "tables": [
+      "calls",
+      "functions",
+      "rip_refs",
+      "structural_instructions"
+    ],
+    "path": "reports/type-registry-verification/newworld-re.sqlite",
+    "size": 755036160
+  },
+  "counts": {
+    "anchors": 31,
+    "callgraph_rows": 5515,
+    "rip_reference_rows": 0,
+    "structural_instruction_rows": 780,
+    "unresolved_items": 9,
+    "copied_post_registration_files": 33
+  }
+}

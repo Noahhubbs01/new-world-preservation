@@ -1,0 +1,13 @@
+id	stage	status	missing	evidence
+RAW-01	ALL	OPEN	Original successful-login .bin messages	raw-bin-search.tsv
+REP-A01	A->B	OPEN	Exact REP unit entering 0x146B6EB70	A_TO_B_INPUT disassembly + capture
+REP-A02	A->B	OPEN	Minimum fields required by 0x146B6F190	A_TO_B_WRITER disassembly
+REP-A03	A->B	OPEN	REP frame/prefix semantics	existing parser evidence + capture
+GCW-B01	B->C	OPEN	Exact predicate structure and causal writer	B_TO_C forced disassembly
+GCW-C01	C->D	OPEN	Exact predicate structure and causal writer	C_TO_D forced disassembly
+GCW-D01	D->E	OPEN	Exact predicate structure and causal writer	D_TO_E forced disassembly
+PLAYER-01	D->E	OPEN	0x141026080 singleton identity/initializer	PLAYER_PROVIDER disassembly
+SB-INIT	SPAWN	OPEN	Minimum mandatory StateBundle init subset	0x25..0x6c capture evidence
+SB-MASTER	SPAWN	OPEN	interest=91 local-player ownership record	0x80..0xae StateBundle evidence
+SB-FRAG	SPAWN	OPEN	Meaning/schema of ownership-critical fragments	statebundle fragment IDs + executable/catalog
+WIRE-01	ALL	CONDITIONAL	compact reflected-ID dictionary	required only if reconstruction needs compact IDs

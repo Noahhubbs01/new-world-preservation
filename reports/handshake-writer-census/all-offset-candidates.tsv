@@ -1,0 +1,2 @@
+gate	offset	required	object_family	instruction_address	function	kind	instruction	successful_type	successful_class
+B_TO_C	0xA0	2	GameConnection+0x130 object	0x147B5FCF9	0x147B5FB10	READ_OR_ADDRESS	"147b5fcf9:	4c 8d 0d a0 00 00 00 	lea    r9,[rip+0xa0]        # 0x147b5fda0"		

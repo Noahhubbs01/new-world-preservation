@@ -1,0 +1,53 @@
+Runtime functions: 423579
+Helper reference sites: 30
+Mapped to runtime functions: 30/30
+Initialization types: 15
+
+PER-TYPE CONSUMER FUNCTIONS:
+0x3 RegistrationResponseMsg
+  ref1 site=0x1407CD20A func=0x1407CD200..0x1407CD23E size=62 offset=0xA
+  ref2 site=0x1407F304C func=0x1407F2E80..0x1407F30BE size=574 offset=0x1CC
+0x8 Amazon::Hub::ReplicatedStateBundle
+  ref1 site=0x14641D82A func=0x14641D820..0x14641D85E size=62 offset=0xA
+  ref2 site=0x1464371F6 func=0x146437070..0x146437268 size=504 offset=0x186
+0xA4 ClientAddEntryMsg
+  ref1 site=0x1407C8BBA func=0x1407C8BB0..0x1407C8BEE size=62 offset=0xA
+  ref2 site=0x1407EC07C func=0x1407EBEC0..0x1407EC0EE size=558 offset=0x1BC
+0x14F TimeSynchMsg
+  ref1 site=0x1407CC99A func=0x1407CC990..0x1407CC9CE size=62 offset=0xA
+  ref2 site=0x1407F6BD6 func=0x1407F6A30..0x1407F6C48 size=536 offset=0x1A6
+0x15D PingMsg
+  ref1 site=0x1407CDBDA func=0x1407CDBD0..0x1407CDC0E size=62 offset=0xA
+  ref2 site=0x1407F0AE6 func=0x1407F0940..0x1407F0B58 size=536 offset=0x1A6
+0x1BE CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg
+  ref1 site=0x14641D76A func=0x14641D760..0x14641D79E size=62 offset=0xA
+  ref2 site=0x1464369F6 func=0x146436870..0x146436A68 size=504 offset=0x186
+0x40A CoatlicueClientMessages::CalendarConnectedMsg
+  ref1 site=0x14641D6EA func=0x14641D6E0..0x14641D71E size=62 offset=0xA
+  ref2 site=0x1464365F6 func=0x146436470..0x146436668 size=504 offset=0x186
+0x651 Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg
+  ref1 site=0x1414E3E9A func=0x1414E3E90..0x1414E3ECE size=62 offset=0xA
+  ref2 site=0x1416F34A6 func=0x1416F3320..0x1416F3518 size=504 offset=0x186
+0x65C Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg
+  ref1 site=0x1414FD7FA func=0x1414FD7F0..0x1414FD82E size=62 offset=0xA
+  ref2 site=0x1416EBEA6 func=0x1416EBD20..0x1416EBF18 size=504 offset=0x186
+0x663 Javelin::ClientMessagesTrait::LevelInfoChangedMsg
+  ref1 site=0x141500D8A func=0x141500D80..0x141500DBE size=62 offset=0xA
+  ref2 site=0x1416DF4A6 func=0x1416DF320..0x1416DF518 size=504 offset=0x186
+0xCA4 Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications
+  ref1 site=0x14319815A func=0x143198150..0x14319818E size=62 offset=0xA
+  ref2 site=0x1431C0B26 func=0x1431C09A0..0x1431C0B98 size=504 offset=0x186
+0x136A Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg
+  ref1 site=0x14327C9CA func=0x14327C9C0..0x14327C9FE size=62 offset=0xA
+  ref2 site=0x1432ADC56 func=0x1432ADAD0..0x1432ADCC8 size=504 offset=0x186
+0x16A0 Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories
+  ref1 site=0x1435EF2EA func=0x1435EF2E0..0x1435EF31E size=62 offset=0xA
+  ref2 site=0x143616046 func=0x143615EC0..0x1436160B8 size=504 offset=0x186
+0x18A6 Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing
+  ref1 site=0x141549D6A func=0x141549D60..0x141549D9E size=62 offset=0xA
+  ref2 site=0x1416D48A6 func=0x1416D4720..0x1416D4918 size=504 offset=0x186
+0x1B88 Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems
+  ref1 site=0x142CD641A func=0x142CD6410..0x142CD644E size=62 offset=0xA
+  ref2 site=0x142D05256 func=0x142D050D0..0x142D052C8 size=504 offset=0x186
+
+Containing functions shared across multiple types: 0
