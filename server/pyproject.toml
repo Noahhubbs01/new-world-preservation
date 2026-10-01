@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "newworld-preservation-server"
+version = "0.1.0"
+description = "Clean-room New World preservation server"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+newworld-server = "newworld_server.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["newworld_server*"]
+exclude = ["tests*", "config*", "runtime*", "logs*", "secrets*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1253,3 +1253,43 @@ Next milestone is implementation/capture correlation:
 6. reduce each successful stage to its minimum deterministic transcript.
 
 Every new reverse-engineering experiment must close one of the finite blockers above.
+
+## Checkpoint — 2026-10-01 — Preservation server foundation
+
+### VERIFIED
+
+A clean-room preservation server project now exists under `server/`.
+
+Initial architecture includes:
+- `newworld_server.transport`
+- `newworld_server.protocol`
+- `newworld_server.login`
+- `newworld_server.world`
+- `newworld_server.diagnostics`
+- configuration and runtime separation
+- pytest test harness
+- setuptools editable packaging
+- CLI entrypoint `newworld-server`
+
+Validation:
+- editable installation succeeds
+- `newworld_server` imports from the repository source tree
+- CLI entrypoint boots successfully
+- initial test suite passes
+
+Current implementation contains no New World protocol behavior yet.
+
+### Immediate implementation milestone
+
+Implement the minimum deterministic login path incrementally:
+
+1. Registration accepted
+2. REP connection / GCW A→B
+3. SelfIdentification / GCW B→C
+4. LevelInfoChanged / GCW C→D
+5. StateBundle/local-player initialization / GCW D→E
+6. InGame
+
+Community implementations remain forensic references and are not source dependencies.
+
+Static GCW archaeology remains frozen. New reverse engineering must close a named implementation blocker.

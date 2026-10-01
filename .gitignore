@@ -36,3 +36,16 @@ __pycache__/
 # Generated community research corpus/index
 /reports/community-index/
 /reports/type-registry-verification/newworld-re.sqlite
+
+# Generated bulk handshake evidence
+/reports/final-handshake-sweep/messages-redacted.txt
+/reports/handshake-field-writers/writer-callgraph.tsv
+
+# Preservation server runtime state
+/server/.venv/
+/server/runtime/
+/server/logs/
+/server/secrets/
+*.pem
+*.key
+.env

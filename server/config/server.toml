@@ -1,0 +1,7 @@
+[server]
+bind_address = "127.0.0.1"
+log_level = "DEBUG"
+
+[development]
+capture_packets = true
+strict_protocol = true
