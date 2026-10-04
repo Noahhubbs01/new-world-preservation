@@ -11,3 +11,12 @@ CONTAINER_GROUPS = ((Field('Container', None),Field('Item Class', None),Field('B
 
 # Social constructor143ED7110: three public fields, eight private fields.
 SOCIAL_GROUPS=((Field('playerTitleId',4),Field('pronounType',1),Field('chattingStateMessageType',None)),tuple(Field(n,None) for n in ('warData','dailyWarAsAttackerCount','dailyWarAsDefenderCount','lastDailyResetTime','friends','friendInvites','socialBlocks','mostRecentJoinCharacterCall')))
+
+PLAYER_PROGRESSION_GROUPS=((Field('level',4),Field('bonusLevel',4)),(Field('experiencePoints',4),Field('restedExp',4)))
+FACTION_GROUPS=((),tuple(Field(n,None) for n in ('pvpFlagPending','notifyPending','pvpFlagPendingEndTime','lastFactionChangeTimepoint','factionChangeCount','ffaPendingEndTime','ffaAntiGroupingIsCursing')),(Field('faction',1),Field('pvpFlag',1,True),Field('hasSanctuary',1,True),Field('ffaFlag',1,True),Field('ffaAntiGroupingCurseStacks',1)),tuple(Field(n,None) for n in ('timeAtFlagStart','m_pvpValue','isAccumulatingPvpValue')))
+
+DAMAGE_RECEIVER_GROUPS=((Field('isBlockActive',1,True),Field('blockWeaponSlotAlias',4),Field('debugCritChance',4)),)
+
+MOUNT_GROUPS=((),tuple(Field(n,None) for n in ('m_isMounted','m_summonCooldownEndTime','m_isServerForcingWalk','m_isInServerExclusionVolume','m_summonAuthorization','m_persistentMountData','staminaCur','staminaMax','staminaRegenDelay','staminaRegenRate','staminaDrainRate','multMaxStamina','multStaminaRegenRate')),(Field('m_mountId',4),),(Field('mountRemoteFlags',1),Field('remoteDyeData',4)))
+
+INTERACTOR_GROUPS=((Field('m_cachedCommittedInteractGDEID',8),),(Field('m_enabled',1,True),))

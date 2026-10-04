@@ -1,0 +1,62 @@
+[
+  {
+    "seq": "0x8c",
+    "steps": [
+      {
+        "name": "faction",
+        "start": 347,
+        "end": 353,
+        "fields": [
+          "faction",
+          "pvpFlag",
+          "hasSanctuary",
+          "ffaFlag"
+        ],
+        "next_field": 70,
+        "next_type": 899,
+        "header_end": 356
+      },
+      {
+        "name": "player_progression",
+        "start": 356,
+        "end": 362,
+        "fields": [
+          "level"
+        ],
+        "next_field": 14,
+        "next_type": 1528,
+        "header_end": 365
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "steps": [
+      {
+        "name": "faction",
+        "start": 347,
+        "end": 353,
+        "fields": [
+          "faction",
+          "pvpFlag",
+          "hasSanctuary",
+          "ffaFlag"
+        ],
+        "next_field": 70,
+        "next_type": 899,
+        "header_end": 356
+      },
+      {
+        "name": "player_progression",
+        "start": 356,
+        "end": 362,
+        "fields": [
+          "level"
+        ],
+        "next_field": 14,
+        "next_type": 1528,
+        "header_end": 365
+      }
+    ]
+  }
+]

@@ -2,11 +2,17 @@ import struct,json,sqlite3,subprocess,re
 from pathlib import Path
 f=open('client/Bin64/NewWorld.exe','rb');f.seek(0x3c);pe=struct.unpack('<I',f.read(4))[0];f.seek(pe+6);n=struct.unpack('<H',f.read(2))[0];f.seek(pe+20);op=struct.unpack('<H',f.read(2))[0];f.seek(pe+24+op);sections=[]
 for _ in range(n):
- h=f.read(40);vs,va,sz,off=struct.unpack_from('<IIII',h,8);sections.append((va,max(vs,sz),off))
+ h=f.read(40);vs,va,sz,off=struct.unpack_from('<IIII',h,8);sections.append((va,max(vs,sz),off,sz))
 def read(va,size):
  rva=va-0x140000000
- for start,length,off in sections:
-  if start<=rva<start+length:f.seek(off+rva-start);return f.read(size)
+ for start,length,off,raw_size in sections:
+  if start<=rva<start+length:
+   delta=rva-start
+   if delta+size>length:raise ValueError('read crosses PE section')
+   available=max(0,min(size,raw_size-delta))
+   f.seek(off+delta);data=f.read(available)
+   if len(data)!=available:raise ValueError('truncated PE section')
+   return data+b'\0'*(size-available)
  raise ValueError('unmapped VA')
 c=sqlite3.connect('file:reports/type-registry-verification/newworld-re.sqlite?mode=ro',uri=True);rows=json.loads(Path('reports/handshake-sprint-2/fragment-vptr-candidates.json').read_text());out=[]
 for r in rows:

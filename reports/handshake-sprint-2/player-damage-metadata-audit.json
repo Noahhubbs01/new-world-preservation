@@ -1,0 +1,60 @@
+[
+  {
+    "seq": "0x8c",
+    "steps": [
+      {
+        "name": "damage_receiver",
+        "start": 365,
+        "end": 372,
+        "fields": [
+          "isBlockActive",
+          "blockWeaponSlotAlias"
+        ],
+        "next_field": 0,
+        "next_type": 10,
+        "header_end": 374
+      },
+      {
+        "name": "metadata",
+        "start": 374,
+        "end": 412,
+        "fields": [
+          "AssetId",
+          "GdeRef"
+        ],
+        "next_field": 24,
+        "next_type": 3312,
+        "header_end": 415
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "steps": [
+      {
+        "name": "damage_receiver",
+        "start": 365,
+        "end": 372,
+        "fields": [
+          "isBlockActive",
+          "blockWeaponSlotAlias"
+        ],
+        "next_field": 0,
+        "next_type": 10,
+        "header_end": 374
+      },
+      {
+        "name": "metadata",
+        "start": 374,
+        "end": 412,
+        "fields": [
+          "AssetId",
+          "GdeRef"
+        ],
+        "next_field": 24,
+        "next_type": 3312,
+        "header_end": 415
+      }
+    ]
+  }
+]

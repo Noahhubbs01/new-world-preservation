@@ -1,0 +1,540 @@
+{
+  "counts": {
+    "0": 54,
+    "1": 9
+  },
+  "fields": [
+    {
+      "group": 0,
+      "index": 0,
+      "name": "idRel",
+      "field_object_offset": 2008,
+      "instruction": "142a366b7:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff310"
+    },
+    {
+      "group": 0,
+      "index": 1,
+      "name": "timeOffsetRel",
+      "field_object_offset": 2136,
+      "instruction": "142a366e8:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff310"
+    },
+    {
+      "group": 0,
+      "index": 2,
+      "name": "slayerSeqTimeRel",
+      "field_object_offset": 3248,
+      "instruction": "142a36713:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff6a8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 3,
+      "name": "slayerSeqTimeAbs",
+      "field_object_offset": 3208,
+      "instruction": "142a3673e:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff558",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 4,
+      "name": "slayerSeqTimeRel",
+      "field_object_offset": 3336,
+      "instruction": "142a36761:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff6a8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 5,
+      "name": "slayerSeqTimeAbs",
+      "field_object_offset": 3296,
+      "instruction": "142a36781:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff558",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 6,
+      "name": "slayerSeqTimeRel",
+      "field_object_offset": 3424,
+      "instruction": "142a367a4:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff6a8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 7,
+      "name": "slayerSeqTimeAbs",
+      "field_object_offset": 3384,
+      "instruction": "142a367c7:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff558",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 8,
+      "name": "slayerSeqTimeRel",
+      "field_object_offset": 3512,
+      "instruction": "142a367ea:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff6a8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 9,
+      "name": "slayerSeqTimeAbs",
+      "field_object_offset": 3472,
+      "instruction": "142a3680d:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff558",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 10,
+      "name": "worldPosRel",
+      "field_object_offset": 2320,
+      "instruction": "142a3683f:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff0f0"
+    },
+    {
+      "group": 0,
+      "index": 11,
+      "name": "rotation",
+      "field_object_offset": 2480,
+      "instruction": "142a3686d:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff4e8"
+    },
+    {
+      "group": 0,
+      "index": 12,
+      "name": "lookDir",
+      "field_object_offset": 2400,
+      "instruction": "142a3689b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff478"
+    },
+    {
+      "group": 0,
+      "index": 13,
+      "name": "slayerStateId",
+      "field_object_offset": 2752,
+      "instruction": "142a368c9:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 14,
+      "name": "slayerStateIdStarted",
+      "field_object_offset": 2912,
+      "instruction": "142a368f7:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff638",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 15,
+      "name": "slayerSequenceId",
+      "field_object_offset": 3040,
+      "instruction": "142a36925:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 16,
+      "name": "slayerStateId",
+      "field_object_offset": 2792,
+      "instruction": "142a3694d:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 17,
+      "name": "slayerStateIdStarted",
+      "field_object_offset": 2944,
+      "instruction": "142a36971:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff638",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 18,
+      "name": "slayerSequenceId",
+      "field_object_offset": 3080,
+      "instruction": "142a36991:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 19,
+      "name": "slayerStateId",
+      "field_object_offset": 2832,
+      "instruction": "142a369b5:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 20,
+      "name": "slayerStateIdStarted",
+      "field_object_offset": 2976,
+      "instruction": "142a369d9:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff638",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 21,
+      "name": "slayerSequenceId",
+      "field_object_offset": 3120,
+      "instruction": "142a369f9:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 22,
+      "name": "slayerStateId",
+      "field_object_offset": 2872,
+      "instruction": "142a36a1d:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 23,
+      "name": "slayerStateIdStarted",
+      "field_object_offset": 3008,
+      "instruction": "142a36a41:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff638",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 24,
+      "name": "slayerSequenceId",
+      "field_object_offset": 3160,
+      "instruction": "142a36a65:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff5c8",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 25,
+      "name": "idAbs",
+      "field_object_offset": 1976,
+      "instruction": "142a36a97:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff2a0"
+    },
+    {
+      "group": 0,
+      "index": 26,
+      "name": "timeOffsetAbs",
+      "field_object_offset": 2104,
+      "instruction": "142a36ac5:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff2a0"
+    },
+    {
+      "group": 0,
+      "index": 27,
+      "name": "worldPosAbs",
+      "field_object_offset": 2240,
+      "instruction": "142a36af3:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff408"
+    },
+    {
+      "group": 0,
+      "index": 28,
+      "name": "scopeTimeBlob0Data0",
+      "field_object_offset": 4288,
+      "instruction": "142a36b21:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 29,
+      "name": "scopeTimeBlobEx",
+      "field_object_offset": 4552,
+      "instruction": "142a36b48:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff820"
+    },
+    {
+      "group": 0,
+      "index": 30,
+      "name": "scopeTimeBlob1Data0",
+      "field_object_offset": 4424,
+      "instruction": "142a36b74:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 31,
+      "name": "teleportAndMigrationId",
+      "field_object_offset": 3640,
+      "instruction": "142a36ba0:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 32,
+      "name": "scopeData",
+      "field_object_offset": 3800,
+      "instruction": "142a36bc5:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff5c8"
+    },
+    {
+      "group": 0,
+      "index": 33,
+      "name": "scopeInfoBlob",
+      "field_object_offset": 3872,
+      "instruction": "142a36bea:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff7a0"
+    },
+    {
+      "group": 0,
+      "index": 34,
+      "name": "globalFragTags",
+      "field_object_offset": 3552,
+      "instruction": "142a36c16:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff730"
+    },
+    {
+      "group": 1,
+      "index": 0,
+      "name": "distGround",
+      "field_object_offset": 5384,
+      "instruction": "142a36c3b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 1,
+      "index": 1,
+      "name": "waterDepth",
+      "field_object_offset": 5416,
+      "instruction": "142a36c60:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 35,
+      "name": "aiAngleToDesiredFacing",
+      "field_object_offset": 2560,
+      "instruction": "142a36c8c:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff160"
+    },
+    {
+      "group": 0,
+      "index": 36,
+      "name": "wpnaccrystance",
+      "field_object_offset": 2600,
+      "instruction": "142a36cb8:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff558"
+    },
+    {
+      "group": 0,
+      "index": 37,
+      "name": "wpnaccrymvmnt",
+      "field_object_offset": 2640,
+      "instruction": "142a36ce4:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff558"
+    },
+    {
+      "group": 0,
+      "index": 38,
+      "name": "scopeTimeBlob0Data1",
+      "field_object_offset": 4320,
+      "instruction": "142a36d10:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 39,
+      "name": "scopeTimeBlob1Data1",
+      "field_object_offset": 4456,
+      "instruction": "142a36d3c:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 40,
+      "name": "timeAnchor",
+      "field_object_offset": 2040,
+      "instruction": "142a36d68:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff398"
+    },
+    {
+      "group": 0,
+      "index": 41,
+      "name": "dataBits",
+      "field_object_offset": 2168,
+      "instruction": "142a36d94:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 42,
+      "name": "moreDataBits",
+      "field_object_offset": 2200,
+      "instruction": "142a36dc0:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 43,
+      "name": "combinedExtraNetworkData",
+      "field_object_offset": 5200,
+      "instruction": "142a36de5:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 44,
+      "name": "segmentedStamina",
+      "field_object_offset": 3840,
+      "instruction": "142a36e11:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 1,
+      "index": 2,
+      "name": "scopelessInfoBlob",
+      "field_object_offset": 4672,
+      "instruction": "142a36e3a:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff7a0"
+    },
+    {
+      "group": 1,
+      "index": 3,
+      "name": "scopelessTimeBlob",
+      "field_object_offset": 5080,
+      "instruction": "142a36e5f:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff820"
+    },
+    {
+      "group": 1,
+      "index": 4,
+      "name": "hitCharacterCounter",
+      "field_object_offset": 3672,
+      "instruction": "142a36e8b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 1,
+      "index": 5,
+      "name": "hitStructureCounter",
+      "field_object_offset": 3704,
+      "instruction": "142a36eb7:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 1,
+      "index": 6,
+      "name": "hitWorldCounter",
+      "field_object_offset": 3736,
+      "instruction": "142a36ee3:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 45,
+      "name": "gritBrokenCounter",
+      "field_object_offset": 3768,
+      "instruction": "142a36f0f:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 46,
+      "name": "shapeCastFilter",
+      "field_object_offset": 5232,
+      "instruction": "142a36f3b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff5c8"
+    },
+    {
+      "group": 0,
+      "index": 47,
+      "name": "slayerScriptLayers",
+      "field_object_offset": 2680,
+      "instruction": "142a36f67:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980"
+    },
+    {
+      "group": 0,
+      "index": 48,
+      "name": "slayerScriptFlags",
+      "field_object_offset": 2712,
+      "instruction": "142a36f93:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff5c8"
+    },
+    {
+      "group": 1,
+      "index": 7,
+      "name": "forbiddenBounds",
+      "field_object_offset": 5272,
+      "instruction": "142a36fb8:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480ff890"
+    },
+    {
+      "group": 1,
+      "index": 8,
+      "name": "currentGridAccessibility",
+      "field_object_offset": 5352,
+      "instruction": "142a36fdd:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480f46a0"
+    },
+    {
+      "group": 0,
+      "index": 49,
+      "name": "scopeTimeBlob0Data2",
+      "field_object_offset": 4352,
+      "instruction": "142a37009:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 50,
+      "name": "scopeTimeBlob0Data3",
+      "field_object_offset": 4384,
+      "instruction": "142a37035:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 51,
+      "name": "scopeTimeBlob1Data2",
+      "field_object_offset": 4488,
+      "instruction": "142a37061:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 52,
+      "name": "scopeTimeBlob1Data3",
+      "field_object_offset": 4520,
+      "instruction": "142a3708d:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480b9980",
+      "resolution": "native array constructor"
+    },
+    {
+      "group": 0,
+      "index": 53,
+      "name": "quantization",
+      "field_object_offset": 2360,
+      "instruction": "142a370b9:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "field_vtable": "0x1480ff160"
+    }
+  ]
+}

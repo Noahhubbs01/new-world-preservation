@@ -1,0 +1,40 @@
+[
+  {
+    "seq": "0x8c",
+    "end_player_record": 728,
+    "message_length": 728,
+    "remaining_bytes": 0,
+    "collections": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "boundary_status": "native schema and capture corroborated; whole record roundtrip pending codecs"
+  },
+  {
+    "seq": "0xae",
+    "end_player_record": 728,
+    "message_length": 991,
+    "remaining_bytes": 263,
+    "collections": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "boundary_status": "native schema and capture corroborated; whole record roundtrip pending codecs"
+  }
+]

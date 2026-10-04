@@ -1,0 +1,46 @@
+[
+  {
+    "seq": "0x8c",
+    "start": 622,
+    "end": 672,
+    "fields": [
+      "health",
+      "stamina",
+      "vitalsData",
+      "healthFlags",
+      "healthMax",
+      "healthTickRate",
+      "staminaMax",
+      "staminaTickRate",
+      "vitalsId",
+      "invulnerable",
+      "immune",
+      "maxHealth"
+    ],
+    "next_field": 12,
+    "next_type": 1195,
+    "header_end": 675
+  },
+  {
+    "seq": "0xae",
+    "start": 622,
+    "end": 672,
+    "fields": [
+      "health",
+      "stamina",
+      "vitalsData",
+      "healthFlags",
+      "healthMax",
+      "healthTickRate",
+      "staminaMax",
+      "staminaTickRate",
+      "vitalsId",
+      "invulnerable",
+      "immune",
+      "maxHealth"
+    ],
+    "next_field": 12,
+    "next_type": 1195,
+    "header_end": 675
+  }
+]

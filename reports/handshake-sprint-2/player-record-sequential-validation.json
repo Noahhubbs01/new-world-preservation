@@ -1,0 +1,368 @@
+[
+  {
+    "seq": "0x8c",
+    "interest": 91,
+    "fragment_count": 19,
+    "end": 728,
+    "message_length": 728,
+    "remaining": 0,
+    "fragments": [
+      {
+        "number": 1,
+        "field": 9,
+        "type": 3935,
+        "start": 18,
+        "end": 71,
+        "redacted_bytes": 16,
+        "original_byte_roundtrip": false
+      },
+      {
+        "number": 2,
+        "field": 44,
+        "type": 4236,
+        "start": 74,
+        "end": 182,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 3,
+        "field": 55,
+        "type": 4176,
+        "start": 185,
+        "end": 192,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 4,
+        "field": 56,
+        "type": 3147,
+        "start": 195,
+        "end": 215,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 5,
+        "field": 71,
+        "type": 4878,
+        "start": 218,
+        "end": 228,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 6,
+        "field": 13,
+        "type": 603,
+        "start": 231,
+        "end": 234,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 7,
+        "field": 16,
+        "type": 11,
+        "start": 236,
+        "end": 344,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 8,
+        "field": 49,
+        "type": 3152,
+        "start": 347,
+        "end": 353,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 9,
+        "field": 70,
+        "type": 899,
+        "start": 356,
+        "end": 362,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 10,
+        "field": 14,
+        "type": 1528,
+        "start": 365,
+        "end": 372,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 11,
+        "field": 0,
+        "type": 10,
+        "start": 374,
+        "end": 412,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 12,
+        "field": 24,
+        "type": 3312,
+        "start": 415,
+        "end": 433,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 13,
+        "field": 39,
+        "type": 5620,
+        "start": 436,
+        "end": 448,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 14,
+        "field": 62,
+        "type": 3183,
+        "start": 451,
+        "end": 607,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 15,
+        "field": 26,
+        "type": 3752,
+        "start": 610,
+        "end": 620,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 16,
+        "field": 41,
+        "type": 15,
+        "start": 622,
+        "end": 672,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 17,
+        "field": 12,
+        "type": 1195,
+        "start": 675,
+        "end": 700,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 18,
+        "field": 43,
+        "type": 1525,
+        "start": 703,
+        "end": 715,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 19,
+        "field": 29,
+        "type": 6234,
+        "start": 718,
+        "end": 728,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      }
+    ],
+    "evidence": "native readers VERIFIED; captured type-index ordering COMMUNITY-CORROBORATED",
+    "visual_data_mode": "true branch corroborated by all subsequent boundaries; native runtime selector unresolved"
+  },
+  {
+    "seq": "0xae",
+    "interest": 91,
+    "fragment_count": 19,
+    "end": 728,
+    "message_length": 991,
+    "remaining": 263,
+    "fragments": [
+      {
+        "number": 1,
+        "field": 9,
+        "type": 3935,
+        "start": 18,
+        "end": 71,
+        "redacted_bytes": 16,
+        "original_byte_roundtrip": false
+      },
+      {
+        "number": 2,
+        "field": 44,
+        "type": 4236,
+        "start": 74,
+        "end": 182,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 3,
+        "field": 55,
+        "type": 4176,
+        "start": 185,
+        "end": 192,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 4,
+        "field": 56,
+        "type": 3147,
+        "start": 195,
+        "end": 215,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 5,
+        "field": 71,
+        "type": 4878,
+        "start": 218,
+        "end": 228,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 6,
+        "field": 13,
+        "type": 603,
+        "start": 231,
+        "end": 234,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 7,
+        "field": 16,
+        "type": 11,
+        "start": 236,
+        "end": 344,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 8,
+        "field": 49,
+        "type": 3152,
+        "start": 347,
+        "end": 353,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 9,
+        "field": 70,
+        "type": 899,
+        "start": 356,
+        "end": 362,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 10,
+        "field": 14,
+        "type": 1528,
+        "start": 365,
+        "end": 372,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 11,
+        "field": 0,
+        "type": 10,
+        "start": 374,
+        "end": 412,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 12,
+        "field": 24,
+        "type": 3312,
+        "start": 415,
+        "end": 433,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 13,
+        "field": 39,
+        "type": 5620,
+        "start": 436,
+        "end": 448,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 14,
+        "field": 62,
+        "type": 3183,
+        "start": 451,
+        "end": 607,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 15,
+        "field": 26,
+        "type": 3752,
+        "start": 610,
+        "end": 620,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 16,
+        "field": 41,
+        "type": 15,
+        "start": 622,
+        "end": 672,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 17,
+        "field": 12,
+        "type": 1195,
+        "start": 675,
+        "end": 700,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 18,
+        "field": 43,
+        "type": 1525,
+        "start": 703,
+        "end": 715,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      },
+      {
+        "number": 19,
+        "field": 29,
+        "type": 6234,
+        "start": 718,
+        "end": 728,
+        "redacted_bytes": 0,
+        "original_byte_roundtrip": true
+      }
+    ],
+    "evidence": "native readers VERIFIED; captured type-index ordering COMMUNITY-CORROBORATED",
+    "visual_data_mode": "true branch corroborated by all subsequent boundaries; native runtime selector unresolved"
+  }
+]

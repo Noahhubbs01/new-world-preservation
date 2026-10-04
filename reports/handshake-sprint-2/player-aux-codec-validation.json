@@ -1,0 +1,166 @@
+[
+  {
+    "seq": "0x8c",
+    "variant": "audio",
+    "start": 231,
+    "end": 234,
+    "length": 3,
+    "field_names": [
+      "scriptListForJoints"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "variant": "game_mode",
+    "start": 415,
+    "end": 433,
+    "length": 18,
+    "field_names": [
+      "queueEligibleTimesForGameModes"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "variant": "paperdoll",
+    "start": 451,
+    "end": 607,
+    "length": 156,
+    "field_names": [
+      "sheatheMap",
+      "itemSlotsAttachmentStatus",
+      "activeMap",
+      "visiblePaperdollSlots",
+      "visibleItemVisualData"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "variant": "vitals",
+    "start": 622,
+    "end": 672,
+    "length": 50,
+    "field_names": [
+      "HealthAmount",
+      "StaminaAmount",
+      "vitalsData",
+      "healthChangeFlags",
+      "HealthMax",
+      "HealthTickRate",
+      "StaminaMax",
+      "StaminaTickRate",
+      "vitalsId",
+      "invulnerability",
+      "displayImmune",
+      "maxHealth"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "variant": "stat_multiplier",
+    "start": 703,
+    "end": 715,
+    "length": 12,
+    "field_names": [
+      "remoteMultiplierTable"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "variant": "instanced_script",
+    "start": 718,
+    "end": 728,
+    "length": 10,
+    "field_names": [
+      "spawnedEntityIdsBySpawnerId",
+      "syncedTimers"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "variant": "audio",
+    "start": 231,
+    "end": 234,
+    "length": 3,
+    "field_names": [
+      "scriptListForJoints"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "variant": "game_mode",
+    "start": 415,
+    "end": 433,
+    "length": 18,
+    "field_names": [
+      "queueEligibleTimesForGameModes"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "variant": "paperdoll",
+    "start": 451,
+    "end": 607,
+    "length": 156,
+    "field_names": [
+      "sheatheMap",
+      "itemSlotsAttachmentStatus",
+      "activeMap",
+      "visiblePaperdollSlots",
+      "visibleItemVisualData"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "variant": "vitals",
+    "start": 622,
+    "end": 672,
+    "length": 50,
+    "field_names": [
+      "HealthAmount",
+      "StaminaAmount",
+      "vitalsData",
+      "healthChangeFlags",
+      "HealthMax",
+      "HealthTickRate",
+      "StaminaMax",
+      "StaminaTickRate",
+      "vitalsId",
+      "invulnerability",
+      "displayImmune",
+      "maxHealth"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "variant": "stat_multiplier",
+    "start": 703,
+    "end": 715,
+    "length": 12,
+    "field_names": [
+      "remoteMultiplierTable"
+    ],
+    "exact_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "variant": "instanced_script",
+    "start": 718,
+    "end": 728,
+    "length": 10,
+    "field_names": [
+      "spawnedEntityIdsBySpawnerId",
+      "syncedTimers"
+    ],
+    "exact_roundtrip": true
+  }
+]

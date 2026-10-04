@@ -1,0 +1,668 @@
+[
+  {
+    "seq": "0x8c",
+    "fields": [
+      {
+        "index": 0,
+        "name": "idRel",
+        "start": 245,
+        "end": 246,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 1,
+        "name": "timeOffsetRel",
+        "start": 246,
+        "end": 247,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 2,
+        "name": "slayerSeqTimeRel",
+        "start": 247,
+        "end": 248,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 3,
+        "name": "slayerSeqTimeAbs",
+        "start": 248,
+        "end": 250,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 4,
+        "name": "slayerSeqTimeRel",
+        "start": 250,
+        "end": 251,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 5,
+        "name": "slayerSeqTimeAbs",
+        "start": 251,
+        "end": 253,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 6,
+        "name": "slayerSeqTimeRel",
+        "start": 253,
+        "end": 254,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 7,
+        "name": "slayerSeqTimeAbs",
+        "start": 254,
+        "end": 256,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 8,
+        "name": "slayerSeqTimeRel",
+        "start": 256,
+        "end": 257,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 9,
+        "name": "slayerSeqTimeAbs",
+        "start": 257,
+        "end": 259,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 10,
+        "name": "worldPosRel",
+        "start": 259,
+        "end": 262,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 11,
+        "name": "rotation",
+        "start": 262,
+        "end": 264,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 12,
+        "name": "lookDir",
+        "start": 264,
+        "end": 267,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 13,
+        "name": "slayerStateId",
+        "start": 267,
+        "end": 268,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 14,
+        "name": "slayerStateIdStarted",
+        "start": 268,
+        "end": 270,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 15,
+        "name": "slayerSequenceId",
+        "start": 270,
+        "end": 272,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 16,
+        "name": "slayerStateId",
+        "start": 272,
+        "end": 273,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 17,
+        "name": "slayerStateIdStarted",
+        "start": 273,
+        "end": 275,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 18,
+        "name": "slayerSequenceId",
+        "start": 275,
+        "end": 276,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 19,
+        "name": "slayerStateId",
+        "start": 276,
+        "end": 277,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 20,
+        "name": "slayerStateIdStarted",
+        "start": 277,
+        "end": 279,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 21,
+        "name": "slayerSequenceId",
+        "start": 279,
+        "end": 280,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 22,
+        "name": "slayerStateId",
+        "start": 280,
+        "end": 281,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 23,
+        "name": "slayerStateIdStarted",
+        "start": 281,
+        "end": 283,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 24,
+        "name": "slayerSequenceId",
+        "start": 283,
+        "end": 284,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 25,
+        "name": "idAbs",
+        "start": 284,
+        "end": 285,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 26,
+        "name": "timeOffsetAbs",
+        "start": 285,
+        "end": 286,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 27,
+        "name": "worldPosAbs",
+        "start": 286,
+        "end": 296,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 29,
+        "name": "scopeTimeBlobEx",
+        "start": 296,
+        "end": 297,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 31,
+        "name": "teleportAndMigrationId",
+        "start": 297,
+        "end": 298,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 32,
+        "name": "scopeData",
+        "start": 298,
+        "end": 299,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 33,
+        "name": "scopeInfoBlob",
+        "start": 299,
+        "end": 300,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 34,
+        "name": "globalFragTags",
+        "start": 300,
+        "end": 312,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 35,
+        "name": "aiAngleToDesiredFacing",
+        "start": 312,
+        "end": 316,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 36,
+        "name": "wpnaccrystance",
+        "start": 316,
+        "end": 318,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 37,
+        "name": "wpnaccrymvmnt",
+        "start": 318,
+        "end": 320,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 40,
+        "name": "timeAnchor",
+        "start": 320,
+        "end": 328,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 41,
+        "name": "dataBits",
+        "start": 328,
+        "end": 329,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 42,
+        "name": "moreDataBits",
+        "start": 329,
+        "end": 330,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 43,
+        "name": "combinedExtraNetworkData",
+        "start": 330,
+        "end": 331,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 44,
+        "name": "segmentedStamina",
+        "start": 331,
+        "end": 332,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 45,
+        "name": "gritBrokenCounter",
+        "start": 332,
+        "end": 333,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 46,
+        "name": "shapeCastFilter",
+        "start": 333,
+        "end": 338,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 47,
+        "name": "slayerScriptLayers",
+        "start": 338,
+        "end": 339,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 48,
+        "name": "slayerScriptFlags",
+        "start": 339,
+        "end": 340,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 53,
+        "name": "quantization",
+        "start": 340,
+        "end": 344,
+        "redacted_bytes": 0
+      },
+      {
+        "body_end": 344,
+        "next_field": 49,
+        "next_type": 3152,
+        "header_end": 347
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "fields": [
+      {
+        "index": 0,
+        "name": "idRel",
+        "start": 245,
+        "end": 246,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 1,
+        "name": "timeOffsetRel",
+        "start": 246,
+        "end": 247,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 2,
+        "name": "slayerSeqTimeRel",
+        "start": 247,
+        "end": 248,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 3,
+        "name": "slayerSeqTimeAbs",
+        "start": 248,
+        "end": 250,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 4,
+        "name": "slayerSeqTimeRel",
+        "start": 250,
+        "end": 251,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 5,
+        "name": "slayerSeqTimeAbs",
+        "start": 251,
+        "end": 253,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 6,
+        "name": "slayerSeqTimeRel",
+        "start": 253,
+        "end": 254,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 7,
+        "name": "slayerSeqTimeAbs",
+        "start": 254,
+        "end": 256,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 8,
+        "name": "slayerSeqTimeRel",
+        "start": 256,
+        "end": 257,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 9,
+        "name": "slayerSeqTimeAbs",
+        "start": 257,
+        "end": 259,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 10,
+        "name": "worldPosRel",
+        "start": 259,
+        "end": 262,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 11,
+        "name": "rotation",
+        "start": 262,
+        "end": 264,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 12,
+        "name": "lookDir",
+        "start": 264,
+        "end": 267,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 13,
+        "name": "slayerStateId",
+        "start": 267,
+        "end": 268,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 14,
+        "name": "slayerStateIdStarted",
+        "start": 268,
+        "end": 270,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 15,
+        "name": "slayerSequenceId",
+        "start": 270,
+        "end": 272,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 16,
+        "name": "slayerStateId",
+        "start": 272,
+        "end": 273,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 17,
+        "name": "slayerStateIdStarted",
+        "start": 273,
+        "end": 275,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 18,
+        "name": "slayerSequenceId",
+        "start": 275,
+        "end": 276,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 19,
+        "name": "slayerStateId",
+        "start": 276,
+        "end": 277,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 20,
+        "name": "slayerStateIdStarted",
+        "start": 277,
+        "end": 279,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 21,
+        "name": "slayerSequenceId",
+        "start": 279,
+        "end": 280,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 22,
+        "name": "slayerStateId",
+        "start": 280,
+        "end": 281,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 23,
+        "name": "slayerStateIdStarted",
+        "start": 281,
+        "end": 283,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 24,
+        "name": "slayerSequenceId",
+        "start": 283,
+        "end": 284,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 25,
+        "name": "idAbs",
+        "start": 284,
+        "end": 285,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 26,
+        "name": "timeOffsetAbs",
+        "start": 285,
+        "end": 286,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 27,
+        "name": "worldPosAbs",
+        "start": 286,
+        "end": 296,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 29,
+        "name": "scopeTimeBlobEx",
+        "start": 296,
+        "end": 297,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 31,
+        "name": "teleportAndMigrationId",
+        "start": 297,
+        "end": 298,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 32,
+        "name": "scopeData",
+        "start": 298,
+        "end": 299,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 33,
+        "name": "scopeInfoBlob",
+        "start": 299,
+        "end": 300,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 34,
+        "name": "globalFragTags",
+        "start": 300,
+        "end": 312,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 35,
+        "name": "aiAngleToDesiredFacing",
+        "start": 312,
+        "end": 316,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 36,
+        "name": "wpnaccrystance",
+        "start": 316,
+        "end": 318,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 37,
+        "name": "wpnaccrymvmnt",
+        "start": 318,
+        "end": 320,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 40,
+        "name": "timeAnchor",
+        "start": 320,
+        "end": 328,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 41,
+        "name": "dataBits",
+        "start": 328,
+        "end": 329,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 42,
+        "name": "moreDataBits",
+        "start": 329,
+        "end": 330,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 43,
+        "name": "combinedExtraNetworkData",
+        "start": 330,
+        "end": 331,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 44,
+        "name": "segmentedStamina",
+        "start": 331,
+        "end": 332,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 45,
+        "name": "gritBrokenCounter",
+        "start": 332,
+        "end": 333,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 46,
+        "name": "shapeCastFilter",
+        "start": 333,
+        "end": 338,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 47,
+        "name": "slayerScriptLayers",
+        "start": 338,
+        "end": 339,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 48,
+        "name": "slayerScriptFlags",
+        "start": 339,
+        "end": 340,
+        "redacted_bytes": 0
+      },
+      {
+        "index": 53,
+        "name": "quantization",
+        "start": 340,
+        "end": 344,
+        "redacted_bytes": 0
+      },
+      {
+        "body_end": 344,
+        "next_field": 49,
+        "next_type": 3152,
+        "header_end": 347
+      }
+    ]
+  }
+]

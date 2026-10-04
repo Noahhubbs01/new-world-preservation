@@ -1,0 +1,28 @@
+[
+  {
+    "seq": "0x8c",
+    "start": 436,
+    "end": 448,
+    "fields": [
+      "m_mountId",
+      "mountRemoteFlags",
+      "remoteDyeData"
+    ],
+    "next_field": 62,
+    "next_type": 3183,
+    "header_end": 451
+  },
+  {
+    "seq": "0xae",
+    "start": 436,
+    "end": 448,
+    "fields": [
+      "m_mountId",
+      "mountRemoteFlags",
+      "remoteDyeData"
+    ],
+    "next_field": 62,
+    "next_type": 3183,
+    "header_end": 451
+  }
+]

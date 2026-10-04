@@ -1,0 +1,14 @@
+[
+  {
+    "seq": "0x8c",
+    "redacted_bytes": 0,
+    "exact_original_byte_roundtrip": true,
+    "selected_fields": 46
+  },
+  {
+    "seq": "0xae",
+    "redacted_bytes": 0,
+    "exact_original_byte_roundtrip": true,
+    "selected_fields": 46
+  }
+]

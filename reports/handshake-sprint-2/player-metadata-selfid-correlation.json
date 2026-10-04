@@ -1,0 +1,54 @@
+[
+  {
+    "seq": "0x8c",
+    "interest": 91,
+    "metadata_body_start": 374,
+    "candidate_layout": "BEu32 asset_subid + asset_uuid16 + gde_ref16",
+    "comparisons": [
+      {
+        "selfid_reference_index": 0,
+        "visible_pairs": 36,
+        "equal_pairs": 0,
+        "exact_match": false
+      },
+      {
+        "selfid_reference_index": 1,
+        "visible_pairs": 36,
+        "equal_pairs": 0,
+        "exact_match": false
+      },
+      {
+        "selfid_reference_index": 2,
+        "visible_pairs": 36,
+        "equal_pairs": 3,
+        "exact_match": false
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "interest": 91,
+    "metadata_body_start": 374,
+    "candidate_layout": "BEu32 asset_subid + asset_uuid16 + gde_ref16",
+    "comparisons": [
+      {
+        "selfid_reference_index": 0,
+        "visible_pairs": 36,
+        "equal_pairs": 0,
+        "exact_match": false
+      },
+      {
+        "selfid_reference_index": 1,
+        "visible_pairs": 36,
+        "equal_pairs": 0,
+        "exact_match": false
+      },
+      {
+        "selfid_reference_index": 2,
+        "visible_pairs": 36,
+        "equal_pairs": 3,
+        "exact_match": false
+      }
+    ]
+  }
+]

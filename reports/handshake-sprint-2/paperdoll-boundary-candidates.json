@@ -1,0 +1,282 @@
+[
+  {
+    "seq": "0x8c",
+    "runtime_extra_visual_data_enabled": false,
+    "steps": [
+      {
+        "field": "visiblePaperdollSlots",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "field": "visibleItemVisualData",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "visual_entry": 0,
+        "start": 514,
+        "end": 517,
+        "flags": 0
+      },
+      {
+        "visual_entry": 1,
+        "start": 517,
+        "end": 523,
+        "flags": 0
+      },
+      {
+        "visual_entry": 2,
+        "start": 523,
+        "end": 525,
+        "flags": 0
+      },
+      {
+        "visual_entry": 3,
+        "start": 525,
+        "end": 529,
+        "flags": 0
+      },
+      {
+        "visual_entry": 4,
+        "start": 529,
+        "end": 531,
+        "flags": 0
+      },
+      {
+        "visual_entry": 5,
+        "start": 531,
+        "end": 533,
+        "flags": 0
+      },
+      {
+        "visual_entry": 6,
+        "start": 533,
+        "end": 535,
+        "flags": 0
+      },
+      {
+        "visual_entry": 7,
+        "start": 535,
+        "end": 537,
+        "flags": 0
+      },
+      {
+        "body_end": 537,
+        "next_field": 21061,
+        "next_type": 0,
+        "header_end": 541
+      }
+    ]
+  },
+  {
+    "seq": "0x8c",
+    "runtime_extra_visual_data_enabled": true,
+    "steps": [
+      {
+        "field": "visiblePaperdollSlots",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "field": "visibleItemVisualData",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "visual_entry": 0,
+        "start": 514,
+        "end": 525,
+        "flags": 0
+      },
+      {
+        "visual_entry": 1,
+        "start": 525,
+        "end": 537,
+        "flags": 0
+      },
+      {
+        "visual_entry": 2,
+        "start": 537,
+        "end": 549,
+        "flags": 0
+      },
+      {
+        "visual_entry": 3,
+        "start": 549,
+        "end": 561,
+        "flags": 0
+      },
+      {
+        "visual_entry": 4,
+        "start": 561,
+        "end": 573,
+        "flags": 0
+      },
+      {
+        "visual_entry": 5,
+        "start": 573,
+        "end": 585,
+        "flags": 0
+      },
+      {
+        "visual_entry": 6,
+        "start": 585,
+        "end": 596,
+        "flags": 0
+      },
+      {
+        "visual_entry": 7,
+        "start": 596,
+        "end": 607,
+        "flags": 0
+      },
+      {
+        "body_end": 607,
+        "next_field": 26,
+        "next_type": 3752,
+        "header_end": 610
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "runtime_extra_visual_data_enabled": false,
+    "steps": [
+      {
+        "field": "visiblePaperdollSlots",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "field": "visibleItemVisualData",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "visual_entry": 0,
+        "start": 514,
+        "end": 517,
+        "flags": 0
+      },
+      {
+        "visual_entry": 1,
+        "start": 517,
+        "end": 523,
+        "flags": 0
+      },
+      {
+        "visual_entry": 2,
+        "start": 523,
+        "end": 525,
+        "flags": 0
+      },
+      {
+        "visual_entry": 3,
+        "start": 525,
+        "end": 529,
+        "flags": 0
+      },
+      {
+        "visual_entry": 4,
+        "start": 529,
+        "end": 531,
+        "flags": 0
+      },
+      {
+        "visual_entry": 5,
+        "start": 531,
+        "end": 533,
+        "flags": 0
+      },
+      {
+        "visual_entry": 6,
+        "start": 533,
+        "end": 535,
+        "flags": 0
+      },
+      {
+        "visual_entry": 7,
+        "start": 535,
+        "end": 537,
+        "flags": 0
+      },
+      {
+        "body_end": 537,
+        "next_field": 21061,
+        "next_type": 0,
+        "header_end": 541
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "runtime_extra_visual_data_enabled": true,
+    "steps": [
+      {
+        "field": "visiblePaperdollSlots",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "field": "visibleItemVisualData",
+        "delta_count": 0,
+        "count": 8
+      },
+      {
+        "visual_entry": 0,
+        "start": 514,
+        "end": 525,
+        "flags": 0
+      },
+      {
+        "visual_entry": 1,
+        "start": 525,
+        "end": 537,
+        "flags": 0
+      },
+      {
+        "visual_entry": 2,
+        "start": 537,
+        "end": 549,
+        "flags": 0
+      },
+      {
+        "visual_entry": 3,
+        "start": 549,
+        "end": 561,
+        "flags": 0
+      },
+      {
+        "visual_entry": 4,
+        "start": 561,
+        "end": 573,
+        "flags": 0
+      },
+      {
+        "visual_entry": 5,
+        "start": 573,
+        "end": 585,
+        "flags": 0
+      },
+      {
+        "visual_entry": 6,
+        "start": 585,
+        "end": 596,
+        "flags": 0
+      },
+      {
+        "visual_entry": 7,
+        "start": 596,
+        "end": 607,
+        "flags": 0
+      },
+      {
+        "body_end": 607,
+        "next_field": 26,
+        "next_type": 3752,
+        "header_end": 610
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "seq": "0x8c",
+    "start": 610,
+    "end": 620,
+    "fields": [
+      "m_cachedCommittedInteractGDEID"
+    ],
+    "next_field": 41,
+    "next_type": 15,
+    "header_end": 622
+  },
+  {
+    "seq": "0xae",
+    "start": 610,
+    "end": 620,
+    "fields": [
+      "m_cachedCommittedInteractGDEID"
+    ],
+    "next_field": 41,
+    "next_type": 15,
+    "header_end": 622
+  }
+]
