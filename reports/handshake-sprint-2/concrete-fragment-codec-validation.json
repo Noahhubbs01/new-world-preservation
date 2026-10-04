@@ -1,0 +1,26 @@
+{
+  "attribute": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
+  "reaction": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
+  "cooldown": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
+  "position": {
+    "unredacted_exact_roundtrips": 14,
+    "redacted_skipped": 0
+  },
+  "objective": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
+  "metadata": {
+    "unredacted_exact_roundtrips": 12,
+    "redacted_skipped": 0
+  }
+}

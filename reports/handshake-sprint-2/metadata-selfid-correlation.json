@@ -1,0 +1,326 @@
+[
+  {
+    "seq": "0x7c",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x7d",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x7e",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x7f",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x85",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x88",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x8b",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x8d",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x90",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x95",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0x96",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  },
+  {
+    "seq": "0xb0",
+    "candidate_shape": "asset sub-id BEu32 + asset UUID16 + GdeRef16",
+    "comparisons": [
+      {
+        "reference_index": 0,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 0,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 36
+      },
+      {
+        "reference_index": 1,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 1,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 35
+      },
+      {
+        "reference_index": 2,
+        "visible_byte_pairs": 36,
+        "equal_pairs": 3,
+        "complete_equality": false,
+        "conflicting_visible_pairs": 33
+      }
+    ]
+  }
+]

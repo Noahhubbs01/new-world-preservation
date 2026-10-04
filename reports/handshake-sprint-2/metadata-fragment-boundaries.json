@@ -1,0 +1,134 @@
+[
+  {
+    "seq": "0x7c",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x7d",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x7e",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x7f",
+    "body_start": 31,
+    "body_end": 69,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 2,
+    "next_type": 4896,
+    "next_class": "Javelin::MusicalPerformanceReplicatedState"
+  },
+  {
+    "seq": "0x85",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x88",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x8b",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x8d",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x90",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x95",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0x96",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 1,
+    "next_type": 3663,
+    "next_class": "Javelin::HouseDataReplicatedState"
+  },
+  {
+    "seq": "0xb0",
+    "body_start": 34,
+    "body_end": 72,
+    "consumed": 38,
+    "group_mask": 1,
+    "field_mask": 3,
+    "next_field": 71,
+    "next_type": 7,
+    "next_class": "FragmentUpdatesMsg"
+  }
+]

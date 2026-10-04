@@ -60,3 +60,7 @@ def decode_presence_body(data, groups, offset=0):
                 start+=7
                 if start>=len(g): raise ValueError('continuation exceeds known schema')
     return values,p-offset
+
+# Metadata constructor14161C070 appends only AssetId and GdeRef to group0.
+# ReplicationCategory is registered in the separate A0 special group.
+METADATA_GROUPS=((Field("AssetId",20),Field("GdeRef",16)),)

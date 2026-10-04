@@ -1,0 +1,405 @@
+{
+  "range": [
+    "0x146b60000",
+    "0x146b80000"
+  ],
+  "functions_examined": 307,
+  "hits": [
+    {
+      "function": "0x146b65880",
+      "end": "0x146b65b8b",
+      "instruction": "146b659f6:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+      "context": [
+        "   146b659e8:\t88 45 f6             \tmov    BYTE PTR [rbp-0xa],al",
+        "   146b659eb:\t4c 8d 05 be a0 a0 03 \tlea    r8,[rip+0x3a0a0be]        # 0x14a56fab0",
+        "   146b659f2:\t48 8d 55 e0          \tlea    rdx,[rbp-0x20]",
+        "   146b659f6:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+        "   146b659fd:\te8 2e 78 51 ff       \tcall   0x14607d230",
+        "   146b65a02:\t48 8d 05 97 a7 a2 01 \tlea    rax,[rip+0x1a2a797]        # 0x1485901a0",
+        "   146b65a09:\t48 89 87 98 05 00 00 \tmov    QWORD PTR [rdi+0x598],rax",
+        "   146b65a10:\tc7 87 c0 05 00 00 ff \tmov    DWORD PTR [rdi+0x5c0],0xffffffff",
+        "   146b65a17:\tff ff ff ",
+        "   146b65a1a:\t48 89 75 e0          \tmov    QWORD PTR [rbp-0x20],rsi",
+        "   146b65a1e:\tc7 45 e8 a9 ef 0b 1c \tmov    DWORD PTR [rbp-0x18],0x1c0befa9"
+      ]
+    },
+    {
+      "function": "0x146b65880",
+      "end": "0x146b65b8b",
+      "instruction": "146b65a09:\t48 89 87 98 05 00 00 \tmov    QWORD PTR [rdi+0x598],rax",
+      "context": [
+        "   146b659f6:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+        "   146b659fd:\te8 2e 78 51 ff       \tcall   0x14607d230",
+        "   146b65a02:\t48 8d 05 97 a7 a2 01 \tlea    rax,[rip+0x1a2a797]        # 0x1485901a0",
+        "   146b65a09:\t48 89 87 98 05 00 00 \tmov    QWORD PTR [rdi+0x598],rax",
+        "   146b65a10:\tc7 87 c0 05 00 00 ff \tmov    DWORD PTR [rdi+0x5c0],0xffffffff",
+        "   146b65a17:\tff ff ff ",
+        "   146b65a1a:\t48 89 75 e0          \tmov    QWORD PTR [rbp-0x20],rsi",
+        "   146b65a1e:\tc7 45 e8 a9 ef 0b 1c \tmov    DWORD PTR [rbp-0x18],0x1c0befa9",
+        "   146b65a25:\t33 c0                \txor    eax,eax",
+        "   146b65a27:\t48 89 45 ec          \tmov    QWORD PTR [rbp-0x14],rax",
+        "   146b65a2b:\t66 89 45 f4          \tmov    WORD PTR [rbp-0xc],ax"
+      ]
+    },
+    {
+      "function": "0x146b69ad0",
+      "end": "0x146b69e79",
+      "instruction": "146b69cbe:\t0f 11 83 98 05 00 00 \tmovups XMMWORD PTR [rbx+0x598],xmm0",
+      "context": [
+        "   146b69ca9:\t48 89 ab 78 05 00 00 \tmov    QWORD PTR [rbx+0x578],rbp",
+        "   146b69cb0:\tc6 83 80 05 00 00 00 \tmov    BYTE PTR [rbx+0x580],0x0",
+        "   146b69cb7:\tc6 83 90 05 00 00 00 \tmov    BYTE PTR [rbx+0x590],0x0",
+        "   146b69cbe:\t0f 11 83 98 05 00 00 \tmovups XMMWORD PTR [rbx+0x598],xmm0",
+        "   146b69cc5:\t48 89 ab a8 05 00 00 \tmov    QWORD PTR [rbx+0x5a8],rbp",
+        "   146b69ccc:\t48 c7 83 b0 05 00 00 \tmov    QWORD PTR [rbx+0x5b0],0xf",
+        "   146b69cd3:\t0f 00 00 00 ",
+        "   146b69cd7:\tc6 83 98 05 00 00 00 \tmov    BYTE PTR [rbx+0x598],0x0",
+        "   146b69cde:\tc6 83 b8 05 00 00 00 \tmov    BYTE PTR [rbx+0x5b8],0x0",
+        "   146b69ce5:\t48 8d 83 c0 05 00 00 \tlea    rax,[rbx+0x5c0]",
+        "   146b69cec:\t48 8d 0d 05 78 a2 01 \tlea    rcx,[rip+0x1a27805]        # 0x1485914f8"
+      ]
+    },
+    {
+      "function": "0x146b69ad0",
+      "end": "0x146b69e79",
+      "instruction": "146b69cd7:\tc6 83 98 05 00 00 00 \tmov    BYTE PTR [rbx+0x598],0x0",
+      "context": [
+        "   146b69cc5:\t48 89 ab a8 05 00 00 \tmov    QWORD PTR [rbx+0x5a8],rbp",
+        "   146b69ccc:\t48 c7 83 b0 05 00 00 \tmov    QWORD PTR [rbx+0x5b0],0xf",
+        "   146b69cd3:\t0f 00 00 00 ",
+        "   146b69cd7:\tc6 83 98 05 00 00 00 \tmov    BYTE PTR [rbx+0x598],0x0",
+        "   146b69cde:\tc6 83 b8 05 00 00 00 \tmov    BYTE PTR [rbx+0x5b8],0x0",
+        "   146b69ce5:\t48 8d 83 c0 05 00 00 \tlea    rax,[rbx+0x5c0]",
+        "   146b69cec:\t48 8d 0d 05 78 a2 01 \tlea    rcx,[rip+0x1a27805]        # 0x1485914f8",
+        "   146b69cf3:\t48 89 08             \tmov    QWORD PTR [rax],rcx",
+        "   146b69cf6:\t48 8d 0d 13 ac 72 f9 \tlea    rcx,[rip+0xfffffffff972ac13]        # 0x140294910",
+        "   146b69cfd:\t48 89 48 08          \tmov    QWORD PTR [rax+0x8],rcx",
+        "   146b69d01:\t48 89 40 38          \tmov    QWORD PTR [rax+0x38],rax"
+      ]
+    },
+    {
+      "function": "0x146b69ad0",
+      "end": "0x146b69e79",
+      "instruction": "146b69e06:\t66 c7 83 f0 06 00 00 \tmov    WORD PTR [rbx+0x6f0],0x1",
+      "context": [
+        "   146b69df8:\t48 89 6f 58          \tmov    QWORD PTR [rdi+0x58],rbp",
+        "   146b69dfc:\t48 89 2e             \tmov    QWORD PTR [rsi],rbp",
+        "   146b69dff:\t4c 89 b7 80 00 00 00 \tmov    QWORD PTR [rdi+0x80],r14",
+        "   146b69e06:\t66 c7 83 f0 06 00 00 \tmov    WORD PTR [rbx+0x6f0],0x1",
+        "   146b69e0d:\t01 00 ",
+        "   146b69e0f:\tc6 83 f2 06 00 00 00 \tmov    BYTE PTR [rbx+0x6f2],0x0",
+        "   146b69e16:\t48 8d 8b f8 06 00 00 \tlea    rcx,[rbx+0x6f8]",
+        "   146b69e1d:\tb2 01                \tmov    dl,0x1",
+        "   146b69e1f:\te8 fc 6d d0 f9       \tcall   0x140870c20",
+        "   146b69e24:\t48 89 ab 10 07 00 00 \tmov    QWORD PTR [rbx+0x710],rbp",
+        "   146b69e2b:\t48 89 ab 18 07 00 00 \tmov    QWORD PTR [rbx+0x718],rbp"
+      ]
+    },
+    {
+      "function": "0x146b69ad0",
+      "end": "0x146b69e79",
+      "instruction": "146b69e0f:\tc6 83 f2 06 00 00 00 \tmov    BYTE PTR [rbx+0x6f2],0x0",
+      "context": [
+        "   146b69dff:\t4c 89 b7 80 00 00 00 \tmov    QWORD PTR [rdi+0x80],r14",
+        "   146b69e06:\t66 c7 83 f0 06 00 00 \tmov    WORD PTR [rbx+0x6f0],0x1",
+        "   146b69e0d:\t01 00 ",
+        "   146b69e0f:\tc6 83 f2 06 00 00 00 \tmov    BYTE PTR [rbx+0x6f2],0x0",
+        "   146b69e16:\t48 8d 8b f8 06 00 00 \tlea    rcx,[rbx+0x6f8]",
+        "   146b69e1d:\tb2 01                \tmov    dl,0x1",
+        "   146b69e1f:\te8 fc 6d d0 f9       \tcall   0x140870c20",
+        "   146b69e24:\t48 89 ab 10 07 00 00 \tmov    QWORD PTR [rbx+0x710],rbp",
+        "   146b69e2b:\t48 89 ab 18 07 00 00 \tmov    QWORD PTR [rbx+0x718],rbp",
+        "   146b69e32:\t48 8d 83 20 07 00 00 \tlea    rax,[rbx+0x720]",
+        "   146b69e39:\t48 8d 0d e8 76 a2 01 \tlea    rcx,[rip+0x1a276e8]        # 0x148591528"
+      ]
+    },
+    {
+      "function": "0x146b69ad0",
+      "end": "0x146b69e79",
+      "instruction": "146b69e52:\tc6 83 68 07 00 00 00 \tmov    BYTE PTR [rbx+0x768],0x0",
+      "context": [
+        "   146b69e43:\t48 89 58 08          \tmov    QWORD PTR [rax+0x8],rbx",
+        "   146b69e47:\t48 89 40 38          \tmov    QWORD PTR [rax+0x38],rax",
+        "   146b69e4b:\t48 89 ab 60 07 00 00 \tmov    QWORD PTR [rbx+0x760],rbp",
+        "   146b69e52:\tc6 83 68 07 00 00 00 \tmov    BYTE PTR [rbx+0x768],0x0",
+        "   146b69e59:\te8 42 b9 5f ff       \tcall   0x1461657a0",
+        "   146b69e5e:\t90                   \tnop",
+        "   146b69e5f:\t48 8b c3             \tmov    rax,rbx",
+        "   146b69e62:\t48 8b 5c 24 60       \tmov    rbx,QWORD PTR [rsp+0x60]",
+        "   146b69e67:\t48 8b 6c 24 68       \tmov    rbp,QWORD PTR [rsp+0x68]",
+        "   146b69e6c:\t48 83 c4 20          \tadd    rsp,0x20",
+        "   146b69e70:\t41 5f                \tpop    r15"
+      ]
+    },
+    {
+      "function": "0x146b6b230",
+      "end": "0x146b6b611",
+      "instruction": "146b6b40f:\t48 8b 8f 98 05 00 00 \tmov    rcx,QWORD PTR [rdi+0x598]",
+      "context": [
+        "   146b6b402:\t48 8b 97 b0 05 00 00 \tmov    rdx,QWORD PTR [rdi+0x5b0]",
+        "   146b6b409:\t48 83 fa 0f          \tcmp    rdx,0xf",
+        "   146b6b40d:\t76 34                \tjbe    0x146b6b443",
+        "   146b6b40f:\t48 8b 8f 98 05 00 00 \tmov    rcx,QWORD PTR [rdi+0x598]",
+        "   146b6b416:\t48 ff c2             \tinc    rdx",
+        "   146b6b419:\t48 81 fa 00 10 00 00 \tcmp    rdx,0x1000",
+        "   146b6b420:\t72 1c                \tjb     0x146b6b43e",
+        "   146b6b422:\t48 83 c2 27          \tadd    rdx,0x27",
+        "   146b6b426:\t4c 8b 41 f8          \tmov    r8,QWORD PTR [rcx-0x8]",
+        "   146b6b42a:\t49 2b c8             \tsub    rcx,r8",
+        "   146b6b42d:\t48 8d 41 f8          \tlea    rax,[rcx-0x8]"
+      ]
+    },
+    {
+      "function": "0x146b6b230",
+      "end": "0x146b6b611",
+      "instruction": "146b6b455:\tc6 87 98 05 00 00 00 \tmov    BYTE PTR [rdi+0x598],0x0",
+      "context": [
+        "   146b6b443:\t4c 89 bf a8 05 00 00 \tmov    QWORD PTR [rdi+0x5a8],r15",
+        "   146b6b44a:\t48 c7 87 b0 05 00 00 \tmov    QWORD PTR [rdi+0x5b0],0xf",
+        "   146b6b451:\t0f 00 00 00 ",
+        "   146b6b455:\tc6 87 98 05 00 00 00 \tmov    BYTE PTR [rdi+0x598],0x0",
+        "   146b6b45c:\t48 8d 8f 10 05 00 00 \tlea    rcx,[rdi+0x510]",
+        "   146b6b463:\te8 a8 b3 c7 f9       \tcall   0x1407e6810",
+        "   146b6b468:\t48 8d 8f f0 03 00 00 \tlea    rcx,[rdi+0x3f0]",
+        "   146b6b46f:\te8 1c ab c7 f9       \tcall   0x1407e5f90",
+        "   146b6b474:\t48 8d 8f e8 01 00 00 \tlea    rcx,[rdi+0x1e8]",
+        "   146b6b47b:\te8 70 b4 c7 f9       \tcall   0x1407e68f0",
+        "   146b6b480:\t48 8b 97 e0 01 00 00 \tmov    rdx,QWORD PTR [rdi+0x1e0]"
+      ]
+    },
+    {
+      "function": "0x146b6cb40",
+      "end": "0x146b6cb61",
+      "instruction": "146b6cb49:\t48 8d 91 98 05 00 00 \tlea    rdx,[rcx+0x598]",
+      "context": [
+        "   146b6cb40:\t40 53                \trex push rbx",
+        "   146b6cb42:\t48 83 ec 30          \tsub    rsp,0x30",
+        "   146b6cb46:\t48 8b da             \tmov    rbx,rdx",
+        "   146b6cb49:\t48 8d 91 98 05 00 00 \tlea    rdx,[rcx+0x598]",
+        "   146b6cb50:\t48 8b cb             \tmov    rcx,rbx",
+        "   146b6cb53:\te8 b8 cd 74 f9       \tcall   0x1402b9910",
+        "   146b6cb58:\t48 8b c3             \tmov    rax,rbx",
+        "   146b6cb5b:\t48 83 c4 30          \tadd    rsp,0x30",
+        "   146b6cb5f:\t5b                   \tpop    rbx",
+        "   146b6cb60:\tc3                   \tret"
+      ]
+    },
+    {
+      "function": "0x146b6dd30",
+      "end": "0x146b6ddf4",
+      "instruction": "146b6dd3a:\t80 b9 f0 06 00 00 00 \tcmp    BYTE PTR [rcx+0x6f0],0x0",
+      "context": [
+        "   146b6dd30:\t48 89 5c 24 08       \tmov    QWORD PTR [rsp+0x8],rbx",
+        "   146b6dd35:\t57                   \tpush   rdi",
+        "   146b6dd36:\t48 83 ec 20          \tsub    rsp,0x20",
+        "   146b6dd3a:\t80 b9 f0 06 00 00 00 \tcmp    BYTE PTR [rcx+0x6f0],0x0",
+        "   146b6dd41:\t48 8b da             \tmov    rbx,rdx",
+        "   146b6dd44:\t48 8b f9             \tmov    rdi,rcx",
+        "   146b6dd47:\t0f 84 9a 00 00 00    \tje     0x146b6dde7",
+        "   146b6dd4d:\te8 2e a0 c8 f9       \tcall   0x1407f7d80",
+        "   146b6dd52:\t4c 8b 03             \tmov    r8,QWORD PTR [rbx]",
+        "   146b6dd55:\t4c 3b 00             \tcmp    r8,QWORD PTR [rax]",
+        "   146b6dd58:\t75 0e                \tjne    0x146b6dd68"
+      ]
+    },
+    {
+      "function": "0x146b6dee0",
+      "end": "0x146b6df06",
+      "instruction": "146b6dee4:\t80 b9 f1 06 00 00 00 \tcmp    BYTE PTR [rcx+0x6f1],0x0",
+      "context": [
+        "",
+        "0000000146b6dee0 <.text+0x6b6cee0>:",
+        "   146b6dee0:\t48 83 ec 28          \tsub    rsp,0x28",
+        "   146b6dee4:\t80 b9 f1 06 00 00 00 \tcmp    BYTE PTR [rcx+0x6f1],0x0",
+        "   146b6deeb:\t75 12                \tjne    0x146b6deff",
+        "   146b6deed:\t48 8b 01             \tmov    rax,QWORD PTR [rcx]",
+        "   146b6def0:\tff 90 c0 00 00 00    \tcall   QWORD PTR [rax+0xc0]",
+        "   146b6def6:\t84 c0                \ttest   al,al",
+        "   146b6def8:\t75 05                \tjne    0x146b6deff",
+        "   146b6defa:\t48 83 c4 28          \tadd    rsp,0x28",
+        "   146b6defe:\tc3                   \tret"
+      ]
+    },
+    {
+      "function": "0x146b6e190",
+      "end": "0x146b6e7b4",
+      "instruction": "146b6e3fc:\t48 8d 8b 68 07 00 00 \tlea    rcx,[rbx+0x768]",
+      "context": [
+        "   146b6e3ef:\t44 89 65 bf          \tmov    DWORD PTR [rbp-0x41],r12d",
+        "   146b6e3f3:\t0f 28 45 b7          \tmovaps xmm0,XMMWORD PTR [rbp-0x49]",
+        "   146b6e3f7:\t66 0f 7f 45 b7       \tmovdqa XMMWORD PTR [rbp-0x49],xmm0",
+        "   146b6e3fc:\t48 8d 8b 68 07 00 00 \tlea    rcx,[rbx+0x768]",
+        "   146b6e403:\t48 8d 55 b7          \tlea    rdx,[rbp-0x49]",
+        "   146b6e407:\te8 64 98 ff ff       \tcall   0x146b67c70",
+        "   146b6e40c:\t48 8b 03             \tmov    rax,QWORD PTR [rbx]",
+        "   146b6e40f:\t48 8b 78 30          \tmov    rdi,QWORD PTR [rax+0x30]",
+        "   146b6e413:\tb9 70 04 00 00       \tmov    ecx,0x470",
+        "   146b6e418:\te8 f3 81 f3 00       \tcall   0x147aa6610",
+        "   146b6e41d:\t48 89 45 7f          \tmov    QWORD PTR [rbp+0x7f],rax"
+      ]
+    },
+    {
+      "function": "0x146b6f030",
+      "end": "0x146b6f186",
+      "instruction": "146b6f087:\t48 8d 8b f0 06 00 00 \tlea    rcx,[rbx+0x6f0]",
+      "context": [
+        "   146b6f077:\tc7 01 00 00 00 00    \tmov    DWORD PTR [rcx],0x0",
+        "   146b6f07d:\te8 ae 17 00 00       \tcall   0x146b70830",
+        "   146b6f082:\t48 8d 54 24 50       \tlea    rdx,[rsp+0x50]",
+        "   146b6f087:\t48 8d 8b f0 06 00 00 \tlea    rcx,[rbx+0x6f0]",
+        "   146b6f08e:\te8 8d 66 d0 f9       \tcall   0x140875720",
+        "   146b6f093:\t48 8b c8             \tmov    rcx,rax",
+        "   146b6f096:\te8 65 af d0 f9       \tcall   0x14087a000",
+        "   146b6f09b:\t66 0f 2f 05 15 92 3e \tcomisd xmm0,QWORD PTR [rip+0x13e9215]        # 0x147f582b8",
+        "   146b6f0a2:\t01 ",
+        "   146b6f0a3:\t0f 86 b8 00 00 00    \tjbe    0x146b6f161",
+        "   146b6f0a9:\t48 8d 54 24 50       \tlea    rdx,[rsp+0x50]"
+      ]
+    },
+    {
+      "function": "0x146b6f030",
+      "end": "0x146b6f186",
+      "instruction": "146b6f0ae:\t48 8d 8b f0 06 00 00 \tlea    rcx,[rbx+0x6f0]",
+      "context": [
+        "   146b6f0a2:\t01 ",
+        "   146b6f0a3:\t0f 86 b8 00 00 00    \tjbe    0x146b6f161",
+        "   146b6f0a9:\t48 8d 54 24 50       \tlea    rdx,[rsp+0x50]",
+        "   146b6f0ae:\t48 8d 8b f0 06 00 00 \tlea    rcx,[rbx+0x6f0]",
+        "   146b6f0b5:\te8 d6 9b d0 f9       \tcall   0x140878c90",
+        "   146b6f0ba:\t48 8b c8             \tmov    rcx,rax",
+        "   146b6f0bd:\te8 3e af d0 f9       \tcall   0x14087a000",
+        "   146b6f0c2:\t48 8b 8b 08 07 00 00 \tmov    rcx,QWORD PTR [rbx+0x708]",
+        "   146b6f0c9:\t0f 57 c9             \txorps  xmm1,xmm1",
+        "   146b6f0cc:\tf2 0f 5a c8          \tcvtsd2ss xmm1,xmm0",
+        "   146b6f0d0:\t0f 57 c0             \txorps  xmm0,xmm0"
+      ]
+    },
+    {
+      "function": "0x146b6f190",
+      "end": "0x146b6fe1b",
+      "instruction": "146b6f2ce:\t80 bf 68 07 00 00 00 \tcmp    BYTE PTR [rdi+0x768],0x0",
+      "context": [
+        "   146b6f2c3:\tcc                   \tint3",
+        "   146b6f2c4:\t80 7e 5b 00          \tcmp    BYTE PTR [rsi+0x5b],0x0",
+        "   146b6f2c8:\t0f 84 79 01 00 00    \tje     0x146b6f447",
+        "   146b6f2ce:\t80 bf 68 07 00 00 00 \tcmp    BYTE PTR [rdi+0x768],0x0",
+        "   146b6f2d5:\t75 6b                \tjne    0x146b6f342",
+        "   146b6f2d7:\t0f 57 c0             \txorps  xmm0,xmm0",
+        "   146b6f2da:\t0f 11 45 b7          \tmovups XMMWORD PTR [rbp-0x49],xmm0",
+        "   146b6f2de:\t66 0f 6f 0d ba b0 38 \tmovdqa xmm1,XMMWORD PTR [rip+0x138b0ba]        # 0x147efa3a0",
+        "   146b6f2e5:\t01 ",
+        "   146b6f2e6:\tf3 0f 7f 4d c7       \tmovdqu XMMWORD PTR [rbp-0x39],xmm1",
+        "   146b6f2eb:\tc6 45 b7 00          \tmov    BYTE PTR [rbp-0x49],0x0"
+      ]
+    },
+    {
+      "function": "0x146b6f190",
+      "end": "0x146b6fe1b",
+      "instruction": "146b6f58d:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+      "context": [
+        "   146b6f581:\t48 8b cb             \tmov    rcx,rbx",
+        "   146b6f584:\te8 07 f8 f8 ff       \tcall   0x146afed90",
+        "   146b6f589:\t48 8d 56 18          \tlea    rdx,[rsi+0x18]",
+        "   146b6f58d:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+        "   146b6f594:\t48 3b ca             \tcmp    rcx,rdx",
+        "   146b6f597:\t74 13                \tje     0x146b6f5ac",
+        "   146b6f599:\t4c 8b 42 10          \tmov    r8,QWORD PTR [rdx+0x10]",
+        "   146b6f59d:\t48 83 7a 18 0f       \tcmp    QWORD PTR [rdx+0x18],0xf",
+        "   146b6f5a2:\t76 03                \tjbe    0x146b6f5a7",
+        "   146b6f5a4:\t48 8b 12             \tmov    rdx,QWORD PTR [rdx]",
+        "   146b6f5a7:\te8 04 4e 75 f9       \tcall   0x1402c43b0"
+      ]
+    },
+    {
+      "function": "0x146b6f190",
+      "end": "0x146b6fe1b",
+      "instruction": "146b6f5b0:\t88 87 f0 06 00 00    \tmov    BYTE PTR [rdi+0x6f0],al",
+      "context": [
+        "   146b6f5a4:\t48 8b 12             \tmov    rdx,QWORD PTR [rdx]",
+        "   146b6f5a7:\te8 04 4e 75 f9       \tcall   0x1402c43b0",
+        "   146b6f5ac:\t0f b6 46 58          \tmovzx  eax,BYTE PTR [rsi+0x58]",
+        "   146b6f5b0:\t88 87 f0 06 00 00    \tmov    BYTE PTR [rdi+0x6f0],al",
+        "   146b6f5b6:\t0f b6 46 59          \tmovzx  eax,BYTE PTR [rsi+0x59]",
+        "   146b6f5ba:\t88 87 f1 06 00 00    \tmov    BYTE PTR [rdi+0x6f1],al",
+        "   146b6f5c0:\t0f b6 46 5a          \tmovzx  eax,BYTE PTR [rsi+0x5a]",
+        "   146b6f5c4:\t88 87 f2 06 00 00    \tmov    BYTE PTR [rdi+0x6f2],al",
+        "   146b6f5ca:\tc6 87 01 06 00 00 01 \tmov    BYTE PTR [rdi+0x601],0x1",
+        "   146b6f5d1:\t48 8b 8f 10 01 00 00 \tmov    rcx,QWORD PTR [rdi+0x110]",
+        "   146b6f5d8:\t48 85 c9             \ttest   rcx,rcx"
+      ]
+    },
+    {
+      "function": "0x146b6f190",
+      "end": "0x146b6fe1b",
+      "instruction": "146b6f5ba:\t88 87 f1 06 00 00    \tmov    BYTE PTR [rdi+0x6f1],al",
+      "context": [
+        "   146b6f5ac:\t0f b6 46 58          \tmovzx  eax,BYTE PTR [rsi+0x58]",
+        "   146b6f5b0:\t88 87 f0 06 00 00    \tmov    BYTE PTR [rdi+0x6f0],al",
+        "   146b6f5b6:\t0f b6 46 59          \tmovzx  eax,BYTE PTR [rsi+0x59]",
+        "   146b6f5ba:\t88 87 f1 06 00 00    \tmov    BYTE PTR [rdi+0x6f1],al",
+        "   146b6f5c0:\t0f b6 46 5a          \tmovzx  eax,BYTE PTR [rsi+0x5a]",
+        "   146b6f5c4:\t88 87 f2 06 00 00    \tmov    BYTE PTR [rdi+0x6f2],al",
+        "   146b6f5ca:\tc6 87 01 06 00 00 01 \tmov    BYTE PTR [rdi+0x601],0x1",
+        "   146b6f5d1:\t48 8b 8f 10 01 00 00 \tmov    rcx,QWORD PTR [rdi+0x110]",
+        "   146b6f5d8:\t48 85 c9             \ttest   rcx,rcx",
+        "   146b6f5db:\t74 0a                \tje     0x146b6f5e7",
+        "   146b6f5dd:\t48 8b 01             \tmov    rax,QWORD PTR [rcx]"
+      ]
+    },
+    {
+      "function": "0x146b6f190",
+      "end": "0x146b6fe1b",
+      "instruction": "146b6f5c4:\t88 87 f2 06 00 00    \tmov    BYTE PTR [rdi+0x6f2],al",
+      "context": [
+        "   146b6f5b6:\t0f b6 46 59          \tmovzx  eax,BYTE PTR [rsi+0x59]",
+        "   146b6f5ba:\t88 87 f1 06 00 00    \tmov    BYTE PTR [rdi+0x6f1],al",
+        "   146b6f5c0:\t0f b6 46 5a          \tmovzx  eax,BYTE PTR [rsi+0x5a]",
+        "   146b6f5c4:\t88 87 f2 06 00 00    \tmov    BYTE PTR [rdi+0x6f2],al",
+        "   146b6f5ca:\tc6 87 01 06 00 00 01 \tmov    BYTE PTR [rdi+0x601],0x1",
+        "   146b6f5d1:\t48 8b 8f 10 01 00 00 \tmov    rcx,QWORD PTR [rdi+0x110]",
+        "   146b6f5d8:\t48 85 c9             \ttest   rcx,rcx",
+        "   146b6f5db:\t74 0a                \tje     0x146b6f5e7",
+        "   146b6f5dd:\t48 8b 01             \tmov    rax,QWORD PTR [rcx]",
+        "   146b6f5e0:\t48 8d 56 38          \tlea    rdx,[rsi+0x38]",
+        "   146b6f5e4:\tff 50 10             \tcall   QWORD PTR [rax+0x10]"
+      ]
+    },
+    {
+      "function": "0x146b73920",
+      "end": "0x146b73c2b",
+      "instruction": "146b73a96:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+      "context": [
+        "   146b73a88:\t88 45 f6             \tmov    BYTE PTR [rbp-0xa],al",
+        "   146b73a8b:\t4c 8d 05 de c1 9f 03 \tlea    r8,[rip+0x39fc1de]        # 0x14a56fc70",
+        "   146b73a92:\t48 8d 55 e0          \tlea    rdx,[rbp-0x20]",
+        "   146b73a96:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+        "   146b73a9d:\te8 8e 97 50 ff       \tcall   0x14607d230",
+        "   146b73aa2:\t48 8d 05 c7 e1 a1 01 \tlea    rax,[rip+0x1a1e1c7]        # 0x148591c70",
+        "   146b73aa9:\t48 89 87 98 05 00 00 \tmov    QWORD PTR [rdi+0x598],rax",
+        "   146b73ab0:\tc7 87 c0 05 00 00 ff \tmov    DWORD PTR [rdi+0x5c0],0xffffffff",
+        "   146b73ab7:\tff ff ff ",
+        "   146b73aba:\t48 89 75 e0          \tmov    QWORD PTR [rbp-0x20],rsi",
+        "   146b73abe:\tc7 45 e8 d9 b0 4e 28 \tmov    DWORD PTR [rbp-0x18],0x284eb0d9"
+      ]
+    },
+    {
+      "function": "0x146b73920",
+      "end": "0x146b73c2b",
+      "instruction": "146b73aa9:\t48 89 87 98 05 00 00 \tmov    QWORD PTR [rdi+0x598],rax",
+      "context": [
+        "   146b73a96:\t48 8d 8f 98 05 00 00 \tlea    rcx,[rdi+0x598]",
+        "   146b73a9d:\te8 8e 97 50 ff       \tcall   0x14607d230",
+        "   146b73aa2:\t48 8d 05 c7 e1 a1 01 \tlea    rax,[rip+0x1a1e1c7]        # 0x148591c70",
+        "   146b73aa9:\t48 89 87 98 05 00 00 \tmov    QWORD PTR [rdi+0x598],rax",
+        "   146b73ab0:\tc7 87 c0 05 00 00 ff \tmov    DWORD PTR [rdi+0x5c0],0xffffffff",
+        "   146b73ab7:\tff ff ff ",
+        "   146b73aba:\t48 89 75 e0          \tmov    QWORD PTR [rbp-0x20],rsi",
+        "   146b73abe:\tc7 45 e8 d9 b0 4e 28 \tmov    DWORD PTR [rbp-0x18],0x284eb0d9",
+        "   146b73ac5:\t33 c0                \txor    eax,eax",
+        "   146b73ac7:\t48 89 45 ec          \tmov    QWORD PTR [rbp-0x14],rax",
+        "   146b73acb:\t66 89 45 f4          \tmov    WORD PTR [rbp-0xc],ax"
+      ]
+    }
+  ],
+  "limitation": "All instructions retained in bounded function windows, not the selected-instruction cache. Range coverage is not whole-image object provenance."
+}

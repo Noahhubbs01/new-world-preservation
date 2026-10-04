@@ -22,3 +22,11 @@ def test_rejects_unknown_fields_and_mask_bits():
     with pytest.raises(ValueError):decode_presence_body(b'\x04',MUSICAL_GROUPS)
     with pytest.raises(ValueError):decode_presence_body(b'\x01\x80',MUSICAL_GROUPS)
     with pytest.raises(ValueError):encode_presence_body(MUSICAL_GROUPS,{'performanceId':b'a'})
+
+
+def test_metadata_group_excludes_special_replication_category():
+    from newworld_server.protocol.replicated_presence import METADATA_GROUPS
+    wire=b'\x01\x03'+bytes(range(20))+bytes(range(16))
+    values,n=decode_presence_body(wire+b'next',METADATA_GROUPS)
+    assert n==38 and values['AssetId']==bytes(range(20))
+    assert encode_presence_body(METADATA_GROUPS,values)==wire

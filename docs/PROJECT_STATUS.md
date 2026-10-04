@@ -2095,3 +2095,18 @@ Static/runtime investigation should be bounded to:
 Every new reverse-engineering branch must close one of these endpoint-consumer requirements.
 
 Do not reopen broad transport archaeology without evidence from this gate.
+
+
+## Continuation checkpoint: concrete initial-world fragment codecs
+
+VERIFIED wire structures and exact original-byte roundtrips on Foundry (no capture bytes exported): ObjectiveInteractor 25, AttributeComponent 25, ReactionTracking 25, CooldownTimers 25, Position 14, Metadata 12. Synthetic/malformed-input server suite: 147 passed.
+
+The initial interest record has 48 fragments. Its first five now have evidenced boundaries: musical state (20 bytes), ObjectiveInteractor (143), attributes (106), reaction tracking (37), cooldown timers (5910). The next field is 56 / community-corroborated catalog type3147 GuildsComponentReplicatedState. Their boundary checks span25 repeated initial-bundle samples, not25 independent successful preservation-server logins. The live initial bundle remains46393bytes; accepted reconstruction and player spawn remain unverified.
+
+Objective missionParams, attribute bonus/placing maps, and cooldown maps use zero delta-count as a switch to a full snapshot with optional prefix64 version. Nonzero delta operations, nonempty mission snapshots, and nonempty complex cooldown maps fail explicitly. Position bytes preserve compact rotation/scale and quantized position without inventing coordinate units or player ownership. Reaction masks are interleaved with their field payloads; a rejected audit that read consecutive masks was corrected before codec validation. Metadata AssetId/GdeRef are structurally decoded, but the12 later metadata examples do not match SelfIdentification's three references. This does not exclude an initial player object elsewhere.
+
+Reports: reports/handshake-sprint-2/concrete-fragment-codec-validation.json and named *-fragment-boundaries.json; tools/validate_concrete_fragments.py reproduces checks locally on Foundry. Integer catalog type names remain COMMUNITY-CORROBORATED; executable-backed constructors/readers and byte boundaries are VERIFIED with that mapping limitation.
+
+REP owner census covers307 functions in146B60000..146B80000 and22 offset-hit candidates, not the whole executable. Flag6F0 guards a reflected UUID allowlist path,6F1 participates in a virtual condition, and token getter copies owner598. Offset aliases in other subobjects must not be conflated. Token/6F2 downstream semantics and minimum accepted response remain unresolved.
+
+This is an intermediate checkpoint, not outcomeA or exhausted outcomeB. Static work remains: complete guild and the remaining initial fragments, associate interest/object identities with SelfIdentification and Actor state, trace world endpoint construction, and close master-state/spawn/movement consumer gates. No production connection, security-mechanism work, or deferred dependency sprint was performed.
