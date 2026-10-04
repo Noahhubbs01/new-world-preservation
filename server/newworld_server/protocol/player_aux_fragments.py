@@ -19,7 +19,8 @@ SCHEMAS = {
                 ('healthChangeFlags', 1), ('HealthMax', 4), ('HealthTickRate', 2),
                 ('StaminaMax', 4), ('StaminaTickRate', 2), ('vitalsId', 4),
                 ('vitalsCategoryId', 4), ('vitalsLevel', 4), ('invulnerability', 'bool'),
-                ('displayImmune', 'bool'), ('maxHealth', 2)), ()),
+                ('displayImmune', 'bool'), ('maxHealth', 2)),
+               (('ManaAmount',4),('afflictionsHot','empty_snapshot'),('afflictionsCold','empty_snapshot'),('ManaMax',4),('ManaTickRate',2))),
     'stat_multiplier': ((), (('multiplierTable','stat_snapshot'),('staminaCostReductionMultipliers','snapshot8'),('xpIncreaseMultipliers','snapshot8')), (('remoteMultiplierTable', 'stat_snapshot'),)),
     'social': ((('playerTitleId',4),('pronounType',1),('chattingStateMessageType',4)),
                (('warData',None),('dailyWarAsAttackerCount',1),('dailyWarAsDefenderCount',1),
@@ -30,6 +31,12 @@ SCHEMAS = {
                      ('raidType','groupFinderGroupId','isGroupFinderGroupCreator','createSource',
                       'groupFinderApplications','inboundGroupInvites','outboundGroupInvites',
                       'nextEligibleAbandonGameModeVoteTime','gameInviteData','isGroupPristine'))),
+    'player_state': ((), (('loginMatchId', 'byte_string'), ('srcWorldId', 'tagged_name'), ('accountIsLocked', 'bool'), ('accountInProbation', 'bool'), ('ageGroup', 1), ('territoryOwnerGuildId', 16), ('sessionStartWallClockTimePoint', 8), ('sessionStartTimePoint', 8), ('debugAccountProbationOverride', 1), ('freePlayerCountdown', '8_bool'), ('enteringStoreIsBlocked', 'bool'), ('isFreshStartWorld', 'bool'), ('onDeathRespawnCooldown', 4), ('mostRecentPVPActiveSwitchTimePoint', 8), ('shouldNotifyPlayer', 'bool'), ('isPVPActiveCharacter', 'bool'), ('isChangingMount', 'bool'), ('isTransmogStationScreenOpen', 'bool'), ('isTransmogScreenOpen', 'bool'), ('isInMountAttachmentMode', 'bool'), ('isArmorDyeingOpen', 'bool'), ('playerBackstory', 4)), (('characterId', 'tagged_name'), ('characterName', 'byte_string'), ('homeWorldId', 'tagged_name'), ('playerConnected', 'bool'), ('lookingThroughLoadout', 'bool'), ('playerType', 1), ('isInStore', 'bool'), ('platformAccountId', 8), ('platformType', 1))),
+    'entitlement_snapshot': ((('entitlements','snapshot_bytes575'),('balances','snapshot8'),('entitlementsReceived','bool')),),
+    'global_storage': ((('m_globalItemMap','empty_storage_snapshot'),('m_overflowItemCount',4),('m_weightMap','storage_summary'),('m_slotCountMap','storage_summary')),),
+    'item_skinning': ((), (('m_enabledItemSkins','snapshot8'),('m_skinDyeData','snapshot8'))),
+    'currency': ((('currency',8),),),
+    'waypoints': ((('replicatedWaypointPosition',12),),),
     'placement_obstruction': ((('hasCompletionObstruction', 1),),),
     'interact': ((('Enabled', 'bool'), ('HasInteractors', 4), ('CooldownUpdates', None)),),
     'slayer_script': ((('curScriptStateId', 'bool'), ('curScriptId', 4), ('spawnedEntityIdsBySpawnerId', 'snapshot12')),),
@@ -39,10 +46,11 @@ SCHEMAS = {
 
 
 class _Reader:
-    def __init__(self, data, offset=0):
+    def __init__(self, data, offset=0, controls=None):
         if not 0 <= offset <= len(data):
             raise ValueError('invalid offset')
         self.data, self.p = data, offset
+        self.controls = [] if controls is None else controls
 
     def take(self, n):
         if n < 0 or n > len(self.data) - self.p:
@@ -51,13 +59,18 @@ class _Reader:
         self.p += n
         return out
 
+    def control(self, n):
+        self.controls.extend(range(self.p,self.p+n))
+        return self.take(n)
+
     def prefix(self):
         v, n = decode_prefix_uint32(self.data, self.p)
+        self.controls.extend(range(self.p,self.p+n))
         self.p += n
         return v
 
     def boolean(self):
-        v = self.take(1)[0]
+        v = self.control(1)[0]
         if v > 1:
             raise ValueError('invalid Boolean')
         return v
@@ -72,7 +85,7 @@ class _Reader:
         if self.prefix():
             raise ValueError('delta operations unsupported')
         if self.boolean():
-            first = self.take(1)[0]
+            first = self.control(1)[0]
             width = 1
             while width < 9 and first & (0x100 >> width):
                 width += 1
@@ -86,8 +99,21 @@ class _Reader:
             self.take(kind)
         elif kind == 'bool':
             self.boolean()
+        elif kind == '8_bool':
+            self.take(8)
+            self.boolean()
+        elif kind == 'byte_string':
+            self.take(self.count())
+        elif kind == 'tagged_name':
+            flags = self.control(1)[0]
+            self.take(16 if flags&1 else self.count())
         elif kind == 'vitals_data':
             self.take(18)
+        elif kind == 'snapshot_bytes575':
+            count = self.snapshot()
+            if count > 575:
+                raise ValueError('native entitlement byte limit')
+            self.take(count)
         elif kind == 'vector4':
             self.take(self.count() * 4)
         elif kind in ('snapshot4', 'snapshot8', 'snapshot12'):
@@ -97,19 +123,30 @@ class _Reader:
                 raise ValueError('explicit native visual-data mode required')
             for _ in range(self.snapshot()):
                 self.prefix()
-                flags = self.take(1)[0]
+                flags = self.control(1)[0]
                 if flags & 1:
                     self.prefix()
                 if flags & 2:
                     self.take(4)
                 if visual_extra:
                     self.take(8)
+        elif kind == 'empty_storage_snapshot':
+            if self.snapshot():
+                raise ValueError('nonempty storage item snapshot unsupported')
+        elif kind == 'storage_summary':
+            count = self.snapshot()
+            if count > 30:
+                raise ValueError('native storage location limit')
+            self.take(count * 20)
+        elif kind == 'empty_snapshot':
+            if self.snapshot():
+                raise ValueError('nonempty complex auxiliary snapshot unsupported')
         elif kind == 'string_snapshot':
             for _ in range(self.snapshot()):
                 self.take(self.count())
         elif kind == 'game_invite':
             self.take(16)
-            flags = self.take(1)[0]
+            flags = self.control(1)[0]
             if flags & 1:
                 self.take(16)
             else:
@@ -124,11 +161,11 @@ class _Reader:
             raise ValueError('unknown auxiliary field kind')
 
 
-def decode_player_aux_fragment(data, variant, offset=0, *, visual_extra=None):
+def decode_player_aux_fragment(data, variant, offset=0, *, visual_extra=None, control_offsets=None):
     groups = SCHEMAS[variant]
-    r = _Reader(data, offset)
+    r = _Reader(data, offset, control_offsets)
     values = {}
-    gm = r.take(1)[0]
+    gm = r.control(1)[0]
     if gm >> len(groups):
         raise ValueError('unknown auxiliary group')
     for i, group in enumerate(groups):
@@ -136,7 +173,7 @@ def decode_player_aux_fragment(data, variant, offset=0, *, visual_extra=None):
             continue
         start = 0
         while True:
-            mask = r.take(1)[0]
+            mask = r.control(1)[0]
             block = group[start:start+7]
             if (mask & 127) >> len(block):
                 raise ValueError('unknown auxiliary field bit')

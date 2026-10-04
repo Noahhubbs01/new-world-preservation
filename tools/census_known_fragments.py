@@ -4,7 +4,9 @@ from newworld_server.protocol.selected_replication_schemas import CONTAINER_GROU
 from newworld_server.protocol import objective_fragment,attribute_fragment,reaction_fragment,cooldown_fragment,progression_fragment
 import csv,collections
 registry=list(csv.DictReader(open('reports/type-registry-verification/type-registry.tsv'),delimiter='\t'))
-for idx,v in [(2187,'placement_obstruction'),(2930,'interact'),(3362,'slayer_script'),(1994,'groups'),(4176,'social')]:
+aux_variants={}
+for idx,v in [(2187,'placement_obstruction'),(2930,'interact'),(3362,'slayer_script'),(1994,'groups'),(4176,'social'),(4321,'waypoints'),(3786,'currency'),(3133,'entitlement_snapshot'),(3935,'player_state'),(3765,'item_skinning'),(2938,'global_storage')]:
+ aux_variants[idx]=v
  codecs[idx]=(lambda x,offset=0,v=v:decode_player_aux_fragment(x,v,offset),lambda values,v=v:encode_player_aux_fragment(values,v))
 codecs[13]=(decode_position_fragment,encode_position_fragment)
 codecs[1755]=(lambda x,offset=0:decode_presence_body(x,CONTAINER_GROUPS,offset),lambda values:encode_presence_body(CONTAINER_GROUPS,values))
@@ -19,8 +21,11 @@ for h in headers:
   while True:
    for number in range(fc):
     if idx not in codecs:stop={'reason':'unsupported concrete type','type':idx,'field':field,'body_start':p,'interest':interest};break
-    start=p;dec,enc=codecs[idx];values,n=dec(raw,p);p+=n;masked=sum(v is None for v in b[start:p])
-    safe_masked = (idx==3935 and h['seq'] in ('0x8c','0xae')) or (idx==1994 and raw[start:start+3]==bytes([2,128,2]) and b[start+19] is not None and b[start+19]&1 and all(v is not None for v in b[start:start+20]+b[start+36:p]))
+    start=p;dec,enc=codecs[idx];controls=[]
+    if idx in aux_variants:values,n=decode_player_aux_fragment(raw,aux_variants[idx],p,visual_extra=True,control_offsets=controls)
+    else:values,n=dec(raw,p)
+    p+=n;masked=sum(v is None for v in b[start:p])
+    safe_masked = (idx in aux_variants and all(b[q] is not None for q in controls)) or (idx==3935 and h['seq'] in ('0x8c','0xae')) or (idx==1994 and raw[start:start+3]==bytes([2,128,2]) and b[start+19] is not None and b[start+19]&1 and all(v is not None for v in b[start:start+20]+b[start+36:p]))
     if masked and not safe_masked:stop={'reason':'redacted body may contain controls','type':idx,'body_start':start};break
     exact=False
     if not masked:assert enc(values)==raw[start:p];exact=True
@@ -32,4 +37,4 @@ for h in headers:
    interest,p=prefix(b,p);fc=b[p];p+=1;field,p=prefix(b,p);idx,p=prefix(b,p)
  except Exception as e:stop={'reason':type(e).__name__+': '+str(e),'type':idx,'position':p}
  out.append({'seq':h['seq'],'complete_records':records,'fragment_count':len(fragments),'end':p,'length':len(b),'complete_message':p==len(b) and stop is None,'stop':stop,'fragments':fragments})
-Path('reports/handshake-sprint-2/known-fragment-corpus-census.json').write_text(json.dumps(out,indent=2));print('messages',len(out),'complete',sum(r['complete_message'] for r in out),'fragments',sum(r['fragment_count'] for r in out),'frontiers',collections.Counter(str(r['stop']) for r in out if r['stop']))
+Path('reports/handshake-sprint-2/known-fragment-corpus-census.json').write_text(json.dumps(out,indent=2));print('messages',len(out),'complete',sum(r['complete_message'] for r in out),'fragments',sum(r['fragment_count'] for r in out),'frontiers',collections.Counter((r['stop']['reason'],r['stop'].get('type')) for r in out if r['stop']))

@@ -14,8 +14,8 @@ def test_appearance_interleaved_blocks():
     assert len(wire)==25
     assert decode_presence_body(wire,APPEARANCE_GROUPS)==(values,25)
 
-def test_container_bool_and_unproved_inventory():
-    wire=b'\x01\x14\0\0\0\0\x01'
-    assert decode_presence_body(wire,CONTAINER_GROUPS)[1]==7
-    with pytest.raises(ValueError,match='boolean'):decode_presence_body(wire[:-1]+b'\x02',CONTAINER_GROUPS)
+def test_container_u32_and_unproved_inventory():
+    wire=b'\x01\x14'+bytes(4)+b'\x12\x34\x56\x78'
+    assert decode_presence_body(wire,CONTAINER_GROUPS)[1]==10
+    with pytest.raises(ValueError,match='truncated'):decode_presence_body(wire[:-1],CONTAINER_GROUPS)
     with pytest.raises(ValueError,match='unsupported'):decode_presence_body(b'\x01\x01',CONTAINER_GROUPS)

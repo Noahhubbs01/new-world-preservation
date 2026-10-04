@@ -1,0 +1,149 @@
+{
+  "groups": [
+    [],
+    [
+      [
+        "loginMatchId",
+        "byte_string"
+      ],
+      [
+        "srcWorldId",
+        "tagged_name"
+      ],
+      [
+        "accountIsLocked",
+        "bool"
+      ],
+      [
+        "accountInProbation",
+        "bool"
+      ],
+      [
+        "ageGroup",
+        1
+      ],
+      [
+        "territoryOwnerGuildId",
+        16
+      ],
+      [
+        "sessionStartWallClockTimePoint",
+        8
+      ],
+      [
+        "sessionStartTimePoint",
+        8
+      ],
+      [
+        "debugAccountProbationOverride",
+        1
+      ],
+      [
+        "freePlayerCountdown",
+        "8_bool"
+      ],
+      [
+        "enteringStoreIsBlocked",
+        "bool"
+      ],
+      [
+        "isFreshStartWorld",
+        "bool"
+      ],
+      [
+        "onDeathRespawnCooldown",
+        4
+      ],
+      [
+        "mostRecentPVPActiveSwitchTimePoint",
+        8
+      ],
+      [
+        "shouldNotifyPlayer",
+        "bool"
+      ],
+      [
+        "isPVPActiveCharacter",
+        "bool"
+      ],
+      [
+        "isChangingMount",
+        "bool"
+      ],
+      [
+        "isTransmogStationScreenOpen",
+        "bool"
+      ],
+      [
+        "isTransmogScreenOpen",
+        "bool"
+      ],
+      [
+        "isInMountAttachmentMode",
+        "bool"
+      ],
+      [
+        "isArmorDyeingOpen",
+        "bool"
+      ],
+      [
+        "playerBackstory",
+        4
+      ]
+    ],
+    [
+      [
+        "characterId",
+        "tagged_name"
+      ],
+      [
+        "characterName",
+        "byte_string"
+      ],
+      [
+        "homeWorldId",
+        "tagged_name"
+      ],
+      [
+        "playerConnected",
+        "bool"
+      ],
+      [
+        "lookingThroughLoadout",
+        "bool"
+      ],
+      [
+        "playerType",
+        1
+      ],
+      [
+        "isInStore",
+        "bool"
+      ],
+      [
+        "platformAccountId",
+        8
+      ],
+      [
+        "platformType",
+        1
+      ]
+    ]
+  ],
+  "kinds": {
+    "0x1481e2b68": "tagged_name",
+    "0x14803f108": "byte_string",
+    "0x14803f098": "bool",
+    "0x1480f46a0": 1,
+    "0x1480b9980": 1,
+    "0x1480ff398": 8,
+    "0x1481e2a88": 16,
+    "0x1480b9910": 8,
+    "0x1480b86e8": 8,
+    "0x148557a10": 1,
+    "0x148557a80": "8_bool",
+    "0x1480ff160": 4,
+    "0x1481b7d50": 4
+  },
+  "source": "bounded native constructor registration and field virtual30 readers; no ownership semantics"
+}

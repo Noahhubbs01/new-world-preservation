@@ -1,0 +1,219 @@
+[
+  {
+    "name": "characterId",
+    "offset": 1984,
+    "group": 2,
+    "instruction": "14671253d:\te8 1e 37 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481e2b68"
+  },
+  {
+    "name": "characterName",
+    "offset": 2160,
+    "group": 2,
+    "instruction": "14671255f:\te8 fc 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f108"
+  },
+  {
+    "name": "homeWorldId",
+    "offset": 2288,
+    "group": 2,
+    "instruction": "146712581:\te8 da 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481e2b68"
+  },
+  {
+    "name": "playerConnected",
+    "offset": 2760,
+    "group": 2,
+    "instruction": "1467125a3:\te8 b8 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "lookingThroughLoadout",
+    "offset": 2792,
+    "group": 2,
+    "instruction": "1467125c5:\te8 96 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "playerType",
+    "offset": 3176,
+    "group": 2,
+    "instruction": "1467125e7:\te8 74 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480f46a0"
+  },
+  {
+    "name": "isInStore",
+    "offset": 2824,
+    "group": 2,
+    "instruction": "146712609:\te8 52 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "platformAccountId",
+    "offset": 3672,
+    "group": 2,
+    "instruction": "14671262c:\te8 2f 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480ff398"
+  },
+  {
+    "name": "platformType",
+    "offset": 3728,
+    "group": 2,
+    "instruction": "146712649:\te8 12 36 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  },
+  {
+    "name": "loginMatchId",
+    "offset": 2640,
+    "group": 1,
+    "instruction": "146712666:\te8 f5 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f108"
+  },
+  {
+    "name": "srcWorldId",
+    "offset": 2464,
+    "group": 1,
+    "instruction": "146712683:\te8 d8 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481e2b68"
+  },
+  {
+    "name": "accountIsLocked",
+    "offset": 3016,
+    "group": 1,
+    "instruction": "1467126a0:\te8 bb 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "accountInProbation",
+    "offset": 3048,
+    "group": 1,
+    "instruction": "1467126bd:\te8 9e 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "ageGroup",
+    "offset": 3080,
+    "group": 1,
+    "instruction": "1467126da:\te8 81 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  },
+  {
+    "name": "territoryOwnerGuildId",
+    "offset": 3216,
+    "group": 1,
+    "instruction": "1467126f7:\te8 64 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481e2a88"
+  },
+  {
+    "name": "sessionStartWallClockTimePoint",
+    "offset": 3328,
+    "group": 1,
+    "instruction": "146712714:\te8 47 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "sessionStartTimePoint",
+    "offset": 3400,
+    "group": 1,
+    "instruction": "146712731:\te8 2a 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480b86e8"
+  },
+  {
+    "name": "debugAccountProbationOverride",
+    "offset": 3472,
+    "group": 1,
+    "instruction": "14671274a:\te8 11 35 06 fb       \tcall   0x141775c60",
+    "vtable": "0x148557a10"
+  },
+  {
+    "name": "freePlayerCountdown",
+    "offset": 3504,
+    "group": 1,
+    "instruction": "146712763:\te8 f8 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x148557a80"
+  },
+  {
+    "name": "enteringStoreIsBlocked",
+    "offset": 3112,
+    "group": 1,
+    "instruction": "146712780:\te8 db 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isFreshStartWorld",
+    "offset": 3144,
+    "group": 1,
+    "instruction": "14671279d:\te8 be 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "onDeathRespawnCooldown",
+    "offset": 3592,
+    "group": 1,
+    "instruction": "1467127b6:\te8 a5 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "mostRecentPVPActiveSwitchTimePoint",
+    "offset": 3792,
+    "group": 1,
+    "instruction": "1467127cf:\te8 8c 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "shouldNotifyPlayer",
+    "offset": 3864,
+    "group": 1,
+    "instruction": "1467127ec:\te8 6f 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isPVPActiveCharacter",
+    "offset": 3760,
+    "group": 1,
+    "instruction": "146712809:\te8 52 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isChangingMount",
+    "offset": 2856,
+    "group": 1,
+    "instruction": "146712826:\te8 35 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isTransmogStationScreenOpen",
+    "offset": 2888,
+    "group": 1,
+    "instruction": "146712843:\te8 18 34 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isTransmogScreenOpen",
+    "offset": 2920,
+    "group": 1,
+    "instruction": "146712860:\te8 fb 33 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isInMountAttachmentMode",
+    "offset": 2952,
+    "group": 1,
+    "instruction": "14671287d:\te8 de 33 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isArmorDyeingOpen",
+    "offset": 2984,
+    "group": 1,
+    "instruction": "14671289a:\te8 c1 33 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "playerBackstory",
+    "offset": 3632,
+    "group": 1,
+    "instruction": "1467128b7:\te8 a4 33 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481b7d50"
+  }
+]

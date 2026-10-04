@@ -65,3 +65,56 @@ def test_additional_native_snapshot_schemas(variant,values):
     assert decode(raw,variant)==(values,len(raw))
     for n in range(len(raw)):
         with pytest.raises(ValueError):decode(raw[:n],variant)
+
+
+@pytest.mark.parametrize('variant,values', [
+    ('global_storage', {'m_globalItemMap':b'\0\0\0','m_overflowItemCount':b'\0'*4,'m_weightMap':b'\0\0\x01'+b'\x11'*20,'m_slotCountMap':b'\0\0\0'}),
+    ('item_skinning', {'m_enabledItemSkins':b'\0\0\x02'+b'\x11'*16,'m_skinDyeData':b'\0\x01\x05\x01'+b'\x22'*8}),
+    ('waypoints', {'replicatedWaypointPosition':b'\0'*12}),
+    ('currency', {'currency':b'\0'*8}),
+    ('entitlement_snapshot', {'entitlements':b'\0\0\x03abc','balances':b'\0\0\x01'+b'\0'*8,'entitlementsReceived':b'\x01'}),
+    ('vitals', {'ManaAmount':b'\0'*4,'afflictionsHot':b'\0\0\0','afflictionsCold':b'\0\x01\x05\0','ManaMax':b'\0'*4,'ManaTickRate':b'\0'*2}),
+    ('player_state', {'loginMatchId':b'\x03abc','srcWorldId':b'\x01'+b'\x11'*16,'freePlayerCountdown':b'\0'*8+b'\x01','playerBackstory':b'\0'*4}),
+    ('player_state', {'characterId':b'\x01'+b'\x11'*16,'characterName':b'\x03abc','playerConnected':b'\x01','platformAccountId':b'\0'*8}),
+])
+def test_complete_native_private_groups(variant,values):
+    raw=encode(values,variant)
+    assert decode(raw,variant)==(values,len(raw))
+    for n in range(len(raw)):
+        with pytest.raises(ValueError):decode(raw[:n],variant)
+
+
+def test_control_offsets_distinguish_hidden_values_from_controls():
+    raw=encode({'srcWorldId':b'\x01'+b'\x11'*16},'player_state')
+    controls=[]
+    assert decode(raw,'player_state',control_offsets=controls)[1]==len(raw)
+    assert controls==[0,1,2]  # group, field mask, TaggedName flags; UUID is value.
+    raw=encode({'socialBlocks':b'\0\x01\x05\x01\x03abc'},'social')
+    controls=[];decode(raw,'social',control_offsets=controls)
+    assert controls==[0,1,2,3,4,5,6]
+
+
+def test_native_entitlement_limit_and_countdown_boolean():
+    from newworld_server.protocol.prefix_uint32 import encode_prefix_uint32
+    with pytest.raises(ValueError,match='native'):
+        encode({'entitlements':b'\0\0'+encode_prefix_uint32(576)+b'\0'*576},'entitlement_snapshot')
+    with pytest.raises(ValueError,match='Boolean'):
+        encode({'freePlayerCountdown':b'\0'*8+b'\x02'},'player_state')
+
+
+def test_storage_native_limit_and_complex_item_boundary():
+    with pytest.raises(ValueError,match="native storage"):
+        encode({"m_weightMap":b"\0\0\x1f"+b"\0"*620},"global_storage")
+    with pytest.raises(ValueError,match="nonempty storage"):
+        encode({"m_globalItemMap":b"\0\0\x01"},"global_storage")
+
+
+def test_container_emptied_native_u32_width():
+    from newworld_server.protocol.replicated_presence import decode_presence_body, encode_presence_body
+    from newworld_server.protocol.selected_replication_schemas import CONTAINER_GROUPS
+    raw = b"\x01\x10\x12\x34\x56\x78"
+    values,n = decode_presence_body(raw,CONTAINER_GROUPS)
+    assert n==6
+    assert encode_presence_body(CONTAINER_GROUPS,values)==raw
+    for length in range(2,6):
+        with pytest.raises(ValueError):decode_presence_body(raw[:length],CONTAINER_GROUPS)
