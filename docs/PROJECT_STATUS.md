@@ -1,8 +1,24 @@
 # New World Preservation - Project Status
 
-Last updated: 2026-09-30
+Last updated: 2026-10-04
 Repository: new-world-preservation
-Branch: main
+Branch: work/gpt61-handshake-sprint
+
+## Active handshake sprint — reconciled 2026-10-04
+
+Baseline is 435153d on work/gpt61-handshake-sprint; main remains untouched.
+Player spawn on the preservation server is NOT demonstrated.
+Authoritative current reconciliation: [Handshake map](HANDSHAKE_MAP.md).
+
+This checkpoint closes REP incoming response class identity (RegistrationResponseMsg), its structural field layout, prefix-width integer framing, outer routing flags/presence, full structural SelfIdentification decoding, and the empty SpawnPoint marker. It supersedes older REP unknown-class, SelfIdentification 0x5d1, padding-record, and LevelInfo four-float interpretations where noted in the map. Compact type indices remain community-correlated; executable UUID providers are verified.
+
+Implemented dedicated prefix uint32, reflected/routed message, bounded REP stream framing and structural SelfIdentification codecs. Corrected registration version string lengths >=128. Synthetic test suite: 102 passed from server/.venv. Separate preserved plaintext audit: all177 message type/size matches, all37 unredacted outgoing CRCs match. SelfIdentification consumes and roundtrips all known bytes; its redacted identities remain unknown. No speculative post-registration runtime messages are emitted.
+
+LIVE-06D raw ETL provided runtime image provenance matching local PE size/checksum, allowing sampled stack correlation. One sample corroborates REP parser/materializer call path; sampled stacks provide no payload and absence of deeper anchors is inconclusive. LIVE-03 PCAP remains encrypted. Existing untracked LIVE-05 reports are preserved without inclusion in this checkpoint.
+
+Remaining named requirements: REP-03 session continuity, WORLD-ENDPOINT handoff, ACTOR-LINK reference semantics, LEVEL-CONTEXT collections/readiness, SB-INIT replica construction, SB-MASTER ownership/update, SPAWN-01 local-player creation, SPAWN-02 InGame readiness, MOVEMENT. The map records evidence searched, candidate interpretations and minimum observations. Restricted SSH sandbox has no host network; controlled client acceptance testing needs an administrator-managed isolated service endpoint.
+
+Second sprint (retail dependency/compatibility map) is deferred pending instruction. EAC/security mechanisms and Amazon production experiments remain excluded.
 
 ## Current objective
 

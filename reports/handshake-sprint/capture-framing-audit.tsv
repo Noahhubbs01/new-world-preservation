@@ -1,0 +1,178 @@
+seq	direction	type	class	declared_size	dump_size	redacted_bytes	routing_flags	type_offset	decoded_type	prefix_width	prefix_matches	crc_matches
+0x0	W	0x13	RegistrationRequestV3Msg	2750	2750	1864	0	26	19	1	True	
+0x1	R	0x3	RegistrationResponseMsg	88	88	32	0	2	3	1	True	
+0x2	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x3	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x4	R	0x40a	CoatlicueClientMessages::CalendarConnectedMsg	76	76	0	0	2	1034	2	True	
+0x5	R	0x1be	CoatlicueClientMessages::CoatlicueTimingConfigurationConnectedMsg	76	76	0	0	2	446	2	True	
+0x6	R	0x65c	Javelin::ClientMessagesTrait::PlayerManagerSelfIdentificationMsg	12706	12706	32	0	2	1628	2	True	
+0x7	R	0x651	Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg	4	4	0	0	2	1617	2	True	
+0x8	R	0xa4	ClientAddEntryMsg	20	20	0	0	2	164	2	True	
+0x9	R	0xca4	Javelin::ClientMessages::EventNotificationComponentClientFacet_SyncNotifications	102	102	0	0	2	3236	2	True	
+0xa	R	0x14f	TimeSynchMsg	12	12	0	0	2	335	2	True	
+0xb	R	0x18a6	Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing	40	40	0	0	2	6310	2	True	
+0xc	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0xd	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0xe	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0xf	R	0xa4	ClientAddEntryMsg	20	20	0	0	2	164	2	True	
+0x10	R	0x663	Javelin::ClientMessagesTrait::LevelInfoChangedMsg	110	110	0	0	2	1635	2	True	
+0x11	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x12	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x13	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x14	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x15	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x16	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x17	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x18	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x19	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x1a	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x1b	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x1c	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x1d	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x1e	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x1f	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x20	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x21	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x22	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x23	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x24	R	0x1b88	Javelin::ClientMessages::GlobalStorageComponentClientFacet_ReceiveStorageSearchItems	42	42	0	0	2	7048	2	True	
+0x25	R	0x8	Amazon::Hub::ReplicatedStateBundle	46423	46423	1802	3	18	8	1	True	
+0x26	R	0x136a	Javelin::ClientMessages::GameModeParticipantComponentClientFacet_OnLeftQueueForGameModeMsg	28	28	0	0	2	4970	2	True	
+0x27	R	0x14f	TimeSynchMsg	12	12	0	0	2	335	2	True	
+0x28	R	0x16a0	Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories	153	153	36	0	2	5792	2	True	
+0x29	R	0x16a0	Javelin::ClientMessages::InventoriesComponentClientFacet_OnQueryInventories	99819	99819	52277	0	2	5792	2	True	
+0x2a	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x2b	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x2c	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x2d	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x2e	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x2f	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x30	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x31	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x32	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x33	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x34	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x35	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x36	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x37	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x38	R	0x18a6	Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing	40	40	0	0	2	6310	2	True	
+0x39	W	0x1098	Javelin::ClientMessages::TimeComponentServerFacet_SyncToClient	44	44	0	0	26	4248	2	True	True
+0x3a	W	0x9d3	Javelin::ClientMessages::PlayerSettingsComponentServerFacet_ReceiveSettingsFromClient	48	48	0	0	26	2515	2	True	True
+0x3b	W	0x9fc	Javelin::ClientMessages::ContractsComponentServerFacet_LookupContractsByParticipant	102	102	0	0	26	2556	2	True	True
+0x3c	R	0x14f	TimeSynchMsg	12	12	0	0	2	335	2	True	
+0x3d	W	0xa95	Javelin::ClientMessages::ObjectivesComponentServerFacet_SetObjectiveAutoPinning	81	81	0	0	26	2709	2	True	True
+0x3e	W	0x10b0	Javelin::ClientMessages::TraversalComponentServerFacet_SyncIsAutoTraversalEnabled	45	45	0	0	26	4272	2	True	True
+0x3f	W	0x101a	Javelin::ClientMessages::SpectatedPlayerComponentServerFacet_SetIsPublic	45	45	0	0	26	4122	2	True	True
+0x40	W	0x187c	Javelin::ClientMessages::MountComponentServerFacet_OnMountDashToggleChanged	45	45	0	0	26	6268	2	True	True
+0x41	W	0x187f	Javelin::ClientMessages::MountComponentServerFacet_OnMountSlowWalkChanged	45	45	0	0	26	6271	2	True	True
+0x42	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x43	R	0x8e6	Javelin::ClientMessages::ContractsComponentClientFacet_OnLookupContractsByParticipant	42	42	0	0	2	2278	2	True	
+0x44	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x45	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x46	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x47	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x48	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x49	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x4a	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x4b	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x4c	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x4d	R	0x663	Javelin::ClientMessagesTrait::LevelInfoChangedMsg	110	110	0	0	2	1635	2	True	
+0x4e	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x4f	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x50	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x51	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x52	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x53	R	0x18a6	Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing	40	40	0	0	2	6310	2	True	
+0x54	R	0x14f	TimeSynchMsg	12	12	0	0	2	335	2	True	
+0x55	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x56	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x57	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x58	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x59	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x5a	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x5b	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x5c	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x5d	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x5e	W	0x102e	Javelin::ClientMessages::SocialComponentServerFacet_RequestStreamerModeDataSync	46	46	0	0	26	4142	2	True	True
+0x5f	W	0x102f	Javelin::ClientMessages::SocialComponentServerFacet_SendAvailableTitlesToClient	44	44	0	0	26	4143	2	True	True
+0x60	W	0x192c	Javelin::ClientMessages::SocialComponentServerFacet_RequestCrossplayPermissionsDataSync	54	54	0	0	26	6444	2	True	True
+0x61	W	0x101d	Javelin::ClientMessages::ChatComponentServerFacet_SetProfanityFilterEnabled	45	45	0	0	26	4125	2	True	True
+0x62	R	0x1033	Javelin::ClientMessages::SocialComponentClientFacet_ReceiveAvailableTitles	498	498	0	0	2	4147	2	True	
+0x63	W	0xf7f	Javelin::ClientMessages::PlayerComponentServerFacet_OnCullLimitPctChangeRequest	45	45	0	0	26	3967	2	True	True
+0x64	W	0x66b	Javelin::ClientMessages::VoiceChatComponentServerFacet_RegisterVoiceChatService	44	44	0	0	26	1643	2	True	True
+0x65	R	0x1067	Javelin::ClientMessages::VoiceChatComponentClientFacet_OnVoiceChatServiceRegistered	86	86	0	0	2	4199	2	True	
+0x66	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x67	W	0x143d	Javelin::ClientMessages::PlayerComponentServerFacet_OnAckLevelInfoChanged	45	45	0	0	26	5181	2	True	True
+0x68	R	0x18a6	Javelin::ClientMessages::GridTrackingComponentClientFacet_UpdatePhasing	40	40	0	0	2	6310	2	True	
+0x69	W	0x1a59	Javelin::ClientMessages::GridTrackingComponentServerFacet_ClientAckPhasingUpdate	45	45	0	0	26	6745	2	True	True
+0x6a	W	0x1a59	Javelin::ClientMessages::GridTrackingComponentServerFacet_ClientAckPhasingUpdate	45	45	0	0	26	6745	2	True	True
+0x6b	W	0x12f6	Javelin::ClientMessages::PlayerComponentServerFacet_OnTelemetryOptionsDataChanged	299	299	72	0	26	4854	2	True	
+0x6c	R	0x8	Amazon::Hub::ReplicatedStateBundle	46407	46407	1802	0	2	8	1	True	
+0x6d	W	0x1a59	Javelin::ClientMessages::GridTrackingComponentServerFacet_ClientAckPhasingUpdate	45	45	0	0	26	6745	2	True	True
+0x6e	W	0x635	Javelin::ClientMessages::ActionListComponentServerFacet_ReceiveInputFromClient	93	93	0	0	26	1589	2	True	True
+0x6f	W	0x635	Javelin::ClientMessages::ActionListComponentServerFacet_ReceiveInputFromClient	108	108	0	0	26	1589	2	True	True
+0x70	W	0x635	Javelin::ClientMessages::ActionListComponentServerFacet_ReceiveInputFromClient	123	123	0	0	26	1589	2	True	True
+0x71	W	0x635	Javelin::ClientMessages::ActionListComponentServerFacet_ReceiveInputFromClient	138	138	0	0	26	1589	2	True	True
+0x72	W	0x635	Javelin::ClientMessages::ActionListComponentServerFacet_ReceiveInputFromClient	153	153	0	0	26	1589	2	True	True
+0x73	R	0x8	Amazon::Hub::ReplicatedStateBundle	7166	7166	36	0	2	8	1	True	
+0x74	R	0x8	Amazon::Hub::ReplicatedStateBundle	989	989	0	0	2	8	1	True	
+0x75	R	0x1096	Javelin::ClientMessages::TimeComponentClientFacet_SyncTimeChange	80	80	0	0	2	4246	2	True	
+0x76	R	0x1097	Javelin::ClientMessages::TimeComponentClientFacet_SyncDayPhase	24	24	0	0	2	4247	2	True	
+0x77	R	0x8	Amazon::Hub::ReplicatedStateBundle	1003	1003	24	0	2	8	1	True	
+0x78	R	0x8	Amazon::Hub::ReplicatedStateBundle	988	988	0	0	2	8	1	True	
+0x79	R	0x8	Amazon::Hub::ReplicatedStateBundle	1010	1010	16	0	2	8	1	True	
+0x7a	R	0x8	Amazon::Hub::ReplicatedStateBundle	427	427	0	0	2	8	1	True	
+0x7b	R	0x8	Amazon::Hub::ReplicatedStateBundle	1013	1013	24	0	2	8	1	True	
+0x7c	R	0x8	Amazon::Hub::ReplicatedStateBundle	1314	1314	0	0	2	8	1	True	
+0x7d	R	0x8	Amazon::Hub::ReplicatedStateBundle	1800	1800	0	0	2	8	1	True	
+0x7e	R	0x8	Amazon::Hub::ReplicatedStateBundle	1591	1591	0	0	2	8	1	True	
+0x7f	R	0x8	Amazon::Hub::ReplicatedStateBundle	992	992	0	0	2	8	1	True	
+0x80	R	0x8	Amazon::Hub::ReplicatedStateBundle	979	979	16	0	2	8	1	True	
+0x81	R	0x8	Amazon::Hub::ReplicatedStateBundle	992	992	0	0	2	8	1	True	
+0x82	R	0x8	Amazon::Hub::ReplicatedStateBundle	985	985	24	0	2	8	1	True	
+0x83	R	0x8	Amazon::Hub::ReplicatedStateBundle	730	730	0	0	2	8	1	True	
+0x84	R	0x8	Amazon::Hub::ReplicatedStateBundle	774	774	24	0	2	8	1	True	
+0x85	R	0x8	Amazon::Hub::ReplicatedStateBundle	1591	1591	0	0	2	8	1	True	
+0x86	R	0x8	Amazon::Hub::ReplicatedStateBundle	706	706	0	0	2	8	1	True	
+0x87	R	0x8	Amazon::Hub::ReplicatedStateBundle	830	830	16	0	2	8	1	True	
+0x88	R	0x8	Amazon::Hub::ReplicatedStateBundle	3111	3111	0	0	2	8	1	True	
+0x89	R	0x8	Amazon::Hub::ReplicatedStateBundle	356	356	0	0	2	8	1	True	
+0x8a	R	0x8	Amazon::Hub::ReplicatedStateBundle	678	678	16	0	2	8	1	True	
+0x8b	R	0x8	Amazon::Hub::ReplicatedStateBundle	916	916	0	0	2	8	1	True	
+0x8c	R	0x8	Amazon::Hub::ReplicatedStateBundle	728	728	16	0	2	8	1	True	
+0x8d	R	0x8	Amazon::Hub::ReplicatedStateBundle	2713	2713	0	0	2	8	1	True	
+0x8e	R	0x15d	PingMsg	12	12	0	0	2	349	2	True	
+0x8f	W	0x15d	PingMsg	36	36	0	0	26	349	2	True	True
+0x90	R	0x8	Amazon::Hub::ReplicatedStateBundle	916	916	0	0	2	8	1	True	
+0x91	R	0x8	Amazon::Hub::ReplicatedStateBundle	717	717	16	0	2	8	1	True	
+0x92	W	0x5b2	Javelin::ClientMessages::ObjectivesComponentServerFacet_UpdateTrackedObjectives	45	45	0	0	26	1458	2	True	True
+0x93	R	0x8	Amazon::Hub::ReplicatedStateBundle	739	739	16	0	2	8	1	True	
+0x94	R	0x8	Amazon::Hub::ReplicatedStateBundle	9978	9978	0	0	2	8	1	True	
+0x95	R	0x8	Amazon::Hub::ReplicatedStateBundle	2858	2858	0	0	2	8	1	True	
+0x96	R	0x8	Amazon::Hub::ReplicatedStateBundle	2579	2579	0	0	2	8	1	True	
+0x97	R	0x8	Amazon::Hub::ReplicatedStateBundle	588	588	16	0	2	8	1	True	
+0x98	R	0x8	Amazon::Hub::ReplicatedStateBundle	7167	7167	36	0	2	8	1	True	
+0x99	W	0x5b2	Javelin::ClientMessages::ObjectivesComponentServerFacet_UpdateTrackedObjectives	45	45	0	0	26	1458	2	True	True
+0x9a	R	0x8	Amazon::Hub::ReplicatedStateBundle	7167	7167	36	0	2	8	1	True	
+0x9b	W	0x5b2	Javelin::ClientMessages::ObjectivesComponentServerFacet_UpdateTrackedObjectives	45	45	0	0	26	1458	2	True	True
+0x9c	R	0x8	Amazon::Hub::ReplicatedStateBundle	7167	7167	36	0	2	8	1	True	
+0x9d	R	0x8	Amazon::Hub::ReplicatedStateBundle	126	126	0	0	2	8	1	True	
+0x9e	R	0x8	Amazon::Hub::ReplicatedStateBundle	7167	7167	36	0	2	8	1	True	
+0x9f	W	0x5b2	Javelin::ClientMessages::ObjectivesComponentServerFacet_UpdateTrackedObjectives	93	93	0	0	26	1458	2	True	True
+0xa0	R	0x8	Amazon::Hub::ReplicatedStateBundle	705	705	0	0	2	8	1	True	
+0xa1	R	0x8	Amazon::Hub::ReplicatedStateBundle	1007	1007	24	0	2	8	1	True	
+0xa2	R	0x8	Amazon::Hub::ReplicatedStateBundle	459	459	0	0	2	8	1	True	
+0xa3	R	0x8	Amazon::Hub::ReplicatedStateBundle	958	958	16	0	2	8	1	True	
+0xa4	R	0x8	Amazon::Hub::ReplicatedStateBundle	1006	1006	24	0	2	8	1	True	
+0xa5	R	0x8	Amazon::Hub::ReplicatedStateBundle	1001	1001	16	0	2	8	1	True	
+0xa6	R	0x8	Amazon::Hub::ReplicatedStateBundle	1006	1006	24	0	2	8	1	True	
+0xa7	R	0x8	Amazon::Hub::ReplicatedStateBundle	158	158	0	0	2	8	1	True	
+0xa8	R	0x8	Amazon::Hub::ReplicatedStateBundle	989	989	24	0	2	8	1	True	
+0xa9	R	0x8	Amazon::Hub::ReplicatedStateBundle	106	106	0	0	2	8	1	True	
+0xaa	R	0x8	Amazon::Hub::ReplicatedStateBundle	983	983	16	0	2	8	1	True	
+0xab	R	0x8	Amazon::Hub::ReplicatedStateBundle	78	78	0	0	2	8	1	True	
+0xac	R	0x8	Amazon::Hub::ReplicatedStateBundle	975	975	16	0	2	8	1	True	
+0xad	R	0x8	Amazon::Hub::ReplicatedStateBundle	215	215	0	0	2	8	1	True	
+0xae	R	0x8	Amazon::Hub::ReplicatedStateBundle	991	991	16	0	2	8	1	True	
+0xaf	R	0x8	Amazon::Hub::ReplicatedStateBundle	988	988	16	0	2	8	1	True	
+0xb0	R	0x8	Amazon::Hub::ReplicatedStateBundle	175	175	0	0	2	8	1	True	

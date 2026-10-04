@@ -105,3 +105,14 @@ def test_login_layer_generates_response_without_replay():
 
     assert len(body) == OBSERVED_SUCCESS_BODY_LENGTH
     assert body[16:48] == token
+
+
+def test_version_length_uses_prefix_width_not_single_byte():
+    from newworld_server.protocol.registration import RegistrationResponse, encode_registration_response
+    from newworld_server.protocol.prefix_uint32 import decode_prefix_uint32
+    version = 'V' * 128
+    body = encode_registration_response(RegistrationResponse(session_token=bytes(32), server_version=version))
+    assert decode_prefix_uint32(body, 48) == (128, 2)
+    assert body[48:50] == bytes.fromhex('8002')
+    assert body[50:178] == version.encode()
+    assert body[178:] == bytes.fromhex('01000001')

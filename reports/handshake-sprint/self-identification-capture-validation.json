@@ -1,0 +1,31 @@
+{
+  "source": "0x6_T0x65c_R.bin",
+  "capture_size": 12706,
+  "typed_header_bytes": 4,
+  "body_size": 12702,
+  "redacted_identity_spans": [
+    [
+      5,
+      21
+    ],
+    [
+      12690,
+      12706
+    ]
+  ],
+  "name_flags": [
+    5,
+    5
+  ],
+  "reference_count": 3,
+  "reference_size": 36,
+  "vector_count": 3136,
+  "vector_bytes": 12544,
+  "boolean_values": [
+    false,
+    false
+  ],
+  "full_body_consumed": true,
+  "roundtrip_known_bytes_match": true,
+  "boundary": "Structural validation only. Dummy identity bytes were used only in memory in the two known redacted identity slots; original values remain unknown. No body or identities emitted."
+}

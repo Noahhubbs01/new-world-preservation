@@ -1,0 +1,27 @@
+{
+  "messages": 177,
+  "read_messages": 138,
+  "write_messages": 39,
+  "type_matches": 177,
+  "size_matches": 177,
+  "unredacted_write_crc_checked": 37,
+  "write_crc_matches": 37,
+  "nondefault_routing": [
+    {
+      "seq": "0x25",
+      "direction": "R",
+      "type": "0x8",
+      "class": "Amazon::Hub::ReplicatedStateBundle",
+      "declared_size": 46423,
+      "dump_size": 46423,
+      "redacted_bytes": 1802,
+      "routing_flags": 3,
+      "type_offset": 18,
+      "decoded_type": 8,
+      "prefix_width": 1,
+      "prefix_matches": true,
+      "crc_matches": null
+    }
+  ],
+  "boundary": "Community plaintext framing corroborated by executable readers. No proprietary payload bytes emitted. This is not evidence that the current retail client accepted preservation-server messages."
+}

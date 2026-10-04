@@ -17,6 +17,7 @@ deliberately conservative.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from .prefix_uint32 import encode_prefix_uint32
 
 REGISTRATION_REQUEST_TYPE = 0x13
 REGISTRATION_RESPONSE_TYPE = 0x03
@@ -73,7 +74,7 @@ def encode_registration_response(response: RegistrationResponse) -> bytes:
             response.opaque8,
             bytes((SESSION_TOKEN_LENGTH,)),
             response.session_token,
-            bytes((len(version),)),
+            encode_prefix_uint32(len(version)),
             version,
             response.trailer,
         )

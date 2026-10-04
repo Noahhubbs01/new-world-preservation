@@ -1,0 +1,104 @@
+{
+  "recorded_image": {
+    "buffer": 19,
+    "opcode": 3,
+    "pid": 12044,
+    "image_base": "0x7ff6398c0000",
+    "image_size": 183214080,
+    "image_timestamp": 0,
+    "filename": "NewWorld.exe",
+    "image_checksum": 179232167,
+    "default_base": "0x7ff6398c0000"
+  },
+  "local_binary_pe": {
+    "image_base": "0x140000000",
+    "size_of_image": 183214080,
+    "checksum": 179232167
+  },
+  "pe_metadata_match": true,
+  "stacks": 226278,
+  "stacks_with_game_frames": 161016,
+  "game_frames": 4721788,
+  "depth_32_rows": 226278,
+  "anchor_stack_counts": {
+    "REP_INPUT": 1,
+    "REP_WRITER": 0,
+    "REP_FRAME": 1,
+    "SELFIDENT_HANDLER": 0,
+    "SELFIDENT_UNMARSHAL": 0,
+    "LEVELINFO_HANDLER": 0,
+    "LEVELINFO_UNMARSHAL": 0,
+    "GCW_DRIVER": 1,
+    "REPLICA_MATCH": 0,
+    "ENTRY_ACCEPT": 0,
+    "ENTRY_MATCH": 0,
+    "PLAYER_GLOBAL": 0,
+    "ENDPOINT_INET_PTON": 0,
+    "WINSOCK_SEND": 0,
+    "WINSOCK_CONNECT": 0
+  },
+  "anchor_ranges": {
+    "REP_INPUT": [
+      "0x146b6eb70",
+      "0x146b6f02e"
+    ],
+    "REP_WRITER": [
+      "0x146b6f190",
+      "0x146b6fe1b"
+    ],
+    "REP_FRAME": [
+      "0x146ae44f0",
+      "0x146ae470f"
+    ],
+    "SELFIDENT_HANDLER": [
+      "0x146454c00",
+      "0x146455673"
+    ],
+    "SELFIDENT_UNMARSHAL": [
+      "0x1414fd530",
+      "0x1414fd789"
+    ],
+    "LEVELINFO_HANDLER": [
+      "0x146446800",
+      "0x146446c8f"
+    ],
+    "LEVELINFO_UNMARSHAL": [
+      "0x1415009e0",
+      "0x141500c30"
+    ],
+    "GCW_DRIVER": [
+      "0x14644a070",
+      "0x14644aae4"
+    ],
+    "REPLICA_MATCH": [
+      "0x142ffbc50",
+      "0x142ffbc66"
+    ],
+    "ENTRY_ACCEPT": [
+      "0x1434b0940",
+      "0x1434b0971"
+    ],
+    "ENTRY_MATCH": [
+      "0x1434985c0",
+      "0x143498680"
+    ],
+    "PLAYER_GLOBAL": [
+      "0x141026080",
+      "0x141026121"
+    ],
+    "ENDPOINT_INET_PTON": [
+      "0x1464549b0",
+      "0x146454bec"
+    ],
+    "WINSOCK_SEND": [
+      "0x147bb9960",
+      "0x147bb9d2b"
+    ],
+    "WINSOCK_CONNECT": [
+      "0x147bbaa80",
+      "0x147bbac86"
+    ]
+  },
+  "elapsed_seconds": 29.99,
+  "boundary": "Sampled call stacks are not application payloads or proof of client state progression. PE metadata agreement alone is not an exact captured-module hash."
+}
