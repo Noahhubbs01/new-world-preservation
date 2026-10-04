@@ -1,5 +1,7 @@
 # Handshake and player-spawn reconstruction map
 
+Current continuation: [structural reduction and exact experiments](HANDSHAKE_SPRINT2_PROGRESS.md). This map records the first checkpoint; that report supersedes its remaining serialization gaps.
+
 Updated 2026-10-04. Branch: `work/gpt61-handshake-sprint`. Baseline: `435153d`.
 
 **Player spawn on the preservation server is not achieved.** The existing transport implementation and new structural codecs are tested locally. No retail-client world-entry success is claimed. This map records the finite remaining requirements, rather than treating a captured login replay as a working server.
@@ -32,12 +34,12 @@ The executable's GameConnectionWorkflow states are A WaitingForREPConnection, B 
 |---|---|---|
 | REP-01 incoming response identity | VERIFIED: writer `146B6F190` requests descriptor provider `1407F2E80`, compares incoming virtual `+30` descriptor through `146158BA0`; the provider maps to RegistrationResponseMsg UUID `104145A7-FF95-44F1-9468-21FB41C8AC2B`. Equality compares descriptor address or identity words `+18/+20`. | Identifies the accepted class, not sufficient session values. Compact type 3 is COMMUNITY-CORROBORATED. |
 | REP-02 response field structure | VERIFIED: unmarshal `1407CD040` reads BE u32 error, raw8 identity, prefix string token, prefix string server version, four booleans. Writer requires first-response gate `+600` and zero error, applies fields, then sets REP `+601`. | Minimum legal token, identity, flags and subsequent connection behavior remain open. |
-| WIRE-PREFIX | VERIFIED encoder `140877970`, decoder `14087B5C0`: prefix-width uint32, not LEB128. Widths 1/2/3/4/5; marker bits 0/10/110/1110/11110; low 7/6/5/4/3 bits in first byte, remaining value bytes BE, decode modulo 32 bits. | New dedicated codec. Existing Carrier VLQ is not globally replaced. |
+| WIRE-PREFIX | VERIFIED encoder `140877970`, decoder `14087B5C0`: prefix-width uint32, not LEB128. Widths 1/2/3/4/5; marker bits 0/10/110/1110/11110; low 7/6/5/4/3 bits in first byte, remaining value bytes LE, decode modulo 32 bits. | New dedicated codec. Existing Carrier VLQ is not globally replaced. |
 | WIRE-ROUTING | VERIFIED `1461455F0`: flags then optional raw8 A (bit0) and raw8 B (bit1). `1417B2430`: presence byte then reflected identity. Type zero introduces raw16 inline identity. Extended bit2 structure is unsupported and rejected. | All 177 preserved messages match type and size. First StateBundle has flags 3 and type offset18. These two raw8 fields are not identified as a UUID. |
 | WIRE-WRITE | COMMUNITY-CORROBORATED: outgoing dump prefix is CRC32 BE4, length BE4, raw16 correlation, routed message. All 37 unredacted outgoing CRCs match CRC32 over bytes from offset8. | Captured plaintext convention; not automatic proof for every transport layer. |
 | SELF-SCHEMA | VERIFIED `1414FD530`: TaggedName; three ObjectReferences each BE u32 + raw16 + raw16; nested BE u32, prefix-count BE u32 array, two strict booleans, BE float64; final TaggedName. TaggedName flags bit0 selects raw16 identity, otherwise prefix string bytes. | Preserved self-ID body12702 bytes fully consumed and roundtrips all known bytes; array3136 elements. Two redacted identity spans remain unknown. Semantic names are deliberately neutral. |
 | SPAWN-MARKER | VERIFIED `1414E3930` consumes no body. Preserved type `0x651` message is four header bytes. | SpawnPoint is a marker, not coordinates. |
-| LEVEL-PREFIX | VERIFIED `1415009E0`: two prefix strings, two BE float64, raw8 then collection/context decoder `1415B3370`. | Collection elements and semantic constraints remain open. No guessed LevelInfo encoder installed. |
+| LEVEL-PREFIX | VERIFIED `1415009E0`: two prefix strings, two BE float64, raw8 then collection/context decoder `1415B3370`. | Collection elements and semantic constraints remain open. Complete structural codec and both capture roundtrips now verified; see sprint2 report. |
 
 New code: `server/newworld_server/protocol/{prefix_uint32,reflected,routing,framing,self_identification}.py`. Registration version strings now use the evidenced prefix-width length, including lengths >=128. Stream framing handles partial and concatenated frames, truncation and bounded allocation. These codecs are available for evidenced integration; this checkpoint does not emit speculative post-registration messages.
 

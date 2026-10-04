@@ -16,7 +16,7 @@ def encode_prefix_uint32(value: int) -> bytes:
         raise ValueError('value must fit uint32')
     for width,limit,marker,shift in ((1,0x80,0,7),(2,0x4000,0x80,6),(3,0x200000,0xC0,5),(4,0x10000000,0xE0,4),(5,0x100000000,0xF0,3)):
         if value < limit:
-            return bytes([marker | (value & ((1 << shift)-1))]) + (value >> shift).to_bytes(width-1, 'big')
+            return bytes([marker | (value & ((1 << shift)-1))]) + (value >> shift).to_bytes(width-1, 'little')
     raise AssertionError('unreachable')
 
 def decode_prefix_uint32(data: bytes, offset: int = 0) -> tuple[int,int]:
@@ -30,5 +30,5 @@ def decode_prefix_uint32(data: bytes, offset: int = 0) -> tuple[int,int]:
     if len(data)-offset < width:
         raise IncompletePrefixUInt32('truncated prefix')
     shift=8-width if width<5 else 3
-    value=(int.from_bytes(data[offset+1:offset+width],'big') << shift) | (first & ((1 << shift)-1))
+    value=(int.from_bytes(data[offset+1:offset+width],'little') << shift) | (first & ((1 << shift)-1))
     return value & 0xFFFFFFFF, width

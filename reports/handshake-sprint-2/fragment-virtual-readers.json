@@ -1,0 +1,189 @@
+[
+  {
+    "type": 10,
+    "class": "MB::GdeMetadataReplicatedState",
+    "candidate_vptr": "0x148041178",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 12,
+    "class": "MB::GatherableControllerReplicatedState",
+    "candidate_vptr": "0x148459bf0",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 13,
+    "class": "MB::PositionInTheWorldReplicatedState",
+    "candidate_vptr": "0x148465c30",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 1594,
+    "class": "MB::BuildableControllerReplicatedState",
+    "candidate_vptr": "0x14837aae8",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 2187,
+    "class": "MB::PlacementObstructionComponentReplicatedState",
+    "candidate_vptr": "0x1480f4710",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 2201,
+    "class": "Javelin::GameModeMutationSchedulerReplicatedState",
+    "candidate_vptr": "0x1481c12f8",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 2930,
+    "class": "MB::InteractReplicatedState",
+    "candidate_vptr": "0x1481fdb60",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 3147,
+    "class": "Javelin::GuildsComponentReplicatedState",
+    "candidate_vptr": "0x1481e3038",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 3183,
+    "class": "MB::PaperdollComponentReplicatedState",
+    "candidate_vptr": "0x148552560",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 3362,
+    "class": "MB::SlayerScriptReplicatedState",
+    "candidate_vptr": "0x1481bf470",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 3752,
+    "class": "MB::InteractorComponentReplicatedState",
+    "candidate_vptr": "0x1483988b0",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 3935,
+    "class": "MB::PlayerComponentReplicatedState",
+    "candidate_vptr": "0x148557af0",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 4176,
+    "class": "MB::SocialReplicatedState",
+    "candidate_vptr": "0x1482da9a8",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 4236,
+    "class": "MB::StatusEffectsComponentReplicatedState",
+    "candidate_vptr": "0x1482f80d0",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 4878,
+    "class": "Javelin::MusicalPerformancePlayerComponentReplicatedState",
+    "candidate_vptr": "0x1482450d8",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 5620,
+    "class": "MB::MountComponentReplicatedState",
+    "candidate_vptr": "0x148237a00",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  },
+  {
+    "type": 6234,
+    "class": "Javelin::InstancedSlayerScriptReplicatedState",
+    "candidate_vptr": "0x1481bbaa0",
+    "slots": {
+      "0x90": "0x1417b4110",
+      "0xa0": "0x1417b3e90",
+      "0xb0": "0x1417b4320"
+    },
+    "boundary": "Root vptr candidates; concrete call receiver/subobject must be confirmed."
+  }
+]

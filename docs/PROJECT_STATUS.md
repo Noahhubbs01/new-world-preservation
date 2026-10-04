@@ -20,6 +20,13 @@ Remaining named requirements: REP-03 session continuity, WORLD-ENDPOINT handoff,
 
 Second sprint (retail dependency/compatibility map) is deferred pending instruction. EAC/security mechanisms and Amazon production experiments remain excluded.
 
+## Current continuation — StateBundle / LevelInfo structural reduction
+
+Full current detail: [Sprint2 progress and experiment specifications](HANDSHAKE_SPRINT2_PROGRESS.md).
+Prefix-width remaining bytes corrected to LITTLE-ENDIAN using executable encode/decode and large capture length46393 (`d9a905`); older big-endian formulas below are superseded. Both LevelInfo examples completely decode/re-encode. All79 StateBundle outer schemas validate;51 distinct masked inner payloads remain. New LevelInfo and StateBundle codecs are structural only; runtime post-registration emission is still deferred.
+
+StateBundle inner receive/apply path is now narrowed to14175CCC0 ->146AF20D0 ->146AF2340 ->141717FC0. All79 first record headers correlate to17 reflected fragment classes; their candidate root vtables share the three-stage virtual deserialize path90/A0/B0. 144 field registrations recovered for17 candidate roots. Musical type4878 first body now closes at20 bytes in25 bundles, followed by field10/type3829. IMPORTANT correction: StateBundle146AF2340 calls ONLY virtual90; the generic90/A0/B0 path is a different serialization context. Presence codec added and124 tests pass. Remaining47 initial fragments and their concrete schemas remain an existing-evidence STATIC frontier, not exhausted. REP token/flag consumers and endpoint assignment still need focused static reduction. Exact dependent preservation experiments and supervised administrator LAN runtime steps are documented, but not executed. No final mission outcome or retail spawn is claimed.
+
 ## Current objective
 
 Recover enough of the client/server protocol to construct a minimal private offline/LAN server capable of progressing the legitimate New World client through:
@@ -296,9 +303,9 @@ Decoder structure:
 
 - 1 byte: `value = b0 & 0x7F`
 - 2 bytes: `(b1 << 6) | (b0 & 0x3F)`
-- 3 bytes: `(BE16(b1,b2) << 5) | (b0 & 0x1F)`
-- 4 bytes: `(BE24(b1,b2,b3) << 4) | (b0 & 0x0F)`
-- 5 bytes: `(BE32(b1,b2,b3,b4) << 3) | (b0 & 0x07)`, modulo uint32
+- 3 bytes: `(LE16(b1,b2) << 5) | (b0 & 0x1F)`
+- 4 bytes: `(LE24(b1,b2,b3) << 4) | (b0 & 0x0F)`
+- 5 bytes: `(LE32(b1,b2,b3,b4) << 3) | (b0 & 0x07)`, modulo uint32
 
 The encoder independently matches the corresponding thresholds and representation.
 

@@ -1,0 +1,452 @@
+[
+  {
+    "seq": "0x25",
+    "stopped_at": 56,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x2a",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x2b",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x2e",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x2f",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x30",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x33",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x34",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x35",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x42",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x44",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x47",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x48",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x49",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x4c",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x4e",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x4f",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x52",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x55",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x56",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x59",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x5a",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x5b",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x66",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  },
+  {
+    "seq": "0x6c",
+    "stopped_at": 40,
+    "stages": [
+      {
+        "group_mask": 3
+      },
+      {
+        "group": 0,
+        "field_mask": 1
+      },
+      {
+        "group": 1,
+        "field_mask": 6
+      }
+    ],
+    "reason": "bad optional raw8"
+  }
+]

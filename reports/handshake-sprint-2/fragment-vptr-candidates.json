@@ -1,0 +1,172 @@
+[
+  {
+    "type": 10,
+    "class": "MB::GdeMetadataReplicatedState",
+    "constructor": "0x14161c070",
+    "root_vptr_candidates": [
+      "0x148041178",
+      "0x148041028"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 12,
+    "class": "MB::GatherableControllerReplicatedState",
+    "constructor": "0x145b9ea90",
+    "root_vptr_candidates": [
+      "0x148459bf0",
+      "0x148459b80"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 13,
+    "class": "MB::PositionInTheWorldReplicatedState",
+    "constructor": "0x145bb27d0",
+    "root_vptr_candidates": [
+      "0x148465c30",
+      "0x148465b50"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 1594,
+    "class": "MB::BuildableControllerReplicatedState",
+    "constructor": "0x1447b7d20",
+    "root_vptr_candidates": [
+      "0x14837aae8",
+      "0x14803f098"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 2187,
+    "class": "MB::PlacementObstructionComponentReplicatedState",
+    "constructor": "0x1429a6ef0",
+    "root_vptr_candidates": [
+      "0x1480f4710",
+      "0x1480f46a0"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 2201,
+    "class": "Javelin::GameModeMutationSchedulerReplicatedState",
+    "constructor": "0x14333a3f0",
+    "root_vptr_candidates": [
+      "0x1481c12f8",
+      "0x1480b9910"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 2930,
+    "class": "MB::InteractReplicatedState",
+    "constructor": "0x1435e2c70",
+    "root_vptr_candidates": [
+      "0x1481fdb60",
+      "0x14803f098"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 3147,
+    "class": "Javelin::GuildsComponentReplicatedState",
+    "constructor": "0x1434dfd30",
+    "root_vptr_candidates": [
+      "0x1481e3038",
+      "0x147ef8ac0"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 3183,
+    "class": "MB::PaperdollComponentReplicatedState",
+    "constructor": "0x14670d610",
+    "root_vptr_candidates": [
+      "0x148552560",
+      "0x147f4e100"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 3362,
+    "class": "MB::SlayerScriptReplicatedState",
+    "constructor": "0x14330c160",
+    "root_vptr_candidates": [
+      "0x1481bf470",
+      "0x1480b9980"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 3752,
+    "class": "MB::InteractorComponentReplicatedState",
+    "constructor": "0x1449193b0",
+    "root_vptr_candidates": [
+      "0x1483988b0",
+      "0x14803f098"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 3935,
+    "class": "MB::PlayerComponentReplicatedState",
+    "constructor": "0x146711e90",
+    "root_vptr_candidates": [
+      "0x148557af0",
+      "0x14803f108"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 4176,
+    "class": "MB::SocialReplicatedState",
+    "constructor": "0x143ed7110",
+    "root_vptr_candidates": [
+      "0x1482da9a8",
+      "0x1480b9910"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 4236,
+    "class": "MB::StatusEffectsComponentReplicatedState",
+    "constructor": "0x144013900",
+    "root_vptr_candidates": [
+      "0x1482f80d0",
+      "0x147ef8ac0"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 4878,
+    "class": "Javelin::MusicalPerformancePlayerComponentReplicatedState",
+    "constructor": "0x143964aa0",
+    "root_vptr_candidates": [
+      "0x1482450d8",
+      "0x1480b8678"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 5620,
+    "class": "MB::MountComponentReplicatedState",
+    "constructor": "0x1438d7000",
+    "root_vptr_candidates": [
+      "0x148237a00",
+      "0x1480b9910"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  },
+  {
+    "type": 6234,
+    "class": "Javelin::InstancedSlayerScriptReplicatedState",
+    "constructor": "0x1432e8900",
+    "root_vptr_candidates": [
+      "0x1481bbaa0",
+      "0x1481b7d50"
+    ],
+    "boundary": "Candidates require register-to-store/subobject tracking; not proven serialization dispatch."
+  }
+]

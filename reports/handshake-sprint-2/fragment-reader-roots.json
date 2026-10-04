@@ -1,0 +1,158 @@
+[
+  {
+    "type": 10,
+    "name": "MB::GdeMetadataReplicatedState",
+    "unmarshal": "0x1415136e0",
+    "calls": [
+      "0x14161c070",
+      "0x146160ae0",
+      "0x1416443e0",
+      "0x141644450",
+      "0x146156a80"
+    ]
+  },
+  {
+    "type": 12,
+    "name": "MB::GatherableControllerReplicatedState",
+    "unmarshal": "0x145ce5f30",
+    "calls": [
+      "0x145b9ea90",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 13,
+    "name": "MB::PositionInTheWorldReplicatedState",
+    "unmarshal": "0x145ce5f90",
+    "calls": [
+      "0x145bb27d0",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 1594,
+    "name": "MB::BuildableControllerReplicatedState",
+    "unmarshal": "0x1447b7270",
+    "calls": [
+      "0x1447b7d20",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 2187,
+    "name": "MB::PlacementObstructionComponentReplicatedState",
+    "unmarshal": "0x14299e810",
+    "calls": [
+      "0x1429a6ef0",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 2201,
+    "name": "Javelin::GameModeMutationSchedulerReplicatedState",
+    "unmarshal": "0x14332e190",
+    "calls": [
+      "0x14333a3f0",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 2930,
+    "name": "MB::InteractReplicatedState",
+    "unmarshal": "0x1435dbb70",
+    "calls": [
+      "0x1435e2c70",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 3147,
+    "name": "Javelin::GuildsComponentReplicatedState",
+    "unmarshal": "0x1434c9700",
+    "calls": [
+      "0x1434dfd30",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 3183,
+    "name": "MB::PaperdollComponentReplicatedState",
+    "unmarshal": "0x146596630",
+    "calls": [
+      "0x14670d610",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 3362,
+    "name": "MB::SlayerScriptReplicatedState",
+    "unmarshal": "0x1432f8c10",
+    "calls": [
+      "0x14330c160",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 3752,
+    "name": "MB::InteractorComponentReplicatedState",
+    "unmarshal": "0x144918f70",
+    "calls": [
+      "0x1449193b0",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 3935,
+    "name": "MB::PlayerComponentReplicatedState",
+    "unmarshal": "0x146573d60",
+    "calls": [
+      "0x146711e90",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 4176,
+    "name": "MB::SocialReplicatedState",
+    "unmarshal": "0x143eb84a0",
+    "calls": [
+      "0x143ed7110",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 4236,
+    "name": "MB::StatusEffectsComponentReplicatedState",
+    "unmarshal": "0x143ffbf90",
+    "calls": [
+      "0x144013900",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 4878,
+    "name": "Javelin::MusicalPerformancePlayerComponentReplicatedState",
+    "unmarshal": "0x143962120",
+    "calls": [
+      "0x143964aa0",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 5620,
+    "name": "MB::MountComponentReplicatedState",
+    "unmarshal": "0x1438bf670",
+    "calls": [
+      "0x1438d7000",
+      "0x146160ae0"
+    ]
+  },
+  {
+    "type": 6234,
+    "name": "Javelin::InstancedSlayerScriptReplicatedState",
+    "unmarshal": "0x1432de0c0",
+    "calls": [
+      "0x1432e8900",
+      "0x146160ae0"
+    ]
+  }
+]
