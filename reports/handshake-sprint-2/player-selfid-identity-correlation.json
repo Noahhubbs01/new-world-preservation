@@ -1,0 +1,96 @@
+[
+  {
+    "seq": "0x8c",
+    "interest": 91,
+    "character_id_to_selfid_tag": {
+      "visible_pairs": 0,
+      "equal_pairs": 0,
+      "exact_match": false
+    },
+    "character_id_to_object_reference_uuid_halves": [
+      [
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        },
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        }
+      ],
+      [
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        },
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        }
+      ],
+      [
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        },
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        }
+      ]
+    ]
+  },
+  {
+    "seq": "0xae",
+    "interest": 91,
+    "character_id_to_selfid_tag": {
+      "visible_pairs": 0,
+      "equal_pairs": 0,
+      "exact_match": false
+    },
+    "character_id_to_object_reference_uuid_halves": [
+      [
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        },
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        }
+      ],
+      [
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        },
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        }
+      ],
+      [
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        },
+        {
+          "visible_pairs": 16,
+          "equal_pairs": 0,
+          "exact_match": false
+        }
+      ]
+    ]
+  }
+]

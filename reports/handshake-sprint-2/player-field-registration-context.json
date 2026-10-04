@@ -1,0 +1,353 @@
+[
+  {
+    "name": "characterId",
+    "argument_context": [
+      "   146712518:\t49 8b c9             \tmov    rcx,r9",
+      "   14671251b:\te8 b0 58 f6 fa       \tcall   0x141677dd0",
+      "   146712520:\t48 8b 4c 24 68       \tmov    rcx,QWORD PTR [rsp+0x68]",
+      "   146712525:\t48 89 81 40 0f 00 00 \tmov    QWORD PTR [rcx+0xf40],rax",
+      "   14671252c:\t4c 8b c8             \tmov    r9,rax",
+      "   14671252f:\t4c 8d 81 c0 07 00 00 \tlea    r8,[rcx+0x7c0]",
+      "   146712536:\t48 8d 15 13 98 83 01 \tlea    rdx,[rip+0x1839813]        # 0x147f4bd50",
+      "   14671253d:\te8 1e 37 06 fb       \t"
+    ]
+  },
+  {
+    "name": "characterName",
+    "argument_context": [
+      "",
+      "   146712542:\t48 8b 44 24 68       \tmov    rax,QWORD PTR [rsp+0x68]",
+      "   146712547:\t4c 8b 88 40 0f 00 00 \tmov    r9,QWORD PTR [rax+0xf40]",
+      "   14671254e:\t4c 8d 80 70 08 00 00 \tlea    r8,[rax+0x870]",
+      "   146712555:\t48 8d 15 34 6b e4 01 \tlea    rdx,[rip+0x1e46b34]        # 0x148559090",
+      "   14671255c:\t48 8b c8             \tmov    rcx,rax",
+      "   14671255f:\te8 fc 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "homeWorldId",
+    "argument_context": [
+      "",
+      "   146712564:\t48 8b 44 24 68       \tmov    rax,QWORD PTR [rsp+0x68]",
+      "   146712569:\t4c 8b 88 40 0f 00 00 \tmov    r9,QWORD PTR [rax+0xf40]",
+      "   146712570:\t4c 8d 80 f0 08 00 00 \tlea    r8,[rax+0x8f0]",
+      "   146712577:\t48 8d 15 22 6b e4 01 \tlea    rdx,[rip+0x1e46b22]        # 0x1485590a0",
+      "   14671257e:\t48 8b c8             \tmov    rcx,rax",
+      "   146712581:\te8 da 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "playerConnected",
+    "argument_context": [
+      "",
+      "   146712586:\t48 8b 44 24 68       \tmov    rax,QWORD PTR [rsp+0x68]",
+      "   14671258b:\t4c 8b 88 40 0f 00 00 \tmov    r9,QWORD PTR [rax+0xf40]",
+      "   146712592:\t4c 8d 80 c8 0a 00 00 \tlea    r8,[rax+0xac8]",
+      "   146712599:\t48 8d 15 10 6b e4 01 \tlea    rdx,[rip+0x1e46b10]        # 0x1485590b0",
+      "   1467125a0:\t48 8b c8             \tmov    rcx,rax",
+      "   1467125a3:\te8 b8 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "lookingThroughLoadout",
+    "argument_context": [
+      "",
+      "   1467125a8:\t48 8b 44 24 68       \tmov    rax,QWORD PTR [rsp+0x68]",
+      "   1467125ad:\t4c 8b 88 40 0f 00 00 \tmov    r9,QWORD PTR [rax+0xf40]",
+      "   1467125b4:\t4c 8d 80 e8 0a 00 00 \tlea    r8,[rax+0xae8]",
+      "   1467125bb:\t48 8d 15 fe 6a e4 01 \tlea    rdx,[rip+0x1e46afe]        # 0x1485590c0",
+      "   1467125c2:\t48 8b c8             \tmov    rcx,rax",
+      "   1467125c5:\te8 96 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "playerType",
+    "argument_context": [
+      "",
+      "   1467125ca:\t48 8b 44 24 68       \tmov    rax,QWORD PTR [rsp+0x68]",
+      "   1467125cf:\t4c 8b 88 40 0f 00 00 \tmov    r9,QWORD PTR [rax+0xf40]",
+      "   1467125d6:\t4c 8d 80 68 0c 00 00 \tlea    r8,[rax+0xc68]",
+      "   1467125dd:\t48 8d 15 f4 6a e4 01 \tlea    rdx,[rip+0x1e46af4]        # 0x1485590d8",
+      "   1467125e4:\t48 8b c8             \tmov    rcx,rax",
+      "   1467125e7:\te8 74 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isInStore",
+    "argument_context": [
+      "",
+      "   1467125ec:\t48 8b 44 24 68       \tmov    rax,QWORD PTR [rsp+0x68]",
+      "   1467125f1:\t4c 8b 88 40 0f 00 00 \tmov    r9,QWORD PTR [rax+0xf40]",
+      "   1467125f8:\t4c 8d 80 08 0b 00 00 \tlea    r8,[rax+0xb08]",
+      "   1467125ff:\t48 8d 15 e2 6a e4 01 \tlea    rdx,[rip+0x1e46ae2]        # 0x1485590e8",
+      "   146712606:\t48 8b c8             \tmov    rcx,rax",
+      "   146712609:\te8 52 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "platformAccountId",
+    "argument_context": [
+      "",
+      "   14671260e:\t4c 8b 4c 24 68       \tmov    r9,QWORD PTR [rsp+0x68]",
+      "   146712613:\t4d 8b 89 40 0f 00 00 \tmov    r9,QWORD PTR [r9+0xf40]",
+      "   14671261a:\t4c 8b c7             \tmov    r8,rdi",
+      "   14671261d:\t48 8d 15 74 8f ca 01 \tlea    rdx,[rip+0x1ca8f74]        # 0x1483bb598",
+      "   146712624:\t48 8b 7c 24 68       \tmov    rdi,QWORD PTR [rsp+0x68]",
+      "   146712629:\t48 8b cf             \tmov    rcx,rdi",
+      "   14671262c:\te8 2f 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "platformType",
+    "argument_context": [
+      "",
+      "   146712631:\t4c 8b 8f 40 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf40]",
+      "   146712638:\t4c 8d 86 90 0e 00 00 \tlea    r8,[rsi+0xe90]",
+      "   14671263f:\t48 8d 15 b2 6a e4 01 \tlea    rdx,[rip+0x1e46ab2]        # 0x1485590f8",
+      "   146712646:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712649:\te8 12 36 06 fb       \t"
+    ]
+  },
+  {
+    "name": "loginMatchId",
+    "argument_context": [
+      "",
+      "   14671264e:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712655:\t4c 8d 87 50 0a 00 00 \tlea    r8,[rdi+0xa50]",
+      "   14671265c:\t48 8d 15 a5 6a e4 01 \tlea    rdx,[rip+0x1e46aa5]        # 0x148559108",
+      "   146712663:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712666:\te8 f5 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "srcWorldId",
+    "argument_context": [
+      "",
+      "   14671266b:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712672:\t4c 8d 87 a0 09 00 00 \tlea    r8,[rdi+0x9a0]",
+      "   146712679:\t48 8d 15 d8 2b 93 01 \tlea    rdx,[rip+0x1932bd8]        # 0x148045258",
+      "   146712680:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712683:\te8 d8 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "accountIsLocked",
+    "argument_context": [
+      "",
+      "   146712688:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   14671268f:\t4c 8d 87 c8 0b 00 00 \tlea    r8,[rdi+0xbc8]",
+      "   146712696:\t48 8d 15 7b 6a e4 01 \tlea    rdx,[rip+0x1e46a7b]        # 0x148559118",
+      "   14671269d:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467126a0:\te8 bb 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "accountInProbation",
+    "argument_context": [
+      "",
+      "   1467126a5:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467126ac:\t4c 8d 87 e8 0b 00 00 \tlea    r8,[rdi+0xbe8]",
+      "   1467126b3:\t48 8d 15 6e 6a e4 01 \tlea    rdx,[rip+0x1e46a6e]        # 0x148559128",
+      "   1467126ba:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467126bd:\te8 9e 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "ageGroup",
+    "argument_context": [
+      "",
+      "   1467126c2:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467126c9:\t4c 8d 87 08 0c 00 00 \tlea    r8,[rdi+0xc08]",
+      "   1467126d0:\t48 8d 15 69 6a e4 01 \tlea    rdx,[rip+0x1e46a69]        # 0x148559140",
+      "   1467126d7:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467126da:\te8 81 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "territoryOwnerGuildId",
+    "argument_context": [
+      "",
+      "   1467126df:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467126e6:\t4c 8d 87 90 0c 00 00 \tlea    r8,[rdi+0xc90]",
+      "   1467126ed:\t48 8d 15 14 85 c6 01 \tlea    rdx,[rip+0x1c68514]        # 0x14837ac08",
+      "   1467126f4:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467126f7:\te8 64 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "sessionStartWallClockTimePoint",
+    "argument_context": [
+      "",
+      "   1467126fc:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712703:\t4c 8d 87 00 0d 00 00 \tlea    r8,[rdi+0xd00]",
+      "   14671270a:\t48 8d 15 3f 6a e4 01 \tlea    rdx,[rip+0x1e46a3f]        # 0x148559150",
+      "   146712711:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712714:\te8 47 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "sessionStartTimePoint",
+    "argument_context": [
+      "",
+      "   146712719:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712720:\t4c 8d 87 48 0d 00 00 \tlea    r8,[rdi+0xd48]",
+      "   146712727:\t48 8d 15 42 6a e4 01 \tlea    rdx,[rip+0x1e46a42]        # 0x148559170",
+      "   14671272e:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712731:\te8 2a 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "debugAccountProbationOverride",
+    "argument_context": [
+      "",
+      "   146712736:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   14671273d:\t4d 8b c5             \tmov    r8,r13",
+      "   146712740:\t48 8d 15 41 6a e4 01 \tlea    rdx,[rip+0x1e46a41]        # 0x148559188",
+      "   146712747:\t48 8b cf             \tmov    rcx,rdi",
+      "   14671274a:\te8 11 35 06 fb       \t"
+    ]
+  },
+  {
+    "name": "freePlayerCountdown",
+    "argument_context": [
+      "",
+      "   14671274f:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712756:\t4d 8b c4             \tmov    r8,r12",
+      "   146712759:\t48 8d 15 48 6a e4 01 \tlea    rdx,[rip+0x1e46a48]        # 0x1485591a8",
+      "   146712760:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712763:\te8 f8 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "enteringStoreIsBlocked",
+    "argument_context": [
+      "",
+      "   146712768:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   14671276f:\t4c 8d 87 28 0c 00 00 \tlea    r8,[rdi+0xc28]",
+      "   146712776:\t48 8d 15 43 6a e4 01 \tlea    rdx,[rip+0x1e46a43]        # 0x1485591c0",
+      "   14671277d:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712780:\te8 db 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isFreshStartWorld",
+    "argument_context": [
+      "",
+      "   146712785:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   14671278c:\t4c 8d 87 48 0c 00 00 \tlea    r8,[rdi+0xc48]",
+      "   146712793:\t48 8d 15 3e 6a e4 01 \tlea    rdx,[rip+0x1e46a3e]        # 0x1485591d8",
+      "   14671279a:\t48 8b cf             \tmov    rcx,rdi",
+      "   14671279d:\te8 be 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "onDeathRespawnCooldown",
+    "argument_context": [
+      "",
+      "   1467127a2:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467127a9:\t4c 8b c5             \tmov    r8,rbp",
+      "   1467127ac:\t48 8d 15 3d 6a e4 01 \tlea    rdx,[rip+0x1e46a3d]        # 0x1485591f0",
+      "   1467127b3:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467127b6:\te8 a5 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "mostRecentPVPActiveSwitchTimePoint",
+    "argument_context": [
+      "",
+      "   1467127bb:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467127c2:\t4d 8b c6             \tmov    r8,r14",
+      "   1467127c5:\t48 8d 15 3c 6a e4 01 \tlea    rdx,[rip+0x1e46a3c]        # 0x148559208",
+      "   1467127cc:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467127cf:\te8 8c 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "shouldNotifyPlayer",
+    "argument_context": [
+      "",
+      "   1467127d4:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467127db:\t4c 8d 86 18 0f 00 00 \tlea    r8,[rsi+0xf18]",
+      "   1467127e2:\t48 8d 15 47 6a e4 01 \tlea    rdx,[rip+0x1e46a47]        # 0x148559230",
+      "   1467127e9:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467127ec:\te8 6f 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isPVPActiveCharacter",
+    "argument_context": [
+      "",
+      "   1467127f1:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467127f8:\t4c 8d 86 b0 0e 00 00 \tlea    r8,[rsi+0xeb0]",
+      "   1467127ff:\t48 8d 15 42 6a e4 01 \tlea    rdx,[rip+0x1e46a42]        # 0x148559248",
+      "   146712806:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712809:\te8 52 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isChangingMount",
+    "argument_context": [
+      "",
+      "   14671280e:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712815:\t4c 8d 87 28 0b 00 00 \tlea    r8,[rdi+0xb28]",
+      "   14671281c:\t48 8d 15 3d 6a e4 01 \tlea    rdx,[rip+0x1e46a3d]        # 0x148559260",
+      "   146712823:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712826:\te8 35 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isTransmogStationScreenOpen",
+    "argument_context": [
+      "",
+      "   14671282b:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712832:\t4c 8d 87 48 0b 00 00 \tlea    r8,[rdi+0xb48]",
+      "   146712839:\t48 8d 15 30 6a e4 01 \tlea    rdx,[rip+0x1e46a30]        # 0x148559270",
+      "   146712840:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712843:\te8 18 34 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isTransmogScreenOpen",
+    "argument_context": [
+      "",
+      "   146712848:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   14671284f:\t4c 8d 87 68 0b 00 00 \tlea    r8,[rdi+0xb68]",
+      "   146712856:\t48 8d 15 33 6a e4 01 \tlea    rdx,[rip+0x1e46a33]        # 0x148559290",
+      "   14671285d:\t48 8b cf             \tmov    rcx,rdi",
+      "   146712860:\te8 fb 33 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isInMountAttachmentMode",
+    "argument_context": [
+      "",
+      "   146712865:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   14671286c:\t4c 8d 87 88 0b 00 00 \tlea    r8,[rdi+0xb88]",
+      "   146712873:\t48 8d 15 2e 6a e4 01 \tlea    rdx,[rip+0x1e46a2e]        # 0x1485592a8",
+      "   14671287a:\t48 8b cf             \tmov    rcx,rdi",
+      "   14671287d:\te8 de 33 06 fb       \t"
+    ]
+  },
+  {
+    "name": "isArmorDyeingOpen",
+    "argument_context": [
+      "",
+      "   146712882:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   146712889:\t4c 8d 87 a8 0b 00 00 \tlea    r8,[rdi+0xba8]",
+      "   146712890:\t48 8d 15 29 6a e4 01 \tlea    rdx,[rip+0x1e46a29]        # 0x1485592c0",
+      "   146712897:\t48 8b cf             \tmov    rcx,rdi",
+      "   14671289a:\te8 c1 33 06 fb       \t"
+    ]
+  },
+  {
+    "name": "playerBackstory",
+    "argument_context": [
+      "",
+      "   14671289f:\t4c 8b 8f 38 0f 00 00 \tmov    r9,QWORD PTR [rdi+0xf38]",
+      "   1467128a6:\t4c 8d 87 30 0e 00 00 \tlea    r8,[rdi+0xe30]",
+      "   1467128ad:\t48 8d 15 c4 65 e4 01 \tlea    rdx,[rip+0x1e465c4]        # 0x148558e78",
+      "   1467128b4:\t48 8b cf             \tmov    rcx,rdi",
+      "   1467128b7:\te8 a4 33 06 fb       \t"
+    ]
+  }
+]

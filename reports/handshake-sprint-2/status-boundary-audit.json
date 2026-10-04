@@ -1,0 +1,66 @@
+[
+  {
+    "seq": "0x8c",
+    "steps": [
+      {
+        "group": 2,
+        "mask": 1
+      },
+      {
+        "field": 0,
+        "delta": 0,
+        "version_present": 1,
+        "count": 8,
+        "position": 80
+      },
+      {
+        "group": 3,
+        "mask": 2
+      },
+      {
+        "field": 1,
+        "delta": 0,
+        "version_present": 1,
+        "count": 0,
+        "position": 182
+      },
+      {
+        "end": 182,
+        "next_field": 55,
+        "next_type": 4176
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "steps": [
+      {
+        "group": 2,
+        "mask": 1
+      },
+      {
+        "field": 0,
+        "delta": 0,
+        "version_present": 1,
+        "count": 8,
+        "position": 80
+      },
+      {
+        "group": 3,
+        "mask": 2
+      },
+      {
+        "field": 1,
+        "delta": 0,
+        "version_present": 1,
+        "count": 0,
+        "position": 182
+      },
+      {
+        "end": 182,
+        "next_field": 55,
+        "next_type": 4176
+      }
+    ]
+  }
+]

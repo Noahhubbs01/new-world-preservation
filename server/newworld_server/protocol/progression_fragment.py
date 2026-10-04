@@ -38,7 +38,7 @@ def decode_progression_fragment(data,offset=0):
     if gm==0:return values,p-offset
     if gm!=1:raise ValueError('unknown progression group')
     fm=take(1)[0]
-    if fm&128:raise ValueError('unknown progression field continuation')
+    if fm&~15:raise ValueError('unknown progression field bit')
     for i,n in enumerate(NAMES):
         if not fm&(1<<i):continue
         if i<4:

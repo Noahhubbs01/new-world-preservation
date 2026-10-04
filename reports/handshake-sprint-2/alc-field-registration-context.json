@@ -1,0 +1,848 @@
+[
+  {
+    "name": "idRel",
+    "name_va": "0x1480ffa84",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c93eb]        # 0x1480ffa84",
+      "   142a36699:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a3669d:\t48 05 d8 07 00 00    \tadd    rax,0x7d8",
+      "   142a366a3:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a366a7:\t4c 8b 65 58          \tmov    r12,QWORD PTR [rbp+0x58]",
+      "   142a366ab:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a366b2:\t00 ",
+      "   142a366b3:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a366b7:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a366ba:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a366c1:\t00 10 ",
+      "   142a366c3:\t49 8b 8c 24 60 03 00 \tmov    rcx,QWORD PTR [r12+0x360]"
+    ]
+  },
+  {
+    "name": "timeOffsetRel",
+    "name_va": "0x1480ffa90",
+    "registration_context": [
+      "lea    rax,[rip+0x56c93be]        # 0x1480ffa90",
+      "   142a366d2:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a366d6:\t48 8b 45 50          \tmov    rax,QWORD PTR [rbp+0x50]",
+      "   142a366da:\t48 05 58 08 00 00    \tadd    rax,0x858",
+      "   142a366e0:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a366e4:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a366e8:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a366eb:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a366f2:\t00 10 ",
+      "   142a366f4:\t49 8b 8c 24 60 03 00 \tmov    rcx,QWORD PTR [r12+0x360]",
+      "   142a366fb:\t00 ",
+      "   142a366fc:\t48 8d 05 9d 93 6c 05 \tlea    rax,[rip+0x56c939d]        # 0x1480ffaa0"
+    ]
+  },
+  {
+    "name": "slayerSeqTimeRel",
+    "name_va": "0x1480ffaa0",
+    "registration_context": [
+      "lea    rax,[rip+0x56c939d]        # 0x1480ffaa0",
+      "   142a36703:\t48 89 45 c8          \tmov    QWORD PTR [rbp-0x38],rax",
+      "   142a36707:\t48 8d 47 30          \tlea    rax,[rdi+0x30]",
+      "   142a3670b:\t48 89 45 d0          \tmov    QWORD PTR [rbp-0x30],rax",
+      "   142a3670f:\t0f 10 45 c8          \tmovups xmm0,XMMWORD PTR [rbp-0x38]",
+      "   142a36713:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36716:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a3671d:\t00 10 ",
+      "   142a3671f:\t49 8b 8c 24 60 03 00 \tmov    rcx,QWORD PTR [r12+0x360]",
+      "   142a36726:\t00 ",
+      "   142a36727:\t48 8d 47 08          \tlea    rax,[rdi+0x8]",
+      "   142a3672b:\t4c 8d 3d 86 93 6c 05 \tlea    r15,[rip+0x56c9386]        # 0x1480ffab8"
+    ]
+  },
+  {
+    "name": "worldPosRel",
+    "name_va": "0x1480ffad0",
+    "registration_context": [
+      "lea    rax,[rip+0x56c92a8]        # 0x1480ffad0",
+      "   142a36828:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a3682c:\t48 8b 7d 50          \tmov    rdi,QWORD PTR [rbp+0x50]",
+      "   142a36830:\t48 8d 87 10 09 00 00 \tlea    rax,[rdi+0x910]",
+      "   142a36837:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a3683b:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a3683f:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36842:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a36849:\t00 10 ",
+      "   142a3684b:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a36852:\t00 ",
+      "   142a36853:\t48 8d 0d 86 92 6c 05 \tlea    rcx,[rip+0x56c9286]        # 0x1480ffae0"
+    ]
+  },
+  {
+    "name": "rotation",
+    "name_va": "0x1480ffae0",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c9286]        # 0x1480ffae0",
+      "   142a3685a:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a3685e:\t48 8d 8f b0 09 00 00 \tlea    rcx,[rdi+0x9b0]",
+      "   142a36865:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36869:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a3686d:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36870:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a36877:\t00 10 ",
+      "   142a36879:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a36880:\t00 ",
+      "   142a36881:\t48 8d 0d 68 92 6c 05 \tlea    rcx,[rip+0x56c9268]        # 0x1480ffaf0",
+      "   142a36888:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx"
+    ]
+  },
+  {
+    "name": "lookDir",
+    "name_va": "0x1480ffaf0",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c9268]        # 0x1480ffaf0",
+      "   142a36888:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a3688c:\t48 8d 8f 60 09 00 00 \tlea    rcx,[rdi+0x960]",
+      "   142a36893:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36897:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a3689b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a3689e:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a368a5:\t00 10 ",
+      "   142a368a7:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a368ae:\t00 ",
+      "   142a368af:\t48 8d 0d 42 92 6c 05 \tlea    rcx,[rip+0x56c9242]        # 0x1480ffaf8",
+      "   142a368b6:\t48 89 4d d8          \tmov    QWORD PTR [rbp-0x28],rcx"
+    ]
+  },
+  {
+    "name": "slayerStateId",
+    "name_va": "0x1480ffaf8",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c9242]        # 0x1480ffaf8",
+      "   142a368b6:\t48 89 4d d8          \tmov    QWORD PTR [rbp-0x28],rcx",
+      "   142a368ba:\t48 8d 8f c0 0a 00 00 \tlea    rcx,[rdi+0xac0]",
+      "   142a368c1:\t48 89 4d e0          \tmov    QWORD PTR [rbp-0x20],rcx",
+      "   142a368c5:\t0f 10 45 d8          \tmovups xmm0,XMMWORD PTR [rbp-0x28]",
+      "   142a368c9:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a368cc:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a368d3:\t00 10 ",
+      "   142a368d5:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a368dc:\t00 ",
+      "   142a368dd:\t48 8d 0d 24 92 6c 05 \tlea    rcx,[rip+0x56c9224]        # 0x1480ffb08",
+      "   142a368e4:\t48 89 4d c8          \tmov    QWORD PTR [rbp-0x38],rcx"
+    ]
+  },
+  {
+    "name": "slayerStateIdStarted",
+    "name_va": "0x1480ffb08",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c9224]        # 0x1480ffb08",
+      "   142a368e4:\t48 89 4d c8          \tmov    QWORD PTR [rbp-0x38],rcx",
+      "   142a368e8:\t48 8d 8f 60 0b 00 00 \tlea    rcx,[rdi+0xb60]",
+      "   142a368ef:\t48 89 4d d0          \tmov    QWORD PTR [rbp-0x30],rcx",
+      "   142a368f3:\t0f 10 45 c8          \tmovups xmm0,XMMWORD PTR [rbp-0x38]",
+      "   142a368f7:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a368fa:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a36901:\t00 10 ",
+      "   142a36903:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a3690a:\t00 ",
+      "   142a3690b:\t48 8d 0d 0e 92 6c 05 \tlea    rcx,[rip+0x56c920e]        # 0x1480ffb20",
+      "   142a36912:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx"
+    ]
+  },
+  {
+    "name": "slayerSequenceId",
+    "name_va": "0x1480ffb20",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c920e]        # 0x1480ffb20",
+      "   142a36912:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36916:\t48 81 c7 e0 0b 00 00 \tadd    rdi,0xbe0",
+      "   142a3691d:\t48 89 7d f0          \tmov    QWORD PTR [rbp-0x10],rdi",
+      "   142a36921:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36925:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36928:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a3692f:\t00 10 ",
+      "   142a36931:\t49 8b 8c 24 60 03 00 \tmov    rcx,QWORD PTR [r12+0x360]",
+      "   142a36938:\t00 ",
+      "   142a36939:\t4c 8b 65 50          \tmov    r12,QWORD PTR [rbp+0x50]",
+      "   142a3693d:\t49 8d 84 24 e8 0a 00 \tlea    rax,[r12+0xae8]"
+    ]
+  },
+  {
+    "name": "idAbs",
+    "name_va": "0x1480ffb34",
+    "registration_context": [
+      "lea    rax,[rip+0x56c90b4]        # 0x1480ffb34",
+      "   142a36a80:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36a84:\t48 8b 7d 50          \tmov    rdi,QWORD PTR [rbp+0x50]",
+      "   142a36a88:\t48 8d 87 b8 07 00 00 \tlea    rax,[rdi+0x7b8]",
+      "   142a36a8f:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36a93:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36a97:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36a9a:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a36aa1:\t00 10 ",
+      "   142a36aa3:\t49 8b 8c 24 60 03 00 \tmov    rcx,QWORD PTR [r12+0x360]",
+      "   142a36aaa:\t00 ",
+      "   142a36aab:\t48 8d 05 8e 90 6c 05 \tlea    rax,[rip+0x56c908e]        # 0x1480ffb40"
+    ]
+  },
+  {
+    "name": "timeOffsetAbs",
+    "name_va": "0x1480ffb40",
+    "registration_context": [
+      "lea    rax,[rip+0x56c908e]        # 0x1480ffb40",
+      "   142a36ab2:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36ab6:\t48 8d 87 38 08 00 00 \tlea    rax,[rdi+0x838]",
+      "   142a36abd:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36ac1:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36ac5:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36ac8:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a36acf:\t00 10 ",
+      "   142a36ad1:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a36ad8:\t00 ",
+      "   142a36ad9:\t48 8d 0d 70 90 6c 05 \tlea    rcx,[rip+0x56c9070]        # 0x1480ffb50",
+      "   142a36ae0:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx"
+    ]
+  },
+  {
+    "name": "worldPosAbs",
+    "name_va": "0x1480ffb50",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c9070]        # 0x1480ffb50",
+      "   142a36ae0:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ae4:\t48 8d 8f c0 08 00 00 \tlea    rcx,[rdi+0x8c0]",
+      "   142a36aeb:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36aef:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36af3:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36af6:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a36afd:\t00 10 ",
+      "   142a36aff:\t49 8b 8c 24 60 03 00 \tmov    rcx,QWORD PTR [r12+0x360]",
+      "   142a36b06:\t00 ",
+      "   142a36b07:\t48 8d 05 52 90 6c 05 \tlea    rax,[rip+0x56c9052]        # 0x1480ffb60",
+      "   142a36b0e:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob0Data0",
+    "name_va": "0x1480ffb60",
+    "registration_context": [
+      "lea    rax,[rip+0x56c9052]        # 0x1480ffb60",
+      "   142a36b0e:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36b12:\t48 8d 87 c0 10 00 00 \tlea    rax,[rdi+0x10c0]",
+      "   142a36b19:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36b1d:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36b21:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36b24:\t49 83 84 24 60 03 00 \tadd    QWORD PTR [r12+0x360],0x10",
+      "   142a36b2b:\t00 10 ",
+      "   142a36b2d:\t49 8b 84 24 60 03 00 \tmov    rax,QWORD PTR [r12+0x360]",
+      "   142a36b34:\t00 ",
+      "   142a36b35:\t48 8d 0d 3c 90 6c 05 \tlea    rcx,[rip+0x56c903c]        # 0x1480ffb78",
+      "   142a36b3c:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx"
+    ]
+  },
+  {
+    "name": "scopeTimeBlobEx",
+    "name_va": "0x1480ffb78",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c903c]        # 0x1480ffb78",
+      "   142a36b3c:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36b40:\t48 89 5d f0          \tmov    QWORD PTR [rbp-0x10],rbx",
+      "   142a36b44:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36b48:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36b4b:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36b52:\t10 ",
+      "   142a36b53:\t48 8b 8f 70 03 00 00 \tmov    rcx,QWORD PTR [rdi+0x370]",
+      "   142a36b5a:\t48 8d 05 27 90 6c 05 \tlea    rax,[rip+0x56c9027]        # 0x1480ffb88",
+      "   142a36b61:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36b65:\t48 8d 87 48 11 00 00 \tlea    rax,[rdi+0x1148]",
+      "   142a36b6c:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob1Data0",
+    "name_va": "0x1480ffb88",
+    "registration_context": [
+      "lea    rax,[rip+0x56c9027]        # 0x1480ffb88",
+      "   142a36b61:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36b65:\t48 8d 87 48 11 00 00 \tlea    rax,[rdi+0x1148]",
+      "   142a36b6c:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36b70:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36b74:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36b77:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36b7e:\t10 ",
+      "   142a36b7f:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36b86:\t48 8d 0d 13 90 6c 05 \tlea    rcx,[rip+0x56c9013]        # 0x1480ffba0",
+      "   142a36b8d:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36b91:\t48 8d 8f 38 0e 00 00 \tlea    rcx,[rdi+0xe38]"
+    ]
+  },
+  {
+    "name": "teleportAndMigrationId",
+    "name_va": "0x1480ffba0",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c9013]        # 0x1480ffba0",
+      "   142a36b8d:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36b91:\t48 8d 8f 38 0e 00 00 \tlea    rcx,[rdi+0xe38]",
+      "   142a36b98:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36b9c:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36ba0:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36ba3:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36baa:\t10 ",
+      "   142a36bab:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36bb2:\t48 8d 0d ff 8f 6c 05 \tlea    rcx,[rip+0x56c8fff]        # 0x1480ffbb8",
+      "   142a36bb9:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36bbd:\t4c 89 75 f0          \tmov    QWORD PTR [rbp-0x10],r14"
+    ]
+  },
+  {
+    "name": "scopeData",
+    "name_va": "0x1480ffbb8",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8fff]        # 0x1480ffbb8",
+      "   142a36bb9:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36bbd:\t4c 89 75 f0          \tmov    QWORD PTR [rbp-0x10],r14",
+      "   142a36bc1:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36bc5:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36bc8:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36bcf:\t10 ",
+      "   142a36bd0:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36bd7:\t48 8d 0d ea 8f 6c 05 \tlea    rcx,[rip+0x56c8fea]        # 0x1480ffbc8",
+      "   142a36bde:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36be2:\t48 89 75 f0          \tmov    QWORD PTR [rbp-0x10],rsi",
+      "   142a36be6:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]"
+    ]
+  },
+  {
+    "name": "scopeInfoBlob",
+    "name_va": "0x1480ffbc8",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8fea]        # 0x1480ffbc8",
+      "   142a36bde:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36be2:\t48 89 75 f0          \tmov    QWORD PTR [rbp-0x10],rsi",
+      "   142a36be6:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36bea:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36bed:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36bf4:\t10 ",
+      "   142a36bf5:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36bfc:\t48 8d 0d d5 8f 6c 05 \tlea    rcx,[rip+0x56c8fd5]        # 0x1480ffbd8",
+      "   142a36c03:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36c07:\t48 8d 8f e0 0d 00 00 \tlea    rcx,[rdi+0xde0]",
+      "   142a36c0e:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx"
+    ]
+  },
+  {
+    "name": "globalFragTags",
+    "name_va": "0x1480ffbd8",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8fd5]        # 0x1480ffbd8",
+      "   142a36c03:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36c07:\t48 8d 8f e0 0d 00 00 \tlea    rcx,[rdi+0xde0]",
+      "   142a36c0e:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36c12:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36c16:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36c19:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36c20:\t10 ",
+      "   142a36c21:\t48 8d 05 c0 8f 6c 05 \tlea    rax,[rip+0x56c8fc0]        # 0x1480ffbe8",
+      "   142a36c28:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36c2c:\t4c 89 45 f0          \tmov    QWORD PTR [rbp-0x10],r8",
+      "   142a36c30:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]"
+    ]
+  },
+  {
+    "name": "distGround",
+    "name_va": "0x1480ffbe8",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8fc0]        # 0x1480ffbe8",
+      "   142a36c28:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36c2c:\t4c 89 45 f0          \tmov    QWORD PTR [rbp-0x10],r8",
+      "   142a36c30:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36c37:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36c3b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36c3e:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36c45:\t10 ",
+      "   142a36c46:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36c4d:\t48 8d 0d a4 8f 6c 05 \tlea    rcx,[rip+0x56c8fa4]        # 0x1480ffbf8",
+      "   142a36c54:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36c58:\t48 89 55 f0          \tmov    QWORD PTR [rbp-0x10],rdx"
+    ]
+  },
+  {
+    "name": "waterDepth",
+    "name_va": "0x1480ffbf8",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8fa4]        # 0x1480ffbf8",
+      "   142a36c54:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36c58:\t48 89 55 f0          \tmov    QWORD PTR [rbp-0x10],rdx",
+      "   142a36c5c:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36c60:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36c63:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36c6a:\t10 ",
+      "   142a36c6b:\t48 8d 05 96 8f 6c 05 \tlea    rax,[rip+0x56c8f96]        # 0x1480ffc08",
+      "   142a36c72:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36c76:\t48 8d 87 00 0a 00 00 \tlea    rax,[rdi+0xa00]",
+      "   142a36c7d:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36c81:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]"
+    ]
+  },
+  {
+    "name": "aiAngleToDesiredFacing",
+    "name_va": "0x1480ffc08",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8f96]        # 0x1480ffc08",
+      "   142a36c72:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36c76:\t48 8d 87 00 0a 00 00 \tlea    rax,[rdi+0xa00]",
+      "   142a36c7d:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36c81:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36c88:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36c8c:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36c8f:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36c96:\t10 ",
+      "   142a36c97:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36c9e:\t48 8d 0d 7b 8f 6c 05 \tlea    rcx,[rip+0x56c8f7b]        # 0x1480ffc20",
+      "   142a36ca5:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx"
+    ]
+  },
+  {
+    "name": "wpnaccrystance",
+    "name_va": "0x1480ffc20",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8f7b]        # 0x1480ffc20",
+      "   142a36ca5:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ca9:\t48 8d 8f 28 0a 00 00 \tlea    rcx,[rdi+0xa28]",
+      "   142a36cb0:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36cb4:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36cb8:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36cbb:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36cc2:\t10 ",
+      "   142a36cc3:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36cca:\t48 8d 0d 5f 8f 6c 05 \tlea    rcx,[rip+0x56c8f5f]        # 0x1480ffc30",
+      "   142a36cd1:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36cd5:\t48 8d 8f 50 0a 00 00 \tlea    rcx,[rdi+0xa50]"
+    ]
+  },
+  {
+    "name": "wpnaccrymvmnt",
+    "name_va": "0x1480ffc30",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8f5f]        # 0x1480ffc30",
+      "   142a36cd1:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36cd5:\t48 8d 8f 50 0a 00 00 \tlea    rcx,[rdi+0xa50]",
+      "   142a36cdc:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36ce0:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36ce4:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36ce7:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36cee:\t10 ",
+      "   142a36cef:\t48 8b 8f 70 03 00 00 \tmov    rcx,QWORD PTR [rdi+0x370]",
+      "   142a36cf6:\t48 8d 05 43 8f 6c 05 \tlea    rax,[rip+0x56c8f43]        # 0x1480ffc40",
+      "   142a36cfd:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36d01:\t48 8d 87 e0 10 00 00 \tlea    rax,[rdi+0x10e0]"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob0Data1",
+    "name_va": "0x1480ffc40",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8f43]        # 0x1480ffc40",
+      "   142a36cfd:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36d01:\t48 8d 87 e0 10 00 00 \tlea    rax,[rdi+0x10e0]",
+      "   142a36d08:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36d0c:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36d10:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36d13:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36d1a:\t10 ",
+      "   142a36d1b:\t48 8b 8f 70 03 00 00 \tmov    rcx,QWORD PTR [rdi+0x370]",
+      "   142a36d22:\t48 8d 05 2f 8f 6c 05 \tlea    rax,[rip+0x56c8f2f]        # 0x1480ffc58",
+      "   142a36d29:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36d2d:\t48 8d 87 68 11 00 00 \tlea    rax,[rdi+0x1168]"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob1Data1",
+    "name_va": "0x1480ffc58",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8f2f]        # 0x1480ffc58",
+      "   142a36d29:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36d2d:\t48 8d 87 68 11 00 00 \tlea    rax,[rdi+0x1168]",
+      "   142a36d34:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36d38:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36d3c:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a36d3f:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36d46:\t10 ",
+      "   142a36d47:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36d4e:\t48 8d 0d 1b 8f 6c 05 \tlea    rcx,[rip+0x56c8f1b]        # 0x1480ffc70",
+      "   142a36d55:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36d59:\t48 8d 8f f8 07 00 00 \tlea    rcx,[rdi+0x7f8]"
+    ]
+  },
+  {
+    "name": "timeAnchor",
+    "name_va": "0x1480ffc70",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8f1b]        # 0x1480ffc70",
+      "   142a36d55:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36d59:\t48 8d 8f f8 07 00 00 \tlea    rcx,[rdi+0x7f8]",
+      "   142a36d60:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36d64:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36d68:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36d6b:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36d72:\t10 ",
+      "   142a36d73:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36d7a:\t48 8d 0d ff 8e 6c 05 \tlea    rcx,[rip+0x56c8eff]        # 0x1480ffc80",
+      "   142a36d81:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36d85:\t48 8d 8f 78 08 00 00 \tlea    rcx,[rdi+0x878]"
+    ]
+  },
+  {
+    "name": "dataBits",
+    "name_va": "0x1480ffc80",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8eff]        # 0x1480ffc80",
+      "   142a36d81:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36d85:\t48 8d 8f 78 08 00 00 \tlea    rcx,[rdi+0x878]",
+      "   142a36d8c:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36d90:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36d94:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36d97:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36d9e:\t10 ",
+      "   142a36d9f:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36da6:\t48 8d 0d e3 8e 6c 05 \tlea    rcx,[rip+0x56c8ee3]        # 0x1480ffc90",
+      "   142a36dad:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36db1:\t48 8d 8f 98 08 00 00 \tlea    rcx,[rdi+0x898]"
+    ]
+  },
+  {
+    "name": "moreDataBits",
+    "name_va": "0x1480ffc90",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8ee3]        # 0x1480ffc90",
+      "   142a36dad:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36db1:\t48 8d 8f 98 08 00 00 \tlea    rcx,[rdi+0x898]",
+      "   142a36db8:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36dbc:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36dc0:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36dc3:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36dca:\t10 ",
+      "   142a36dcb:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36dd2:\t48 8d 0d c7 8e 6c 05 \tlea    rcx,[rip+0x56c8ec7]        # 0x1480ffca0",
+      "   142a36dd9:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ddd:\t4c 89 4d f0          \tmov    QWORD PTR [rbp-0x10],r9"
+    ]
+  },
+  {
+    "name": "combinedExtraNetworkData",
+    "name_va": "0x1480ffca0",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8ec7]        # 0x1480ffca0",
+      "   142a36dd9:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ddd:\t4c 89 4d f0          \tmov    QWORD PTR [rbp-0x10],r9",
+      "   142a36de1:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36de5:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36de8:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36def:\t10 ",
+      "   142a36df0:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36df7:\t48 8d 0d c2 8e 6c 05 \tlea    rcx,[rip+0x56c8ec2]        # 0x1480ffcc0",
+      "   142a36dfe:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36e02:\t48 8d 8f 00 0f 00 00 \tlea    rcx,[rdi+0xf00]",
+      "   142a36e09:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx"
+    ]
+  },
+  {
+    "name": "segmentedStamina",
+    "name_va": "0x1480ffcc0",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8ec2]        # 0x1480ffcc0",
+      "   142a36dfe:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36e02:\t48 8d 8f 00 0f 00 00 \tlea    rcx,[rdi+0xf00]",
+      "   142a36e09:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36e0d:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36e11:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36e14:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36e1b:\t10 ",
+      "   142a36e1c:\t48 8d 05 b5 8e 6c 05 \tlea    rax,[rip+0x56c8eb5]        # 0x1480ffcd8",
+      "   142a36e23:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36e27:\t4c 8b 65 48          \tmov    r12,QWORD PTR [rbp+0x48]",
+      "   142a36e2b:\t4c 89 65 f0          \tmov    QWORD PTR [rbp-0x10],r12"
+    ]
+  },
+  {
+    "name": "scopelessInfoBlob",
+    "name_va": "0x1480ffcd8",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8eb5]        # 0x1480ffcd8",
+      "   142a36e23:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36e27:\t4c 8b 65 48          \tmov    r12,QWORD PTR [rbp+0x48]",
+      "   142a36e2b:\t4c 89 65 f0          \tmov    QWORD PTR [rbp-0x10],r12",
+      "   142a36e2f:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36e36:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36e3a:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36e3d:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36e44:\t10 ",
+      "   142a36e45:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36e4c:\t48 8d 0d 9d 8e 6c 05 \tlea    rcx,[rip+0x56c8e9d]        # 0x1480ffcf0",
+      "   142a36e53:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx"
+    ]
+  },
+  {
+    "name": "scopelessTimeBlob",
+    "name_va": "0x1480ffcf0",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8e9d]        # 0x1480ffcf0",
+      "   142a36e53:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36e57:\t4c 89 5d f0          \tmov    QWORD PTR [rbp-0x10],r11",
+      "   142a36e5b:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36e5f:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36e62:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36e69:\t10 ",
+      "   142a36e6a:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36e71:\t48 8d 0d 90 8e 6c 05 \tlea    rcx,[rip+0x56c8e90]        # 0x1480ffd08",
+      "   142a36e78:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36e7c:\t48 8d 8f 58 0e 00 00 \tlea    rcx,[rdi+0xe58]",
+      "   142a36e83:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx"
+    ]
+  },
+  {
+    "name": "hitCharacterCounter",
+    "name_va": "0x1480ffd08",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8e90]        # 0x1480ffd08",
+      "   142a36e78:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36e7c:\t48 8d 8f 58 0e 00 00 \tlea    rcx,[rdi+0xe58]",
+      "   142a36e83:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36e87:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36e8b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36e8e:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36e95:\t10 ",
+      "   142a36e96:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36e9d:\t48 8d 0d 7c 8e 6c 05 \tlea    rcx,[rip+0x56c8e7c]        # 0x1480ffd20",
+      "   142a36ea4:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ea8:\t48 8d 8f 78 0e 00 00 \tlea    rcx,[rdi+0xe78]"
+    ]
+  },
+  {
+    "name": "hitStructureCounter",
+    "name_va": "0x1480ffd20",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8e7c]        # 0x1480ffd20",
+      "   142a36ea4:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ea8:\t48 8d 8f 78 0e 00 00 \tlea    rcx,[rdi+0xe78]",
+      "   142a36eaf:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36eb3:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36eb7:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36eba:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36ec1:\t10 ",
+      "   142a36ec2:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36ec9:\t48 8d 0d 68 8e 6c 05 \tlea    rcx,[rip+0x56c8e68]        # 0x1480ffd38",
+      "   142a36ed0:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ed4:\t48 8d 8f 98 0e 00 00 \tlea    rcx,[rdi+0xe98]"
+    ]
+  },
+  {
+    "name": "hitWorldCounter",
+    "name_va": "0x1480ffd38",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8e68]        # 0x1480ffd38",
+      "   142a36ed0:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36ed4:\t48 8d 8f 98 0e 00 00 \tlea    rcx,[rdi+0xe98]",
+      "   142a36edb:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36edf:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36ee3:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36ee6:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36eed:\t10 ",
+      "   142a36eee:\t48 8d 05 53 8e 6c 05 \tlea    rax,[rip+0x56c8e53]        # 0x1480ffd48",
+      "   142a36ef5:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36ef9:\t48 8d 87 b8 0e 00 00 \tlea    rax,[rdi+0xeb8]",
+      "   142a36f00:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax"
+    ]
+  },
+  {
+    "name": "gritBrokenCounter",
+    "name_va": "0x1480ffd48",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8e53]        # 0x1480ffd48",
+      "   142a36ef5:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36ef9:\t48 8d 87 b8 0e 00 00 \tlea    rax,[rdi+0xeb8]",
+      "   142a36f00:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36f04:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36f0b:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36f0f:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36f12:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36f19:\t10 ",
+      "   142a36f1a:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36f21:\t48 8d 0d 38 8e 6c 05 \tlea    rcx,[rip+0x56c8e38]        # 0x1480ffd60",
+      "   142a36f28:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx"
+    ]
+  },
+  {
+    "name": "shapeCastFilter",
+    "name_va": "0x1480ffd60",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8e38]        # 0x1480ffd60",
+      "   142a36f28:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36f2c:\t4c 8d bf 70 14 00 00 \tlea    r15,[rdi+0x1470]",
+      "   142a36f33:\t4c 89 7d f0          \tmov    QWORD PTR [rbp-0x10],r15",
+      "   142a36f37:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36f3b:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36f3e:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36f45:\t10 ",
+      "   142a36f46:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36f4d:\t48 8d 0d 1c 8e 6c 05 \tlea    rcx,[rip+0x56c8e1c]        # 0x1480ffd70",
+      "   142a36f54:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36f58:\t48 8d 8f 78 0a 00 00 \tlea    rcx,[rdi+0xa78]"
+    ]
+  },
+  {
+    "name": "slayerScriptLayers",
+    "name_va": "0x1480ffd70",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8e1c]        # 0x1480ffd70",
+      "   142a36f54:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36f58:\t48 8d 8f 78 0a 00 00 \tlea    rcx,[rdi+0xa78]",
+      "   142a36f5f:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36f63:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36f67:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36f6a:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36f71:\t10 ",
+      "   142a36f72:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a36f79:\t48 8d 0d 08 8e 6c 05 \tlea    rcx,[rip+0x56c8e08]        # 0x1480ffd88",
+      "   142a36f80:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36f84:\t48 8d 8f 98 0a 00 00 \tlea    rcx,[rdi+0xa98]"
+    ]
+  },
+  {
+    "name": "slayerScriptFlags",
+    "name_va": "0x1480ffd88",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8e08]        # 0x1480ffd88",
+      "   142a36f80:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36f84:\t48 8d 8f 98 0a 00 00 \tlea    rcx,[rdi+0xa98]",
+      "   142a36f8b:\t48 89 4d f0          \tmov    QWORD PTR [rbp-0x10],rcx",
+      "   142a36f8f:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36f93:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36f96:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a36f9d:\t10 ",
+      "   142a36f9e:\t48 8d 05 fb 8d 6c 05 \tlea    rax,[rip+0x56c8dfb]        # 0x1480ffda0",
+      "   142a36fa5:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36fa9:\t4c 89 6d f0          \tmov    QWORD PTR [rbp-0x10],r13",
+      "   142a36fad:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]"
+    ]
+  },
+  {
+    "name": "forbiddenBounds",
+    "name_va": "0x1480ffda0",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8dfb]        # 0x1480ffda0",
+      "   142a36fa5:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36fa9:\t4c 89 6d f0          \tmov    QWORD PTR [rbp-0x10],r13",
+      "   142a36fad:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36fb4:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36fb8:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36fbb:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36fc2:\t10 ",
+      "   142a36fc3:\t48 8b 87 20 07 00 00 \tmov    rax,QWORD PTR [rdi+0x720]",
+      "   142a36fca:\t48 8d 0d df 8d 6c 05 \tlea    rcx,[rip+0x56c8ddf]        # 0x1480ffdb0",
+      "   142a36fd1:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36fd5:\t4c 89 55 f0          \tmov    QWORD PTR [rbp-0x10],r10"
+    ]
+  },
+  {
+    "name": "currentGridAccessibility",
+    "name_va": "0x1480ffdb0",
+    "registration_context": [
+      "lea    rcx,[rip+0x56c8ddf]        # 0x1480ffdb0",
+      "   142a36fd1:\t48 89 4d e8          \tmov    QWORD PTR [rbp-0x18],rcx",
+      "   142a36fd5:\t4c 89 55 f0          \tmov    QWORD PTR [rbp-0x10],r10",
+      "   142a36fd9:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a36fdd:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a36fe0:\t48 83 87 20 07 00 00 \tadd    QWORD PTR [rdi+0x720],0x10",
+      "   142a36fe7:\t10 ",
+      "   142a36fe8:\t48 8d 05 e1 8d 6c 05 \tlea    rax,[rip+0x56c8de1]        # 0x1480ffdd0",
+      "   142a36fef:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36ff3:\t48 8d 87 00 11 00 00 \tlea    rax,[rdi+0x1100]",
+      "   142a36ffa:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36ffe:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob0Data2",
+    "name_va": "0x1480ffdd0",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8de1]        # 0x1480ffdd0",
+      "   142a36fef:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a36ff3:\t48 8d 87 00 11 00 00 \tlea    rax,[rdi+0x1100]",
+      "   142a36ffa:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a36ffe:\t48 8b 87 70 03 00 00 \tmov    rax,QWORD PTR [rdi+0x370]",
+      "   142a37005:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a37009:\t0f 11 00             \tmovups XMMWORD PTR [rax],xmm0",
+      "   142a3700c:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a37013:\t10 ",
+      "   142a37014:\t48 8b 8f 70 03 00 00 \tmov    rcx,QWORD PTR [rdi+0x370]",
+      "   142a3701b:\t48 8d 05 c6 8d 6c 05 \tlea    rax,[rip+0x56c8dc6]        # 0x1480ffde8",
+      "   142a37022:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob0Data3",
+    "name_va": "0x1480ffde8",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8dc6]        # 0x1480ffde8",
+      "   142a37022:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a37026:\t48 8d 87 20 11 00 00 \tlea    rax,[rdi+0x1120]",
+      "   142a3702d:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a37031:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a37035:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a37038:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a3703f:\t10 ",
+      "   142a37040:\t48 8b 8f 70 03 00 00 \tmov    rcx,QWORD PTR [rdi+0x370]",
+      "   142a37047:\t48 8d 05 b2 8d 6c 05 \tlea    rax,[rip+0x56c8db2]        # 0x1480ffe00",
+      "   142a3704e:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a37052:\t48 8d 87 88 11 00 00 \tlea    rax,[rdi+0x1188]"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob1Data2",
+    "name_va": "0x1480ffe00",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8db2]        # 0x1480ffe00",
+      "   142a3704e:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a37052:\t48 8d 87 88 11 00 00 \tlea    rax,[rdi+0x1188]",
+      "   142a37059:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a3705d:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a37061:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a37064:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a3706b:\t10 ",
+      "   142a3706c:\t48 8b 8f 70 03 00 00 \tmov    rcx,QWORD PTR [rdi+0x370]",
+      "   142a37073:\t48 8d 05 9e 8d 6c 05 \tlea    rax,[rip+0x56c8d9e]        # 0x1480ffe18",
+      "   142a3707a:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a3707e:\t48 8d 87 a8 11 00 00 \tlea    rax,[rdi+0x11a8]"
+    ]
+  },
+  {
+    "name": "scopeTimeBlob1Data3",
+    "name_va": "0x1480ffe18",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8d9e]        # 0x1480ffe18",
+      "   142a3707a:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a3707e:\t48 8d 87 a8 11 00 00 \tlea    rax,[rdi+0x11a8]",
+      "   142a37085:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a37089:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a3708d:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a37090:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a37097:\t10 ",
+      "   142a37098:\t48 8b 8f 70 03 00 00 \tmov    rcx,QWORD PTR [rdi+0x370]",
+      "   142a3709f:\t48 8d 05 8a 8d 6c 05 \tlea    rax,[rip+0x56c8d8a]        # 0x1480ffe30",
+      "   142a370a6:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a370aa:\t48 8d 87 38 09 00 00 \tlea    rax,[rdi+0x938]"
+    ]
+  },
+  {
+    "name": "quantization",
+    "name_va": "0x1480ffe30",
+    "registration_context": [
+      "lea    rax,[rip+0x56c8d8a]        # 0x1480ffe30",
+      "   142a370a6:\t48 89 45 e8          \tmov    QWORD PTR [rbp-0x18],rax",
+      "   142a370aa:\t48 8d 87 38 09 00 00 \tlea    rax,[rdi+0x938]",
+      "   142a370b1:\t48 89 45 f0          \tmov    QWORD PTR [rbp-0x10],rax",
+      "   142a370b5:\t0f 10 45 e8          \tmovups xmm0,XMMWORD PTR [rbp-0x18]",
+      "   142a370b9:\t0f 11 01             \tmovups XMMWORD PTR [rcx],xmm0",
+      "   142a370bc:\t48 83 87 70 03 00 00 \tadd    QWORD PTR [rdi+0x370],0x10",
+      "   142a370c3:\t10 ",
+      "   142a370c4:\t48 8b c7             \tmov    rax,rdi",
+      "   142a370c7:\t48 83 c4 68          \tadd    rsp,0x68",
+      "   142a370cb:\t41 5f                \tpop    r15",
+      "   142a370cd:\t41 5e                \tpop    r14"
+    ]
+  }
+]

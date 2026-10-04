@@ -1,0 +1,58 @@
+[
+  {
+    "seq": "0x8c",
+    "steps": [
+      {
+        "fragment": "guild",
+        "start": 195,
+        "end": 215,
+        "fields": [
+          "guildId",
+          "guildRank"
+        ],
+        "next_field": 71,
+        "next_type": 4878,
+        "header_end": 218
+      },
+      {
+        "fragment": "musical",
+        "start": 218,
+        "end": 228,
+        "fields": [
+          "performanceId"
+        ],
+        "next_field": 13,
+        "next_type": 603,
+        "header_end": 231
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "steps": [
+      {
+        "fragment": "guild",
+        "start": 195,
+        "end": 215,
+        "fields": [
+          "guildId",
+          "guildRank"
+        ],
+        "next_field": 71,
+        "next_type": 4878,
+        "header_end": 218
+      },
+      {
+        "fragment": "musical",
+        "start": 218,
+        "end": 228,
+        "fields": [
+          "performanceId"
+        ],
+        "next_field": 13,
+        "next_type": 603,
+        "header_end": 231
+      }
+    ]
+  }
+]

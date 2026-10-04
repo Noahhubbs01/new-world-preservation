@@ -1,0 +1,50 @@
+[
+  {
+    "seq": "0x8c",
+    "fragment": "status",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "fragment": "social",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "fragment": "guild",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  },
+  {
+    "seq": "0x8c",
+    "fragment": "musical",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "fragment": "status",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "fragment": "social",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "fragment": "guild",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  },
+  {
+    "seq": "0xae",
+    "fragment": "musical",
+    "redacted_bytes": 0,
+    "original_byte_roundtrip": true
+  }
+]

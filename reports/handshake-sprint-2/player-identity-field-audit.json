@@ -1,0 +1,68 @@
+[
+  {
+    "seq": "0x8c",
+    "body_start": 18,
+    "parsed_until": 74,
+    "fields": [
+      {
+        "field": "characterId",
+        "representation": "uuid",
+        "length": 16,
+        "redacted_payload_bytes": 0
+      },
+      {
+        "field": "characterName",
+        "length": 4,
+        "redacted_payload_bytes": 0
+      },
+      {
+        "field": "homeWorldId",
+        "representation": "uuid",
+        "length": 16,
+        "redacted_payload_bytes": 16
+      },
+      {
+        "following_field_mask": 3
+      },
+      {
+        "next_field": 44,
+        "next_type": 4236,
+        "body_end": 71,
+        "body_consumed": 53
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "body_start": 18,
+    "parsed_until": 74,
+    "fields": [
+      {
+        "field": "characterId",
+        "representation": "uuid",
+        "length": 16,
+        "redacted_payload_bytes": 0
+      },
+      {
+        "field": "characterName",
+        "length": 4,
+        "redacted_payload_bytes": 0
+      },
+      {
+        "field": "homeWorldId",
+        "representation": "uuid",
+        "length": 16,
+        "redacted_payload_bytes": 16
+      },
+      {
+        "following_field_mask": 3
+      },
+      {
+        "next_field": 44,
+        "next_type": 4236,
+        "body_end": 71,
+        "body_consumed": 53
+      }
+    ]
+  }
+]

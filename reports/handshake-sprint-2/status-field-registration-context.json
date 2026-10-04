@@ -1,0 +1,103 @@
+[
+  {
+    "name": "m_localEffectsMap",
+    "argument_context": [
+      "   144013bad:\te8 1e 42 66 fd       \tcall   0x141677dd0",
+      "   144013bb2:\t48 8b 4c 24 60       \tmov    rcx,QWORD PTR [rsp+0x60]",
+      "   144013bb7:\t48 89 81 60 1e 00 00 \tmov    QWORD PTR [rcx+0x1e60],rax",
+      "   144013bbe:\t4c 8b 89 58 1e 00 00 \tmov    r9,QWORD PTR [rcx+0x1e58]",
+      "   144013bc5:\t4c 8d 87 c0 07 00 00 \tlea    r8,[rdi+0x7c0]",
+      "   144013bcc:\t48 8d 15 e5 49 2e 04 \tlea    rdx,[rip+0x42e49e5]        # 0x1482f85b8",
+      "   144013bd3:\t48 8b e9             \tmov    rbp,rcx",
+      "   144013bd6:\te8 85 20 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_effectsMap",
+    "argument_context": [
+      "",
+      "   144013bdb:\t4c 8b 8d 60 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e60]",
+      "   144013be2:\t4c 8d 87 68 0a 00 00 \tlea    r8,[rdi+0xa68]",
+      "   144013be9:\t48 8d 15 e0 49 2e 04 \tlea    rdx,[rip+0x42e49e0]        # 0x1482f85d0",
+      "   144013bf0:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013bf3:\te8 68 20 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_remoteEffectsMap",
+    "argument_context": [
+      "",
+      "   144013bf8:\t4c 8b 8d 60 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e60]",
+      "   144013bff:\t4c 8d 87 10 0d 00 00 \tlea    r8,[rdi+0xd10]",
+      "   144013c06:\t48 8d 15 d3 49 2e 04 \tlea    rdx,[rip+0x42e49d3]        # 0x1482f85e0",
+      "   144013c0d:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013c10:\te8 4b 20 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_lightweightLocalEffectsMap",
+    "argument_context": [
+      "",
+      "   144013c15:\t4c 8b 8d 58 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e58]",
+      "   144013c1c:\t4c 8d 87 b8 0f 00 00 \tlea    r8,[rdi+0xfb8]",
+      "   144013c23:\t48 8d 15 ce 49 2e 04 \tlea    rdx,[rip+0x42e49ce]        # 0x1482f85f8",
+      "   144013c2a:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013c2d:\te8 2e 20 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_territoryStatusEffects",
+    "argument_context": [
+      "",
+      "   144013c32:\t4c 8b 8d 68 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e68]",
+      "   144013c39:\t4d 8b c6             \tmov    r8,r14",
+      "   144013c3c:\t48 8d 15 6d 79 0e 04 \tlea    rdx,[rip+0x40e796d]        # 0x1480fb5b0",
+      "   144013c43:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013c46:\te8 15 20 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_dynamicScalingData",
+    "argument_context": [
+      "",
+      "   144013c4b:\t4c 8b 8d 68 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e68]",
+      "   144013c52:\t4c 8d 85 60 12 00 00 \tlea    r8,[rbp+0x1260]",
+      "   144013c59:\t48 8d 15 b8 49 2e 04 \tlea    rdx,[rip+0x42e49b8]        # 0x1482f8618",
+      "   144013c60:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013c63:\te8 f8 1f 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_activeTrayIcons",
+    "argument_context": [
+      "",
+      "   144013c68:\t4c 8b 8d 58 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e58]",
+      "   144013c6f:\t4c 8b c6             \tmov    r8,rsi",
+      "   144013c72:\t48 8d 15 b7 49 2e 04 \tlea    rdx,[rip+0x42e49b7]        # 0x1482f8630",
+      "   144013c79:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013c7c:\te8 df 1f 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_localReplicatedUpdateCounts",
+    "argument_context": [
+      "",
+      "   144013c81:\t4c 8b 8d 68 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e68]",
+      "   144013c88:\t4c 8d 87 08 19 00 00 \tlea    r8,[rdi+0x1908]",
+      "   144013c8f:\t48 8d 15 b2 49 2e 04 \tlea    rdx,[rip+0x42e49b2]        # 0x1482f8648",
+      "   144013c96:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013c99:\te8 c2 1f 76 fd       \t"
+    ]
+  },
+  {
+    "name": "m_remoteReplicatedUpdateCounts",
+    "argument_context": [
+      "",
+      "   144013c9e:\t4c 8b 8d 68 1e 00 00 \tmov    r9,QWORD PTR [rbp+0x1e68]",
+      "   144013ca5:\t4c 8d 87 b0 1b 00 00 \tlea    r8,[rdi+0x1bb0]",
+      "   144013cac:\t48 8d 15 b5 49 2e 04 \tlea    rdx,[rip+0x42e49b5]        # 0x1482f8668",
+      "   144013cb3:\t48 8b cd             \tmov    rcx,rbp",
+      "   144013cb6:\te8 a5 1f 76 fd       \t"
+    ]
+  }
+]
