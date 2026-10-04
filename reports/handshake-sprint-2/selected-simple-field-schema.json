@@ -1,0 +1,53 @@
+{
+  "guild": [
+    "guildId",
+    "guildRank",
+    "usingGmCommands",
+    "guildForcedRename",
+    "guildMessageOfTheDay",
+    "guildMessageOfTheDayAuthor",
+    "guildMessageOfTheDayTime",
+    "guildSiegeWindow",
+    "guildLastSiegeWindowSet",
+    "guildTreasuryCurrentFunds",
+    "guildTreasuryDailyWithdrawalLimit",
+    "lastGuildLeaveTime",
+    "guildTreasuryWithdrawnToday",
+    "isGuildMasterSeatOverthrowable",
+    "isGuildMasterSeatVacant",
+    "governorLeaveGuildTime",
+    "guildMembersCharacterIdString",
+    "guildMembersRank",
+    "guildMembersOnlineStatus",
+    "guildMembersLastOnlineTime",
+    "guildMemberWasKicked",
+    "guildInfluenceData",
+    "eligibleTerritoryWars",
+    "guildWarLotteryDeadline",
+    "guildInvites",
+    "numberOfOutstandingInvites"
+  ],
+  "appearance": [
+    "playerGender",
+    "playerRace",
+    "playerSkinTone",
+    "playerHairstyle",
+    "playerFacialHair",
+    "playerHairColor",
+    "playerFacialHairColor",
+    "playerEyeColor",
+    "playerFaceMark",
+    "playerScar",
+    "playerTattoo",
+    "playerTattooColor",
+    "iconData",
+    "appearanceChangeFlag"
+  ],
+  "container": [
+    "Container",
+    "Item Class",
+    "Bonus Max Encumbrance",
+    "Can Transfer items",
+    "Container Was Emptied"
+  ]
+}

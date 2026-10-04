@@ -1,0 +1,102 @@
+[
+  {
+    "seq": "0x25",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x2a",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x2b",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x2e",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x2f",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x30",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x33",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x34",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x35",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x42",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x44",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x47",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x48",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x49",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x4c",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x4e",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x4f",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x52",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x55",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x56",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x59",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x5a",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x5b",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x66",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+    "seq": "0x6c",
+    "reason": "'<' not supported between instances of 'NoneType' and 'int'"
+  }
+]

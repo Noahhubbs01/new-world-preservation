@@ -1,0 +1,37 @@
+{
+  "names": [
+    "playerGender",
+    "playerRace",
+    "playerSkinTone",
+    "playerHairstyle",
+    "playerFacialHair",
+    "playerHairColor",
+    "playerFacialHairColor",
+    "playerEyeColor",
+    "playerFaceMark",
+    "playerScar",
+    "playerTattoo",
+    "playerTattooColor",
+    "iconData",
+    "appearanceChangeFlag"
+  ],
+  "widths": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    9,
+    1
+  ],
+  "constructor": "146710240",
+  "scalar_reader": "14279E210",
+  "appearance_reader": "145CE7570"
+}

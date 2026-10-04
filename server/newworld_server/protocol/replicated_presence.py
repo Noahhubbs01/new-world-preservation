@@ -9,7 +9,8 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class Field:
     name: str
-    width: int
+    width: int | None
+    strict_bool: bool = False
 
 MUSICAL_GROUPS = (
     (Field('performanceId', 8),),
@@ -33,8 +34,10 @@ def encode_presence_body(groups, values):
                 out.append(mask | (0x80 if offset+7<=last else 0))
                 for f in block:
                     if f.name in values:
+                        if f.width is None: raise ValueError('unsupported schema field')
                         data=values[f.name]
                         if len(data)!=f.width: raise ValueError('wrong field width')
+                        if f.strict_bool and data not in (b'\x00',b'\x01'): raise ValueError('invalid boolean')
                         out.extend(data)
     return bytes(out)
 
@@ -55,7 +58,11 @@ def decode_presence_body(data, groups, offset=0):
                 fm=take(1)[0];block=g[start:start+7]
                 if (fm&0x7f)>>len(block): raise ValueError('unknown field bit')
                 for j,f in enumerate(block):
-                    if fm&(1<<j): values[f.name]=take(f.width)
+                    if fm&(1<<j):
+                        if f.width is None: raise ValueError('unsupported schema field')
+                        value=take(f.width)
+                        if f.strict_bool and value not in (b'\x00',b'\x01'): raise ValueError('invalid boolean')
+                        values[f.name]=value
                 if not fm&0x80: break
                 start+=7
                 if start>=len(g): raise ValueError('continuation exceeds known schema')

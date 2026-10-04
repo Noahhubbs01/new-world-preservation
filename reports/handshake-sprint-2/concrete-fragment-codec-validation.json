@@ -1,4 +1,20 @@
 {
+  "progression": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
+  "guild": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
+  "appearance": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
+  "container": {
+    "unredacted_exact_roundtrips": 25,
+    "redacted_skipped": 0
+  },
   "attribute": {
     "unredacted_exact_roundtrips": 25,
     "redacted_skipped": 0
