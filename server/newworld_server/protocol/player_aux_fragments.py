@@ -20,7 +20,19 @@ SCHEMAS = {
                 ('StaminaMax', 4), ('StaminaTickRate', 2), ('vitalsId', 4),
                 ('vitalsCategoryId', 4), ('vitalsLevel', 4), ('invulnerability', 'bool'),
                 ('displayImmune', 'bool'), ('maxHealth', 2)), ()),
-    'stat_multiplier': ((), (), (('remoteMultiplierTable', 'stat_snapshot'),)),
+    'stat_multiplier': ((), (('multiplierTable','stat_snapshot'),('staminaCostReductionMultipliers','snapshot8'),('xpIncreaseMultipliers','snapshot8')), (('remoteMultiplierTable', 'stat_snapshot'),)),
+    'social': ((('playerTitleId',4),('pronounType',1),('chattingStateMessageType',4)),
+               (('warData',None),('dailyWarAsAttackerCount',1),('dailyWarAsDefenderCount',1),
+                ('lastDailyResetTime',8),('friends','string_snapshot'),('friendInvites','string_snapshot'),
+                ('socialBlocks','string_snapshot'),('mostRecentJoinCharacterCall',4))),
+    'groups': ((('Id', 16), ('raidId', None), ('opposingGroupId', None)),
+               tuple((name, 'game_invite' if name=='gameInviteData' else None) for name in
+                     ('raidType','groupFinderGroupId','isGroupFinderGroupCreator','createSource',
+                      'groupFinderApplications','inboundGroupInvites','outboundGroupInvites',
+                      'nextEligibleAbandonGameModeVoteTime','gameInviteData','isGroupPristine'))),
+    'placement_obstruction': ((('hasCompletionObstruction', 1),),),
+    'interact': ((('Enabled', 'bool'), ('HasInteractors', 4), ('CooldownUpdates', None)),),
+    'slayer_script': ((('curScriptStateId', 'bool'), ('curScriptId', 4), ('spawnedEntityIdsBySpawnerId', 'snapshot12')),),
     'instanced_script': ((('curScriptStateId', 'bool'), ('curScriptId', 4),
                           ('spawnedEntityIdsBySpawnerId', 'snapshot12'), ('syncedTimers', 'snapshot12')), ()),
 }
@@ -78,7 +90,7 @@ class _Reader:
             self.take(18)
         elif kind == 'vector4':
             self.take(self.count() * 4)
-        elif kind in ('snapshot4', 'snapshot12'):
+        elif kind in ('snapshot4', 'snapshot8', 'snapshot12'):
             self.take(self.snapshot() * int(kind[8:]))
         elif kind == 'visual_snapshot':
             if not isinstance(visual_extra, bool):
@@ -92,9 +104,20 @@ class _Reader:
                     self.take(4)
                 if visual_extra:
                     self.take(8)
+        elif kind == 'string_snapshot':
+            for _ in range(self.snapshot()):
+                self.take(self.count())
+        elif kind == 'game_invite':
+            self.take(16)
+            flags = self.take(1)[0]
+            if flags & 1:
+                self.take(16)
+            else:
+                self.take(self.count())
+            self.take(8)
         elif kind == 'stat_snapshot':
             for _ in range(self.snapshot()):
-                self.boolean()
+                self.take(1)
                 self.take(4)
                 self.boolean()
         else:

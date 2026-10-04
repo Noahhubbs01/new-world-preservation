@@ -1,0 +1,5966 @@
+[
+  {
+    "seq": "0x25",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11666,
+    "length": 46423,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11666,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 35,
+        "end": 55,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 58,
+        "end": 201,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 204,
+        "end": 310,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 313,
+        "end": 350,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 353,
+        "end": 6263,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6266,
+        "end": 6277,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6280,
+        "end": 6305,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6308,
+        "end": 6315,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6318,
+        "end": 11069,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11072,
+        "end": 11116,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11119,
+        "end": 11131,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11134,
+        "end": 11663,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x2a",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x2b",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x2e",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x2f",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x30",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x33",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x34",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x35",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x42",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x44",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x47",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x48",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x49",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x4c",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x4e",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x4f",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x52",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x55",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x56",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x59",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x5a",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x5b",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x66",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x6c",
+    "complete_records": 0,
+    "fragment_count": 12,
+    "end": 11650,
+    "length": 46407,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4321,
+      "field": 50,
+      "body_start": 11650,
+      "interest": 1
+    },
+    "fragments": [
+      {
+        "interest": 1,
+        "type": 4878,
+        "start": 19,
+        "end": 39,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3829,
+        "start": 42,
+        "end": 185,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 129,
+        "start": 188,
+        "end": 294,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1927,
+        "start": 297,
+        "end": 334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2932,
+        "start": 337,
+        "end": 6247,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3147,
+        "start": 6250,
+        "end": 6261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1195,
+        "start": 6264,
+        "end": 6289,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 6292,
+        "end": 6299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3681,
+        "start": 6302,
+        "end": 11053,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1994,
+        "start": 11056,
+        "end": 11100,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 1,
+        "type": 4176,
+        "start": 11103,
+        "end": 11115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1525,
+        "start": 11118,
+        "end": 11647,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x73",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 73,
+    "length": 7166,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 4176,
+      "body_start": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x74",
+    "complete_records": 11,
+    "fragment_count": 28,
+    "end": 462,
+    "length": 989,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 462,
+      "interest": 13
+    },
+    "fragments": [
+      {
+        "interest": 2,
+        "type": 3362,
+        "start": 18,
+        "end": 24,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 2,
+        "type": 10,
+        "start": 26,
+        "end": 44,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 2,
+        "type": 2187,
+        "start": 47,
+        "end": 50,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 3,
+        "type": 10,
+        "start": 54,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 4,
+        "type": 3362,
+        "start": 77,
+        "end": 83,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 4,
+        "type": 10,
+        "start": 85,
+        "end": 103,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 4,
+        "type": 2187,
+        "start": 106,
+        "end": 109,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 5,
+        "type": 2187,
+        "start": 114,
+        "end": 117,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 5,
+        "type": 10,
+        "start": 119,
+        "end": 137,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 6,
+        "type": 10,
+        "start": 141,
+        "end": 159,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 7,
+        "type": 10,
+        "start": 163,
+        "end": 181,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 8,
+        "type": 2930,
+        "start": 186,
+        "end": 192,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 8,
+        "type": 3362,
+        "start": 195,
+        "end": 201,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 8,
+        "type": 10,
+        "start": 203,
+        "end": 221,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 9,
+        "type": 3362,
+        "start": 226,
+        "end": 232,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 9,
+        "type": 10,
+        "start": 234,
+        "end": 252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 10,
+        "type": 13,
+        "start": 256,
+        "end": 271,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 10,
+        "type": 2930,
+        "start": 274,
+        "end": 280,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 10,
+        "type": 10,
+        "start": 282,
+        "end": 320,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 11,
+        "type": 2930,
+        "start": 325,
+        "end": 331,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 11,
+        "type": 10,
+        "start": 333,
+        "end": 371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 11,
+        "type": 13,
+        "start": 373,
+        "end": 388,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 12,
+        "type": 2187,
+        "start": 393,
+        "end": 396,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 12,
+        "type": 3362,
+        "start": 399,
+        "end": 405,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 12,
+        "type": 10,
+        "start": 407,
+        "end": 425,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 13,
+        "type": 2930,
+        "start": 430,
+        "end": 436,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 13,
+        "type": 13,
+        "start": 438,
+        "end": 453,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 13,
+        "type": 2187,
+        "start": 456,
+        "end": 459,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x77",
+    "complete_records": 0,
+    "fragment_count": 10,
+    "end": 335,
+    "length": 1003,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3312,
+      "position": 335
+    },
+    "fragments": [
+      {
+        "interest": 29,
+        "type": 5620,
+        "start": 18,
+        "end": 30,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 1525,
+        "start": 33,
+        "end": 47,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 4236,
+        "start": 50,
+        "end": 101,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 4878,
+        "start": 104,
+        "end": 114,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 15,
+        "start": 116,
+        "end": 166,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 603,
+        "start": 169,
+        "end": 172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 6234,
+        "start": 175,
+        "end": 189,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 4176,
+        "start": 192,
+        "end": 199,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 11,
+        "start": 201,
+        "end": 309,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 3147,
+        "start": 312,
+        "end": 332,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x78",
+    "complete_records": 13,
+    "fragment_count": 35,
+    "end": 633,
+    "length": 988,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3217,
+      "field": 3,
+      "body_start": 633,
+      "interest": 52
+    },
+    "fragments": [
+      {
+        "interest": 39,
+        "type": 10,
+        "start": 17,
+        "end": 35,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 39,
+        "type": 3362,
+        "start": 38,
+        "end": 44,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 40,
+        "type": 2930,
+        "start": 49,
+        "end": 55,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 40,
+        "type": 3362,
+        "start": 58,
+        "end": 64,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 40,
+        "type": 10,
+        "start": 66,
+        "end": 84,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 41,
+        "type": 2930,
+        "start": 89,
+        "end": 95,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 41,
+        "type": 10,
+        "start": 97,
+        "end": 115,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 42,
+        "type": 2930,
+        "start": 120,
+        "end": 126,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 42,
+        "type": 10,
+        "start": 128,
+        "end": 146,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 42,
+        "type": 2187,
+        "start": 149,
+        "end": 152,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 43,
+        "type": 13,
+        "start": 156,
+        "end": 171,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 43,
+        "type": 10,
+        "start": 173,
+        "end": 211,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 43,
+        "type": 2930,
+        "start": 214,
+        "end": 220,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 44,
+        "type": 2930,
+        "start": 225,
+        "end": 231,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 44,
+        "type": 13,
+        "start": 233,
+        "end": 248,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 44,
+        "type": 10,
+        "start": 250,
+        "end": 288,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 45,
+        "type": 2930,
+        "start": 293,
+        "end": 299,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 45,
+        "type": 3362,
+        "start": 302,
+        "end": 308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 45,
+        "type": 10,
+        "start": 310,
+        "end": 328,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 46,
+        "type": 13,
+        "start": 332,
+        "end": 347,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 46,
+        "type": 2930,
+        "start": 350,
+        "end": 356,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 46,
+        "type": 10,
+        "start": 358,
+        "end": 396,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 2187,
+        "start": 401,
+        "end": 404,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 3362,
+        "start": 407,
+        "end": 413,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 10,
+        "start": 415,
+        "end": 433,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 48,
+        "type": 2930,
+        "start": 438,
+        "end": 444,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 48,
+        "type": 3362,
+        "start": 447,
+        "end": 453,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 48,
+        "type": 10,
+        "start": 455,
+        "end": 473,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 49,
+        "type": 13,
+        "start": 477,
+        "end": 492,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 49,
+        "type": 10,
+        "start": 494,
+        "end": 532,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 50,
+        "type": 3362,
+        "start": 537,
+        "end": 543,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 50,
+        "type": 10,
+        "start": 545,
+        "end": 563,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 50,
+        "type": 2187,
+        "start": 566,
+        "end": 569,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 51,
+        "type": 13,
+        "start": 573,
+        "end": 588,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 51,
+        "type": 10,
+        "start": 590,
+        "end": 628,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x79",
+    "complete_records": 0,
+    "fragment_count": 7,
+    "end": 310,
+    "length": 1010,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 258
+    },
+    "fragments": [
+      {
+        "interest": 30,
+        "type": 6234,
+        "start": 18,
+        "end": 28,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 5620,
+        "start": 31,
+        "end": 43,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 1195,
+        "start": 46,
+        "end": 71,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 3152,
+        "start": 74,
+        "end": 80,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 11,
+        "start": 82,
+        "end": 190,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 4878,
+        "start": 193,
+        "end": 203,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 15,
+        "start": 205,
+        "end": 255,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x7a",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 33,
+    "length": 427,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 33,
+      "interest": 68
+    },
+    "fragments": [
+      {
+        "interest": 68,
+        "type": 2930,
+        "start": 18,
+        "end": 24,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 68,
+        "type": 2187,
+        "start": 27,
+        "end": 30,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x7b",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 1013,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x7c",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 1314,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 83
+    },
+    "fragments": [
+      {
+        "interest": 83,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 83,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x7d",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 1800,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 84
+    },
+    "fragments": [
+      {
+        "interest": 84,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 84,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x7e",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 1591,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 85
+    },
+    "fragments": [
+      {
+        "interest": 85,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 85,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x7f",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 72,
+    "length": 992,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 4896,
+      "field": 2,
+      "body_start": 72,
+      "interest": 86
+    },
+    "fragments": [
+      {
+        "interest": 86,
+        "type": 13,
+        "start": 17,
+        "end": 29,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 86,
+        "type": 10,
+        "start": 31,
+        "end": 69,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x80",
+    "complete_records": 0,
+    "fragment_count": 16,
+    "end": 633,
+    "length": 979,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 578
+    },
+    "fragments": [
+      {
+        "interest": 79,
+        "type": 3147,
+        "start": 18,
+        "end": 38,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 5620,
+        "start": 41,
+        "end": 53,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 1195,
+        "start": 56,
+        "end": 81,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 4236,
+        "start": 84,
+        "end": 144,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 6234,
+        "start": 147,
+        "end": 157,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 4176,
+        "start": 160,
+        "end": 167,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 603,
+        "start": 170,
+        "end": 173,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 1525,
+        "start": 176,
+        "end": 188,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 3152,
+        "start": 191,
+        "end": 197,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 4878,
+        "start": 200,
+        "end": 210,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 11,
+        "start": 212,
+        "end": 320,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 10,
+        "start": 322,
+        "end": 360,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 1528,
+        "start": 363,
+        "end": 370,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 3183,
+        "start": 373,
+        "end": 514,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 15,
+        "start": 516,
+        "end": 566,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 899,
+        "start": 569,
+        "end": 575,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x81",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 992,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 18,
+      "interest": 38
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x82",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 985,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x83",
+    "complete_records": 0,
+    "fragment_count": 1,
+    "end": 24,
+    "length": 730,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 24,
+      "interest": 66
+    },
+    "fragments": [
+      {
+        "interest": 66,
+        "type": 2187,
+        "start": 18,
+        "end": 21,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x84",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 28,
+    "length": 774,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3752,
+      "body_start": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x85",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 1591,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 85
+    },
+    "fragments": [
+      {
+        "interest": 85,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 85,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x86",
+    "complete_records": 1,
+    "fragment_count": 4,
+    "end": 95,
+    "length": 706,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 95,
+      "interest": 35
+    },
+    "fragments": [
+      {
+        "interest": 24,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 24,
+        "type": 2930,
+        "start": 35,
+        "end": 41,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 24,
+        "type": 10,
+        "start": 43,
+        "end": 81,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 35,
+        "type": 2930,
+        "start": 86,
+        "end": 92,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x87",
+    "complete_records": 0,
+    "fragment_count": 5,
+    "end": 372,
+    "length": 830,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 312
+    },
+    "fragments": [
+      {
+        "interest": 89,
+        "type": 6234,
+        "start": 18,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 3183,
+        "start": 35,
+        "end": 211,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 603,
+        "start": 214,
+        "end": 217,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 10,
+        "start": 219,
+        "end": 257,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 15,
+        "start": 259,
+        "end": 309,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x88",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 3111,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 82
+    },
+    "fragments": [
+      {
+        "interest": 82,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 82,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x89",
+    "complete_records": 0,
+    "fragment_count": 1,
+    "end": 27,
+    "length": 356,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 27,
+      "interest": 35
+    },
+    "fragments": [
+      {
+        "interest": 35,
+        "type": 2930,
+        "start": 18,
+        "end": 24,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x8a",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 101,
+    "length": 678,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 46
+    },
+    "fragments": [
+      {
+        "interest": 90,
+        "type": 6234,
+        "start": 18,
+        "end": 28,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 90,
+        "type": 1525,
+        "start": 31,
+        "end": 43,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x8b",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 916,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 80
+    },
+    "fragments": [
+      {
+        "interest": 80,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 80,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x8c",
+    "complete_records": 1,
+    "fragment_count": 19,
+    "end": 728,
+    "length": 728,
+    "complete_message": true,
+    "stop": null,
+    "fragments": [
+      {
+        "interest": 91,
+        "type": 3935,
+        "start": 18,
+        "end": 71,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 91,
+        "type": 4236,
+        "start": 74,
+        "end": 182,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 4176,
+        "start": 185,
+        "end": 192,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3147,
+        "start": 195,
+        "end": 215,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 4878,
+        "start": 218,
+        "end": 228,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 603,
+        "start": 231,
+        "end": 234,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 11,
+        "start": 236,
+        "end": 344,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3152,
+        "start": 347,
+        "end": 353,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 899,
+        "start": 356,
+        "end": 362,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 1528,
+        "start": 365,
+        "end": 372,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 10,
+        "start": 374,
+        "end": 412,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3312,
+        "start": 415,
+        "end": 433,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 5620,
+        "start": 436,
+        "end": 448,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3183,
+        "start": 451,
+        "end": 607,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3752,
+        "start": 610,
+        "end": 620,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 15,
+        "start": 622,
+        "end": 672,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 1195,
+        "start": 675,
+        "end": 700,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 1525,
+        "start": 703,
+        "end": 715,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 6234,
+        "start": 718,
+        "end": 728,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x8d",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 2713,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 78
+    },
+    "fragments": [
+      {
+        "interest": 78,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 78,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x90",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 916,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 80
+    },
+    "fragments": [
+      {
+        "interest": 80,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 80,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x91",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 105,
+    "length": 717,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 105
+    },
+    "fragments": [
+      {
+        "interest": 92,
+        "type": 4236,
+        "start": 18,
+        "end": 79,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3147,
+        "start": 82,
+        "end": 102,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x93",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 739,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x94",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 9978,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 2201,
+      "field": 6,
+      "body_start": 18,
+      "interest": 75
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x95",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 2858,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 76
+    },
+    "fragments": [
+      {
+        "interest": 76,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 76,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x96",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 75,
+    "length": 2579,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 3663,
+      "field": 1,
+      "body_start": 75,
+      "interest": 77
+    },
+    "fragments": [
+      {
+        "interest": 77,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 77,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x97",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 588,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: nonempty complex status snapshot unsupported",
+      "type": 4236,
+      "position": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x98",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 73,
+    "length": 7167,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 4176,
+      "body_start": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x9a",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 73,
+    "length": 7167,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 4176,
+      "body_start": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x9c",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 73,
+    "length": 7167,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 4176,
+      "body_start": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0x9d",
+    "complete_records": 3,
+    "fragment_count": 9,
+    "end": 126,
+    "length": 126,
+    "complete_message": true,
+    "stop": null,
+    "fragments": [
+      {
+        "interest": 22,
+        "type": 3362,
+        "start": 17,
+        "end": 23,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 22,
+        "type": 10,
+        "start": 25,
+        "end": 43,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 22,
+        "type": 2187,
+        "start": 46,
+        "end": 49,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 23,
+        "type": 2187,
+        "start": 54,
+        "end": 57,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 23,
+        "type": 3362,
+        "start": 60,
+        "end": 66,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 23,
+        "type": 10,
+        "start": 68,
+        "end": 86,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 25,
+        "type": 3362,
+        "start": 91,
+        "end": 97,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 25,
+        "type": 10,
+        "start": 99,
+        "end": 117,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 25,
+        "type": 2930,
+        "start": 120,
+        "end": 126,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0x9e",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 73,
+    "length": 7167,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 4176,
+      "body_start": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0xa0",
+    "complete_records": 8,
+    "fragment_count": 25,
+    "end": 461,
+    "length": 705,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 461,
+      "interest": 63
+    },
+    "fragments": [
+      {
+        "interest": 22,
+        "type": 3362,
+        "start": 18,
+        "end": 24,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 22,
+        "type": 10,
+        "start": 26,
+        "end": 44,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 22,
+        "type": 2187,
+        "start": 47,
+        "end": 50,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 23,
+        "type": 2187,
+        "start": 55,
+        "end": 58,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 23,
+        "type": 3362,
+        "start": 61,
+        "end": 67,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 23,
+        "type": 10,
+        "start": 69,
+        "end": 87,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 25,
+        "type": 3362,
+        "start": 92,
+        "end": 98,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 25,
+        "type": 10,
+        "start": 100,
+        "end": 118,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 25,
+        "type": 2930,
+        "start": 121,
+        "end": 127,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 28,
+        "type": 2930,
+        "start": 132,
+        "end": 138,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 28,
+        "type": 13,
+        "start": 140,
+        "end": 155,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 28,
+        "type": 10,
+        "start": 157,
+        "end": 195,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 36,
+        "type": 3362,
+        "start": 200,
+        "end": 206,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 36,
+        "type": 10,
+        "start": 208,
+        "end": 226,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 36,
+        "type": 2187,
+        "start": 229,
+        "end": 232,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 39,
+        "type": 10,
+        "start": 236,
+        "end": 254,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 39,
+        "type": 3362,
+        "start": 257,
+        "end": 263,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 56,
+        "type": 13,
+        "start": 267,
+        "end": 282,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 56,
+        "type": 10,
+        "start": 284,
+        "end": 322,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 59,
+        "type": 13,
+        "start": 326,
+        "end": 341,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 59,
+        "type": 10,
+        "start": 343,
+        "end": 381,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 63,
+        "type": 2930,
+        "start": 386,
+        "end": 392,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 63,
+        "type": 13,
+        "start": 394,
+        "end": 409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 63,
+        "type": 10,
+        "start": 411,
+        "end": 449,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 63,
+        "type": 2930,
+        "start": 452,
+        "end": 458,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xa1",
+    "complete_records": 0,
+    "fragment_count": 10,
+    "end": 335,
+    "length": 1007,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3312,
+      "position": 335
+    },
+    "fragments": [
+      {
+        "interest": 29,
+        "type": 5620,
+        "start": 18,
+        "end": 30,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 1525,
+        "start": 33,
+        "end": 47,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 4236,
+        "start": 50,
+        "end": 101,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 4878,
+        "start": 104,
+        "end": 114,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 15,
+        "start": 116,
+        "end": 166,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 603,
+        "start": 169,
+        "end": 172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 6234,
+        "start": 175,
+        "end": 189,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 4176,
+        "start": 192,
+        "end": 199,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 11,
+        "start": 201,
+        "end": 309,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 29,
+        "type": 3147,
+        "start": 312,
+        "end": 332,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xa2",
+    "complete_records": 3,
+    "fragment_count": 12,
+    "end": 223,
+    "length": 459,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 223,
+      "interest": 13
+    },
+    "fragments": [
+      {
+        "interest": 10,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 10,
+        "type": 2930,
+        "start": 35,
+        "end": 41,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 10,
+        "type": 10,
+        "start": 43,
+        "end": 81,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 11,
+        "type": 2930,
+        "start": 86,
+        "end": 92,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 11,
+        "type": 10,
+        "start": 94,
+        "end": 132,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 11,
+        "type": 13,
+        "start": 134,
+        "end": 149,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 12,
+        "type": 2187,
+        "start": 154,
+        "end": 157,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 12,
+        "type": 3362,
+        "start": 160,
+        "end": 166,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 12,
+        "type": 10,
+        "start": 168,
+        "end": 186,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 13,
+        "type": 2930,
+        "start": 191,
+        "end": 197,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 13,
+        "type": 13,
+        "start": 199,
+        "end": 214,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 13,
+        "type": 2187,
+        "start": 217,
+        "end": 220,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xa3",
+    "complete_records": 0,
+    "fragment_count": 7,
+    "end": 310,
+    "length": 958,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 258
+    },
+    "fragments": [
+      {
+        "interest": 30,
+        "type": 6234,
+        "start": 18,
+        "end": 28,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 5620,
+        "start": 31,
+        "end": 43,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 1195,
+        "start": 46,
+        "end": 71,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 3152,
+        "start": 74,
+        "end": 80,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 11,
+        "start": 82,
+        "end": 190,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 4878,
+        "start": 193,
+        "end": 203,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 30,
+        "type": 15,
+        "start": 205,
+        "end": 255,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xa4",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 1006,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0xa5",
+    "complete_records": 0,
+    "fragment_count": 16,
+    "end": 633,
+    "length": 1001,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 578
+    },
+    "fragments": [
+      {
+        "interest": 79,
+        "type": 3147,
+        "start": 18,
+        "end": 38,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 5620,
+        "start": 41,
+        "end": 53,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 1195,
+        "start": 56,
+        "end": 81,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 4236,
+        "start": 84,
+        "end": 144,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 6234,
+        "start": 147,
+        "end": 157,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 4176,
+        "start": 160,
+        "end": 167,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 603,
+        "start": 170,
+        "end": 173,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 1525,
+        "start": 176,
+        "end": 188,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 3152,
+        "start": 191,
+        "end": 197,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 4878,
+        "start": 200,
+        "end": 210,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 11,
+        "start": 212,
+        "end": 320,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 10,
+        "start": 322,
+        "end": 360,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 1528,
+        "start": 363,
+        "end": 370,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 3183,
+        "start": 373,
+        "end": 514,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 15,
+        "start": 516,
+        "end": 566,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 79,
+        "type": 899,
+        "start": 569,
+        "end": 575,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xa6",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 18,
+    "length": 1006,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0xa7",
+    "complete_records": 3,
+    "fragment_count": 9,
+    "end": 158,
+    "length": 158,
+    "complete_message": true,
+    "stop": null,
+    "fragments": [
+      {
+        "interest": 44,
+        "type": 2930,
+        "start": 18,
+        "end": 24,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 44,
+        "type": 13,
+        "start": 26,
+        "end": 41,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 44,
+        "type": 10,
+        "start": 43,
+        "end": 81,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 45,
+        "type": 2930,
+        "start": 86,
+        "end": 92,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 45,
+        "type": 3362,
+        "start": 95,
+        "end": 101,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 45,
+        "type": 10,
+        "start": 103,
+        "end": 121,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 2187,
+        "start": 126,
+        "end": 129,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 3362,
+        "start": 132,
+        "end": 138,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 10,
+        "start": 140,
+        "end": 158,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xa8",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 28,
+    "length": 989,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3752,
+      "body_start": 18
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0xa9",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 17,
+    "length": 106,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 17,
+      "interest": 58
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0xaa",
+    "complete_records": 0,
+    "fragment_count": 5,
+    "end": 372,
+    "length": 983,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 312
+    },
+    "fragments": [
+      {
+        "interest": 89,
+        "type": 6234,
+        "start": 18,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 3183,
+        "start": 35,
+        "end": 211,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 603,
+        "start": 214,
+        "end": 217,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 10,
+        "start": 219,
+        "end": 257,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 89,
+        "type": 15,
+        "start": 259,
+        "end": 309,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xab",
+    "complete_records": 0,
+    "fragment_count": 0,
+    "end": 16,
+    "length": 78,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 12,
+      "field": 3,
+      "body_start": 16,
+      "interest": 72
+    },
+    "fragments": []
+  },
+  {
+    "seq": "0xac",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 101,
+    "length": 975,
+    "complete_message": false,
+    "stop": {
+      "reason": "redacted body may contain controls",
+      "type": 3935,
+      "body_start": 46
+    },
+    "fragments": [
+      {
+        "interest": 90,
+        "type": 6234,
+        "start": 18,
+        "end": 28,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 90,
+        "type": 1525,
+        "start": 31,
+        "end": 43,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xad",
+    "complete_records": 0,
+    "fragment_count": 1,
+    "end": 27,
+    "length": 215,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 27,
+      "interest": 35
+    },
+    "fragments": [
+      {
+        "interest": 35,
+        "type": 2930,
+        "start": 18,
+        "end": 24,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xae",
+    "complete_records": 6,
+    "fragment_count": 32,
+    "end": 991,
+    "length": 991,
+    "complete_message": true,
+    "stop": null,
+    "fragments": [
+      {
+        "interest": 91,
+        "type": 3935,
+        "start": 18,
+        "end": 71,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 91,
+        "type": 4236,
+        "start": 74,
+        "end": 182,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 4176,
+        "start": 185,
+        "end": 192,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3147,
+        "start": 195,
+        "end": 215,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 4878,
+        "start": 218,
+        "end": 228,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 603,
+        "start": 231,
+        "end": 234,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 11,
+        "start": 236,
+        "end": 344,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3152,
+        "start": 347,
+        "end": 353,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 899,
+        "start": 356,
+        "end": 362,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 1528,
+        "start": 365,
+        "end": 372,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 10,
+        "start": 374,
+        "end": 412,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3312,
+        "start": 415,
+        "end": 433,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 5620,
+        "start": 436,
+        "end": 448,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3183,
+        "start": 451,
+        "end": 607,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 3752,
+        "start": 610,
+        "end": 620,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 15,
+        "start": 622,
+        "end": 672,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 1195,
+        "start": 675,
+        "end": 700,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 1525,
+        "start": 703,
+        "end": 715,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 91,
+        "type": 6234,
+        "start": 718,
+        "end": 728,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 2187,
+        "start": 733,
+        "end": 736,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 3362,
+        "start": 739,
+        "end": 745,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 47,
+        "type": 10,
+        "start": 747,
+        "end": 765,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 46,
+        "type": 13,
+        "start": 769,
+        "end": 784,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 46,
+        "type": 2930,
+        "start": 787,
+        "end": 793,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 46,
+        "type": 10,
+        "start": 795,
+        "end": 833,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 48,
+        "type": 2930,
+        "start": 838,
+        "end": 844,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 48,
+        "type": 3362,
+        "start": 847,
+        "end": 853,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 48,
+        "type": 10,
+        "start": 855,
+        "end": 873,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 49,
+        "type": 13,
+        "start": 877,
+        "end": 892,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 49,
+        "type": 10,
+        "start": 894,
+        "end": 932,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 51,
+        "type": 13,
+        "start": 936,
+        "end": 951,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 51,
+        "type": 10,
+        "start": 953,
+        "end": 991,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xaf",
+    "complete_records": 0,
+    "fragment_count": 2,
+    "end": 105,
+    "length": 988,
+    "complete_message": false,
+    "stop": {
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 105
+    },
+    "fragments": [
+      {
+        "interest": 92,
+        "type": 4236,
+        "start": 18,
+        "end": 79,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3147,
+        "start": 82,
+        "end": 102,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  },
+  {
+    "seq": "0xb0",
+    "complete_records": 1,
+    "fragment_count": 5,
+    "end": 143,
+    "length": 175,
+    "complete_message": false,
+    "stop": {
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 143,
+      "interest": 71
+    },
+    "fragments": [
+      {
+        "interest": 70,
+        "type": 13,
+        "start": 17,
+        "end": 32,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 70,
+        "type": 10,
+        "start": 34,
+        "end": 72,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 71,
+        "type": 2930,
+        "start": 77,
+        "end": 83,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 71,
+        "type": 13,
+        "start": 85,
+        "end": 100,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 71,
+        "type": 10,
+        "start": 102,
+        "end": 140,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
+  }
+]

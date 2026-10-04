@@ -1,0 +1,151 @@
+{
+  "records": [
+    {
+      "start": 728,
+      "interest": 47,
+      "count": 3,
+      "fragments": [
+        {
+          "field": 3,
+          "type": 2187,
+          "start": 733,
+          "end": 736,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 2,
+          "type": 3362,
+          "start": 739,
+          "end": 745,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 0,
+          "type": 10,
+          "start": 747,
+          "end": 765,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        }
+      ],
+      "end": 765
+    },
+    {
+      "start": 765,
+      "interest": 46,
+      "count": 3,
+      "fragments": [
+        {
+          "field": 1,
+          "type": 13,
+          "start": 769,
+          "end": 784,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 3,
+          "type": 2930,
+          "start": 787,
+          "end": 793,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 0,
+          "type": 10,
+          "start": 795,
+          "end": 833,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        }
+      ],
+      "end": 833
+    },
+    {
+      "start": 833,
+      "interest": 48,
+      "count": 3,
+      "fragments": [
+        {
+          "field": 5,
+          "type": 2930,
+          "start": 838,
+          "end": 844,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 4,
+          "type": 3362,
+          "start": 847,
+          "end": 853,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 0,
+          "type": 10,
+          "start": 855,
+          "end": 873,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        }
+      ],
+      "end": 873
+    },
+    {
+      "start": 873,
+      "interest": 49,
+      "count": 2,
+      "fragments": [
+        {
+          "field": 1,
+          "type": 13,
+          "start": 877,
+          "end": 892,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 0,
+          "type": 10,
+          "start": 894,
+          "end": 932,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        }
+      ],
+      "end": 932
+    },
+    {
+      "start": 932,
+      "interest": 51,
+      "count": 2,
+      "fragments": [
+        {
+          "field": 1,
+          "type": 13,
+          "start": 936,
+          "end": 951,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        },
+        {
+          "field": 0,
+          "type": 10,
+          "start": 953,
+          "end": 991,
+          "redacted_bytes": 0,
+          "original_byte_roundtrip": true
+        }
+      ],
+      "end": 991
+    }
+  ],
+  "message_length": 991,
+  "end": 991,
+  "remaining": 0
+}

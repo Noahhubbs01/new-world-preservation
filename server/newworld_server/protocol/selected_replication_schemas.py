@@ -10,7 +10,7 @@ APPEARANCE_GROUPS = ((Field('playerGender', 1),Field('playerRace', 1),Field('pla
 CONTAINER_GROUPS = ((Field('Container', None),Field('Item Class', None),Field('Bonus Max Encumbrance', 4),Field('Can Transfer items', None),Field('Container Was Emptied', 1, True),),)
 
 # Social constructor143ED7110: three public fields, eight private fields.
-SOCIAL_GROUPS=((Field('playerTitleId',4),Field('pronounType',1),Field('chattingStateMessageType',None)),tuple(Field(n,None) for n in ('warData','dailyWarAsAttackerCount','dailyWarAsDefenderCount','lastDailyResetTime','friends','friendInvites','socialBlocks','mostRecentJoinCharacterCall')))
+SOCIAL_GROUPS=((Field('playerTitleId',4),Field('pronounType',1),Field('chattingStateMessageType',4)),tuple(Field(n,None) for n in ('warData','dailyWarAsAttackerCount','dailyWarAsDefenderCount','lastDailyResetTime','friends','friendInvites','socialBlocks','mostRecentJoinCharacterCall')))
 
 PLAYER_PROGRESSION_GROUPS=((Field('level',4),Field('bonusLevel',4)),(Field('experiencePoints',4),Field('restedExp',4)))
 FACTION_GROUPS=((),tuple(Field(n,None) for n in ('pvpFlagPending','notifyPending','pvpFlagPendingEndTime','lastFactionChangeTimepoint','factionChangeCount','ffaPendingEndTime','ffaAntiGroupingIsCursing')),(Field('faction',1),Field('pvpFlag',1,True),Field('hasSanctuary',1,True),Field('ffaFlag',1,True),Field('ffaAntiGroupingCurseStacks',1)),tuple(Field(n,None) for n in ('timeAtFlagStart','m_pvpValue','isAccumulatingPvpValue')))

@@ -27,7 +27,7 @@ def test_roundtrip_offset_and_every_truncation(variant, values, extra):
     (b'\x01\x01', 'game_mode'), (b'\x04\x20', 'paperdoll'),
     (b'\x04\x01\x01', 'stat_multiplier'),
     (b'\x04\x01\0\x02', 'stat_multiplier'),
-    (b'\x04\x01\0\0\x01\x02'+b'\0'*5, 'stat_multiplier'),
+    (b'\x04\x01\0\0\x01\0'+b'\0'*4+b'\x02', 'stat_multiplier'),
     (b'\x01\x04\x01', 'instanced_script'),
 ])
 def test_reject_unsupported_and_malformed(raw, variant):
@@ -47,3 +47,21 @@ def test_defensive_count_limit():
     from newworld_server.protocol.prefix_uint32 import encode_prefix_uint32
     with pytest.raises(ValueError, match='limit'):
         decode(b'\x01\x01'+encode_prefix_uint32(10001), 'audio')
+
+
+@pytest.mark.parametrize('variant,values', [
+    ('placement_obstruction', {'hasCompletionObstruction': b'\x07'}),
+    ('interact', {'Enabled':b'\x01','HasInteractors':b'\0'*4}),
+    ('slayer_script', {'curScriptId':b'\0'*4,'spawnedEntityIdsBySpawnerId':b'\0\0\0'}),
+    ('groups', {'Id':b'\x11'*16}),
+    ('groups', {'gameInviteData':b'\0'*16+b'\x01'+b'\x11'*16+b'\0'*8}),
+    ('groups', {'gameInviteData':b'\0'*16+b'\0\x03abc'+b'\0'*8}),
+    ('social', {'chattingStateMessageType':b'\0'*4,'socialBlocks':b'\0\0\x02\x03abc\x01z'}),
+    ('stat_multiplier', {'multiplierTable':b'\0\0\x01\xff'+b'\0'*4+b'\x01',
+                          'staminaCostReductionMultipliers':b'\0\0\x01'+b'\x11'*8}),
+])
+def test_additional_native_snapshot_schemas(variant,values):
+    raw=encode(values,variant)
+    assert decode(raw,variant)==(values,len(raw))
+    for n in range(len(raw)):
+        with pytest.raises(ValueError):decode(raw[:n],variant)
