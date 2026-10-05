@@ -1,0 +1,23 @@
+[
+  {
+    "name": "startTimePoint",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "14407def0:\te8 6b 7d 6f fd       \tcall   0x141775c60",
+    "vtable": "0x1480b86e8"
+  },
+  {
+    "name": "durationAtStart",
+    "offset": 2056,
+    "group": 0,
+    "instruction": "14407df05:\te8 56 7d 6f fd       \tcall   0x141775c60",
+    "vtable": "0x148245298"
+  },
+  {
+    "name": "paidDurationAtStart",
+    "offset": 2128,
+    "group": 0,
+    "instruction": "14407df1a:\te8 41 7d 6f fd       \tcall   0x141775c60",
+    "vtable": "0x148245298"
+  }
+]

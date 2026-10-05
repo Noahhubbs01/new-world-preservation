@@ -2,14 +2,14 @@
   {
     "seq": "0x25",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31340,
+    "fragment_count": 40,
+    "end": 39448,
     "length": 46423,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31340
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39448
     },
     "fragments": [
       {
@@ -243,20 +243,108 @@
         "end": 31337,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31340,
+        "end": 33387,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33390,
+        "end": 33416,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33419,
+        "end": 33425,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33428,
+        "end": 33434,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33437,
+        "end": 33497,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33500,
+        "end": 38340,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38342,
+        "end": 38427,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38430,
+        "end": 38433,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38436,
+        "end": 38446,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38449,
+        "end": 39435,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39438,
+        "end": 39445,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
       }
     ]
   },
   {
     "seq": "0x2a",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -488,6 +576,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -496,14 +672,14 @@
   {
     "seq": "0x2b",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -735,6 +911,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -743,14 +1007,14 @@
   {
     "seq": "0x2e",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -982,6 +1246,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -990,14 +1342,14 @@
   {
     "seq": "0x2f",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -1229,6 +1581,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1237,14 +1677,14 @@
   {
     "seq": "0x30",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -1476,6 +1916,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1484,14 +2012,14 @@
   {
     "seq": "0x33",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -1723,6 +2251,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1731,14 +2347,14 @@
   {
     "seq": "0x34",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -1970,6 +2586,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1978,14 +2682,14 @@
   {
     "seq": "0x35",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -2217,6 +2921,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2225,14 +3017,14 @@
   {
     "seq": "0x42",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -2464,6 +3256,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2472,14 +3352,14 @@
   {
     "seq": "0x44",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -2711,6 +3591,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2719,14 +3687,14 @@
   {
     "seq": "0x47",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -2958,6 +3926,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2966,14 +4022,14 @@
   {
     "seq": "0x48",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -3205,6 +4261,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3213,14 +4357,14 @@
   {
     "seq": "0x49",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -3452,6 +4596,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3460,14 +4692,14 @@
   {
     "seq": "0x4c",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -3699,6 +4931,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3707,14 +5027,14 @@
   {
     "seq": "0x4e",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -3946,6 +5266,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3954,14 +5362,14 @@
   {
     "seq": "0x4f",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -4193,6 +5601,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4201,14 +5697,14 @@
   {
     "seq": "0x52",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -4440,6 +5936,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4448,14 +6032,14 @@
   {
     "seq": "0x55",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -4687,6 +6271,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4695,14 +6367,14 @@
   {
     "seq": "0x56",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -4934,6 +6606,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4942,14 +6702,14 @@
   {
     "seq": "0x59",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -5181,6 +6941,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5189,14 +7037,14 @@
   {
     "seq": "0x5a",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -5428,6 +7276,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5436,14 +7372,14 @@
   {
     "seq": "0x5b",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -5675,6 +7611,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5683,14 +7707,14 @@
   {
     "seq": "0x66",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -5922,6 +7946,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5930,14 +8042,14 @@
   {
     "seq": "0x6c",
     "complete_records": 0,
-    "fragment_count": 29,
-    "end": 31324,
+    "fragment_count": 40,
+    "end": 39432,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 31324
+      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
+      "type": 3857,
+      "position": 39432
     },
     "fragments": [
       {
@@ -6169,6 +8281,94 @@
         "type": 3152,
         "start": 31311,
         "end": 31321,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3183,
+        "start": 31324,
+        "end": 33371,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3290,
+        "start": 33374,
+        "end": 33400,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1566,
+        "start": 33403,
+        "end": 33409,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 497,
+        "start": 33412,
+        "end": 33418,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2406,
+        "start": 33421,
+        "end": 33481,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3652,
+        "start": 33484,
+        "end": 38324,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 1522
+      },
+      {
+        "interest": 1,
+        "type": 11,
+        "start": 38326,
+        "end": 38411,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5257,
+        "start": 38414,
+        "end": 38417,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 2895,
+        "start": 38420,
+        "end": 38430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 185,
+        "start": 38433,
+        "end": 39419,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1528,
+        "start": 39422,
+        "end": 39429,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -6456,7 +8656,7 @@
     "length": 1003,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
+      "reason": "ValueError: game_mode.queuingForGameModes: selected auxiliary field unsupported",
       "type": 3312,
       "position": 335
     },
@@ -7680,7 +9880,7 @@
     "length": 830,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
+      "reason": "ValueError: game_mode.activeGameModes: selected auxiliary field unsupported",
       "type": 3312,
       "position": 438
     },
@@ -9080,7 +11280,7 @@
     "length": 1007,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
+      "reason": "ValueError: game_mode.queuingForGameModes: selected auxiliary field unsupported",
       "type": 3312,
       "position": 335
     },
@@ -9955,7 +12155,7 @@
     "length": 983,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
+      "reason": "ValueError: game_mode.activeGameModes: selected auxiliary field unsupported",
       "type": 3312,
       "position": 438
     },

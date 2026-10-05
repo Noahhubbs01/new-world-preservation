@@ -1,0 +1,37 @@
+[
+  {
+    "name": "persistentAbilityData",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "1466ea848:\te8 13 b4 08 fb       \tcall   0x141775c60",
+    "vtable": "0x14853d260"
+  },
+  {
+    "name": "hitDataNumHits",
+    "offset": 2392,
+    "group": 0,
+    "instruction": "1466ea861:\te8 fa b3 08 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "hitDataAbilityIds",
+    "offset": 2960,
+    "group": 0,
+    "instruction": "1466ea87a:\te8 e1 b3 08 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "actionDataCount",
+    "offset": 3528,
+    "group": 0,
+    "instruction": "1466ea893:\te8 c8 b3 08 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "actionDataAbilityIds",
+    "offset": 4096,
+    "group": 0,
+    "instruction": "1466ea8ac:\te8 af b3 08 fb       \tcall   0x141775c60",
+    "vtable": null
+  }
+]

@@ -131,3 +131,32 @@ def test_native_inventory_item_layout_and_truncation(extra):
     assert decode(raw,'container_native',visual_extra=extra)==(values,len(raw))
     for length in range(len(raw)):
         with pytest.raises(ValueError):decode(raw[:length],'container_native',visual_extra=extra)
+
+
+@pytest.mark.parametrize('variant,values', [
+    ('paperdoll', {'loadouts':b'\0\0\x01\x01x\x01'+b'\x11'*6+b'\x01\x01'+b'\x22'*8,'hideSkins':b'\0\0\x01'+b'\x33'*4+b'\x01'}),
+    ('player_time', {n:b'\x11'*8 for n,_ in (('startTimePoint', 8), ('durationAtStart', 8), ('paidDurationAtStart', 8))}),
+    ('chat', {'chatMutes':b'\0\0\x01\x01x'}),
+    ('game_events', {'gameEvents':b'\0\0\x01'+b'\x11'*8,'dailyBonusesUsed':b'\0\0\x01'+b'\x22'*5}),
+    ('player_arena', {'isInArena':b'\x01','dungeonRanks':b'\0\0\x02ab','m_lastDungeonsEntered':b'\x11'*16,'m_numBaseDungeonsEnteredSinceLastRefresh':b'\x22'*4,'m_gameModeIdx':b'\x03'}),
+    ('player_home', {'homePointList':b'\0\0\x01'+b'\x11'*32+b'\x01x'+b'\x22'*32+b'\x01\xff\x01y'+b'\x33'*4,'homePointId':b'\x01z'}),
+    ('charge', {'chrgPcnt':b'\xff'}),
+    ('magic', {'state':b'\x11'*4,'channel':b'\x22'*4}),
+    ('ability', {'persistentAbilityData':b'\x01'+b'\x11'*4+b'\x01'+b'\x22'*8+b'\x01'+b'\x33'*8,'hitDataNumHits':b'\0\0\x02ab','hitDataAbilityIds':b'\0\0\x01'+b'\x44'*4}),
+    ('objectives', {'trackedObjectives':b'\0\0\x01'+b'\x11'*8,'completedObjectives':b'\0\0\x01'+b'\x22'*8,'dynamicPoiIndices':b'\0\0\x01'+b'\x33'*2}),
+])
+def test_remaining_initial_native_layouts(variant,values):
+    raw=encode(values,variant)
+    assert decode(b'x'+raw+b'tail',variant,1)==(values,len(raw))
+    for length in range(len(raw)):
+        with pytest.raises(ValueError):decode(raw[:length],variant)
+
+@pytest.mark.parametrize('variant,field,raw', [
+    ('game_events','gameEvents',b'\0\0\x0b'+b'\0'*88),
+    ('game_events','dailyBonusesUsed',b'\0\0\x06'+b'\0'*30),
+    ('ability','persistentAbilityData',b'\x01'+b'\0'*4+b'\x04'+b'\0'*32+b'\0'),
+    ('objectives','trackedObjectives',b'\0\0\x09'+b'\0'*72),
+    ('paperdoll','hideSkins',b'\0\0\x01'+b'\0'*4+b'\x02'),
+])
+def test_new_native_limits_and_boolean_branches(variant,field,raw):
+    with pytest.raises(ValueError):encode({field:raw},variant)

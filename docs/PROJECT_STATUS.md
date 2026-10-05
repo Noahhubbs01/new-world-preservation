@@ -4,6 +4,18 @@ Last updated: 2026-10-04
 Repository: new-world-preservation
 Branch: work/gpt61-handshake-sprint
 
+## Current minimum-world-entry pass — 2026-10-04
+
+User-authorized objective: establish the minimum legitimate-client bootstrap and audit it against our preservation server, rather than reproduce all retail state. Accepted preservation world entry remains unverified. Branch work/gpt61-handshake-sprint; main untouched.
+
+249 tests pass. Initial master record:40/48 structurally traced,36 original-byte-exact bodies and4 limited by value redaction (Groups1994, Player3935, GlobalStorage2938, PlayerHome3652). All structural controls in the permitted masked audits are visible; masked bodies are not original-byte roundtrips. Corpus79 messages/1481 traced bodies/1363 original-byte-exact bodies/10 complete messages. Current next component Objectives3857 stops precisely at nonempty activeObjectives. Eight initial components remain unclosed; this is an existing-evidence analysis frontier, not proof that new capture is necessary.
+
+Native reader additions close Paperdoll loadout/hideSkins, PlayerTime, Chat, selected GameEvents, PlayerArena, PlayerHome, Charge, Magic and Ability. PlayerHome uses UUID16/two BEu64/string/Vec3/two BEu64/BEu32/Boolean/u8/string/BEu32. Ability persistent data is an unversioned counted BEu32 -> bounded<=3 pairs of BEu32 values, followed by counted BEu32 pairs; hit counts/action counts are byte snapshots, ability IDs are BEu32 snapshots. The reversed provisional array widths were corrected from nested constructor order before checkpoint validation. Nonzero deltas and unsupported complex selected fields still fail explicitly. Native layouts VERIFIED; compact catalog type names COMMUNITY-CORROBORATED; required spawn subset UNKNOWN.
+
+Next: resolve or bound active Objectives only where needed for a reliable initial record boundary; trace the already decoded player object's runtime replica/ownership/ActorGameConnection/local actor path, then readiness and movement consumers. Audit the actual server; produce docs/MINIMUM_WORLD_ENTRY.md with the explicit attempt verdict, readiness matrix, wire/state distinction and finite blockers. Do not revive rejected character-ID or Metadata-reference equality candidates. No real client experiment has been performed. Security mechanisms, production experiments and the deferred dependency compatibility sprint remain outside scope.
+
+Older status sections below are historical and are superseded by this reconciliation and the current sprint reports where inconsistent.
+
 ## Active handshake sprint — reconciled 2026-10-04
 
 Baseline is 435153d on work/gpt61-handshake-sprint; main remains untouched.

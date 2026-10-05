@@ -1,0 +1,121 @@
+[
+  {
+    "name": "isInArena",
+    "offset": 3016,
+    "group": 0,
+    "instruction": "14276f30e:\te8 4d 69 00 ff       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isQueuedForDungeon",
+    "offset": 3048,
+    "group": 0,
+    "instruction": "14276f327:\te8 34 69 00 ff       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "dungeonCooldownTime",
+    "offset": 3112,
+    "group": 0,
+    "instruction": "14276f33c:\te8 1f 69 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b86e8"
+  },
+  {
+    "name": "enterSoloTrialCooldownTime",
+    "offset": 3184,
+    "group": 0,
+    "instruction": "14276f351:\te8 0a 69 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b86e8"
+  },
+  {
+    "name": "dungeonRanks",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "14276f36a:\te8 f1 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9790"
+  },
+  {
+    "name": "m_lastDungeonsEntered",
+    "offset": 2552,
+    "group": 0,
+    "instruction": "14276f383:\te8 d8 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9830"
+  },
+  {
+    "name": "m_lastMutatedDungeonEntered",
+    "offset": 2616,
+    "group": 0,
+    "instruction": "14276f39c:\te8 bf 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9830"
+  },
+  {
+    "name": "m_numBaseDungeonsEnteredSinceLastRefresh",
+    "offset": 2680,
+    "group": 0,
+    "instruction": "14276f3b5:\te8 a6 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b98a0"
+  },
+  {
+    "name": "m_numMutatedDungeonsEnteredSinceLastRefresh",
+    "offset": 2720,
+    "group": 0,
+    "instruction": "14276f3ce:\te8 8d 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b98a0"
+  },
+  {
+    "name": "m_numGroupTrialsEnteredSinceLastRefresh",
+    "offset": 2760,
+    "group": 0,
+    "instruction": "14276f3e7:\te8 74 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b98a0"
+  },
+  {
+    "name": "m_nextDungeonBaseMaxLimitRefreshTime",
+    "offset": 2800,
+    "group": 0,
+    "instruction": "14276f400:\te8 5b 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "m_nextDungeonMutatedMaxLimitRefreshTime",
+    "offset": 2872,
+    "group": 0,
+    "instruction": "14276f419:\te8 42 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "m_nextGroupTrialMaxLimitRefreshTime",
+    "offset": 2944,
+    "group": 0,
+    "instruction": "14276f432:\te8 29 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "hasMutationUnlockAwardBeenGranted",
+    "offset": 3080,
+    "group": 0,
+    "instruction": "14276f44b:\te8 10 68 00 ff       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "m_singlePlayerInstanceState",
+    "offset": 3256,
+    "group": 0,
+    "instruction": "14276f464:\te8 f7 67 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  },
+  {
+    "name": "m_singlePlayerDungeonTime",
+    "offset": 3288,
+    "group": 0,
+    "instruction": "14276f479:\te8 e2 67 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "m_gameModeIdx",
+    "offset": 3360,
+    "group": 0,
+    "instruction": "14276f492:\te8 c9 67 00 ff       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  }
+]

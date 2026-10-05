@@ -12,7 +12,7 @@ SCHEMAS = {
     'game_mode': ((('activeGameModes', None), ('gameModeFlags', None),
                    ('queuingForGameModes', None), ('queueEligibleTimesForGameModes', 'snapshot12'),
                    ('gameModeMutationContext', None), ('lastTeamIndex', None)), (), ()),
-    'paperdoll': ((), (('visibleDurability','snapshot4'),('visibleFullItemData','full_inventory_snapshot'),('nonVisibleFullItemData','full_inventory_snapshot'),('nonVisiblePaperdollSlots','snapshot4'),('nonVisibleDurability','snapshot4'),('bonusEquipLoad',2),('isLocalPlayer','bool'),('isLoadoutPanelOpen','bool'),('mainHandOption1LoadedAmmoData',9),('mainHandOption2LoadedAmmoData',9),('loadouts',None),('hideSkins',None)), (('sheatheMap', 7), ('itemSlotsAttachmentStatus', 7),
+    'paperdoll': ((), (('visibleDurability','snapshot4'),('visibleFullItemData','full_inventory_snapshot'),('nonVisibleFullItemData','full_inventory_snapshot'),('nonVisiblePaperdollSlots','snapshot4'),('nonVisibleDurability','snapshot4'),('bonusEquipLoad',2),('isLocalPlayer','bool'),('isLoadoutPanelOpen','bool'),('mainHandOption1LoadedAmmoData',9),('mainHandOption2LoadedAmmoData',9),('loadouts','loadout_snapshot'),('hideSkins','u32_bool_snapshot')), (('sheatheMap', 7), ('itemSlotsAttachmentStatus', 7),
                           ('activeMap', 7), ('visiblePaperdollSlots', 'snapshot4'),
                           ('visibleItemVisualData', 'visual_snapshot'), ('loadoutSwapIncrement', 1))),
     'vitals': ((('HealthAmount', 4), ('StaminaAmount', 4), ('vitalsData', 'vitals_data'),
@@ -33,6 +33,15 @@ SCHEMAS = {
                       'nextEligibleAbandonGameModeVoteTime','gameInviteData','isGroupPristine'))),
     'player_state': ((), (('loginMatchId', 'byte_string'), ('srcWorldId', 'tagged_name'), ('accountIsLocked', 'bool'), ('accountInProbation', 'bool'), ('ageGroup', 1), ('territoryOwnerGuildId', 16), ('sessionStartWallClockTimePoint', 8), ('sessionStartTimePoint', 8), ('debugAccountProbationOverride', 1), ('freePlayerCountdown', '8_bool'), ('enteringStoreIsBlocked', 'bool'), ('isFreshStartWorld', 'bool'), ('onDeathRespawnCooldown', 4), ('mostRecentPVPActiveSwitchTimePoint', 8), ('shouldNotifyPlayer', 'bool'), ('isPVPActiveCharacter', 'bool'), ('isChangingMount', 'bool'), ('isTransmogStationScreenOpen', 'bool'), ('isTransmogScreenOpen', 'bool'), ('isInMountAttachmentMode', 'bool'), ('isArmorDyeingOpen', 'bool'), ('playerBackstory', 4)), (('characterId', 'tagged_name'), ('characterName', 'byte_string'), ('homeWorldId', 'tagged_name'), ('playerConnected', 'bool'), ('lookingThroughLoadout', 'bool'), ('playerType', 1), ('isInStore', 'bool'), ('platformAccountId', 8), ('platformType', 1))),
     'entitlement_snapshot': ((('entitlements','snapshot_bytes575'),('balances','snapshot8'),('entitlementsReceived','bool')),),
+    'objectives': ((('gracePeriodEndTime',8),), (('taskStartTimes',None),('trackedObjectives','objectives_tracked'),('completedObjectives','snapshot8'),('activeObjectives','empty_snapshot'),('taskStates','empty_snapshot'),('objectivePoiEntityIds','snapshot8'),('dynamicPoiIndices','snapshot2'))),
+    'ability': ((('persistentAbilityData','ability_data'),('hitDataNumHits','snapshot1'),('hitDataAbilityIds','snapshot4'),('actionDataCount','snapshot1'),('actionDataAbilityIds','snapshot4')),),
+    'magic': ((('state',4),('channel',4)),),
+    'charge': ((('chrgPcnt',1),),),
+    'player_home': ((('homePointList','home_snapshot'),('homePointId','byte_string')),),
+    'player_arena': ((('isInArena','bool'),('isQueuedForDungeon','bool'),('dungeonCooldownTime',8),('enterSoloTrialCooldownTime',8),('dungeonRanks','snapshot1'),('m_lastDungeonsEntered',16),('m_lastMutatedDungeonEntered',16),('m_numBaseDungeonsEnteredSinceLastRefresh',4),('m_numMutatedDungeonsEnteredSinceLastRefresh',4),('m_numGroupTrialsEnteredSinceLastRefresh',4),('m_nextDungeonBaseMaxLimitRefreshTime',8),('m_nextDungeonMutatedMaxLimitRefreshTime',8),('m_nextGroupTrialMaxLimitRefreshTime',8),('hasMutationUnlockAwardBeenGranted','bool'),('m_singlePlayerInstanceState',1),('m_singlePlayerDungeonTime',8),('m_gameModeIdx',1)),),
+    'game_events': ((('gameEvents','game_events_snapshot'),('dailyBonusesUsed','daily_bonus_snapshot')),),
+    'chat': ((('chatMutes','string_snapshot'),),),
+    'player_time': ((('startTimePoint',8),('durationAtStart',8),('paidDurationAtStart',8)),),
     'faction': ((), (('pvpFlagPending','bool'),('notifyPending','bool'),('pvpFlagPendingEndTime',8),('lastFactionChangeTimepoint',8),('factionChangeCount',2),('ffaPendingEndTime',8),('ffaAntiGroupingIsCursing','bool')), (('faction',1),('pvpFlag','bool'),('hasSanctuary','bool'),('ffaFlag','bool'),('ffaAntiGroupingCurseStacks',1)), (('timeAtFlagStart',8),('m_pvpValue',4),('isAccumulatingPvpValue','bool'))),
     'loot_tracker': ((('m_lootDataMap','empty_snapshot'),('m_lootCollectibles','snapshot8'),('m_failedRollBonusPercent',4),('m_slayerScriptDataMap','empty_snapshot'),('m_lootDivertMap','loot_divert_snapshot'),('m_lootLimitDataMap','snapshot23')),),
     'mount': ((), (('m_isMounted','bool'),('m_summonCooldownEndTime',8),('m_isServerForcingWalk','bool'),('m_isInServerExclusionVolume','bool'),('m_summonAuthorization','bool_8'),('m_persistentMountData',None),('staminaCur',4),('staminaMax',4),('staminaRegenDelay',4),('staminaRegenRate',4),('staminaDrainRate',4),('multMaxStamina',4),('multStaminaRegenRate',4)), (('m_mountId',4),), (('mountRemoteFlags',1),('remoteDyeData',4))),
@@ -129,7 +138,7 @@ class _Reader:
             self.take(count)
         elif kind == 'vector4':
             self.take(self.count() * 4)
-        elif kind in ('snapshot4', 'snapshot8', 'snapshot12', 'snapshot23'):
+        elif kind in ('snapshot1', 'snapshot2', 'snapshot4', 'snapshot8', 'snapshot12', 'snapshot23'):
             self.take(self.snapshot() * int(kind[8:]))
         elif kind == 'visual_snapshot':
             if not isinstance(visual_extra, bool):
@@ -143,6 +152,44 @@ class _Reader:
                     self.take(4)
                 if visual_extra:
                     self.take(8)
+        elif kind in ('game_events_snapshot','daily_bonus_snapshot'):
+            count = self.snapshot()
+            limit, width = (10,8) if kind == 'game_events_snapshot' else (5,5)
+            if count > limit:
+                raise ValueError('native game event collection limit')
+            self.take(count * width)
+        elif kind == 'objectives_tracked':
+            n = self.snapshot()
+            if n > 8:
+                raise ValueError('native tracked objectives limit')
+            self.take(n * 8)
+        elif kind == 'ability_data':
+            for _ in range(self.count()):
+                self.take(4)
+                n = self.count()
+                if n > 3:
+                    raise ValueError('native persistent ability entry limit')
+                self.take(n * 8)
+            self.take(self.count() * 8)
+        elif kind == 'home_snapshot':
+            for _ in range(self.snapshot()):
+                self.take(32)  # UUID16 and two BEu64 values.
+                self.take(self.count())
+                self.take(32)  # Vec3, two BEu64 values and BEu32.
+                self.boolean()
+                self.take(1)
+                self.take(self.count())
+                self.take(4)
+        elif kind == 'loadout_snapshot':
+            for _ in range(self.snapshot()):
+                self.take(self.count())  # prefix-length byte-string key
+                self.take(self.count() * 6)  # BEu32/BEu16 slot map
+                self.boolean()
+                self.take(self.count() * 8)  # BEu32/BEu32 map
+        elif kind == 'u32_bool_snapshot':
+            for _ in range(self.snapshot()):
+                self.take(4)
+                self.boolean()
         elif kind == 'loot_divert_snapshot':
             for _ in range(self.snapshot()):
                 self.take(15)  # u32 key, raw byte, BEu64, BEu16
@@ -213,7 +260,10 @@ def decode_player_aux_fragment(data, variant, offset=0, *, visual_extra=None, co
             for j, (name, kind) in enumerate(block):
                 if mask & (1 << j):
                     p = r.p
-                    r.field(kind, visual_extra)
+                    try:
+                        r.field(kind, visual_extra)
+                    except ValueError as exc:
+                        raise ValueError(f'{variant}.{name}: {exc}') from exc
                     values[name] = data[p:r.p]
             if not mask & 128:
                 break

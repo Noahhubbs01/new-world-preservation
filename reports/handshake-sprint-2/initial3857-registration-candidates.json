@@ -1,0 +1,58 @@
+[
+  {
+    "name": "taskStartTimes",
+    "offset": 1984,
+    "group": 1,
+    "instruction": "143a1e409:\te8 52 78 d5 fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "trackedObjectives",
+    "offset": 2664,
+    "group": 1,
+    "instruction": "143a1e423:\te8 38 78 d5 fd       \tcall   0x141775c60",
+    "vtable": "0x148258600"
+  },
+  {
+    "name": "completedObjectives",
+    "offset": 3336,
+    "group": 1,
+    "instruction": "143a1e43d:\te8 1e 78 d5 fd       \tcall   0x141775c60",
+    "vtable": "0x1482586a0"
+  },
+  {
+    "name": "activeObjectives",
+    "offset": 3904,
+    "group": 1,
+    "instruction": "143a1e457:\te8 04 78 d5 fd       \tcall   0x141775c60",
+    "vtable": "0x148258740"
+  },
+  {
+    "name": "taskStates",
+    "offset": 4472,
+    "group": 1,
+    "instruction": "143a1e471:\te8 ea 77 d5 fd       \tcall   0x141775c60",
+    "vtable": "0x1482587e0"
+  },
+  {
+    "name": "objectivePoiEntityIds",
+    "offset": 5040,
+    "group": 1,
+    "instruction": "143a1e48b:\te8 d0 77 d5 fd       \tcall   0x141775c60",
+    "vtable": "0x1482451f8"
+  },
+  {
+    "name": "gracePeriodEndTime",
+    "offset": 6176,
+    "group": 0,
+    "instruction": "143a1e4a0:\te8 bb 77 d5 fd       \tcall   0x141775c60",
+    "vtable": "0x1480b86e8"
+  },
+  {
+    "name": "dynamicPoiIndices",
+    "offset": 5608,
+    "group": 1,
+    "instruction": "143a1e4ba:\te8 a1 77 d5 fd       \tcall   0x141775c60",
+    "vtable": "0x148168170"
+  }
+]

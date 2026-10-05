@@ -1,0 +1,16 @@
+[
+  {
+    "name": "state",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "146706da1:\te8 ba ee 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481e22c8"
+  },
+  {
+    "name": "channel",
+    "offset": 2024,
+    "group": 0,
+    "instruction": "146706db6:\te8 a5 ee 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481e22c8"
+  }
+]

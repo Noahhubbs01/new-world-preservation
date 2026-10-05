@@ -1,0 +1,9 @@
+[
+  {
+    "name": "chrgPcnt",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "1466f1426:\te8 35 48 08 fb       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  }
+]

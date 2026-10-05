@@ -1,0 +1,9 @@
+[
+  {
+    "name": "chatMutes",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "143e71105:\te8 56 4b 90 fd       \tcall   0x141775c60",
+    "vtable": "0x14803f218"
+  }
+]

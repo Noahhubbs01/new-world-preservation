@@ -1,0 +1,16 @@
+[
+  {
+    "name": "gameEvents",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "1431e59b0:\te8 ab 02 59 fe       \tcall   0x141775c60",
+    "vtable": "0x1481a2e18"
+  },
+  {
+    "name": "dailyBonusesUsed",
+    "offset": 3648,
+    "group": 0,
+    "instruction": "1431e59c5:\te8 96 02 59 fe       \tcall   0x141775c60",
+    "vtable": "0x1481a2eb8"
+  }
+]

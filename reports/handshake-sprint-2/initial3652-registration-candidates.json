@@ -1,0 +1,16 @@
+[
+  {
+    "name": "homePointList",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "1434e2f6a:\te8 f1 2c 29 fe       \tcall   0x141775c60",
+    "vtable": "0x1481e92b0"
+  },
+  {
+    "name": "homePointId",
+    "offset": 2552,
+    "group": 0,
+    "instruction": "1434e2f7f:\te8 dc 2c 29 fe       \tcall   0x141775c60",
+    "vtable": "0x14803f108"
+  }
+]
