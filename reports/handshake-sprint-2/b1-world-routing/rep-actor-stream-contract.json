@@ -1,0 +1,52 @@
+{
+  "requirement": "B1 accepted REP to Actor transport attachment and framed World sender",
+  "confidence": "VERIFIED pointer attachment; inferred Carrier channel mapping remains explicit experiment boundary",
+  "joins": [
+    {
+      "site": "14644A6CB",
+      "operation": "GCW context+1000 REP virtualA8 tests accepted flag REP+601"
+    },
+    {
+      "site": "14644A711",
+      "operation": "145A905D0 receives Actor=context+130, REP=context+1000, optional config=context+1008"
+    },
+    {
+      "site": "145A905ED",
+      "operation": "Actor+A8 stores same accepted REP pointer"
+    },
+    {
+      "site": "145A905FE",
+      "operation": "embedded World+B0 virtual0 init/reset; Actor+A0 set1 at145A90600"
+    },
+    {
+      "site": "146B6BA90",
+      "operation": "REP connection receive installs OnRecv table148591738, parser146AF20C0\u2192146AF1D90\u2192146AE44F0 native length framing"
+    }
+  ],
+  "closed": [
+    "GCW WaitingForREPConnection\u2192WaitingForActorGameConnection conditional transition",
+    "accepted REP pointer identity at Actor attachment",
+    "no separate socket initiation in this audited attachment body"
+  ],
+  "not_claimed": [
+    "no secondary socket anywhere",
+    "Registration token is World credential",
+    "complete Actor incoming dispatcher join",
+    "retail acceptance of emitted packet",
+    "sufficient world-entry recipe"
+  ],
+  "implementation": [
+    "world/outbound.py explicit typed framed messages on registered same peer; SpawnPoint has empty body type651 COMMUNITY-CORROBORATED",
+    "REPServer.send_world_message explicit API; no automatic stage assumption",
+    "carrier.wrap_application_message corrected native prefix-width length above127; observed88-byte registration unchanged"
+  ],
+  "validation": "292 server tests passed before four additional native-prefix boundary fixtures; focused carrier15 passed",
+  "remaining": [
+    "actual inbound Registration framing integration",
+    "SelfIdentification and LevelInfo coherent asset references",
+    "runtime local entity/Registry creation",
+    "Actor-ready resource completion",
+    "camera and movement"
+  ],
+  "next": "Trace Actor+A8 queue-consumer virtual call to routed World dispatch; client experiment only after explicit coherent inputs."
+}

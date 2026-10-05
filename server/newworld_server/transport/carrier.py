@@ -6,7 +6,7 @@ CARRIER-01 scope:
 - per-channel sequence state
 - SM_CONNECT_ACK
 - SM_CT_ACKS continuous acknowledgement
-- application-message VLQ32 framing
+- application-message native prefix-width framing
 - RegistrationResponse transport wrapping
 
 Intentionally excluded for now:
@@ -20,6 +20,7 @@ Intentionally excluded for now:
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from newworld_server.protocol.framing import encode_prefix_frame
 
 
 MF_RELIABLE = 0x01
@@ -302,9 +303,14 @@ def build_continuous_ack(
 
 
 def wrap_application_message(body: bytes) -> bytes:
-    """Prefix a typed application body with its VLQ32 byte length."""
+    """Prefix a typed application body using native REP byte-length framing.
 
-    return encode_vlq32(len(body)) + body
+    Native 0x146AE44F0 uses leading-bit width encoding, which differs from
+    seven-bit VLQ for lengths above 127. The observed 88-byte REG response
+    remains byte-identical.
+    """
+
+    return encode_prefix_frame(body)
 
 
 def build_registration_record(

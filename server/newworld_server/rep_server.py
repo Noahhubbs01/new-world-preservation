@@ -125,6 +125,15 @@ class REPServer:
                 response,
             )
 
+    def send_world_message(self, peer: Peer, message) -> None:
+        """Emit an explicit World message over this peer's accepted REP stream."""
+        from .world.outbound import build_world_datagram
+
+        protocol = self.protocol_sessions.get(peer)
+        if protocol is None:
+            raise ValueError("unknown REP peer")
+        self.transport.send_plaintext(peer, build_world_datagram(protocol, message))
+
     def bind(self) -> Peer:
         address = self.transport.bind()
 

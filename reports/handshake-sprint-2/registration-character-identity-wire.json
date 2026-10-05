@@ -1,0 +1,35 @@
+{
+  "status": "VERIFIED",
+  "requirement": "RegistrationRequest selected character identity extraction",
+  "native_encoder": "1407CE590",
+  "marshaller_vtable": "147F471F0",
+  "body_order": [
+    "fixed uint32 message+8 via140876CD0",
+    "prefix count map message+10 via1407D62B0",
+    "each entry fixed uint32 key and prefix/raw string value via140876D80",
+    "prefix/raw string message+A0",
+    "ticket+0 prefix/raw string",
+    "ticket+20 REP address prefix/raw string",
+    "ticket+40 world id prefix/raw string",
+    "ticket+60 character id prefix/raw string"
+  ],
+  "character_id_message_offset": "120",
+  "string_limit": "0x2FFFF",
+  "map_limit": "0x2000000",
+  "prefix_codec": "native prefix-width140877970; not LEB128",
+  "proof": [
+    "146B6E62B constructs RegistrationRequest with REP+1E8 accepted ticket",
+    "146B66B69 copies accepted ticket into message+C0 via146403F10",
+    "146403F47..4F copies record+60 string",
+    "1407D5F30 emits record+0 then passes20,40,60 to1407D4920",
+    "1407D4920 emits these three strings sequentially"
+  ],
+  "implementation": "server/newworld_server/protocol/registration_identity.py",
+  "validation": "7 passed using PYTHONPATH=server .venv/bin/python -m pytest",
+  "limitations": [
+    "Body header/routing must be removed before extraction",
+    "Does not authenticate client identity or validate full trailing RegistrationRequest",
+    "Direction frame writer remains delegated to parent; REP OnConnect send dispatches virtual30 at146B6E64C"
+  ],
+  "sensitive_data": "No actual credentials, tokens, ticket strings or captured identity values read/exported"
+}

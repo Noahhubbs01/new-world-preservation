@@ -223,3 +223,10 @@ def test_real_registration_response_end_to_end():
         "21 00 59 00 00 00 00 00 "
         "58 00 01 03"
     )
+
+
+@pytest.mark.parametrize("length, prefix", [(127, "7f"), (128, "8002"), (300, "ac04"), (16384, "c00002")])
+def test_application_length_uses_native_prefix_width(length, prefix):
+    from newworld_server.transport.carrier import wrap_application_message
+    body = b"x" * length
+    assert wrap_application_message(body) == bytes.fromhex(prefix) + body

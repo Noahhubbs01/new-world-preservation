@@ -1,0 +1,75 @@
+{
+  "scope": "Static ClientGDE allocation/acquisition receiver identity; checkpointed before complete bus ABI mapping",
+  "findings": [
+    {
+      "status": "VERIFIED",
+      "claim": "Factory 141747C60 new-object branch allocates ClientGDE through 1410563D0 and places object/control pair in output R15.",
+      "addresses": [
+        "141747E0E",
+        "141747E21",
+        "141747E28"
+      ],
+      "identity": "1410563D0 installs vtable 147FD6B28; slot 0 is 14167B790"
+    },
+    {
+      "status": "VERIFIED",
+      "claim": "Same output pair is copied into acquisition task +18.",
+      "addresses": [
+        "141747D5C",
+        "141747D61",
+        "141747D68",
+        "141748535",
+        "141748543",
+        "141748547",
+        "14174854A"
+      ],
+      "identity": "map insertion result saved at rsp+40; its +18 contains task shared pair; factory dereferences mapnode+18 into RBX, then RCX=RBX+18, RDX=R15, shared-pair assignment 14056D1F0"
+    },
+    {
+      "status": "VERIFIED",
+      "claim": "AcquireSliceAsset 14178DF50 dispatches virtual slot 0 on task +18 GDE, not on Context.",
+      "addresses": [
+        "14178DF82",
+        "14178DF86",
+        "14178E5A9",
+        "14178E5B6"
+      ],
+      "identity": "allocated ClientGDE vtable slot 0 14167B790 logs ClientGDEInstantiated at 14167B88A and invokes base callback 14167BDC0 at 14167B7B4",
+      "correction": "Earlier contextual report describing 14178E5B6 as Context virtual0 must be qualified/corrected"
+    },
+    {
+      "status": "VERIFIED",
+      "claim": "Factory copies third explicit incoming argument fields +10..1f to GDE+78 and +20 to GDE+88; no values inferred.",
+      "addresses": [
+        "141747C67",
+        "1417484E6",
+        "1417484ED",
+        "1417484F1",
+        "1417484F5",
+        "1417484F9"
+      ],
+      "caution": "Exact upstream argument semantic identity still requires full ABI join; factory original R8 is saved at rbp+c8, original R9 at rbp+d0."
+    },
+    {
+      "status": "VERIFIED",
+      "claim": "Installed +40 interface slot0 adjustor 14177E330 subtracts 40 from receiver then calls concrete factory 141747C60.",
+      "addresses": [
+        "141619AD3",
+        "14177E33E",
+        "14177E371"
+      ],
+      "vtable": "148040F38 slot0=14177E330; registration helper 1416772F0 registers base+40"
+    },
+    {
+      "status": "INFERRED",
+      "claim": "Metadata application 141718CAF ->14178DB00 dispatch 14178DC74 ->141570190 uses the installed +40 interface factory.",
+      "remaining": "Finish constructor-to-registration identity and upstream bus ABI arguments to close entire chain. Do not label all incoming factory arguments metadata/transform until joined."
+    }
+  ],
+  "minimum_contract": {
+    "implemented": "Explicit Player identity component encoder index9/type3935; no asset/runtime identity invention",
+    "remaining": "Original selected asset ID, runtime reference and self identity association remain caller supplied/blocked; no claim all 124 prefab components or 48 fragments necessary"
+  },
+  "exact_next_action": "Trace 141570190 entry argument preservation through 141570370/373/383 and 14178DC74 call; join original factory R8/R9 meanings. Then finish 141619A30->1416772F0 registration identity and asset override branch 141747EEE..141747F6A (context+110 vs original R9 asset ID; context+130 override). Avoid repeating solved index9/reflection or codecs.",
+  "validation": "Existing player_bootstrap.py plus eight new focused tests: 31 total focused tests passed; factory report static evidence only; no runtime verification"
+}

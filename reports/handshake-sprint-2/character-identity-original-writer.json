@@ -1,0 +1,86 @@
+{
+  "scope": "Original first-context character_id writer and supplier enabling state; no ticket/token values read or exported",
+  "status": "VERIFIED native provenance to accepted pre-REP login-ticket record; gateway response schema remains unresolved",
+  "character_record": {
+    "context_record_base": "0x10E0",
+    "character_id_field": "0x60",
+    "absolute_character_id": "0x1140",
+    "constructor": "0x1407E2990",
+    "constructor_call": "0x1463FF245..0x1463FF24C"
+  },
+  "writer": {
+    "function": "0x146468370",
+    "native_name": "StartREPLogin",
+    "name_source": "0x1484FE5D8",
+    "source": "incoming RDX record preserved in caller stack, restored RBX at0x146468640",
+    "destination": "context+0x10E0 at0x1464686A0",
+    "copy_call": "0x1464686AA ->0x146411AE0",
+    "exact_character_copy": "0x146411B48 source+0x60;0x146411B4C destination+0x60;0x146411B63 string assignment0x1402C43B0",
+    "diagnostics": {
+      "record+0x40": "World ID",
+      "record+0x60": "Character ID",
+      "record+0x20": "REP Address",
+      "record+0x158": "Login Capabilities"
+    }
+  },
+  "producer": {
+    "queue": "0x146459320 native literal Queuing login for world and character",
+    "selection": "state driver0x14644A30B passes context+0x1070 world selection and+0x1098 character selection",
+    "request": "context+0x118 virtual0x48 at0x1464595D7",
+    "callback_install": "0x14645947A table0x148502898;slot0x10 pointer0x1485028A8 ->0x146474F30",
+    "callback": "0x146474F49 ->0x14643D110;R8 returned object, RDX generation context+0x13E0",
+    "acceptance": "0x14643D148 generation equality;0x14643DD50 result+0x278 optional presence;0x14643DD61 source result+0x70;0x14643DD75 ->StartREPLogin",
+    "diagnostic": "0x1484FE410 Received a login ticket with location; raw fields deliberately not exported",
+    "refresh": "0x1464708D0 context+0x118 virtual0x50 at0x146470BCB;callback0x1485028C8 slot0x10->0x146475110->0x14643D110"
+  },
+  "state": {
+    "identity": "context+0x1530 is existing GCW lifecycle enum, not an independent identity-state flag",
+    "StartREPLogin_gate": "state4 or10 at0x146468398..0x1464683A9; other states rejected",
+    "transition": "StartREPLogin calls0x146466650 with7 at0x146468B16 or5 at0x146468AC6",
+    "setter": "0x1464666A0 writes requested EDX state through retained context receiver; resets lifecycle timestamps",
+    "supplier": "0x14643551A only requires nonzero state;9 through14 satisfy this predicate",
+    "population": "0x14644A66A invokes0x146425F20 during StartREP before transition10;0x146426084 copies+1140 ->0x1464076B0 ->+12F0",
+    "qualification": "Population can override record using optional native query; default path preserves ticket character_id. No configuration changes or impersonation-setting use authorized or performed.",
+    "names": {
+      "table": "0x1484F9FF0",
+      "0": "Disconnected",
+      "4": "WaitingForQueuedLogin",
+      "5": "QueryForRemoteConfigClass",
+      "7": "ObtainREPRequirements",
+      "9": "StartREPConnection",
+      "10": "WaitingForREPConnection",
+      "11": "WaitingForActorGameConnection",
+      "12": "WaitingForSpawnPoint",
+      "13": "WaitingForPlayerSpawn",
+      "14": "InGame"
+    }
+  },
+  "server_contract": {
+    "confidence": "VERIFIED necessary identity equality; sufficiency not established",
+    "requirement": "The replicated Player.characterId must equal the nonempty accepted login-ticket character_id byte for byte to reach local classification1 through0x146929DF0. Keep one selected character identity across logical session and Player bootstrap. State+1530 requires no distinct server enable message once normal GCW lifecycle advances.",
+    "do_not_assume": [
+      "Registration token identifies character",
+      "SelfIdentification TaggedName identifies character",
+      "wire ObjectReference UUID identifies character",
+      "server can change client-selected ticket identity by emitting arbitrary replicated characterId"
+    ]
+  },
+  "remaining": {
+    "requirement": "How supported local login flow supplies ticketrecord+0x60 and how server learns selected identity from client-facing request",
+    "searched": [
+      "bounded GCW native region1463F0000..146470000",
+      "SQLite direct caller graph and PE rdata callback pointers",
+      "record assignment146411AE0",
+      "StartREPLogin state gate and terminal state setter",
+      "QueueLogin request callback registration and refresh callback",
+      "existing supplier/population evidence"
+    ],
+    "minimum_observation": "Use an administrator-supported isolated preservation endpoint with the legitimate owned client. Select one synthetic preservation character, enable existing protocol metadata diagnostics, and record only: last GCW state, whether accepted ticket character_id is nonempty, its length, and Boolean byte equality with emitted Player.characterId. Do not export ticket/token strings. Empty/no accepted ticket means login producer missing; nonempty unequal means identity mismatch; equal with state>=9 but no live Registry means independent replica/asset/activation gate.",
+    "implementation_boundary": "No gateway JSON serializer or RegistrationRequest field offset closed here; no new invented wire identity fields."
+  },
+  "rep_internal_transfer": {
+    "gcw": "0x146426359 or0x1464263AE passes context+10E0 as stackarg5 toREPvirtual10 or18",
+    "rep": "0x146B6D600 fiftharg[rbp+B0] at0x146B6D8BB;0x146B6D8B4 destinationREP+1E8;0x146B6D8C2 recordcopy146411AE0",
+    "result": "REP owns the same characterrecord, character_id relativeREP+248; outbound wire consumer unresolved"
+  }
+}

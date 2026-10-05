@@ -1,0 +1,64 @@
+{
+  "requirement": "B2 Player prefab-to-wire component index; minimal bootstrap component compilation",
+  "status": "VERIFIED conditional index association; sufficient entity/world recipe OPEN",
+  "prefab": {
+    "excluded_source": "/srv/projects/new-world-evidence/minimum-entry-assets/player.dynamicslice",
+    "size": 367528,
+    "component_node": 797,
+    "component_uuid": "D50340CF-A082-4B90-9933-8C42387C0C77",
+    "faceted_base_node": 798,
+    "base_uuid": "65CD8F3E-73AA-43E9-8D9A-B5AE43F624F9",
+    "index_node": 809,
+    "index_node_offset": 22082,
+    "field_crc": "0x81E598C5",
+    "field_name": "m_replicationIndex",
+    "payload_width": 4,
+    "big_endian_value": 9
+  },
+  "native_reflection": {
+    "function": "0x141761860",
+    "name_site": "0x141761AD4",
+    "name_literal": "0x1480424B8",
+    "member_offset_store": "0x141761AF0",
+    "member_offset": "0x90",
+    "size_store": "0x141761AF8",
+    "member_size": 4
+  },
+  "gde_join": {
+    "normal_index_read": "0x14171BDFF",
+    "vector": "GDE+0x160",
+    "indexed_store": "0x14171BE93",
+    "prerequisites": [
+      "correct asset instantiated with PlayerComponent",
+      "cast to FacetedComponent succeeds",
+      "component virtual A0 true",
+      "normal configured index mode selected"
+    ],
+    "cached_delivery": "0x14167B2A0 uses same vector; Player callback 0x14683C8D0 consumes characterId"
+  },
+  "capture_join": {
+    "report": "player-record-sequential-validation.json",
+    "sequences": [
+      "0x8c",
+      "0xae"
+    ],
+    "component_index": 9,
+    "state_type": 3935,
+    "numeric_type_confidence": "COMMUNITY-CORROBORATED",
+    "index_value_confidence": "VERIFIED owned-client prefab and decoded header; same instantiated asset still conditional"
+  },
+  "implemented": "encode_player_identity_component generates prefix index9 + prefix type3935 + native-schema identity body from explicit caller values. It does not emit a complete SB record or invent entity/SelfIdentification/metadata values.",
+  "not_proven": [
+    "all124 prefab components necessary",
+    "all48 initial fragments necessary",
+    "this exact player prefab selected by replicated metadata",
+    "correct runtime entity key/ref established",
+    "minimum local Player identity fields beyond characterId",
+    "sufficient World entry/camera/WASD"
+  ],
+  "next_exact_static_action": "Resolve GDE AcquireSliceAsset Context virtual0 at14178E5B6 and metadata-to-asset caller before declaring record creation complete.",
+  "minimal_runtime_observation_if_needed": [
+    "For one preservation-owned synthetic record log interest/object key and metadata AssetId/GdeRef shape, asset-resolution result and selected local asset path without private values.",
+    "After acquisition log Player component index+90, GDE vector9 occupant type, local identity comparison equality bit, entity activation result and Registry validity; no secrets or raw gameplay values."
+  ]
+}

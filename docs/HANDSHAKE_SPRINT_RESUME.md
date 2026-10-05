@@ -1,3 +1,32 @@
+# Current checkpoint — stopped by owner, 2026-10-05
+
+Research and implementation STOPPED by explicit owner request. Resume only when newly authorized.
+Repository /srv/projects/new-world-forensics; branch work/gpt61-handshake-sprint; HEAD ea6c0a3601ad275141421c2bc68ecda9d01d3207. This run is UNCOMMITTED; no push/merge. Index was empty at checkpoint. Main untouched. Hundreds of preserved scratch files and six prior modified disassembly windows remain; do not clean/reset or broadly stage.
+
+Validation: full server/.venv/bin/python -m pytest -q: 303 passed, zero skipped, 0.85s. No legitimate client World entry, player spawn, InGame, camera or WASD demonstrated.
+
+Implemented, explicit APIs only:
+- world/outbound.py and REPServer.send_world_message: explicit routed/reflected prefix-framed messages on an accepted REP peer using existing Carrier counters. Empty SpawnPoint type0x651 (numeric index COMMUNITY-CORROBORATED, native UUID/empty dispatch VERIFIED). No automatic bootstrap or claimed correct emission stage. Accepted REP is attached to Actor, but actual Actor receive dispatcher and channel mapping remain to be closed; this sender is a bounded experiment surface.
+- carrier.wrap_application_message now native prefix-width framing rather than seven-bit VLQ. >127 length boundary fixtures; existing88-byte registration remains identical.
+- world/player_bootstrap.py: explicit identity fragment with Player prefab component index9 (VERIFIED native reflection +0x90→GDE+0x160[index]) and type3935 (COMMUNITY-CORROBORATED). Requires characterId; does not construct complete entity/record or invent assets/owner references.
+- protocol/registration_identity.py: bounded identity-only extractor. RegistrationRequest encoder1407CE590: BEu32 scalar, prefix map count, each BEu32 key+prefix raw string, message+A0 raw string, then ticket strings+0,+20,+40,+60; fourth ticket string is chosen character identity. Skips earlier fields without retaining/logging them; does not authenticate or validate trailing body. Not yet integrated into Javelin session.
+
+VERIFIED identity producer: GCW StartREPLogin146468370 receives accepted login-ticket record;1464686A0 copies via146411AE0 to context+10E0, originalrecord+60→context+1140. QueueLogin146459320 callback146474F30→14643D110 passes result+70 into StartREPLogin at14643DD75. Refresh equivalent146475110. Existing146425F20 record supplier copies selected ID toward context+12F0. State+1530 is ordinary lifecycle enum; states9..14 already nonzero. No extra state-enable World message evidenced. Player.characterId must equal accepted ticket character_id raw value.
+
+VERIFIED REP attachment:14644A6CB calls context+1000 REP virtualA8, getter146B6DF30 testsREP+601 accepted.14644A711 passes Actor=context+130, REP=context+1000, config=context+1008 to145A905D0.145A905ED stores sameREPpointer intoActor+A8; World+B0 virtual0 resets/init at145A905FE;Actor+A0=1. GCW then state11. No second socket initiated by this specific audited attachment body; do not generalize to all paths. REPconnection OnConnect/OnRecv closures148591708/148591738 lead146B6BA90→146AF20C0→146AF1D90→146AE44F0 native prefix parser. Actual incoming World dispatcher still outstanding. SDK146B6B230 is destructor, not constructor. World constructor1463FF5F0 calls146B6A9D0 base message-container constructor, not REP SDK146B69AD0.
+
+Asset factory follow-up: latest player-bootstrap-index-contract.json includes current agent joins when present. AcquireTask+18 at14178E5B6 is allocated ClientGDE, not Context; virtual0 is ClientGDEInstantiated. Do not repeat the older mislabeled Context virtual0 claim.
+
+Exact next actions on authorized resume:
+1. Close client-to-REP framing/routing writer before changing inbound Javelin. Current handle_datagram treats channel0payload[0] as raw0x13, while native receive stream is prefix-framed. Registration send virtual30 resolves146B706F0→146B6FFB0; recover wrapper/direction and then integrate bounded framing + identity extraction into logical session with tests. Do not guess routing flags or authenticate tickets implicitly.
+2. Close actual REP→Actor World receive dispatcher. Actor+A8 attachment proved; World message-container base146B6A9D0 and reset146B6DBE0.146B6D090 returns SDK+120/+128 shared object, not automatically evidence of a queue.146B6D0D0/virtual58 consumes SDK+130. Avoid conflating these offsets. Preserve actor-rep-consumer-leads.json as exploratory, unjoined leads only.
+3. Finish sufficient player asset/record recipe and coherent SelfIdentification/LevelInfo resource inputs, using latest factory joins. Do not repeat initial48/late19 layout decoding.
+4. Normal resource completion→actualActor252 and livePlayerRegistry independently; then emptySpawnPoint correctstage, state14, camera+WASD. No operational success claim from codec tests.
+
+Preserve evidence labels VERIFIED/INFERRED/COMMUNITY-REPORTED/COMMUNITY-CORROBORATED/CONFLICTING. Read docs/CHAT_RULES.md and docs/PROJECT_STATUS.md completely, then this current packet, docs/HANDSHAKE_SPRINT_RESUME.md, docs/MINIMUM_WORLD_ENTRY.md and docs/HANDSHAKE_MAP.md. Current section supersedes historical unknown252/ICMP/state-enable leads. No EAC/security investigation/bypass/modification or Amazon production interaction. Dependency sprint deferred. No proprietary assets/binaries, sensitive rawcaptures, credentials/keys, third-party repos or large databases committed. User-authorized sprint push previously failed restricted DNS; no personal credentials requested.
+
+# Historical checkpoint material
+
 # Handshake sprint resume packet
 
 **Current HEAD after this scheduled run: see Git log. The 2026-10-05 resumed frontier below supersedes the historical stop and unknown-writer instructions.** The exact receiver and writers are verified; next join141038FE0 callback identity/resource completion, then context identity/state and minimum asset/index recipe. No world entry demonstrated.
