@@ -1,5 +1,24 @@
 ## Current checkpoint: initial 48-fragment boundary closed (2026-10-04)
 
+## Resumed frontier — 2026-10-05
+
+Scheduled resumption verified branch `work/gpt61-handshake-sprint` and HEAD `5da90ebafee1bdbce2b8394a2c8aadedaa4e531b`, six preserved modified disassembly windows and515 untracked entries. Local outputs/RESUME_PACKET.md was missing and restored from authoritative repo handoff. No evidence reset/discard.
+
+**VERIFIED: the actual final Actor +252 receiver and two writers are now identified.** GCW14644A070 at14644A8BD passes context+130 to145A923C0. Context constructor1463FEF00 at1463FF18E constructs145A7D4C0 there; Actor constructor at145A7D55F/145A7D56B embeds WorldConnection at+B0. World constructor1463FF5F0 initializes own+1A2=0 at1463FF91D. This proves Actor+252 equals embedded WorldConnection+1A2.
+
+World primary vtable1484FC680 (installed1463FF755) slot8 points14643E7B0, which preserves the incoming receiver inr14 and calls146448CD0 at14643EEE9 with that receiver. Native diagnostics name146448CD0 `LoadContextAndLevel`; its r13 retains rcx. At1464490E1 it sets own+1A2=1, the exact Actor getter flag. It requires own+1A1=0, +1A0 nonzero (`no self identification` diagnostic), +190 nonzero (`missing LevelInfo`), a game pointer and clientSdk, then performs slice/entity acquisition14171B850 and a game virtual1B8 context/level call. Its direct flag-setting branch requires GCW interface+28 virtual88 true. That installed slot resolves141038250, reading receiver+3AC, i.e. GCW base+3D4. Startup query146441198 names this Boolean `javelin.enable-fastload`; its supported setting and sufficient runtime prerequisites remain unverified. Do not label it master-player or a supported bypass.
+
+A second exact writer145A95160 retains the Actor receiver, adds+B0 at145A9518E, then sets embedded+1A2=1 at145A951A8. LoadContextAndLevel invokes it at1464490B5 on first context+130 when game+960 !=1 and the context vector is nonempty; another caller14644B980/14644BAF5 is not semantically audited. Both writer paths clear embedded+60 through140766500 and call146455E90. No claim is made that either branch suffices to instantiate a local player.
+
+Correction scope:142FFBC50 remains an unjoined reference-matching path. It is no longer the necessary next lead for identifying the final flag producer. **B4 is narrowed from unknown writer to reaching the correct native writer with adequate context/resources and live registry.** B1/B2/B3/B5/B6 remain open. Initial48 layout result is unchanged;265 tests were previously green, resumed rerun is recorded below. No preservation-server world entry/camera/WASD success or new runtime bootstrap implementation.
+
+Current graph:accepted REP/session→World→SelfIdentification/level context and required replica/assets→local identity/classification→conditional entity/component activation→live Registry; native LoadContextAndLevel/Actor path→correct +252; independent SpawnPoint→+BC8; +252 AND live Registry→InGame→camera/movement. This is a conditional partial-order graph, not a sufficient packet recipe.
+
+Next named action:trace GCW+3D4 source/semantics and LoadContextAndLevel reachability/resource completion; verify callback receiver adjustments before mapping SelfIdentification/LevelInfo negative-offset writes to its prerequisites. Then continue original character_id/state provenance and wire asset/index joins. Do not repeat initial48/19-fragment decoding.
+
+Evidence:reports/handshake-sprint-2/actor-ready-flag-native-writers.json. Native working windows and broad offset leads remain excluded/uncommitted under evidence/scratch; concise metadata is selected. Preserve SCRIPTURE.md foundation and sparse respectful inscription convention. No push/merge, main changes, EAC/security work or Amazon production interaction. Dependency sprint remains deferred.
+
+
 VERIFIED structural parsing of all 48 initial-master fragments in all 25 preserved initial bundles; 44 fragment types exact original-byte round-trip and four limited by redacted values (Groups, Player, GlobalStorage, PlayerHome). This establishes layout, not minimum required state or successful client entry. Corpus: 79 StateBundle messages, 35 complete, 1,681 decoded fragment bodies, 1,563 exact unredacted body round-trips. Later unsupported schemas remain outside initial-bundle closure.
 
 New native branches: Objectives active/task state, PointsAccumulator, CategoricalProgression, Achievement, ItemManagement, RewardTrack and StatusEffects local/lightweight maps. RewardTrack tail is raw u8, not Boolean. Remote status effects use a different constructor and remain unsupported nonempty; no inferred width is accepted there.
@@ -8,7 +27,7 @@ Minimum-entry work continues next. Serialized 36-byte references and resolved ru
 
 # New World Preservation - Project Status
 
-Last updated: 2026-10-04
+Last updated: 2026-10-05
 Repository: new-world-preservation
 Branch: work/gpt61-handshake-sprint
 
@@ -2254,3 +2273,9 @@ CONFLICTING earlier Actor attribution:145A923C0 verifies the receiver+252 consum
 VERIFIED local identity path:context+1140 character_id →146425F20/1464076B0 →context+12F0 record; GCW virtual248 handler1464354F0 returns the first context's optional record only with nonempty string and state+1530.146929DF0 compares leading string with replicated characterId →classification1; readiness/entity/component activation →1468760D0 →PlayerRegistry installation/live validity. Original+1140 writer and enabling state transitions remain open. SpawnPoint dispatch independently setsActor+BC8 (12→13); finalActor+252 AND live registry release13→14. Camera/WASD remains unverified.
 
 Next authorized action:prove the145A923C0 caller's receiver and its actual+252 writer before attributing142FFBC50; then resolve context identity/state and asset/index prerequisites. Existing evidence is not exhausted. No complete-client test, new runtime implementation, push or merge is claimed. Preserve the existing SCRIPTURE.md foundation and sparse respectful Scripture convention.
+
+Follow-up VERIFIED: startup14643F0A0 at146441185 passes GCW+3D4 as destination to14033D610 at146441198 under the native key `javelin.enable-fastload` (literal147FC8490). Therefore the direct LoadContextAndLevel flag-setting branch is a fastload Boolean path, not evidence of actor-reference equality. Constructor1463FBB40 initializes+3D4 with zero (word store1463FBE44);146444B10 has a conditional clear at146444BCB. Supported configuration and sufficiency remain unverified; no client setting was changed. Next investigate the normal/asynchronous completion path, including14644B980→145A95160, rather than assuming fastload should be enabled.
+
+Additional VERIFIED writer reachability:wrapper141038FE0 calls14644B980 at141038FE9 with the same receiver.14644B980 selects pending/Boolean-dependent actions, then at14644BAD7 requires the GCW context vector(+1E0..1E8) to be nonempty, passes first context+130 at14644BAEE, and calls145A95160 at14644BAF5. Therefore this path writes the actual Actor flag independently of the direct fastload branch. **The wrapper's event identity/registration is still UNKNOWN**; describing it as normal/asynchronous level-load completion is INFERRED until joined. Immediate next requirement:identify that callback and actual completion/resource gates, followed by original character_id/state and asset/component-index joins.
+
+Resumed validation:265 passed, zero skipped,2.03s from server working directory. This checkpoint is native evidence/docs only, with no gameplay runtime behavior added.

@@ -1,0 +1,91 @@
+{
+  "status": "VERIFIED native receiver and two writers; sufficient runtime recipe unresolved",
+  "requirement": "B4 actual Actor+252 flag producer",
+  "receiver_chain": [
+    {
+      "site": "0x14644A8BD",
+      "meaning": "GCW driver passes context+0x130 to getter145A923C0"
+    },
+    {
+      "site": "0x1463FF18E",
+      "meaning": "Context constructor1463FEF00 passes context+0x130 to Actor constructor145A7D4C0"
+    },
+    {
+      "site": "0x145A7D55F",
+      "meaning": "Actor constructor adds0xB0; calls1463FF5F0 at145A7D56B"
+    },
+    {
+      "site": "0x1463FF91D",
+      "meaning": "WorldConnection constructor initializes own+0x1A2=0; this is Actor+0x252"
+    },
+    {
+      "site": "0x1463FF74E",
+      "meaning": "WorldConnection primary vtable1484FC680 installed at1463FF755; slot8 at1484FC688 holds14643E7B0"
+    }
+  ],
+  "writers": [
+    {
+      "function": "0x146448CD0",
+      "name": "LoadContextAndLevel from native diagnostics",
+      "owner": "incoming rcx retained in r13 at146448CE9",
+      "caller": "WorldConnection virtual8 update14643E7B0 calls at14643EEE9 with same r14 incoming receiver",
+      "site": "0x1464490E1",
+      "write": "receiver+0x1A2=1",
+      "prerequisites": [
+        "receiver+1A1 must be0",
+        "receiver+1A0 nonzero (diagnostic no self identification)",
+        "receiver+190 nonzero (diagnostic missing LevelInfo)",
+        "global14A7BA0E0+60 game nonnull",
+        "1406D97D0 context result+8 clientSdk nonnull",
+        "conditional asset/context calls complete; current GCW interface+28 virtual88 returns nonzero at146448F67"
+      ],
+      "actions_before_write": [
+        "14171B850 entity/slice acquisition request",
+        "game virtual1B8 level/context call"
+      ],
+      "virtual88": {
+        "installed_vtable": "0x1484FB2F0",
+        "target": "0x141038250",
+        "reader": "receiver+0x3AC; when on GCW base+28 this is GCW base+3D4",
+        "semantic": "VERIFIED startup Boolean query under javelin.enable-fastload; supported setting/complete fastload prerequisites unverified",
+        "startup_query": {
+          "function": "0x14643F0A0",
+          "destination_site": "0x146441185 GCW+3D4",
+          "call_site": "0x146441198 ->14033D610",
+          "key_va": "0x147FC8490",
+          "key": "javelin.enable-fastload"
+        }
+      },
+      "post_write": [
+        "140766500 sets WorldConnection+60=0",
+        "146455E90 called"
+      ]
+    },
+    {
+      "function": "0x145A95160",
+      "owner": "Actor receiver retained rbx; add0xB0 at145A9518E",
+      "site": "0x145A951A8",
+      "write": "[Actor+0xB0+0x1A2]=1, directly same flag as getter",
+      "callers": [
+        "146448CD0 at1464490B5 with first GCW context+130, condition game+960 !=1 and context vector nonempty",
+        "14644B980 at14644BAF5 (semantics not audited)"
+      ],
+      "post_write": [
+        "140766500 sets WorldConnection+60=0",
+        "146455E90 called"
+      ],
+      "limitation": "Alternate branch existence does not prove safe/supported offline world entry or security compatibility",
+      "additional_caller_audit": {
+        "function": "0x14644B980",
+        "wrapper": "0x141038FE0 calls it at141038FE9 with same receiver",
+        "context_selection": "GCW+1E0 vector must be nonempty; first context+130 passed at14644BAEE",
+        "call_site": "0x14644BAF5",
+        "conditions": "Paths with receiver+990 pending flag or incoming Boolean select preceding actions; all converge on nonempty-context writer call",
+        "event_identity": "UNKNOWN; native callback event/type not joined. Normal/asynchronous load-completion candidate remains INFERRED."
+      }
+    }
+  ],
+  "correction": "142FFBC50 is unnecessary for identifying these native writers. Its receiver/reference-match semantics still have no proven join to this gate.",
+  "evidence_boundary": "Static executable-backed pointer arithmetic and vtable mapping. No runtime client entry, no security modification, no production interaction. Other writers are not excluded.",
+  "next_action": "Join141038FE0 callback event identity/registration and its14644B980 paths to actual level load completion; then close original character_id/state and minimum asset/index recipe."
+}
