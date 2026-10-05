@@ -74,6 +74,9 @@ class SessionRegistry:
         if token in self._by_token:
             raise ValueError("session token already registered")
 
+        if rep_peer is not None and rep_peer in self._by_rep_peer:
+            raise ValueError("REP peer already bound to another session")
+
         session = PreservationSession(
             session_token=token,
             rep_peer=rep_peer,
@@ -109,6 +112,7 @@ class SessionRegistry:
         session: PreservationSession,
         peer: Peer,
     ) -> None:
+        self._require_owned(session)
         existing = self._by_rep_peer.get(peer)
 
         if existing is not None and existing is not session:
@@ -125,6 +129,7 @@ class SessionRegistry:
         session: PreservationSession,
         peer: Peer,
     ) -> None:
+        self._require_owned(session)
         existing = self._by_world_peer.get(peer)
 
         if existing is not None and existing is not session:
@@ -136,3 +141,7 @@ class SessionRegistry:
         session.world_peer = peer
         session.phase = SessionPhase.WORLD_BOUND
         self._by_world_peer[peer] = session
+
+    def _require_owned(self, session: PreservationSession) -> None:
+        if self._by_token.get(session.session_token) is not session:
+            raise ValueError("session is not owned by this registry")

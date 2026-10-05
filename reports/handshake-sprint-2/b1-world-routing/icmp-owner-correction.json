@@ -1,0 +1,32 @@
+{
+  "status": "VERIFIED",
+  "requirement": "B1 REP to World endpoint handoff",
+  "conclusion": "146454580 is an ICMP echo probe implementation; it does not establish a World transport connection.",
+  "pointer_identity": {
+    "function": "0x146454580",
+    "pointer_slot": "0x1484FA5F0",
+    "vtable": "0x1484FA5D8",
+    "virtual_offset": "0x18",
+    "installer": "0x14642BDA3",
+    "installed_receiver": "allocated object +0x10"
+  },
+  "selector": {
+    "branch": "0x14642BD51..0x14642BDAA",
+    "selector_pointer": "0x149F67030",
+    "literal": "0x147FC4B40",
+    "value": "icmp",
+    "other_modes": [
+      "static",
+      "random",
+      "http"
+    ]
+  },
+  "imports": {
+    "0x147EC9308": "IPHLPAPI.DLL!IcmpCreateFile",
+    "0x147EC92F8": "IPHLPAPI.DLL!IcmpSendEcho",
+    "0x147EC9300": "IPHLPAPI.DLL!IcmpCloseHandle"
+  },
+  "evidence_scope": "PE import directory, raw rdata pointer occurrence, cached RIP references, bounded constructor/selector disassembly. No client execution or production interaction.",
+  "correction": "The call to 145A86D80 belongs to neighboring 1464549B0, not 146454580. Adjacent disassembly is not a caller relationship.",
+  "remaining": "Actual World endpoint selection and REP-session-to-World binding remain OPEN."
+}
