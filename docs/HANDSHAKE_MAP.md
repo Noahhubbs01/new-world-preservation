@@ -1,6 +1,6 @@
 # Handshake and player-spawn reconstruction map
 
-Current continuation: [structural reduction and exact experiments](HANDSHAKE_SPRINT2_PROGRESS.md). This map records the first checkpoint; that report supersedes its remaining serialization gaps.
+Current authoritative continuation: [minimum world entry](MINIMUM_WORLD_ENTRY.md). This map retains historical first-checkpoint requirements; the minimum-entry document and current PROJECT_STATUS supersede its serialization gaps and runtime findings.
 
 Updated 2026-10-04. Branch: `work/gpt61-handshake-sprint`. Baseline: `435153d`.
 
@@ -19,10 +19,15 @@ flowchart TD
   Session --> World[World endpoint / connection]
   World --> Self[SelfIdentification]
   Self --> Actor[ActorGameConnection state 2]
-  Actor --> Level[LevelInfoChanged / level readiness]
-  Level --> Replica[Initial StateBundle / replica identities]
-  Replica --> Player[Local-player creation / actor acceptance]
-  Player --> Spawn[PlayerSpawn / InGame]
+  Actor --> Ready[WaitingForSpawnPoint]
+  Ready --> Marker[ReceivePlayerSpawnPointMsg: empty body]
+  Marker --> Flag[Actor BC8 = 1]
+  Flag --> Player[WaitingForPlayerSpawn]
+  Replica[Replicated entity / local-player activation] --> Registry[Live PlayerRegistry result]
+  Player --> Match[Actor 252 reference match]
+  Match --> Spawn[InGame]
+  Registry --> Spawn
+  Level[LevelInfo / sufficient resource context: unresolved] -.-> Replica
   Spawn --> Movement[Basic movement]
 ```
 
@@ -50,7 +55,7 @@ New code: `server/newworld_server/protocol/{prefix_uint32,reflected,routing,fram
 | REP-03 | Valid server-generated response identity, session token and flags; depends on REP-01/02 | Existing registration encoder, writer `146B6F190`, response schema, redacted successful login. INFERRED token is connection continuity material; required flags/minimal values are not proved. | Structurally valid response may still fail downstream association. | Authorized preservation-server registration test with its own fresh session values, showing REP `+601` and the next connection action; record accept/reject and server transcript. |
 | WORLD-ENDPOINT | Select and open preservation world connection after REP; depends on REP-03 | Existing endpoint/GCW reports, untracked LIVE-05 consumers, LIVE-06D stack/image provenance. Candidate endpoints/consumers do not establish assignment provenance. | No verified endpoint/session wiring for independent world handoff. | Observation of endpoint assignment and subsequent connect in a permitted local test, with destination and session correlation, without unrelated credentials. |
 | ACTOR-LINK | Associate SelfIdentification references with ActorGameConnection; depends on world connection and SELF-SCHEMA | Handler `146454C00` -> `145A87010`, Actor `+A0=2` -> `145A92370`. Redacted SelfIdentification and reference reader `1415ACC30`; structural body verified. INFERRED references correlate replica/player identities. | Arbitrary identities/3136 arbitrary integers cannot establish a legitimate local actor. | Paired self-ID and associated actor/replica messages from one permitted session, with consistent replacement identifiers or observations of resolved reference objects. |
-| LEVEL-CONTEXT | Construct accepted level state; depends on actor link | Handler `146446800` -> `145A9FA00`, Actor `+BC8=1` -> `145A905C0`; reader `1415009E0`, context `1415B3370`, collection `1415BB350`; captured110-byte LevelInfo. Two strings and two f64 verified; collection elements/context still not fully mapped. | Prefix serialization alone does not satisfy level/resource readiness. | Complete bounded schemas for called collection readers, then local test documenting resource lookup/readiness outcomes for locally available world data. |
+| LEVEL-CONTEXT | Construct sufficient level/resource state | VERIFIED complete 106-byte LevelInfo structure; native handler `146446800` stages level context and conditional reload behavior. Spawn-ready setter is independently dispatched by ReceivePlayerSpawnPointMsg, as documented in MINIMUM_WORLD_ENTRY. | Sufficient local resources/default behavior remain unresolved. | Trace required resource lookup/context branches, then an isolated legitimate client observation. |
 | SB-INIT | Initial replica/state bundle establishes required objects; depends on session, actor and level identity continuity | Existing StateBundle archaeology, first captured46423-byte bundle, 16 extra routing bytes now explained. Candidate bundle contains identities and initial state; body layout and minimum object set not solved. | Client cannot materialize required world/player objects from an opaque captured bundle. | Bounded decode of initial bundle sections tied to known type registry and the identities referenced by SelfIdentification; a permitted session observation of object creation/lookup success. |
 | SB-MASTER | Establish state ownership/order and updates; depends on SB-INIT | Existing bundle/GCW reports and subsequent captured bundles. INFERRED ownership and ordering govern accepted replicated state, not proved minimum sequence. | A single initial bundle does not demonstrate ongoing coherent replicated state. | Correlated initial and next state update with object identities, ordering/ownership values and observed application acceptance. |
 | SPAWN-01 | Reach local-player creation/actor acceptance; depends on actor, level, SB-INIT/master | Actor `+252` writer `142FFBC50`, accept `1434B0940`, match `1434985C0`, earlier causal reports. Candidate identity match / replica creation is incomplete. | Workflow D cannot finish from empty SpawnPoint alone. | Trace or bounded schema evidence linking incoming replica/player construction to the accepted actor and `+252` transition in a permitted local session. |

@@ -1,0 +1,52 @@
+{
+  "status": "VERIFIED native dispatch chain; compact index COMMUNITY-CORROBORATED",
+  "message": "Javelin::ClientViewListenerTrait::ReceivePlayerSpawnPointMsg",
+  "uuid": "21207525-B448-4193-AACA-83D4F847929F",
+  "compact_type_index": 1617,
+  "body": "empty reader 0x1414E3930",
+  "chain": [
+    {
+      "source": "0x1463FF5F0",
+      "site": "0x1464002E9",
+      "action": "obtains message type provider 0x1416F3320"
+    },
+    {
+      "site": "0x14640031E",
+      "action": "registers message callback with 0x1463EF900 and captured owner rdi"
+    },
+    {
+      "source": "0x1463EF900",
+      "site": "0x1463EFA0C",
+      "action": "installs callback descriptor 0x149F68210"
+    },
+    {
+      "descriptor": "0x149F68210",
+      "invoke_slot": "0x08",
+      "invoke": "0x14647B3C0",
+      "action": "owner virtual base from vbtable +0x0C; tail virtual slot 0"
+    },
+    {
+      "constructor_site": "0x1463FF78F",
+      "vtable": "0x1484FC718",
+      "slot": "0x00",
+      "adjustor": "0x14645C654",
+      "callback": "0x14645C660"
+    },
+    {
+      "callback": "0x14645C660",
+      "tail_site": "0x14645C69D",
+      "setter": "0x145A9FA00",
+      "action": "ActorGameConnection +0xBC8 = 1"
+    },
+    {
+      "gate": "0x145A905C0",
+      "state_machine": "0x14644A070",
+      "action": "WaitingForSpawnPoint (12) to WaitingForPlayerSpawn (13)"
+    }
+  ],
+  "limits": [
+    "This message does not supply coordinates.",
+    "It does not create the runtime player or set ActorGameConnection +0x252.",
+    "LevelInfo/resource prerequisites remain open."
+  ]
+}

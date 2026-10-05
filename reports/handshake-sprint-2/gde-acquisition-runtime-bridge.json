@@ -1,0 +1,82 @@
+{
+  "status": "VERIFIED conditional native control flow; minimum wire recipe remains unresolved",
+  "requirement": "B2 replica-to-existing-asset entity and client facet; B4 local-player activation ordering",
+  "asset_acquisition": {
+    "function": "0x14178DF50",
+    "label": "GDE::AcquireSliceAsset",
+    "substage0": {
+      "site": "0x14178E5B6",
+      "action": "Context virtual0 receives work arguments; concrete implementation unresolved"
+    },
+    "substage2": {
+      "site": "0x14178E6F2",
+      "callee": "0x14171BBD0",
+      "action": "prepare entity components and indexed FacetedComponent vector"
+    },
+    "substage3": {
+      "site": "0x14178E72F",
+      "callee": "0x14167A490",
+      "notify": false
+    },
+    "substage4": {
+      "site": "0x14178E75D",
+      "callee": "0x14171B430",
+      "action": "entity activation phase; failure reports Entity failed to activate"
+    },
+    "after_substage4": {
+      "site": "0x14178E7AA",
+      "callee": "0x14167A490",
+      "notify": true
+    }
+  },
+  "component_index_registration": {
+    "function": "0x14171BBD0",
+    "logical_end": "0x14171C048",
+    "database_end_is_incomplete": "0x14171BCD5",
+    "cast_provider": "0x141798ED0",
+    "uuid": "65CD8F3E-73AA-43E9-8D9A-B5AE43F624F9",
+    "gate": "component virtualA0 true",
+    "index": "component+0x90",
+    "destination": "GDE+0x160 vector; normal branch preserves index >=1; alternate setting assigns consecutive indices",
+    "write_site": "0x14171BE93",
+    "subsequent": "component virtualE8 then existing client facet virtual48; lifecycle meaning not yet joined"
+  },
+  "cached_field_delivery": {
+    "function": "0x14167A490",
+    "lookup": "GDE+0x88 key passed to 0x1416BDF00",
+    "per_record": "node+0x18 component index, node+0x20 shared state",
+    "apply_site": "0x14167A4F7",
+    "callee": "0x14167B2A0",
+    "force_flag": true,
+    "after_apply": "node+0x30 = 1",
+    "after_notify": "GDE+0x15C = 1",
+    "notify_thunk": "0x14057149C dispatches subscriber virtual58",
+    "notify_site": "0x14167A5AE"
+  },
+  "activation_queue": {
+    "function": "0x1416AE470",
+    "queue": "Context+0x130 and pending count+0x148",
+    "interface_uuid": "2964F3AE-4DA5-48F0-942B-3F428F8C9CD2",
+    "provider": "0x14179A4D0",
+    "dispatch": "cast interface virtual58 receives caller state",
+    "completion": "returns true only after pending count is zero",
+    "direct_player_facet_join": "NOT PROVEN; interface cast target must be followed"
+  },
+  "client_gde_callback": {
+    "function": "0x14167B790",
+    "vtable": "0x147FD6B28",
+    "slot": "0",
+    "installed_by": "0x1410563D0 at 0x141056497",
+    "base_constructor": "0x141619850",
+    "base_vtable": "0x14802E438",
+    "base_slot0": "0x14167BDC0",
+    "dispatch_from_instantiation_bus": "NOT PROVEN; vtable0 differs from notification virtual58"
+  },
+  "remaining": [
+    "Context virtual0 asset instantiation implementation",
+    "GDE metadata assetId to correct player/remote slice selection",
+    "wire component index to prefab component+0x90 values",
+    "activation-interface implementation and PlayerRegistry population",
+    "minimum required components/fields and character-context identity supplier"
+  ]
+}

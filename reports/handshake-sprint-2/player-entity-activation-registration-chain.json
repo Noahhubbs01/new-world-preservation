@@ -1,0 +1,49 @@
+{
+  "status": "VERIFIED conditional activation-to-local-player registration path",
+  "requirement": "B2/B4 live PlayerRegistry producer, conditional on asset creation/local classification",
+  "chain": [
+    {
+      "function": "0x14171B430",
+      "site": "0x14171B5E0",
+      "action": "entity virtual40 after state+60 == 2; checks state becomes4"
+    },
+    {
+      "vtable": "0x147FE9740",
+      "slot": "0x40",
+      "function": "0x141376BB0",
+      "installed_by": "0x1411B0990 at 0x1411B0AD2",
+      "type_uuid": "75651658-8663-478D-9090-2432DFCAFA44"
+    },
+    {
+      "function": "0x141376BB0",
+      "gate": "0x1413F9C40 result+30 success byte",
+      "action": "state+60=3, enumerate components+10..18 and virtual58, then state+60=4",
+      "dispatch_site": "0x141376BE9"
+    },
+    {
+      "vtable": "0x148536B70",
+      "type": "PlayerComponent",
+      "slot": "0x58",
+      "function": "0x141677290",
+      "action": "requires Context at component+78, calls owner virtualF8 with context+2B8, then client facet+80 virtual58",
+      "dispatch_site": "0x1416772D9"
+    },
+    {
+      "vtable": "0x148535728",
+      "type": "PlayerComponentClientFacet",
+      "slot": "0x58",
+      "function": "0x1468760d0",
+      "local_gate": "facet virtualE8 -> 0x14684CD50 -> facet+318 ==1",
+      "action": "owner+2B8 runtime entity reference resolves, then PlayerRegistry virtual10 installs owner",
+      "registry_setter": "0x146928D80",
+      "registry_getter": "0x146800D10"
+    }
+  ],
+  "remaining": [
+    "Asset acquisition before this conditional chain",
+    "Entity activation readiness result 0x1413F9C40 and missing required components",
+    "Character-context identity supplier ensuring facet+318 ==1",
+    "Actor+252 spawn-reference association remains independent",
+    "GDE activation queue interface UUID2964F3AE is separate from this direct entity-component activation path"
+  ]
+}
