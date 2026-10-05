@@ -1,0 +1,52 @@
+{
+  "status": "VERIFIED native client-world character-record query; population provenance unresolved",
+  "requirement": "B2 local-character classification supplier",
+  "consumer": "0x146929DF0",
+  "optional_query": "0x140FCA4E0",
+  "bus_registry": "0x141027E40",
+  "thunk": "0x1405717F0",
+  "interface_slot": "0x248",
+  "subscriber_registration": {
+    "function": "0x14643F0A0",
+    "site": "0x14644037F",
+    "node_offset": "0x28",
+    "self_pointer_store": "0x14644037B"
+  },
+  "interface_vtable_install": {
+    "function": "0x14640B860",
+    "site": "0x14640B8BC",
+    "vtable": "0x1484FB2F0",
+    "offset": "0x28"
+  },
+  "handler": {
+    "function": "0x1464354F0",
+    "source": "first context in GCW base+0x1E0 vector; handler this is base+0x28",
+    "gates": [
+      "context vector nonempty",
+      "first context+0x1300 nonzero",
+      "first context+0x1530 nonzero"
+    ],
+    "leading_string": "first context+0x12F0",
+    "additional_record_bytes": "context+0x1310 and +0x1320",
+    "optional_present_byte": "result+0x40",
+    "comparison": "consumer compares replicated characterId string to returned leading string, length and bytes; match yields facet+318=1; missing/unequal yields2"
+  },
+  "remaining": [
+    "origin/writer of context+1140 character_id string and relationship to menu/character selection",
+    "state+1530 transitions enabling query",
+    "local replica characterId must decode to same string; no reference UUID equality assumption"
+  ],
+  "record_population": {
+    "function": "0x146425F20",
+    "source": "context+0x1140 string",
+    "source_copy_site": "0x14642608F",
+    "record_init": "0x1464076B0",
+    "destination": "context+0x12F0 leading string, +0x1310/+0x1320 fields",
+    "destination_store_site": "0x1464260B0",
+    "trace_label": "0x14643C570 emits context+1140 under character_id; context+1530 under state",
+    "clearing_function": "0x14642D2D0",
+    "clearing_site": "0x14642D415",
+    "startup_constructor": "0x1463FEF00 initializes record/state",
+    "remaining": "origin/writer of context+1140 and active state transitions remain to join"
+  }
+}

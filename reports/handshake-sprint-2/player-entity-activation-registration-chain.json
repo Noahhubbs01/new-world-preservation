@@ -42,8 +42,8 @@
   "remaining": [
     "Asset acquisition before this conditional chain",
     "Entity activation readiness result 0x1413F9C40 and missing required components",
-    "Character-context identity supplier ensuring facet+318 ==1",
-    "Actor+252 spawn-reference association remains independent",
+    "Original context character_id writer/enabling state and matching replica identity; query supplier/population verified",
+    "Actor+252 flag producer/object identity (candidate reference-match path unjoined) remains independent",
     "GDE activation queue interface UUID2964F3AE is separate from this direct entity-component activation path"
   ]
 }

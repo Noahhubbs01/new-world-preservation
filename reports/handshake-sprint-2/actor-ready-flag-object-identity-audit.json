@@ -1,0 +1,27 @@
+{
+  "status": "CONFLICTING earlier same-object attribution; VERIFIED getter/constructor observations",
+  "requirement": "B4 actual Actor+252 producer",
+  "consumer": "0x145A923C0 receiver+0x252",
+  "actor_constructor": "0x145A7D4C0",
+  "actor_vtables": [
+    "0x14844CA38",
+    "0x14844CA78",
+    "0x14844CAA0",
+    "0x14844CAB0"
+  ],
+  "embedded_world_connection": {
+    "offset": "0xB0",
+    "constructor": "0x1463FF5F0",
+    "relative_offset_of_252": "0x1A2",
+    "interpretation": "INFERRED diagnostic lead only; no writer/semantic proof"
+  },
+  "unjoined_candidate": {
+    "function": "0x142FFBC50",
+    "write": "own receiver+0x252",
+    "adjustor": "0x142FFB2F0 this-0x118",
+    "vtable_location": "0x14816D110",
+    "same_object_as_actor": "UNPROVEN"
+  },
+  "next_action": "Prove state13 receiver identity and actual flag writer before using candidate reference-match semantics.",
+  "negative_census_limit": "Literal displacement patterns omit SIB/wider stores/adjusted pointers; not exhaustive."
+}
