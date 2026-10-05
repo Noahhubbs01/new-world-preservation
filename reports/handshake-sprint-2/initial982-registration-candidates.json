@@ -1,0 +1,44 @@
+[
+  {
+    "name": "m_lootDataMap",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "14373522c:\te8 2f 0a 04 fe       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_lootCollectibles",
+    "offset": 2664,
+    "group": 0,
+    "instruction": "143735241:\te8 1a 0a 04 fe       \tcall   0x141775c60",
+    "vtable": "0x148218f58"
+  },
+  {
+    "name": "m_failedRollBonusPercent",
+    "offset": 3232,
+    "group": 0,
+    "instruction": "143735256:\te8 05 0a 04 fe       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "m_slayerScriptDataMap",
+    "offset": 3272,
+    "group": 0,
+    "instruction": "143735270:\te8 eb 09 04 fe       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_lootDivertMap",
+    "offset": 3952,
+    "group": 0,
+    "instruction": "14373528a:\te8 d1 09 04 fe       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_lootLimitDataMap",
+    "offset": 4632,
+    "group": 0,
+    "instruction": "1437352a4:\te8 b7 09 04 fe       \tcall   0x141775c60",
+    "vtable": null
+  }
+]

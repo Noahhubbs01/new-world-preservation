@@ -2,14 +2,14 @@
   {
     "seq": "0x25",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31212,
+    "fragment_count": 29,
+    "end": 31340,
     "length": 46423,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31212
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31340
     },
     "fragments": [
       {
@@ -219,20 +219,44 @@
         "end": 31209,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31212,
+        "end": 31268,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31271,
+        "end": 31324,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31327,
+        "end": 31337,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
       }
     ]
   },
   {
     "seq": "0x2a",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -440,6 +464,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -448,14 +496,14 @@
   {
     "seq": "0x2b",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -663,6 +711,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -671,14 +743,14 @@
   {
     "seq": "0x2e",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -886,6 +958,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -894,14 +990,14 @@
   {
     "seq": "0x2f",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -1109,6 +1205,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1117,14 +1237,14 @@
   {
     "seq": "0x30",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -1332,6 +1452,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1340,14 +1484,14 @@
   {
     "seq": "0x33",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -1555,6 +1699,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1563,14 +1731,14 @@
   {
     "seq": "0x34",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -1778,6 +1946,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1786,14 +1978,14 @@
   {
     "seq": "0x35",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -2001,6 +2193,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2009,14 +2225,14 @@
   {
     "seq": "0x42",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -2224,6 +2440,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2232,14 +2472,14 @@
   {
     "seq": "0x44",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -2447,6 +2687,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2455,14 +2719,14 @@
   {
     "seq": "0x47",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -2670,6 +2934,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2678,14 +2966,14 @@
   {
     "seq": "0x48",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -2893,6 +3181,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2901,14 +3213,14 @@
   {
     "seq": "0x49",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -3116,6 +3428,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3124,14 +3460,14 @@
   {
     "seq": "0x4c",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -3339,6 +3675,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3347,14 +3707,14 @@
   {
     "seq": "0x4e",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -3562,6 +3922,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3570,14 +3954,14 @@
   {
     "seq": "0x4f",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -3785,6 +4169,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3793,14 +4201,14 @@
   {
     "seq": "0x52",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -4008,6 +4416,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4016,14 +4448,14 @@
   {
     "seq": "0x55",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -4231,6 +4663,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4239,14 +4695,14 @@
   {
     "seq": "0x56",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -4454,6 +4910,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4462,14 +4942,14 @@
   {
     "seq": "0x59",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -4677,6 +5157,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4685,14 +5189,14 @@
   {
     "seq": "0x5a",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -4900,6 +5404,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4908,14 +5436,14 @@
   {
     "seq": "0x5b",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -5123,6 +5651,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5131,14 +5683,14 @@
   {
     "seq": "0x66",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -5346,6 +5898,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5354,14 +5930,14 @@
   {
     "seq": "0x6c",
     "complete_records": 0,
-    "fragment_count": 26,
-    "end": 31196,
+    "fragment_count": 29,
+    "end": 31324,
     "length": 46407,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: unsupported schema field",
-      "type": 5620,
-      "position": 31196
+      "reason": "ValueError: selected auxiliary field unsupported",
+      "type": 3183,
+      "position": 31324
     },
     "fragments": [
       {
@@ -5569,6 +6145,30 @@
         "type": 1652,
         "start": 31175,
         "end": 31193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5620,
+        "start": 31196,
+        "end": 31252,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 982,
+        "start": 31255,
+        "end": 31308,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3152,
+        "start": 31311,
+        "end": 31321,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -6403,16 +7003,57 @@
   {
     "seq": "0x7b",
     "complete_records": 0,
-    "fragment_count": 0,
-    "end": 18,
+    "fragment_count": 5,
+    "end": 239,
     "length": 1013,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 18
+      "reason": "ValueError: nonempty complex status snapshot unsupported",
+      "type": 4236,
+      "position": 239
     },
-    "fragments": []
+    "fragments": [
+      {
+        "interest": 60,
+        "type": 3183,
+        "start": 18,
+        "end": 177,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 1525,
+        "start": 180,
+        "end": 193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 603,
+        "start": 196,
+        "end": 199,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 3152,
+        "start": 202,
+        "end": 208,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 1195,
+        "start": 211,
+        "end": 236,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
   },
   {
     "seq": "0x7c",
@@ -6864,16 +7505,51 @@
   {
     "seq": "0x82",
     "complete_records": 0,
-    "fragment_count": 0,
-    "end": 18,
+    "fragment_count": 4,
+    "end": 274,
     "length": 985,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 18
+      "reason": "unsupported concrete type",
+      "type": 3408,
+      "field": 58,
+      "body_start": 274,
+      "interest": 87
     },
-    "fragments": []
+    "fragments": [
+      {
+        "interest": 87,
+        "type": 3183,
+        "start": 18,
+        "end": 191,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 87,
+        "type": 4878,
+        "start": 194,
+        "end": 204,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 87,
+        "type": 6234,
+        "start": 207,
+        "end": 219,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 87,
+        "type": 15,
+        "start": 221,
+        "end": 271,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
   },
   {
     "seq": "0x83",
@@ -7552,16 +8228,12 @@
   },
   {
     "seq": "0x91",
-    "complete_records": 0,
-    "fragment_count": 2,
-    "end": 105,
+    "complete_records": 1,
+    "fragment_count": 19,
+    "end": 717,
     "length": 717,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 105
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 92,
@@ -7578,22 +8250,299 @@
         "end": 102,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3183,
+        "start": 105,
+        "end": 293,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 6234,
+        "start": 296,
+        "end": 306,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3752,
+        "start": 309,
+        "end": 319,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 1525,
+        "start": 322,
+        "end": 336,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 899,
+        "start": 339,
+        "end": 345,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 1528,
+        "start": 348,
+        "end": 355,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3312,
+        "start": 358,
+        "end": 376,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3935,
+        "start": 379,
+        "end": 433,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 92,
+        "type": 4878,
+        "start": 436,
+        "end": 446,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 5620,
+        "start": 449,
+        "end": 461,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 4176,
+        "start": 464,
+        "end": 471,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 1195,
+        "start": 474,
+        "end": 499,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 11,
+        "start": 501,
+        "end": 610,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 10,
+        "start": 612,
+        "end": 650,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3152,
+        "start": 653,
+        "end": 659,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 603,
+        "start": 662,
+        "end": 665,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 15,
+        "start": 667,
+        "end": 717,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
       }
     ]
   },
   {
     "seq": "0x93",
-    "complete_records": 0,
-    "fragment_count": 0,
-    "end": 18,
+    "complete_records": 1,
+    "fragment_count": 18,
+    "end": 739,
     "length": 739,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 18
-    },
-    "fragments": []
+    "complete_message": true,
+    "stop": null,
+    "fragments": [
+      {
+        "interest": 93,
+        "type": 3183,
+        "start": 18,
+        "end": 207,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 6234,
+        "start": 210,
+        "end": 222,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 3152,
+        "start": 225,
+        "end": 231,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 15,
+        "start": 233,
+        "end": 283,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 1528,
+        "start": 286,
+        "end": 293,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 899,
+        "start": 296,
+        "end": 302,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 1525,
+        "start": 305,
+        "end": 319,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 11,
+        "start": 321,
+        "end": 430,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 3147,
+        "start": 433,
+        "end": 453,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 4236,
+        "start": 456,
+        "end": 554,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 1195,
+        "start": 557,
+        "end": 582,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 3935,
+        "start": 585,
+        "end": 642,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 93,
+        "type": 4176,
+        "start": 645,
+        "end": 652,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 603,
+        "start": 655,
+        "end": 658,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 10,
+        "start": 660,
+        "end": 698,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 3752,
+        "start": 701,
+        "end": 711,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 4878,
+        "start": 714,
+        "end": 724,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 93,
+        "type": 5620,
+        "start": 727,
+        "end": 739,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
   },
   {
     "seq": "0x94",
@@ -8461,16 +9410,57 @@
   {
     "seq": "0xa4",
     "complete_records": 0,
-    "fragment_count": 0,
-    "end": 18,
+    "fragment_count": 5,
+    "end": 239,
     "length": 1006,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 18
+      "reason": "ValueError: nonempty complex status snapshot unsupported",
+      "type": 4236,
+      "position": 239
     },
-    "fragments": []
+    "fragments": [
+      {
+        "interest": 60,
+        "type": 3183,
+        "start": 18,
+        "end": 177,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 1525,
+        "start": 180,
+        "end": 193,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 603,
+        "start": 196,
+        "end": 199,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 3152,
+        "start": 202,
+        "end": 208,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 60,
+        "type": 1195,
+        "start": 211,
+        "end": 236,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
   },
   {
     "seq": "0xa5",
@@ -8798,16 +9788,51 @@
   {
     "seq": "0xa6",
     "complete_records": 0,
-    "fragment_count": 0,
-    "end": 18,
+    "fragment_count": 4,
+    "end": 274,
     "length": 1006,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 18
+      "reason": "unsupported concrete type",
+      "type": 3408,
+      "field": 58,
+      "body_start": 274,
+      "interest": 87
     },
-    "fragments": []
+    "fragments": [
+      {
+        "interest": 87,
+        "type": 3183,
+        "start": 18,
+        "end": 191,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 87,
+        "type": 4878,
+        "start": 194,
+        "end": 204,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 87,
+        "type": 6234,
+        "start": 207,
+        "end": 219,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 87,
+        "type": 15,
+        "start": 221,
+        "end": 271,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      }
+    ]
   },
   {
     "seq": "0xa7",
@@ -9586,15 +10611,17 @@
   },
   {
     "seq": "0xaf",
-    "complete_records": 0,
-    "fragment_count": 2,
-    "end": 105,
+    "complete_records": 1,
+    "fragment_count": 21,
+    "end": 737,
     "length": 988,
     "complete_message": false,
     "stop": {
-      "reason": "ValueError: selected auxiliary field unsupported",
-      "type": 3183,
-      "position": 105
+      "reason": "unsupported concrete type",
+      "type": 1594,
+      "field": 1,
+      "body_start": 737,
+      "interest": 55
     },
     "fragments": [
       {
@@ -9610,6 +10637,158 @@
         "type": 3147,
         "start": 82,
         "end": 102,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3183,
+        "start": 105,
+        "end": 293,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 6234,
+        "start": 296,
+        "end": 306,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3752,
+        "start": 309,
+        "end": 319,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 1525,
+        "start": 322,
+        "end": 336,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 899,
+        "start": 339,
+        "end": 345,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 1528,
+        "start": 348,
+        "end": 355,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3312,
+        "start": 358,
+        "end": 376,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3935,
+        "start": 379,
+        "end": 433,
+        "original_byte_roundtrip": false,
+        "redacted_bytes": 16
+      },
+      {
+        "interest": 92,
+        "type": 4878,
+        "start": 436,
+        "end": 446,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 5620,
+        "start": 449,
+        "end": 461,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 4176,
+        "start": 464,
+        "end": 471,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 1195,
+        "start": 474,
+        "end": 499,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 11,
+        "start": 501,
+        "end": 610,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 10,
+        "start": 612,
+        "end": 650,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 3152,
+        "start": 653,
+        "end": 659,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 603,
+        "start": 662,
+        "end": 665,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 92,
+        "type": 15,
+        "start": 667,
+        "end": 717,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 55,
+        "type": 2930,
+        "start": 722,
+        "end": 728,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 55,
+        "type": 2187,
+        "start": 731,
+        "end": 734,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }

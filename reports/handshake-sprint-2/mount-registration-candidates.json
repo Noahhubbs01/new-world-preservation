@@ -1,0 +1,114 @@
+[
+  {
+    "name": "m_mountId",
+    "offset": 1984,
+    "group": 2,
+    "instruction": "1438d743c:\te8 1f e8 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1481b7d50"
+  },
+  {
+    "name": "m_isMounted",
+    "offset": 2024,
+    "group": 1,
+    "instruction": "1438d745e:\te8 fd e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "m_summonCooldownEndTime",
+    "offset": 2056,
+    "group": 1,
+    "instruction": "1438d7480:\te8 db e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "m_isServerForcingWalk",
+    "offset": 2128,
+    "group": 1,
+    "instruction": "1438d74a2:\te8 b9 e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "m_isInServerExclusionVolume",
+    "offset": 2160,
+    "group": 1,
+    "instruction": "1438d74c4:\te8 97 e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "m_summonAuthorization",
+    "offset": 2192,
+    "group": 1,
+    "instruction": "1438d74e6:\te8 75 e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x148237880"
+  },
+  {
+    "name": "m_persistentMountData",
+    "offset": 2296,
+    "group": 1,
+    "instruction": "1438d7508:\te8 53 e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1482378f0"
+  },
+  {
+    "name": "staminaCur",
+    "offset": 12192,
+    "group": 1,
+    "instruction": "1438d752a:\te8 31 e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "staminaMax",
+    "offset": 12232,
+    "group": 1,
+    "instruction": "1438d754d:\te8 0e e7 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "staminaRegenDelay",
+    "offset": 12272,
+    "group": 1,
+    "instruction": "1438d7566:\te8 f5 e6 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "staminaRegenRate",
+    "offset": 12312,
+    "group": 1,
+    "instruction": "1438d757f:\te8 dc e6 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "staminaDrainRate",
+    "offset": 12352,
+    "group": 1,
+    "instruction": "1438d7598:\te8 c3 e6 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "multMaxStamina",
+    "offset": 12392,
+    "group": 1,
+    "instruction": "1438d75b1:\te8 aa e6 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "multStaminaRegenRate",
+    "offset": 12432,
+    "group": 1,
+    "instruction": "1438d75ca:\te8 91 e6 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "mountRemoteFlags",
+    "offset": 12544,
+    "group": 3,
+    "instruction": "1438d75e3:\te8 78 e6 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  },
+  {
+    "name": "remoteDyeData",
+    "offset": 12472,
+    "group": 3,
+    "instruction": "1438d75fc:\te8 5f e6 e9 fd       \tcall   0x141775c60",
+    "vtable": "0x148237990"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "sheatheMap",
+    "offset": 1984,
+    "group": 2,
+    "instruction": "14670da1e:\te8 3d 82 06 fb       \tcall   0x141775c60",
+    "vtable": "0x148552200"
+  },
+  {
+    "name": "itemSlotsAttachmentStatus",
+    "offset": 2032,
+    "group": 2,
+    "instruction": "14670da40:\te8 1b 82 06 fb       \tcall   0x141775c60",
+    "vtable": "0x148552200"
+  },
+  {
+    "name": "activeMap",
+    "offset": 2080,
+    "group": 2,
+    "instruction": "14670da62:\te8 f9 81 06 fb       \tcall   0x141775c60",
+    "vtable": "0x148552200"
+  },
+  {
+    "name": "visiblePaperdollSlots",
+    "offset": 2128,
+    "group": 2,
+    "instruction": "14670da84:\te8 d7 81 06 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "visibleItemVisualData",
+    "offset": 2696,
+    "group": 2,
+    "instruction": "14670daa6:\te8 b5 81 06 fb       \tcall   0x141775c60",
+    "vtable": "0x148552310"
+  },
+  {
+    "name": "visibleDurability",
+    "offset": 3832,
+    "group": 1,
+    "instruction": "14670dacd:\te8 8e 81 06 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "visibleFullItemData",
+    "offset": 3264,
+    "group": 1,
+    "instruction": "14670daea:\te8 71 81 06 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "nonVisibleFullItemData",
+    "offset": 4968,
+    "group": 1,
+    "instruction": "14670db07:\te8 54 81 06 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "nonVisiblePaperdollSlots",
+    "offset": 4400,
+    "group": 1,
+    "instruction": "14670db24:\te8 37 81 06 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "nonVisibleDurability",
+    "offset": 5536,
+    "group": 1,
+    "instruction": "14670db41:\te8 1a 81 06 fb       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "bonusEquipLoad",
+    "offset": 6104,
+    "group": 1,
+    "instruction": "14670db5e:\te8 fd 80 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1481e2af8"
+  },
+  {
+    "name": "isLocalPlayer",
+    "offset": 6136,
+    "group": 1,
+    "instruction": "14670db7b:\te8 e0 80 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "isLoadoutPanelOpen",
+    "offset": 6168,
+    "group": 1,
+    "instruction": "14670db98:\te8 c3 80 06 fb       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "mainHandOption1LoadedAmmoData",
+    "offset": 6200,
+    "group": 1,
+    "instruction": "14670dbb1:\te8 aa 80 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1485523b0"
+  },
+  {
+    "name": "mainHandOption2LoadedAmmoData",
+    "offset": 6304,
+    "group": 1,
+    "instruction": "14670dbca:\te8 91 80 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1485523b0"
+  },
+  {
+    "name": "loadouts",
+    "offset": 6408,
+    "group": 1,
+    "instruction": "14670dbe3:\te8 78 80 06 fb       \tcall   0x141775c60",
+    "vtable": "0x148552420"
+  },
+  {
+    "name": "loadoutSwapIncrement",
+    "offset": 6976,
+    "group": 2,
+    "instruction": "14670dc00:\te8 5b 80 06 fb       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  },
+  {
+    "name": "hideSkins",
+    "offset": 7008,
+    "group": 1,
+    "instruction": "14670dc1d:\te8 3e 80 06 fb       \tcall   0x141775c60",
+    "vtable": null
+  }
+]

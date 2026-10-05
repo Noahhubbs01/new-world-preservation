@@ -1,0 +1,107 @@
+[
+  {
+    "name": "faction",
+    "offset": 1984,
+    "group": 2,
+    "instruction": "1430a7c67:\te8 f4 df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x148181b50"
+  },
+  {
+    "name": "pvpFlag",
+    "offset": 2016,
+    "group": 2,
+    "instruction": "1430a7c87:\te8 d4 df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "hasSanctuary",
+    "offset": 2288,
+    "group": 2,
+    "instruction": "1430a7ca7:\te8 b4 df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "pvpFlagPending",
+    "offset": 2048,
+    "group": 1,
+    "instruction": "1430a7cc4:\te8 97 df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "notifyPending",
+    "offset": 2080,
+    "group": 1,
+    "instruction": "1430a7ce1:\te8 7a df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "pvpFlagPendingEndTime",
+    "offset": 2112,
+    "group": 1,
+    "instruction": "1430a7cfe:\te8 5d df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "lastFactionChangeTimepoint",
+    "offset": 2184,
+    "group": 1,
+    "instruction": "1430a7d1b:\te8 40 df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "factionChangeCount",
+    "offset": 2256,
+    "group": 1,
+    "instruction": "1430a7d38:\te8 23 df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x1480ff638"
+  },
+  {
+    "name": "timeAtFlagStart",
+    "offset": 2360,
+    "group": 3,
+    "instruction": "1430a7d51:\te8 0a df 6c fe       \tcall   0x141775c60",
+    "vtable": "0x1480b86e8"
+  },
+  {
+    "name": "m_pvpValue",
+    "offset": 2320,
+    "group": 3,
+    "instruction": "1430a7d6a:\te8 f1 de 6c fe       \tcall   0x141775c60",
+    "vtable": "0x1480ff160"
+  },
+  {
+    "name": "isAccumulatingPvpValue",
+    "offset": 2432,
+    "group": 3,
+    "instruction": "1430a7d87:\te8 d4 de 6c fe       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "ffaFlag",
+    "offset": 2464,
+    "group": 2,
+    "instruction": "1430a7da4:\te8 b7 de 6c fe       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  },
+  {
+    "name": "ffaPendingEndTime",
+    "offset": 2496,
+    "group": 1,
+    "instruction": "1430a7dbd:\te8 9e de 6c fe       \tcall   0x141775c60",
+    "vtable": "0x1480b9910"
+  },
+  {
+    "name": "ffaAntiGroupingCurseStacks",
+    "offset": 2568,
+    "group": 2,
+    "instruction": "1430a7dda:\te8 81 de 6c fe       \tcall   0x141775c60",
+    "vtable": "0x1480b9980"
+  },
+  {
+    "name": "ffaAntiGroupingIsCursing",
+    "offset": 2600,
+    "group": 1,
+    "instruction": "1430a7df3:\te8 68 de 6c fe       \tcall   0x141775c60",
+    "vtable": "0x14803f098"
+  }
+]
