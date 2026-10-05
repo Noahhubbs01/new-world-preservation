@@ -41,3 +41,18 @@ def test_rep_cli_requires_port():
 
     with pytest.raises(SystemExit):
         parser.parse_args([])
+
+
+def test_rep_server_owns_logical_session_registry():
+    server = REPServer(
+        "127.0.0.1",
+        0,
+        CERT,
+        KEY,
+    )
+
+    try:
+        assert server.sessions is not None
+        assert server.protocol_sessions == {}
+    finally:
+        server.transport.close()

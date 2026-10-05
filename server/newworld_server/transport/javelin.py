@@ -25,6 +25,10 @@ from .carrier import (
     encode_standard_record,
 )
 from newworld_server.login.registration import build_success_response
+from newworld_server.session import (
+    PreservationSession,
+    SessionPhase,
+)
 from newworld_server.protocol.registration import (
     REGISTRATION_REQUEST_TYPE,
     classify_registration_request,
@@ -40,6 +44,7 @@ class JavelinSession:
 
     carrier: CarrierState = field(default_factory=CarrierState)
     connected: bool = False
+    preservation_session: PreservationSession | None = None
 
 
 class JavelinProtocolError(ValueError):
@@ -91,6 +96,12 @@ def handle_datagram(
             )
 
             session.connected = True
+
+            if session.preservation_session is not None:
+                session.preservation_session.phase = (
+                    SessionPhase.CARRIER_CONNECTED
+                )
+
             responses.append(response)
             continue
 
@@ -109,7 +120,19 @@ def handle_datagram(
         if request is None:
             continue
 
-        registration_response = build_success_response(request)
+        logical_session = session.preservation_session
+
+        registration_response = build_success_response(
+            request,
+            session_token=(
+                logical_session.session_token
+                if logical_session is not None
+                else None
+            ),
+        )
+
+        if logical_session is not None:
+            logical_session.phase = SessionPhase.REGISTERED
 
         responses.append(
             build_registration_datagram(

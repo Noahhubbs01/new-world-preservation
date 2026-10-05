@@ -13,6 +13,10 @@ from newworld_server.transport.javelin import (
     JavelinSession,
     handle_datagram,
 )
+from newworld_server.session import (
+    PreservationSession,
+    SessionPhase,
+)
 
 
 def make_connect_request() -> bytes:
@@ -186,3 +190,87 @@ def test_non_registration_channel_zero_message_is_ignored():
     )
 
     assert handle_datagram(session, request) == []
+
+
+def test_connect_advances_attached_logical_session():
+    logical = PreservationSession(
+        session_token=b"A" * 32,
+    )
+
+    session = JavelinSession(
+        preservation_session=logical,
+    )
+
+    responses = handle_datagram(
+        session,
+        make_connect_request(),
+    )
+
+    assert len(responses) == 1
+    assert session.connected is True
+    assert logical.phase is SessionPhase.CARRIER_CONNECTED
+
+
+def test_registration_uses_attached_logical_session_token():
+    from newworld_server.protocol.registration import (
+        REGISTRATION_REQUEST_TYPE,
+    )
+
+    token = bytes(range(32))
+
+    logical = PreservationSession(
+        session_token=token,
+        phase=SessionPhase.CARRIER_CONNECTED,
+    )
+
+    session = JavelinSession(
+        connected=True,
+        preservation_session=logical,
+    )
+
+    request_record = CarrierRecord(
+        flags=MF_RELIABLE | MF_DATA_CHANNEL,
+        channel=0,
+        sequence=0,
+        reliable_sequence=0,
+        payload=(
+            bytes([REGISTRATION_REQUEST_TYPE])
+            + b"synthetic-request"
+        ),
+    )
+
+    request = encode_envelope(
+        1,
+        encode_standard_record(request_record),
+    )
+
+    responses = handle_datagram(session, request)
+
+    assert len(responses) == 1
+
+    envelope = decode_envelope(responses[0])
+    records = decode_standard_records(envelope.body)
+
+    assert len(records) == 1
+
+    body = records[0].payload[1:]
+
+    assert body[16:48] == token
+    assert logical.session_token == token
+    assert logical.phase is SessionPhase.REGISTERED
+
+    # Repeating Registration must preserve the same logical identity.
+    second_responses = handle_datagram(session, request)
+
+    assert len(second_responses) == 1
+
+    second_envelope = decode_envelope(second_responses[0])
+    second_records = decode_standard_records(second_envelope.body)
+
+    assert len(second_records) == 1
+
+    second_body = second_records[0].payload[1:]
+
+    assert second_body[16:48] == token
+    assert logical.session_token == token
+    assert logical.phase is SessionPhase.REGISTERED

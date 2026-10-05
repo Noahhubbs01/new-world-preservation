@@ -18,6 +18,7 @@ import logging
 import signal
 from pathlib import Path
 
+from .session import SessionRegistry
 from .transport.dtls import (
     DTLSConfig,
     DTLSSession,
@@ -51,6 +52,7 @@ class REPServer:
             )
         )
 
+        self.sessions = SessionRegistry()
         self.protocol_sessions: dict[Peer, JavelinSession] = {}
 
         self.transport = UDPDTLSServer(
@@ -74,10 +76,18 @@ class REPServer:
         peer: Peer,
         plaintext: bytes,
     ) -> None:
-        protocol = self.protocol_sessions.setdefault(
-            peer,
-            JavelinSession(),
-        )
+        protocol = self.protocol_sessions.get(peer)
+
+        if protocol is None:
+            logical_session = self.sessions.create(
+                rep_peer=peer,
+            )
+
+            protocol = JavelinSession(
+                preservation_session=logical_session,
+            )
+
+            self.protocol_sessions[peer] = protocol
 
         LOG.info(
             "plaintext peer=%s:%d bytes=%d prefix=%s",
