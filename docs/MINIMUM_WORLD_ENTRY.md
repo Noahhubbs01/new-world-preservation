@@ -1,3 +1,193 @@
+# Authoritative continuation checkpoint — 2026-10-05
+
+Branch: `work/gpt61-handshake-sprint`
+
+Current implementation checkpoint: `1bf0701`
+
+Validation at implementation checkpoint: **332 passed, 12 skipped, zero failures**.
+
+This section supersedes older frontier/blocker text below where inconsistent.
+Historical sections are intentionally retained as evidence of the investigation.
+
+## Current objective
+
+Legitimate unmodified retail client -> isolated preservation service -> REP ->
+World -> local player -> InGame -> camera/WASD.
+
+No retail-client world entry, InGame, camera, or WASD success is claimed yet.
+
+## Closed / do not redo
+
+The following are sufficiently closed for the current minimum-world-entry sprint:
+
+- native client -> REP application envelope;
+- server -> client persistent prefix framing;
+- Carrier reliable chunk support at the implemented boundary;
+- accepted REP/session identity persistence;
+- selected character identity persistence;
+- REP -> World queue/dispatcher path;
+- ReceivePlayerSpawnPoint dispatch -> Actor `+0xBC8`;
+- actual Actor `+0x252` writer paths;
+- local-character query supplier and original character identity/state provenance;
+- Player prefab identity;
+- PlayerComponent prefab replication index **9**;
+- player AssetId catalog join;
+- GdeRef value representation;
+- conditional local-player classification;
+- conditional entity activation -> PlayerComponentClientFacet -> PlayerRegistry;
+- PlayerRegistry live-player gate structure.
+
+Numeric reflected type indices remain **COMMUNITY-CORROBORATED** where not
+independently recovered. Do not silently promote them to VERIFIED.
+
+## Known player asset
+
+`slices/player.dynamicslice`
+
+- Asset UUID: `a660eeeb-ebc7-5cb7-be6b-ab11eb831731`
+- Sub-ID: `2`
+- catalog size: `367528`
+
+The AssetId/catalog mapping is VERIFIED. Runtime instantiation from the
+minimum preservation wire recipe is not yet demonstrated.
+
+## Native runtime continuation closed after implementation checkpoint
+
+VERIFIED conditional control flow:
+
+`GDE::AcquireSliceAsset (14178DF50)`
+-> component preparation `14171BBD0`
+-> cached-field application `14167A490`
+-> entity activation `14171B430`
+-> post-activation field notification.
+
+`14171BBD0` indexes eligible faceted components using component `+0x90`
+into GDE `+0x160`; cached replicated state is delivered through that indexed
+component vector.
+
+Entity activation reaches Entity virtual 40 -> `141376BB0`, invokes attached
+component virtual 58, and PlayerComponent virtual 58 -> `141677290` reaches
+the existing PlayerComponentClientFacet. With classification 1 and a valid
+runtime entity reference, `1468760D0` installs the player in PlayerRegistry.
+
+These statements establish conditional native machinery. They do **not**
+establish the minimum sufficient wire recipe.
+
+Primary derived evidence:
+
+- `reports/handshake-sprint-2/gde-acquisition-runtime-bridge.json`
+- `reports/handshake-sprint-2/gde-acquisition-stage-leads.json`
+- `reports/handshake-sprint-2/gde-streamer-vtable-leads.json`
+- `reports/handshake-sprint-2/client-context-entity-map-leads.json`
+- `reports/handshake-sprint-2/client-gde-instantiated-tail-leads.json`
+- `reports/handshake-sprint-2/client-gde-instantiated-vtable-leads.json`
+- `reports/handshake-sprint-2/replica-instantiation-native-label-leads.json`
+- `reports/handshake-sprint-2/entity-activation-vtable-leads.json`
+- `reports/handshake-sprint-2/local-player-install-vtable-hits.json`
+- `reports/handshake-sprint-2/player-registry-consumer-census.json`
+- `reports/handshake-sprint-2/registry-install-native-census.json`
+- `reports/handshake-sprint-2/world-ready-slot-1f8-leads.json`
+- `reports/handshake-sprint-2/minimum-level-runtime-inputs.json`
+
+## Remaining minimum-bootstrap frontier
+
+The old six-blocker graph is superseded for the current implementation
+frontier. Remaining bootstrap research is concentrated into three joins:
+
+### A. Replica/GDE metadata -> actual player slice instantiation
+
+Prove the concrete runtime bridge from the replicated GDE/AssetId metadata
+to instantiation of the known `slices/player.dynamicslice`.
+
+Highest-value unresolved native boundary:
+the concrete context/interface implementation reached from the GDE
+acquisition path during asset/entity instantiation.
+
+### B. Instantiated prefab -> correct replicated component attachment
+
+Join the incoming/wire component index to the instantiated prefab component
+index machinery. The receiving/indexing mechanism is VERIFIED and
+PlayerComponent index 9 is VERIFIED; the complete minimum network-to-runtime
+association is not.
+
+### C. Minimum state -> activation -> live PlayerRegistry -> InGame
+
+Determine the smallest replicated field/component set sufficient to:
+
+1. create the runtime player entity;
+2. populate the required PlayerComponent state;
+3. satisfy local classification;
+4. activate the entity/components;
+5. populate a live PlayerRegistry entry;
+6. satisfy Actor readiness and SpawnPoint gates;
+7. advance GCW to InGame.
+
+Do not assume the complete retail initial bundle is required.
+
+## Implementation rule
+
+Do not continue archaeology merely because additional archaeology is possible.
+
+For each remaining dependency:
+
+`prove sufficient contract -> implement -> test -> continue`
+
+When static evidence no longer distinguishes plausible minimum recipes,
+prefer the smallest controlled isolated retail-client experiment rather than
+unbounded reverse engineering.
+
+## Client configuration parallel frontier
+
+Current retail binary contains intentional configuration machinery including:
+
+- `@assets@/Client.json`
+- `@assets@/ClientOverride.json`
+- `ConfigPath`
+- `OverrideConfigPath`
+- `client-connection.enable-remoteCfg`
+- `client-connection.client-gateway.mode`
+- `client-connection.client-gateway.endpoint`
+- `client-connection.client-gateway.http-endpoint`
+- `client-connection.client-gateway.region`
+- `client-connection.transport-options.rep-default-port`
+
+Current evidence also maps external option names including `GatewayMode`,
+`GatewayAddr`, `HttpGatewayAddr`, `GatewaySigningHost`, and `GatewayRegion`
+to live client configuration properties.
+
+OPEN: exact current config-file schema, supported external invocation/path
+mechanism for `OverrideConfigPath`, and minimum legitimate preservation
+configuration.
+
+Do not patch the executable, bypass EAC/security mechanisms, intercept
+production TLS, redirect Amazon production services, or use/replay
+credentials/tickets.
+
+## Next Work-mode mandate
+
+Work should resume from this checkpoint and:
+
+1. close A/B/C above without redoing solved archaeology;
+2. implement each sufficiently proved contract immediately;
+3. finish the legitimate replacement client configuration;
+4. package the preservation server for Foundry;
+5. add structured general/error/transport/REP/World/bootstrap logging and
+   per-session field-test diagnostics with rotation and secret redaction;
+6. run the complete test suite;
+7. produce an exact isolated field-test procedure;
+8. stop when the build is ready for a retail-client test or when one sharply
+   identified unresolved gate remains.
+
+---
+
+# Active minimum-world-entry sprint — 2026-10-05
+
+Owner has authorized resumption. Verified branch work/gpt61-handshake-sprint, HEAD4ed8b4f51fe4fdfabca3ea98616ae5e8507f7d2a; commits6bc423e/4ed8b4f include prior checkpoint and registration identity integration. Full baseline303 passed, zero skipped,0.78s. Six modified disassembly windows and all intentional scratch preserved.
+
+Current objective: legitimate unmodified client→preservation World→local player→InGame→camera/WASD. No milestone success demonstrated. Immediate PhaseA:146B706F0→146B6FFB0 actual application wrapper/routing and receive dispatcher; PhaseB asset/entity/resource prerequisites in parallel. Original context1140 identity producer and1530 lifecycle-state prerequisite are VERIFIED closed by character-identity-original-writer.json; do not redo older open leads. Existing identity reader is integrated into persistent logical session; Javelin currently constructs a fresh decoder per Carrier record and takes frame[0] as type. These two assumptions require native contract reconciliation.
+
+Current sections supersede historical stop/unknown-writer/emptyWorld-package text. Actor252 writers/callback object identity, Player prefab index9 and conditional Registry activation are closed; sufficient asset/resource recipe and actual REP World dispatch remain OPEN. Numeric reflected indices remain COMMUNITY-CORROBORATED. No security/protection work or Amazon production interaction; dependency sprint deferred.
+
 # Minimum viable world entry
 
 ## Resumed frontier — 2026-10-05

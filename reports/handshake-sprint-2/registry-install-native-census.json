@@ -1,0 +1,387 @@
+{
+  "lookup_calls_scanned": 612,
+  "window_bytes": 180,
+  "candidates": [
+    {
+      "lookup": "0x14100e465",
+      "function": "0x14100e440",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x141010d51",
+      "function": "0x141010b40",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14101575a",
+      "function": "0x141015750",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x141015d3d",
+      "function": "0x141015d30",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14101a336",
+      "function": "0x14101a2f0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14101f75d",
+      "function": "0x14101f750",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14102ea44",
+      "function": "0x14102ea20",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x141038355",
+      "function": "0x141038340",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x141042840",
+      "function": "0x141042820",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14254b598",
+      "function": "0x14254b580",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14254bd58",
+      "function": "0x14254bd40",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1428ed698",
+      "function": "0x1428ed670",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142cc7ac0",
+      "function": "0x142cc7aa0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142cc7bc5",
+      "function": "0x142cc7b90",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142d78eb7",
+      "function": "0x142d78e50",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142eb87f1",
+      "function": "0x142eb83a0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142efaa53",
+      "function": "0x142efa9f0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142efbcc2",
+      "function": "0x142efba00",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142eff71b",
+      "function": "0x142eff510",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142f00150",
+      "function": "0x142f00130",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142f0027b",
+      "function": "0x142f00240",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142f07472",
+      "function": "0x142f07450",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142f087c7",
+      "function": "0x142f08790",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142f380e2",
+      "function": "0x142f380d0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x142f381aa",
+      "function": "0x142f381a0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x143266ae2",
+      "function": "0x143266a40",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x143266c26",
+      "function": "0x143266b80",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x143316b4f",
+      "function": "0x143316b40",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x143374223",
+      "function": "0x143373eb0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14337e6ef",
+      "function": "0x14337e6c0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433e926f",
+      "function": "0x1433e7b10",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433e9282",
+      "function": "0x1433e7b10",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433e92ab",
+      "function": "0x1433e7b10",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ec6bd",
+      "function": "0x1433ec690",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ec6cb",
+      "function": "0x1433ec690",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ec6e2",
+      "function": "0x1433ec690",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ec949",
+      "function": "0x1433ec930",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ec957",
+      "function": "0x1433ec930",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ec96e",
+      "function": "0x1433ec930",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ef1fa",
+      "function": "0x1433ef130",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1433ef434",
+      "function": "0x1433ef400",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14351dc62",
+      "function": "0x14351dc50",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14352af71",
+      "function": "0x14352adc0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14358c39d",
+      "function": "0x14358c390",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14358d397",
+      "function": "0x14358d360",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1435bf18a",
+      "function": "0x1435bf100",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1435d0baf",
+      "function": "0x1435d0b70",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14361a2e1",
+      "function": "0x14361a2c0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x143759d4b",
+      "function": "0x143759d23",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1437abd07",
+      "function": "0x1437abce0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1437ac9a2",
+      "function": "0x1437ac8c0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1437b05ff",
+      "function": "0x1437b04d0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1437b1044",
+      "function": "0x1437b0fa0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14384e3b7",
+      "function": "0x14384ddb0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x143fa5121",
+      "function": "0x143fa50f0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x143fb3084",
+      "function": "0x143fb3010",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x144024846",
+      "function": "0x1440247f0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14409bf44",
+      "function": "0x14409bdb0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1440a1cfe",
+      "function": "0x1440a1ca0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1440a24e9",
+      "function": "0x1440a23d0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14418270a",
+      "function": "0x144182700",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1442f6589",
+      "function": "0x1442f6040",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x144300521",
+      "function": "0x14430051c",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14460466f",
+      "function": "0x144604650",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14460f017",
+      "function": "0x14460f000",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14460f910",
+      "function": "0x14460f4d0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x144930b1e",
+      "function": "0x1449309b0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x144933bff",
+      "function": "0x144933bd0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1449832a3",
+      "function": "0x144983280",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x14498cca0",
+      "function": "0x14498cc80",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x1449a9851",
+      "function": "0x1449a9800",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x144a57545",
+      "function": "0x144a574c0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x145bed4b7",
+      "function": "0x145bed4a0",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x145c68d7d",
+      "function": "0x145c68d60",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x145c69ee3",
+      "function": "0x145c69d50",
+      "window_bytes": 180
+    },
+    {
+      "lookup": "0x145c82b32",
+      "function": "0x145c829c0",
+      "window_bytes": 180
+    }
+  ],
+  "limitation": "bounded windows; indirect or later uses may be missed"
+}

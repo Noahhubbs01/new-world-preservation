@@ -1,0 +1,692 @@
+{
+  "requirement": "B2 wire metadata to runtime entity instantiation",
+  "scope": "bounded rdata printable labels with selected native RIP references; leads only",
+  "matches": [
+    {
+      "va": "0x147f5fad8",
+      "text": "SliceAssetID",
+      "refs": [
+        {
+          "address": "0x140d32772",
+          "function": "0x140d325ce"
+        },
+        {
+          "address": "0x141785593",
+          "function": "0x1417854c0"
+        },
+        {
+          "address": "0x1417857b6",
+          "function": "0x1417856e0"
+        }
+      ]
+    },
+    {
+      "va": "0x147f60558",
+      "text": "TextureAssetId",
+      "refs": [
+        {
+          "address": "0x140d0f65c",
+          "function": "0x140d0f490"
+        }
+      ]
+    },
+    {
+      "va": "0x147f7dd70",
+      "text": "ParticleLibraryAssetId",
+      "refs": [
+        {
+          "address": "0x140d24b69",
+          "function": "0x140d249d0"
+        }
+      ]
+    },
+    {
+      "va": "0x147f7fd68",
+      "text": "Polygon Shape Asset Id",
+      "refs": [
+        {
+          "address": "0x140d2aec5",
+          "function": "0x140d2ad20"
+        }
+      ]
+    },
+    {
+      "va": "0x147f80290",
+      "text": "Spline Shape Asset Id",
+      "refs": [
+        {
+          "address": "0x140d3675f",
+          "function": "0x140d365b0"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcdcb0",
+      "text": "Spawn a dynamic slice from the characters directory, on the server",
+      "refs": [
+        {
+          "address": "0x141033b98",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcf2a0",
+      "text": "lc_testSpawnEntityFromXml",
+      "refs": [
+        {
+          "address": "0x141034a18",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfa68",
+      "text": "Spawn a dynamic slice in the server",
+      "refs": [
+        {
+          "address": "0x141035038",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfaa0",
+      "text": "Spawn a dynamic slice in the server based on current camera position (optional rotation and scale)",
+      "refs": [
+        {
+          "address": "0x141035076",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfb30",
+      "text": "Spawn a dynamic slice in the server based on world space position (optional position and scale)",
+      "refs": [
+        {
+          "address": "0x1410350ac",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfbc0",
+      "text": "Spawn a horde from a dynamic slice within a box defined by (minX, minY), (lengthX, lengthY)",
+      "refs": [
+        {
+          "address": "0x141035111",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfc40",
+      "text": "Spawn a horde from a dynamic slice between [min, max) meters from the player",
+      "refs": [
+        {
+          "address": "0x141035147",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfcb0",
+      "text": "Spawn a horde of dynamic slice on the server at a fixed horziontal distance from player",
+      "refs": [
+        {
+          "address": "0x14103517d",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfd38",
+      "text": "Spawn a dynamic slice variant in the server",
+      "refs": [
+        {
+          "address": "0x1410351b3",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fcfd80",
+      "text": "Spawn a dynamic slice vitals variant in the server",
+      "refs": [
+        {
+          "address": "0x1410351e9",
+          "function": "0x141031660"
+        }
+      ]
+    },
+    {
+      "va": "0x147fe9b40",
+      "text": "InstantiatedContainer",
+      "refs": [
+        {
+          "address": "0x1411d6765",
+          "function": "0x1411d66e0"
+        }
+      ]
+    },
+    {
+      "va": "0x147fe9b58",
+      "text": "InstantiatedContainerWrapper",
+      "refs": [
+        {
+          "address": "0x1411d6985",
+          "function": "0x1411d6900"
+        }
+      ]
+    },
+    {
+      "va": "0x147ff1f38",
+      "text": "Dynamic slice",
+      "refs": [
+        {
+          "address": "0x1414033a6",
+          "function": "0x141403340"
+        }
+      ]
+    },
+    {
+      "va": "0x14802fcf0",
+      "text": "sliceAssetId",
+      "refs": [
+        {
+          "address": "0x141661c80",
+          "function": "0x141661b60"
+        },
+        {
+          "address": "0x14167984d",
+          "function": "0x1416797d0"
+        },
+        {
+          "address": "0x14171e3e7",
+          "function": "0x14171e370"
+        },
+        {
+          "address": "0x14176ecd6",
+          "function": "0x14176ea80"
+        },
+        {
+          "address": "0x141788120",
+          "function": "0x1417880b0"
+        },
+        {
+          "address": "0x1469d4783",
+          "function": "0x1469d4250"
+        }
+      ]
+    },
+    {
+      "va": "0x14802fd48",
+      "text": "meshAssetId",
+      "refs": [
+        {
+          "address": "0x14176e6ba",
+          "function": "0x14176e570"
+        }
+      ]
+    },
+    {
+      "va": "0x14802fd58",
+      "text": "materialOverrideAssetId",
+      "refs": [
+        {
+          "address": "0x14176e6db",
+          "function": "0x14176e570"
+        }
+      ]
+    },
+    {
+      "va": "0x14803bfc0",
+      "text": "BotUtils is not instantiated!",
+      "refs": [
+        {
+          "address": "0x1416bca55",
+          "function": "0x1416bca30"
+        }
+      ]
+    },
+    {
+      "va": "0x148041890",
+      "text": "StartPortrayingGDE from existing gdeMetadata {seq=",
+      "refs": [
+        {
+          "address": "0x141718bd6",
+          "function": "0x141717fc0"
+        }
+      ]
+    },
+    {
+      "va": "0x148041d30",
+      "text": "ClientGDE Instantiated: ",
+      "refs": [
+        {
+          "address": "0x14167b88a",
+          "function": "0x14167b790"
+        }
+      ]
+    },
+    {
+      "va": "0x1480426b0",
+      "text": "remotePlayerAssetId",
+      "refs": [
+        {
+          "address": "0x14174805d",
+          "function": "0x141747c60"
+        }
+      ]
+    },
+    {
+      "va": "0x1480426c8",
+      "text": "playerAssetId",
+      "refs": [
+        {
+          "address": "0x14174804b",
+          "function": "0x141747c60"
+        }
+      ]
+    },
+    {
+      "va": "0x1480426f0",
+      "text": "remotePlayerBotAssetId",
+      "refs": [
+        {
+          "address": "0x141748431",
+          "function": "0x141747c60"
+        }
+      ]
+    },
+    {
+      "va": "0x148042708",
+      "text": "playerBotAssetId",
+      "refs": [
+        {
+          "address": "0x14174841f",
+          "function": "0x141747c60"
+        }
+      ]
+    },
+    {
+      "va": "0x1480429c8",
+      "text": "AssetId=",
+      "refs": [
+        {
+          "address": "0x1417a9aa8",
+          "function": "0x1417a99e0"
+        }
+      ]
+    },
+    {
+      "va": "0x148042f20",
+      "text": "CreateVirtualSlicesFromStream: The root entity in a slice leads to a bad asset id",
+      "refs": [
+        {
+          "address": "0x1416a3954",
+          "function": "0x1416a2ca0"
+        }
+      ]
+    },
+    {
+      "va": "0x148042f80",
+      "text": "CreateVirtualSlicesFromStream: The asset id is not valid for this virtual slice",
+      "refs": [
+        {
+          "address": "0x1416a39ae",
+          "function": "0x1416a2ca0"
+        }
+      ]
+    },
+    {
+      "va": "0x148043060",
+      "text": "Attempt to access a singleton which was not instantiated",
+      "refs": [
+        {
+          "address": "0x1416ad8cd",
+          "function": "0x1416ad7e0"
+        }
+      ]
+    },
+    {
+      "va": "0x1480430b0",
+      "text": "Singleton already instantiated!",
+      "refs": [
+        {
+          "address": "0x1416ad726",
+          "function": "0x1416ad630"
+        }
+      ]
+    },
+    {
+      "va": "0x1480d4c80",
+      "text": "TerritoryLandmarkDataManager not instantiated.",
+      "refs": [
+        {
+          "address": "0x142871128",
+          "function": "0x142870cf0"
+        }
+      ]
+    },
+    {
+      "va": "0x1480eab10",
+      "text": "Territory Landmark data manager not instantiated.",
+      "refs": [
+        {
+          "address": "0x142943e8f",
+          "function": "0x142943d30"
+        }
+      ]
+    },
+    {
+      "va": "0x148189590",
+      "text": "Fishing: LoadFishMesh - fishMeshAssetId is not valid",
+      "refs": [
+        {
+          "address": "0x1430ece86",
+          "function": "0x1430ecac0"
+        }
+      ]
+    },
+    {
+      "va": "0x1481bf748",
+      "text": "Slayer script forwarder instantiated with an invalid spawn id.",
+      "refs": [
+        {
+          "address": "0x14331b8d7",
+          "function": "0x14331b760"
+        }
+      ]
+    },
+    {
+      "va": "0x1481bf790",
+      "text": "Slayer script forwarder instantiated with an invalid Slayer facet or Game Mode ref.",
+      "refs": [
+        {
+          "address": "0x14331ba2d",
+          "function": "0x14331b760"
+        }
+      ]
+    },
+    {
+      "va": "0x1481c1940",
+      "text": "Error getting variation slice asset id. Unable to find an asset matching the providing path.",
+      "refs": [
+        {
+          "address": "0x14334b220",
+          "function": "0x14334ac60"
+        }
+      ]
+    },
+    {
+      "va": "0x1481c1ae0",
+      "text": "Ui AssetId to fileId to filename map created ",
+      "refs": [
+        {
+          "address": "0x14334cbfe",
+          "function": "0x14334c090"
+        }
+      ]
+    },
+    {
+      "va": "0x14820e050",
+      "text": "Trying to instantiate mount attachment %s with invalid slice path!",
+      "refs": [
+        {
+          "address": "0x14369f50e",
+          "function": "0x14369f410"
+        }
+      ]
+    },
+    {
+      "va": "0x1482394b0",
+      "text": "SetupHitVolumes unable to find hit volumes for mount %s, assetId = %s",
+      "refs": [
+        {
+          "address": "0x1438fee3d",
+          "function": "0x1438fec90"
+        }
+      ]
+    },
+    {
+      "va": "0x148239c78",
+      "text": "LoadMesh unable to mesh for mount %s, assetId = %s",
+      "refs": [
+        {
+          "address": "0x1438ee895",
+          "function": "0x1438ee650"
+        }
+      ]
+    },
+    {
+      "va": "0x14832a170",
+      "text": "Unable to find mesh asset id in ChangeMesh, please investigate variant in table.",
+      "refs": [
+        {
+          "address": "0x1442d63a5",
+          "function": "0x1442d6190"
+        }
+      ]
+    },
+    {
+      "va": "0x148343440",
+      "text": "Could not find asset id for slice exclusion list entry",
+      "refs": [
+        {
+          "address": "0x14440b064",
+          "function": "0x144409410"
+        }
+      ]
+    },
+    {
+      "va": "0x1484eded8",
+      "text": "legacyAssetIds",
+      "refs": [
+        {
+          "address": "0x1463872d2",
+          "function": "0x146386e39"
+        }
+      ]
+    },
+    {
+      "va": "0x1484edf68",
+      "text": "m_assetIdToInfo",
+      "refs": [
+        {
+          "address": "0x14639e2b2",
+          "function": "0x14639e052"
+        }
+      ]
+    },
+    {
+      "va": "0x1484edf90",
+      "text": "m_legacyAssetIdToRealAssetId",
+      "refs": [
+        {
+          "address": "0x14639e492",
+          "function": "0x14639e052"
+        }
+      ]
+    },
+    {
+      "va": "0x1484edfc8",
+      "text": "assetIdToInfoNumEntries",
+      "refs": [
+        {
+          "address": "0x14639e738",
+          "function": "0x14639e623"
+        }
+      ]
+    },
+    {
+      "va": "0x1484ee018",
+      "text": "legacyAssetIdToRealAssetIdNumEntries",
+      "refs": [
+        {
+          "address": "0x14639e79d",
+          "function": "0x14639e623"
+        }
+      ]
+    },
+    {
+      "va": "0x14856f0f0",
+      "text": "SpawnEntity",
+      "refs": [
+        {
+          "address": "0x1469e9050",
+          "function": null
+        },
+        {
+          "address": "0x1469ed633",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469ed64b",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469ed6c0",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469ed6d4",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469fa3b8",
+          "function": "0x1469fa2d0"
+        },
+        {
+          "address": "0x1469fcc80",
+          "function": "0x1469fcbe0"
+        }
+      ]
+    },
+    {
+      "va": "0x14856f240",
+      "text": "ForceSpawnEntity",
+      "refs": [
+        {
+          "address": "0x1469e8fa0",
+          "function": null
+        },
+        {
+          "address": "0x1469ecfb7",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469ecfcf",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469ed044",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469ed058",
+          "function": "0x1469ec8b0"
+        },
+        {
+          "address": "0x1469f9158",
+          "function": "0x1469f9070"
+        },
+        {
+          "address": "0x1469fbfa0",
+          "function": "0x1469fbf00"
+        }
+      ]
+    },
+    {
+      "va": "0x148570ac0",
+      "text": "SliceAssetId",
+      "refs": [
+        {
+          "address": "0x1469ec020",
+          "function": "0x1469ebeb5"
+        }
+      ]
+    },
+    {
+      "va": "0x148571a20",
+      "text": "materialAssetID",
+      "refs": [
+        {
+          "address": "0x1469f3b22",
+          "function": "0x1469f3b00"
+        }
+      ]
+    },
+    {
+      "va": "0x148572358",
+      "text": "meshAssetID",
+      "refs": [
+        {
+          "address": "0x1469b4ce1",
+          "function": "0x1469b4cd7"
+        }
+      ]
+    },
+    {
+      "va": "0x148598ad0",
+      "text": "The maximum number of paused replicated gde actors we will keep instantiated before starting to destroy them.",
+      "refs": [
+        {
+          "address": "0x146bc95c9",
+          "function": "0x146bc8cf0"
+        }
+      ]
+    },
+    {
+      "va": "0x1485d60c0",
+      "text": "CEntitySystem::SpawnEntity Failed, Can't spawn entity %s. ID range is full (internal error)",
+      "refs": [
+        {
+          "address": "0x147049a5f",
+          "function": "0x1470499b0"
+        }
+      ]
+    },
+    {
+      "va": "0x1485d6160",
+      "text": "CEntitySystem::SpawnEntity %s %s 0x%x",
+      "refs": [
+        {
+          "address": "0x147049cd5",
+          "function": "0x1470499b0"
+        }
+      ]
+    },
+    {
+      "va": "0x14962c900",
+      "text": "cannot get XdsClient to instantiate cds LB policy: %s",
+      "refs": [
+        {
+          "address": "0x147b356fb",
+          "function": "0x147b356b0"
+        }
+      ]
+    },
+    {
+      "va": "0x14962d1e0",
+      "text": "cannot get XdsClient to instantiate eds LB policy: %s",
+      "refs": [
+        {
+          "address": "0x147b3bf8b",
+          "function": "0x147b3bf40"
+        }
+      ]
+    },
+    {
+      "va": "0x14962d878",
+      "text": "cannot get XdsClient to instantiate eds_drop LB policy: %s",
+      "refs": [
+        {
+          "address": "0x147b4194b",
+          "function": "0x147b41900"
+        }
+      ]
+    }
+  ]
+}

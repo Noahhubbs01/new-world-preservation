@@ -1,0 +1,121 @@
+{
+  "requirement": "Minimum LevelInfo inputs and normal Actor ready path",
+  "confidence": "VERIFIED static field consumers and conditional writer; sufficient level/resource recipe remains OPEN",
+  "new_findings": [
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "1464468AA..1464468BE",
+        "1463FF90D"
+      ],
+      "finding": "LevelInfoChanged record trailing8 at+A8 is compared to World+198; equality returns before LevelInfo installation. World constructor initializes remembered value zero. Therefore an initial all-zero trailing8 is ignored in this path. Use an explicit changed eight-byte value for a bounded test; semantic name beyond deduplication key is not established."
+    },
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "146448F8E..146448F9D",
+        "146449055..14644908C"
+      ],
+      "finding": "First LevelInfo string, stored at World+E0, is inserted into native literal map %s (147FC8ECC), then executed through global console+78 virtual120. It must identify a legitimately installed client level for a meaningful experiment; an arbitrary placeholder cannot establish resource sufficiency."
+    },
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "146448F78..146448F86",
+        "146449092..1464490B5"
+      ],
+      "finding": "Normal path sets World+1A1=1 and executes map command. After that call returns, game+960 !=1 and a nonempty first-context vector trigger145A95160 directly. This is independent of fastload. If game+960==1, the already established map-change callbacks provide the alternate writer path when their jobs/AssetBus/waitingRefs counts clear."
+    },
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "146448F4B..146448F5B",
+        "147FC63B0",
+        "14103D820"
+      ],
+      "finding": "CryGame primary virtual1B8 target14103D820 consumes LevelInfo flags/World+1A8 viewport coordinates and configures a streaming/viewport-related service. The actual map request in this audited path is the later console command; do not label virtual1B8 alone as generic level-load request."
+    },
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "146448EA4",
+        "146448ED8..146448EE8",
+        "14171BA6C"
+      ],
+      "finding": "LevelInfo opaque8 field at record+60 (World+140) passes as Initialize14171B850 R9 and is retained at ClientContext+348. Its sufficient value and consumer meaning are still OPEN."
+    },
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "146448E9D",
+        "146448ED3",
+        "14171BA73..14171BA82"
+      ],
+      "finding": "LevelInfo entries map record+68 (World+148) passes into Initialize14171B850 stack argument5 and is copied to ClientContext+350."
+    },
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "146448E95",
+        "146448ECE",
+        "14171BA87..14171BA8F",
+        "141719DA2..141719DBC"
+      ],
+      "finding": "LevelInfo flag_a record+A0 (World+180) passes stack argument6 to Initialize and is retained at ClientContext+430. Predicate141719D90 returns true immediately when this flag is false. When true it converts incoming spatial coordinates to a key, rejects the default global key, and requires map membership at ClientContext+350. Its only cached direct caller is14102EC11 inside14102EA20; no complete readiness sufficiency is asserted."
+    },
+    {
+      "status": "VERIFIED",
+      "sites": [
+        "146446860..14644687C",
+        "1463E43B8..1463E43BF",
+        "1463E44D7..1463E44E9"
+      ],
+      "finding": "LevelInfoChanged invokes an event-bus Boolean consumer on record value byte+A1 before installing the record. Output is initially true; subscriber return can veto. Exact bus handler semantics remain OPEN; do not assume every value is accepted."
+    }
+  ],
+  "minimum_experiment_recipe": {
+    "status": "INFERRED bounded candidate, not operational proof",
+    "inputs": [
+      "Installed legitimate level name in name_a",
+      "Explicit nonzero/changed trailing8 deduplication key",
+      "Coherent SelfIdentification accepted before LoadContextAndLevel",
+      "Explicit opaque8/entries values grounded in captured or static context evidence",
+      "Flag_a=false is a candidate to distinguish coordinate-entry lookup from unconditional acceptance; no setting change or runtime bypass proposed"
+    ],
+    "observe": [
+      "Did LevelInfoChanged survive Boolean event guard?",
+      "Did World+190 become present?",
+      "Did normal map command execute and installed level resolve?",
+      "Was game+960==1 after command?",
+      "If pending, did job/AssetBus/waitingRefs counts clear and map-change callback run?",
+      "Was Actor+252 set and separate live PlayerRegistry gate satisfied?"
+    ]
+  },
+  "remaining_open": [
+    "Exact sufficient installed level/resource identity and LevelInfo opaque8 value",
+    "Value-byte event-bus handler semantics",
+    "Sufficient asset-reference association",
+    "Successful runtime map/resource acquisition",
+    "Legitimate client InGame/camera/WASD"
+  ],
+  "manual_windows": [
+    "manual-disasm/minimum-level-request.asm",
+    "manual-disasm/minimum-level-handler.asm",
+    "manual-disasm/minimum-level-1464027B0.asm",
+    "manual-disasm/minimum-level-14171B850.asm",
+    "manual-disasm/minimum-level-slot-168.asm",
+    "manual-disasm/minimum-level-slot-1B8.asm",
+    "manual-disasm/minimum-level-context-guard.asm",
+    "manual-disasm/level-context-census.asm"
+  ],
+  "not_claimed": [
+    "Sufficient LevelInfo defaults",
+    "Map command success",
+    "Fastload support",
+    "World entry",
+    "Player spawn",
+    "InGame",
+    "camera",
+    "WASD"
+  ]
+}

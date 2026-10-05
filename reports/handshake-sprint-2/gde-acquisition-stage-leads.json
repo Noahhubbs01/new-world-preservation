@@ -1,0 +1,462 @@
+[
+  {
+    "start": "0x14167a490",
+    "window_end": "0x14167a4b2",
+    "labels": [],
+    "calls": []
+  },
+  {
+    "start": "0x1416ae470",
+    "window_end": "0x1416ae65b",
+    "labels": [
+      {
+        "site": "0x1416ae4a6",
+        "target": "0x14a829d10",
+        "text": "1416ae4a6:\t8b 0d 64 b8 17 09    \tmov    ecx,DWORD PTR [rip+0x917b864]        # 0x14a829d10"
+      },
+      {
+        "site": "0x1416ae522",
+        "target": "0x14a324cf0",
+        "text": "1416ae522:\t39 05 c8 67 c7 08    \tcmp    DWORD PTR [rip+0x8c767c8],eax        # 0x14a324cf0"
+      },
+      {
+        "site": "0x1416ae52e",
+        "target": "0x14a324ce0",
+        "text": "1416ae52e:\t48 8d 15 ab 67 c7 08 \tlea    rdx,[rip+0x8c767ab]        # 0x14a324ce0"
+      },
+      {
+        "site": "0x1416ae621",
+        "target": "0x14a324cf0",
+        "text": "1416ae621:\t48 8d 0d c8 66 c7 08 \tlea    rcx,[rip+0x8c766c8]        # 0x14a324cf0"
+      },
+      {
+        "site": "0x1416ae62d",
+        "target": "0x14a324cf0",
+        "text": "1416ae62d:\t83 3d bc 66 c7 08 ff \tcmp    DWORD PTR [rip+0x8c766bc],0xffffffff        # 0x14a324cf0"
+      },
+      {
+        "site": "0x1416ae642",
+        "target": "0x14a324ce0",
+        "text": "1416ae642:\t66 0f 7f 05 96 66 c7 \tmovdqa XMMWORD PTR [rip+0x8c76696],xmm0        # 0x14a324ce0"
+      },
+      {
+        "site": "0x1416ae64a",
+        "target": "0x14a324cf0",
+        "text": "1416ae64a:\t48 8d 0d 9f 66 c7 08 \tlea    rcx,[rip+0x8c7669f]        # 0x14a324cf0"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x1416ae4c0",
+        "target": "0x141413810"
+      },
+      {
+        "site": "0x1416ae5f9",
+        "target": "0x1417cca10"
+      },
+      {
+        "site": "0x1416ae628",
+        "target": "0x147aa6598"
+      },
+      {
+        "site": "0x1416ae63a",
+        "target": "0x14179a4d0"
+      },
+      {
+        "site": "0x1416ae651",
+        "target": "0x147aa652c"
+      }
+    ]
+  },
+  {
+    "start": "0x141733270",
+    "window_end": "0x141733676",
+    "labels": [
+      {
+        "site": "0x1417332a5",
+        "target": "0x14057148c",
+        "text": "1417332a5:\t48 8d 05 e0 e1 e3 fe \tlea    rax,[rip+0xfffffffffee3e1e0]        # 0x14057148c"
+      },
+      {
+        "site": "0x141733349",
+        "target": "0x140571444",
+        "text": "141733349:\t48 8d 05 f4 e0 e3 fe \tlea    rax,[rip+0xfffffffffee3e0f4]        # 0x140571444"
+      },
+      {
+        "site": "0x141733461",
+        "target": "0x14a31c7f0",
+        "text": "141733461:\t3a 05 89 93 be 08    \tcmp    al,BYTE PTR [rip+0x8be9389]        # 0x14a31c7f0"
+      },
+      {
+        "site": "0x141733469",
+        "target": "0x14a31c7f4",
+        "text": "141733469:\t3b 0d 85 93 be 08    \tcmp    ecx,DWORD PTR [rip+0x8be9385]        # 0x14a31c7f4"
+      },
+      {
+        "site": "0x141733579",
+        "target": "0x147f404c0",
+        "text": "141733579:\t66 0f 6f 1d 3f cf 80 \tmovdqa xmm3,XMMWORD PTR [rip+0x680cf3f]        # 0x147f404c0"
+      },
+      {
+        "site": "0x141733601",
+        "target": "0x147ef88c0",
+        "text": "141733601:\t48 8d 15 b8 52 7c 06 \tlea    rdx,[rip+0x67c52b8]        # 0x147ef88c0"
+      },
+      {
+        "site": "0x14173361c",
+        "target": "0x147ef8ac0",
+        "text": "14173361c:\t48 8d 15 9d 54 7c 06 \tlea    rdx,[rip+0x67c549d]        # 0x147ef8ac0"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x1417332c5",
+        "target": "0x14156cea0"
+      },
+      {
+        "site": "0x1417332de",
+        "target": "0x14087cc20"
+      },
+      {
+        "site": "0x14173332d",
+        "target": "0x1416bdf00"
+      },
+      {
+        "site": "0x141733369",
+        "target": "0x14156cea0"
+      },
+      {
+        "site": "0x1417333b7",
+        "target": "0x1415e8130"
+      },
+      {
+        "site": "0x14173340d",
+        "target": "0x1417d6200"
+      },
+      {
+        "site": "0x141733432",
+        "target": "0x146165f20"
+      },
+      {
+        "site": "0x141733484",
+        "target": "0x1415fe180"
+      },
+      {
+        "site": "0x1417334a7",
+        "target": "0x1417dce70"
+      },
+      {
+        "site": "0x1417334b0",
+        "target": "0x1414a0fa0"
+      },
+      {
+        "site": "0x1417334bb",
+        "target": "0x1414a0fa0"
+      },
+      {
+        "site": "0x1417334ef",
+        "target": "0x1415e3500"
+      },
+      {
+        "site": "0x14173351c",
+        "target": "0x1417b5a80"
+      },
+      {
+        "site": "0x141733543",
+        "target": "0x14087cc20"
+      },
+      {
+        "site": "0x1417335ee",
+        "target": "0x1417ea5f0"
+      },
+      {
+        "site": "0x14173364c",
+        "target": "0x1417dce70"
+      },
+      {
+        "site": "0x141733660",
+        "target": "0x1417b5c50"
+      }
+    ]
+  },
+  {
+    "start": "0x14171bbd0",
+    "window_end": "0x14171bcd5",
+    "labels": [],
+    "calls": [
+      {
+        "site": "0x14171bbee",
+        "target": "0x1416b8a90"
+      },
+      {
+        "site": "0x14171bc5a",
+        "target": "0x141413810"
+      },
+      {
+        "site": "0x14171bcc6",
+        "target": "0x1407a89a0"
+      }
+    ]
+  },
+  {
+    "start": "0x14171b430",
+    "window_end": "0x14171b842",
+    "labels": [
+      {
+        "site": "0x14171b4a1",
+        "target": "0x14a829d10",
+        "text": "14171b4a1:\t8b 15 69 e8 10 09    \tmov    edx,DWORD PTR [rip+0x910e869]        # 0x14a829d10"
+      },
+      {
+        "site": "0x14171b4bc",
+        "target": "0x14a321c68",
+        "text": "14171b4bc:\t39 0d a6 67 c0 08    \tcmp    DWORD PTR [rip+0x8c067a6],ecx        # 0x14a321c68"
+      },
+      {
+        "site": "0x14171b4d2",
+        "target": "0x148045c00",
+        "text": "14171b4d2:\t4c 8d 25 27 a7 92 06 \tlea    r12,[rip+0x692a727]        # 0x148045c00"
+      },
+      {
+        "site": "0x14171b4d9",
+        "target": "0x148045c09",
+        "text": "14171b4d9:\t48 8d 0d 29 a7 92 06 \tlea    rcx,[rip+0x692a729]        # 0x148045c09"
+      },
+      {
+        "site": "0x14171b504",
+        "target": "0x147fd3d48",
+        "text": "14171b504:\t4c 8d 05 3d 88 8b 06 \tlea    r8,[rip+0x68b883d]        # 0x147fd3d48"
+      },
+      {
+        "site": "0x14171b53e",
+        "target": "0x140571784",
+        "text": "14171b53e:\t48 8d 05 3f 62 e5 fe \tlea    rax,[rip+0xfffffffffee5623f]        # 0x140571784"
+      },
+      {
+        "site": "0x14171b593",
+        "target": "0x148045c09",
+        "text": "14171b593:\t48 8d 05 6f a6 92 06 \tlea    rax,[rip+0x692a66f]        # 0x148045c09"
+      },
+      {
+        "site": "0x14171b5a8",
+        "target": "0x147fd3d48",
+        "text": "14171b5a8:\t4c 8d 05 99 87 8b 06 \tlea    r8,[rip+0x68b8799]        # 0x147fd3d48"
+      },
+      {
+        "site": "0x14171b5e9",
+        "target": "0x14a321c08",
+        "text": "14171b5e9:\t0f b6 05 18 66 c0 08 \tmovzx  eax,BYTE PTR [rip+0x8c06618]        # 0x14a321c08"
+      },
+      {
+        "site": "0x14171b5f5",
+        "target": "0x14a321c00",
+        "text": "14171b5f5:\t48 8d 0d 04 66 c0 08 \tlea    rcx,[rip+0x8c06604]        # 0x14a321c00"
+      },
+      {
+        "site": "0x14171b5fc",
+        "target": "0x14a321c00",
+        "text": "14171b5fc:\t48 8b 05 fd 65 c0 08 \tmov    rax,QWORD PTR [rip+0x8c065fd]        # 0x14a321c00"
+      },
+      {
+        "site": "0x14171b606",
+        "target": "0x14a321c0c",
+        "text": "14171b606:\t80 3d ff 65 c0 08 00 \tcmp    BYTE PTR [rip+0x8c065ff],0x0        # 0x14a321c0c"
+      },
+      {
+        "site": "0x14171b618",
+        "target": "0x140571784",
+        "text": "14171b618:\t48 8d 05 65 61 e5 fe \tlea    rax,[rip+0xfffffffffee56165]        # 0x140571784"
+      },
+      {
+        "site": "0x14171b664",
+        "target": "0x148045c00",
+        "text": "14171b664:\t48 8d 05 95 a5 92 06 \tlea    rax,[rip+0x692a595]        # 0x148045c00"
+      },
+      {
+        "site": "0x14171b670",
+        "target": "0x148045c09",
+        "text": "14171b670:\t48 8d 05 92 a5 92 06 \tlea    rax,[rip+0x692a592]        # 0x148045c09"
+      },
+      {
+        "site": "0x14171b687",
+        "target": "0x147fd3d48",
+        "text": "14171b687:\t4c 8d 05 ba 86 8b 06 \tlea    r8,[rip+0x68b86ba]        # 0x147fd3d48"
+      },
+      {
+        "site": "0x14171b6bd",
+        "target": "0x148045c00",
+        "text": "14171b6bd:\t4c 8d 25 3c a5 92 06 \tlea    r12,[rip+0x692a53c]        # 0x148045c00"
+      },
+      {
+        "site": "0x14171b74e",
+        "target": "0x148042530",
+        "text": "14171b74e:\t48 8d 15 db 6d 92 06 \tlea    rdx,[rip+0x6926ddb]        # 0x148042530"
+      },
+      {
+        "site": "0x14171b7d1",
+        "target": "0x14a321c68",
+        "text": "14171b7d1:\t48 8d 0d 90 64 c0 08 \tlea    rcx,[rip+0x8c06490]        # 0x14a321c68"
+      },
+      {
+        "site": "0x14171b7e0",
+        "target": "0x14a321c68",
+        "text": "14171b7e0:\t83 3d 81 64 c0 08 ff \tcmp    DWORD PTR [rip+0x8c06481],0xffffffff        # 0x14a321c68"
+      },
+      {
+        "site": "0x14171b7ed",
+        "target": "0x148042508",
+        "text": "14171b7ed:\t48 8d 05 14 6d 92 06 \tlea    rax,[rip+0x6926d14]        # 0x148042508"
+      },
+      {
+        "site": "0x14171b7f9",
+        "target": "0x14804252c",
+        "text": "14171b7f9:\t48 8d 05 2c 6d 92 06 \tlea    rax,[rip+0x6926d2c]        # 0x14804252c"
+      },
+      {
+        "site": "0x14171b818",
+        "target": "0x14a321bb0",
+        "text": "14171b818:\t48 8d 0d 91 63 c0 08 \tlea    rcx,[rip+0x8c06391]        # 0x14a321bb0"
+      },
+      {
+        "site": "0x14171b824",
+        "target": "0x147e2b8a0",
+        "text": "14171b824:\t48 8d 0d 75 00 71 06 \tlea    rcx,[rip+0x6710075]        # 0x147e2b8a0"
+      },
+      {
+        "site": "0x14171b831",
+        "target": "0x14a321c68",
+        "text": "14171b831:\t48 8d 0d 30 64 c0 08 \tlea    rcx,[rip+0x8c06430]        # 0x14a321c68"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x14171b465",
+        "target": "0x1416b8a90"
+      },
+      {
+        "site": "0x14171b499",
+        "target": "0x141590950"
+      },
+      {
+        "site": "0x14171b512",
+        "target": "0x1408e8a30"
+      },
+      {
+        "site": "0x14171b57e",
+        "target": "0x14158bc00"
+      },
+      {
+        "site": "0x14171b5b6",
+        "target": "0x1408e8a30"
+      },
+      {
+        "site": "0x14171b658",
+        "target": "0x14158bc00"
+      },
+      {
+        "site": "0x14171b695",
+        "target": "0x1408e8a30"
+      },
+      {
+        "site": "0x14171b6aa",
+        "target": "0x141413810"
+      },
+      {
+        "site": "0x14171b759",
+        "target": "0x1402b0e70"
+      },
+      {
+        "site": "0x14171b766",
+        "target": "0x140298e00"
+      },
+      {
+        "site": "0x14171b778",
+        "target": "0x140298e00"
+      },
+      {
+        "site": "0x14171b799",
+        "target": "0x14149ca40"
+      },
+      {
+        "site": "0x14171b7ba",
+        "target": "0x14149ca40"
+      },
+      {
+        "site": "0x14171b7d8",
+        "target": "0x147aa6598"
+      },
+      {
+        "site": "0x14171b81f",
+        "target": "0x140fe7ec0"
+      },
+      {
+        "site": "0x14171b82b",
+        "target": "0x147aa687c"
+      },
+      {
+        "site": "0x14171b838",
+        "target": "0x147aa652c"
+      }
+    ]
+  },
+  {
+    "start": "0x1416b8a90",
+    "window_end": "0x1416b8b11",
+    "labels": [
+      {
+        "site": "0x1416b8aa0",
+        "target": "0x14a829d10",
+        "text": "1416b8aa0:\t8b 0d 6a 12 17 09    \tmov    ecx,DWORD PTR [rip+0x917126a]        # 0x14a829d10"
+      },
+      {
+        "site": "0x1416b8abb",
+        "target": "0x14a321c6c",
+        "text": "1416b8abb:\t39 05 ab 91 c6 08    \tcmp    DWORD PTR [rip+0x8c691ab],eax        # 0x14a321c6c"
+      },
+      {
+        "site": "0x1416b8ac3",
+        "target": "0x149e909f0",
+        "text": "1416b8ac3:\t48 8d 05 26 7f 7d 08 \tlea    rax,[rip+0x87d7f26]        # 0x149e909f0"
+      },
+      {
+        "site": "0x1416b8ad8",
+        "target": "0x14a321c6c",
+        "text": "1416b8ad8:\t48 8d 0d 8d 91 c6 08 \tlea    rcx,[rip+0x8c6918d]        # 0x14a321c6c"
+      },
+      {
+        "site": "0x1416b8ae4",
+        "target": "0x14a321c6c",
+        "text": "1416b8ae4:\t83 3d 81 91 c6 08 ff \tcmp    DWORD PTR [rip+0x8c69181],0xffffffff        # 0x14a321c6c"
+      },
+      {
+        "site": "0x1416b8aed",
+        "target": "0x147e2a4e0",
+        "text": "1416b8aed:\t48 8d 0d ec 19 77 06 \tlea    rcx,[rip+0x67719ec]        # 0x147e2a4e0"
+      },
+      {
+        "site": "0x1416b8af9",
+        "target": "0x14a321c6c",
+        "text": "1416b8af9:\t48 8d 0d 6c 91 c6 08 \tlea    rcx,[rip+0x8c6916c]        # 0x14a321c6c"
+      },
+      {
+        "site": "0x1416b8b05",
+        "target": "0x149e909f0",
+        "text": "1416b8b05:\t48 8d 05 e4 7e 7d 08 \tlea    rax,[rip+0x87d7ee4]        # 0x149e909f0"
+      }
+    ],
+    "calls": [
+      {
+        "site": "0x1416b8adf",
+        "target": "0x147aa6598"
+      },
+      {
+        "site": "0x1416b8af4",
+        "target": "0x147aa687c"
+      },
+      {
+        "site": "0x1416b8b00",
+        "target": "0x147aa652c"
+      }
+    ]
+  }
+]
