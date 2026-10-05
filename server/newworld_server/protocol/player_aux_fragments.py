@@ -33,6 +33,10 @@ SCHEMAS = {
                       'nextEligibleAbandonGameModeVoteTime','gameInviteData','isGroupPristine'))),
     'player_state': ((), (('loginMatchId', 'byte_string'), ('srcWorldId', 'tagged_name'), ('accountIsLocked', 'bool'), ('accountInProbation', 'bool'), ('ageGroup', 1), ('territoryOwnerGuildId', 16), ('sessionStartWallClockTimePoint', 8), ('sessionStartTimePoint', 8), ('debugAccountProbationOverride', 1), ('freePlayerCountdown', '8_bool'), ('enteringStoreIsBlocked', 'bool'), ('isFreshStartWorld', 'bool'), ('onDeathRespawnCooldown', 4), ('mostRecentPVPActiveSwitchTimePoint', 8), ('shouldNotifyPlayer', 'bool'), ('isPVPActiveCharacter', 'bool'), ('isChangingMount', 'bool'), ('isTransmogStationScreenOpen', 'bool'), ('isTransmogScreenOpen', 'bool'), ('isInMountAttachmentMode', 'bool'), ('isArmorDyeingOpen', 'bool'), ('playerBackstory', 4)), (('characterId', 'tagged_name'), ('characterName', 'byte_string'), ('homeWorldId', 'tagged_name'), ('playerConnected', 'bool'), ('lookingThroughLoadout', 'bool'), ('playerType', 1), ('isInStore', 'bool'), ('platformAccountId', 8), ('platformType', 1))),
     'entitlement_snapshot': ((('entitlements','snapshot_bytes575'),('balances','snapshot8'),('entitlementsReceived','bool')),),
+    'mana': ((('cur', 4), ('max', 4), ('regenDelay', 4), ('regenRate', 4)),),
+    'stamina': (tuple((name,4) for name in ('cur','max','winded','regen','multMax','multRegen')),),
+    'transmog': ((('capturedArmorAppearances','snapshot8'),('capturedWeaponAppearances','snapshot8'),('ownedArmorAppearances','snapshot8'),('ownedWeaponAppearances','snapshot8'),('inventoryServicesReady','bool')),),
+    'container_native': ((('Container','inventory_snapshot'),('Item Class','empty_class_map'),('Bonus Max Encumbrance',4),('Can Transfer items','bool'),('Container Was Emptied','bool')),),
     'global_storage': ((('m_globalItemMap','empty_storage_snapshot'),('m_overflowItemCount',4),('m_weightMap','storage_summary'),('m_slotCountMap','storage_summary')),),
     'item_skinning': ((), (('m_enabledItemSkins','snapshot8'),('m_skinDyeData','snapshot8'))),
     'currency': ((('currency',8),),),
@@ -43,6 +47,9 @@ SCHEMAS = {
     'instanced_script': ((('curScriptStateId', 'bool'), ('curScriptId', 4),
                           ('spawnedEntityIdsBySpawnerId', 'snapshot12'), ('syncedTimers', 'snapshot12')), ()),
 }
+
+# Alias retained for the corpus dispatcher; both layouts match the native reader.
+SCHEMAS['container_community'] = SCHEMAS['container_native']
 
 
 class _Reader:
@@ -128,6 +135,22 @@ class _Reader:
                     self.prefix()
                 if flags & 2:
                     self.take(4)
+                if visual_extra:
+                    self.take(8)
+        elif kind == 'empty_class_map':
+            if self.count():
+                raise ValueError('nonempty item class map unsupported')
+        elif kind == 'inventory_snapshot':
+            if not isinstance(visual_extra, bool):
+                raise ValueError('explicit native visual-data mode required')
+            count = self.snapshot()
+            if count > 500:
+                raise ValueError('native inventory count limit')
+            for _ in range(count):
+                self.take(8)
+                for _ in range(8):
+                    self.prefix()
+                self.take(21)  # four raw bytes, UUID16 and one raw byte
                 if visual_extra:
                     self.take(8)
         elif kind == 'empty_storage_snapshot':

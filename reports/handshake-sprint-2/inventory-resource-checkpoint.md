@@ -1,0 +1,8 @@
+
+## Inventory and resource fragment checkpoint
+
+230 tests pass. Container snapshot1448EC960 ->1448EA9C0 has native500-item bound, with each item145CE8C40 reading BEu64, eight prefix32 values, four bytes, raw UUID16, one byte, and optionally BEu32 plus four bytes under explicit runtime visual mode. Initial25 inventory bodies are17173 bytes each and exactly reproduce visible originals with mode enabled. Nonempty Item Class maps and nonzero delta operations remain unsupported. Local raw-field preservation does not infer inventory rules or required spawn equipment.
+
+Correction to previous checkpoint: constructor14803F098 was misclassified from storage width. Its actual virtual30 reader1417B3CB0 reads a strict Boolean byte. Container Was Emptied and Can Transfer items, and Transmog inventoryServicesReady, use this reader. The provisional BEu32 correction has been reverted; no client version conflict is established. Native and community Container aliases currently share the same verified wire layout.
+
+Transmog5691 four appearance snapshots share14820A030 (BEu64 entries); readiness is Boolean. Stamina4297 has six BEf32 fields cur/max/winded/regen/multMax/multRegen. Mana1652 has four BEf32 fields cur/max/regenDelay/regenRate. Constructors and virtual readers are retained as bounded native evidence; initial bodies exactly roundtrip through sequential next headers. Current census79 messages,1059 safely traced bodies,8 complete messages.25 initial bundles now stop at selected unsupported Mount5620 fields. Actor creation, required master subset, REP/endpoint/ownership, Spawn/InGame and movement remain unresolved. Research is ongoing, not exhausted.

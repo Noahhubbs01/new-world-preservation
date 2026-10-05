@@ -2,14 +2,14 @@
   {
     "seq": "0x25",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12564,
+    "fragment_count": 26,
+    "end": 31212,
     "length": 46423,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12564
+      "type": 5620,
+      "position": 31212
     },
     "fragments": [
       {
@@ -179,20 +179,60 @@
         "end": 12561,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12564,
+        "end": 29737,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29739,
+        "end": 29777,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29780,
+        "end": 31159,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31162,
+        "end": 31188,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31191,
+        "end": 31209,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
       }
     ]
   },
   {
     "seq": "0x2a",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -360,6 +400,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -368,14 +448,14 @@
   {
     "seq": "0x2b",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -543,6 +623,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -551,14 +671,14 @@
   {
     "seq": "0x2e",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -726,6 +846,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -734,14 +894,14 @@
   {
     "seq": "0x2f",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -909,6 +1069,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -917,14 +1117,14 @@
   {
     "seq": "0x30",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -1092,6 +1292,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1100,14 +1340,14 @@
   {
     "seq": "0x33",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -1275,6 +1515,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1283,14 +1563,14 @@
   {
     "seq": "0x34",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -1458,6 +1738,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1466,14 +1786,14 @@
   {
     "seq": "0x35",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -1641,6 +1961,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1649,14 +2009,14 @@
   {
     "seq": "0x42",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -1824,6 +2184,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1832,14 +2232,14 @@
   {
     "seq": "0x44",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -2007,6 +2407,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2015,14 +2455,14 @@
   {
     "seq": "0x47",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -2190,6 +2630,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2198,14 +2678,14 @@
   {
     "seq": "0x48",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -2373,6 +2853,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2381,14 +2901,14 @@
   {
     "seq": "0x49",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -2556,6 +3076,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2564,14 +3124,14 @@
   {
     "seq": "0x4c",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -2739,6 +3299,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2747,14 +3347,14 @@
   {
     "seq": "0x4e",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -2922,6 +3522,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2930,14 +3570,14 @@
   {
     "seq": "0x4f",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -3105,6 +3745,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3113,14 +3793,14 @@
   {
     "seq": "0x52",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -3288,6 +3968,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3296,14 +4016,14 @@
   {
     "seq": "0x55",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -3471,6 +4191,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3479,14 +4239,14 @@
   {
     "seq": "0x56",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -3654,6 +4414,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3662,14 +4462,14 @@
   {
     "seq": "0x59",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -3837,6 +4637,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3845,14 +4685,14 @@
   {
     "seq": "0x5a",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -4020,6 +4860,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4028,14 +4908,14 @@
   {
     "seq": "0x5b",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -4203,6 +5083,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4211,14 +5131,14 @@
   {
     "seq": "0x66",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -4386,6 +5306,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4394,14 +5354,14 @@
   {
     "seq": "0x6c",
     "complete_records": 0,
-    "fragment_count": 21,
-    "end": 12548,
+    "fragment_count": 26,
+    "end": 31196,
     "length": 46407,
     "complete_message": false,
     "stop": {
       "reason": "ValueError: unsupported schema field",
-      "type": 1755,
-      "position": 12548
+      "type": 5620,
+      "position": 31196
     },
     "fragments": [
       {
@@ -4569,6 +5529,46 @@
         "type": 6234,
         "start": 12535,
         "end": 12545,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1755,
+        "start": 12548,
+        "end": 29721,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 10,
+        "start": 29723,
+        "end": 29761,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5691,
+        "start": 29764,
+        "end": 31143,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4297,
+        "start": 31146,
+        "end": 31172,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 1652,
+        "start": 31175,
+        "end": 31193,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }

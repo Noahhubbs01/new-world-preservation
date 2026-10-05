@@ -70,6 +70,9 @@ def test_additional_native_snapshot_schemas(variant,values):
 @pytest.mark.parametrize('variant,values', [
     ('global_storage', {'m_globalItemMap':b'\0\0\0','m_overflowItemCount':b'\0'*4,'m_weightMap':b'\0\0\x01'+b'\x11'*20,'m_slotCountMap':b'\0\0\0'}),
     ('item_skinning', {'m_enabledItemSkins':b'\0\0\x02'+b'\x11'*16,'m_skinDyeData':b'\0\x01\x05\x01'+b'\x22'*8}),
+    ('transmog', {'capturedArmorAppearances':b'\0\0\x01'+b'\x11'*8,'inventoryServicesReady':b'\x01'}),
+    ('stamina', {n:b'\x11'*4 for n in ('cur','max','winded','regen','multMax','multRegen')}),
+    ('mana', {n:b'\x11'*4 for n in ('cur','max','regenDelay','regenRate')}),
     ('waypoints', {'replicatedWaypointPosition':b'\0'*12}),
     ('currency', {'currency':b'\0'*8}),
     ('entitlement_snapshot', {'entitlements':b'\0\0\x03abc','balances':b'\0\0\x01'+b'\0'*8,'entitlementsReceived':b'\x01'}),
@@ -109,12 +112,18 @@ def test_storage_native_limit_and_complex_item_boundary():
         encode({"m_globalItemMap":b"\0\0\x01"},"global_storage")
 
 
-def test_container_emptied_native_u32_width():
-    from newworld_server.protocol.replicated_presence import decode_presence_body, encode_presence_body
-    from newworld_server.protocol.selected_replication_schemas import CONTAINER_GROUPS
-    raw = b"\x01\x10\x12\x34\x56\x78"
-    values,n = decode_presence_body(raw,CONTAINER_GROUPS)
-    assert n==6
-    assert encode_presence_body(CONTAINER_GROUPS,values)==raw
-    for length in range(2,6):
-        with pytest.raises(ValueError):decode_presence_body(raw[:length],CONTAINER_GROUPS)
+def test_container_native_boolean_wrapper():
+    values={'Container Was Emptied':b'\x01','Can Transfer items':b'\0'}
+    raw=encode(values,'container_native')
+    assert decode(raw,'container_native')==(values,4)
+    with pytest.raises(ValueError,match='Boolean'):
+        encode({'Container Was Emptied':b'\x02'},'container_native')
+
+@pytest.mark.parametrize('extra',[False,True])
+def test_native_inventory_item_layout_and_truncation(extra):
+    item=b'\x11'*8+b'\x01'*8+b'\x22'*21+(b'\x33'*8 if extra else b'')
+    values={'Container':b'\0\0\x01'+item}
+    raw=encode(values,'container_native',visual_extra=extra)
+    assert decode(raw,'container_native',visual_extra=extra)==(values,len(raw))
+    for length in range(len(raw)):
+        with pytest.raises(ValueError):decode(raw[:length],'container_native',visual_extra=extra)

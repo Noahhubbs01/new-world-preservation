@@ -5,11 +5,11 @@ from newworld_server.protocol import objective_fragment,attribute_fragment,react
 import csv,collections
 registry=list(csv.DictReader(open('reports/type-registry-verification/type-registry.tsv'),delimiter='\t'))
 aux_variants={}
-for idx,v in [(2187,'placement_obstruction'),(2930,'interact'),(3362,'slayer_script'),(1994,'groups'),(4176,'social'),(4321,'waypoints'),(3786,'currency'),(3133,'entitlement_snapshot'),(3935,'player_state'),(3765,'item_skinning'),(2938,'global_storage')]:
+for idx,v in [(2187,'placement_obstruction'),(2930,'interact'),(3362,'slayer_script'),(1994,'groups'),(4176,'social'),(4321,'waypoints'),(3786,'currency'),(3133,'entitlement_snapshot'),(3935,'player_state'),(3765,'item_skinning'),(2938,'global_storage'),(1755,'container_community'),(5691,'transmog'),(4297,'stamina'),(1652,'mana')]:
  aux_variants[idx]=v
- codecs[idx]=(lambda x,offset=0,v=v:decode_player_aux_fragment(x,v,offset),lambda values,v=v:encode_player_aux_fragment(values,v))
+ codecs[idx]=(lambda x,offset=0,v=v:decode_player_aux_fragment(x,v,offset),lambda values,v=v:encode_player_aux_fragment(values,v,visual_extra=True))
 codecs[13]=(decode_position_fragment,encode_position_fragment)
-codecs[1755]=(lambda x,offset=0:decode_presence_body(x,CONTAINER_GROUPS,offset),lambda values:encode_presence_body(CONTAINER_GROUPS,values))
+
 for term,module,name in [('ObjectiveInteractor',objective_fragment,'objective'),('AttributeComponent',attribute_fragment,'attribute'),('ReactionComponent',reaction_fragment,'reaction'),('CooldownComponent',cooldown_fragment,'cooldown'),('ProgressionPools',progression_fragment,'progression')]:
  matches=[r for r in registry if term in r['name'] and r['name'].endswith('ReplicatedState') and 'ClientMessages' not in r['name']]
  if name in ('attribute','reaction','cooldown','progression'):matches=[r for r in registry if r['catalog_type_idx']=={'attribute':'129','reaction':'1927','cooldown':'2932','progression':'3681'}[name]]
