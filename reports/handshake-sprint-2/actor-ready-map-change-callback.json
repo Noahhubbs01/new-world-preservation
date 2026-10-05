@@ -1,0 +1,66 @@
+{
+  "status": "VERIFIED",
+  "requirement": "B4 correct Actor ready writer reachability",
+  "callback": "0x141038FE0",
+  "primary_vtable": "0x147FC61F8",
+  "slot": "0x1F8",
+  "slot_address": "0x147FC63F0",
+  "installer": "0x140FEC420",
+  "wrapper_call": "0x141038FE9 -> 0x14644B980; RCX retained",
+  "call_sites": [
+    {
+      "address": "0x1464681A8",
+      "function": "0x146467F50",
+      "receiver": "incoming RCX -0xA8 via RDI then RBX at146468028",
+      "argument": true,
+      "guard": "146420CC0 returns false",
+      "diagnostic": "AsyncMapUnload: no assets anywhere processing; allow map change"
+    },
+    {
+      "address": "0x14646CFD7",
+      "function": "0x14646C720",
+      "receiver": "incoming RCX retained in RDI at14646C744",
+      "argument": false,
+      "guard": "146420CC0 returns false; increment receiver +960",
+      "diagnostic": "AsyncMapUnload: allowing map change"
+    }
+  ],
+  "confidence_limits": [
+    "Call sites dispatch virtual +1F8; concrete target requires the installed CryGame primary vtable.",
+    "Whole-text literal slot census found129 matches; other receivers are not this object merely because offsets match.",
+    "This does not prove a sufficient resource recipe or a retail-client World entry."
+  ],
+  "correction": "Earlier description of wrapper as normal/asynchronous level-load completion was INFERRED. Verified diagnostics at the identified call sites describe asynchronous map unload and map-change permission.",
+  "next": "Audit14644B980 Boolean branches and pending flags, then preceding context/level load request that enters this map-change path; sufficient initial world resource recipe remains OPEN.",
+  "first_interface_join": {
+    "table": "0x147FC6880",
+    "installed_at": "0x140FEC485",
+    "receiver_offset": "0xA8",
+    "entry": "0x147FC6898",
+    "slot": "0x18",
+    "function": "0x146467F50",
+    "adjustment": "0x146468028 subtracts0xA8 to recover the same primary object"
+  },
+  "second_caller_join": {
+    "primary_table_slot": "0x98",
+    "entry": "0x147FC6290",
+    "function": "0x14646C720"
+  },
+  "processing_predicate": {
+    "function": "0x146420CC0",
+    "returns": "numJobs !=0 OR AssetBus context queue size !=0 OR waitingRefs bus count !=0",
+    "decision": "0x146420D88..0x146420D9E",
+    "diagnostic": "%snumJobs %zu, AssetBus::context.m_queue.size(): %zu, waitingRefs (from bus): %u",
+    "sources": [
+      "141417780 ->141400CE0 job count",
+      "1414047E0 context +E0 queue count when+C0 active, under+F0 lock",
+      "1463E1A50 bus query into initialized stack uint32"
+    ]
+  },
+  "callback_branches": {
+    "pending_990_nonzero": "clear+990; clear string+968; invoke interface base+28 virtual210 with copies of strings+998 and+9C0; joins14644BAD7",
+    "pending_zero_boolean_true": "skip command branch and join14644BAD7",
+    "pending_zero_boolean_false": "format command from string+968; global+78 virtual120 executes it; joins14644BAD7",
+    "common_ready_path": "first context exists at+1E0..1E8 -> first context+130 ->145A95160 at14644BAF5. No Boolean or+990 condition excludes this common native writer once preceding calls return."
+  }
+}
