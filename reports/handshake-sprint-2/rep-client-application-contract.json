@@ -1,0 +1,59 @@
+{
+  "requirement": "REP_CLIENT_APPLICATION_BYTES",
+  "status": "VERIFIED",
+  "direction": "client to preservation REP; not server-to-client",
+  "native_send": [
+    "146B706F0",
+    "146B6FFB0",
+    "146B0F430"
+  ],
+  "byte_layout": [
+    {
+      "offset": 0,
+      "width": 4,
+      "format": "BE uint32 CRC32 over bytes8..end"
+    },
+    {
+      "offset": 4,
+      "width": 4,
+      "format": "BE uint32 number of bytes8..end"
+    },
+    {
+      "offset": 8,
+      "width": 16,
+      "format": "raw correlation value; semantics opaque"
+    },
+    {
+      "offset": 24,
+      "format": "routed reflected object"
+    }
+  ],
+  "header_proof": {
+    "reserve": "146B0F478 virtual10 \u2192146AF7BA0 reserves8",
+    "correlation": "146B0F4A3 virtual20 \u2192146B0F640 writes16",
+    "body": "146B0F4C8\u2192146167110",
+    "finalize": "146B0F4E6 virtual18 \u2192146B0F350"
+  },
+  "checksum": {
+    "path": "146B0F37C\u21921412F47D0\u2192141462980",
+    "casefold": false,
+    "initial": "FFFFFFFF",
+    "final": "bitwise complement",
+    "table": "147FE6730; all256 entries matched reflected polynomial EDB88320"
+  },
+  "routing": {
+    "writer": "146167110",
+    "flags": "one byte; bit0 raw8A,bit1 raw8B; bit2 extendedstructure unsupported",
+    "presence": "one byte",
+    "identity": "1461673B0\u2192140877970 prefix uint32 compact index; zero followed by16 raw UUID bytes",
+    "body": "descriptor marshaller virtual20 at146167262"
+  },
+  "carrier_boundary": "rep-carrier-send-boundary.json proves unchanged data/size into Carrier memcpy; nativeCarrier segmentation separate from application framing",
+  "reply_contract": "rep-world-queue-dispatch-contract.json confirms server-to-client persistent prefixframer146AE44F0; asymmetric framing is preserved",
+  "implementation": "protocol/client_rep.py strict complete-buffer decode; javelin channel0 consumes routed reflected Registration instead of frame[0]; response prefix remains unchanged",
+  "remaining": [
+    "Carrier MF_CHUNKS assembly; current decoder rejects unsupported flags",
+    "real client acceptance not demonstrated",
+    "numeric Registration13 supported existing evidence; inline Registration mapping not inferred"
+  ]
+}

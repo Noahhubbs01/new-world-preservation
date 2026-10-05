@@ -1,0 +1,24 @@
+{
+  "status": "VERIFIED",
+  "source": "client/assets/Engine.pak:assetcatalog.catalog",
+  "format": "RASC version1, independently checked signature/file lengths/bounds/duplicated record identity",
+  "community_format_lead": "reports/community-index/files/new-world-tools/asset/catalog.go used as secondary structural lead; no implementation copied",
+  "catalog_sha256": "7875baffb58ee5454507e5d6e4b035705cf28e2bf02ea1310ca6058dbfd34680",
+  "catalog_entry_count": 1595260,
+  "matches": [
+    {
+      "status": "VERIFIED",
+      "row": 609120,
+      "row_offset": 24364840,
+      "path": "slices/player.dynamicslice",
+      "size": 367528,
+      "asset_uuid_raw_hex": "a660eeebebc75cb7be6bab11eb831731",
+      "asset_uuid_text": "a660eeeb-ebc7-5cb7-be6b-ab11eb831731",
+      "sub_id": 2,
+      "asset_type_uuid": "78802abf-9595-463a-8d2b-d022f906f9b1",
+      "duplicated_uuid_index_matches": true,
+      "duplicated_sub_id_matches": true
+    }
+  ],
+  "boundary": "Asset catalog mapping and owned prefab size verified; runtime resolution and local player instantiation not demonstrated. GUID raw16 copied exactly, no assumed textual conversion ordering."
+}

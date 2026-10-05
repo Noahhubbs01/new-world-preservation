@@ -1,0 +1,51 @@
+{
+  "status": "VERIFIED native sender/header/concatenation; INFERRED defensive reassembly policy",
+  "requirement": "Carrier MF_CHUNKS registration ingress",
+  "wire_order": [
+    "flags u8",
+    "payload length BEu16 unless no-length flag",
+    "channel u8 unless implicit channel flag",
+    "remaining chunks BEu16 only flags&4",
+    "sequence BEu16 unless sequential flag",
+    "reliable sequence BEu16 for reliable unless sequential reliable flag",
+    "payload bytes"
+  ],
+  "verified": [
+    {
+      "claim": "remaining count >1 sets flag4; count1 omits flag and reader defaults1",
+      "anchors": [
+        "145DCB0A0..0AC",
+        "145DCB165..19E",
+        "145DD4F79..4FBD"
+      ]
+    },
+    {
+      "claim": "oversized buffer split count ceil(length/maxchunk); reliable forced1; remaining N..1; each chunk increments channel sequence and reliable sequence",
+      "anchors": [
+        "145DCC9D9..9E8",
+        "145DCCC47",
+        "145DCCC6D..CD7",
+        "145DCCDA9..DB1"
+      ]
+    },
+    {
+      "claim": "145DD8CC0 copies first N ready-queue records in order, concatenates payloads and reports actual sum; requires caller capacity N*configured maxchunk; no per-chunk count validation visible",
+      "anchors": [
+        "145DD8EF8..8F13",
+        "145DD9046..90B9"
+      ]
+    },
+    {
+      "claim": "receive parser deduplicates and inserts into worker queue by modular16 sequence with half-range32767 comparison",
+      "anchors": [
+        "145DD542B..5534",
+        "145DD5582..55AE"
+      ]
+    }
+  ],
+  "unresolved": "Exact worker-queue to application ready-queue complete-chain promotion not closed. Do not claim native count-chain validation or ready emission policy proved.",
+  "implementation": "server/newworld_server/transport/carrier_chunks.py uses explicit session next reliable ID, contiguous reliable IDs and sequence IDs with wrap, N..1 count validation. This stricter validation and resource limits are defensive server policy. Parent integrates flags decoder and per-channel state.",
+  "validation": "8 focused tests passed: out-of-order final/start/middle, duplicates, wrap, missing middle, wrong count, wrong sequence, conflicting duplicate, bounds/channel isolation.",
+  "capture_status": "No sensitive capture contents exported or used. Static derived metadata only.",
+  "next_local_experiment": "Synthetic fragmented registration with explicit headers/count3,2,1 and literal chunks; permute, duplicate, omit middle, then verify only complete concatenation reaches CRC registration ingress. No production interaction."
+}

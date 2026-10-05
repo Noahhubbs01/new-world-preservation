@@ -1,0 +1,80 @@
+{
+  "scope": "Minimum player metadata asset/reference value contract; static joins, no client acceptance",
+  "status": "VERIFIED",
+  "native_property_mapping": [
+    {
+      "name": "AssetId",
+      "constructor": "14161C070",
+      "property_offset": "7E0",
+      "value_offset": "7F0",
+      "vtable": "148041098",
+      "registration": [
+        "14161C204",
+        "14161C20E"
+      ],
+      "reader": "1417B3670",
+      "wire": "raw UUID16 then BE uint32 sub-ID",
+      "reader_sites": [
+        "1417B369C",
+        "1417B36BE"
+      ]
+    },
+    {
+      "name": "GdeRef",
+      "property_offset": "850",
+      "value_offset": "860",
+      "vtable": "148041108",
+      "registration": [
+        "14161C27C",
+        "14161C286"
+      ],
+      "reader": "1417B3AE0",
+      "wire": "raw UUID16 only",
+      "runtime": "raw UUID at property+20; key at property+30, LE uint64 from UUID first8",
+      "reader_sites": [
+        "1417B3B26",
+        "1417B3B5B",
+        "1417B3B6A",
+        "1417B3B6E"
+      ],
+      "key_helper": "140870C50 simply copies [RDX] u64 to [RCX]"
+    }
+  ],
+  "factory_abi": {
+    "caller": "141717FC0",
+    "asset_value": "141718AE1 tests AssetId property virtual58;141718AF8/AFf copies property value+7F0/+800 into rbp-50. If not selected,141718B0E initializes null/default AssetId.141718CAF passes RDX=state+860 GdeRef, R8=stack AssetId to14178DB00.",
+    "bus": "14178DC69 R8=ClientContext;14178DC66 R9=GdeRef;14178DC61 fifth argument=AssetId;14178DC74 calls141570190.141570190 preserves R8/R9 and restores them at141570373/370 before invoking member thunk14057143C.",
+    "adjustor": "Installed table148040F38 slot0=14177E330 subtracts40 from receiver and calls141747C60 at14177E371.",
+    "registration": "Primarytable148040E88 slot58=1416772F0; constructor141619A30 installs primary and +40 secondary; activation helper registers base+40 on same bus141029380. Conditional on that component activation.",
+    "stack_correction": "Factory RBP=entryRSP-A8. Thus rbp+C0=original R8 ClientContext;rbp+C8=original R9 GdeRef;rbp+D0=fifth arg AssetId. Previous report caution swapping R8/R9 and calling fifth arg transform is CONFLICTING/superseded."
+  },
+  "runtime_identity_join": {
+    "GDE": "GdeRef+10 UUID ->GDE+78;GdeRef+20 key ->GDE+88 at1417484E6..4F9; caller GdeRef+10 corresponds property+20 raw UUID. AssetId32 copied ->GDE+F0 at1417484D6/4DE.",
+    "task": "1415EDBA0 copies GdeRef UUID/key ->task+88/+98 and AssetId32 ->task+30/+40; factory copies same allocated ClientGDE pair ->task+18. AcquireSliceAsset slot0 callback targets ClientGDEInstantiated.",
+    "asset_selection": "141747EEE..141747F19 compares supplied AssetId UUID16/subID4 to component playerAssetId+110. If equals and remotePlayerAssetId+130 valid, override value is copied for later GDE+F0. These are conditional asset substitution checks, not proof all supplied players need override.",
+    "asset_definition": "141712590 looks up GDE+F0 AssetId through141712400 and returns resolved definition+110 name; fallback is literal Slice name was not found."
+  },
+  "implementation": {
+    "module": "server/newworld_server/world/gde_metadata.py",
+    "tests": "server/tests/test_gde_metadata.py",
+    "surface": "Explicit AssetId UUID/subID encoder, explicit GdeRef runtime key helper, existing METADATA_GROUPS presence body with both fields. No component index, reflected type, record identity, outer envelope, defaults or auto emission."
+  },
+  "open_minimum_requirements": [
+    "Exact installed player asset UUID/sub-ID lookup in local owned-client catalog",
+    "Associate chosen record identity and SelfIdentification with supplied GdeRef/runtime entity; raw UUID equality of previously rejected captures remains rejected",
+    "Context/asset service active and correct slice resolved; sufficient component readiness (1413F9C40) not closed",
+    "Metadata fragment component index attachment not yet joined; helper deliberately omits it",
+    "Conditional primary component activation needed to register CreateGDE bus listener; no constructor-only sufficiency claimed"
+  ],
+  "next_action": "Read existing owned-client asset catalog lookup/index tooling; find local player.dynamicslice AssetId without exporting asset payloads. Then trace factory asset acquisition from GDE+F0 to141712400 definition/prefab and test readiness prerequisites; do not redo property codecs or index9.",
+  "supersedes": {
+    "file": "player-bootstrap-gde-factory-join.json",
+    "status": "CONFLICTING",
+    "obsolete_sections": [
+      "findings metadata third-argument attribution",
+      "factory original R8 saved rbp+C8/original R9 rbp+D0",
+      "transform terminology for fifth argument"
+    ],
+    "correction": "Factory pushes8 registers (40hex), then RBP=RSP-68hex, so RBP=entryRSP-A8hex. R8 saved entryRSP+18 ->RBP+C0;R9 saved entryRSP+20 ->RBP+C8; fifth stackarg entryRSP+28 ->RBP+D0. R8 isClientContext,R9 GdeRef value,fiftharg AssetId. Verified metadata+10..1f/+20 GDE copy remains true for GdeRef."
+  }
+}

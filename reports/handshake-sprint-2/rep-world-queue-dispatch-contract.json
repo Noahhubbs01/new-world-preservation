@@ -1,0 +1,46 @@
+{
+  "status": "VERIFIED",
+  "requirement": "REP incoming typed messages to embedded World registered dispatcher",
+  "queue_producer": [
+    "146B6EB70 materializes incoming frame with1461AC8D0 at146B6EC5F",
+    "146B6ED39 invokes146B6F190",
+    "generic fallback146B6FDB4 loadsREP+120;146B6FDE3 invokes146B6BF50",
+    "146B6BF50 moves shared typed message into mutex-protected deque, queue count+30 increment146B6C02B"
+  ],
+  "pointer_identity": [
+    "REPconnect146B6D600 constructs48bytecontrol; queueobjectcontrol+10 installedREP+120/+128 at146B6D837\u219214056D0E0",
+    "REPprimary148590AB8 slot40=146B6D090 returns exactREP+120/+128",
+    "Actorattach145A905D0 RDX sameacceptedREP preserved;145A905FE calls embeddedWorldvirtual0",
+    "Worldprimary1484FC680 slot0=146441B40\u2192146B6DBE0",
+    "146B6DBF7 invokesREPvirtual40;146B6DC01 copiesreturnedsharedqueue intoWorld+50/+58"
+  ],
+  "pump": [
+    "GCW14646D460 gatesActorstate1or2 via145A92390 at14646D47C",
+    "14646D493 passesActor=context130 andrequestwrapper=context1048 to145AA23F0",
+    "145AA2413 checksWorld+50 via146B6D010;145AA2462 pumps146B6D180 onActor+B0",
+    "146B6D180 drainsqueueWorld+50 unlessWorld+60;R8zero usesinitialqueuecount asbudget",
+    "146B6D22D removesfrontsharedtypedmessage;146B6D286 decrementscount;146B6D293 incrementsfrontindex",
+    "146B6D2C8 obtainsmessagevirtual30descriptor;140A174C0 obtains16byteUUIDkey",
+    "UUIDhashlookup usesWorld+8handlerregistry;146B6D352 invokesregisteredcallbackwithsharedmessage",
+    "UnknownUUID callsWorldvirtual8 at146B6D35D\u219214643E7B0;notallmessagesusefallback"
+  ],
+  "known_handler": [
+    "Worldconstructor1463FF5F0 registersReceivePlayerSpawnPointMsg1416F3320 throughbinder1463EF900 at14640031E",
+    "binder149F68210 invoke08=14647B3C0\u2192Worldsecondary1484FC718 slot0\u219214645C654\u219214645C660\u2192145A9FA00",
+    "ReceivePlayerSpawnPoint setsActor+BC8, independentofplayercreation/Actor+252"
+  ],
+  "incoming_byte_boundary": [
+    "146AE453C callsnativeprefixdecoder14087B5C0",
+    "parserstate+0 andexpectedsize+4 persist;146AE45AA waitsformorebytes",
+    "146AE4660 suppliesexactboundedframebuffertoREPmaterializer",
+    "No CRC/headerstrip in this audited incomingparser/materializerchain; clientoutgoingCRCwriter neednotbe symmetric"
+  ],
+  "server_implementable_contract": "AfteracceptedREP attachesActor,server-to-client prefix-framed routed/reflected typed World messages on sameREP receivepath reachUUIDregistry; no separateWorld socket/tokenhandoff required by this path. Send only independently evidenced bodies and coherentidentities. This does not establish all networkalternatives or a sufficient worldbootstrap.",
+  "limits": [
+    "Compactnumerictypes remain COMMUNITY-CORROBORATED",
+    "No liveclientworldentry/InGame demonstrated",
+    "OutgoingclientCRCwrapper may differ from incomingserverprefixframing",
+    "Routedmetadata semantic ownership and minimumresource/entityrecipe remain separate"
+  ],
+  "prior_mislabel_correction": "146B6DBE0 bindsREPqueue toWorld; it is not merelya zero/reset routine. REP+130 errorqueue is distinct andunused by this genericWorlddispatcher."
+}

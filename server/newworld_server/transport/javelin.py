@@ -37,10 +37,8 @@ from newworld_server.protocol.registration_identity import (
     RegistrationIdentityError,
     extract_registration_character_id,
 )
-from newworld_server.protocol.framing import (
-    PrefixFrameDecoder,
-    PrefixFrameError,
-)
+from newworld_server.protocol.client_rep import decode_client_rep_message
+from .carrier_chunks import ReliableChunkAssembler
 
 
 SYSTEM_CHANNEL = 3
@@ -53,6 +51,8 @@ class JavelinSession:
     carrier: CarrierState = field(default_factory=CarrierState)
     connected: bool = False
     preservation_session: PreservationSession | None = None
+    incoming_rep: ReliableChunkAssembler = field(default_factory=lambda:
+        ReliableChunkAssembler(expected_reliable_sequence=0))
 
 
 class JavelinProtocolError(ValueError):
@@ -113,29 +113,30 @@ def handle_datagram(
             responses.append(response)
             continue
 
-        # Native REP application messages on channel 0 are prefix-framed.
-        # This establishes framing only; it does not infer World routing.
+        # Client requests retain the native CRC/length/correlation envelope.
+        # Reassemble native Carrier chunks before decoding; never interpret
+        # a prefix-framed server reply as a client request.
         if record.channel != 0 or not record.payload:
             continue
-
-        decoder = PrefixFrameDecoder()
-
         try:
-            frames = decoder.feed(record.payload)
-            decoder.finish()
-        except PrefixFrameError as exc:
-            raise JavelinProtocolError(
-                f"invalid REP application framing: {exc}"
-            ) from exc
-
-        for frame in frames:
-            if not frame:
-                raise JavelinProtocolError(
-                    "empty REP application frame"
-                )
-
-            message_type = frame[0]
-            message_body = frame[1:]
+            application_buffers = (session.incoming_rep.push(
+                sequence=record.sequence,
+                reliable_sequence=record.reliable_sequence,
+                remaining_chunks=record.chunk_count,
+                payload=record.payload,
+            ) if record.reliable else [record.payload])
+        except ValueError as exc:
+            raise JavelinProtocolError("invalid REP Carrier chunk sequence") from exc
+        for application_buffer in application_buffers:
+            try:
+                incoming = decode_client_rep_message(application_buffer)
+            except ValueError as exc:
+                raise JavelinProtocolError("invalid client REP envelope") from exc
+            message = incoming.routed.message
+            if message is None:
+                continue
+            message_type = message.type_index
+            message_body = message.body
 
             request = classify_registration_request(
                 message_type,

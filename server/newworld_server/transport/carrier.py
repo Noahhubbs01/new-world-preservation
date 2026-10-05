@@ -12,7 +12,7 @@ CARRIER-01 scope:
 Intentionally excluded for now:
 - compression
 - MF_NO_LENGTH encoding
-- chunking
+- compressed/sequential record variants
 - replay machinery
 - experimental First Light compatibility paths
 """
@@ -54,6 +54,7 @@ class CarrierRecord:
     sequence: int
     reliable_sequence: int
     payload: bytes
+    chunk_count: int = 1
 
     @property
     def reliable(self) -> bool:
@@ -166,8 +167,7 @@ def encode_standard_record(record: CarrierRecord) -> bytes:
     _check_channel(record.channel)
 
     unsupported = record.flags & (
-        MF_CHUNKS
-        | MF_SEQUENTIAL_ID
+        MF_SEQUENTIAL_ID
         | MF_SEQUENTIAL_REL_ID
         | MF_NO_LENGTH
     )
@@ -182,11 +182,21 @@ def encode_standard_record(record: CarrierRecord) -> bytes:
             "CARRIER-01 records must explicitly carry their channel"
         )
 
+    if type(record.chunk_count) is not int or not 1 <= record.chunk_count <= 0xffff:
+        raise ValueError("invalid Carrier chunk count")
+    if bool(record.flags & MF_CHUNKS) != (record.chunk_count > 1):
+        raise ValueError("Carrier CHUNKS flag/count mismatch")
+    if record.chunk_count > 1 and not record.reliable:
+        raise ValueError("chunked Carrier messages require reliability")
+    if len(record.payload) > 0xffff:
+        raise ValueError("Carrier record payload exceeds uint16 length")
+
     return b"".join(
         (
             bytes((record.flags,)),
             _u16(len(record.payload)),
             bytes((record.channel,)),
+            _u16(record.chunk_count) if record.flags & MF_CHUNKS else b"",
             _u16(record.sequence),
             _u16(record.reliable_sequence),
             record.payload,
@@ -210,8 +220,7 @@ def decode_standard_records(data: bytes) -> list[CarrierRecord]:
         offset += 1
 
         unsupported = flags & (
-            MF_CHUNKS
-            | MF_SEQUENTIAL_ID
+            MF_SEQUENTIAL_ID
             | MF_SEQUENTIAL_REL_ID
             | MF_NO_LENGTH
         )
@@ -232,6 +241,15 @@ def decode_standard_records(data: bytes) -> list[CarrierRecord]:
         channel = data[offset]
         offset += 1
         _check_channel(channel)
+
+        chunk_count = 1
+        if flags & MF_CHUNKS:
+            if len(data) - offset < 6:
+                raise ValueError("truncated Carrier chunk header")
+            chunk_count = int.from_bytes(data[offset:offset + 2], "big")
+            offset += 2
+            if chunk_count <= 1 or not flags & MF_RELIABLE:
+                raise ValueError("invalid reliable Carrier chunk count")
 
         sequence = int.from_bytes(data[offset:offset + 2], "big")
         offset += 2
@@ -258,6 +276,7 @@ def decode_standard_records(data: bytes) -> list[CarrierRecord]:
                 sequence=sequence,
                 reliable_sequence=reliable_sequence,
                 payload=payload,
+                chunk_count=chunk_count,
             )
         )
 

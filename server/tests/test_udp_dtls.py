@@ -467,14 +467,19 @@ def test_udp_dtls_registration_exchange(monkeypatch):
         protocol_sessions[peer] = JavelinSession()
         protocol_sessions[peer].connected = True
 
-        from newworld_server.protocol.framing import encode_prefix_frame
+        from newworld_server.protocol.client_rep import ClientREPMessage, encode_client_rep_message
+        from newworld_server.protocol.routing import RoutedMessage
+        from newworld_server.protocol.reflected import ReflectedEnvelope
+        def native_request(data):
+            return encode_client_rep_message(ClientREPMessage(bytes(16), RoutedMessage(
+                ReflectedEnvelope(data[0], data[1:]))))
 
         request_record = CarrierRecord(
             flags=MF_RELIABLE | MF_DATA_CHANNEL,
             channel=0,
             sequence=0,
             reliable_sequence=0,
-            payload=encode_prefix_frame(
+            payload=native_request(
                 bytes([REGISTRATION_REQUEST_TYPE])
                 + b"synthetic-request"
             ),

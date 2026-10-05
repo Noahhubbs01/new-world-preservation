@@ -1,3 +1,11 @@
+# Active minimum-world-entry sprint — 2026-10-05
+
+Owner has authorized resumption. Verified branch work/gpt61-handshake-sprint, HEAD4ed8b4f51fe4fdfabca3ea98616ae5e8507f7d2a; commits6bc423e/4ed8b4f include prior checkpoint and registration identity integration. Previous baseline: 303 passed, zero skipped. Current full server suite after REP envelope, Carrier chunking, and GDE metadata work: 332 passed, 12 skipped, zero failures (2026-10-05). Six modified disassembly windows and all intentional scratch preserved.
+
+Current objective: legitimate unmodified client→preservation World→local player→InGame→camera/WASD. No milestone success demonstrated. Immediate PhaseA:146B706F0→146B6FFB0 actual application wrapper/routing and receive dispatcher; PhaseB asset/entity/resource prerequisites in parallel. Original context1140 identity producer and1530 lifecycle-state prerequisite are VERIFIED closed by character-identity-original-writer.json; do not redo older open leads. Existing identity reader is integrated into persistent logical session; Javelin currently constructs a fresh decoder per Carrier record and takes frame[0] as type. These two assumptions require native contract reconciliation.
+
+Current sections supersede historical stop/unknown-writer/emptyWorld-package text. Actor252 writers/callback object identity, Player prefab index9 and conditional Registry activation are closed; sufficient asset/resource recipe and actual REP World dispatch remain OPEN. Numeric reflected indices remain COMMUNITY-CORROBORATED. No security/protection work or Amazon production interaction; dependency sprint deferred.
+
 ## Current checkpoint: initial 48-fragment boundary closed (2026-10-04)
 
 ## Resumed frontier — 2026-10-05

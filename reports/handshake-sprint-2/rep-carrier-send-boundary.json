@@ -1,0 +1,94 @@
+{
+  "requirement": "Phase A lower Registration application buffer to Carrier send boundary",
+  "confidence": "VERIFIED native send pointer identity, unchanged bytes and bounded Carrier segmentation; directional wrapper difference must be retained",
+  "direction": "client to REP",
+  "application_contract": "Upstream 146B0F430/146B0F350 reserves and finalizes eight bytes CRC32 plus BEu32 payload length. Payload includes sixteen correlation bytes and routed typed object. This report proves that exact resulting buffer reaches Carrier unchanged. No native leading-width application prefix is added on this path.",
+  "joins": [
+    {
+      "site": "146B28E98",
+      "operation": "Transport virtual40 target146B28E50 passes buffer pair and byte flag to146B3B3B0"
+    },
+    {
+      "site": "146B3B55E..146B3B580",
+      "operation": "Manager+190 vector stores destination, whole shared buffer pair, original flags; stride32"
+    },
+    {
+      "site": "146B3C4E4..146B3C554",
+      "operation": "Worker swaps same manager+190 queue into local vector and clears manager vector under lock"
+    },
+    {
+      "site": "146B3CA56..146B3CA68",
+      "operation": "For exact queued buffer, virtual8 returns data pointer and virtual10 returns complete size"
+    },
+    {
+      "site": "146B3CAA5..146B3CAA8",
+      "operation": "Calls manager+48 virtual48 with unchanged returned data pointer and size; no offset subtraction or buffer mutation"
+    },
+    {
+      "site": "146B36EFE..146B36F03 and146B3918A..146B3918F",
+      "operation": "manager+48 receives object returned by145DC8B00"
+    },
+    {
+      "site": "145DC8BDF",
+      "operation": "Factory invokes constructor145DBA8D0 on allocated536-byte object"
+    },
+    {
+      "site": "145DBA8F6..145DBA8FD",
+      "operation": "Constructor installs primary vtable148480948"
+    },
+    {
+      "site": "148480990",
+      "operation": "primary virtual48 target140F7FB40 forwards exact pointer/size to primary virtual40"
+    },
+    {
+      "site": "148480988",
+      "operation": "primary virtual40 target145DDA6C0 chooses matching established connection and calls145DCC970"
+    },
+    {
+      "site": "145DCCA6A..145DCCA70",
+      "operation": "145DCC970 copies source pointer unchanged via147AAD05B -> PE IAT147ECA6E0 memcpy"
+    }
+  ],
+  "carrier_segmentation": {
+    "confidence": "VERIFIED",
+    "sites": [
+      "145DCC9C6..145DCC9E8",
+      "145DCCA42..145DCCA70",
+      "145DCCC47..145DCCC64",
+      "145DCCD9C..145DCCDD2"
+    ],
+    "operation": "If total size exceeds Carrier+108, calculate ceil(total/maxPiece); allocate/copy each consecutive min(remaining,maxPiece) portion, advance original pointer and decrement remaining. Each queued record stores count at+1A, piece size at+28, payload pointer at+20. Bytes are not transformed or prefix wrapped.",
+    "not_claimed": "Wire record header serialization and receiver reassembly of these transport fragments remain to be audited; this is not proof that arbitrary prefix frames may span independent completed Carrier application records."
+  },
+  "caller_parameters": {
+    "confidence": "VERIFIED numeric argument mapping only",
+    "site": "146B3CA6E..146B3CAA8",
+    "flags_zero": "Carrier virtual48 receives RCX=Carrier, RDX=whole data, R8D=whole size, R9=queued destination; stack argument5=0, argument6=1, argument7=true.",
+    "flags_nonzero": "Same data/size/destination; stack argument5=queued flags, argument6=2, argument7=false.",
+    "no_enum_assumption": "Names channel, priority and reliability are not assigned merely from argument position. Code indexing and wire writer must establish their meanings."
+  },
+  "directional_boundary": {
+    "confidence": "VERIFIED this outbound client path; opposite receive path supplied by separate investigation",
+    "rule": "Do not apply server-to-client REP leading-width prefix parsing to this client-to-REP CRC32/BE length/correlation envelope. The two directions need independent codecs.",
+    "fragment_rule": "Application CRC envelope may be split by Carrier send, but preserve transport fragmentation semantics and reassemble complete bytes before applying application parser."
+  },
+  "manual_windows": [
+    "manual-disasm/transport-queue-census.asm",
+    "manual-disasm/transport-carrier-factory.asm",
+    "manual-disasm/transport-carrier-ctor.asm",
+    "manual-disasm/transport-carrier-send.asm",
+    "manual-disasm/transport-carrier-send-main.asm",
+    "manual-disasm/transport-carrier-payload.asm"
+  ],
+  "not_claimed": [
+    "retail client acceptance",
+    "World entry",
+    "Player spawn",
+    "InGame",
+    "camera",
+    "WASD",
+    "arbitrary application stream fragmentation",
+    "server-to-client CRC envelope"
+  ],
+  "implementation_implication": "Reconcile ingress framing with native CRC32+BEu32 length+correlation+routed typed wrapper. Keep server-to-client prefix framing independent. Do not strip native CRC header before it reaches Carrier; it is application data."
+}

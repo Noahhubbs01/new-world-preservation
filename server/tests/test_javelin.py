@@ -13,7 +13,13 @@ from newworld_server.transport.javelin import (
     JavelinSession,
     handle_datagram,
 )
-from newworld_server.protocol.framing import encode_prefix_frame
+from newworld_server.protocol.client_rep import ClientREPMessage, encode_client_rep_message
+from newworld_server.protocol.routing import RoutedMessage
+from newworld_server.protocol.reflected import ReflectedEnvelope
+
+def native_request(data):
+    return encode_client_rep_message(ClientREPMessage(bytes(16), RoutedMessage(
+        ReflectedEnvelope(data[0], data[1:]))))
 from newworld_server.session import (
     PreservationSession,
     SessionPhase,
@@ -96,7 +102,7 @@ def test_non_system_channel_is_ignored():
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=encode_prefix_frame(b"\x00\x00\x00\x05\x01"),
+        payload=native_request(b"\x99\x00\x00\x05\x01"),
     )
 
     request = encode_envelope(
@@ -130,7 +136,7 @@ def test_registration_request_generates_reg01_response(monkeypatch):
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=encode_prefix_frame(
+        payload=native_request(
             bytes([REGISTRATION_REQUEST_TYPE]) + b"synthetic-request"
         ),
     )
@@ -184,7 +190,7 @@ def test_non_registration_channel_zero_message_is_ignored():
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=encode_prefix_frame(b"\x99not-registration"),
+        payload=native_request(b"\x99not-registration"),
     )
 
     request = encode_envelope(
@@ -236,7 +242,7 @@ def test_registration_uses_attached_logical_session_token():
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=encode_prefix_frame(
+        payload=native_request(
             bytes([REGISTRATION_REQUEST_TYPE])
             + bytes(4)          # fixed registration scalar
             + b"\x00"          # zero map entries
@@ -270,7 +276,10 @@ def test_registration_uses_attached_logical_session_token():
     assert logical.phase is SessionPhase.REGISTERED
 
     # Repeating Registration must preserve the same logical identity.
-    second_responses = handle_datagram(session, request)
+    from dataclasses import replace
+    next_record = replace(request_record, sequence=1, reliable_sequence=1)
+    next_request = encode_envelope(2, encode_standard_record(next_record))
+    second_responses = handle_datagram(session, next_request)
 
     assert len(second_responses) == 1
 
