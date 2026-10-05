@@ -1,0 +1,1656 @@
+{
+  "status": "VERIFIED objectstream structure and registry UUID joins; necessity UNKNOWN",
+  "source_size": 367528,
+  "consumed": 367528,
+  "nodes": 12242,
+  "components": 124,
+  "entries": [
+    {
+      "index": 18,
+      "type_uuid": "0F16A377-EAA0-47D2-8472-9EAAA680B169",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f69720",
+      "nearby_name_candidates": [
+        "TagComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d65810"
+      ]
+    },
+    {
+      "index": 26,
+      "type_uuid": "16647B0B-B7C4-4318-B578-5770265C2308",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14828b528",
+      "nearby_name_candidates": [
+        "PointsAccumulatorComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143bc3230"
+      ]
+    },
+    {
+      "index": 48,
+      "type_uuid": "207F1E2F-3129-4CD2-AF0D-8B0FE02BFF4B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480fc0e0",
+      "nearby_name_candidates": [
+        "ActionConditionCacheComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142a0ae60"
+      ]
+    },
+    {
+      "index": 60,
+      "type_uuid": "419948FD-2D35-484A-A798-CCB2B7CA0267",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148161b18",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x142f40710"
+      ]
+    },
+    {
+      "index": 71,
+      "type_uuid": "476B4B9F-9C00-4476-AFA2-2D9F1179BAD5",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14813e080",
+      "nearby_name_candidates": [
+        "ItemManagementComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142d49320"
+      ]
+    },
+    {
+      "index": 102,
+      "type_uuid": "484AE67D-ABD0-4D9C-B2C8-9BB0EEC900E0",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147fc5e68",
+      "nearby_name_candidates": [
+        "ags-javelin-dev-remote-config",
+        "Configuring remote config with bucket %s"
+      ],
+      "native_uuid_providers": [
+        "0x141048c60"
+      ]
+    },
+    {
+      "index": 113,
+      "type_uuid": "04119A9D-FD5B-43AE-B8BA-1460CA2C2A95",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147fd7e28",
+      "nearby_name_candidates": [
+        "PlatformData",
+        "slices/"
+      ],
+      "native_uuid_providers": [
+        "0x141087f10"
+      ]
+    },
+    {
+      "index": 144,
+      "type_uuid": "0EE6EE0F-7939-4AB8-B0E3-F9B3925D61EE",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f62500",
+      "nearby_name_candidates": [
+        "AudioProxyComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d62230"
+      ]
+    },
+    {
+      "index": 152,
+      "type_uuid": "15407CAA-4970-4D06-8B5C-612FBA11BB45",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148036c10",
+      "nearby_name_candidates": [
+        "CharacterComponent"
+      ],
+      "native_uuid_providers": [
+        "0x141797e50"
+      ]
+    },
+    {
+      "index": 181,
+      "type_uuid": "1E6354A4-E970-4B41-B9E1-1BE15DDDC8DE",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148038530",
+      "nearby_name_candidates": [
+        "DetectableObjectComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1417985d0"
+      ]
+    },
+    {
+      "index": 201,
+      "type_uuid": "1FF7A74B-8C58-42F2-8A68-1706D75F57D0",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148083020",
+      "nearby_name_candidates": [
+        "PersistentCategoricalProgressionData"
+      ],
+      "native_uuid_providers": [
+        "0x1425340c0"
+      ]
+    },
+    {
+      "index": 223,
+      "type_uuid": "5B7EC8B0-530E-444F-B10F-CD2F30017188",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14824ec80",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x1439e0dc0"
+      ]
+    },
+    {
+      "index": 237,
+      "type_uuid": "5DE276F6-52DB-4B91-92CC-B619746495A8",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14855a570",
+      "nearby_name_candidates": [
+        "SpellTargetIndicatorManagerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x146948fd0"
+      ]
+    },
+    {
+      "index": 251,
+      "type_uuid": "7158CE3F-E02D-44CB-BADD-BA2A43F1EFF4",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480b9148",
+      "nearby_name_candidates": [
+        "PlayerArenaComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14279d640"
+      ]
+    },
+    {
+      "index": 262,
+      "type_uuid": "78074A76-ABCB-4A97-BC60-E34CD96A7D06",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14821dc28",
+      "nearby_name_candidates": [
+        "LoreReaderComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1437b98d0"
+      ]
+    },
+    {
+      "index": 274,
+      "type_uuid": "794A5781-EB40-45CE-916F-0681E3296C7B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148300d60",
+      "nearby_name_candidates": [
+        "PlayerTimeComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14408d190"
+      ]
+    },
+    {
+      "index": 285,
+      "type_uuid": "7B1E1BFF-1B7F-4B38-A864-2AAACAE92ACC",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1481574f8",
+      "nearby_name_candidates": [
+        "54D-A576-45EDE8405B70}",
+        "PlayerSaveData"
+      ],
+      "native_uuid_providers": [
+        "0x142ec07e0"
+      ]
+    },
+    {
+      "index": 296,
+      "type_uuid": "8BD9B27A-088B-4F36-B97F-C0B479615755",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148040650",
+      "nearby_name_candidates": [
+        "AsyncRenderTransformComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1417979d0"
+      ]
+    },
+    {
+      "index": 307,
+      "type_uuid": "8D1BC97E-C55D-4D34-A460-E63C57CD0D4B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1483a73d0",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x144a4d630",
+        "0x145ce15f0",
+        "0x146394550",
+        "0x1470acd80",
+        "0x1470ad3c0"
+      ]
+    },
+    {
+      "index": 354,
+      "type_uuid": "8D1BC97E-C55D-4D34-A460-E63C57CD0D4B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1483a73d0",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x144a4d630",
+        "0x145ce15f0",
+        "0x146394550",
+        "0x1470acd80",
+        "0x1470ad3c0"
+      ]
+    },
+    {
+      "index": 496,
+      "type_uuid": "8D1BC97E-C55D-4D34-A460-E63C57CD0D4B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1483a73d0",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x144a4d630",
+        "0x145ce15f0",
+        "0x146394550",
+        "0x1470acd80",
+        "0x1470ad3c0"
+      ]
+    },
+    {
+      "index": 511,
+      "type_uuid": "8E425CD0-98E6-487A-9302-A1AD6C0D02DE",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1481be668",
+      "nearby_name_candidates": [
+        "SlayerScriptForwarderComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143327fc0"
+      ]
+    },
+    {
+      "index": 531,
+      "type_uuid": "9A67A914-3042-43E0-BBF1-1E4062AE747D",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147fc9d58",
+      "nearby_name_candidates": [
+        "TopHouseData"
+      ],
+      "native_uuid_providers": [
+        "0x141049060"
+      ]
+    },
+    {
+      "index": 548,
+      "type_uuid": "A047619D-BA24-48AA-8A82-BB21FAD14CD7",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480eac90",
+      "nearby_name_candidates": [
+        "Unable to cache landmark position for '%s'.",
+        "War landmark positions cached."
+      ],
+      "native_uuid_providers": [
+        "0x1429483b0"
+      ]
+    },
+    {
+      "index": 586,
+      "type_uuid": "A09068F0-7FB8-42E8-B4EA-9A458CAF39E9",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148131ec0",
+      "nearby_name_candidates": [
+        "ringStrength",
+        "m_targetPosSmoothingZSpringStrength"
+      ],
+      "native_uuid_providers": [
+        "0x142ca2d60"
+      ]
+    },
+    {
+      "index": 599,
+      "type_uuid": "A64D2EB2-2687-4664-874B-9C7B29B851F5",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1483132d8",
+      "nearby_name_candidates": [
+        "TriggerAreaDetectable"
+      ],
+      "native_uuid_providers": [
+        "0x14416e8c0"
+      ]
+    },
+    {
+      "index": 606,
+      "type_uuid": "ADEA0C12-C06C-B360-0887-FA1B632DEBC2",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1481f9388",
+      "nearby_name_candidates": [
+        "HunterSightComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1435d7090"
+      ]
+    },
+    {
+      "index": 622,
+      "type_uuid": "B18914F4-36F9-4C12-8072-4D6854311A71",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482c19f0",
+      "nearby_name_candidates": [
+        "ServerTransferComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143e02920"
+      ]
+    },
+    {
+      "index": 633,
+      "type_uuid": "B52D0D52-99CD-41BE-B6F7-D2519C15BF14",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14813ae60",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x142d1a500"
+      ]
+    },
+    {
+      "index": 683,
+      "type_uuid": "BEA33531-E962-4AB3-4E29-C52B8FBD1D8F",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148287c98",
+      "nearby_name_candidates": [
+        "NavMeshDebugComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143ba7130"
+      ]
+    },
+    {
+      "index": 697,
+      "type_uuid": "C5635496-0A46-4D2C-8CE3-D7F642E54FC5",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1485091f0",
+      "nearby_name_candidates": [
+        "FootstepComponent"
+      ],
+      "native_uuid_providers": [
+        "0x146518630"
+      ]
+    },
+    {
+      "index": 707,
+      "type_uuid": "C99EB110-CA74-4D95-83F0-2FCDD1FF418B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f66868",
+      "nearby_name_candidates": [
+        "SkinnedMeshComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140c811b0",
+        "0x140c811b0",
+        "0x140d650c0"
+      ]
+    },
+    {
+      "index": 748,
+      "type_uuid": "CB75B952-D0BA-A939-0465-04706EF9BE09",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148095e38",
+      "nearby_name_candidates": [
+        "aitargetingdb"
+      ],
+      "native_uuid_providers": [
+        "0x1425e3e20"
+      ]
+    },
+    {
+      "index": 766,
+      "type_uuid": "CBBB1234-4DCA-427E-80FF-E2BB0866EEB1",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f62140",
+      "nearby_name_candidates": [
+        "AudioPreloadComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d621b0"
+      ]
+    },
+    {
+      "index": 771,
+      "type_uuid": "85FD9037-A5EA-4783-B49A-7959BBB34011",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f62bf0",
+      "nearby_name_candidates": [
+        "AudioSwitchComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d62430"
+      ]
+    },
+    {
+      "index": 776,
+      "type_uuid": "8CBBB54B-7435-4D33-844D-E7F201BD581A",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f62f68",
+      "nearby_name_candidates": [
+        "AudioTriggerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d624b0"
+      ]
+    },
+    {
+      "index": 787,
+      "type_uuid": "C54C7AE6-08AA-49E0-B6CD-E1BBB4950DAF",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f62698",
+      "nearby_name_candidates": [
+        "AudioRtpcComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d622b0"
+      ]
+    },
+    {
+      "index": 791,
+      "type_uuid": "D49C4E92-E812-4A30-A1DB-9F2F1348BFC9",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f61870",
+      "nearby_name_candidates": [
+        "RtpcMeterSettings",
+        "AudioDataFollowerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d61f30"
+      ]
+    },
+    {
+      "index": 797,
+      "type_uuid": "D50340CF-A082-4B90-9933-8C42387C0C77",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147fc7dd8",
+      "nearby_name_candidates": [
+        "PlayerTypeMask"
+      ],
+      "native_uuid_providers": [
+        "0x141048fe0",
+        "0x14177c5c0",
+        "0x14177c990"
+      ],
+      "verified_name": "PlayerComponent",
+      "name_evidence": "vtable 0x148536B70 slot 0x08 returns PlayerComponent; slot 0x20 0x1468B4FB0 accepts UUID getter 0x141048FE0 = D50340CF-A082-4B90-9933-8C42387C0C77",
+      "verified_facets": [
+        {
+          "name": "PlayerComponentClientFacet",
+          "uuid": "68AF28ED-E426-49C1-9502-B1E97F6EA047",
+          "node_index": 801
+        },
+        {
+          "name": "PlayerComponentServerFacet",
+          "uuid": "E6EA5644-D713-473E-9121-7C96D7C07022",
+          "node_index": 806
+        }
+      ]
+    },
+    {
+      "index": 834,
+      "type_uuid": "006554AD-A98D-48E4-A5D6-F8A0AB3E7933",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14839cd30",
+      "nearby_name_candidates": [
+        "ObjectiveInteractorComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14495dba0"
+      ]
+    },
+    {
+      "index": 847,
+      "type_uuid": "05E9D829-20E1-40B2-A8BA-BA70B6024921",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148462bc0",
+      "nearby_name_candidates": [
+        "m_emitTelemetry",
+        "m_currencyReason"
+      ],
+      "native_uuid_providers": [
+        "0x145ce03f0"
+      ]
+    },
+    {
+      "index": 872,
+      "type_uuid": "0A0405FB-F568-404B-88CC-61BE052C2B6E",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1485343a8",
+      "nearby_name_candidates": [
+        "PlayerAppearanceComponent"
+      ],
+      "native_uuid_providers": [
+        "0x146947f50"
+      ]
+    },
+    {
+      "index": 883,
+      "type_uuid": "15DD9D56-495F-4E6F-98B5-7BE3A8364E6F",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148085578",
+      "nearby_name_candidates": [
+        "ioTrigger"
+      ],
+      "native_uuid_providers": [
+        "0x142534040"
+      ]
+    },
+    {
+      "index": 902,
+      "type_uuid": "1BD9D601-9DE8-4A8B-B115-BB534EB6020C",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148459810",
+      "nearby_name_candidates": [
+        "Missing NPC Name",
+        "OnDamageDealtInfo"
+      ],
+      "native_uuid_providers": [
+        "0x145cdfe70"
+      ]
+    },
+    {
+      "index": 959,
+      "type_uuid": "230A148B-879D-49DC-AD39-8AEA81152BA1",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148091270",
+      "nearby_name_candidates": [
+        "AbilityInstanceTrackingComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14259b760"
+      ]
+    },
+    {
+      "index": 998,
+      "type_uuid": "30ED0ACE-51DD-48B9-BA41-2FA6775CD106",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148042598",
+      "nearby_name_candidates": [
+        "ailed to activate: %s"
+      ],
+      "native_uuid_providers": [
+        "0x1417799b0",
+        "0x14252d590",
+        "0x14484abd0"
+      ]
+    },
+    {
+      "index": 1086,
+      "type_uuid": "171FA882-C8AF-41DF-BD19-09CBBFEB1C1C",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482fcd20",
+      "nearby_name_candidates": [
+        "TemporaryAffiliationComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14406ba90"
+      ]
+    },
+    {
+      "index": 1099,
+      "type_uuid": "362911E7-76A9-4D90-AFDD-166B0DBD5F13",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482029c8",
+      "nearby_name_candidates": [
+        "InventoriesComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143625350"
+      ]
+    },
+    {
+      "index": 1110,
+      "type_uuid": "3E45CEB9-1C97-40F2-8F13-38338D2A0690",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148317360",
+      "nearby_name_candidates": [
+        "PlaytestUIComponent"
+      ],
+      "native_uuid_providers": [
+        "0x144185fb0"
+      ]
+    },
+    {
+      "index": 1121,
+      "type_uuid": "4C7B898E-FA72-4166-AF07-17D6AC62B641",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480dcb38",
+      "nearby_name_candidates": [
+        "SearchContractsRequestPayload"
+      ],
+      "native_uuid_providers": [
+        "0x1428d83c0"
+      ]
+    },
+    {
+      "index": 1132,
+      "type_uuid": "58D5A000-BDED-4F36-A02D-05EF61BAC977",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480dd058",
+      "nearby_name_candidates": [
+        "FishingPolesMastersheet",
+        "FishingPoleDataManager"
+      ],
+      "native_uuid_providers": [
+        "0x1428d84c0"
+      ]
+    },
+    {
+      "index": 1143,
+      "type_uuid": "65C46E4C-4F7A-4712-ACAD-DC8B8ACFEBF5",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480daa30",
+      "nearby_name_candidates": [
+        "Bot Position: ",
+        "Target position: (%.2f, %.2f, %.2f)"
+      ],
+      "native_uuid_providers": [
+        "0x1428bc290"
+      ]
+    },
+    {
+      "index": 1154,
+      "type_uuid": "7447FB63-FA77-44EB-8605-6DBAB2BA7A00",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14821ac20",
+      "nearby_name_candidates": [
+        "ConversationComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1437770d0"
+      ]
+    },
+    {
+      "index": 1172,
+      "type_uuid": "74DB50B3-EA29-4B41-B1C4-514BEEBFA906",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1481e8760",
+      "nearby_name_candidates": [
+        "PlayerHomeComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1434fc7d0"
+      ]
+    },
+    {
+      "index": 1187,
+      "type_uuid": "7CA19851-E2D2-4925-B411-6A6051192DDA",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14824e2b0",
+      "nearby_name_candidates": [
+        "NotificationServiceComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1439e0f40"
+      ]
+    },
+    {
+      "index": 1198,
+      "type_uuid": "870B0417-268B-4941-85C0-D285317BBCEF",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14812c718",
+      "nearby_name_candidates": [
+        "ActionConditionIfUIAction"
+      ],
+      "native_uuid_providers": [
+        "0x142c53be0"
+      ]
+    },
+    {
+      "index": 1209,
+      "type_uuid": "A01FCACA-31D5-45BE-89FC-64506BED2B4E",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148131698",
+      "nearby_name_candidates": [
+        "CameraLockComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142ca2960"
+      ]
+    },
+    {
+      "index": 1270,
+      "type_uuid": "A42A47DB-4F14-41C6-81D1-19A95BA99F84",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1481acc58",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x143268910"
+      ]
+    },
+    {
+      "index": 1288,
+      "type_uuid": "A42B5703-1534-7A65-79FB-5EF7D436A98F",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480ce0a8",
+      "nearby_name_candidates": [
+        "Required resources count %d",
+        "Couldn't retrieve required resources"
+      ],
+      "native_uuid_providers": [
+        "0x142844610"
+      ]
+    },
+    {
+      "index": 1299,
+      "type_uuid": "B5A705AF-93A1-4059-A67C-988A44154FA5",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480cdd28",
+      "nearby_name_candidates": [
+        "effect is replicated to the client(DisplayName, Description, PlaceholderIcon, ShowInUITray)."
+      ],
+      "native_uuid_providers": [
+        "0x142844690"
+      ]
+    },
+    {
+      "index": 1310,
+      "type_uuid": "B5F89002-4A4D-4411-9C8F-1DEA20AFDA4C",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1483071f8",
+      "nearby_name_candidates": [
+        "CampingComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1440e8820"
+      ]
+    },
+    {
+      "index": 1330,
+      "type_uuid": "BB138496-F52D-402F-8D96-033E28CFF4CB",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480d5b18",
+      "nearby_name_candidates": [
+        "Day",
+        "Unable to locate gather target"
+      ],
+      "native_uuid_providers": [
+        "0x14288fdb0"
+      ]
+    },
+    {
+      "index": 1348,
+      "type_uuid": "9FD28B9A-514B-48CC-9343-6894406EF23F",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1483a3ab0",
+      "nearby_name_candidates": [
+        "InteractorUIComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1449a9680"
+      ]
+    },
+    {
+      "index": 1397,
+      "type_uuid": "C2314673-78FD-4306-8252-A228AF0C8989",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147fc9c28",
+      "nearby_name_candidates": [
+        "combat",
+        "debug"
+      ],
+      "native_uuid_providers": [
+        "0x1410492e0"
+      ]
+    },
+    {
+      "index": 1409,
+      "type_uuid": "CB0E9CF2-72FC-4A86-92B9-D794B1B0B9A1",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148303bf8",
+      "nearby_name_candidates": [
+        "TrackableComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1440a5410"
+      ]
+    },
+    {
+      "index": 1420,
+      "type_uuid": "CD88BC6F-2EDE-4916-A4B0-2144EBE39EAC",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480ba5b8",
+      "nearby_name_candidates": [
+        "AttributeComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14279d3c0"
+      ]
+    },
+    {
+      "index": 1438,
+      "type_uuid": "D2671994-3011-4BFE-BB0B-C206B742070E",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14854da38",
+      "nearby_name_candidates": [
+        "CombatStatusComponent"
+      ],
+      "native_uuid_providers": [
+        "0x146944ed0"
+      ]
+    },
+    {
+      "index": 1452,
+      "type_uuid": "D5085D04-2522-4585-9E65-D337C5BBB8A7",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f61a68",
+      "nearby_name_candidates": [
+        "AudioEnvironmentComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d62030"
+      ]
+    },
+    {
+      "index": 1456,
+      "type_uuid": "D81B28DC-7F57-48A8-A501-B56BB02FB18A",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14831aeb0",
+      "nearby_name_candidates": [
+        "HUDComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1441fb320"
+      ]
+    },
+    {
+      "index": 1515,
+      "type_uuid": "E24CBFF0-2531-4F8D-A8AB-47AF4D54BCD2",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f5be50",
+      "nearby_name_candidates": [
+        "s/Road/defaultRoad"
+      ],
+      "native_uuid_providers": [
+        "0x140083220",
+        "0x140142be0",
+        "0x14016ad30",
+        "0x140188fc0",
+        "0x1401d3b60",
+        "0x1401e13d0",
+        "0x1401f5f00",
+        "0x1401f9b40"
+      ]
+    },
+    {
+      "index": 1520,
+      "type_uuid": "E39C42D5-A8CA-44CC-A482-B6793003DB7D",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482c1f00",
+      "nearby_name_candidates": [
+        "ServerTransferComponentServerFacet"
+      ],
+      "native_uuid_providers": [
+        "0x143e02ca0"
+      ]
+    },
+    {
+      "index": 1531,
+      "type_uuid": "E87B03E6-4AFC-4397-8B23-F3503322D352",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1481bb330",
+      "nearby_name_candidates": [
+        "InstancedSlayerScriptComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1432f43b0"
+      ]
+    },
+    {
+      "index": 1549,
+      "type_uuid": "EFC5D83C-A790-6A1F-F6F2-150E05D4D093",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480f7cd0",
+      "nearby_name_candidates": [
+        "TerritoryDetectorComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142a0b2e0"
+      ]
+    },
+    {
+      "index": 1562,
+      "type_uuid": "F4E8FE37-BD22-48A3-903C-F95368516EB8",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148141dc8",
+      "nearby_name_candidates": [
+        "PlayerTradeComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142d95420"
+      ]
+    },
+    {
+      "index": 1579,
+      "type_uuid": "0167E3E7-5FBC-42C8-B832-94BCFD82BAC6",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148102da8",
+      "nearby_name_candidates": [
+        "PlayerSettingsComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142a677a0"
+      ]
+    },
+    {
+      "index": 1711,
+      "type_uuid": "0C646367-B9D2-4833-935E-4DD800D8E308",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148082938",
+      "nearby_name_candidates": [
+        "DebugRenderComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142533740"
+      ]
+    },
+    {
+      "index": 1722,
+      "type_uuid": "1154125C-DC3E-479F-B336-41B76E1963E7",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148530200",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x146944350"
+      ]
+    },
+    {
+      "index": 1738,
+      "type_uuid": "194B3BCF-E9B8-444B-951C-0914BA5328E7",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14855a988",
+      "nearby_name_candidates": [
+        "UnstuckComponent"
+      ],
+      "native_uuid_providers": [
+        "0x146949550"
+      ]
+    },
+    {
+      "index": 1749,
+      "type_uuid": "19D2CFC0-FB6F-4229-8694-CADDEC635EA1",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1481fa8b8",
+      "nearby_name_candidates": [
+        "ActivateVirtualInputComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1435d6d90"
+      ]
+    },
+    {
+      "index": 1760,
+      "type_uuid": "1B7C5203-9FA5-408D-877A-B5D634C1D963",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148550848",
+      "nearby_name_candidates": [
+        "DefenseCollisionComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1469456d0"
+      ]
+    },
+    {
+      "index": 1775,
+      "type_uuid": "25C175EE-78D5-4C59-A615-8BA5F64BE3B6",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482ee6e0",
+      "nearby_name_candidates": [
+        "SpectatorModeComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143fcecf0"
+      ]
+    },
+    {
+      "index": 1786,
+      "type_uuid": "32F0711B-235E-43EE-9687-253AE1FCD68A",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14838a9c0",
+      "nearby_name_candidates": [
+        "ActionInputBundle"
+      ],
+      "native_uuid_providers": [
+        "0x14486e970"
+      ]
+    },
+    {
+      "index": 1798,
+      "type_uuid": "3458A5A9-F332-4A5E-83D1-414BD3D8B15F",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480d6f90",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x14289cf70"
+      ]
+    },
+    {
+      "index": 1809,
+      "type_uuid": "349223A9-34FB-48D1-AEEE-538EF3CFA2F4",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480be4e0",
+      "nearby_name_candidates": [
+        "3038C}"
+      ],
+      "native_uuid_providers": [
+        "0x1427c50f0"
+      ]
+    },
+    {
+      "index": 1837,
+      "type_uuid": "446D036F-BACF-4FB0-97A8-83E6E7DF37A8",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480c7f68",
+      "nearby_name_candidates": [
+        "BotComponentServerFacet"
+      ],
+      "native_uuid_providers": [
+        "0x14280d450"
+      ]
+    },
+    {
+      "index": 1857,
+      "type_uuid": "4538C76C-269B-4CD6-B414-AD7A5609D0A6",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1485466d8",
+      "nearby_name_candidates": [
+        "CriticalHitsComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1469453d0"
+      ]
+    },
+    {
+      "index": 1869,
+      "type_uuid": "464897B9-A090-437F-865F-C4E1B7A54148",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1485595e8",
+      "nearby_name_candidates": [
+        "PlayerDataBroadcastComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1469481d0"
+      ]
+    },
+    {
+      "index": 1880,
+      "type_uuid": "504323CB-F59A-4C94-A32B-DDF174102C58",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148462be8",
+      "nearby_name_candidates": [
+        "m_emitTelemetry",
+        "m_currencyReason"
+      ],
+      "native_uuid_providers": [
+        "0x145ce0a70"
+      ]
+    },
+    {
+      "index": 1891,
+      "type_uuid": "5786DE60-E458-4D42-8E3E-CEA8B5B61A7C",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148297ec8",
+      "nearby_name_candidates": [
+        "SpawnerReverseDetectionComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143c34160"
+      ]
+    },
+    {
+      "index": 1905,
+      "type_uuid": "5B3EC9F6-A66D-4759-9A60-586A947635F9",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480d0d68",
+      "nearby_name_candidates": [
+        "onData",
+        "You must specify either Entity or DestroyAll"
+      ],
+      "native_uuid_providers": [
+        "0x14285f6a0"
+      ]
+    },
+    {
+      "index": 1937,
+      "type_uuid": "6061B5D3-AAB0-4369-96D7-A85B3747178D",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14820c108",
+      "nearby_name_candidates": [
+        "PerkConditionComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14369fe70"
+      ]
+    },
+    {
+      "index": 1948,
+      "type_uuid": "6213000E-DDCA-8598-398F-DD8DDDFD538B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480e78c0",
+      "nearby_name_candidates": [
+        "rId Search specified. Using Id %s",
+        "BlobSizeKb not specified, but is required for operation"
+      ],
+      "native_uuid_providers": [
+        "0x14292e440"
+      ]
+    },
+    {
+      "index": 1959,
+      "type_uuid": "62620B33-6F37-418B-9C4F-62AD6058D54D",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148139870",
+      "nearby_name_candidates": [
+        "PlayerPositionTrackingComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142d1a380"
+      ]
+    },
+    {
+      "index": 1973,
+      "type_uuid": "6354BCD9-1603-4510-B496-51A876604942",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14855b788",
+      "nearby_name_candidates": [
+        "WorldBoundTrackerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x146949b50"
+      ]
+    },
+    {
+      "index": 1990,
+      "type_uuid": "6585D0E9-22E5-44EB-994E-CC80229FCD68",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148102418",
+      "nearby_name_candidates": [
+        "PlayerInputFiltersComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142a675a0"
+      ]
+    },
+    {
+      "index": 2030,
+      "type_uuid": "70743672-84CB-41FB-9A71-B91C0AD6042A",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148218750",
+      "nearby_name_candidates": [
+        "LootTrackerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143777550"
+      ]
+    },
+    {
+      "index": 2048,
+      "type_uuid": "75EC9602-C0A2-41D4-8CD7-C9A593C228B7",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148457b38",
+      "nearby_name_candidates": [
+        "m_bColorId",
+        "m_aColorId"
+      ],
+      "native_uuid_providers": [
+        "0x145ce0670"
+      ]
+    },
+    {
+      "index": 2078,
+      "type_uuid": "7ADD8CF1-4C5A-46D5-B856-C70189D3DEA2",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480ca3d0",
+      "nearby_name_candidates": [
+        "Manually terminated for re-execution",
+        "Manually Stopped"
+      ],
+      "native_uuid_providers": [
+        "0x1428198b0"
+      ]
+    },
+    {
+      "index": 2089,
+      "type_uuid": "825DB218-2B8A-415F-AF40-B3574D08179D",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14808c088",
+      "nearby_name_candidates": [
+        "3E8-B7A7-C0EB0C829E2D}"
+      ],
+      "native_uuid_providers": [
+        "0x14256b9b0"
+      ]
+    },
+    {
+      "index": 2200,
+      "type_uuid": "8A75053B-76B2-4858-A193-DA37F956AFDB",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148312ba8",
+      "nearby_name_candidates": [
+        "TraversalComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14416e640"
+      ]
+    },
+    {
+      "index": 2253,
+      "type_uuid": "8B53A647-2D32-4BC4-8D70-C8E0B8361190",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148219af0",
+      "nearby_name_candidates": [
+        "RewardTrackComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143777850"
+      ]
+    },
+    {
+      "index": 2264,
+      "type_uuid": "9137A377-CAAF-4D28-91BD-E511A6648AD5",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482eb488",
+      "nearby_name_candidates": [
+        "SpectatedPlayerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143fb2e90"
+      ]
+    },
+    {
+      "index": 2276,
+      "type_uuid": "9E420223-AF07-4A32-B0E3-348B3CA5BD48",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1485446f0",
+      "nearby_name_candidates": [
+        "AttackHeightRetargetComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1469444d0"
+      ]
+    },
+    {
+      "index": 2301,
+      "type_uuid": "A41E5587-84E6-4736-8E4A-A82CF05E6026",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148557480",
+      "nearby_name_candidates": [
+        "PlayerAOIComponent"
+      ],
+      "native_uuid_providers": [
+        "0x146947dd0"
+      ]
+    },
+    {
+      "index": 2312,
+      "type_uuid": "AEA91927-91BE-419B-8688-68EA5294111B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482099b8",
+      "nearby_name_candidates": [
+        "ItemSkinningComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14365d730"
+      ]
+    },
+    {
+      "index": 2323,
+      "type_uuid": "B07C16BA-216D-4C60-B4DA-9E221E2CF2EC",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148150820",
+      "nearby_name_candidates": [
+        "m_craftingStationAsset",
+        "m_craftingStationEntry"
+      ],
+      "native_uuid_providers": [
+        "0x142e6b610"
+      ]
+    },
+    {
+      "index": 2353,
+      "type_uuid": "B7F335FF-5B90-4055-8116-2845E33D4048",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480ccb28",
+      "nearby_name_candidates": [
+        "Empty reference input",
+        "Using numeric operators with non numeric values"
+      ],
+      "native_uuid_providers": [
+        "0x142836890"
+      ]
+    },
+    {
+      "index": 2392,
+      "type_uuid": "BD9A0B09-3B41-4773-9159-ABD47955FAC1",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147fc9c78",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x141049460"
+      ]
+    },
+    {
+      "index": 2415,
+      "type_uuid": "C3E7ADF7-4B15-48BA-8BD9-96C18D13B029",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482af398",
+      "nearby_name_candidates": [
+        "PlayerQuickCourseComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143d007a0"
+      ]
+    },
+    {
+      "index": 2427,
+      "type_uuid": "C579A5CB-1724-4753-8517-AB8DFB5ED52F",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148457b60",
+      "nearby_name_candidates": [
+        "m_bColorId",
+        "m_aColorId"
+      ],
+      "native_uuid_providers": [
+        "0x145ce06f0"
+      ]
+    },
+    {
+      "index": 2443,
+      "type_uuid": "C8302BBB-4E78-4041-A904-F2EBE3337CAB",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1480cad30",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x14281e5f0"
+      ]
+    },
+    {
+      "index": 2473,
+      "type_uuid": "C927CF87-CD02-4201-BFAD-CB5956586467",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f6b140",
+      "nearby_name_candidates": [
+        "MotionParameterSmoothingComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d63b70"
+      ]
+    },
+    {
+      "index": 2485,
+      "type_uuid": "D114E94A-4590-4A29-8BD5-D12AE2622A43",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147f76ad0",
+      "nearby_name_candidates": [
+        "VegetationBendingComponent"
+      ],
+      "native_uuid_providers": [
+        "0x140d65d90"
+      ]
+    },
+    {
+      "index": 2495,
+      "type_uuid": "DAEF0D19-D78D-40C4-931C-839D19A78403",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x1482808e8",
+      "nearby_name_candidates": [
+        "OwnershipMessageComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143b46600"
+      ]
+    },
+    {
+      "index": 2510,
+      "type_uuid": "DE59431A-D644-4C47-BECE-9B80908CED78",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148173cc0",
+      "nearby_name_candidates": [
+        "EconomyTrackerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143050100"
+      ]
+    },
+    {
+      "index": 2521,
+      "type_uuid": "DE8B6DD8-3D34-4AF9-A0B3-8FCCCA1AD533",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14836e870",
+      "nearby_name_candidates": [
+        "VegetationAudioComponent"
+      ],
+      "native_uuid_providers": [
+        "0x1447730d0"
+      ]
+    },
+    {
+      "index": 2524,
+      "type_uuid": "E29A05BE-9934-474E-8B94-6095E772D157",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148134f68",
+      "nearby_name_candidates": [
+        "PvPSpectatorCamControllerComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142ccdc30"
+      ]
+    },
+    {
+      "index": 2536,
+      "type_uuid": "E2D664DA-8BF8-4AD2-A15A-3F28EAC94F9B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148313660",
+      "nearby_name_candidates": [
+        "PlayerTurretComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14416e4c0"
+      ]
+    },
+    {
+      "index": 2549,
+      "type_uuid": "E3A3B44D-2E89-4F70-845A-07AE7D4BBF01",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148131798",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x142ca26e0"
+      ]
+    },
+    {
+      "index": 2562,
+      "type_uuid": "EA877E94-F1E7-4E27-8D90-F80C0938656D",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14815adc8",
+      "nearby_name_candidates": [
+        "PlayerCutsceneComponent"
+      ],
+      "native_uuid_providers": [
+        "0x142f0df70"
+      ]
+    },
+    {
+      "index": 2638,
+      "type_uuid": "F8DEA8E4-2D5B-4DC9-9EAA-FC47BE020321",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14822a088",
+      "nearby_name_candidates": [
+        "MaterialEffectComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14385a630"
+      ]
+    },
+    {
+      "index": 2649,
+      "type_uuid": "FB28974A-F3A8-43F7-A34C-E4CA81B79519",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x148035ca8",
+      "nearby_name_candidates": [
+        "InterestComponent"
+      ],
+      "native_uuid_providers": [
+        "0x14179abd0"
+      ]
+    },
+    {
+      "index": 2654,
+      "type_uuid": "399CC98C-FA72-4A87-A855-B66478B16B4B",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x14829e7f0",
+      "nearby_name_candidates": [
+        "NavMeshConstraintComponent"
+      ],
+      "native_uuid_providers": [
+        "0x143c70000"
+      ]
+    },
+    {
+      "index": 2659,
+      "type_uuid": "DA83400A-0CBC-4639-86BB-635F97C375A7",
+      "name": null,
+      "known_nested_types": [],
+      "native_uuid_va": "0x147fc7d20",
+      "nearby_name_candidates": [],
+      "native_uuid_providers": [
+        "0x141048d60"
+      ]
+    }
+  ],
+  "nearby_name_candidates_status": "INFERRED leads only; adjacency does not establish type names"
+}

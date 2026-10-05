@@ -12,7 +12,7 @@ Registration/REP acceptance -> persistent session and World routing -> World con
 | --- | --- | --- |
 | Accepted REP response and live session | BOOT-CRITICAL | VERIFIED acceptance sets response owner +0x601; minimum token/flag profile unresolved. |
 | ActorGameConnection state +0xA0=2 | ACTOR-CRITICAL | VERIFIED SelfIdentification handler -> 145A87010. |
-| ActorGameConnection +0xBC8=1 | SPAWN-CRITICAL | VERIFIED LevelInfo handler -> 145A9FA00; level/resource sufficient subset unresolved. |
+| ActorGameConnection +0xBC8=1 | SPAWN-CRITICAL | VERIFIED setter 145A9FA00 via callback 14645C660; direct LevelInfo-to-setter attribution not established; sufficient level context unresolved. |
 | ActorGameConnection +0x252=true | SPAWN-CRITICAL | VERIFIED writer 142FFBC50 requires valid matching runtime references. |
 | PlayerRegistry service | SPAWN-CRITICAL | VERIFIED initializer 146845930 allocates 0x140 and calls 146713F00. Constructor creates an empty registry; service existence alone is insufficient. |
 | Registry player +0x8 and live validity pointer +0x10 | SPAWN-CRITICAL | VERIFIED registry virtual +0x30 (146800D10) requires both pointers and a nonzero validity byte. |
@@ -50,6 +50,8 @@ VERIFIED 14644A070 transitions:
 | WaitingForActorGameConnection B -> C | 145A92370: Actor +0xA0 == 2. |
 | WaitingForSpawnPoint C -> D | 145A905C0: Actor +0xBC8 == 1. |
 | WaitingForPlayerSpawn D -> E/InGame | 145A923C0: Actor +0x252; PlayerRegistry 141026080 nonnull; registry virtual +0x30 returns nonnull live player. |
+
+Readiness correction: 146446800 is named `LevelInfoChanged` by its native diagnostic strings and has Boolean listener validation, active-context, version-change and master-player/reload checks. It does not directly call 145A9FA00. Native tail-jump census finds 14645C660 -> 145A9FA00; that callback is reached through adjustor thunk 14645C654 in secondary vtable 1484FC718. The LevelInfo handler uses a different adjustor 1464467E8 in secondary vtable 1484FC748. Their event connection must be traced; previous direct-arrow attribution was too strong. No unconditional LevelInfo readiness or empty-marker sufficiency is claimed.
 
 142FFBC50 sets +0x252 after runtime reference matching. 1434985C0 first requires valid references; where resolved handles are present, 145BDBDB0 requires matching nonnull handle identity; where UUIDs are present, 145BDB020 requires nonzero equal UUIDs. Both comparisons apply when both forms exist. An empty reflected SpawnPoint marker (1414E3930) is not a sufficient actor/reference or position bootstrap.
 
@@ -100,14 +102,14 @@ Audit sources: rep_server.py, login/registration.py, transport/javelin.py, proto
 | --- | --- | --- |
 | 1 | B1: accepted session/token profile and World routing continuity; VERIFIED missing implementation, semantics unknown; medium/high | Trace existing response token/flag consumers and endpoint assignment. Preserved streams and static code exist. |
 | 2 | B2: required replica/runtime owner, context identity and +0x2B8 target; VERIFIED unresolved bridge; high | Follow 14683C8D0/146929DF0/context virtual +0x248 and runtime entity creation/attachment (PlayerComponent owner class now verified). Existing native evidence exists; not exhausted. |
-| 3 | B3: sufficient LevelInfo/resource context; VERIFIED layout, sufficiency unknown; medium/high | Trace 146446800 -> 145A9FA00 consumers and default branches against two decoded examples. |
+| 3 | B3: sufficient LevelInfo/resource context and readiness callback source; VERIFIED layout, sufficiency unknown; medium/high | Trace LevelInfo handler 146446800 validation/context branches and separate readiness callback 14645C660 -> tail 145A9FA00. Join their interface events before claiming causality. |
 | 4 | B4: actor/spawn reference association supplying +0x252 and live registry; VERIFIED gate, sufficient recipe unknown; high | Follow callers of 142FFBC50 and runtime reference resolution. Existing native evidence exists; not exhausted. |
 | 5 | B5: minimal movement input/reconciliation path; VERIFIED missing server implementation; high | Map existing captured outgoing message types to native consumers and live local-actor movement provider. |
 | 6 | B6: legitimate controlled client endpoint outside restricted SSH network namespace; VERIFIED environment limitation; administrator/test dependent | nw-work loopback tests cannot expose a LAN endpoint. Need administrator-managed isolated service and legitimate client routing/trust configuration. |
 
 ## 10. Exact evidence needed
 
-B1: a traced source-to-consumer profile for token/session/endpoint values, then an isolated registration-to-World observation. B2: wire-to-runtime entity identity/creation, component attachment and context character-ID getter, with a captured record association or controlled creation observation. B3: level context branches that actually set readiness, including failure/default behavior. B4: source of the two references passed to 142FFBC50 and the object creation needed for their handle/UUID match. B5: outgoing movement message layout, target/sequence semantics and server acknowledgement/update behavior. B6: administrator-provided isolated reachable test endpoint plus already-supported legitimate client configuration; no credentials, personal private keys or security modifications.
+B1: a traced source-to-consumer profile for token/session/endpoint values, then an isolated registration-to-World observation. B2: wire-to-runtime entity identity/creation, component attachment and context character-ID getter, with a captured record association or controlled creation observation. B3: sufficient level-context branches and the incoming event that dispatches readiness callback 14645C660, including failure/default behavior. B4: source of the two references passed to 142FFBC50 and the object creation needed for their handle/UUID match. B5: outgoing movement message layout, target/sequence semantics and server acknowledgement/update behavior. B6: administrator-provided isolated reachable test endpoint plus already-supported legitimate client configuration; no credentials, personal private keys or security modifications.
 
 New captures are not yet asserted necessary for B1-B5: bounded existing-evidence attacks must complete first. If static paths leave runtime-only values, capture only the smallest transition and export redacted metadata sufficient to join those objects.
 
@@ -120,3 +122,7 @@ After B1-B4 close sufficiently, implement one persistent session and the smalles
 **CAN ATTEMPT WORLD ENTRY NOW: NO — 6 remaining blockers.** This document is the current audit checkpoint; analysis continues on existing evidence and will revise the count as requirements close. No client experiment or gameplay success claimed. Main is untouched.
 
 The subsequent retail dependency/compatibility sprint remains deferred: human-readable evidence map of launch/authentication/endpoint/trust/platform dependencies, beginning with least-invasive supported configuration. It is not automatically executed here. EAC/security investigation or circumvention and Amazon production interference remain outside this handshake pass.
+
+### Player prefab runtime bridge (existing-evidence audit)
+
+VERIFIED: the existing `slices/player.dynamicslice` extracts with matching size/CRC into excluded evidence. Its binary ObjectStream v3 parses completely: 367,528 bytes, one root, 12,242 nodes, maximum depth 14. The entity components container has 124 entries. The PlayerComponent entry UUID `{D50340CF-A082-4B90-9933-8C42387C0C77}` matches native vtable `0x148536B70` cast `0x1468B4FB0` and getter `0x141048FE0`. Its base FacetedComponent nests the exact PlayerComponentClientFacet and PlayerComponentServerFacet UUIDs. This closes the prefab-to-runtime-type identity bridge; it does not establish the network AssetId/GdeRef association or prove that all 124 components are necessary. Neighboring native string labels in the component metadata report are INFERRED search leads only. Asset bytes and full node metadata remain excluded under the evidence directory; the committed report contains only derived type/offset relationships. B2 remains open for entity creation, activation, and character-context binding.

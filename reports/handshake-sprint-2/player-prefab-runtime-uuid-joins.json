@@ -1,0 +1,89 @@
+[
+  {
+    "uuid": "65CD8F3E-73AA-43E9-8D9A-B5AE43F624F9",
+    "locations": [
+      {
+        "va": "0x14802f049",
+        "refs": [
+          {
+            "address": "0x141798f1b",
+            "function": "0x141798ed0",
+            "text": "141798f1b:\t48 8d 15 26 61 89 06 \tlea    rdx,[rip+0x6896126]        # 0x14802f048"
+          }
+        ],
+        "nearby_native_names": [
+          "FacetedComponent",
+          "{"
+        ]
+      }
+    ]
+  },
+  {
+    "uuid": "D50340CF-A082-4B90-9933-8C42387C0C77",
+    "locations": [
+      {
+        "va": "0x147fc7dd9",
+        "refs": [
+          {
+            "address": "0x14104902b",
+            "function": "0x141048fe0",
+            "text": "14104902b:\t48 8d 15 a6 ed f7 06 \tlea    rdx,[rip+0x6f7eda6]        # 0x147fc7dd8"
+          },
+          {
+            "address": "0x14177c718",
+            "function": "0x14177c5c0",
+            "text": "14177c718:\t48 8d 15 b9 b6 84 06 \tlea    rdx,[rip+0x684b6b9]        # 0x147fc7dd8"
+          },
+          {
+            "address": "0x14177cae6",
+            "function": "0x14177c990",
+            "text": "14177cae6:\t48 8d 15 eb b2 84 06 \tlea    rdx,[rip+0x684b2eb]        # 0x147fc7dd8"
+          }
+        ],
+        "nearby_native_names": [
+          "PlayerTypeMask",
+          "{EF14A49B-589C-4A50-B471-857DF6E2722A}",
+          "{"
+        ]
+      }
+    ]
+  },
+  {
+    "uuid": "68AF28ED-E426-49C1-9502-B1E97F6EA047",
+    "locations": [
+      {
+        "va": "0x148535d81",
+        "refs": [
+          {
+            "address": "0x14694811b",
+            "function": "0x1469480d0",
+            "text": "14694811b:\t48 8d 15 5e dc be 01 \tlea    rdx,[rip+0x1bedc5e]        # 0x148535d80"
+          }
+        ],
+        "nearby_native_names": [
+          "PlayerComponentClientFacet",
+          "{"
+        ]
+      }
+    ]
+  },
+  {
+    "uuid": "E6EA5644-D713-473E-9121-7C96D7C07022",
+    "locations": [
+      {
+        "va": "0x148536891",
+        "refs": [
+          {
+            "address": "0x14694819b",
+            "function": "0x146948150",
+            "text": "14694819b:\t48 8d 15 ee e6 be 01 \tlea    rdx,[rip+0x1bee6ee]        # 0x148536890"
+          }
+        ],
+        "nearby_native_names": [
+          "PlayerComponentServerFacet",
+          "{"
+        ]
+      }
+    ]
+  }
+]

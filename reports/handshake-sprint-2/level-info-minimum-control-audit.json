@@ -1,0 +1,22 @@
+[
+  {
+    "sequence": "0x10",
+    "bytes": 106,
+    "entry_count": 1,
+    "flag_a": true,
+    "value": 1,
+    "flag_b": true,
+    "flag_c": false,
+    "full_roundtrip": true
+  },
+  {
+    "sequence": "0x4d",
+    "bytes": 106,
+    "entry_count": 1,
+    "flag_a": true,
+    "value": 1,
+    "flag_b": true,
+    "flag_c": false,
+    "full_roundtrip": true
+  }
+]
