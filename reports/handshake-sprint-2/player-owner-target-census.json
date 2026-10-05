@@ -1,0 +1,23 @@
+{
+  "methods_scanned": 52,
+  "max_window": 6000,
+  "findings": [
+    {
+      "slot": "0x58",
+      "function": "0x141677290",
+      "window": 88,
+      "hits": [
+        "   1416772ad:\t8b 92 b8 02 00 00    \tmov    edx,DWORD PTR [rdx+0x2b8]",
+        "   1416772d3:\t8b 90 b8 02 00 00    \tmov    edx,DWORD PTR [rax+0x2b8]"
+      ]
+    },
+    {
+      "slot": "0xe8",
+      "function": "0x14688d000",
+      "window": 1318,
+      "hits": [
+        "   14688d092:\t48 8d 96 b8 02 00 00 \tlea    rdx,[rsi+0x2b8]"
+      ]
+    }
+  ]
+}

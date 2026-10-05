@@ -1,0 +1,71 @@
+{
+  "source": "native constructor 146713F00 installed by 146845930",
+  "vtable": "0x148559DC0",
+  "slots": [
+    {
+      "slot": "0x0",
+      "function": "0x1416a6ac0",
+      "bounded_bytes": 64
+    },
+    {
+      "slot": "0x8",
+      "function": "0x14675fae0",
+      "bounded_bytes": 163
+    },
+    {
+      "slot": "0x10",
+      "function": "0x146928d80",
+      "bounded_bytes": 216
+    },
+    {
+      "slot": "0x18",
+      "function": "0x146916bc0",
+      "bounded_bytes": 119
+    },
+    {
+      "slot": "0x20",
+      "function": "0x146769980",
+      "bounded_bytes": 280
+    },
+    {
+      "slot": "0x28",
+      "function": "0x14690b000",
+      "bounded_bytes": 536
+    },
+    {
+      "slot": "0x30",
+      "function": "0x146800d10",
+      "bounded_bytes": 64
+    },
+    {
+      "slot": "0x38",
+      "function": "0x146800e30",
+      "bounded_bytes": 149
+    },
+    {
+      "slot": "0x40",
+      "function": "0x146800d70",
+      "bounded_bytes": 183
+    },
+    {
+      "slot": "0x48",
+      "function": "0x146800d30",
+      "bounded_bytes": 46
+    },
+    {
+      "slot": "0x50",
+      "function": "0x14684d1f0",
+      "bounded_bytes": 57
+    },
+    {
+      "slot": "0x58",
+      "function": "0x14684cd60",
+      "bounded_bytes": 190
+    },
+    {
+      "slot": "0x60",
+      "function": "0x14684d4a0",
+      "bounded_bytes": 87
+    }
+  ]
+}

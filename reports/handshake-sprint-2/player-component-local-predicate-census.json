@@ -1,0 +1,23 @@
+{
+  "vtable": "0x148535728",
+  "slots_scanned": 46,
+  "results": [
+    {
+      "slot": "0xe8",
+      "function": "0x14684cd50",
+      "bounded_bytes": 64,
+      "hits": [
+        "   14684cd50:\t83 b9 18 03 00 00 01 \tcmp    DWORD PTR [rcx+0x318],0x1"
+      ]
+    },
+    {
+      "slot": "0xf0",
+      "function": "0x14684cee0",
+      "bounded_bytes": 64,
+      "hits": [
+        "   14684cee0:\t83 b9 18 03 00 00 00 \tcmp    DWORD PTR [rcx+0x318],0x0"
+      ]
+    }
+  ],
+  "limitation": "per-function bound 10000 bytes; nonvirtual functions not covered"
+}
