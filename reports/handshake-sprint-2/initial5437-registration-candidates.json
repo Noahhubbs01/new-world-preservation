@@ -1,0 +1,9 @@
+[
+  {
+    "name": "ownedItems",
+    "offset": 1984,
+    "group": 1,
+    "instruction": "142d345fd:\te8 5e 16 a4 fe       \tcall   0x141775c60",
+    "vtable": null
+  }
+]

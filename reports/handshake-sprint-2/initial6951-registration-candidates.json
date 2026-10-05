@@ -1,0 +1,23 @@
+[
+  {
+    "name": null,
+    "offset": 1984,
+    "group": 0,
+    "instruction": "143bb7181:\te8 da ea bb fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": null,
+    "offset": 2024,
+    "group": 0,
+    "instruction": "143bb71d6:\te8 85 ea bb fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": null,
+    "offset": 2064,
+    "group": 0,
+    "instruction": "143bb722b:\te8 30 ea bb fd       \tcall   0x141775c60",
+    "vtable": null
+  }
+]

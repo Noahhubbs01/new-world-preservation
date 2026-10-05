@@ -1,0 +1,30 @@
+[
+  {
+    "name": "m_rolledRewards",
+    "offset": 1984,
+    "group": 2,
+    "instruction": "143736f89:\te8 d2 ec 03 fe       \tcall   0x141775c60",
+    "vtable": "0x14821a020"
+  },
+  {
+    "name": "m_selectedRewards",
+    "offset": 2552,
+    "group": 2,
+    "instruction": "143736fa2:\te8 b9 ec 03 fe       \tcall   0x141775c60",
+    "vtable": "0x1480b9790"
+  },
+  {
+    "name": "m_debugTrackExcludedTags",
+    "offset": 3120,
+    "group": 2,
+    "instruction": "143736fbb:\te8 a0 ec 03 fe       \tcall   0x141775c60",
+    "vtable": "0x14821a0c0"
+  },
+  {
+    "name": "m_pvpXpRank",
+    "offset": 3688,
+    "group": 1,
+    "instruction": "143736fd4:\te8 87 ec 03 fe       \tcall   0x141775c60",
+    "vtable": "0x1480ff638"
+  }
+]

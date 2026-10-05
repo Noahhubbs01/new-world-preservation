@@ -160,3 +160,17 @@ def test_remaining_initial_native_layouts(variant,values):
 ])
 def test_new_native_limits_and_boolean_branches(variant,field,raw):
     with pytest.raises(ValueError):encode({field:raw},variant)
+
+@pytest.mark.parametrize('variant,values,extra', [
+ ('objectives', {'activeObjectives':b'\0\0\x01'+b'\x11'*42+b'\x01'*4+b'\x22'*8+b'\0\x01'+b'\x33'*4,'taskStates':b'\0\0\x01'+b'\x44'*18}, None),
+ ('points_accumulator', {'numPoints0':b'\x11'*4,'maxNumPoints0':b'\x22'*4,'timeWhenPointsZeroed0':b'\x33'*8}, None),
+ ('categorical_progression', {'progressionIds':b'\0\0\x01'+b'\x11'*4,'ranks':b'\0\0\x01'+b'\x22'*2,'points':b'\0\0\x01'+b'\x33'*8}, None),
+ ('achievement', {'achievements':b'\0\0\x02ab'}, None),
+ ('item_management', {'ownedItems':b'\0\0\x01'+b'\x11'*2+b'\x22'*8+b'\x01'*8+b'\x33'*21+b'\x44'*8}, True),
+ ('reward_track', {'m_rolledRewards':b'\0\0\x01'+b'\x11'*8+b'\x22'*8+b'\x01'*8+b'\x33'*21+b'\x44'*8+b'\xff','m_pvpXpRank':b'\x12\x34'}, True),
+])
+def test_initial_frontier_snapshots(variant, values, extra):
+    raw=encode(values,variant,visual_extra=extra)
+    assert decode(b'x'+raw+b'tail',variant,1,visual_extra=extra)==(values,len(raw))
+    for length in range(len(raw)):
+        with pytest.raises(ValueError):decode(raw[:length],variant,visual_extra=extra)

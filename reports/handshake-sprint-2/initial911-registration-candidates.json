@@ -1,0 +1,23 @@
+[
+  {
+    "name": "progressionIds",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "143ca3ec6:\te8 95 1d ad fd       \tcall   0x141775c60",
+    "vtable": "0x14821a0c0"
+  },
+  {
+    "name": "ranks",
+    "offset": 2552,
+    "group": 0,
+    "instruction": "143ca3edb:\te8 80 1d ad fd       \tcall   0x141775c60",
+    "vtable": "0x148168170"
+  },
+  {
+    "name": "points",
+    "offset": 3120,
+    "group": 0,
+    "instruction": "143ca3ef0:\te8 6b 1d ad fd       \tcall   0x141775c60",
+    "vtable": "0x14820a030"
+  }
+]

@@ -1,3 +1,11 @@
+## Current checkpoint: initial 48-fragment boundary closed (2026-10-04)
+
+VERIFIED structural parsing of all 48 initial-master fragments in all 25 preserved initial bundles; 44 fragment types exact original-byte round-trip and four limited by redacted values (Groups, Player, GlobalStorage, PlayerHome). This establishes layout, not minimum required state or successful client entry. Corpus: 79 StateBundle messages, 35 complete, 1,681 decoded fragment bodies, 1,563 exact unredacted body round-trips. Later unsupported schemas remain outside initial-bundle closure.
+
+New native branches: Objectives active/task state, PointsAccumulator, CategoricalProgression, Achievement, ItemManagement, RewardTrack and StatusEffects local/lightweight maps. RewardTrack tail is raw u8, not Boolean. Remote status effects use a different constructor and remain unsupported nonempty; no inferred width is accepted there.
+
+Minimum-entry work continues next. Serialized 36-byte references and resolved runtime references are distinct. Spawn reference matching checks resolved handle identity where present and UUID equality where present (1434985C0/145BDBDB0/145BDB020); raw metadata equality does not close ownership. Main remains untouched; no client InGame claim.
+
 # New World Preservation - Project Status
 
 Last updated: 2026-10-04

@@ -5,7 +5,7 @@ from newworld_server.protocol import objective_fragment,attribute_fragment,react
 import csv,collections
 registry=list(csv.DictReader(open('reports/type-registry-verification/type-registry.tsv'),delimiter='\t'))
 aux_variants={}
-for idx,v in [(2187,'placement_obstruction'),(2930,'interact'),(3362,'slayer_script'),(1994,'groups'),(4176,'social'),(4321,'waypoints'),(3786,'currency'),(3133,'entitlement_snapshot'),(3935,'player_state'),(3765,'item_skinning'),(2938,'global_storage'),(1755,'container_community'),(5691,'transmog'),(4297,'stamina'),(1652,'mana'),(5620,'mount'),(982,'loot_tracker'),(3152,'faction'),(3290,'player_time'),(1566,'chat'),(497,'game_events'),(2406,'player_arena'),(3652,'player_home'),(5257,'charge'),(2895,'magic'),(185,'ability'),(3857,'objectives')]:
+for idx,v in [(2187,'placement_obstruction'),(2930,'interact'),(3362,'slayer_script'),(1994,'groups'),(4176,'social'),(4321,'waypoints'),(3786,'currency'),(3133,'entitlement_snapshot'),(3935,'player_state'),(3765,'item_skinning'),(2938,'global_storage'),(1755,'container_community'),(5691,'transmog'),(4297,'stamina'),(1652,'mana'),(5620,'mount'),(982,'loot_tracker'),(3152,'faction'),(3290,'player_time'),(1566,'chat'),(497,'game_events'),(2406,'player_arena'),(3652,'player_home'),(5257,'charge'),(2895,'magic'),(185,'ability'),(3857,'objectives'),(6951,'points_accumulator'),(911,'categorical_progression'),(3210,'achievement'),(5437,'item_management'),(4913,'reward_track')]:
  aux_variants[idx]=v
  codecs[idx]=(lambda x,offset=0,v=v:decode_player_aux_fragment(x,v,offset),lambda values,v=v:encode_player_aux_fragment(values,v,visual_extra=True))
 codecs[13]=(decode_position_fragment,encode_position_fragment)

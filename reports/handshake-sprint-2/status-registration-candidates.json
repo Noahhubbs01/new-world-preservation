@@ -1,0 +1,65 @@
+[
+  {
+    "name": "m_localEffectsMap",
+    "offset": 1984,
+    "group": null,
+    "instruction": "144013bd6:\te8 85 20 76 fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_effectsMap",
+    "offset": 2664,
+    "group": null,
+    "instruction": "144013bf3:\te8 68 20 76 fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_remoteEffectsMap",
+    "offset": 3344,
+    "group": null,
+    "instruction": "144013c10:\te8 4b 20 76 fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_lightweightLocalEffectsMap",
+    "offset": 4024,
+    "group": null,
+    "instruction": "144013c2d:\te8 2e 20 76 fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_territoryStatusEffects",
+    "offset": 5272,
+    "group": null,
+    "instruction": "144013c46:\te8 15 20 76 fd       \tcall   0x141775c60",
+    "vtable": "0x1482f7ef0"
+  },
+  {
+    "name": "m_dynamicScalingData",
+    "offset": null,
+    "group": null,
+    "instruction": "144013c63:\te8 f8 1f 76 fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_activeTrayIcons",
+    "offset": 5840,
+    "group": null,
+    "instruction": "144013c7c:\te8 df 1f 76 fd       \tcall   0x141775c60",
+    "vtable": "0x1482f7f90"
+  },
+  {
+    "name": "m_localReplicatedUpdateCounts",
+    "offset": 6408,
+    "group": null,
+    "instruction": "144013c99:\te8 c2 1f 76 fd       \tcall   0x141775c60",
+    "vtable": null
+  },
+  {
+    "name": "m_remoteReplicatedUpdateCounts",
+    "offset": 7088,
+    "group": null,
+    "instruction": "144013cb6:\te8 a5 1f 76 fd       \tcall   0x141775c60",
+    "vtable": null
+  }
+]

@@ -44,3 +44,11 @@ def test_guild_public_and_social_native_widths():
 def test_progression_unknown_bits_are_rejected(mask):
     from newworld_server.protocol.progression_fragment import decode_progression_fragment
     with pytest.raises(ValueError):decode_progression_fragment(bytes([1,mask]))
+
+@pytest.mark.parametrize('field,width',[('m_localEffectsMap',14),('m_effectsMap',14),('m_lightweightLocalEffectsMap',10)])
+def test_native_status_map_entries_and_truncations(field,width):
+    values={field:AttributeSnapshot(5,(b'\xff'*width,b'\x11'*width))}
+    raw=encode_status_effects_fragment(values)
+    assert decode_status_effects_fragment(b'x'+raw+b'tail',1)==(values,len(raw))
+    for length in range(len(raw)):
+        with pytest.raises(ValueError):decode_status_effects_fragment(raw[:length])

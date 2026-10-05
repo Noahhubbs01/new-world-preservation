@@ -1,0 +1,9 @@
+[
+  {
+    "name": "achievements",
+    "offset": 1984,
+    "group": 0,
+    "instruction": "14317ff95:\te8 c6 5c 5f fe       \tcall   0x141775c60",
+    "vtable": "0x1480b9790"
+  }
+]

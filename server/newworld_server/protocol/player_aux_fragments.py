@@ -33,7 +33,12 @@ SCHEMAS = {
                       'nextEligibleAbandonGameModeVoteTime','gameInviteData','isGroupPristine'))),
     'player_state': ((), (('loginMatchId', 'byte_string'), ('srcWorldId', 'tagged_name'), ('accountIsLocked', 'bool'), ('accountInProbation', 'bool'), ('ageGroup', 1), ('territoryOwnerGuildId', 16), ('sessionStartWallClockTimePoint', 8), ('sessionStartTimePoint', 8), ('debugAccountProbationOverride', 1), ('freePlayerCountdown', '8_bool'), ('enteringStoreIsBlocked', 'bool'), ('isFreshStartWorld', 'bool'), ('onDeathRespawnCooldown', 4), ('mostRecentPVPActiveSwitchTimePoint', 8), ('shouldNotifyPlayer', 'bool'), ('isPVPActiveCharacter', 'bool'), ('isChangingMount', 'bool'), ('isTransmogStationScreenOpen', 'bool'), ('isTransmogScreenOpen', 'bool'), ('isInMountAttachmentMode', 'bool'), ('isArmorDyeingOpen', 'bool'), ('playerBackstory', 4)), (('characterId', 'tagged_name'), ('characterName', 'byte_string'), ('homeWorldId', 'tagged_name'), ('playerConnected', 'bool'), ('lookingThroughLoadout', 'bool'), ('playerType', 1), ('isInStore', 'bool'), ('platformAccountId', 8), ('platformType', 1))),
     'entitlement_snapshot': ((('entitlements','snapshot_bytes575'),('balances','snapshot8'),('entitlementsReceived','bool')),),
-    'objectives': ((('gracePeriodEndTime',8),), (('taskStartTimes',None),('trackedObjectives','objectives_tracked'),('completedObjectives','snapshot8'),('activeObjectives','empty_snapshot'),('taskStates','empty_snapshot'),('objectivePoiEntityIds','snapshot8'),('dynamicPoiIndices','snapshot2'))),
+    'reward_track': ((), (('m_pvpXpRank',2),), (('m_rolledRewards','reward_snapshot'),('m_selectedRewards','snapshot1'),('m_debugTrackExcludedTags','snapshot4'))),
+    'item_management': ((), (('ownedItems','owned_inventory_snapshot'),)),
+    'achievement': ((('achievements','snapshot1'),),),
+    'categorical_progression': ((('progressionIds','snapshot4'),('ranks','snapshot2'),('points','snapshot8')),),
+    'points_accumulator': ((('numPoints0',4),('maxNumPoints0',4),('timeWhenPointsZeroed0',8)),),
+    'objectives': ((('gracePeriodEndTime',8),), (('taskStartTimes',None),('trackedObjectives','objectives_tracked'),('completedObjectives','snapshot8'),('activeObjectives','objectives_active'),('taskStates','snapshot18'),('objectivePoiEntityIds','snapshot8'),('dynamicPoiIndices','snapshot2'))),
     'ability': ((('persistentAbilityData','ability_data'),('hitDataNumHits','snapshot1'),('hitDataAbilityIds','snapshot4'),('actionDataCount','snapshot1'),('actionDataAbilityIds','snapshot4')),),
     'magic': ((('state',4),('channel',4)),),
     'charge': ((('chrgPcnt',1),),),
@@ -138,7 +143,7 @@ class _Reader:
             self.take(count)
         elif kind == 'vector4':
             self.take(self.count() * 4)
-        elif kind in ('snapshot1', 'snapshot2', 'snapshot4', 'snapshot8', 'snapshot12', 'snapshot23'):
+        elif kind in ('snapshot1', 'snapshot2', 'snapshot4', 'snapshot8', 'snapshot12', 'snapshot18', 'snapshot23'):
             self.take(self.snapshot() * int(kind[8:]))
         elif kind == 'visual_snapshot':
             if not isinstance(visual_extra, bool):
@@ -158,6 +163,31 @@ class _Reader:
             if count > limit:
                 raise ValueError('native game event collection limit')
             self.take(count * width)
+        elif kind == 'reward_snapshot':
+            for _ in range(self.snapshot()):
+                self.take(8)  # Two BEu32 values, native 143777D40.
+                self.field('inventory_item', visual_extra)
+                self.take(1)  # Native raw u8, not a Boolean.
+        elif kind == 'inventory_item':
+            if not isinstance(visual_extra, bool):
+                raise ValueError('explicit native visual-data mode required')
+            self.take(8)
+            for _ in range(8):
+                self.prefix()
+            self.take(21)
+            if visual_extra:
+                self.take(8)
+        elif kind == 'objectives_active':
+            for _ in range(self.snapshot()):
+                self.take(42)
+                for _ in range(4):
+                    self.boolean()
+                self.take(8)
+                self.boolean()
+                n = self.count()
+                if n > 7:
+                    raise ValueError('native objective tail limit')
+                self.take(n * 4)
         elif kind == 'objectives_tracked':
             n = self.snapshot()
             if n > 8:
@@ -197,13 +227,15 @@ class _Reader:
         elif kind == 'empty_class_map':
             if self.count():
                 raise ValueError('nonempty item class map unsupported')
-        elif kind in ('inventory_snapshot','full_inventory_snapshot'):
+        elif kind in ('inventory_snapshot','full_inventory_snapshot','owned_inventory_snapshot'):
             if not isinstance(visual_extra, bool):
                 raise ValueError('explicit native visual-data mode required')
             count = self.snapshot()
             if kind == 'inventory_snapshot' and count > 500:
                 raise ValueError('native inventory count limit')
             for _ in range(count):
+                if kind == 'owned_inventory_snapshot':
+                    self.take(2)
                 self.take(8)
                 for _ in range(8):
                     self.prefix()

@@ -1,16 +1,12 @@
 [
   {
     "seq": "0x25",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39448,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46423,
     "length": 46423,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39448
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -331,21 +327,81 @@
         "end": 39445,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39448,
+        "end": 41240,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41243,
+        "end": 41261,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41264,
+        "end": 42258,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42261,
+        "end": 44285,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44288,
+        "end": 45790,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45793,
+        "end": 46316,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46319,
+        "end": 46334,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46337,
+        "end": 46423,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
       }
     ]
   },
   {
     "seq": "0x2a",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -664,6 +720,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -671,16 +791,12 @@
   },
   {
     "seq": "0x2b",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -999,6 +1115,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1006,16 +1186,12 @@
   },
   {
     "seq": "0x2e",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -1334,6 +1510,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1341,16 +1581,12 @@
   },
   {
     "seq": "0x2f",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -1669,6 +1905,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -1676,16 +1976,12 @@
   },
   {
     "seq": "0x30",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -2004,6 +2300,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2011,16 +2371,12 @@
   },
   {
     "seq": "0x33",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -2339,6 +2695,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2346,16 +2766,12 @@
   },
   {
     "seq": "0x34",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -2674,6 +3090,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -2681,16 +3161,12 @@
   },
   {
     "seq": "0x35",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -3009,6 +3485,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3016,16 +3556,12 @@
   },
   {
     "seq": "0x42",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -3344,6 +3880,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3351,16 +3951,12 @@
   },
   {
     "seq": "0x44",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -3679,6 +4275,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -3686,16 +4346,12 @@
   },
   {
     "seq": "0x47",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -4014,6 +4670,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4021,16 +4741,12 @@
   },
   {
     "seq": "0x48",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -4349,6 +5065,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4356,16 +5136,12 @@
   },
   {
     "seq": "0x49",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -4684,6 +5460,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -4691,16 +5531,12 @@
   },
   {
     "seq": "0x4c",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -5019,6 +5855,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5026,16 +5926,12 @@
   },
   {
     "seq": "0x4e",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -5354,6 +6250,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5361,16 +6321,12 @@
   },
   {
     "seq": "0x4f",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -5689,6 +6645,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -5696,16 +6716,12 @@
   },
   {
     "seq": "0x52",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -6024,6 +7040,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -6031,16 +7111,12 @@
   },
   {
     "seq": "0x55",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -6359,6 +7435,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -6366,16 +7506,12 @@
   },
   {
     "seq": "0x56",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -6694,6 +7830,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -6701,16 +7901,12 @@
   },
   {
     "seq": "0x59",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -7029,6 +8225,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -7036,16 +8296,12 @@
   },
   {
     "seq": "0x5a",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -7364,6 +8620,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -7371,16 +8691,12 @@
   },
   {
     "seq": "0x5b",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -7699,6 +9015,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -7706,16 +9086,12 @@
   },
   {
     "seq": "0x66",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -8034,6 +9410,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }
@@ -8041,16 +9481,12 @@
   },
   {
     "seq": "0x6c",
-    "complete_records": 0,
-    "fragment_count": 40,
-    "end": 39432,
+    "complete_records": 1,
+    "fragment_count": 48,
+    "end": 46407,
     "length": 46407,
-    "complete_message": false,
-    "stop": {
-      "reason": "ValueError: objectives.activeObjectives: nonempty complex auxiliary snapshot unsupported",
-      "type": 3857,
-      "position": 39432
-    },
+    "complete_message": true,
+    "stop": null,
     "fragments": [
       {
         "interest": 1,
@@ -8369,6 +9805,70 @@
         "type": 1528,
         "start": 39422,
         "end": 39429,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3857,
+        "start": 39432,
+        "end": 41224,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 6951,
+        "start": 41227,
+        "end": 41245,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 911,
+        "start": 41248,
+        "end": 42242,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 3210,
+        "start": 42245,
+        "end": 44269,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 5437,
+        "start": 44272,
+        "end": 45774,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4913,
+        "start": 45777,
+        "end": 46300,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 899,
+        "start": 46303,
+        "end": 46318,
+        "original_byte_roundtrip": true,
+        "redacted_bytes": 0
+      },
+      {
+        "interest": 1,
+        "type": 4236,
+        "start": 46321,
+        "end": 46407,
         "original_byte_roundtrip": true,
         "redacted_bytes": 0
       }

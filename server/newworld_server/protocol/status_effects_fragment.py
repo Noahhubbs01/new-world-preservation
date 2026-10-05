@@ -1,15 +1,16 @@
 """Status-effect snapshot branches established by constructor144013900.
 
-Nonempty complex effect maps and all delta operations remain unsupported.
+Local/effects entries use BEu16, BEu64, BEf16 and two raw u8 fields.
+Lightweight entries use BEu16/BEu64. Remote complex maps and deltas fail closed.
 """
 from .attribute_fragment import AttributeSnapshot
 from .prefix_uint32 import encode_prefix_uint32,decode_prefix_uint32
 from .state_bundle import _prefix64
 
-GROUPS=((),(('m_localEffectsMap',None),('m_lightweightLocalEffectsMap',None),('m_activeTrayIcons',None)),
+GROUPS=((),(('m_localEffectsMap',14),('m_lightweightLocalEffectsMap',10),('m_activeTrayIcons',None)),
         (('m_territoryStatusEffects',12),('m_dynamicScalingData',None),('m_localReplicatedUpdateCounts',6),('m_remoteReplicatedUpdateCounts',6)),
-        (('m_effectsMap',None),('m_remoteEffectsMap',None)))
-SUPPORTED={'m_territoryStatusEffects','m_localReplicatedUpdateCounts','m_remoteReplicatedUpdateCounts','m_effectsMap','m_remoteEffectsMap'}
+        (('m_effectsMap',14),('m_remoteEffectsMap',None)))
+SUPPORTED={'m_lightweightLocalEffectsMap','m_localEffectsMap','m_territoryStatusEffects','m_localReplicatedUpdateCounts','m_remoteReplicatedUpdateCounts','m_effectsMap','m_remoteEffectsMap'}
 LIMIT=10000 # Local defensive allocation limit, not the client's larger wire limit.
 
 def encode_status_effects_fragment(values):
@@ -47,7 +48,7 @@ def decode_status_effects_fragment(data,offset=0):
         if mask>>len(g):raise ValueError('unknown status field bit')
         for j,(n,w) in enumerate(g):
             if not mask&(1<<j):continue
-            if n not in SUPPORTED:raise ValueError('unsupported status field')
+            if n not in SUPPORTED:raise ValueError('unsupported status field: '+n)
             if prefix():raise ValueError('status delta unsupported')
             flag=take(1)[0];version=None
             if flag>1:raise ValueError('invalid status version presence')
