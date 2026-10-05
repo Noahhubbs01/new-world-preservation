@@ -13,6 +13,7 @@ from newworld_server.transport.javelin import (
     JavelinSession,
     handle_datagram,
 )
+from newworld_server.protocol.framing import encode_prefix_frame
 from newworld_server.session import (
     PreservationSession,
     SessionPhase,
@@ -95,7 +96,7 @@ def test_non_system_channel_is_ignored():
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=b"\x00\x00\x00\x05\x01",
+        payload=encode_prefix_frame(b"\x00\x00\x00\x05\x01"),
     )
 
     request = encode_envelope(
@@ -129,7 +130,9 @@ def test_registration_request_generates_reg01_response(monkeypatch):
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=bytes([REGISTRATION_REQUEST_TYPE]) + b"synthetic-request",
+        payload=encode_prefix_frame(
+            bytes([REGISTRATION_REQUEST_TYPE]) + b"synthetic-request"
+        ),
     )
 
     request = encode_envelope(
@@ -181,7 +184,7 @@ def test_non_registration_channel_zero_message_is_ignored():
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=b"\x99not-registration",
+        payload=encode_prefix_frame(b"\x99not-registration"),
     )
 
     request = encode_envelope(
@@ -233,9 +236,15 @@ def test_registration_uses_attached_logical_session_token():
         channel=0,
         sequence=0,
         reliable_sequence=0,
-        payload=(
+        payload=encode_prefix_frame(
             bytes([REGISTRATION_REQUEST_TYPE])
-            + b"synthetic-request"
+            + bytes(4)          # fixed registration scalar
+            + b"\x00"          # zero map entries
+            + b"\x00"          # message+A0
+            + b"\x00"          # ticket+0
+            + b"\x00"          # ticket+20 REP address
+            + b"\x00"          # ticket+40 world ID
+            + b"\x07char-42"   # ticket+60 selected character ID
         ),
     )
 
@@ -257,6 +266,7 @@ def test_registration_uses_attached_logical_session_token():
 
     assert body[16:48] == token
     assert logical.session_token == token
+    assert logical.character_id == b"char-42"
     assert logical.phase is SessionPhase.REGISTERED
 
     # Repeating Registration must preserve the same logical identity.
@@ -273,4 +283,5 @@ def test_registration_uses_attached_logical_session_token():
 
     assert second_body[16:48] == token
     assert logical.session_token == token
+    assert logical.character_id == b"char-42"
     assert logical.phase is SessionPhase.REGISTERED

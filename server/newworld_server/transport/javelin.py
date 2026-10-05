@@ -33,6 +33,14 @@ from newworld_server.protocol.registration import (
     REGISTRATION_REQUEST_TYPE,
     classify_registration_request,
 )
+from newworld_server.protocol.registration_identity import (
+    RegistrationIdentityError,
+    extract_registration_character_id,
+)
+from newworld_server.protocol.framing import (
+    PrefixFrameDecoder,
+    PrefixFrameError,
+)
 
 
 SYSTEM_CHANNEL = 3
@@ -105,40 +113,69 @@ def handle_datagram(
             responses.append(response)
             continue
 
-        # Application messages are carried on channel 0.
+        # Native REP application messages on channel 0 are prefix-framed.
+        # This establishes framing only; it does not infer World routing.
         if record.channel != 0 or not record.payload:
             continue
 
-        message_type = record.payload[0]
-        message_body = record.payload[1:]
+        decoder = PrefixFrameDecoder()
 
-        request = classify_registration_request(
-            message_type,
-            message_body,
-        )
+        try:
+            frames = decoder.feed(record.payload)
+            decoder.finish()
+        except PrefixFrameError as exc:
+            raise JavelinProtocolError(
+                f"invalid REP application framing: {exc}"
+            ) from exc
 
-        if request is None:
-            continue
+        for frame in frames:
+            if not frame:
+                raise JavelinProtocolError(
+                    "empty REP application frame"
+                )
 
-        logical_session = session.preservation_session
+            message_type = frame[0]
+            message_body = frame[1:]
 
-        registration_response = build_success_response(
-            request,
-            session_token=(
-                logical_session.session_token
-                if logical_session is not None
-                else None
-            ),
-        )
-
-        if logical_session is not None:
-            logical_session.phase = SessionPhase.REGISTERED
-
-        responses.append(
-            build_registration_datagram(
-                session.carrier,
-                registration_response,
+            request = classify_registration_request(
+                message_type,
+                message_body,
             )
-        )
+
+            if request is None:
+                continue
+
+            logical_session = session.preservation_session
+
+            if logical_session is not None:
+                try:
+                    character_id = extract_registration_character_id(
+                        request.raw_body
+                    )
+                except RegistrationIdentityError as exc:
+                    raise JavelinProtocolError(
+                        "invalid RegistrationRequest identity layout"
+                    ) from exc
+
+                logical_session.character_id = character_id
+
+            registration_response = build_success_response(
+                request,
+                session_token=(
+                    logical_session.session_token
+                    if logical_session is not None
+                    else None
+                ),
+            )
+
+            if logical_session is not None:
+                logical_session.phase = SessionPhase.REGISTERED
+
+            responses.append(
+                build_registration_datagram(
+                    session.carrier,
+                    registration_response,
+                )
+            )
 
     return responses

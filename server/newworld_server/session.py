@@ -36,6 +36,7 @@ class PreservationSession:
     phase: SessionPhase = SessionPhase.NEW
     rep_peer: Peer | None = None
     world_peer: Peer | None = None
+    character_id: bytes | None = None
 
     def __post_init__(self) -> None:
         if len(self.session_token) != SESSION_TOKEN_LENGTH:

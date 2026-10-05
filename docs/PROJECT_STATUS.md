@@ -2337,3 +2337,15 @@ Exact next actions on authorized resume:
 4. Normal resource completion→actualActor252 and livePlayerRegistry independently; then emptySpawnPoint correctstage, state14, camera+WASD. No operational success claim from codec tests.
 
 Preserve evidence labels VERIFIED/INFERRED/COMMUNITY-REPORTED/COMMUNITY-CORROBORATED/CONFLICTING. Read docs/CHAT_RULES.md and docs/PROJECT_STATUS.md completely, then this current packet, docs/HANDSHAKE_SPRINT_RESUME.md, docs/MINIMUM_WORLD_ENTRY.md and docs/HANDSHAKE_MAP.md. Current section supersedes historical unknown252/ICMP/state-enable leads. No EAC/security investigation/bypass/modification or Amazon production interaction. Dependency sprint deferred. No proprietary assets/binaries, sensitive rawcaptures, credentials/keys, third-party repos or large databases committed. User-authorized sprint push previously failed restricted DNS; no personal credentials requested.
+
+## Registration identity persistence checkpoint — 2026-10-05
+
+IMPLEMENTED: inbound REP channel-0 Registration traffic now passes through the native prefix-width framing boundary before RegistrationRequest classification. Existing Carrier/Javelin and UDP/DTLS integration fixtures were updated to exercise that framing. This establishes framing at the current preservation-server boundary only; unresolved native routing/wrapper semantics and cross-Carrier-record stream fragmentation are not claimed closed.
+
+IMPLEMENTED: the bounded RegistrationRequest identity reader is now integrated with attached logical preservation sessions. On a structurally valid RegistrationRequest, only the VERIFIED selected-character field at ticket+0x60 is retained as `PreservationSession.character_id`. Earlier ticket strings, REP address and world ID are skipped and are not retained or logged. This value is an identity claim, not authentication.
+
+Validation: focused Registration identity/Javelin tests pass. Full intended server environment: **303 passed, zero skipped**. Existing REG-01 behavior and persistent server-generated session-token continuity remain green.
+
+B1 remains OPEN. This checkpoint does not establish unresolved REP routing flags/wrapper semantics, arbitrary stream fragmentation across Carrier records, a separate World transport/token consumer, or the actual REP-to-Actor World receive dispatcher. No client World entry, player spawn, InGame, camera or WASD success is claimed.
+
+Immediate next evidence target: recover the client-to-REP Registration send wrapper/routing contract at the already identified `146B706F0 -> 146B6FFB0` path, then reconcile that evidence with the current inbound framing boundary. After that, close the actual REP-to-Actor World receive dispatcher before inventing additional World bootstrap behavior.
