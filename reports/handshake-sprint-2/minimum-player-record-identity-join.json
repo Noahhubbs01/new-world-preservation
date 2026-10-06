@@ -1,0 +1,71 @@
+{
+  "scope": "Minimum StateBundle record slot -> metadata -> GdeRef key -> same GDE component index association; no live client success",
+  "layout": {
+    "evidence": "VERIFIED",
+    "record": "prefix uint32 record slot (native stores low16), raw u8 fragment count, repeated prefix uint32 component index + reflected type identity + type virtual90 body",
+    "sites": [
+      "146AF212F prefix decode",
+      "146AF2142/214C uint16 store",
+      "146AF21A5 rawu8 read",
+      "146AF22DA fragment loop",
+      "146AF237A component prefix",
+      "146AF2474 reflected type lookup",
+      "146AF2649 body virtual90",
+      "146AF2754/2757 component index DWORD stored next to state shared pointer"
+    ],
+    "encoder_policy": "Reject slot>65535 rather than silently alias native cache; reject duplicates as local defensive policy, not proved native rejection. No per-fragment length."
+  },
+  "joins": [
+    {
+      "evidence": "VERIFIED",
+      "join": "record slot -> metadata cache shared pointer",
+      "sites": [
+        "1417181E7 Context+608",
+        "1417181EE slot WORD",
+        "1417181F6 shift4",
+        "141718201 metadata pointer"
+      ]
+    },
+    {
+      "evidence": "VERIFIED",
+      "join": "metadata GdeRef key -> same live GDE",
+      "sites": [
+        "1417188D3 metadata+880 key",
+        "1417189B0 1417B4F60(Context,key)",
+        "1417B4FA8 and1417B4FE3 compare map node+10 to key",
+        "1417B4FFF returns GDE node+18"
+      ]
+    },
+    {
+      "evidence": "VERIFIED",
+      "join": "nonmetadata fragments in that record -> same GDE cached component state",
+      "sites": [
+        "141718DB6..DC8 same incoming vector",
+        "141718DE7 skips metadata virtual60 state",
+        "141718DF2 component index DWORD",
+        "141719341 state shared pair R9",
+        "141719348 runtimekey RDX",
+        "141719357 14178F7F0 cache",
+        "14171948A same GDE RCX",
+        "14171948D 14167B2A0(GDE,index,cached state)",
+        "14167B3BE component vector GDE+160",
+        "14167B3DD selects index*8 component"
+      ]
+    },
+    {
+      "evidence": "COMMUNITY-CORROBORATED",
+      "join": "metadata index0/type10, player index9/type3935",
+      "source": "player-record-sequential-validation.json records0x8c/0xae. Native Player prefab index9 independently VERIFIED."
+    }
+  ],
+  "candidate": {
+    "evidence": "INFERRED",
+    "recipe": "single record with metadata(index0,type10, explicit Player AssetId+GdeRef) and Player(index9,type3935, characterId matching accepted selection); same-record mechanism associates both with one runtime GDE",
+    "known_not_proven": "Two-fragment sufficiency, context/level services, activation readiness, and SelfIdentification chosen reference relationship require parent analysis and isolated client integration. Record slot is NOT runtime GdeRef key or UUID; keep both separately persistent."
+  },
+  "implementation": [
+    "server/newworld_server/protocol/replica_record.py",
+    "server/tests/test_replica_record.py"
+  ],
+  "validation": "10 focused tests passed, zero skipped. Synthetic only: field/type boundaries, slot65535, two concatenated records, every truncation, unknown type cannot skip, inline identity, duplicates/count, missing identity/zero key."
+}

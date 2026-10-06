@@ -19,6 +19,7 @@ import signal
 from pathlib import Path
 
 from .session import SessionRegistry
+from .diagnostics.logging import StructuredDiagnostics
 from .transport.dtls import (
     DTLSConfig,
     DTLSSession,
@@ -44,7 +45,9 @@ class REPServer:
         bind_port: int,
         certificate: Path,
         private_key: Path,
+        *, diagnostics=None,
     ):
+        self.diagnostics = diagnostics
         self.context = create_server_context(
             DTLSConfig(
                 certificate=certificate,
@@ -63,9 +66,20 @@ class REPServer:
             timeout=0.25,
             idle_timeout=60.0,
             logger=LOG,
+            diagnostics=diagnostics,
+            on_peer_closed=self._on_peer_closed,
         )
 
         self.running = False
+
+    def _emit(self, category, event, *, session_id=None, **metadata):
+        if self.diagnostics is not None:
+            self.diagnostics.emit(category, event, session_id=session_id, **metadata)
+
+    def _on_peer_closed(self, peer):
+        protocol = self.protocol_sessions.pop(peer, None)
+        if protocol is not None and protocol.preservation_session is not None:
+            self.sessions.release(protocol.preservation_session)
 
     def _new_dtls_session(self) -> DTLSSession:
         LOG.info("creating DTLS peer session")
@@ -83,19 +97,17 @@ class REPServer:
                 rep_peer=peer,
             )
 
+            state = self.transport.peers.get(peer)
+            if state is not None:
+                logical_session.session_id = state.session_id
             protocol = JavelinSession(
-                preservation_session=logical_session,
+                preservation_session=logical_session, diagnostics=self.diagnostics,
             )
 
             self.protocol_sessions[peer] = protocol
 
-        LOG.info(
-            "plaintext peer=%s:%d bytes=%d prefix=%s",
-            peer[0],
-            peer[1],
-            len(plaintext),
-            plaintext[:16].hex(" "),
-        )
+        self._emit("rep", "plaintext_received", session_id=protocol.preservation_session.session_id,
+                   direction="inbound", byte_length=len(plaintext))
 
         was_connected = protocol.connected
 
@@ -112,13 +124,8 @@ class REPServer:
             )
 
         for response in responses:
-            LOG.info(
-                "sending Carrier response peer=%s:%d bytes=%d prefix=%s",
-                peer[0],
-                peer[1],
-                len(response),
-                response[:16].hex(" "),
-            )
+            self._emit("rep", "carrier_response", session_id=protocol.preservation_session.session_id,
+                       direction="outbound", byte_length=len(response))
 
             self.transport.send_plaintext(
                 peer,
@@ -132,7 +139,13 @@ class REPServer:
         protocol = self.protocol_sessions.get(peer)
         if protocol is None:
             raise ValueError("unknown REP peer")
-        self.transport.send_plaintext(peer, build_world_datagram(protocol, message))
+        datagram = build_world_datagram(protocol, message)
+        envelope = message.message
+        self._emit("world", "message_sent", session_id=protocol.preservation_session.session_id,
+                   direction="outbound", type_index=envelope.type_index if envelope else None,
+                   byte_length=len(datagram), phase_before=protocol.preservation_session.phase.name,
+                   phase_after=protocol.preservation_session.phase.name)
+        self.transport.send_plaintext(peer, datagram)
 
     def bind(self) -> Peer:
         address = self.transport.bind()
@@ -143,6 +156,7 @@ class REPServer:
             address[1],
         )
 
+        self._emit("server", "listening", port=address[1], transport="DTLS")
         return address
 
     def stop(self) -> None:
@@ -160,6 +174,7 @@ class REPServer:
         finally:
             self.transport.close()
             LOG.info("REP stopped")
+            self._emit("server", "stopped")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -207,28 +222,26 @@ def build_parser() -> argparse.ArgumentParser:
         ),
     )
 
+    parser.add_argument("--log-dir", type=Path, default=Path("logs"))
+    parser.add_argument("--log-max-bytes", type=int, default=5_000_000)
+    parser.add_argument("--log-backups", type=int, default=4)
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
 
-    logging.basicConfig(
-        level=getattr(logging, args.log_level),
-        format=(
-            "%(asctime)s "
-            "%(levelname)s "
-            "%(name)s "
-            "%(message)s"
-        ),
-    )
-
-    server = REPServer(
-        args.bind,
-        args.port,
-        args.cert,
-        args.key,
-    )
+    diagnostics = StructuredDiagnostics(args.log_dir, max_bytes=args.log_max_bytes,
+                                        backup_count=args.log_backups)
+    diagnostics.install_safe_legacy_handler(getattr(logging, args.log_level))
+    diagnostics.emit("server", "starting", port=args.port, transport="DTLS")
+    try:
+        server = REPServer(args.bind, args.port, args.cert, args.key, diagnostics=diagnostics)
+    except Exception as exc:
+        diagnostics.emit("errors", "startup_failed", level=logging.ERROR,
+                         error_type=type(exc).__name__, reason="server_initialization_failed")
+        diagnostics.close()
+        return 1
 
     def stop_handler(signum, frame):
         LOG.info("shutdown signal=%d", signum)
@@ -243,7 +256,10 @@ def main(argv: list[str] | None = None) -> int:
         stop_handler,
     )
 
-    server.serve_forever()
+    try:
+        server.serve_forever()
+    finally:
+        diagnostics.close()
 
     return 0
 

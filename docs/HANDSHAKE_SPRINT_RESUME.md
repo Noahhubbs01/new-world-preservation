@@ -1,3 +1,66 @@
+# Current field-test checkpoint — 2026-10-05
+
+Parent checkpoint: `209a76114b5918009de54424f0451cf1c20d95e1`.
+Branch: `work/gpt61-handshake-sprint`. This section supersedes historical
+frontiers and validation counts below. Current full suite: **373 passed,
+zero skipped, zero failures**. The older checkpoint had 344 passed; earlier
+332 passed / 12 skipped wording is historical, not the current result.
+
+## Delivered implementation
+
+VERIFIED native inner StateBundle record structure: prefix slot (uint16 cache
+boundary), raw u8 fragment count, then prefix component index, reflected type
+identity and its typed body. There is no per-fragment length. Metadata selects
+GdeRef and component fragments in that record address the same GDE by index.
+The new compiler requires explicit nonempty TaggedName characterId and nonzero
+GdeRef key, and emits metadata index 0 plus Player index 9. Metadata type 10 and
+Player type 3935 remain COMMUNITY-CORROBORATED. Two fragments being sufficient
+is INFERRED. No SelfIdentification-to-GdeRef ownership join is claimed closed.
+
+Structured rotating metadata-only logs now propagate a random diagnostic
+session UUID through UDP/DTLS, Carrier, REP and explicit World sends; disconnects
+release the logical session. All eight category files and per-session events
+are available. Bootstrap/replication categories are reserved for real events;
+this checkpoint does not automatically send an unproved bootstrap sequence.
+Tickets, tokens, character values, bodies and exception strings are excluded.
+Owner-run LAN startup and diagnostics: `docs/FOUNDRY_FIELD_TEST_SERVER.md`.
+
+## Single immediate field-test gate: preservation gateway ingress
+
+VERIFIED: the client gateway setting constructs the gateway/HTTP authorization
+path, not a direct REP UDP connection. The standalone REP/World endpoint lacks
+the preservation-owned gateway authorization/world-selection result contract
+that supplies a legitimately accepted REP connection context. This prevents
+the requested isolated retail-client test before a player bootstrap can run.
+Do not point GatewayAddr at UDP 29383 and call it a launch recipe.
+
+Nested JSON schema and ConfigPath/OverrideConfigPath lookup are VERIFIED; exact
+normal-launcher forwarding remains unverified. Empty gateway fields can fall
+back to production. No executable override or invented launcher argument is
+shipped. No retail client was launched and no production traffic was redirected.
+
+The bounded next action, only when authorized to continue beyond this gate, is
+to recover and implement that gateway request/result contract from existing
+owned evidence, including supported override delivery. The resolving check is
+normal Steam/EAC launch acknowledging the owned override and the isolated
+preservation gateway receiving its first request, with secret-safe diagnostics.
+Only after ingress is established can the INFERRED minimum player candidate be
+judged by actual local-registry/InGame observations. No player spawn, InGame,
+camera or WASD success is claimed.
+
+## Derived evidence and safeguards
+
+- `reports/handshake-sprint-2/current-client-config-seam.md` and `.json`
+- `reports/handshake-sprint-2/minimum-player-record-identity-join.json`
+- `server/newworld_server/protocol/replica_record.py`
+- `server/tests/test_replica_record.py`, `test_logging.py`, and
+  `test_rep_diagnostics_integration.py`
+
+Six pre-existing modified ASM files and the unrelated untracked research forest
+remain excluded. No reset, clean, stash, recursive ownership change, proprietary
+asset/capture commit, security modification, production interaction or main
+change. The later dependency sprint remains deferred.
+
 # Authoritative continuation checkpoint — 2026-10-05
 
 Branch: `work/gpt61-handshake-sprint`

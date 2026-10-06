@@ -51,8 +51,16 @@ class JavelinSession:
     carrier: CarrierState = field(default_factory=CarrierState)
     connected: bool = False
     preservation_session: PreservationSession | None = None
+    diagnostics: object | None = None
     incoming_rep: ReliableChunkAssembler = field(default_factory=lambda:
         ReliableChunkAssembler(expected_reliable_sequence=0))
+
+
+def _emit(session, category, event, **metadata):
+    if session.diagnostics is not None:
+        logical = session.preservation_session
+        session.diagnostics.emit(category, event,
+            session_id=logical.session_id if logical is not None else None, **metadata)
 
 
 class JavelinProtocolError(ValueError):
@@ -91,6 +99,10 @@ def handle_datagram(
     responses: list[bytes] = []
 
     for record in records:
+        _emit(session, "transport", "carrier_record", direction="inbound",
+              byte_length=len(record.payload), channel=record.channel,
+              sequence=record.sequence, reliable_sequence=record.reliable_sequence,
+              fragment_count=record.chunk_count)
         message_id = _system_message_id(record)
 
         if message_id == SM_CONNECT_REQUEST:
@@ -103,6 +115,10 @@ def handle_datagram(
                 body,
             )
 
+            _emit(session, "connection", "carrier_connect_accepted",
+                  phase_before=(session.preservation_session.phase.name
+                                if session.preservation_session else "NEW"),
+                  phase_after="CARRIER_CONNECTED")
             session.connected = True
 
             if session.preservation_session is not None:
@@ -133,6 +149,10 @@ def handle_datagram(
             except ValueError as exc:
                 raise JavelinProtocolError("invalid client REP envelope") from exc
             message = incoming.routed.message
+            from ..diagnostics.logging import opaque_id
+            _emit(session, "rep", "client_message", direction="inbound",
+                  type_index=message.type_index if message is not None else None,
+                  byte_length=len(application_buffer), correlation_id=opaque_id(incoming.correlation))
             if message is None:
                 continue
             message_type = message.type_index
@@ -170,7 +190,13 @@ def handle_datagram(
             )
 
             if logical_session is not None:
+                old_phase = logical_session.phase.name
                 logical_session.phase = SessionPhase.REGISTERED
+                _emit(session, "rep", "registration_layout_accepted",
+                      phase_before=old_phase, phase_after="REGISTERED",
+                      character_id_present=logical_session.character_id is not None,
+                      character_id_length=len(logical_session.character_id or b""),
+                      token_present=True, token_length=len(logical_session.session_token))
 
             responses.append(
                 build_registration_datagram(

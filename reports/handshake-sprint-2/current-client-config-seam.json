@@ -1,0 +1,72 @@
+{
+  "scope": "Supported retail-client configuration seam only; no client launch or connection attempted.",
+  "evidence_status": "VERIFIED for owned archive schema and executable consumers; field-test sufficiency remains OPEN.",
+  "archive": {
+    "pak": "client/assets/DataStrm.pak",
+    "entry": "client.json",
+    "uncompressed_size": 1952,
+    "compression_method": 15,
+    "integrity": "size and CRC verified",
+    "override_entry_present": false
+  },
+  "schema": {
+    "structure": "nested JSON object",
+    "rep_default_port_path": [
+      "client-connection",
+      "transport-options",
+      "rep-default-port"
+    ],
+    "rep_default_port_type": "integer",
+    "gateway_fields": {
+      "mode": "string",
+      "endpoint": "string",
+      "http-endpoint": "string",
+      "signing-host": "string",
+      "region": "string"
+    },
+    "gateway_fields_basis": "Native registered string properties; absent from archive client.json. Gateway defaults supplied by146168BC0."
+  },
+  "native_config_loader": {
+    "function": "14645B520",
+    "defaults": [
+      "@assets@/Client.json",
+      "@assets@/ClientOverride.json"
+    ],
+    "override_lookup": "14645B779 commandline virtual18, type1, name OverrideConfigPath",
+    "override_file_exists": "14645B7DA CryPak virtual68; absent file clears override path",
+    "load_call": "14645B905 ->14619F4D0 with main and override paths",
+    "option_mapping": {
+      "GatewayMode": "client-connection.client-gateway.mode",
+      "GatewayAddr": "client-connection.client-gateway.endpoint",
+      "HttpGatewayAddr": "client-connection.client-gateway.http-endpoint",
+      "GatewaySigningHost": "client-connection.client-gateway.signing-host",
+      "GatewayRegion": "client-connection.client-gateway.region"
+    }
+  },
+  "normal_gateway_consumer": {
+    "function": "146425000",
+    "mode_compare": "1464256CF gateway",
+    "client_constructor": "146425B1B ->146402CC0",
+    "diagnostic": "146425ABD ConfigureLogin MODE_GATEWAY",
+    "authorization_continuation": "146425BC9 reads existing authorization.mode; no auth setting changed",
+    "empty_gateway_values": "Native fallback production endpoints exist. Do not leave endpoints empty and assume isolation."
+  },
+  "open": {
+    "supported_external_invocation": "The consumer accepts named commandline type1 options; exact prefix/syntax and forwarding through normal Steam/EAC launcher are not yet proven. -OverrideConfigPath is INFERRED and is not provided as a verified field-test invocation.",
+    "first_connect_gate": "Gateway configuration selects a gateway client, not the REP UDP listener directly. A preservation-owned legitimate gateway/HTTP contract and normal authorization/world-selection output are required before a pure REP/World server can be field-tested using gateway mode. No dummy/stubbed auth or TLS bypass is authorized.",
+    "minimum_observation": "Supported launcher argument reaches ConfigPath/OverrideConfigPath and client logs Using client config override file for an owned path, followed by an isolated preservation gateway request with secret-safe diagnostics."
+  },
+  "restrictions": "No proprietary asset content, ticket values, credentials, defaults secrets, or security mechanism analysis included.",
+  "non_executable_template": {
+    "client-connection": {
+      "client-gateway": {
+        "mode": "gateway",
+        "endpoint": "<preservation-gateway-endpoint>",
+        "http-endpoint": "<preservation-http-gateway-endpoint>",
+        "signing-host": "<preservation-gateway-signing-host>",
+        "region": "<preservation-gateway-region>"
+      }
+    }
+  },
+  "template_status": "Schema illustration only. All placeholder values must be replaced from an implemented preservation gateway contract. Not a launch configuration and must not be installed as-is. All gateway fields must be populated to prevent native empty-value production fallbacks."
+}

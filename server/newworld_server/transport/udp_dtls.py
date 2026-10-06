@@ -5,10 +5,11 @@ from __future__ import annotations
 import logging
 import socket
 import time
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Callable
 
 from .dtls import DTLSSession
+from ..diagnostics.logging import new_session_id
 
 
 Peer = tuple[str, int]
@@ -19,6 +20,7 @@ PlaintextHandler = Callable[[Peer, bytes], None]
 class PeerState:
     session: DTLSSession
     last_activity: float
+    session_id: str = field(default_factory=new_session_id)
 
 
 class UDPDTLSServer:
@@ -34,6 +36,8 @@ class UDPDTLSServer:
         timeout: float = 0.1,
         idle_timeout: float = 60.0,
         logger: logging.Logger | None = None,
+        diagnostics=None,
+        on_peer_closed=None,
     ):
         self.bind_address = bind_address
         self.bind_port = bind_port
@@ -42,6 +46,8 @@ class UDPDTLSServer:
         self.timeout = timeout
         self.idle_timeout = idle_timeout
         self.log = logger or logging.getLogger(__name__)
+        self.diagnostics = diagnostics
+        self.on_peer_closed = on_peer_closed
 
         self.sock: socket.socket | None = None
         self.peers: dict[Peer, PeerState] = {}
@@ -72,7 +78,8 @@ class UDPDTLSServer:
             self.sock.close()
             self.sock = None
 
-        self.peers.clear()
+        for peer in list(self.peers):
+            self._close_peer(peer, "server_closed")
 
     def _peer_state(self, peer: Peer) -> PeerState:
         state = self.peers.get(peer)
@@ -83,8 +90,20 @@ class UDPDTLSServer:
                 last_activity=time.monotonic(),
             )
             self.peers[peer] = state
+            self._emit(state, "connection", "peer_opened", transport="DTLS")
 
         return state
+
+    def _emit(self, state, category, event, **metadata):
+        if self.diagnostics is not None:
+            self.diagnostics.emit(category, event, session_id=state.session_id, **metadata)
+
+    def _close_peer(self, peer, reason):
+        state = self.peers.pop(peer, None)
+        if state is not None:
+            self._emit(state, "connection", "peer_closed", reason=reason)
+        if self.on_peer_closed is not None:
+            self.on_peer_closed(peer)
 
     def _flush_session(self, peer: Peer, state: PeerState) -> None:
         if self.sock is None:
@@ -92,15 +111,22 @@ class UDPDTLSServer:
 
         for encrypted in state.session.drain_udp():
             self.sock.sendto(encrypted, peer)
+            self._emit(state, "transport", "encrypted_datagram", direction="outbound",
+                       byte_length=len(encrypted), protocol="DTLS")
 
     def process_datagram(self, peer: Peer, datagram: bytes) -> None:
         state = self._peer_state(peer)
         state.last_activity = time.monotonic()
 
+        self._emit(state, "transport", "encrypted_datagram", direction="inbound",
+                   byte_length=len(datagram), protocol="DTLS")
+        was_complete = state.session.handshake_complete
         state.session.feed_udp(datagram)
         state.session.advance_handshake()
 
         self._flush_session(peer, state)
+        if not was_complete and state.session.handshake_complete:
+            self._emit(state, "connection", "dtls_handshake_complete", handshake_complete=True)
 
         if not state.session.handshake_complete:
             return
@@ -128,7 +154,15 @@ class UDPDTLSServer:
 
         peer: Peer = (str(address[0]), int(address[1]))
 
-        self.process_datagram(peer, datagram)
+        try:
+            self.process_datagram(peer, datagram)
+        except Exception as exc:
+            state = self.peers.get(peer)
+            if state is not None:
+                self._emit(state, "errors", "peer_processing_failed", level=logging.ERROR,
+                           error_type=type(exc).__name__, reason="invalid_peer_input",
+                           first_failed_gate="DTLS_or_application_decode")
+            self._close_peer(peer, "decode_failed")
         self.sweep_idle()
 
         return True
@@ -152,4 +186,4 @@ class UDPDTLSServer:
         ]
 
         for peer in expired:
-            del self.peers[peer]
+            self._close_peer(peer, "idle_timeout")

@@ -1,3 +1,17 @@
+# Current ingress boundary — 2026-10-05
+
+Current result: 373 tests pass, none skipped. See PROJECT_STATUS.md for the
+current checkpoint; historical graph findings below retain their evidence scope.
+
+Normal retail launch -> supported owned override -> preservation gateway/HTTP
+authorization and world selection **[missing ingress contract; first test gate]**
+-> accepted REP context -> implemented UDP/DTLS/Carrier/Registration/World
+-> INFERRED metadata + Player index9 replica -> unobserved local registry/InGame.
+
+The new record compiler joins metadata and Player state to one GDE within a
+record. It does not prove SelfIdentification ownership or minimum runtime
+sufficiency. There has been no retail-client test or InGame observation.
+
 # Handshake and player-spawn reconstruction map
 
 ## Resumed frontier — 2026-10-05

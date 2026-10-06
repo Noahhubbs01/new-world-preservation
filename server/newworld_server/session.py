@@ -10,10 +10,11 @@ No World routing or client token-consumer semantics are asserted here.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum, auto
 import secrets
 from typing import TypeAlias
+from .diagnostics.logging import new_session_id
 
 
 Peer: TypeAlias = tuple[str, int]
@@ -37,6 +38,7 @@ class PreservationSession:
     rep_peer: Peer | None = None
     world_peer: Peer | None = None
     character_id: bytes | None = None
+    session_id: str = field(default_factory=new_session_id)
 
     def __post_init__(self) -> None:
         if len(self.session_token) != SESSION_TOKEN_LENGTH:
@@ -146,3 +148,11 @@ class SessionRegistry:
     def _require_owned(self, session: PreservationSession) -> None:
         if self._by_token.get(session.session_token) is not session:
             raise ValueError("session is not owned by this registry")
+
+    def release(self, session: PreservationSession) -> None:
+        self._require_owned(session)
+        self._by_token.pop(session.session_token, None)
+        for mapping, peer in ((self._by_rep_peer, session.rep_peer),
+                              (self._by_world_peer, session.world_peer)):
+            if mapping.get(peer) is session:
+                mapping.pop(peer, None)
